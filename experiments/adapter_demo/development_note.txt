@@ -1,0 +1,7 @@
+15 October 2026: first demo attempt reached its checks but failed while writing
+results because one NumPy boolean was not JSON serializable. Converted all check
+values to Python bool and reran the same engineering demonstration. No physics,
+control, comparison thresholds, or input sequence changed. This was development
+debugging, not a preregistered scientific test.
+
+Independent transport QA found duplicate JSON keys silently collapsed and deeply nested JSON could terminate the process. Root repair: reject duplicate object keys during parsing, and catch recursion failure using a shallow raw-line rejection receipt. No physics or experiment sequence changed. This is still a bounded synchronous adapter, not a hostile-input resource sandbox.

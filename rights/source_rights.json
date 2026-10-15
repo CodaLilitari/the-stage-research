@@ -1,0 +1,104 @@
+{
+  "checked_utc": "2026-10-15T15:52:53.633792+00:00",
+  "scope": "explicitly reviewed source assets; not an exhaustive license grant for every candidate file",
+  "assets": [
+    {
+      "source": "research/biohybrid_hand_reanalysis/data/3A.csv",
+      "license": "CC0-1.0",
+      "credit": "Dryad version 7",
+      "url": "https://doi.org/10.5061/dryad.xd2547drh",
+      "source_bytes": 578,
+      "source_sha256": "6fa0200eb1079b42f641ca69311923f6d4c0bf66cccdc878f259586272afd75f",
+      "disposition": "eligible_with_source_notice"
+    },
+    {
+      "source": "research/biohybrid_hand_reanalysis/data/3B.csv",
+      "license": "CC0-1.0",
+      "credit": "Dryad version 7",
+      "url": "https://doi.org/10.5061/dryad.xd2547drh",
+      "source_bytes": 1108,
+      "source_sha256": "25680dd65cdadbddf997b6913e06c2a0ed8c9d54f92080a4c793b93e1b91ca36",
+      "disposition": "eligible_with_source_notice"
+    },
+    {
+      "source": "research/protein_modeling/raw/2DN1.cif",
+      "license": "CC0-1.0",
+      "credit": "PDB depositors / RCSB PDB",
+      "url": "https://files.rcsb.org/download/2DN1.cif",
+      "source_bytes": 533746,
+      "source_sha256": "cd114c21d276ad69d7e0b667e0edae1161e089c25c04bcfe7468e4102e484bc9",
+      "disposition": "eligible_with_source_notice"
+    },
+    {
+      "source": "research/protein_modeling/raw/2DN2.cif",
+      "license": "CC0-1.0",
+      "credit": "PDB depositors / RCSB PDB",
+      "url": "https://files.rcsb.org/download/2DN2.cif",
+      "source_bytes": 937733,
+      "source_sha256": "b228200cbc09d0cfa6c147d49ded52917cb028d177e6780544e8028c0d5bc6ca",
+      "disposition": "eligible_with_source_notice"
+    },
+    {
+      "source": "research/protein_modeling/raw/2DN1_entry.json",
+      "license": "CC0-1.0",
+      "credit": "RCSB entry metadata",
+      "url": "https://data.rcsb.org/rest/v1/core/entry/2DN1",
+      "source_bytes": 15001,
+      "source_sha256": "d9f0b797b1df6f4c38616a5377652ff12562d75dc6cf970adae3b9543d190340",
+      "disposition": "eligible_with_source_notice"
+    },
+    {
+      "source": "research/protein_modeling/raw/2DN2_entry.json",
+      "license": "CC0-1.0",
+      "credit": "RCSB entry metadata",
+      "url": "https://data.rcsb.org/rest/v1/core/entry/2DN2",
+      "source_bytes": 14975,
+      "source_sha256": "3f17e61cd5c517f7c5e650e974f267a8bb1b934b86387bf177972610beba0d2c",
+      "disposition": "eligible_with_source_notice"
+    },
+    {
+      "source": "research/protein_modeling/human_alpha_141.fasta",
+      "license": "CC0-1.0",
+      "credit": "PDB entity-derived sequence; local FASTA formatting",
+      "url": "https://www.rcsb.org/structure/2DN1",
+      "source_bytes": 171,
+      "source_sha256": "980a28a6fe3b44bfe159aba9a7dc02877fe35361d468734a614652267cc12abe",
+      "disposition": "eligible_with_source_notice"
+    },
+    {
+      "source": "research/protein_modeling/public_hemoglobin_sequences.fasta",
+      "license": "CC0-1.0",
+      "credit": "PDB entity-derived sequences; local FASTA formatting",
+      "url": "https://www.rcsb.org/structure/2DN1",
+      "source_bytes": 352,
+      "source_sha256": "f74ffd1a5e2177da285738c97ea6738750f572afe53e56199a05674458231578",
+      "disposition": "eligible_with_source_notice"
+    },
+    {
+      "source": "research/protein_modeling/hb_fold2/submitted_public_query.fasta",
+      "license": "CC0-1.0",
+      "credit": "PDB entity-derived sequence; local FASTA formatting",
+      "url": "https://www.rcsb.org/structure/2DN1",
+      "source_bytes": 149,
+      "source_sha256": "2b2edb2a6d324d4ec179257c96e3f7773b34adad98b444073ff8b00aa9a212a9",
+      "disposition": "eligible_with_source_notice"
+    },
+    {
+      "source": "research/protein_modeling/raw/P69905.json",
+      "license": "CC-BY-4.0",
+      "credit": "UniProt Consortium; unchanged accession snapshot",
+      "url": "https://rest.uniprot.org/uniprotkb/P69905.json",
+      "source_bytes": 271287,
+      "source_sha256": "7bd75c3a8e28a4a7c61c20a9efda889ca37c113ed2829b34c732d3ac1f98bcc8",
+      "disposition": "eligible_with_source_notice"
+    }
+  ],
+  "legacy_parameter_notice": {
+    "source": "research/protein_modeling/colabfold_data/params/LICENSE",
+    "sha256": "e66c269d4819aaab34b49ef5220c4ddab6756f21bb5180761a4eb8561f2b7bbd",
+    "bytes": 20850,
+    "license_heading": "Attribution-NonCommercial-ShareAlike 4.0 International",
+    "disposition": "weights and this vendor archive excluded; source discrepancy disclosed separately"
+  },
+  "notices_file": "SOURCE_RIGHTS.txt"
+}

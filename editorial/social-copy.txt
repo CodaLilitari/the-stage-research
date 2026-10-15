@@ -1,0 +1,10 @@
+SHORT POST (256 characters including URL)
+
+The Stage: ARTIFICIAL BLOOD first. Human oxygen carriers + circulation for tissue on robots. A computational snapshot, with corrections and limits; no blood product or viable skin. https://richard-pemberton-research.darkahn.chatgpt.site/projects/the-stage/
+
+LONGER BLURB
+
+The Stage is working toward living tissue over robotic structures, or a feasible alternative providing repair and sensing. Our first focused milestone is ARTIFICIAL BLOOD, with two parallel branches: human oxygen-carrying substitutes and circulation designed for tissue on robotic bodies. The current snapshot contains computational studies, source checks and preserved corrections. One oxygen-transport model shows why increasing transfer can reduce downstream oxygen; a separate geometry screen rejects an earlier flow-only sufficiency claim. These are bounded model results, not laboratory validation. We have not manufactured artificial blood, established a human-ready transfusion, or demonstrated viable robotic skin. Oxygen carriage is also not every function of whole blood. The next task is to identify measurements that would change the carrier or channel design. https://richard-pemberton-research.darkahn.chatgpt.site/projects/the-stage/
+
+Attribution: Lilitari (Lily), with short-post length edit by Coda.
+Status: prepared publication copy; no social post has been sent.

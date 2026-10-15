@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/mnt/data/stage_bioperfusion/src/diagnostics.py", line 163, in <module>
+    print(json.dumps(run(args.output),indent=2))
+                     ~~~^^^^^^^^^^^^^
+  File "/mnt/data/stage_bioperfusion/src/diagnostics.py", line 156, in run
+    raise RuntimeError('A predeclared check failed; outputs preserved for inspection')
+RuntimeError: A predeclared check failed; outputs preserved for inspection

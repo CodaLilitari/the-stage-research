@@ -1,0 +1,12 @@
+{
+  "split": "development",
+  "profile": "primary",
+  "scheduled_runs": 128,
+  "started": 128,
+  "completed": 128,
+  "failures": [],
+  "source_sha256": "2306148b46490fae74dc49fc31e1161f76e64bf902d836276c2dfd9565645515",
+  "protocol_sha256": "d3224dbb752eba3368c0a1569eb733d7a59fb9a3bf1929fdbb1810f9ae9cf382",
+  "fixture_file_sha256": "0f6c16d9484dda964cb6e1c414603ee6ef306b4adb03cc82e494c5373117fc91",
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]"
+}

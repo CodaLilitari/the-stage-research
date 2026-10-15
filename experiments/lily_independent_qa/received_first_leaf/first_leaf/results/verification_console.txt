@@ -1,0 +1,28 @@
+Verified 32 seeds
+Verified 64 seeds
+Verified 96 seeds
+Verified 128 seeds
+Verified 160 seeds
+Verified 192 seeds
+Verified 224 seeds
+Verified 256 seeds
+{
+  "replay_seed_pairs": 256,
+  "identical_learner_state_comparisons": 124416,
+  "checkpoint_seed_pairs": 256,
+  "full_state_exact_pairs": 256,
+  "exact_continuation_steps_per_pair": 49,
+  "separate_process_witness_identical": true,
+  "separate_process_trace_sha256": "08efe3a16d6f4c5ed90e0072c9850ec41efc57e96fc7452f990a5f3c7789ef53",
+  "cold_controller_reset_minus_full_state_distance": {
+    "mean": 0.018725906405694367,
+    "ci95": [
+      0.016713336075756768,
+      0.020940537647559113
+    ],
+    "n_seeds": 256
+  },
+  "cold_controller_mean_action_disagreements_of49": 8.6875,
+  "cold_controller_reset_does_not_replay_history": true,
+  "all_restoration_tests_same_python_runtime_platform": true
+}

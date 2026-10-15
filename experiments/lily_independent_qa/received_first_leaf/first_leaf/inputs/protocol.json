@@ -1,0 +1,42 @@
+{
+  "protocol_id": "STAGE-FL1-R-20261015-r1",
+  "author": "Lilitari",
+  "scope": "Private synthetic local simulation. Algorithm baselines only. No hosted-model calls, private archive loading, physical actuation, or biological work.",
+  "question": "After an unannounced actuator remapping, does a revisable short-window body model reduce early tracking error versus a cumulative estimator without materially harming stable-body tracking?",
+  "freeze_status": "Written before development and evaluation execution; local hash commitment only, not externally witnessed preregistration.",
+  "development_seeds": {"first": 100, "count": 16},
+  "evaluation_seeds": {"first": 10000, "count": 256},
+  "episodes": 6,
+  "steps_per_episode": 80,
+  "body_schedule": ["A", "A", "A", "B", "B", "A"],
+  "dynamics": {"dt": 0.1, "alpha": 0.75, "gain_A": 0.3, "gain_B_x": 0.21, "gain_B_y": 0.39},
+  "observations": {"position_noise_scale": 0.01, "velocity_noise_scale": 0.03, "delay_ticks": 2, "distribution": "bounded uniform independent per coordinate and sample; common keyed draws across algorithms"},
+  "action_space": ["k0", "k1", "k2", "k3", "coast"],
+  "target_radius": 1.0,
+  "window_length": 24,
+  "initial_probe_steps": 12,
+  "periodic_probe_interval": 7,
+  "controller": {"kp": 2.0, "max_desired_speed": 0.8},
+  "algorithms": ["oracle", "cumulative", "window", "episode_reset", "frozen", "no_information", "misaligned", "shuffled"],
+  "profiles": {
+    "primary": {"delay": 2, "noise": true, "change": true},
+    "no_delay": {"delay": 0, "noise": true, "change": true},
+    "clean": {"delay": 0, "noise": false, "change": true},
+    "stationary": {"delay": 2, "noise": true, "change": false}
+  },
+  "primary_metric": "Mean true distance to target over the first 32 executed steps of episode 3 (zero-indexed), normalized by initial target distance of 1.0.",
+  "primary_contrast": "paired cumulative minus window, positive favors revisable window",
+  "design_rule": {
+    "minimum_mean_early_gain": 0.1,
+    "paired_95_percent_interval_lower_bound_must_exceed": 0.0,
+    "maximum_stable_penalty": 0.05,
+    "stable_comparison": "window minus cumulative on mean distance in episodes 1 and 2; upper 95 percent bound <= 0.05"
+  },
+  "secondary_metrics": ["mean distance by phase", "mean squared next-velocity prediction error", "final distance", "fraction of final distances <= 0.15", "mean four-actuator body-model error", "recovery to body-model error <= 0.08 for eight consecutive ticks"],
+  "inference": {"unit": "independent synthetic seed, paired across algorithms", "interval": "paired nonparametric percentile bootstrap", "resamples": 5000, "bootstrap_seed": 20261015, "secondary_intervals": "exploratory, no familywise-error claim"},
+  "negative_controls": ["no_information: body model stays zero", "shuffled: each learning target paired with an independently sampled unrelated action label"],
+  "ablations": ["episode_reset: window model cleared at each episode", "frozen: cumulative model frozen after first episode", "misaligned: transition target paired with most recent executed command instead of its source timestamp", "no_delay", "clean", "stationary"],
+  "verification": ["exact learning-state equality for active donor and matched replay under identical aligned evidence", "JSON checkpoint restores environment, controller, receipt history, sample timing and deterministic continuation", "records-only recovery discards learned numerical state and is measured separately", "same seed reproduces all transitions", "invalid, stale, duplicate and stop requests checked in separate interface tests"],
+  "exclusions": "None by performance; every scheduled seed/algorithm/profile must produce an outcome or an explicit technical failure. A technical defect invalidates the affected version; repairs require a deviation record.",
+  "limitations_planned": ["Known damping and functional form", "No actual morphological degrees-of-freedom change", "No camera perception, contact, physical safety certification or subjective-experience measure", "Fixed probing schedule is not an experiment on optimal exploration", "Single-author local execution is not independent replication"]
+}

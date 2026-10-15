@@ -1,0 +1,305 @@
+{
+  "V1_pf0_discrete_mimic": {
+    "max_abs_minimum_difference_mol_m3": 6.851932216056511e-11,
+    "max_abs_outlet_difference_mol_m3": 3.077599286527288e-11,
+    "max_mass_balance_error": 1.8170886145799008e-08,
+    "max_rel_uptake_difference": 1.903142919567337e-09,
+    "reproduces_pf0": true,
+    "seconds": 1.2165219839999963
+  },
+  "V2_continuum_vs_pf0": {
+    "classification_flips": [],
+    "continuum_above_threshold_by_beta": {
+      "1.0": 16,
+      "16.0": 20,
+      "4.0": 19
+    },
+    "continuum_cases_above_threshold": 55,
+    "max_abs_minimum_difference_over_inlet": 0.002901495124768335,
+    "max_abs_outlet_difference_over_inlet": 0.008639389732502788,
+    "max_rel_minimum_difference": 0.1778474185470671,
+    "max_rel_uptake_difference": 0.009948037054204998,
+    "pf0_cases_above_threshold": 55,
+    "pf0_minimum_exceeds_continuum_cases": 144,
+    "sign_note": "PF0's cell-centre minimum and backward-Euler axial depletion both bias its minima upward"
+  },
+  "channel_geometry": {
+    "assumed_slit_height_m": 0.0001,
+    "graetz_Qh_over_WLD_at_PF0_flows_D2e-9": {
+      "0.5": 0.4166666666666667,
+      "2": 1.6666666666666667,
+      "32": 26.666666666666668,
+      "8": 6.666666666666667
+    },
+    "pressure_drop_Pa_at_PF0_flows": {
+      "0.5": 0.07470651013874063,
+      "2": 0.29882604055496254,
+      "32": 4.781216648879401,
+      "8": 1.1953041622198501
+    },
+    "resistance_Pa_s_m3": 8964781216.648876,
+    "viscosity_Pa_s": 0.0007
+  },
+  "check_count": 11,
+  "check_pass_count": 11,
+  "checks": {
+    "V1_mimic_reproduces_pf0_minima_and_outlets_1e-9": true,
+    "V2_continuum_close_to_pf0_within_1pct_of_inlet": true,
+    "V2_no_threshold_classification_flips": true,
+    "continuum_refinement_below_1e-8_of_inlet": true,
+    "dilute_first_order_closed_form_1e-6": true,
+    "fixed_lumen_ceiling_matches_pf0_96cell_within_0.5pct": true,
+    "inputs_match_pf0_manifest": true,
+    "necessary_bounds_consistent": true,
+    "pf0_low_flow_wall_reversals_preserved_in_continuum": true,
+    "pf0_outputs_depend_only_on_Qbeta_1e-12": true,
+    "zero_order_closed_form_1e-5": true
+  },
+  "continuum_refinement_max_change_over_inlet": 2.0570575798295465e-09,
+  "continuum_wall_nonmonotone_groups": [
+    {
+      "beta": 1.0,
+      "depth_um": 200.0,
+      "flow_uL_min": 0.5,
+      "minima_by_P_mm_s": {
+        "0.005": 0.0008825309167590297,
+        "0.05": 0.0009040333781383006,
+        "0.2": 0.000646666933943327
+      }
+    },
+    {
+      "beta": 1.0,
+      "depth_um": 400.0,
+      "flow_uL_min": 0.5,
+      "minima_by_P_mm_s": {
+        "0.005": 1.9925012580744714e-05,
+        "0.05": 1.992047505198982e-05,
+        "0.2": 1.3778451219859763e-05
+      }
+    }
+  ],
+  "dilute_first_order_max_rel_error": 5.269951778540152e-10,
+  "elapsed_seconds": 14.537800340000047,
+  "film_inputs": {
+    "D_fluid_m2_s": [
+      2e-09,
+      3e-09
+    ],
+    "P_wall_m_s": [
+      5e-06,
+      5e-05,
+      0.0001,
+      0.0002
+    ],
+    "slit_Sh_dh": {
+      "one wall, constant concentration": 4.86,
+      "one wall, constant flux": 5.385
+    },
+    "slit_heights_m": [
+      2.5e-05,
+      5e-05,
+      0.0001,
+      0.0002
+    ],
+    "slit_viscosity_Pa_s": 0.0007,
+    "tube_Sh_d": {
+      "constant concentration": 3.66,
+      "constant flux": 4.36
+    },
+    "tube_diameters_m": [
+      0.0001
+    ]
+  },
+  "finished_at_utc": "2026-10-15T15:14:36.932259+00:00",
+  "fixed_lumen_vs_pf0_diagnostic": [
+    {
+      "P_mm_s": 0.005,
+      "continuum_ceiling": 0.0018550656335206326,
+      "continuum_low_flow_minimum": 0.0008825309167590297,
+      "depth_um": 200.0,
+      "pf0_96cell_fixed_lumen_minimum": 0.0018555976514212347,
+      "pf0_refined_48x128_minimum": 0.0008849279620594296,
+      "rel_difference": 0.00028679195549132945
+    },
+    {
+      "P_mm_s": 0.05,
+      "continuum_ceiling": 0.027966324216283894,
+      "continuum_low_flow_minimum": 0.0009040333781383006,
+      "depth_um": 200.0,
+      "pf0_96cell_fixed_lumen_minimum": 0.02796805680633625,
+      "pf0_refined_48x128_minimum": 0.0009220819443053644,
+      "rel_difference": 6.195272710691753e-05
+    },
+    {
+      "P_mm_s": 0.2,
+      "continuum_ceiling": 0.046648333193502936,
+      "continuum_low_flow_minimum": 0.000646666933943327,
+      "depth_um": 200.0,
+      "pf0_96cell_fixed_lumen_minimum": 0.046649708082197004,
+      "pf0_refined_48x128_minimum": 0.0006676448800864092,
+      "rel_difference": 2.9473479542451173e-05
+    },
+    {
+      "P_mm_s": 0.005,
+      "continuum_ceiling": 4.141733777938922e-05,
+      "continuum_low_flow_minimum": 1.9925012580744714e-05,
+      "depth_um": 400.0,
+      "pf0_96cell_fixed_lumen_minimum": 4.1505965974574774e-05,
+      "pf0_refined_48x128_minimum": 2.0138907646119216e-05,
+      "rel_difference": 0.0021398815070546376
+    },
+    {
+      "P_mm_s": 0.05,
+      "continuum_ceiling": 0.0005290410104897309,
+      "continuum_low_flow_minimum": 1.992047505198982e-05,
+      "depth_um": 400.0,
+      "pf0_96cell_fixed_lumen_minimum": 0.0005297750648751049,
+      "pf0_refined_48x128_minimum": 2.0494540392993947e-05,
+      "rel_difference": 0.0013875188705965737
+    },
+    {
+      "P_mm_s": 0.2,
+      "continuum_ceiling": 0.0008721277063492834,
+      "continuum_low_flow_minimum": 1.3778451219859763e-05,
+      "depth_um": 400.0,
+      "pf0_96cell_fixed_lumen_minimum": 0.0008732164664676643,
+      "pf0_refined_48x128_minimum": 1.4375421024683023e-05,
+      "rel_difference": 0.0012483952871287943
+    }
+  ],
+  "highest_qbeta_vs_ceiling": {
+    "max_gap_ceiling_minus_pf0_minimum_over_inlet": 0.0009486145158700554,
+    "max_qbeta_uL_min": 512.0,
+    "min_gap_ceiling_minus_pf0_minimum_over_inlet": -6.83217966447109e-05
+  },
+  "inputs_match_pf0_manifest": true,
+  "inputs_read_only_sha256": {
+    "cases.csv": "4d4a6566db533646e3689e0dd02d9f053ba4c2bdf20ab3feac3401fd35493810",
+    "freeze.json": "c33ecda11c7d434e0fddaaec88ea9b2a657c18695115a2bd21830ffdaeea93bc",
+    "monotonicity_diagnostic.json": "1325f9d77583305f74fd4bf851ebf260cbfcb152484f96dfb1a8ee21f8aa531f",
+    "pf0.py": "f3fe9e427f5ce6b636248a9832dba74d4549daf16d7988718c263ea7d1084aba",
+    "results.json": "bf78fdc6f6f9ec97cbd4d921fd95d791653a41cb50ae7c0b4598cc77c3678bee"
+  },
+  "necessary_bound_consistency": {
+    "continuum_pass_without_both_necessary_bounds": 0,
+    "local_bound_fails_but_ceiling_passes": 0,
+    "local_bound_passes_but_ceiling_fails": 12,
+    "zero_order_conservative_minimum_exceeds_ceiling": 0
+  },
+  "numerics": {
+    "qbeta_set_uL_min": [
+      0.5,
+      2,
+      8,
+      32,
+      128,
+      512
+    ],
+    "refine_rk4_steps": 2000,
+    "refine_s_grid_points": 4001,
+    "refine_subset": "depths 50 and 400 um x P 0.005 and 0.2 mm/s",
+    "rk4_steps": 1000,
+    "s_grid_points": 2001,
+    "wall_scan_P_max_m_s": 0.01,
+    "wall_scan_P_min_m_s": 1e-06,
+    "wall_scan_points": 13,
+    "wall_scan_rk4_steps": 400,
+    "wall_scan_s_grid_points": 801
+  },
+  "numpy_version": "2.2.6",
+  "outputs_sha256": {
+    "lumen_film_groups.csv": "95fba3525a45e0a17327c10a1f318b255932964925fe7bfce646c35df7889260",
+    "pf0_crosscheck_cases.csv": "e43d90c22fcea2aa90bae7541f55d74bbeed1699c9960850a5e45d10774f89b6",
+    "pf0_wall_optimum.csv": "523826d998f4f213b714ef24c74fc88ab900d99c5990d270f3fad9702a170476"
+  },
+  "parameters_used": {
+    "Cin": 0.2,
+    "D": 2e-09,
+    "Km": 0.028,
+    "L": 0.001,
+    "W": 0.001,
+    "provenance": "Bonart et al. 2026 illustrative liver-like high-demand case; not measured skin physiology.",
+    "q": 0.02,
+    "threshold_reference": 0.05
+  },
+  "pf0_qbeta_degeneracy_max_abs": 0.0,
+  "pf0_reported_monotonic_failures": [
+    {
+      "axis": 2,
+      "group": [
+        200.0,
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "axis": 2,
+      "group": [
+        400.0,
+        0.5,
+        1.0
+      ]
+    }
+  ],
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "python_version": "3.10.12",
+  "richardson_from_pf0_grids": [
+    {
+      "P_mm_s": 0.005,
+      "continuum": 0.0008825309167590297,
+      "depth_um": 200.0,
+      "pf0_24x32": 0.0008921095028069476,
+      "pf0_48x128": 0.0008849279620594296,
+      "richardson_estimate": 0.0008825341151435902,
+      "richardson_rel_gap": 3.6241048328460753e-06
+    },
+    {
+      "P_mm_s": 0.05,
+      "continuum": 0.0009040333781383006,
+      "depth_um": 200.0,
+      "pf0_24x32": 0.000976497140230938,
+      "pf0_48x128": 0.0009220819443053644,
+      "richardson_estimate": 0.0009039435456635066,
+      "richardson_rel_gap": 9.936853767384843e-05
+    },
+    {
+      "P_mm_s": 0.2,
+      "continuum": 0.000646666933943327,
+      "depth_um": 200.0,
+      "pf0_24x32": 0.0007313649506176923,
+      "pf0_48x128": 0.0006676448800864092,
+      "richardson_estimate": 0.0006464048565759815,
+      "richardson_rel_gap": 0.0004052741118946216
+    },
+    {
+      "P_mm_s": 0.005,
+      "continuum": 1.9925012580744714e-05,
+      "depth_um": 400.0,
+      "pf0_24x32": 2.078727976863572e-05,
+      "pf0_48x128": 2.0138907646119216e-05,
+      "richardson_estimate": 1.992278360528038e-05,
+      "richardson_rel_gap": 0.00011186820862973257
+    },
+    {
+      "P_mm_s": 0.05,
+      "continuum": 1.992047505198982e-05,
+      "depth_um": 400.0,
+      "pf0_24x32": 2.2259330043678146e-05,
+      "pf0_48x128": 2.0494540392993947e-05,
+      "richardson_estimate": 1.9906277176099213e-05,
+      "richardson_rel_gap": 0.0007127277764989084
+    },
+    {
+      "P_mm_s": 0.2,
+      "continuum": 1.3778451219859763e-05,
+      "depth_um": 400.0,
+      "pf0_24x32": 1.622891320088851e-05,
+      "pf0_48x128": 1.4375421024683023e-05,
+      "richardson_estimate": 1.3757590299281195e-05,
+      "richardson_rel_gap": 0.0015140250704302055
+    }
+  ],
+  "run_type": "PF0 continuum cross-check and dimensionless analysis (cowork_local, Red)",
+  "started_at_utc": "2026-10-15T15:14:22.394459+00:00",
+  "zero_order_max_rel_error": 2.0631006026368486e-06
+}

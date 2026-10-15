@@ -1,0 +1,12 @@
+{
+  "config_sha256": "36f07ae479fe69ba47adc6ff868ea3c04225571b0188c713d601d87e602882e2",
+  "development_cases": 16,
+  "frozen_at_utc_local_clock": "2026-10-15T13:23:06.601799+00:00",
+  "independent_timestamp": false,
+  "key_sha256": "625db1239ed3d7cfbe9114ca3bc7c343a953ec7672b9dfbc579a411359b62c77",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "source_sha256": "9dd6e98b6299b885acf175b266cf2c51b2e2b9ad9304adc212dd159eec5ba614",
+  "status": "before benchmark run",
+  "test_cases": 64,
+  "test_cases_disjoint_from_development": true
+}

@@ -1,0 +1,27 @@
+{
+  "frozen_utc": "2026-10-15T14:10:16.161860+00:00",
+  "sha256": {
+    "analyze.py": "137d0bc56e2f2c2aaa3d9960b645a2ace1f6a0ea7e77b36cc2bebff900f1602f",
+    "source_extraction.txt": "6202103ac5e9b972b9f4b1777d90be9f8e09de34cbfb9f2347397f57f29d0ab2",
+    "data_receipt.json": "bda057eaf05f106ad036ce411dbab54fd0ac604021100207b1c71b208f4f0dc3",
+    "data\\3A.csv": "6fa0200eb1079b42f641ca69311923f6d4c0bf66cccdc878f259586272afd75f",
+    "data\\3B.csv": "25680dd65cdadbddf997b6913e06c2a0ed8c9d54f92080a4c793b93e1b91ca36"
+  },
+  "questions": [
+    "Reproduce 3A descriptive summaries without inventing sample independence or pairing.",
+    "Summarize 3B force and within-actuator force/count-one ratios across three samples.",
+    "Compare normalized force with count-proportional reference, with no fitted scaling law or extrapolation."
+  ],
+  "sample_unit": "3B: actuator, n=3; counts are repeated within actuator. 3A: unlabeled observations only.",
+  "checks": [
+    "3A 15 numeric rows/condition",
+    "3B exactly 3 samples with counts 1..8",
+    "3B relative-force formula within 5e-8",
+    "3B duplicate block agrees within 5e-8",
+    "3A printed means agree within 1e-8",
+    "3A printed SD matches either ddof0 or ddof1 within 1e-8"
+  ],
+  "no_inference": [
+    "No p-value, confidence interval, donor generalization, oxygen causal claim, biological replication, or extrapolation above eight tissues."
+  ]
+}

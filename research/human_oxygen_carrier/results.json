@@ -1,0 +1,29 @@
+{
+  "analytic_optimum_cases": 36,
+  "checks_passed": 11973,
+  "checks_total": 11973,
+  "csv_sha256": "12b65860eba628478db8efc8a014f76919873ba0ff2024a903f54270045ad38a",
+  "illustrative_case": {
+    "analytic_optimum_P50_mmHg": 44.721359549995796,
+    "capacity_0_5_difference": 0.39777481350579164,
+    "capacity_1_difference": 0.7955496270115833,
+    "capacity_2_difference": 1.5910992540231665,
+    "hill_n": 2.7,
+    "load_pressure_mmHg": 100.0,
+    "max_delta_saturation": 0.7955496270115833,
+    "unload_pressure_mmHg": 20.0
+  },
+  "interpretation": "For fixed pressures and one unchanged Hill curve, equilibrium unloading has an interior affinity optimum; relative capacity scales the content difference linearly by assumption.",
+  "not_established": [
+    "Clinical safety or benefit",
+    "NMU-HbV binding parameters",
+    "Tissue oxygen-delivery rate",
+    "Perfused tissue viability",
+    "Superiority of any product"
+  ],
+  "protocol": "HC0-v1",
+  "rows": 10368,
+  "source_sha256": "8d45e5e8b4f2145a6da3ab56f44ecd1ffde056987f8551eeea25fefad57932c3",
+  "status": "executed theoretical sensitivity calculation",
+  "unique_pressure_affinity_cooperativity_cases": 3456
+}

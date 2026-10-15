@@ -1,0 +1,205 @@
+{
+  "scope": "Independent bounded HB-STRUCT0 coordinate QA only; no fold/inference/runtime-install QA",
+  "executed_utc": "2026-10-15T14:13:18.638028+00:00",
+  "source_sha256": "fbb8a4612eac06139ca5e73529ad7cd6861fb1b0fede6ab3ea7e63458ddeaddc",
+  "qa_source_sha256": "ff16d16d45ac924a8f775c0756733be357987058606df21194a3d0860efe1621",
+  "saved_results_sha256": "4fc0f55616c6152a7559a6dbc009088d1455b1bf1b15744ca149dd5066c68fa6",
+  "input_sha256": {
+    "2DN1.cif": "cd114c21d276ad69d7e0b667e0edae1161e089c25c04bcfe7468e4102e484bc9",
+    "2DN2.cif": "b228200cbc09d0cfa6c147d49ded52917cb028d177e6780544e8028c0d5bc6ca",
+    "2DN1_entry.json": "d9f0b797b1df6f4c38616a5377652ff12562d75dc6cf970adae3b9543d190340",
+    "2DN2_entry.json": "3f17e61cd5c517f7c5e650e974f267a8bb1b934b86387bf177972610beba0d2c"
+  },
+  "methods": "Separate direct mmCIF table parser, float64 coordinates, Horn quaternion eigenvalue fit, covariance eigenvector four-N plane; no producer or Biopython imports. NumPy remains shared library family.",
+  "comparison_tolerance_A": 1e-05,
+  "tolerance_reason": "Producer Biopython stores coordinates as float32; independent parser uses float64 from deposited decimals.",
+  "checks": {
+    "acquisition_four_hashes": true,
+    "analysis_artifact_manifest_hashes": true,
+    "one_model_no_altloc_or_insertion": true,
+    "atom_keys_unique": true,
+    "asymmetric_unit_counts": true,
+    "assembly_caveat_supported": true,
+    "1140_matched_residue_pairs_identical": true,
+    "six_independent_quaternion_rmsds": true,
+    "six_heme_four_N_eigenplane_and_His_distances": true,
+    "nine_independent_deposited_contacts": true,
+    "independent_fit_controls": true
+  },
+  "passed": 11,
+  "total": 11,
+  "all_passed": true,
+  "counts": {
+    "2DN1": {
+      "A": 140,
+      "B": 145
+    },
+    "2DN2": {
+      "A": 141,
+      "B": 146,
+      "C": 141,
+      "D": 146
+    }
+  },
+  "assembly_metadata": {
+    "2DN1": {
+      "oligomeric_count": "4",
+      "operators": "1,2"
+    },
+    "2DN2": {
+      "oligomeric_count": "4",
+      "operators": "1"
+    }
+  },
+  "independent_fits": [
+    {
+      "fit": "oxyA_deoxyA",
+      "matched_CA": 140,
+      "rmsd_A": 0.6067562833332159,
+      "difference_from_saved_A": 1.3379668051261007e-07
+    },
+    {
+      "fit": "oxyA_deoxyC",
+      "matched_CA": 140,
+      "rmsd_A": 0.5387797103459241,
+      "difference_from_saved_A": 1.2828055739877442e-07
+    },
+    {
+      "fit": "oxyB_deoxyB",
+      "matched_CA": 145,
+      "rmsd_A": 0.8447963422850217,
+      "difference_from_saved_A": -1.3114777996925397e-07
+    },
+    {
+      "fit": "oxyB_deoxyD",
+      "matched_CA": 145,
+      "rmsd_A": 0.8412143441252663,
+      "difference_from_saved_A": -2.4080236804557842e-08
+    },
+    {
+      "fit": "oxyAB_deoxyAB_joint_dimer",
+      "matched_CA": 285,
+      "rmsd_A": 0.9279299071368513,
+      "difference_from_saved_A": 7.160911152936933e-08
+    },
+    {
+      "fit": "oxyAB_deoxyCD_joint_dimer",
+      "matched_CA": 285,
+      "rmsd_A": 0.8938488261297999,
+      "difference_from_saved_A": 8.877473034463179e-08
+    }
+  ],
+  "independent_geometry": [
+    {
+      "entry": "2DN1",
+      "chain": "A",
+      "independent_plane_offset_A": 0.04501154400698641,
+      "offset_error_A": -9.983868175592048e-07,
+      "independent_His_distance_A": 2.0708911125406826,
+      "His_error_A": 2.277166093911376e-06
+    },
+    {
+      "entry": "2DN1",
+      "chain": "B",
+      "independent_plane_offset_A": 0.026259939216095096,
+      "offset_error_A": 1.2991420650504404e-06,
+      "independent_His_distance_A": 2.063459473796375,
+      "His_error_A": -5.781846112995481e-09
+    },
+    {
+      "entry": "2DN2",
+      "chain": "A",
+      "independent_plane_offset_A": 0.3879936557677657,
+      "offset_error_A": -4.0821946156732736e-07,
+      "independent_His_distance_A": 2.1955029036646696,
+      "His_error_A": -8.434684612979026e-07
+    },
+    {
+      "entry": "2DN2",
+      "chain": "B",
+      "independent_plane_offset_A": 0.34916861854044445,
+      "offset_error_A": 1.0359625686739982e-06,
+      "independent_His_distance_A": 2.194170458282581,
+      "His_error_A": -7.596711917301491e-07
+    },
+    {
+      "entry": "2DN2",
+      "chain": "C",
+      "independent_plane_offset_A": 0.31014570337345976,
+      "offset_error_A": -6.972012470130018e-07,
+      "independent_His_distance_A": 2.2052076999684176,
+      "His_error_A": -5.258704787181046e-07
+    },
+    {
+      "entry": "2DN2",
+      "chain": "D",
+      "independent_plane_offset_A": 0.3213502760935842,
+      "offset_error_A": 9.626151026287388e-08,
+      "independent_His_distance_A": 2.1624324266899064,
+      "His_error_A": -7.590702111315295e-08
+    }
+  ],
+  "independent_contacts": [
+    {
+      "entry": "2DN1",
+      "id": "metalc1",
+      "distance_A": 2.0708911125406826,
+      "deposited_error_A": -0.00010888745931758592
+    },
+    {
+      "entry": "2DN1",
+      "id": "metalc2",
+      "distance_A": 1.8169661526841927,
+      "deposited_error_A": -3.384731580724498e-05
+    },
+    {
+      "entry": "2DN1",
+      "id": "metalc3",
+      "distance_A": 2.7115893863193965,
+      "deposited_error_A": -0.00041061368060368864
+    },
+    {
+      "entry": "2DN1",
+      "id": "metalc4",
+      "distance_A": 2.063459473796375,
+      "deposited_error_A": 0.00045947379637478747
+    },
+    {
+      "entry": "2DN1",
+      "id": "metalc5",
+      "distance_A": 1.7753027910753651,
+      "deposited_error_A": 0.0003027910753652385
+    },
+    {
+      "entry": "2DN2",
+      "id": "metalc1",
+      "distance_A": 2.1955029036646696,
+      "deposited_error_A": -0.0004970963353305713
+    },
+    {
+      "entry": "2DN2",
+      "id": "metalc2",
+      "distance_A": 2.194170458282581,
+      "deposited_error_A": 0.0001704582825809986
+    },
+    {
+      "entry": "2DN2",
+      "id": "metalc3",
+      "distance_A": 2.2052076999684176,
+      "deposited_error_A": 0.00020769996841751848
+    },
+    {
+      "entry": "2DN2",
+      "id": "metalc4",
+      "distance_A": 2.1624324266899064,
+      "deposited_error_A": 0.00043242668990650657
+    }
+  ],
+  "limitations": [
+    "No electron-density re-refinement or experimental replication.",
+    "Common author numbering and residue identities verified for this specific entry pair; no generic aligner validation.",
+    "Asymmetric units compared, not symmetry-completed tetramer transitions.",
+    "Geometry cannot establish oxygen affinity, therapeutic safety or tissue delivery.",
+    "No active folding installation or outputs inspected."
+  ]
+}

@@ -1,0 +1,73 @@
+THE STAGE — RELATED PROJECTS AND TRANSFERABLE FINDINGS
+Survey date: 2026-10-15. Prepared by Coda for Richard Pemberton.
+
+This is a bounded primary-source survey of seven related projects, not a claim that any team has assembled the complete proposed body. The scope includes unusual approaches because they can reveal useful mechanisms. The entries distinguish published experiments, company descriptions, and our proposed design changes. No external code was executed, videos were not independently assessed, no researchers were contacted, and no independent biological replication was performed.
+
+Evidence labels: P = peer-reviewed experimental report, read to the stated depth; C = company description or company-linked demonstration; A = artifact availability verified at the listed route. These labels describe provenance, not a numerical quality score. Source IDs resolve in sources.json.
+
+1. CLONE ROBOTICS — MYOFIBER / CLONE HAND / ANDROID FAMILY
+Sources/date: C01–C04; current company pages accessed 2026-10-15, with a hand demonstration explicitly labeled 2023. The historical Protoclone V1 launch date and widely repeated counts of muscles/sensors were not independently established from a primary launch record in this bounded pass.
+Exact evidence: The company describes anatomically attached artificial musculotendon units and lists teleoperation, range-of-motion, and ball-manipulation demonstrations. Its Android vascular-tab content specifies a 500 W pump, 40 SLPM flow, 100 psi rating and miniaturized Aquajet valves. These are company specifications, not audited operating curves. The site's fluid-flow unit is retained as written; it is not silently converted into a validated liquid flow measurement.
+Artifacts/code: Product pages, named video presentations and public page code inspected; Research page presently says its content is forthcoming. No benchmark dataset, actuator CAD release or replication package was established here. Video existence/description is not video verification.
+Transfer: Anatomical tendon routing and distributed fluid actuation are credible architecture candidates worth modeling.
+Proposed change: Add an antagonistic, compliant actuator branch to the embodiment model, with explicit pressure/flow state, tendon geometry, and a calibration interface. Treat every numeric Clone specification as an uncalibrated hypothesis until an operating curve is available.
+Limits/evidence: C+A. Artificial Myofiber is not living muscle; vascular terminology does not establish oxygen transport, tissue compatibility or autonomous walking. “Human-level” marketing is not a test result.
+
+2. CORNELL / PENN — ELECTROLYTIC VASCULAR SOFT FISH
+Sources/date: C05–C06; Aubin et al., Nature, published 2019-06-19, DOI 10.1038/s41586-019-1313-1.
+Exact evidence: An untethered aquatic soft robot integrated electrochemical energy storage with hydraulic force transmission and fin actuation. The university account describes onboard pumps/electronics powered by the flow-battery system. This demonstrates that a fluid network can perform more than one engineering function.
+Artifacts/code: Nature record lists supplementary actuation/swimming videos; article and institutional account available. Full publisher page access was inconsistent during this pass. No open control-code package was verified. The promoted roughly 36-hour capability is not adopted here as an independently inspected continuous endurance test.
+Transfer: Evaluate combined energy storage and hydraulic actuation using total-system mass, pump losses, geometry and usable duty cycle.
+Proposed change: Add a synthetic-fluid branch with a system energy ledger, and compare it against separate battery plus hydraulic-fluid baselines. Keep a biological perfusion loop as a separate compartment unless compatibility evidence supports an exchange interface.
+Limits/evidence: P via article metadata/abstract plus originating institution account. An aquatic buoyancy-supported robot does not establish load-bearing humanoid performance. Its electrochemical fluid is not demonstrated artificial blood for living tissue.
+
+3. TAKEUCHI GROUP — LIVING SKIN ON A ROBOTIC FINGER
+Sources/date: C07–C09; Kawai et al., Matter 5, 2190–2208 (2022), DOI 10.1016/j.matt.2022.05.019; correction published 2025-06-04, DOI 10.1016/j.matt.2025.102162.
+Exact evidence: A three-joint robotic finger was covered with living skin equivalent. A separate wounded dermis-equivalent experiment used an added collagen sheet and culture to demonstrate repair. This is assisted repair under maintained conditions, not autonomous whole-body healing.
+Artifacts/code: Publisher abstract/resource statement and author summary inspected; additional reanalysis information is offered upon request. No downloadable code package verified.
+Correction: Use corrected leakage figures of approximately 0.54 g for dermis equivalent and 0.13 g for skin equivalent after one hour. Original prose stated 5.4 mg and 0.13 mg. Fig. 3E units change from mg to g; scale bars also change in Figs. 2A, 4D and 4E. Thus neither the original units nor their apparent ratio should be imported.
+Transfer: Skin coverage, barrier behavior and repair are distinct measurable properties.
+Proposed change: Separate the tissue-layer model into attachment, water/barrier balance, viability and assisted-repair endpoints. Track replenishment and repair inputs in the evidence ledger.
+Limits/evidence: P, including correction. No integrated perfused, innervated, immune-supported full-body skin was demonstrated by this paper.
+
+4. TAKEUCHI GROUP — PERFORATION ANCHORS AND A LIVING-SKIN FACE
+Sources/date: C10–C11; Kawai et al., Cell Reports Physical Science 5, 102066 (2024), DOI 10.1016/j.xcrp.2024.102066; online 2024-06-25 (Japanese institutional announcement 2024-06-26).
+Exact evidence: Recessed perforation anchors coupled tissue to a structure without protruding attachment points. The group evaluated fixation behavior and covered a three-dimensional facial mold. A separate actuated face moved living dermis equivalent into a smile-like shape; this should not be conflated with a complete multilayer, muscle-driven face.
+Artifacts/code: Author laboratory summary, linked journal record, image and embedded demonstration route verified. Publisher full text was blocked at the direct route; no open CAD/code package was verified in this pass.
+Transfer: Tissue-to-chassis attachment is a mechanical design variable with its own deformation and failure behavior.
+Proposed change: Include an attachment interface in the skin model: anchor position, load transfer, allowable deformation and local slip/detachment. Evaluate this interface separately from perfusion.
+Limits/evidence: P as described by the originating laboratory and institution; limited full-text access disclosed. Attachment and expression do not establish long-term skin viability, sensation or a vascular network.
+
+5. TAKEUCHI GROUP — MUSCLE-POWERED BIPEDAL ROBOT
+Sources/date: C12–C13; Kinjo et al., Matter 7, 948–962 (2024), DOI 10.1016/j.matt.2023.12.035.
+Exact evidence: Cultured skeletal muscle drove forward, stopping and compact turning movements. A float maintained posture in culture medium, and weighted legs supplied contact mechanics. The published discussion states that electrodes were moved manually and that dry conditions remove muscle activity; measured forward speed was about 5.4 mm/min. These support conditions belong in any description of the demonstration.
+Artifacts/code: Open-archive article inspected, including discussion and resource statement; four supplementary video descriptions available. Reanalysis information is available upon request, rather than a verified public runnable package.
+Transfer: Muscle modules can be characterized before assembly, and locomotion depends jointly on force generation, passive geometry, gravity and buoyancy.
+Proposed change: Add separate actuator-characterization and body-assembly tests. Explicitly represent buoyancy/external support and manual versus onboard control, then compare matched and mismatched actuator strengths in simulation.
+Limits/evidence: P. A bath-supported apparatus with manual stimulation does not establish an untethered land biped. Scaling muscle force is only one part of scaling a body.
+
+6. XENOBOTS — COMPUTATIONAL DESIGN OF RECONFIGURABLE ORGANISMS
+Sources/date: C14–C15; Kriegman et al., PNAS 117, 1853–1859, published 2020-01-13, DOI 10.1073/pnas.1910837117.
+Exact evidence: Computational candidate morphologies were transferred to constructs assembled from frog embryonic tissues; the paper reports matching useful behavior in physical constructs. This 2020 work uses epidermal/cardiac tissue and must not be silently merged with later cilia-powered or kinematic-replication studies.
+Artifacts/code: Full text obtained through Europe PMC XML. Public computational repository verified, including experiment and analysis folders. Its README targets Python 2.7, old Qt tooling and Linux; availability is not present-environment reproducibility. We did not install or run it.
+Transfer: Co-design body shape and behavior, then measure the gap between predicted and actual behavior instead of assuming simulation success transfers.
+Proposed change: Add morphology/environment variation to the software test plan and preserve both successful and failed transfers. Use the repository as a methods reference, not a validated dependency.
+Limits/evidence: P+A. Microscale living constructs do not directly validate humanoid circulation or human tissue repair. Their behavior is not evidence of consciousness or a general-purpose agent.
+
+7. ANTHROBOTS — SELF-ASSEMBLED HUMAN-CELL BIOBOTS
+Sources/date: C16; Gumuskaya et al., Advanced Science 11, 2303575; online 2023-11-30, 2024 issue, DOI 10.1002/advs.202303575.
+Exact evidence: Adult human lung-derived cells formed cilia-propelled constructs approximately 30–500 micrometres across. For the neural-sheet scratch assay, ten “superbot” bridges were tested; five remained connected across all three days, and those five produced local gap closure. This was assessed by neuronal staining/coverage, not restored neural electrical function. A passive agarose-contact comparison did not reproduce the effect, but the precise causal mechanism remains unresolved.
+Artifacts/code: Full text, supplementary information and seven video entries available. The paper states supporting data are available from the corresponding author upon reasonable request. A reusable study-specific public analysis package was not verified.
+Transfer: Unexpected tissue interactions deserve controlled testing, with the original denominator, failed configurations and functional endpoint preserved.
+Proposed change: Add a repair-evidence template separating closure, structural continuity, restored function and persistence. Keep this as an exploratory biological research lead, not a circulation component already selected for the body.
+Limits/evidence: P. In-vitro gap closure does not establish clinical nerve repair, autonomous wound treatment or large-scale tissue maintenance.
+
+PROPOSED INCORPORATION INTO THE STAGE (OUR SYNTHESIS)
+
+Highest immediate value is architectural: retain three interacting but distinct subsystems — machine energy/actuation, tissue support, and tissue-to-structure attachment. A common fluid is an option to investigate, not an assumption. A synthetic energy-carrying fluid and a cell-compatible perfusate may exchange heat or other permitted resources through an interface without sharing chemistry.
+
+For the next software revision, add (a) fluid energy and pressure/flow accounting, (b) actuator force variation and passive support conditions, and (c) an attachment/strain interface. These are modeling proposals supported by the surveyed demonstrations; no empirical material constants have been imported without a matching test condition. HC0's equilibrium binding parameters remain hypothetical, and structural hemoglobin comparisons remain separate from engineered-carrier performance.
+
+For future evidence collection, assess mechanisms independently: movement versus autonomy; attachment versus viability; closure versus restored function; stored energy versus deliverable power; oxygen capacity versus delivered oxygen flux. These distinctions make ambitious integration more testable. They are not reasons to discard it.
+
+This survey does not establish that these are all relevant projects or that a missing artifact does not exist. “Not verified” records the bounded inspection. Parent review determines which proposed changes are adopted into the working document.

@@ -1,0 +1,69 @@
+HB-STRUCT0: HUMAN HEMOGLOBIN DEPOSITED-STRUCTURE CALIBRATION
+Executed 2026-10-15; retrospective engineering/scientific calibration, not preregistered inference.
+
+Completed: downloaded experimental oxyhemoglobin 2DN1 and deoxyhemoglobin 2DN2 from RCSB, installed Biopython 1.88 / NumPy 2.5.4 in a separate local target directory, and executed offline coordinate analysis. This is not a protein-fold prediction. No sequence or private material was uploaded, no model weights were downloaded, and no shared environment package or lock was changed. The work occupies approximately 56 MiB, including 54.5 MiB of isolated Python packages.
+
+INPUTS AND SCOPE
+RCSB entry pages and retained mmCIF metadata identify both as unmutated human hemoglobin, X-ray structures at 1.25 A from the same Park et al. 2006 study (J Mol Biol, DOI 10.1016/j.jmb.2006.05.036). The article abstract and entry metadata were inspected; the full paper and electron-density maps were not reviewed.
+
+2DN1 asymmetric unit: alpha A, 140 modeled residues of 141; beta B, 145 of 146. Author residue 1 is absent in each chain. Two HEM, two OXY (dioxygen), two MBN (toluene), 230 water residues. 2DN2 asymmetric unit: alpha A/C, 141 each; beta B/D, 146 each; four HEM, no OXY, 221 water residues. No alternate/disordered atom objects were encountered by the parser. Deposited alpha and beta sequences match exactly across entries (141 and 146 residues).
+
+The oxy coordinate file contains a dimer asymmetric unit and deoxy a tetramer asymmetric unit; the biological assembly is tetrameric for both. No symmetry-generated biological assembly was constructed here. Chain and specified dimer fits must not be presented as a full tetramer transition or an isolated causal effect of oxygen binding. Crystal environment and refinement contribute to coordinates.
+
+METHOD AND EXECUTED RESULTS
+One model, author chain/residue identifiers, identical amino-acid names at each matched position, common available C-alpha atoms only, equal weights, proper-rotation least-squares fit. Distances and RMSDs are in angstroms. No residues were removed after examining residuals.
+
+Fit                       Matched C-alpha   RMSD A
+oxy A -> deoxy A                  140        0.606756
+oxy A -> deoxy C                  140        0.538780
+oxy B -> deoxy B                  145        0.844796
+oxy B -> deoxy D                  145        0.841214
+oxy AB -> deoxy AB, joint         285        0.927930
+oxy AB -> deoxy CD, joint         285        0.893849
+
+These are descriptive coordinate differences, not six independent biological replicates. Maximum individual C-alpha residuals reach 6.06 A in the beta chain comparisons, so a single RMSD conceals local variation; ca_residuals.csv preserves every residual.
+
+The six hemes were measured against their four porphyrin nitrogen atoms NA/NB/NC/ND, the nearest histidine NE2, and explicitly labeled OXY atoms. The absolute Fe distance from the least-squares plane through those four nitrogen atoms is a defined local geometric measurement, not the displacement from a whole-porphyrin plane.
+
+Entry/chain   Fe-His NE2 A   |Fe to four-N plane| A   nearest Fe-OXY A
+2DN1 A          2.070889             0.045013              1.816968
+2DN1 B          2.063459             0.026259              1.775305
+2DN2 A          2.195504             0.387994              absent
+2DN2 B          2.194171             0.349168              absent
+2DN2 C          2.205208             0.310146              absent
+2DN2 D          2.162433             0.321350              absent
+
+Nearest histidines are alpha His87 and beta His92. All nine deposited identity-symmetry metal-contact distances were independently recomputed from coordinates within 0.002 A of the mmCIF values. A geometric radius query finds both atoms of each nearby OXY molecule within 3 A; that query is not a claim of two independent Fe-O chemical bonds. The deposited struct_conn table is retained separately inside results.json; it records five oxy and four deoxy metal contacts. No hydrogen bonding, bond order, valence, affinity, toxicity, oxygen capacity or delivery flux is inferred from these distances.
+
+CHECKS
+Six check groups passed: all four acquisition hashes; nine deposited metal distances; six fits agreeing between Biopython, explicit transformed residuals and a separate NumPy Kabsch implementation; self/rigid-transform invariance with a non-rigid perturbation positive control; expected OXY and heme inventories; exact deposited sequence identity. These are internal executable consistency checks, not external scientific replication. The fit implementations share input parsing and NumPy numerical machinery. Source entry validation and electron density have not been independently re-refined. Numbers retain machine precision in JSON/CSV for reproducibility, not as estimates of experimental precision.
+
+REPRODUCE IN POWERSHELL FROM THE STAGE WORKSPACE
+& '.\.venv-stage\Scripts\python.exe' -m pip install --target 'research\protein_modeling\biopython_runtime' --no-compile -r 'research\protein_modeling\requirements-isolated.txt'
+& '.\.venv-stage\Scripts\python.exe' 'research\protein_modeling\analyze_hemoglobin.py'
+
+The first command is installation/recovery only; existing files and pinned inputs suffice for the second command offline. Biopython is imported from the local target folder. download_receipt.json preserves exact source URLs, acquisition timestamps, byte counts and SHA256 values; manifest.json covers analysis artifacts and runtime package metadata. Do not execute with Python -O because assertion checks are part of this calibration harness.
+
+CURRENT HARDWARE AND TOOL PRACTICALITY
+Parent-measured snapshot: i9-12900K, 32 GB RAM / 5.8 GiB free; RTX 5070 Ti, 16 GB VRAM / about 7.1 GB free; 124.5 GiB free disk. These are volatile availability figures, not peak workload measurements. No hardware upgrade was needed for this completed CPU-only analysis. WSL inventory confirms three existing WSL2 distributions, all stopped at inspection; no OS configuration was changed.
+
+ColabFold's official README describes Windows support through LocalColabFold/WSL2 and recommends CUDA13 for Blackwell. Its full local MSA database route lists 940 GB storage and about 128 GB RAM for batch searches, beyond this machine's present resources. That is a database-search requirement, not a blanket minimum for small inference. ColabFold may send sequences to a public MSA server when run on FASTA; this analysis made no such request.
+Source: https://github.com/sokrypton/ColabFold (official README installation/local-MSA sections inspected 2026-10-15).
+
+Boltz's official repository documents GPU and slower CPU installation. Its prediction documentation allows local precomputed MSA or explicit single-sequence mode (msa: empty), warning that the latter reduces accuracy. These options do not establish that a selected workload fits current free RAM/VRAM. No Boltz install or inference was attempted for HB-STRUCT0.
+Sources: https://github.com/jwohlwend/boltz and https://github.com/jwohlwend/boltz/blob/main/docs/prediction.md (official installation and input/MSA documentation inspected).
+
+OpenFold3's installation page specifies a minimum 32 GB GPU-memory requirement for its documented GPU inference path; the 16 GB card falls below that. The same page also describes CPU/base environments. This does not prove every optimized or CPU configuration impossible, but the stock documented GPU route is not a sensible first local target here.
+Source: https://github.com/aqlaboratory/openfold-3/blob/main/docs/source/Installation.md (prerequisites and environment table inspected).
+
+NEXT SMALL FOLD BENCHMARK: PROPOSED, NOT EXECUTED IN HB-STRUCT0
+Start with public human alpha-globin only (141 residues, saved in public_hemoglobin_sequences.fasta), one fixed model configuration and seed, no structure template from either target. Pin tool/version/weights and input hash before inference. Compare predicted C-alpha coordinates against both experimental alpha references using the same residue correspondence and report completeness, confidence, RMSD and local residuals separately. Keep 2DN1 as evaluator data; never submit it as an input template while calling the result sequence-only. Heme/cofactor treatment must be declared; an isolated apo-chain output is not an oxyhemoglobin model. The 2006 target can be training-known, so this tests pipeline calibration, not novel fold generalization. A first resource gate should measure free RAM/VRAM and installed CUDA support before large downloads and cap the run. Actual inference fit and runtime remain unmeasured.
+
+PRIMARY STRUCTURAL SOURCES
+https://www.rcsb.org/structure/2DN1
+https://www.rcsb.org/structure/2DN2
+https://files.rcsb.org/download/2DN1.cif
+https://files.rcsb.org/download/2DN2.cif
+https://data.rcsb.org/rest/v1/core/entry/2DN1
+https://data.rcsb.org/rest/v1/core/entry/2DN2
+Entry metadata, ligand inventories and downloaded coordinates were inspected; these sources establish the structure identity and deposited coordinates. The numerical analyses above were executed locally from the retained files.

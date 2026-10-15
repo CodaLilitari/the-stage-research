@@ -1,0 +1,17 @@
+{
+  "allowed_operations": [
+    "offline_validate",
+    "prepare_candidate_packet"
+  ],
+  "external_disclosure_authorized": false,
+  "model_execution_authorized": false,
+  "policy_authority": "Synthetic harness policy, not a grant concerning real collaborator material.",
+  "policy_id": "policy-1",
+  "revoked_revisions": [
+    "restricted-02-r1"
+  ],
+  "synthetic": true,
+  "withheld_revisions": [
+    "restricted-01-r1"
+  ]
+}

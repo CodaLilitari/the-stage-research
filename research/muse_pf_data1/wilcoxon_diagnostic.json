@@ -1,0 +1,27 @@
+{
+  "versions": {
+    "scipy": "1.18.1",
+    "numpy": "2.5.4",
+    "pandas": "2.3.3",
+    "matplotlib": "3.11.2"
+  },
+  "all_20_nonzero_deltas_positive": true,
+  "absolute_value_ties_present": true,
+  "scipy_results": {
+    "auto": {
+      "statistic": 0.0,
+      "pvalue": 8.832385863081277e-05
+    },
+    "exact": {
+      "statistic": 0.0,
+      "pvalue": 1.9073486328125e-06
+    },
+    "asymptotic": {
+      "statistic": 0.0,
+      "pvalue": 8.832385863081277e-05
+    }
+  },
+  "exact_conditional_sign_randomization_extreme_p": 1.9073486328125e-06,
+  "exact_reason": "For all positive nonzero values, only the all-positive and all-negative sign assignments attain the extreme rank sums, including when tied ranks receive their averages. Under independent symmetric sign null all 2^20 assignments are equally probable.",
+  "conclusion": "Returned 1.9073486328125e-06 matches the exact extreme-sign probability. Local default returns asymptotic 8.832385863081277e-05 with ties. Provider runtime/method selection is unrecorded, so exact environmental cause is unresolved. Neither changes the positive occlusion association; state the method explicitly."
+}

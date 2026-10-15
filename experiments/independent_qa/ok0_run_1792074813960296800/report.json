@@ -1,0 +1,1872 @@
+{
+  "scope": "Within-project independent numerical QA; no biological validation",
+  "passed": 179,
+  "total": 179,
+  "checks": [
+    {
+      "name": "frozen corrected source hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "frozen original source hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all declared sweep rows present",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 5",
+      "passed": true,
+      "detail": {
+        "exit_u": 1.1102230246251565e-16,
+        "exit_l": 2.220446049250313e-16,
+        "q_per_volume": 3.3306690738754696e-16,
+        "rate_per_volume": 2.220446049250313e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 6",
+      "passed": true,
+      "detail": {
+        "exit_u": 0.0,
+        "exit_l": 0.0,
+        "q_per_volume": 2.220446049250313e-16,
+        "rate_per_volume": 1.1102230246251565e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 7",
+      "passed": true,
+      "detail": {
+        "exit_u": 0.0,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 0.0,
+        "rate_per_volume": 1.1102230246251565e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 8",
+      "passed": true,
+      "detail": {
+        "exit_u": 2.220446049250313e-16,
+        "exit_l": 0.0,
+        "q_per_volume": 8.881784197001252e-16,
+        "rate_per_volume": 5.551115123125783e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 9",
+      "passed": true,
+      "detail": {
+        "exit_u": 1.1102230246251565e-16,
+        "exit_l": 2.220446049250313e-16,
+        "q_per_volume": 0.0,
+        "rate_per_volume": 0.0,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 10",
+      "passed": true,
+      "detail": {
+        "exit_u": 0.0,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 2.220446049250313e-16,
+        "rate_per_volume": 0.0,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 11",
+      "passed": true,
+      "detail": {
+        "exit_u": 1.1102230246251565e-16,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 0.0,
+        "rate_per_volume": 0.0,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 12",
+      "passed": true,
+      "detail": {
+        "exit_u": 5.551115123125783e-17,
+        "exit_l": 0.0,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 2.220446049250313e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 13",
+      "passed": true,
+      "detail": {
+        "exit_u": 1.1102230246251565e-16,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 0.0,
+        "rate_per_volume": 0.0,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 14",
+      "passed": true,
+      "detail": {
+        "exit_u": 2.220446049250313e-16,
+        "exit_l": 0.0,
+        "q_per_volume": 8.881784197001252e-16,
+        "rate_per_volume": 6.661338147750939e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 15",
+      "passed": true,
+      "detail": {
+        "exit_u": 1.1102230246251565e-16,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 2.220446049250313e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 16",
+      "passed": true,
+      "detail": {
+        "exit_u": 1.1102230246251565e-16,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 8.881784197001252e-16,
+        "rate_per_volume": 4.440892098500626e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 17",
+      "passed": true,
+      "detail": {
+        "exit_u": 1.1102230246251565e-16,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 0.0,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 18",
+      "passed": true,
+      "detail": {
+        "exit_u": 1.1102230246251565e-16,
+        "exit_l": 0.0,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 2.220446049250313e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 19",
+      "passed": true,
+      "detail": {
+        "exit_u": 1.6653345369377348e-16,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 4.440892098500626e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 20",
+      "passed": true,
+      "detail": {
+        "exit_u": 1.1102230246251565e-16,
+        "exit_l": 0.0,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 2.220446049250313e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 21",
+      "passed": true,
+      "detail": {
+        "exit_u": 5.551115123125783e-17,
+        "exit_l": 0.0,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 4.440892098500626e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 22",
+      "passed": true,
+      "detail": {
+        "exit_u": 0.0,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 0.0,
+        "rate_per_volume": 2.220446049250313e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 23",
+      "passed": true,
+      "detail": {
+        "exit_u": 5.551115123125783e-17,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 2.220446049250313e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 24",
+      "passed": true,
+      "detail": {
+        "exit_u": 2.7755575615628914e-17,
+        "exit_l": 2.220446049250313e-16,
+        "q_per_volume": 8.881784197001252e-16,
+        "rate_per_volume": 6.661338147750939e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 25",
+      "passed": true,
+      "detail": {
+        "exit_u": 1.1102230246251565e-16,
+        "exit_l": 0.0,
+        "q_per_volume": 0.0,
+        "rate_per_volume": 0.0,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 26",
+      "passed": true,
+      "detail": {
+        "exit_u": 2.7755575615628914e-17,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 2.220446049250313e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 27",
+      "passed": true,
+      "detail": {
+        "exit_u": 0.0,
+        "exit_l": 0.0,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 4.440892098500626e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 28",
+      "passed": true,
+      "detail": {
+        "exit_u": 1.1102230246251565e-16,
+        "exit_l": 2.220446049250313e-16,
+        "q_per_volume": 8.881784197001252e-16,
+        "rate_per_volume": 6.661338147750939e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 29",
+      "passed": true,
+      "detail": {
+        "exit_u": 2.7755575615628914e-17,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 8.881784197001252e-16,
+        "rate_per_volume": 4.440892098500626e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 30",
+      "passed": true,
+      "detail": {
+        "exit_u": 2.7755575615628914e-17,
+        "exit_l": 2.220446049250313e-16,
+        "q_per_volume": 8.881784197001252e-16,
+        "rate_per_volume": 4.440892098500626e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 31",
+      "passed": true,
+      "detail": {
+        "exit_u": 5.551115123125783e-17,
+        "exit_l": 2.220446049250313e-16,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 2.220446049250313e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 32",
+      "passed": true,
+      "detail": {
+        "exit_u": 5.551115123125783e-17,
+        "exit_l": 0.0,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 2.220446049250313e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 33",
+      "passed": true,
+      "detail": {
+        "exit_u": 5.551115123125783e-17,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 2.220446049250313e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 34",
+      "passed": true,
+      "detail": {
+        "exit_u": 5.551115123125783e-17,
+        "exit_l": 0.0,
+        "q_per_volume": 8.881784197001252e-16,
+        "rate_per_volume": 4.440892098500626e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 35",
+      "passed": true,
+      "detail": {
+        "exit_u": 8.326672684688674e-17,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 2.220446049250313e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 36",
+      "passed": true,
+      "detail": {
+        "exit_u": 5.551115123125783e-17,
+        "exit_l": 0.0,
+        "q_per_volume": 0.0,
+        "rate_per_volume": 2.220446049250313e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 37",
+      "passed": true,
+      "detail": {
+        "exit_u": 5.551115123125783e-17,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 8.881784197001252e-16,
+        "rate_per_volume": 4.440892098500626e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 38",
+      "passed": true,
+      "detail": {
+        "exit_u": 8.326672684688674e-17,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 2.220446049250313e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 39",
+      "passed": true,
+      "detail": {
+        "exit_u": 5.551115123125783e-17,
+        "exit_l": 2.220446049250313e-16,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 2.220446049250313e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 40",
+      "passed": true,
+      "detail": {
+        "exit_u": 5.551115123125783e-17,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 2.220446049250313e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 41",
+      "passed": true,
+      "detail": {
+        "exit_u": 2.7755575615628914e-17,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 4.440892098500626e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 42",
+      "passed": true,
+      "detail": {
+        "exit_u": 0.0,
+        "exit_l": 0.0,
+        "q_per_volume": 8.881784197001252e-16,
+        "rate_per_volume": 2.220446049250313e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 43",
+      "passed": true,
+      "detail": {
+        "exit_u": 2.7755575615628914e-17,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 0.0,
+        "rate_per_volume": 0.0,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 44",
+      "passed": true,
+      "detail": {
+        "exit_u": 5.551115123125783e-17,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 2.220446049250313e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 45",
+      "passed": true,
+      "detail": {
+        "exit_u": 8.326672684688674e-17,
+        "exit_l": 2.220446049250313e-16,
+        "q_per_volume": 8.881784197001252e-16,
+        "rate_per_volume": 4.440892098500626e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 46",
+      "passed": true,
+      "detail": {
+        "exit_u": 5.551115123125783e-17,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 8.881784197001252e-16,
+        "rate_per_volume": 2.220446049250313e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 47",
+      "passed": true,
+      "detail": {
+        "exit_u": 5.551115123125783e-17,
+        "exit_l": 2.220446049250313e-16,
+        "q_per_volume": 8.881784197001252e-16,
+        "rate_per_volume": 4.440892098500626e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 48",
+      "passed": true,
+      "detail": {
+        "exit_u": 2.7755575615628914e-17,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 8.881784197001252e-16,
+        "rate_per_volume": 4.440892098500626e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 49",
+      "passed": true,
+      "detail": {
+        "exit_u": 8.326672684688674e-17,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 2.220446049250313e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 50",
+      "passed": true,
+      "detail": {
+        "exit_u": 5.551115123125783e-17,
+        "exit_l": 2.220446049250313e-16,
+        "q_per_volume": 8.881784197001252e-16,
+        "rate_per_volume": 4.440892098500626e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 51",
+      "passed": true,
+      "detail": {
+        "exit_u": 5.551115123125783e-17,
+        "exit_l": 0.0,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 2.220446049250313e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 52",
+      "passed": true,
+      "detail": {
+        "exit_u": 2.7755575615628914e-17,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 0.0,
+        "rate_per_volume": 0.0,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 53",
+      "passed": true,
+      "detail": {
+        "exit_u": 4.163336342344337e-17,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 8.881784197001252e-16,
+        "rate_per_volume": 4.440892098500626e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 54",
+      "passed": true,
+      "detail": {
+        "exit_u": 4.163336342344337e-17,
+        "exit_l": 0.0,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 4.440892098500626e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 55",
+      "passed": true,
+      "detail": {
+        "exit_u": 2.7755575615628914e-17,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 8.881784197001252e-16,
+        "rate_per_volume": 6.661338147750939e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 56",
+      "passed": true,
+      "detail": {
+        "exit_u": 0.0,
+        "exit_l": 0.0,
+        "q_per_volume": 0.0,
+        "rate_per_volume": 0.0,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 57",
+      "passed": true,
+      "detail": {
+        "exit_u": 4.163336342344337e-17,
+        "exit_l": 2.220446049250313e-16,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 2.220446049250313e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 58",
+      "passed": true,
+      "detail": {
+        "exit_u": 6.938893903907228e-17,
+        "exit_l": 2.220446049250313e-16,
+        "q_per_volume": 1.3322676295501878e-15,
+        "rate_per_volume": 6.661338147750939e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 59",
+      "passed": true,
+      "detail": {
+        "exit_u": 1.3877787807814457e-17,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 0.0,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 60",
+      "passed": true,
+      "detail": {
+        "exit_u": 6.938893903907228e-17,
+        "exit_l": 3.3306690738754696e-16,
+        "q_per_volume": 1.3322676295501878e-15,
+        "rate_per_volume": 6.661338147750939e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 61",
+      "passed": true,
+      "detail": {
+        "exit_u": 4.163336342344337e-17,
+        "exit_l": 2.220446049250313e-16,
+        "q_per_volume": 8.881784197001252e-16,
+        "rate_per_volume": 4.440892098500626e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 62",
+      "passed": true,
+      "detail": {
+        "exit_u": 4.163336342344337e-17,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 8.881784197001252e-16,
+        "rate_per_volume": 4.440892098500626e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 63",
+      "passed": true,
+      "detail": {
+        "exit_u": 4.163336342344337e-17,
+        "exit_l": 2.220446049250313e-16,
+        "q_per_volume": 8.881784197001252e-16,
+        "rate_per_volume": 4.440892098500626e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 64",
+      "passed": true,
+      "detail": {
+        "exit_u": 6.938893903907228e-17,
+        "exit_l": 3.3306690738754696e-16,
+        "q_per_volume": 1.7763568394002505e-15,
+        "rate_per_volume": 1.1102230246251565e-15,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 65",
+      "passed": true,
+      "detail": {
+        "exit_u": 4.163336342344337e-17,
+        "exit_l": 3.3306690738754696e-16,
+        "q_per_volume": 1.3322676295501878e-15,
+        "rate_per_volume": 8.881784197001252e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 66",
+      "passed": true,
+      "detail": {
+        "exit_u": 6.938893903907228e-17,
+        "exit_l": 2.220446049250313e-16,
+        "q_per_volume": 1.3322676295501878e-15,
+        "rate_per_volume": 6.661338147750939e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 67",
+      "passed": true,
+      "detail": {
+        "exit_u": 8.326672684688674e-17,
+        "exit_l": 2.220446049250313e-16,
+        "q_per_volume": 1.7763568394002505e-15,
+        "rate_per_volume": 8.881784197001252e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 68",
+      "passed": true,
+      "detail": {
+        "exit_u": 1.3877787807814457e-17,
+        "exit_l": 0.0,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 2.220446049250313e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 69",
+      "passed": true,
+      "detail": {
+        "exit_u": 1.3877787807814457e-17,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 2.220446049250313e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 70",
+      "passed": true,
+      "detail": {
+        "exit_u": 1.3877787807814457e-17,
+        "exit_l": 0.0,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 2.220446049250313e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 71",
+      "passed": true,
+      "detail": {
+        "exit_u": 4.163336342344337e-17,
+        "exit_l": 2.220446049250313e-16,
+        "q_per_volume": 1.3322676295501878e-15,
+        "rate_per_volume": 6.661338147750939e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 72",
+      "passed": true,
+      "detail": {
+        "exit_u": 4.163336342344337e-17,
+        "exit_l": 2.220446049250313e-16,
+        "q_per_volume": 8.881784197001252e-16,
+        "rate_per_volume": 6.661338147750939e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 73",
+      "passed": true,
+      "detail": {
+        "exit_u": 6.938893903907228e-17,
+        "exit_l": 2.220446049250313e-16,
+        "q_per_volume": 1.3322676295501878e-15,
+        "rate_per_volume": 6.661338147750939e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 74",
+      "passed": true,
+      "detail": {
+        "exit_u": 0.0,
+        "exit_l": 0.0,
+        "q_per_volume": 0.0,
+        "rate_per_volume": 0.0,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 75",
+      "passed": true,
+      "detail": {
+        "exit_u": 6.938893903907228e-17,
+        "exit_l": 3.3306690738754696e-16,
+        "q_per_volume": 1.3322676295501878e-15,
+        "rate_per_volume": 8.881784197001252e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 76",
+      "passed": true,
+      "detail": {
+        "exit_u": 4.163336342344337e-17,
+        "exit_l": 3.3306690738754696e-16,
+        "q_per_volume": 1.3322676295501878e-15,
+        "rate_per_volume": 8.881784197001252e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 77",
+      "passed": true,
+      "detail": {
+        "exit_u": 2.7755575615628914e-17,
+        "exit_l": 2.220446049250313e-16,
+        "q_per_volume": 8.881784197001252e-16,
+        "rate_per_volume": 4.440892098500626e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 78",
+      "passed": true,
+      "detail": {
+        "exit_u": 4.163336342344337e-17,
+        "exit_l": 2.220446049250313e-16,
+        "q_per_volume": 8.881784197001252e-16,
+        "rate_per_volume": 4.440892098500626e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 79",
+      "passed": true,
+      "detail": {
+        "exit_u": 4.163336342344337e-17,
+        "exit_l": 2.220446049250313e-16,
+        "q_per_volume": 8.881784197001252e-16,
+        "rate_per_volume": 4.440892098500626e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS constant_relaxation 80",
+      "passed": true,
+      "detail": {
+        "exit_u": 9.71445146547012e-17,
+        "exit_l": 3.3306690738754696e-16,
+        "q_per_volume": 1.3322676295501878e-15,
+        "rate_per_volume": 8.881784197001252e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 5",
+      "passed": true,
+      "detail": {
+        "exit_u": 0.0,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 1.6653345369377348e-16,
+        "rate_per_volume": 1.3877787807814457e-16,
+        "kinetic_factor": 5.551115123125783e-17
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 6",
+      "passed": true,
+      "detail": {
+        "exit_u": 2.220446049250313e-16,
+        "exit_l": 0.0,
+        "q_per_volume": 2.7755575615628914e-16,
+        "rate_per_volume": 1.942890293094024e-16,
+        "kinetic_factor": 5.551115123125783e-17
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 7",
+      "passed": true,
+      "detail": {
+        "exit_u": 2.220446049250313e-16,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 1.1102230246251565e-16,
+        "rate_per_volume": 1.1102230246251565e-16,
+        "kinetic_factor": 0.0
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 8",
+      "passed": true,
+      "detail": {
+        "exit_u": 1.1102230246251565e-16,
+        "exit_l": 0.0,
+        "q_per_volume": 3.3306690738754696e-16,
+        "rate_per_volume": 2.220446049250313e-16,
+        "kinetic_factor": 0.0
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 9",
+      "passed": true,
+      "detail": {
+        "exit_u": 0.0,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 1.1102230246251565e-16,
+        "rate_per_volume": 0.0,
+        "kinetic_factor": 0.0
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 10",
+      "passed": true,
+      "detail": {
+        "exit_u": 0.0,
+        "exit_l": 0.0,
+        "q_per_volume": 2.220446049250313e-16,
+        "rate_per_volume": 1.1102230246251565e-16,
+        "kinetic_factor": 5.551115123125783e-17
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 11",
+      "passed": true,
+      "detail": {
+        "exit_u": 0.0,
+        "exit_l": 0.0,
+        "q_per_volume": 2.220446049250313e-16,
+        "rate_per_volume": 1.1102230246251565e-16,
+        "kinetic_factor": 0.0
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 12",
+      "passed": true,
+      "detail": {
+        "exit_u": 0.0,
+        "exit_l": 0.0,
+        "q_per_volume": 2.220446049250313e-16,
+        "rate_per_volume": 2.220446049250313e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 13",
+      "passed": true,
+      "detail": {
+        "exit_u": 1.1102230246251565e-16,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 2.220446049250313e-16,
+        "rate_per_volume": 1.1102230246251565e-16,
+        "kinetic_factor": 0.0
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 14",
+      "passed": true,
+      "detail": {
+        "exit_u": 1.1102230246251565e-16,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 1.5543122344752192e-15,
+        "rate_per_volume": 1.1102230246251565e-15,
+        "kinetic_factor": 2.220446049250313e-16
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 15",
+      "passed": true,
+      "detail": {
+        "exit_u": 0.0,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 0.0,
+        "kinetic_factor": 0.0
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 16",
+      "passed": true,
+      "detail": {
+        "exit_u": 0.0,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 8.881784197001252e-16,
+        "rate_per_volume": 6.661338147750939e-16,
+        "kinetic_factor": 0.0
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 17",
+      "passed": true,
+      "detail": {
+        "exit_u": 5.551115123125783e-17,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 0.0,
+        "rate_per_volume": 2.220446049250313e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 18",
+      "passed": true,
+      "detail": {
+        "exit_u": 2.220446049250313e-16,
+        "exit_l": 0.0,
+        "q_per_volume": 8.881784197001252e-16,
+        "rate_per_volume": 6.661338147750939e-16,
+        "kinetic_factor": 0.0
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 19",
+      "passed": true,
+      "detail": {
+        "exit_u": 1.1102230246251565e-16,
+        "exit_l": 0.0,
+        "q_per_volume": 8.881784197001252e-16,
+        "rate_per_volume": 6.661338147750939e-16,
+        "kinetic_factor": 0.0
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 20",
+      "passed": true,
+      "detail": {
+        "exit_u": 0.0,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 0.0,
+        "rate_per_volume": 0.0,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 21",
+      "passed": true,
+      "detail": {
+        "exit_u": 5.551115123125783e-17,
+        "exit_l": 0.0,
+        "q_per_volume": 0.0,
+        "rate_per_volume": 2.220446049250313e-16,
+        "kinetic_factor": 0.0
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 22",
+      "passed": true,
+      "detail": {
+        "exit_u": 5.551115123125783e-17,
+        "exit_l": 0.0,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 2.220446049250313e-16,
+        "kinetic_factor": 0.0
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 23",
+      "passed": true,
+      "detail": {
+        "exit_u": 5.551115123125783e-17,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 2.220446049250313e-16,
+        "kinetic_factor": 0.0
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 24",
+      "passed": true,
+      "detail": {
+        "exit_u": 5.551115123125783e-17,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 8.881784197001252e-16,
+        "rate_per_volume": 4.440892098500626e-16,
+        "kinetic_factor": 0.0
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 25",
+      "passed": true,
+      "detail": {
+        "exit_u": 5.551115123125783e-17,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 4.440892098500626e-16,
+        "kinetic_factor": 0.0
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 26",
+      "passed": true,
+      "detail": {
+        "exit_u": 0.0,
+        "exit_l": 2.220446049250313e-16,
+        "q_per_volume": 8.881784197001252e-16,
+        "rate_per_volume": 6.661338147750939e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 27",
+      "passed": true,
+      "detail": {
+        "exit_u": 5.551115123125783e-17,
+        "exit_l": 0.0,
+        "q_per_volume": 0.0,
+        "rate_per_volume": 2.220446049250313e-16,
+        "kinetic_factor": 0.0
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 28",
+      "passed": true,
+      "detail": {
+        "exit_u": 5.551115123125783e-17,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 2.220446049250313e-16,
+        "kinetic_factor": 0.0
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 29",
+      "passed": true,
+      "detail": {
+        "exit_u": 5.551115123125783e-17,
+        "exit_l": 2.220446049250313e-16,
+        "q_per_volume": 8.881784197001252e-16,
+        "rate_per_volume": 4.440892098500626e-16,
+        "kinetic_factor": 0.0
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 30",
+      "passed": true,
+      "detail": {
+        "exit_u": 5.551115123125783e-17,
+        "exit_l": 2.220446049250313e-16,
+        "q_per_volume": 8.881784197001252e-16,
+        "rate_per_volume": 6.661338147750939e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 31",
+      "passed": true,
+      "detail": {
+        "exit_u": 0.0,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 0.0,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 32",
+      "passed": true,
+      "detail": {
+        "exit_u": 0.0,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 4.440892098500626e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 33",
+      "passed": true,
+      "detail": {
+        "exit_u": 5.551115123125783e-17,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 0.0,
+        "kinetic_factor": 0.0
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 34",
+      "passed": true,
+      "detail": {
+        "exit_u": 0.0,
+        "exit_l": 0.0,
+        "q_per_volume": 0.0,
+        "rate_per_volume": 0.0,
+        "kinetic_factor": 0.0
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 35",
+      "passed": true,
+      "detail": {
+        "exit_u": 5.551115123125783e-17,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 2.220446049250313e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 36",
+      "passed": true,
+      "detail": {
+        "exit_u": 5.551115123125783e-17,
+        "exit_l": 2.220446049250313e-16,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 0.0,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 37",
+      "passed": true,
+      "detail": {
+        "exit_u": 5.551115123125783e-17,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 0.0,
+        "rate_per_volume": 4.440892098500626e-16,
+        "kinetic_factor": 0.0
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 38",
+      "passed": true,
+      "detail": {
+        "exit_u": 5.551115123125783e-17,
+        "exit_l": 0.0,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 4.440892098500626e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 39",
+      "passed": true,
+      "detail": {
+        "exit_u": 2.7755575615628914e-17,
+        "exit_l": 2.220446049250313e-16,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 0.0,
+        "kinetic_factor": 0.0
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 40",
+      "passed": true,
+      "detail": {
+        "exit_u": 0.0,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 0.0,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 41",
+      "passed": true,
+      "detail": {
+        "exit_u": 1.3877787807814457e-17,
+        "exit_l": 0.0,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 4.440892098500626e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 42",
+      "passed": true,
+      "detail": {
+        "exit_u": 0.0,
+        "exit_l": 0.0,
+        "q_per_volume": 8.881784197001252e-16,
+        "rate_per_volume": 4.440892098500626e-16,
+        "kinetic_factor": 0.0
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 43",
+      "passed": true,
+      "detail": {
+        "exit_u": 4.163336342344337e-17,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 0.0,
+        "kinetic_factor": 0.0
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 44",
+      "passed": true,
+      "detail": {
+        "exit_u": 1.3877787807814457e-17,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 0.0,
+        "rate_per_volume": 0.0,
+        "kinetic_factor": 0.0
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 45",
+      "passed": true,
+      "detail": {
+        "exit_u": 5.551115123125783e-17,
+        "exit_l": 2.220446049250313e-16,
+        "q_per_volume": 8.881784197001252e-16,
+        "rate_per_volume": 4.440892098500626e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 46",
+      "passed": true,
+      "detail": {
+        "exit_u": 0.0,
+        "exit_l": 0.0,
+        "q_per_volume": 8.881784197001252e-16,
+        "rate_per_volume": 4.440892098500626e-16,
+        "kinetic_factor": 0.0
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 47",
+      "passed": true,
+      "detail": {
+        "exit_u": 2.7755575615628914e-17,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 4.440892098500626e-16,
+        "kinetic_factor": 0.0
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 48",
+      "passed": true,
+      "detail": {
+        "exit_u": 1.3877787807814457e-17,
+        "exit_l": 0.0,
+        "q_per_volume": 0.0,
+        "rate_per_volume": 0.0,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 49",
+      "passed": true,
+      "detail": {
+        "exit_u": 1.3877787807814457e-17,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 0.0,
+        "rate_per_volume": 2.220446049250313e-16,
+        "kinetic_factor": 0.0
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 50",
+      "passed": true,
+      "detail": {
+        "exit_u": 0.0,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 0.0,
+        "rate_per_volume": 0.0,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 51",
+      "passed": true,
+      "detail": {
+        "exit_u": 2.7755575615628914e-17,
+        "exit_l": 0.0,
+        "q_per_volume": 0.0,
+        "rate_per_volume": 2.220446049250313e-16,
+        "kinetic_factor": 0.0
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 52",
+      "passed": true,
+      "detail": {
+        "exit_u": 6.938893903907228e-18,
+        "exit_l": 0.0,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 2.220446049250313e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 53",
+      "passed": true,
+      "detail": {
+        "exit_u": 0.0,
+        "exit_l": 0.0,
+        "q_per_volume": 0.0,
+        "rate_per_volume": 2.220446049250313e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 54",
+      "passed": true,
+      "detail": {
+        "exit_u": 1.3877787807814457e-17,
+        "exit_l": 0.0,
+        "q_per_volume": 8.881784197001252e-16,
+        "rate_per_volume": 2.220446049250313e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 55",
+      "passed": true,
+      "detail": {
+        "exit_u": 1.3877787807814457e-17,
+        "exit_l": 0.0,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 2.220446049250313e-16,
+        "kinetic_factor": 0.0
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 56",
+      "passed": true,
+      "detail": {
+        "exit_u": 1.3877787807814457e-17,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 2.220446049250313e-16,
+        "kinetic_factor": 0.0
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 57",
+      "passed": true,
+      "detail": {
+        "exit_u": 0.0,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 8.881784197001252e-16,
+        "rate_per_volume": 2.220446049250313e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 58",
+      "passed": true,
+      "detail": {
+        "exit_u": 2.7755575615628914e-17,
+        "exit_l": 3.3306690738754696e-16,
+        "q_per_volume": 8.881784197001252e-16,
+        "rate_per_volume": 4.440892098500626e-16,
+        "kinetic_factor": 0.0
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 59",
+      "passed": true,
+      "detail": {
+        "exit_u": 6.938893903907228e-18,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 0.0,
+        "kinetic_factor": 0.0
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 60",
+      "passed": true,
+      "detail": {
+        "exit_u": 1.3877787807814457e-17,
+        "exit_l": 2.220446049250313e-16,
+        "q_per_volume": 8.881784197001252e-16,
+        "rate_per_volume": 4.440892098500626e-16,
+        "kinetic_factor": 0.0
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 61",
+      "passed": true,
+      "detail": {
+        "exit_u": 6.938893903907228e-18,
+        "exit_l": 2.220446049250313e-16,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 0.0,
+        "kinetic_factor": 0.0
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 62",
+      "passed": true,
+      "detail": {
+        "exit_u": 0.0,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 4.440892098500626e-16,
+        "kinetic_factor": 0.0
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 63",
+      "passed": true,
+      "detail": {
+        "exit_u": 1.3877787807814457e-17,
+        "exit_l": 2.220446049250313e-16,
+        "q_per_volume": 8.881784197001252e-16,
+        "rate_per_volume": 4.440892098500626e-16,
+        "kinetic_factor": 0.0
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 64",
+      "passed": true,
+      "detail": {
+        "exit_u": 2.0816681711721685e-17,
+        "exit_l": 3.3306690738754696e-16,
+        "q_per_volume": 1.7763568394002505e-15,
+        "rate_per_volume": 8.881784197001252e-16,
+        "kinetic_factor": 0.0
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 65",
+      "passed": true,
+      "detail": {
+        "exit_u": 2.0816681711721685e-17,
+        "exit_l": 2.220446049250313e-16,
+        "q_per_volume": 1.3322676295501878e-15,
+        "rate_per_volume": 4.440892098500626e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 66",
+      "passed": true,
+      "detail": {
+        "exit_u": 2.7755575615628914e-17,
+        "exit_l": 3.3306690738754696e-16,
+        "q_per_volume": 1.3322676295501878e-15,
+        "rate_per_volume": 6.661338147750939e-16,
+        "kinetic_factor": 0.0
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 67",
+      "passed": true,
+      "detail": {
+        "exit_u": 2.42861286636753e-17,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 1.7763568394002505e-15,
+        "rate_per_volume": 1.1102230246251565e-15,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 68",
+      "passed": true,
+      "detail": {
+        "exit_u": 3.469446951953614e-18,
+        "exit_l": 0.0,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 2.220446049250313e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 69",
+      "passed": true,
+      "detail": {
+        "exit_u": 3.469446951953614e-18,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 0.0,
+        "rate_per_volume": 2.220446049250313e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 70",
+      "passed": true,
+      "detail": {
+        "exit_u": 6.938893903907228e-18,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 0.0,
+        "rate_per_volume": 2.220446049250313e-16,
+        "kinetic_factor": 0.0
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 71",
+      "passed": true,
+      "detail": {
+        "exit_u": 1.3877787807814457e-17,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 1.3322676295501878e-15,
+        "rate_per_volume": 8.881784197001252e-16,
+        "kinetic_factor": 0.0
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 72",
+      "passed": true,
+      "detail": {
+        "exit_u": 6.938893903907228e-18,
+        "exit_l": 2.220446049250313e-16,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 4.440892098500626e-16,
+        "kinetic_factor": 0.0
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 73",
+      "passed": true,
+      "detail": {
+        "exit_u": 1.3877787807814457e-17,
+        "exit_l": 3.3306690738754696e-16,
+        "q_per_volume": 8.881784197001252e-16,
+        "rate_per_volume": 6.661338147750939e-16,
+        "kinetic_factor": 0.0
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 74",
+      "passed": true,
+      "detail": {
+        "exit_u": 1.0408340855860843e-17,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 4.440892098500626e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 75",
+      "passed": true,
+      "detail": {
+        "exit_u": 1.734723475976807e-17,
+        "exit_l": 3.3306690738754696e-16,
+        "q_per_volume": 8.881784197001252e-16,
+        "rate_per_volume": 4.440892098500626e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 76",
+      "passed": true,
+      "detail": {
+        "exit_u": 6.938893903907228e-18,
+        "exit_l": 2.220446049250313e-16,
+        "q_per_volume": 8.881784197001252e-16,
+        "rate_per_volume": 4.440892098500626e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 77",
+      "passed": true,
+      "detail": {
+        "exit_u": 0.0,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 4.440892098500626e-16,
+        "rate_per_volume": 2.220446049250313e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 78",
+      "passed": true,
+      "detail": {
+        "exit_u": 1.0408340855860843e-17,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 8.881784197001252e-16,
+        "rate_per_volume": 6.661338147750939e-16,
+        "kinetic_factor": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 79",
+      "passed": true,
+      "detail": {
+        "exit_u": 1.0408340855860843e-17,
+        "exit_l": 1.1102230246251565e-16,
+        "q_per_volume": 8.881784197001252e-16,
+        "rate_per_volume": 4.440892098500626e-16,
+        "kinetic_factor": 0.0
+      }
+    },
+    {
+      "name": "Decimal CSS hypothetical_p50_dependent_unloading 80",
+      "passed": true,
+      "detail": {
+        "exit_u": 2.0816681711721685e-17,
+        "exit_l": 3.3306690738754696e-16,
+        "q_per_volume": 2.220446049250313e-15,
+        "rate_per_volume": 1.3322676295501878e-15,
+        "kinetic_factor": 0.0
+      }
+    },
+    {
+      "name": "fast-to-slow contact exponent -20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fast-to-slow contact exponent -12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fast-to-slow contact exponent -6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fast-to-slow contact exponent 0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fast-to-slow contact exponent 1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "original tiny-contact defect independently reproduced",
+      "passed": true,
+      "detail": {
+        "parameters": [
+          100,
+          10,
+          30,
+          2,
+          1,
+          1,
+          1e-20,
+          1e-20,
+          5
+        ],
+        "original_rate": 0.0,
+        "corrected_rate": 1.0217889908256885,
+        "decimal_rate": 1.021788990825688
+      }
+    },
+    {
+      "name": "dependent optimum derivative brackets zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent stationary optimum",
+      "passed": true,
+      "detail": 41.29977057060887
+    },
+    {
+      "name": "constant optimum agrees with analytic square root",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "saved RK4 independently checked 0",
+      "passed": true,
+      "detail": 2.3271423676973768e-10
+    },
+    {
+      "name": "saved RK4 independently checked 1",
+      "passed": true,
+      "detail": 2.3271423676973768e-10
+    },
+    {
+      "name": "saved RK4 independently checked 2",
+      "passed": true,
+      "detail": 3.360645095540349e-13
+    },
+    {
+      "name": "saved RK4 independently checked 3",
+      "passed": true,
+      "detail": 3.8352654385676033e-13
+    },
+    {
+      "name": "saved RK4 independently checked 4",
+      "passed": true,
+      "detail": 1.1251666265366111e-11
+    },
+    {
+      "name": "saved RK4 independently checked 5",
+      "passed": true,
+      "detail": 1.1251666265366111e-11
+    },
+    {
+      "name": "saved RK4 independently checked 6",
+      "passed": true,
+      "detail": 6.743494651573201e-12
+    },
+    {
+      "name": "saved RK4 independently checked 7",
+      "passed": true,
+      "detail": 6.743494651573201e-12
+    },
+    {
+      "name": "invalid input rejected [100, 10, 30, 2, -1, 1, 1, 1, 5]",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "invalid input rejected [100, 10, 0, 2, 1, 1, 1, 1, 5]",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "invalid input rejected [10, 100, 30, 2, 1, 1, 1, 1, 5]",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "invalid input rejected [100, 10, 30, nan, 1, 1, 1, 1, 5]",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "inactive phases preserve nonunique CSS",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "zero period gives undefined rate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no-gradient normalized efficiency undefined",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "maximum_sweep_absolute_error": 2.220446049250313e-15,
+  "independent_dependent_optimum": 41.29977057060887,
+  "original_tiny_contact_counterexample": {
+    "parameters": [
+      100,
+      10,
+      30,
+      2,
+      1,
+      1,
+      1e-20,
+      1e-20,
+      5
+    ],
+    "original_rate": 0.0,
+    "corrected_rate": 1.0217889908256885,
+    "decimal_rate": 1.021788990825688
+  },
+  "limitations": [
+    {
+      "kind": "out-of-sweep floating-point domain limitation",
+      "parameters": [
+        100,
+        10,
+        30,
+        2,
+        1,
+        1,
+        1e-200,
+        1e-200,
+        5
+      ],
+      "corrected_rate": 0.0,
+      "decimal_rate": 1.021788990825688,
+      "interpretation": "The source comment arbitrarily slow positive relaxation is too broad: product underflow remains at fantastically small contacts. No executed sweep or declared ODE case is affected. Restrict the supported numeric domain or divide before multiplying in a future version."
+    },
+    {
+      "kind": "model scope",
+      "interpretation": "This follows a well-mixed parcel through alternating clamped contact phases. It is not a mass-balanced pair of finite CSTRs, a spatial tissue model, or a physical carrier validation."
+    }
+  ],
+  "source_sha256": "af8bcce0bc8ab501c59f4b9408ad63fbe3b5cb81ee9bf50715f994606568e51e",
+  "auditor_sha256": "05dc8a0c5ceac2552ccedd0fc8bc3e790087879c64af8fa993629b2e5596b9d3"
+}

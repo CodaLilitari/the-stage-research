@@ -1,0 +1,41 @@
+=== 2026-10-15T15:13:42Z python3 -B al1_scan.py --run (foreground) ===
+{
+  "run_type": "AL1 scan",
+  "n_result_rows": 17640,
+  "n_module_tables": 58,
+  "check_pass_count": 8,
+  "check_count": 8,
+  "checks": {
+    "C1_identical_modules_series_equals_uniform": true,
+    "C2_zero_order_closed_forms": true,
+    "C3_first_order_closed_forms": true,
+    "C4_maxmin_equalisation": true,
+    "C5_random_allocations_never_beat_maxmin": true,
+    "C6_monotone_in_flow_and_beta": true,
+    "C7_bounded_by_ceiling": true,
+    "C8_refinement": true
+  },
+  "expectations": {
+    "E1_maxmin_dominates_parallel_heuristics": true,
+    "E2_no_arrangement_or_beta_passes_when_ceiling_below_reference": true,
+    "E3_median_rel_gain_flow_limited": 0.30657359992215244,
+    "E3_median_rel_gain_near_ceiling": 0.005101521131365614,
+    "E3_max_rel_gain": 218.1113268080563,
+    "E3_n_flow_limited": 668,
+    "E3_n_near_ceiling": 1642,
+    "E3_holds": true,
+    "E4_series_limited_first_ge_maxmin_everywhere": true,
+    "E4_counterexamples": [],
+    "E4_n_counterexamples": 0,
+    "E5_heuristic_order_is_best_everywhere": false,
+    "E6_configs": 119,
+    "E6_two_sided_beta1_beats_base_beta256": 102,
+    "E6_two_sided_beta1_reaches_reference": 67,
+    "E6_holds": false,
+    "E7_equal_power_maxmin_ge_series_first": 504,
+    "E7_total": 504
+  },
+  "elapsed_seconds": 30.400428391000048
+}
+[wall 31.45 s, max RSS 102800 kB]
+[exit 0 at 2026-10-15T15:14:14Z]

@@ -1,0 +1,186 @@
+{
+  "changed_episode_count": 5,
+  "affected_trials": [
+    [
+      10237,
+      "shuffled"
+    ]
+  ],
+  "changes": [
+    {
+      "seed": 10237,
+      "algorithm": "shuffled",
+      "episode": 1,
+      "differences": {
+        "mean_distance": {
+          "old": "2.4331339002799286",
+          "new": "1.8764406691831368",
+          "absolute_difference": 0.5566932310967918
+        },
+        "velocity_mse": {
+          "old": "0.04311743474503265",
+          "new": "0.0403523611996882",
+          "absolute_difference": 0.00276507354534445
+        },
+        "body_model_error": {
+          "old": "0.3485910485672413",
+          "new": "0.31382426748949876",
+          "absolute_difference": 0.03476678107774256
+        },
+        "final_distance": {
+          "old": "4.1829708733863535",
+          "new": "2.6077978836044347",
+          "absolute_difference": 1.5751729897819189
+        },
+        "end_model_sha256": {
+          "old": "c7b219dac2685efb3e5cc1cd1c2230907d89ad8f74fe722b70dee86dfe5598c4",
+          "new": "f71f0a3b4b1bd878a9e47758b73d241372eb8adc82737685a2458d1c9b688d0f"
+        }
+      }
+    },
+    {
+      "seed": 10237,
+      "algorithm": "shuffled",
+      "episode": 2,
+      "differences": {
+        "mean_distance": {
+          "old": "0.8950501776724975",
+          "new": "1.6898743188651597",
+          "absolute_difference": 0.7948241411926622
+        },
+        "early32_distance": {
+          "old": "0.5720254241847814",
+          "new": "1.0067061642325037",
+          "absolute_difference": 0.4346807400477223
+        },
+        "velocity_mse": {
+          "old": "0.02558209200144416",
+          "new": "0.03425777533348911",
+          "absolute_difference": 0.008675683332044947
+        },
+        "body_model_error": {
+          "old": "0.32726586224535076",
+          "new": "0.3357873799334035",
+          "absolute_difference": 0.00852151768805276
+        },
+        "final_distance": {
+          "old": "2.2073994715545737",
+          "new": "2.403994869357873",
+          "absolute_difference": 0.1965953978032995
+        },
+        "end_model_sha256": {
+          "old": "8a1e4d164ff7c499c2a1d844d0081a06510b513ce79ba0a0b8a1453d47fa7a11",
+          "new": "fed5eefcc669a868e79ef4467d892a446b7be74071fddfbd2c412642db82a78e"
+        }
+      }
+    },
+    {
+      "seed": 10237,
+      "algorithm": "shuffled",
+      "episode": 3,
+      "differences": {
+        "mean_distance": {
+          "old": "2.678171225586298",
+          "new": "1.8142766031083568",
+          "absolute_difference": 0.8638946224779411
+        },
+        "early32_distance": {
+          "old": "1.6480468659279186",
+          "new": "1.5802689371151706",
+          "absolute_difference": 0.06777792881274802
+        },
+        "velocity_mse": {
+          "old": "0.03403460212585034",
+          "new": "0.037226350046945876",
+          "absolute_difference": 0.003191747921095535
+        },
+        "body_model_error": {
+          "old": "0.35077250104922086",
+          "new": "0.31133379253945753",
+          "absolute_difference": 0.03943870850976333
+        },
+        "final_distance": {
+          "old": "3.439017088040738",
+          "new": "1.0194693250450149",
+          "absolute_difference": 2.419547762995723
+        },
+        "end_model_sha256": {
+          "old": "1041d2eff1038b6affe70a5cdf87dc5b712acadc89713362d51ff6622a9ebefc",
+          "new": "05581f4d2263aaf10be279c0ce9aa355e784e3224778266c55e5cad6d6559ce5"
+        }
+      }
+    },
+    {
+      "seed": 10237,
+      "algorithm": "shuffled",
+      "episode": 4,
+      "differences": {
+        "mean_distance": {
+          "old": "1.080375556034017",
+          "new": "0.6385040936200541",
+          "absolute_difference": 0.4418714624139628
+        },
+        "early32_distance": {
+          "old": "1.073272923572909",
+          "new": "0.7155590617065419",
+          "absolute_difference": 0.3577138618663671
+        },
+        "velocity_mse": {
+          "old": "0.015661960389551827",
+          "new": "0.02254698292225244",
+          "absolute_difference": 0.006885022532700614
+        },
+        "body_model_error": {
+          "old": "0.3056697370142605",
+          "new": "0.29834309226270966",
+          "absolute_difference": 0.007326644751550815
+        },
+        "final_distance": {
+          "old": "1.275051141898074",
+          "new": "0.8276474688431921",
+          "absolute_difference": 0.4474036730548818
+        },
+        "end_model_sha256": {
+          "old": "65ef3f6f72771457d488a9574269c264434fc6690772287a46d8eb043dd3d993",
+          "new": "f36dde2bfaaf9d6aec0821be19756d46bb5ef0f104119cf8eb4613b8a8e57cb9"
+        }
+      }
+    },
+    {
+      "seed": 10237,
+      "algorithm": "shuffled",
+      "episode": 5,
+      "differences": {
+        "mean_distance": {
+          "old": "0.7806407615756226",
+          "new": "1.7618387019531003",
+          "absolute_difference": 0.9811979403774778
+        },
+        "early32_distance": {
+          "old": "0.9991008674592956",
+          "new": "1.705039317080844",
+          "absolute_difference": 0.7059384496215484
+        },
+        "velocity_mse": {
+          "old": "0.03151539664659552",
+          "new": "0.028105286088835068",
+          "absolute_difference": 0.0034101105577604533
+        },
+        "body_model_error": {
+          "old": "0.29612634436141294",
+          "new": "0.31908075852536044",
+          "absolute_difference": 0.0229544141639475
+        },
+        "final_distance": {
+          "old": "0.8377117985160132",
+          "new": "1.2634270661290978",
+          "absolute_difference": 0.42571526761308465
+        },
+        "end_model_sha256": {
+          "old": "90fe17138abe32d4177c8c623a84c6a2960dc4e825e28d0dbebc08a616b0320f",
+          "new": "b938b5cdff354af55a2be46133fc7891f5190ebb60b1c34ace739c24faade8e8"
+        }
+      }
+    }
+  ]
+}

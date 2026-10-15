@@ -1,0 +1,121 @@
+THE STAGE — REQUIRED SCIENTIFIC CONTEXT FOR THIS PUBLIC SNAPSHOT
+15 October 2026. Ready-to-use public wording; use the relevant paragraphs beside
+the corresponding artifact and preserve source/correction provenance.
+
+GENERAL
+The first milestone is research toward artificial blood and oxygen support for
+synthetic tissue systems. This snapshot contains computational benchmarks,
+source audits and analyses of published data. It does not demonstrate an
+artificial-blood product, a viable tissue module, a physical AI body, clinical
+benefit, treatment or dosing. Numerical agreement and software checks establish
+bounded computational properties; they do not establish biological validity.
+Separate local Coda-team reviewers are not external experimental validators.
+Original collaborator submissions, local executions, corrections and acceptance
+decisions remain distinct.
+
+MECH1 — GROK BOT PROPOSAL AND LOCAL COUPLED SCREEN
+The local corrected screen assumes equal-volume annular tissue territories,
+uniform zero-order uptake, selected diffusion and wall-transport constants, a
+clamped inlet concentration and simplified radial/axial coupling. It examines
+hydraulic constraints under assumed inputs. The 4,512-case grid and its feasible
+subset are a parameter screen, not a probability or a biological success rate.
+At the selected central 200-micrometre geometry, minimum channel counts 41, 53
+and 44 arise under three stated wall models and imposed budgets. They are not
+universal channel counts or design recommendations.
+
+The original ten-channel calculation does not establish local oxygen supply:
+its radial concentration drop exceeds the assumed inlet concentration before
+axial depletion is counted. A formally negative concentration signals failure
+of that zero-order scenario, not a physically realizable negative concentration.
+The modeled power is pressure drop times flow, hydraulic power in the fluid;
+it does not include motor, electrical or controller losses. These calculations
+do not establish a universal 0.6-mm muscle thickness cap or prove that tissue
+and actuators can never share a fluid. A separate-loop architecture remains a
+design hypothesis. A proposed 50-fold increase in total oxygen content does not
+imply 50-fold usable unloading, delivery flux or flow reduction. Carrier
+kinetics, usable concentration difference and viscosity require separate data.
+Performance values from different HASEL configurations cannot be combined into
+one demonstrated actuator operating point.
+
+PF1-S — COWORK CLOUD ORIGINAL AND CORRECTED SENSITIVITY
+The returned original solver genuinely reproduced 972 cases with 460 above its
+assumed threshold. Its source-backed demand interpretation is superseded: the
+primary Balu text prints micromoles, not millimoles. Correct units give about
+9.7222e-18 mol/cell/s for the printed per-cell estimate, 1e-4 mol/m3/s for the
+bulk estimate and 1e-19 mol/cell/s from the stated imaging volume/cell-count
+reconstruction. The remaining factor 97.222 discrepancy is unresolved. None of
+these is established here as a maximal epidermal consumption rate.
+
+The corrected 729-case grid is hypothetical sensitivity analysis, not calibrated
+skin physiology. It gives 703 threshold passes on the original mesh and 702 on
+a mesh aligned to the nominal 100-micrometre layer. The threshold 0.05 mol/m3 is
+an analyst choice, not a survival or function threshold. One case changes from
+0.05025926 to 0.04600643 mol/m3 and remains below threshold after further
+refinement. Six nearest-threshold refinements provide bounded numerical checks,
+not a global proof of mesh convergence. Corrected marginal pass-rate variation
+is tied for demand and wall conductance over these chosen axes; the original
+headline that demand alone dominates is not retained.
+
+The solver is an idealized rectangle with a fixed-concentration lumen wall over
+its full height, including epidermal rows. It has no finite axial oxygen budget
+and does not reconstruct the source paper's channel or actual operating flow.
+The Rhee 10-in/12-out settings require another inward contribution at constant
+volume or another explanation; they do not imply outward leakage. The source's
+nominal collagen dilution and unresolved cell-count arithmetic must remain
+separate from a measured post-culture diffusivity. BioNumbers' HDF transfer is
+questionable for one cited cell study; the blanket assertion that both numbers
+are proven wrong-cell-type values is not established. Michaelis–Menten uptake
+has its largest dR/dC at the lowest nonnegative concentration, not at 1.8 Km.
+The proposed 30% sealing-shift and 20% budget-error cutoffs are unvalidated
+analyst choices; no biological protocol or module-failure rule was adopted.
+The original ledger's verified_primary labels record contributor assertions,
+not the current project's blanket endorsement.
+
+PF-DATA1 — NUA / STÜCKER REANALYSIS
+These are exploratory summaries of 20 rounded published observations from
+prepared, humidified skin, with the source's tape-stripping and temperature
+conditions retained. Nonsignificance does not establish equivalence, a fixed
+absolute blood-supply mechanism, or individual linearity from two points.
+Reported statistical intervals are conditional on the assumed sampling model;
+the Monte Carlo mixture with analyst-selected demand is a scenario distribution,
+not a confidence interval. J/q depth estimates do not establish safe tissue
+thickness or channel spacing. Aggregate analysis is supplied while the complete
+source transcription and individual derived output are omitted from this release.
+
+GEMINI PARAMETER COMPILATION
+The original draft is preserved for critique, not accepted as a primary dataset
+or product ranking. It converts some source ranges into invented mean/SD pairs,
+contains unverified reference values, and mixes 20-degree kinetic observations
+with 37-degree equilibrium conditions. Its Monte Carlo spread is not calibrated
+biological uncertainty. Its held-out Hill samples are synthetic, and heuristic
+NO, redox and delivery penalties are not validated physiology. Source licensing
+does not cure these scientific limitations.
+
+BH0 — DRYAD REANALYSIS
+The data describe actuator force, not hand grip or airborne load capacity. The
+15 rows per 3A condition do not establish 15 independent subjects or pairing.
+The 3B samples are three actuators repeatedly measured at eight tissue counts,
+not 24 independent biological replicates or three demonstrated human donors.
+These selected CSVs contain no oxygen measurements that identify the proposed
+oxygen-access mechanism.
+
+HB-STRUCT0 / HB-FOLD1 / HB-FOLD2
+The deposited oxy/deoxy structures calibrate geometry and parsing. Local heme
+distances and aligned C-alpha RMSD do not predict affinity, unloading, toxicity
+or therapeutic function. The folds use a known public 141-residue mature alpha
+chain, mapped to full-translation UniProt positions 2–142; comparisons use 140
+common C-alpha atoms. This is a tool/calibration comparison, not a novel fold or
+an unseen-target generalization test. The poor single-sequence result is retained.
+FOLD2 submitted a 4,522-row alignment with 1:1 MSA caps; cluster profiles can
+retain information from extra rows, so this is not proof that only one homolog
+or only one sequence supplied the improvement. AlphaFold outputs are theoretical
+predictions, not clinical validation.
+
+OK0 — OXYGEN KINETICS
+This model alternates clamped loading and unloading phases for a parcel; it is
+not two finite well-mixed CSTRs. Affinity can increase through association as
+well as reduced unbinding. Parameters are assumptions, not a fitted carrier.
+The stable tiny-contact correction was checked in the declared range through
+1e-20; it is not claimed to avoid floating-point underflow at every possible
+scale. Independent local numerical QA does not imply external biological
+replication or therapeutic suitability.

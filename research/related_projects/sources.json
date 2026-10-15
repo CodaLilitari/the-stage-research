@@ -1,0 +1,175 @@
+{
+  "schema": "the-stage.related-projects.sources.v1",
+  "survey_date": "2026-10-15",
+  "scope": "Seven projects, primary publications, author/institution pages, and explicitly labeled company descriptions. No contact, external execution, biological replication, or independent video assessment.",
+  "sources": [
+    {
+      "id": "C01",
+      "title": "Clone Android",
+      "url": "https://clonerobotics.com/android/",
+      "kind": "company product page",
+      "publication_date": null,
+      "inspected": "Current page text and its public tab-content asset; no independent performance validation."
+    },
+    {
+      "id": "C02",
+      "title": "Clone Android public page asset containing vascular tab",
+      "url": "https://clonerobotics.com/_nuxt/D8GOK2Ld.js",
+      "kind": "company served public page code",
+      "publication_date": null,
+      "inspected": "Text for vascular tab specifies 500 W, 40 SLPM, 100 psi; asset route discovered in actual page HTML. SLPM retained as published; not independently calibrated.",
+      "retrieval_receipt": {
+        "url": "https://clonerobotics.com/_nuxt/D8GOK2Ld.js",
+        "retrieved_utc": "2026-10-15T14:10:17.578957+00:00",
+        "bytes": 36322,
+        "sha256": "c9b3f54310d08fe8c18a52f804390d1e3fde242891e64d76038c294cff2c715c",
+        "stored_full_source": false
+      }
+    },
+    {
+      "id": "C03",
+      "title": "Clone Hand",
+      "url": "https://clonerobotics.com/hand/",
+      "kind": "company product and demonstration listing",
+      "publication_date": null,
+      "inspected": "Named presentations and descriptions; video contents not assessed."
+    },
+    {
+      "id": "C04",
+      "title": "Clone Research",
+      "url": "https://clonerobotics.com/research/",
+      "kind": "company page",
+      "publication_date": null,
+      "inspected": "Page currently states research content forthcoming."
+    },
+    {
+      "id": "C05",
+      "title": "Electrolytic vascular systems for energy-dense robots",
+      "url": "https://www.nature.com/articles/s41586-019-1313-1",
+      "doi": "10.1038/s41586-019-1313-1",
+      "publication_date": "2019-06-19",
+      "kind": "peer-reviewed experimental paper",
+      "inspected": "Indexed abstract and supplementary video descriptions; direct publisher open failed via identity redirect. No continuous endurance video or raw data inspected."
+    },
+    {
+      "id": "C06",
+      "title": "Robot circulatory system powers possibilities",
+      "url": "https://news.cornell.edu/stories/2019/06/robot-circulatory-system-powers-possibilities",
+      "publication_date": "2019-06-19",
+      "kind": "originating university account",
+      "inspected": "Full page text; interpret promotional endurance comparison cautiously."
+    },
+    {
+      "id": "C07",
+      "title": "Living skin on a robot",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2590238522002399",
+      "doi": "10.1016/j.matt.2022.05.019",
+      "publication_date": "2022-07-06",
+      "date_note": "Issue date; online 2022-06-09.",
+      "kind": "peer-reviewed experimental paper",
+      "inspected": "Publisher-indexed abstract, highlights and data/code availability statement."
+    },
+    {
+      "id": "C08",
+      "title": "Living skin on a robot — author laboratory summary",
+      "url": "https://www.hybrid.t.u-tokyo.ac.jp/en/research-papers/4ff0a260-b08e-4a48-9e50-994f980d32e8/",
+      "publication_date": null,
+      "kind": "originating laboratory summary",
+      "inspected": "Coverage and assisted dermis-repair description."
+    },
+    {
+      "id": "C09",
+      "title": "Erratum: Living skin on a robot",
+      "url": "https://waseda.elsevierpure.com/ja/publications/erratum-living-skin-on-a-robot-matter-2022-57-21902208-s259023852/",
+      "publisher_url": "https://www.sciencedirect.com/science/article/abs/pii/S259023852500205X",
+      "doi": "10.1016/j.matt.2025.102162",
+      "publication_date": "2025-06-04",
+      "kind": "published author correction reproduced in university research record",
+      "inspected": "Complete correction abstract including leakage units/values and scale bars; direct publisher route returned 403."
+    },
+    {
+      "id": "C10",
+      "title": "Perforation-type anchors inspired by skin ligament for robotic face covered with living skin",
+      "url": "https://www.hybrid.t.u-tokyo.ac.jp/en/research-papers/5b49f91c-9bf7-47cf-86b3-44f0cc8e7984/",
+      "publisher_url": "https://www.sciencedirect.com/science/article/pii/S2666386424003357",
+      "doi": "10.1016/j.xcrp.2024.102066",
+      "publication_date": "2024-06-25",
+      "kind": "author laboratory account of peer-reviewed experiment",
+      "inspected": "Full laboratory summary and journal link; publisher direct route blocked. No quantitative force constants imported."
+    },
+    {
+      "id": "C11",
+      "title": "Living skin robotic face — institutional announcement",
+      "url": "https://www.i.u-tokyo.ac.jp/news/press/2024/202406262434.shtml",
+      "publication_date": "2024-06-26",
+      "kind": "originating university announcement",
+      "inspected": "Publication identity, project description and linked institutional PDF."
+    },
+    {
+      "id": "C12",
+      "title": "Biohybrid bipedal robot powered by skeletal muscle tissue",
+      "url": "https://www.sciencedirect.com/science/article/am/pii/S2590238523006483",
+      "doi": "10.1016/j.matt.2023.12.035",
+      "publication_date": "2024",
+      "kind": "peer-reviewed experimental paper, open-archive route",
+      "inspected": "Results/discussion, float and culture-medium support, manual stimulation limitation, resource statement and video descriptions."
+    },
+    {
+      "id": "C13",
+      "title": "Biohybrid bipedal robot — author laboratory summary",
+      "url": "https://www.hybrid.t.u-tokyo.ac.jp/en/research-papers/c5c3f8db-1be5-499a-b623-c0d4d08ea4cb/",
+      "publication_date": null,
+      "kind": "originating laboratory account",
+      "inspected": "Full summary and linked article/demonstration route."
+    },
+    {
+      "id": "C14",
+      "title": "A scalable pipeline for designing reconfigurable organisms",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6994979/",
+      "full_text_route": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6994979/fullTextXML",
+      "doi": "10.1073/pnas.1910837117",
+      "publication_date": "2020-01-13",
+      "kind": "peer-reviewed experimental paper",
+      "inspected": "Europe PMC full-text XML including abstract and data availability; PMC HTML had browser challenge.",
+      "retrieval_receipt": {
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6994979/fullTextXML",
+        "retrieved_utc": "2026-10-15T14:10:19.197766+00:00",
+        "bytes": 85799,
+        "sha256": "2de9c4c19d0177886b1816f1e4200b69825a591ce107945d797cd3839b6dafdf",
+        "stored_full_source": false
+      }
+    },
+    {
+      "id": "C15",
+      "title": "Computational code for reconfigurable organisms",
+      "url": "https://github.com/skriegman/reconfigurable_organisms",
+      "publication_date": null,
+      "kind": "author public repository",
+      "inspected": "README, file listing and declared CC0 license visible; Python 2.7/Linux/Qt-era runtime requirements. No install or execution."
+    },
+    {
+      "id": "C16",
+      "title": "Motile Living Biobots Self-Construct from Adult Human Somatic Progenitor Seed Cells",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10811512/",
+      "full_text_route": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10811512/fullTextXML",
+      "doi": "10.1002/advs.202303575",
+      "publication_date": "2023-11-30",
+      "date_note": "Online date; Advanced Science 11(4), 2303575 is a 2024 issue.",
+      "kind": "peer-reviewed experimental paper",
+      "inspected": "Europe PMC full-text XML: abstract, sections 2.6 and 2.7, Fig. 6 caption, availability statement and supplement entries. Main paper, not the separate cover article.",
+      "retrieval_receipt": {
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10811512/fullTextXML",
+        "retrieved_utc": "2026-10-15T14:10:21.584897+00:00",
+        "bytes": 218091,
+        "sha256": "48d88a98aa64b9f9bb21ac76c29361d0dd416d3503b5749ccee589026a0cc0c9",
+        "stored_full_source": false
+      }
+    }
+  ],
+  "limitations": [
+    "No absence-of-evidence claim based on search failure.",
+    "Source code availability does not establish reproducibility.",
+    "Company page content is not independent experimental validation.",
+    "Proposed project changes are our synthesis and require parent acceptance."
+  ]
+}

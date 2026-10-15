@@ -1,0 +1,31 @@
+HB-FOLD2: CONTROLLED PUBLIC-MSA COMPARISON
+Executed 2026-10-15. One MSA-assisted prediction completed. It improves the same-target structural comparison substantially, while retaining material errors and all calibration limits.
+
+The official ColabFold 1.6.3 README permits serial local MSA queries from a single IP. The pinned official client identifies https://api.colabfold.com/ticket/msa and the env request mode. Those sources were downloaded and hashed in source_audit.json. No separate terms page was available at /terms (404); no account gate, paid service or usage restriction was bypassed. Only one already-public 141-residue mature alpha-globin sequence was submitted, with a generic numeric header. No user document, experimental coordinate file or private sequence was uploaded.
+
+Acquisition freeze precedes the request. The service immediately returned COMPLETE; no polling, resubmission or fallback was needed. Total response bytes counted by the acquisition script: 266,117, below the 1 GiB bound. The retained archive contains the UniRef and environmental A3Ms plus metadata. Only the two expected A3M files were extracted; the included msa.sh was neither extracted nor executed, and the pdb70.m8 template-hit table was not used. The combined input contains 4,522 alignment rows, 4,441 distinct aligned sequences, 141 aligned columns and three query-identical rows. Duplicate rows are not independent observations.
+
+Same public mature sequence, AlphaFold2-ptm model 3, seed 0, one model, one recycle, max-MSA 1:1, no templates, no initial coordinates, no heme, no relaxation, fast compilation, identical installed packages, selected weight hash and environment. The actual predictor output configs differ only in msa_mode; executable argument differences are input path, output path and MSA mode. The precomputed A3M is supplied directly, so no predictor-side server submission is required. All 49 artifacts in the HB-FOLD1 manifest remain byte-identical.
+
+The small max-MSA 1:1 setting remains fixed. It must not be described as 4,522 explicit model input rows after preprocessing. Inspection of the installed AlphaFold feature pipeline confirms cluster summaries are formed before extra-MSA cropping, so alignment information can enter cluster profiles even with this small retained-row cap. The full input-depth count is not an effective independent sequence count or a count of explicitly retained rows.
+
+Results (same mature positions 2-141, 140 C-alpha atoms per structural fit):
+Metric                         HB-FOLD1 query only    HB-FOLD2 MSA
+Mean saved per-residue pLDDT          44.814965          68.033546
+Rounded pTM score JSON                0.30               0.59
+Residues with pLDDT below 50         96 / 141            1 / 141
+RMSD to 2DN1 oxy alpha A, A          12.373976           2.977688
+RMSD to 2DN2 deoxy alpha A, A        12.341521           2.777162
+RMSD to 2DN2 deoxy alpha C, A        12.382064           2.822309
+
+The console reports final pLDDT 68.1; the table explicitly uses the arithmetic mean of the saved 141 per-residue values, 68.033546. The output score JSON and coordinates are retained rather than substituting a rounded log summary. Maximum aligned residual against oxy alpha A remains 7.851 A. Adjacent predicted C-alpha separations range 3.658-4.020 A, all coordinates are finite, all predicted residues match the input, and every evaluated residue identity agrees with the reference. Three fits agree with a separate Kabsch implementation within 1e-10 A. These are executable quality checks, not experimental validation or a comprehensive stereochemical assessment.
+
+Completed with return code 0 in 55.331 seconds including startup. Sampled process-tree peak RSS was 2.049 GiB. Global GPU use ranged from 8,904 MiB at the first sample to a maximum 13,601 MiB; minimum free GPU memory was 2,395 MiB. Per-process GPU attribution remains unavailable, so the 4,697 MiB global change is not a certified process VRAM peak. The 4 GiB process-RSS limit, 2,048 MiB global GPU-free reserve and 420-second prediction limit were not crossed. Acquisition plus inference remained well below the 30-minute budget. Kernel-timer warnings limit the interpretation of internal timing; the external wall clock is reported.
+
+Interpretation: for this one known target, model and seed, providing evolutionary alignment information improved both confidence outputs and experimental-coordinate agreement. This is a controlled practical pipeline observation, not a population estimate or proof that every MSA improves every prediction. Source-derived alignment content and stochastic preprocessing differ from the query-only run, as intended. The two experimental states and multiple chains are correlated references, not independent biological replicates. This mature chain is a potentially training-seen 2006 structure; neither run tests novel-fold generalization. Both exclude heme and the tetramer, and neither predicts binding affinity, oxygen delivery, toxicity, regeneration or clinical suitability.
+
+Source provenance and sequence mapping remain as in HB-FOLD1: PDB mature residue i = UniProt P69905 full-translation position i+1; input is mature positions 1-141, corresponding to UniProt 2-142 after initiator methionine removal. Experimental 2DN1 mature position 1 is unmodeled and is excluded from all three fits for matching denominators.
+
+Reproduction artifacts: acquire_msa.py (single-request acquisition; refuses silent resubmission), run_fold2_bounded.py (frozen one-run harness; refuses to overwrite a freeze), evaluate_fold2.py, plot_comparison.py, submitted_public_query.fasta, input/source/parameter hashes, raw response archive, retained alignment, prediction PDB/PAE/confidence, console log, resource samples and per-residue CSV. A future replication should use a new named run directory and preserve these records. Do not execute the returned archive shell member.
+
+Independent QA is recorded separately when returned. No additional fold is pending.

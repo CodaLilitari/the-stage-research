@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-15T15:21:28.852723+00:00",
+  "source_sha256": "05de597075e5a2e014d01d5477407b38d99008bfc32e655d26b5efcad88283a6",
+  "audit_sha256": "b744b8c797c441f3ce19c0e7ff04b12bb0330f3b5792d4211287ff7b57e56d04",
+  "q_epi_scenarios_mol_m3_s": {
+    "bulk_occlusion_unit_corrected_scenario": 0.0001,
+    "assumed_resting_bulk_scenario": 0.003,
+    "reported_per_cell_times_ROI_density_scenario": 0.00972
+  },
+  "all_other_axes": "unchanged provider 3 density x 3 D x 3 surface x 3 wall x 3 H",
+  "mesh": "original 36x54 and aligned 36x(H/10um); h_epi=100um exactly on interface",
+  "refinement": "six closest aligned cases to assumed .05 line, ties original order, doubled both axes",
+  "scope": "Arithmetic scenarios only: observed/derived rates are not measured qmax; no clinical or wetlab inference",
+  "timeout_internal_seconds": 300
+}

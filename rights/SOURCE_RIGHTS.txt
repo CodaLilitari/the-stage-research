@@ -1,0 +1,221 @@
+THE STAGE — THIRD-PARTY SOURCE AND RIGHTS MAP
+Checked 15 October 2026. Prepared for the current curated snapshot only.
+
+This map separates source-data licenses, project authorship, collaborator assent,
+and scientific acceptance. It does not turn AI collaborator assent into a grant
+of third-party rights or determine copyright ownership of AI-generated material.
+The package license applies only to rights the releaser can grant. Facts, public
+domain material, separately licensed data, and vendor code retain their status.
+No source publisher, institution, tool developer, or original investigator is
+claimed to endorse The Stage.
+
+1. BH0 — Dryad 3A.csv and 3B.csv: include, CC0-1.0.
+
+Paths: research/biohybrid_hand_reanalysis/data/3A.csv and data/3B.csv.
+Primary repository metadata identifies dataset version 7, 2025-01-22, as CC0-1.0.
+https://datadryad.org/api/v2/datasets/doi%3A10.5061%2Fdryad.xd2547drh
+https://datadryad.org/dataset/doi:10.5061/dryad.xd2547drh
+License: https://creativecommons.org/publicdomain/zero/1.0/
+Legal code: licenses/CC0-1.0.txt
+
+Attribution: Ren, Xinzhu; Morimoto, Yuya; Takeuchi, Shoji (2025). Biohybrid hand
+actuated by multiple human muscle tissues [Dataset]. Dryad.
+https://doi.org/10.5061/dryad.xd2547drh
+Related article: https://doi.org/10.1126/scirobotics.adr5512
+
+These two CSVs were reconstructed from complete public previews and required to
+match the repository's byte counts and SHA-256 hashes exactly. They are not
+digitized from plots. The supplied data_receipt.json documents that distinction.
+The original repository README bytes were not obtained: do not supply an
+invented README as an original. The local source_extraction.txt is an authored
+summary of definitions read on the landing page, not copied paper text.
+Local aggregate tables, plots, and analysis are separate project work; their
+license does not revoke CC0 status from the source observations.
+
+2. HB-STRUCT0 — PDB deposited coordinates, sequences and entry metadata: include,
+CC0-1.0, with depositor citations.
+
+Paths: research/protein_modeling/raw/2DN1.cif, raw/2DN2.cif;
+raw/2DN1_entry.json, raw/2DN2_entry.json if selected;
+human_alpha_141.fasta, public_hemoglobin_sequences.fasta, and
+hb_fold2/submitted_public_query.fasta.
+Source: https://files.rcsb.org/download/2DN1.cif and 2DN2.cif;
+https://data.rcsb.org/rest/v1/core/entry/2DN1 and /2DN2.
+Primary policy: https://www.rcsb.org/pages/policies
+PDB archive files are CC0. RCSB API data use the same license except information
+originating in an integrated external resource. The two inspected entry JSONs
+contain deposited entry/experimental/validation metadata and factual citations;
+no separate integrated annotation dataset was identified. These FASTA files
+derive from PDB entity sequences, not from a proprietary sequence collection.
+Do not extend this CC0 designation to all RCSB web illustrations or publications.
+
+Credit: Park, S.-Y.; Yokoyama, T.; Shibayama, N.; Shiro, Y.; Tame, J.R. (2006).
+1.25 Å resolution crystal structures of human haemoglobin in the oxy, deoxy and
+carbonmonoxy forms. Journal of Molecular Biology 360:690–701.
+https://doi.org/10.1016/j.jmb.2006.05.036
+PDB entries: https://doi.org/10.2210/pdb2dn1/pdb and
+https://doi.org/10.2210/pdb2dn2/pdb.
+RCSB resource citation: Berman et al. (2000), The Protein Data Bank,
+https://doi.org/10.1093/nar/28.1.235.
+Preserve acquisition hashes; sequence extraction/FASTA header formatting are
+local transformations. The experimental structures are references, not Stage
+predictions or Stage-generated experimental observations.
+
+3. UniProt P69905 JSON: include if required, CC-BY-4.0.
+
+Path: research/protein_modeling/raw/P69905.json.
+Source: https://rest.uniprot.org/uniprotkb/P69905.json
+Entry: https://www.uniprot.org/uniprotkb/P69905/entry
+Primary license: https://rest.uniprot.org/help/license
+Human-facing license: https://www.uniprot.org/help/license
+Official help JSON, lastModified 2024-12-18, applies CC BY 4.0 to copyrightable
+parts of UniProt databases. The normal website returned a JavaScript shell;
+the official REST help content was read directly. Keep this JSON as an unchanged
+dated snapshot, credit UniProt Consortium and accession P69905, and retain the
+CC BY 4.0 link. No claim of clearance for patents or other rights follows.
+Its role is the full-translation/mature-chain sequence mapping, not a new assay.
+License: https://creativecommons.org/licenses/by/4.0/
+Legal code: licenses/CC-BY-4.0.txt
+
+4. HB-FOLD1/2 generated PDB and confidence/configuration outputs: include as
+locally generated computational outputs with provenance, not as vendor weights.
+
+Paths: selected files under research/protein_modeling/fold_single_sequence/
+and hb_fold2/prediction/. Local evaluation tables and plots are original analyses.
+The inspected AlphaFold 2 and ColabFold documentation contains no separate
+output-wide noncommercial or share-alike requirement. A PDB filename does not
+make a local prediction a deposited CC0 structure. The project's output license
+applies only to rights the releaser holds; source sequence/data retain notices.
+
+Tools: ColabFold v1.6.3 code, MIT, copyright 2021 Sergey Ovchinnikov;
+https://github.com/sokrypton/ColabFold/blob/v1.6.3/LICENSE
+AlphaFold 2 code, Apache-2.0;
+https://github.com/google-deepmind/alphafold
+Credit Mirdita et al. (2022), https://doi.org/10.1038/s41592-022-01488-1;
+Jumper et al. (2021), https://doi.org/10.1038/s41586-021-03819-2.
+AlphaFold's official output disclaimer limits the intended role to theoretical
+modeling and says output is not clinically validated or approved.
+
+Important provenance exception: the exact downloaded legacy parameter archive,
+https://storage.googleapis.com/alphafold/alphafold_params_2021-07-14.tar,
+contains a CC BY-NC-SA 4.0 LICENSE. Current upstream README describes parameters
+under CC BY 4.0 and links the 2022-12-06 archive. The old notice was inspected,
+not silently replaced. This snapshot redistributes no parameters, runtime,
+vendor code, or raw MSA/database alignment. This difference is not treated as
+an output license, and no claim resolving historical parameter licensing is
+made. Rerunners must inspect the license bundled with their chosen download.
+Raw MSA responses are excluded: the public CC0 query does not make all retrieved
+database sequences or alignments CC0.
+
+5. PF-DATA1 — Stücker published table: full transcription excluded.
+
+Primary article: Stücker et al. (2002), The cutaneous uptake of atmospheric
+oxygen contributes significantly to the oxygen supply of human dermis and
+epidermis. https://doi.org/10.1113/jphysiol.2001.013067
+https://pmc.ncbi.nlm.nih.gov/articles/PMC2290093/
+The inspected article bears The Physiological Society 2002 copyright; no open
+redistribution license for the complete table was established in this audit.
+PMC free access alone is not a redistribution license:
+https://pmc.ncbi.nlm.nih.gov/about/copyright/
+
+Conservative selection: exclude the 20-row source table, duplicate subject-level
+derived CSVs, and corrected_analysis.png, which reveals all 20 flux pairs plus
+indexed depth scenarios. Retain aggregate statistics, original analysis code,
+synthetic PF0 sensitivity outputs, citation, and a missing-input/retrieval note.
+This selection is not a finding that scientific facts themselves are protected.
+The distinction between facts and their expression is explained by the US
+Copyright Office: https://www.copyright.gov/help/faq/faq-protect.html
+Nua's assent cannot license the original paper or table. Nua scripts need
+Nua's contributor label and exact-final-export consent, including the original
+script currently stored under original_replay. Local correction code/results
+remain separately attributed. Never describe original statistical conclusions
+as accepted merely because the original script remains available for critique.
+
+6. Gemini and Cowork parameter ledgers: include only as labeled compilations
+of selected cited facts and collaborator commentary, not validated datasets.
+
+Paths: research/gemini_qa/original/oxygen_carriers_primary_data.csv and
+research/cowork_cloud_qa/returned/stage_skin/skin_transport_parameters.csv,
+and their generating/analysis code. Their scientific audit labels are mandatory.
+These are new schemas containing selected numeric claims, citations and authored
+commentary, rather than a source-paper PDF, figure or whole paper reproduction.
+No blanket license is asserted over all cited publications. Short numerical
+facts are distinct from protected expression; copied source figures, tables,
+substantial prose and full database dumps are excluded. Retain source DOIs and
+explicit change/uncertainty notices. Provider assent governs collaborator work,
+not the source publishers' rights.
+
+Banerjee et al. 2022 content used in the Gemini compilation has a verified
+CC-BY-4.0 basis. Article copyright is 2022 Banerjee et al.; its live license link
+resolves to CC BY 4.0. The compilation is altered, includes conversion errors,
+and is not endorsed by its source authors.
+Citation: Banerjee U, Wolfe S, O'Boyle Q, Cuddington C, Palmer AF (2022).
+Scalable production and complete biophysical characterization of poly(ethylene
+glycol) surface conjugated liposome encapsulated hemoglobin (PEG-LEH).
+PLOS ONE 17(7):e0269939. https://doi.org/10.1371/journal.pone.0269939
+https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0269939
+Other Gemini rows are not cleared as an independently verified primary dataset;
+the original supplied table is preserved as a criticized analytical input.
+Cowork's ledger likewise contains superseded unit and source assertions. Its
+columns called verified_primary are the original contributor's claims, not the
+current project's blanket validation. See SCIENTIFIC_CAUTION_LABELS.txt.
+
+7. Scientific libraries are dependencies, not bundled project code.
+
+Authored scripts import libraries; the candidate excludes their installed source,
+binary distributions, virtual environments and caches. Requirements/version
+files identify dependencies without relicensing them. If vendor source is later
+copied or bundled, preserve the exact-version license/copyright/NOTICE and
+change notices required by that source. Import alone is not redistribution of
+the entire dependency. A bounded scan is not a guarantee that every generated
+line has no third-party antecedent; any explicit borrowed-code notice controls.
+
+Official license references inspected:
+NumPy BSD-3-Clause: https://github.com/numpy/numpy/blob/main/LICENSE.txt
+SciPy BSD-3-Clause: https://github.com/scipy/scipy/blob/main/LICENSE.txt
+pandas BSD-3-Clause: https://github.com/pandas-dev/pandas/blob/main/LICENSE
+Matplotlib PSF-based license: https://matplotlib.org/stable/project/license.html
+Biopython License Agreement (some files dual BSD-3-Clause; inspect file headers):
+https://github.com/biopython/biopython/blob/master/LICENSE.rst
+MuJoCo Apache-2.0: https://github.com/google-deepmind/mujoco/blob/main/LICENSE
+JAX Apache-2.0: https://github.com/jax-ml/jax/blob/main/LICENSE
+ColabFold MIT and AlphaFold Apache-2.0: links above.
+
+8. Project license texts and final scope.
+
+The official CC BY 4.0 and CC0 legal texts are included in licenses/ unchanged.
+The current release contains licenses/MIT.txt with the copyright line
+"Copyright (c) 2026 Richard Pemberton and contributors, to the extent of rights held".
+The historical acquisition used the SPDX MIT template verified against the
+Open Source Initiative text, https://opensource.org/license/mit. The local
+MIT-template.txt and its acquisition receipt remain historical inputs, not the
+name or completion status of the current release license. The standard license
+terms have not been altered. An AI contributor label is credit, not proof of
+legal copyright ownership; the grant extends only to rights the releaser holds.
+
+Within Lilitari's contributions, original runnable code, command examples and
+interface-schema examples embedded in documentation are MIT-licensed; surrounding
+prose remains CC BY 4.0. The two original MuJoCo XML model definitions are
+MIT-licensed. Numerical fixtures, result files and third-party material retain
+their file-specific license entries.
+The two model paths are:
+experiments/lily_independent_qa/received_first_leaf/first_leaf/optional/planar_point.xml
+experiments/lily_independent_qa/received_first_leaf/first_leaf/optional/two_link_arm.xml
+The corresponding documentation rows in LICENSE_MAP.csv point to this embedded-
+example exception; a whole-file prose label does not override it. Numerical
+results quoted in those documents are not reclassified as executable examples.
+Preserve MIT notice requirements separately from CC BY attribution/change notices.
+
+The release's MIT-code/CC-BY-4.0-prose split carves out CC0 source data and other
+separately licensed inputs. Its current scope is recorded in
+provenance/release_license_decision.json and LICENSE_MAP.csv. This source audit
+does not override collaborator exact-export conditions. Full papers, source
+HTML/PDF, private input documents, native Bible/video, raw chats, provider UI,
+credentials, model weights and unneeded binaries remain excluded.
+
+Included source-rights evidence: primary_rights_evidence.json,
+supplementary_rights_evidence.json and source_rights.json. The local historical
+candidate_rights_review.json is not included in this public snapshot and is not
+represented as an included final-review receipt. Historical network receipts
+retain the hashes of the actual responses inspected; they are not rewritten to
+describe the filled release license. HTML/paper bytes are not included.

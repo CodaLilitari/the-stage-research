@@ -1,0 +1,26 @@
+[
+  {
+    "profile": "primary",
+    "pid": 785,
+    "started_local_utc": "2026-10-15T13:32:34.046827+00:00",
+    "primary_attempt": 2
+  },
+  {
+    "profile": "no_delay",
+    "pid": 786,
+    "started_local_utc": "2026-10-15T13:32:34.047393+00:00",
+    "primary_attempt": 1
+  },
+  {
+    "profile": "clean",
+    "pid": 787,
+    "started_local_utc": "2026-10-15T13:32:34.047934+00:00",
+    "primary_attempt": 1
+  },
+  {
+    "profile": "stationary",
+    "pid": 788,
+    "started_local_utc": "2026-10-15T13:32:34.049050+00:00",
+    "primary_attempt": 1
+  }
+]

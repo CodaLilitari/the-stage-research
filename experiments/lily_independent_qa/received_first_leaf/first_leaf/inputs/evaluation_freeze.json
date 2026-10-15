@@ -1,0 +1,12 @@
+{
+  "stage": "after development; before evaluation",
+  "local_timestamp_utc": "2026-10-15T13:31:07.312129+00:00",
+  "changes_after_development": "None to experiment, parameters, outcomes, or design thresholds.",
+  "hashes": {
+    "src/first_leaf.py": "2306148b46490fae74dc49fc31e1161f76e64bf902d836276c2dfd9565645515",
+    "inputs/protocol.json": "d3224dbb752eba3368c0a1569eb733d7a59fb9a3bf1929fdbb1810f9ae9cf382",
+    "inputs/evaluation_fixtures.jsonl.gz": "41079d8a6b202ccd6e1b3908f19ceac48fb9aefa8cfdc159456765692f43f4d7",
+    "inputs/development_fixtures.jsonl.gz": "0f6c16d9484dda964cb6e1c414603ee6ef306b4adb03cc82e494c5373117fc91"
+  },
+  "interpretation": "Self-recorded freeze, not independently witnessed. Development outputs already inspected; evaluation not yet run."
+}

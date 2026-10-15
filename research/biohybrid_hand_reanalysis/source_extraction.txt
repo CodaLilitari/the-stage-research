@@ -1,0 +1,41 @@
+BH0 source and scope extraction, 2026-10-15 — local Coda team with Richard Pemberton
+
+Dataset: Ren, Morimoto, Takeuchi (2025), Biohybrid hand actuated by multiple
+human muscle tissues, Dryad, https://doi.org/10.5061/dryad.xd2547drh
+Metadata API: https://datadryad.org/api/v2/datasets/doi%3A10.5061%2Fdryad.xd2547drh
+Version 7, publication and last-modification date 2025-01-22, CC0-1.0.
+Primary article: https://doi.org/10.1126/scirobotics.adr5512
+The article was published in Science Robotics 10, eadr5512, 12 February 2025.
+
+The dataset README on the public landing page explicitly defines cf as
+contractile force in mN, 3A's two columns as in-sheet and in-bundle culture
+conditions, 3B's sample 1/2/3 as three actuator samples, and n as tissue count.
+Its relative-force definition is force divided by that sample's force at n=1.
+CSV filenames map to article figure numbers. These are actuator samples, not
+three human donors. No donor count can be inferred from this selected dataset.
+
+Indexed primary article text describes Figure 3A as a culture-configuration
+comparison and Figure 3B as force versus the number of tissues. The hand
+operates in medium, using a float-supported cable mechanism; measurements here
+are actuator forces, not grip-force or airborne load-capacity measurements.
+The authors propose oxygen/nutrient access as a reason for the culture effect;
+the selected CSVs contain no oxygen measurements that identify that mechanism.
+We do not repeat the article's significance test or claim biological replication.
+
+Retrieval qualification: direct public downloads returned HTTP 403 and the API
+download route HTTP 401. The public CSV preview contains all table cells.
+We reconstructed the original CSV serialization, including UTF-8 BOM, and
+required byte count AND SHA-256 equality to the independent file metadata
+published by Dryad. Both CSVs match exactly. The receipt records this method.
+README.md itself could not be retrieved; its relevant definitions were read
+from the landing page. No fake original README file is supplied.
+
+3A contains 15 numerical observations per condition and embedded summaries,
+without explicit sample IDs in these columns. We will give observation-level
+descriptive means/SD and label that limitation. We will not treat 15 rows as
+15 independent subjects, invent pairing across conditions, or infer confidence
+intervals from them. 3B has three explicit sample blocks with eight counts each;
+its right-hand columns are a rearranged copy, not additional observations.
+
+Analysis frozen after source/table inspection and before aggregate calculation.
+This is a transparent descriptive reanalysis, not a blind preregistration.

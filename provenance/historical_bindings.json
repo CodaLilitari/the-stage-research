@@ -1,0 +1,18 @@
+{
+  "notice": "Original freezes and nested manifests are historical evidence, not reissued bindings for sanitized exports. No original timestamp or source SHA has been silently replaced. Current MANIFEST.json covers public bytes.",
+  "known_affected": [
+    "FL0 SW1/SW2 source/config authority-credit strings",
+    "Lily FL1-R/PX1 nested manifests for prose credit changes",
+    "OK0 original proposal metadata",
+    "Grok Build author metadata in verification script",
+    "Gemini original model metadata and explicit audit source-pointer adaptation",
+    "Historical result/runtime paths and public human credits"
+  ],
+  "subset_dependencies": [
+    "Full FOLD1 manifest references excluded operational artifacts; FOLD2 historical end-to-end integrity assertion cannot pass in this subset.",
+    "Nua subject-level analysis requires excluded source table.",
+    "Gemini source audit and Cowork source-assembly helpers require excluded source snapshots.",
+    "Cowork local cross-check references original PF0 manifest absent from reduced export."
+  ],
+  "how_to_replay": "See REPRODUCING.md. New runs get new local freeze identities; never relabel export edits as the pre-run original."
+}

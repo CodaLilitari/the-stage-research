@@ -1,0 +1,151 @@
+THE STAGE HUMAN OXYGEN CARRIER TRACK
+15 October 2026 | Coda collaborating with Richard Pemberton
+
+RESULT AND RESEARCH QUESTION
+
+Human artificial blood is a serious research track, but this first artifact is
+an oxygen-carrier review and a theoretical binding calculation. It does not
+establish a complete replacement for blood or a perfusion system for living
+tissue over a robot. The concrete question studied here is: how do affinity
+and binding-site capacity change the equilibrium oxygen-content difference
+between two fixed pressures? This is useful because a carrier can load oxygen
+well yet release little across a particular pressure interval.
+
+WHAT THE HUMAN EVIDENCE SUPPORTS
+
+The 2022 first-human HbV report concerns 11 healthy volunteers, including one
+whose infusion was stopped after a rash. Fever and infusion reactions occurred;
+reported events resolved. The published pharmacokinetic estimate came from a
+very small evaluable subset. This supports an initial safety/kinetic observation
+under the tested conditions. It is not a patient efficacy trial, evidence of
+whole-blood replacement, or a demonstration of long-term tissue perfusion. The
+vesicle approach is intended to compartmentalize hemoglobin; that intention
+must not be restated as elimination of every toxicity. [H1]
+
+The 2026 publication describes a planned phase Ib study in 16 healthy volunteers.
+Its primary outcome is safety and its secondary outcome is pharmacokinetics.
+It does not report the completed phase Ib outcomes. A small open-label,
+single-centre healthy-volunteer study cannot by itself establish benefit in
+hemorrhage or chronic living-tissue support. [H2]
+
+Current registry routes describe the study as Not Recruiting and retain a
+target of 16. Indexed and live routes display different update dates; each
+observation is preserved in source_read_notes.txt. The root session observed
+blank result fields on its live 15 October 2026 portal view. Neither that label
+nor the absence of posted results is evidence of efficacy or a verdict on the
+trial's outcome. [H3]
+
+HC0 THEORETICAL MODEL
+
+S(P) = P^n / (P^n + P50^n)
+Loaded normalized content = B * S(P_load)
+Residual normalized content = B * S(P_unload)
+Equilibrium content difference = B * [S(P_load) - S(P_unload)]
+
+P50 is the half-saturation pressure; lower P50 means higher affinity within
+this fixed Hill model. n is an empirical-shape parameter treated here as an
+assumption, not an estimated number of binding sites. B is dimensionless
+relative binding-site capacity. It is not concentration, mass, volume or dose.
+The content difference describes two equilibrium states; it is not a delivery
+rate, and it is not proof that a tissue can extract that amount in transit.
+
+All settings are hypothetical. The sweep covers P50 from 5 to 100 mmHg in
+unit steps; n = 1, 2, 2.7 and 4; loading pressures 60, 80 and 100 mmHg;
+unloading pressures 10, 20 and 40 mmHg; and capacities 0.5, 1 and 2.
+These are sensitivity settings, not clinical targets or measured HbV values.
+The run contains 10,368 CSV rows, representing 3,456 affinity/pressure/shape
+cases evaluated at three capacity scalings. These are deterministic model
+evaluations, not experimental subjects or statistical replications.
+
+WHY THERE IS AN INTERIOR OPTIMUM
+
+For fixed positive pressures L > U and unchanged n > 0, set A=L^n, B0=U^n,
+and x=P50^n. The saturation difference becomes
+
+  D(x) = (A-B0)*x / [(A+x)*(B0+x)].
+
+Its derivative has the sign of A*B0-x^2. Therefore the unique interior maximum
+is x=sqrt(A*B0), or P50=sqrt(L*U), independently of n. Very high affinity
+leaves both states nearly saturated; very low affinity loads little. This is
+an algebraic property of the imposed model, not an optimized biological design.
+
+For the illustrative 100-to-20 mmHg interval with n=2.7, the analytic maximum
+is P50=44.72136 mmHg and the saturation difference is 0.79555. Capacities
+0.5, 1 and 2 give normalized content differences 0.39777, 0.79555 and 1.59110.
+The last value exceeds one because it is in relative capacity units, not a
+saturation fraction. Linearity in capacity is built into the equation; its
+verification checks implementation consistency, not a new biological finding.
+
+ACTUAL EXECUTION AND CHECKS
+
+The source and configuration were frozen locally before execution. All 11,973
+evaluations of declared invariant checks passed, including saturation bounds,
+monotonicity, half-saturation, n=1 closed-form agreement, pressure-scale
+invariance, invalid-input rejection, capacity scaling and 36 analytic optimum
+cases. The same implementation reproduced CSV and JSON results exactly.
+These counts describe numerical checks, not independent scientific evidence.
+The freeze is local, without an independent timestamp or preregistration.
+
+The plot was visually inspected. A separate plot_hc0.py adjusts publication
+layout using the unchanged CSV; it does not change frozen hc0.py or model
+results. HC0_binding_unloading.png and .pdf are the final figures.
+
+WHAT THIS MODEL LEAVES OUT
+
+It omits transit kinetics, flow, viscosity, vessel geometry, dissolved oxygen,
+consumption feedback, pH/CO2/temperature shifts, oxidation and methemoglobin,
+nitric-oxide interactions, complement/immune effects, clearance, coagulation
+and cellular blood functions. The imposed downstream pressure is especially
+strong: real tissue oxygen pressure depends on supply, diffusion and demand.
+A favorable equilibrium content difference cannot establish compatibility,
+clinical safety, oxygen delivery, tissue viability, or superiority of a carrier.
+
+USEFUL NEXT QUESTION
+
+The next scientific step is to obtain a source-pinned, experimentally measured
+binding curve and independently characterized transport/kinetic limits for one
+specified research carrier, then ask whether conclusions survive measured
+uncertainty and explicit loading constraints. A later computational interface
+could pass a validated content-versus-pressure function into a coupled flow and
+tissue model. HC0 supplies a mathematical test case for that interface; its
+settings are not measured inputs for the parallel synthetic-circulation track.
+No clinical dosing, formulation, manufacture, tissue experiment or deployment
+is specified or authorized by this calculation.
+
+FILES AND REPRODUCTION
+
+hc0.py                 Frozen model, numerical checks and reproduction code
+freeze.json            Local before-run source hash and parameter provenance
+sensitivity.csv        Every evaluated case; no hidden statistical exclusions
+optima.json            Analytic and discrete-grid maxima for 36 pressure/n cases
+checks.json            Complete numerical check outcomes
+results.json           Counts, illustrative values and inference boundaries
+verification.json      Exact same-implementation reproduction receipt
+plot_hc0.py             Final figure layout from saved data
+HC0_binding_unloading.png / .pdf   Visually checked figures
+source_read_notes.txt   Source read depth and route-specific registry evidence
+source_read_receipts.json         Public XML retrieval metadata and hashes
+manifest-sha256.txt     Exact hashes of current files except the manifest itself
+
+From the workspace root, using the existing project environment:
+  .venv-stage\Scripts\python.exe research\human_oxygen_carrier\hc0.py verify
+
+prepare and run refuse to overwrite the existing freeze/results. A changed
+model should use a new version. Replotting does not rerun the model:
+  .venv-stage\Scripts\python.exe research\human_oxygen_carrier\plot_hc0.py
+
+PRIMARY SOURCES
+
+[H1] Azuma et al. Blood Advances 2022;6:5711-5715.
+First-in-human phase 1 trial of hemoglobin vesicles as artificial red blood
+cells developed for use as a transfusion alternative.
+https://doi.org/10.1182/bloodadvances.2022007977
+https://pmc.ncbi.nlm.nih.gov/articles/PMC9618780/
+
+[H2] Sakai et al. BMJ Open 2026;16:e110183. Phase Ib study protocol.
+https://doi.org/10.1136/bmjopen-2025-110183
+https://pmc.ncbi.nlm.nih.gov/articles/PMC12829376/
+
+[H3] jRCT2051240249, Japanese clinical-trial portal and English jRCT view.
+https://rctportal.mhlw.go.jp/s/detail/um?trial_id=jRCT2051240249
+https://jrct.mhlw.go.jp/en-latest-detail/jRCT2051240249

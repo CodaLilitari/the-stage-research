@@ -1,0 +1,42 @@
+{
+  "frozen_utc": "2026-10-15T14:48:41.485018+00:00",
+  "status": "Local pre-run analysis freeze after source inspection; not preregistration of an unseen dataset",
+  "sha256": {
+    "original_replay/reanalysis.py": "fbc1efabf8f0909d852e5ffc41763af76962ff6e00ac21e17552b78dbeb95f46",
+    "raw/stuecker2002_table1.csv": "10ac98cb0645d445c779b5c3bf4a268cb9e9e953316a72e45328a16c2c6efaf3",
+    "original_visible_response.txt": "ac783e8e3cfd789d0c17f5db0a9ce5f7e218e1d7deedec04bb9977179392d1f4",
+    "primary/article.html": "7ef16479b4611317d6c740cc9a28af52cef5b5fed2b1dccdbb4a735fc11ce1db",
+    "verify_primary.py": "96f80558b6e77aba083dacb3e1a741027c18988f9868dcff576ae0445841ee8b",
+    "corrected/analysis.py": "c84a44c9a7cb36d3e5dea36e166cd33ceb43094b9a72f050549c070278bf8207",
+    "corrected/pf0_sensitivity.py": "68834f571883fb64f2019456697ecc0d6d03aca9eb3c7d006b580871b73bfff1",
+    "corrected/pf0_source.py": "f3fe9e427f5ce6b636248a9832dba74d4549daf16d7988718c263ea7d1084aba",
+    "run_replays.py": "44af0a5bdd725bf3020aa7f0409490d91f33f6cda2391fcc13f1107ee98fc580"
+  },
+  "pf0_sensitivity_config": {
+    "scenarios": [
+      {
+        "name": "low_as_saturating",
+        "qmax": 0.0010014306151645207,
+        "interpretation": "lower literature demand at assumed 25C gas volume, treated as saturating qmax"
+      },
+      {
+        "name": "high_as_saturating",
+        "qmax": 0.0015689598762678087,
+        "interpretation": "upper literature demand at assumed 0C gas volume, treated as saturating qmax"
+      },
+      {
+        "name": "high_at_inlet_reference",
+        "qmax": 0.0017886142589453018,
+        "interpretation": "upper demand at assumed 0C gas volume, matched to MM consumption at Cref=0.2 using retained illustrative Km=0.028"
+      }
+    ],
+    "grid": "Unchanged original 144 PF0 geometry/flow/wall/beta combinations per demand scenario",
+    "retained_assumptions": "D=2e-9, Km=.028, inlet=.2, threshold=.05 and all geometry are uncalibrated for these subjects. Gas basis is not established by inspected primary source. No claim these endpoints bound real constructs.",
+    "checks": "Conservation, boundedness, no-demand limit, equal Q*beta, demand ordering; eight prespecified high-demand low-wall corner refinements plus closest-threshold case per scenario. Classifications near threshold flagged.",
+    "numerical_limits": {
+      "mass_balance": 1e-06,
+      "refinement_difference_over_inlet": 0.01
+    }
+  },
+  "original_replay": "Returned script is preserved and run byte-for-byte unchanged in original_replay cwd; raw and outputs are siblings. Its scientific statements remain unendorsed."
+}

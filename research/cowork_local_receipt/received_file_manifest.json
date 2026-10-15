@@ -1,0 +1,110 @@
+{
+  "received_utc": "2026-10-15T15:25:00.260907+00:00",
+  "source_folder": "research/cowork_local",
+  "file_count": 17,
+  "files": [
+    {
+      "file": "stage_transport.py",
+      "bytes": 16975,
+      "sha256": "12d01844647def8e9b01cdf1c02bc83a6b3bb05ed5badf8ce1ddea12476bac54",
+      "mtime_utc": "2026-10-15T15:12:55.221908+00:00"
+    },
+    {
+      "file": "pf0_wall_optimum.csv",
+      "bytes": 2399,
+      "sha256": "523826d998f4f213b714ef24c74fc88ab900d99c5990d270f3fad9702a170476",
+      "mtime_utc": "2026-10-15T15:14:36.949499+00:00"
+    },
+    {
+      "file": "pf0_crosscheck_summary.json",
+      "bytes": 9855,
+      "sha256": "11d62a4eb5c539aa464be4d0afc91c86e6fd4e6f504073d44609914edf2d6a6b",
+      "mtime_utc": "2026-10-15T15:14:36.987875+00:00"
+    },
+    {
+      "file": "pf0_crosscheck_stdout.txt",
+      "bytes": 1882,
+      "sha256": "32c0358ed23f5c6018bc7f2c2e32884afbe219917f22aa64f6999c53491938e1",
+      "mtime_utc": "2026-10-15T15:14:37.003855+00:00"
+    },
+    {
+      "file": "pf0_crosscheck_cases.csv",
+      "bytes": 31234,
+      "sha256": "e43d90c22fcea2aa90bae7541f55d74bbeed1699c9960850a5e45d10774f89b6",
+      "mtime_utc": "2026-10-15T15:14:36.945498+00:00"
+    },
+    {
+      "file": "pf0_crosscheck.py",
+      "bytes": 20700,
+      "sha256": "4a1f22faaad78e8efca4e6a9c06ca7dfe9c3417fdb56525c7c71c7b3af685958",
+      "mtime_utc": "2026-10-15T15:12:55.848798+00:00"
+    },
+    {
+      "file": "lumen_film_groups.csv",
+      "bytes": 9289,
+      "sha256": "95fba3525a45e0a17327c10a1f318b255932964925fe7bfce646c35df7889260",
+      "mtime_utc": "2026-10-15T15:14:36.958013+00:00"
+    },
+    {
+      "file": "execution_log.txt",
+      "bytes": 5500,
+      "sha256": "9995f7b18c9d23b40c39690770198e8947b920868569b8c78bc78609ec58a583",
+      "mtime_utc": "2026-10-15T15:14:37.001612+00:00"
+    },
+    {
+      "file": "al1_summary.json",
+      "bytes": 473774,
+      "sha256": "3ecfc995e2fd04ea1f1b94cf350337321f07926890033f8a9cf22a7972249e4e",
+      "mtime_utc": "2026-10-15T15:14:14.394433+00:00"
+    },
+    {
+      "file": "al1_scan.py",
+      "bytes": 40968,
+      "sha256": "a696f0816438edc02419157ed1da04001dfbd534179a40304f49328a2db7bc4e",
+      "mtime_utc": "2026-10-15T15:12:55.528289+00:00"
+    },
+    {
+      "file": "al1_run_stdout_v2.txt",
+      "bytes": 1436,
+      "sha256": "6d51b19a60005d097ef4aa61f90ed8c15cf2596cf7f1f8c9de937c594f9c8742",
+      "mtime_utc": "2026-10-15T15:14:14.415195+00:00"
+    },
+    {
+      "file": "al1_run_stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime_utc": "2026-10-15T15:13:17.347529+00:00"
+    },
+    {
+      "file": "al1_run_stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime_utc": "2026-10-15T15:13:17.358612+00:00"
+    },
+    {
+      "file": "al1_results.csv",
+      "bytes": 5278582,
+      "sha256": "657d37a1de321228c1499ff4131aca39ee47cb81090cb5627ced00b5437e0e57",
+      "mtime_utc": "2026-10-15T15:14:14.312110+00:00"
+    },
+    {
+      "file": "al1_inputs.csv",
+      "bytes": 362350,
+      "sha256": "7b9fe4c935ce3d2e33d60a6a374b163c72df748515e9cb7cd68b1bd1d20eaafb",
+      "mtime_utc": "2026-10-15T15:13:07.722080+00:00"
+    },
+    {
+      "file": "al1_freeze.json",
+      "bytes": 901,
+      "sha256": "fd3e64f39c82f5d115e31cf85e6743f2d73926629fcc166d3bf4b6c1dece0701",
+      "mtime_utc": "2026-10-15T15:13:07.768065+00:00"
+    },
+    {
+      "file": "al1_config.json",
+      "bytes": 9723,
+      "sha256": "494ee40e064887f081c047ba840ee6caecf3d10841eb63361971d87ff9e2e616",
+      "mtime_utc": "2026-10-15T15:13:07.652463+00:00"
+    }
+  ],
+  "provenance": "Exact hashes recorded by local Coda receiver. This is not Red/Cowork own unfinished final manifest; source folder was not altered."
+}

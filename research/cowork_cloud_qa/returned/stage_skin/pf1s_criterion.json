@@ -1,0 +1,222 @@
+{
+  "code_sha256": "bb6ae2d100f706d947f814a64c9d38d2527e14f3d25da2f3b3b6768dc142ff20",
+  "critical_thiele": {
+    "barrier_intact_stucker": {
+      "q_epi_critical_mol_m3_s": 0.028828053297165663,
+      "thiele_epi_critical": 1.441402664858283
+    },
+    "open_air_liquid_interface": {
+      "q_epi_critical_mol_m3_s": 0.08973206598715053,
+      "thiele_epi_critical": 4.486603299357525
+    },
+    "sealed_surface": {
+      "q_epi_critical_mol_m3_s": 0.023418773856310818,
+      "thiele_epi_critical": 1.1709386928155407
+    }
+  },
+  "identifiability_invariance": {
+    "homogeneous_single_layer": {
+      "cases": [
+        {
+          "factor": 0.25,
+          "min_ref": 0.05812928758787667,
+          "min_scaled": 0.05812929475534496,
+          "phi2_ref": 48.59999999999999,
+          "phi2_scaled": 48.59999999999999,
+          "relative_difference": 3.583734142775796e-08
+        },
+        {
+          "factor": 0.5,
+          "min_ref": 0.05812928758787667,
+          "min_scaled": 0.058129292366188696,
+          "phi2_ref": 48.59999999999999,
+          "phi2_scaled": 48.59999999999999,
+          "relative_difference": 2.3891560119171373e-08
+        },
+        {
+          "factor": 2.0,
+          "min_ref": 0.05812928758787667,
+          "min_scaled": 0.05812927803125325,
+          "phi2_ref": 48.59999999999999,
+          "phi2_scaled": 48.59999999999999,
+          "relative_difference": 4.778311711584049e-08
+        },
+        {
+          "factor": 4.0,
+          "min_ref": 0.05812928758787667,
+          "min_scaled": 0.05812925891801096,
+          "phi2_ref": 48.59999999999999,
+          "phi2_scaled": 48.59999999999999,
+          "relative_difference": 1.43349328553255e-07
+        }
+      ],
+      "max_relative_difference": 1.43349328553255e-07
+    },
+    "layered_construct": {
+      "cases": [
+        {
+          "factor": 0.25,
+          "min_ref": 0.1388706572120555,
+          "min_scaled": 0.16918072026795825,
+          "phi2_ref": 0.48599999999999993,
+          "phi2_scaled": 0.48599999999999993,
+          "relative_difference": 0.15155031527951376
+        },
+        {
+          "factor": 0.5,
+          "min_ref": 0.1388706572120555,
+          "min_scaled": 0.15720453825843825,
+          "phi2_ref": 0.48599999999999993,
+          "phi2_scaled": 0.48599999999999993,
+          "relative_difference": 0.09166940523191378
+        },
+        {
+          "factor": 2.0,
+          "min_ref": 0.1388706572120555,
+          "min_scaled": 0.1113055167787701,
+          "phi2_ref": 0.48599999999999993,
+          "phi2_scaled": 0.48599999999999993,
+          "relative_difference": 0.13782570216642698
+        },
+        {
+          "factor": 4.0,
+          "min_ref": 0.1388706572120555,
+          "min_scaled": 0.07305280566399458,
+          "phi2_ref": 0.48599999999999993,
+          "phi2_scaled": 0.48599999999999993,
+          "relative_difference": 0.32908925774030456
+        }
+      ],
+      "max_relative_difference": 0.32908925774030456
+    },
+    "statement": "For a homogeneous slab the single-group reduction holds to solver tolerance: scaling demand and diffusivity together leaves the field unchanged, so q and D are not separately identifiable there. In the LAYERED construct the same scaling moves the minimum by up to 33% of the inlet concentration, so phi2 alone does NOT close the problem. The layered geometry is governed by at least phi2_epi together with the layer conductance ratio D_epi/D_derm, the wall and surface Biot numbers, and the thickness ratios h_epi/H and Lx/H. The practical consequence is stronger, not weaker, than a single-group claim: an experiment that reports a skin 'qmax' without independently pinning epidermal thickness, epidermal diffusivity AND the dermal diffusivity it sits on has not identified a transportable parameter."
+  },
+  "literature_readings_vs_boundary": {
+    "balu_as_printed_mmol": {
+      "phi2_epi": 485.99999999999994,
+      "q_epi_mol_m3_s": 9.72
+    },
+    "balu_as_read_by_collaborator_umol": {
+      "phi2_epi": 0.48599999999999993,
+      "q_epi_mol_m3_s": 0.00972
+    },
+    "balu_recomputed_from_own_inputs": {
+      "phi2_epi": 4.999999999999999,
+      "q_epi_mol_m3_s": 0.1
+    },
+    "textbook_resting_skin_bulk": {
+      "phi2_epi": 0.14999999999999997,
+      "q_epi_mol_m3_s": 0.003
+    }
+  },
+  "literature_span_factor": 3240.0,
+  "oxygen_budget": [
+    {
+      "atmospheric_share_of_delivery": 0.0,
+      "circuit_flux_per_wall_area_mol_m2_s": 8.597887188082883e-08,
+      "demand_case": "textbook_resting_skin_bulk",
+      "min_pO2_mmHg": 130.83969395566695,
+      "surface_case": "sealed",
+      "total_consumption_mol_s_per_m_depth": 8.597887181991374e-11
+    },
+    {
+      "atmospheric_share_of_delivery": 0.06484241725955088,
+      "circuit_flux_per_wall_area_mol_m2_s": 8.048015112162816e-08,
+      "demand_case": "textbook_resting_skin_bulk",
+      "min_pO2_mmHg": 133.9364650864327,
+      "surface_case": "barrier_intact_stucker",
+      "total_consumption_mol_s_per_m_depth": 8.606052347187439e-11
+    },
+    {
+      "atmospheric_share_of_delivery": 0.37778603754667917,
+      "circuit_flux_per_wall_area_mol_m2_s": 5.37706497112067e-08,
+      "demand_case": "textbook_resting_skin_bulk",
+      "min_pO2_mmHg": 143.84383891566512,
+      "surface_case": "open_air_liquid_interface",
+      "total_consumption_mol_s_per_m_depth": 8.641826277737515e-11
+    },
+    {
+      "atmospheric_share_of_delivery": 0.0,
+      "circuit_flux_per_wall_area_mol_m2_s": 1.8922711799999262e-07,
+      "demand_case": "balu_as_read_by_collaborator_umol",
+      "min_pO2_mmHg": 94.77381490501811,
+      "surface_case": "sealed",
+      "total_consumption_mol_s_per_m_depth": 1.8922711799973898e-10
+    },
+    {
+      "atmospheric_share_of_delivery": 0.08791188933028815,
+      "circuit_flux_per_wall_area_mol_m2_s": 1.7354315403669062e-07,
+      "demand_case": "balu_as_read_by_collaborator_umol",
+      "min_pO2_mmHg": 103.63481881496678,
+      "surface_case": "barrier_intact_stucker",
+      "total_consumption_mol_s_per_m_depth": 1.902701636019046e-10
+    },
+    {
+      "atmospheric_share_of_delivery": 0.515742194431341,
+      "circuit_flux_per_wall_area_mol_m2_s": 9.409071178019594e-08,
+      "demand_case": "balu_as_read_by_collaborator_umol",
+      "min_pO2_mmHg": 133.65361640221613,
+      "surface_case": "open_air_liquid_interface",
+      "total_consumption_mol_s_per_m_depth": 1.9429880254576028e-10
+    },
+    {
+      "atmospheric_share_of_delivery": 0.0,
+      "circuit_flux_per_wall_area_mol_m2_s": 7.188083709009664e-07,
+      "demand_case": "balu_recomputed_from_own_inputs",
+      "min_pO2_mmHg": 0.4896891821155626,
+      "surface_case": "sealed",
+      "total_consumption_mol_s_per_m_depth": 7.188083709005068e-10
+    },
+    {
+      "atmospheric_share_of_delivery": 0.08151915075264476,
+      "circuit_flux_per_wall_area_mol_m2_s": 7.119762542003122e-07,
+      "demand_case": "balu_recomputed_from_own_inputs",
+      "min_pO2_mmHg": 2.159015667231893,
+      "surface_case": "barrier_intact_stucker",
+      "total_consumption_mol_s_per_m_depth": 7.751672283459939e-10
+    },
+    {
+      "atmospheric_share_of_delivery": 0.6173339986445572,
+      "circuit_flux_per_wall_area_mol_m2_s": 5.396297484856431e-07,
+      "demand_case": "balu_recomputed_from_own_inputs",
+      "min_pO2_mmHg": 30.357747255337955,
+      "surface_case": "open_air_liquid_interface",
+      "total_consumption_mol_s_per_m_depth": 1.4101847213332186e-09
+    }
+  ],
+  "paired_seal_test": [
+    {
+      "circuit_share_intact": 0.9351575827404491,
+      "circuit_share_open": 0.6222139624533208,
+      "circuit_share_sealed": 1.0,
+      "demand_case": "textbook_resting_skin_bulk",
+      "min_pO2_barrier_intact_mmHg": 133.9364650864327,
+      "min_pO2_open_ali_mmHg": 143.84383891566512,
+      "min_pO2_sealed_mmHg": 130.83969395566695,
+      "sealing_drop_from_intact_pct": 2.312119502905585,
+      "sealing_drop_from_open_pct": 9.040460167099983
+    },
+    {
+      "circuit_share_intact": 0.9120881106697118,
+      "circuit_share_open": 0.48425780556865905,
+      "circuit_share_sealed": 1.0,
+      "demand_case": "balu_as_read_by_collaborator_umol",
+      "min_pO2_barrier_intact_mmHg": 103.63481881496678,
+      "min_pO2_open_ali_mmHg": 133.65361640221613,
+      "min_pO2_sealed_mmHg": 94.77381490501811,
+      "sealing_drop_from_intact_pct": 8.550218943084575,
+      "sealing_drop_from_open_pct": 29.0899734281738
+    },
+    {
+      "circuit_share_intact": 0.9184808492473553,
+      "circuit_share_open": 0.3826660013554428,
+      "circuit_share_sealed": 1.0,
+      "demand_case": "balu_recomputed_from_own_inputs",
+      "min_pO2_barrier_intact_mmHg": 2.159015667231893,
+      "min_pO2_open_ali_mmHg": 30.357747255337955,
+      "min_pO2_sealed_mmHg": 0.4896891821155626,
+      "sealing_drop_from_intact_pct": 77.3188685219964,
+      "sealing_drop_from_open_pct": 98.38693833901178
+    }
+  ]
+}

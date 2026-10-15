@@ -1,0 +1,31 @@
+{
+  "completed_utc": "2026-10-15T15:16:58.280665+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "original_exit_code_observed": 0,
+  "corrected_exit_code": 0,
+  "supplied_checks_per_implementation": 43,
+  "boundary_cases": {
+    "total": 29,
+    "original_pass": 8,
+    "corrected_pass": 29
+  },
+  "arithmetic_checks": {
+    "passed": 11,
+    "total": 11
+  },
+  "sweep": {
+    "original_rows": 105,
+    "corrected_rows": 105,
+    "exact_csv_fields_equal": true,
+    "model_flag_true_counts": {
+      "original": {
+        "open_local_reference_C": 18
+      },
+      "corrected": {
+        "open_local_reference_C": 18
+      }
+    }
+  },
+  "scope": "Local computational QA, no biological experiment or publication"
+}

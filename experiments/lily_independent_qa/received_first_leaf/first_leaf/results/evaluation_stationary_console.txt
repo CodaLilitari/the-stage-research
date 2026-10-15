@@ -1,0 +1,20 @@
+evaluation/stationary: 32 seeds
+evaluation/stationary: 64 seeds
+evaluation/stationary: 96 seeds
+evaluation/stationary: 128 seeds
+evaluation/stationary: 160 seeds
+evaluation/stationary: 192 seeds
+evaluation/stationary: 224 seeds
+evaluation/stationary: 256 seeds
+{
+  "split": "evaluation",
+  "profile": "stationary",
+  "scheduled_runs": 2048,
+  "started": 2048,
+  "completed": 2048,
+  "failures": [],
+  "source_sha256": "2306148b46490fae74dc49fc31e1161f76e64bf902d836276c2dfd9565645515",
+  "protocol_sha256": "d3224dbb752eba3368c0a1569eb733d7a59fb9a3bf1929fdbb1810f9ae9cf382",
+  "fixture_file_sha256": "41079d8a6b202ccd6e1b3908f19ceac48fb9aefa8cfdc159456765692f43f4d7",
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]"
+}

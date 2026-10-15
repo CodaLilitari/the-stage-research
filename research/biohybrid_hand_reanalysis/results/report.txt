@@ -1,0 +1,16 @@
+BH0 — local Coda team descriptive data reanalysis
+Inputs match Dryad published SHA-256. README definitions read on landing page; original README download unavailable.
+Checks: 6/6 passed.
+3A descriptive row means: in-sheet 4.393609 mN, in-bundle 3.067538 mN.
+Ratio of group means: 1.432292. This is not a paired sample ratio.
+3A has 15 unlabeled observations/condition. No claim of 15 independent samples; no inferential test.
+3B count 1: 0.697531 +/- 0.208941 mN (sample SD across 3 actuators).
+3B count 8: 5.771605 +/- 1.884951 mN (sample SD across 3 actuators).
+Mean within-actuator 8/1 ratio: 8.428940 +/- 1.813272 (sample SD).
+3B relative formula maximum absolute error: 6.16e-09.
+Engineering inference: force increases strongly across the tested range, but samples differ and one falls slightly from seven to eight tissues.
+Model tissue count and measured actuator force separately; do not assume every added strand contributes an identical force.
+Keep culture geometry/transport and mechanical transmission as separate design variables. These force CSVs do not identify oxygen limitation.
+No extrapolation to whole-body strength, grip force, sustained operation, human donors or autonomous motion.
+Reproduce offline: python analyze.py --out results_recheck (requires matplotlib; frozen inputs must match).
+This is arithmetic/data consistency checking, not independent experimental replication.

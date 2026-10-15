@@ -1,0 +1,40 @@
+HB-FOLD1: LOCAL HUMAN ALPHA-GLOBIN SINGLE-SEQUENCE CALIBRATION
+Executed 2026-10-15 after HB-STRUCT0. Installation and a bounded GPU prediction completed. The predicted structure was poor against the experimental references; it is retained as a failure baseline, not presented as biological success.
+
+EXACT INPUT AND PROVENANCE
+The input is the 141-residue alpha-chain sequence in the experimental RCSB 2DN1 mmCIF. The source URL and retained-file hashes are in download_receipt.json. UniProt P69905 official JSON (https://rest.uniprot.org/uniprotkb/P69905.json, downloaded locally to raw/P69905.json) verifies that the input is exactly its 142-residue translation without the initial methionine. UniProt annotates initiator Met 1 as removed and the mature chain as positions 2-142. Thus predicted/mature/PDB author residue i = UniProt translation residue i+1. The input begins Val, not the precursor initiator Met. No proprietary sequence was used.
+
+The predictor received the FASTA sequence only. No reference coordinates, heme, oxygen ligand, sequence alignment search, template or MSA-server submission was supplied. The input A3M contains the query alone. Experimental structures stayed in the evaluation path. Native hemoglobin's heme and quaternary environment are absent from this isolated chain prediction. A 2006 known structure can be present in model training data; this is pipeline calibration, not a held-out generalization test.
+
+INSTALLED TOOLCHAIN
+An isolated project environment runs in the already-installed Ubuntu WSL2 distribution. ColabFold 1.6.3, alphafold-colabfold 2.3.20, JAX/JAXlib 0.11.2 with CUDA 13 support, Python 3.13.16 and 62 other resolved package entries were installed (66 total; colabfold_installed.txt lists them). ColabFold uses Biopython 1.85 while the independent coordinate-analysis target uses Biopython 1.88. Shared project packages and locks were not modified. uv 0.13.1 bootstrapped the separate Python runtime; an automatically generated root-user Python symlink and redundant resolver interpreter were removed after their exact targets were verified. No shell PATH or OS setting was changed. Ubuntu was started headlessly and remains available.
+
+Official installation guidance: https://github.com/sokrypton/ColabFold (v1.6.3 README); source entrypoints preserved as batch_upstream_v1_6_3.py.txt and download_upstream_v1_6_3.py.txt from the tagged upstream repository. Downloads were from PyPI, the Python runtime source used by uv, and the official Google-hosted AlphaFold parameter archive selected by ColabFold. The weight archive URL, ten NPZ member hashes and license are recorded in weight_receipt.json. Archive size was 3,722,752,000 bytes (3.467 GiB); resolved wheel download estimates summed 2.435 GiB. No paid service was used.
+
+RUN CONFIGURATION AND LIMITS
+AlphaFold2-ptm model 3, seed 0, one seed, one model, one recycle, single-sequence MSA, max-MSA 1:1, no templates, no relaxation, fast compilation, no sequence padding. Exact arguments, input/selected-weight hashes and dependency-lock hash were frozen before launch in fold_run_freeze.json. Environment set preallocation false, XLA memory fraction 0.28, TF unified memory 0, and two OpenMP/OpenBLAS threads. The monitor stopped only its own process group on RSS above 4 GiB, global GPU free memory below 2048 MiB, or wall time over 420 seconds.
+
+An initial startup was deliberately terminated after source inspection showed the --disable-unified-memory CLI option deletes both the unified-memory setting and the requested XLA memory-fraction setting. That startup produced no prediction. Its freeze, log and resource receipt are preserved under attempt1_* (actual elapsed 38.72 seconds, peak sampled RSS 1.03 GiB). The corrected run set TF_FORCE_UNIFIED_MEMORY=0 explicitly and omitted that CLI flag. Downloader development also stopped safely on an incorrect expected archive-size literal, a ./ filename prefix and the archive LICENSE member; those validation checks were corrected before the complete receipt was produced. All ten parameter files and the license were eventually retained and hashed.
+
+EXECUTED RESULT
+Return code 0; elapsed 45.905 seconds including startup. Sampled process-tree peak RSS 2,125,856,768 bytes (1.980 GiB). Global GPU memory used rose from 8640 MiB at the first sample to a maximum 13552 MiB, with minimum 2444 MiB free. Other applications share that GPU, so the 4912 MiB change is not a certified per-process VRAM peak. The driver returned N/A for per-process GPU accounting. The 5 GiB VRAM target was addressed through allocator settings and a global free-memory guard, not proven by a direct process counter. CUDA timing warnings in fold_console.log warn that internal kernel timing had suboptimal accuracy; the monitor's wall-clock time is reported instead.
+
+The generated 141-residue prediction has mean pLDDT 44.815, minimum 26.38, maximum 60.09; 96/141 residues have pLDDT below 50. Final log pTM 0.299, rounded to 0.30 in the output score JSON. Confidence scores are model outputs, not experimental validation.
+
+Proper-rotation C-alpha fits, all using the same mature positions 2-141 (140 residues):
+Reference              RMSD A       Maximum residual A
+2DN1 oxy alpha A       12.373976        39.401959
+2DN2 deoxy alpha A     12.341521        39.619880
+2DN2 deoxy alpha C     12.382064        39.553271
+
+Experimental 2DN1 lacks modeled mature residue 1; the same 140-position set is used for every fit so denominators match. All predicted amino acids equal the input; all 420 evaluated reference identities match; each fit agrees between Biopython and a separate Kabsch computation within 1e-10 A. Machine precision describes numerical agreement, not experimental coordinate certainty. Coordinates are unrelaxed and some local residuals are very large. This is poor structural recovery for this exact low-information configuration. It does not establish how a richer MSA, more recycles/models or other methods would perform, and it says nothing about oxygen affinity, toxicity, tissue regeneration, or clinical usefulness.
+
+REPRODUCE
+From PowerShell in the workspace:
+wsl -d Ubuntu -- python3 '<PROJECT_ROOT>/research/protein_modeling/run_fold_bounded.py'
+& '.\.venv-stage\Scripts\python.exe' 'research\protein_modeling\evaluate_fold.py'
+
+The current runner is a preserved single-run harness. ColabFold may skip an already completed output; for a genuinely fresh replication, copy the harness into a new clearly named run directory or explicitly change its output directory and freeze destination, retaining the original artifacts. Do not overwrite the present evidence while calling a rerun independent replication. The raw console log, model scores/PAE, PDB, A3M, freeze, resource samples, evaluation and per-residue CSV are retained.
+
+NEXT INFORMATIVE COMPARISON
+Keep this baseline fixed, then run the same mature 141-residue sequence with an official public MSA or a precomputed local alignment while keeping model 3 / seed 0 / one recycle and the same reference-position set fixed. First inspect the alignment and record its source/hash and effective depth. That comparison would isolate the practical effect of adding evolutionary information under this configuration; it would still be calibration on a known target, not affinity validation. No further prediction or MSA request was performed in HB-FOLD1.

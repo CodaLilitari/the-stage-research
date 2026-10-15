@@ -1,0 +1,10 @@
+{
+  "local_timestamp_utc": "2026-10-15T14:01:51.312246+00:00",
+  "stage": "Before diagnostic execution",
+  "meaning": "Local procedural freeze, not independently witnessed preregistration. Mathematical results anticipated analytically. No fitted biological data.",
+  "hashes": {
+    "inputs/protocol.json": "60b5a0d61ef83cbf6db7f16b5f94fb638c49affaf941b7cc51a8ae204115542e",
+    "src/diagnostics.py": "1921d14a1fb155f028b143acd4e7cbef5b7d10363763a8db823386b25a363620",
+    "tests/test_diagnostics.py": "7a83b30aedc948b8999e2b68a64070a129129305077673594c678e08cbb8a41a"
+  }
+}

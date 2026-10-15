@@ -1,0 +1,232 @@
+{
+  "started_utc": "2026-10-15T14:48:51.733228+00:00",
+  "elapsed_seconds": 43.68215700000292,
+  "cases": 432,
+  "config": {
+    "scenarios": [
+      {
+        "name": "low_as_saturating",
+        "qmax": 0.0010014306151645207,
+        "interpretation": "lower literature demand at assumed 25C gas volume, treated as saturating qmax"
+      },
+      {
+        "name": "high_as_saturating",
+        "qmax": 0.0015689598762678087,
+        "interpretation": "upper literature demand at assumed 0C gas volume, treated as saturating qmax"
+      },
+      {
+        "name": "high_at_inlet_reference",
+        "qmax": 0.0017886142589453018,
+        "interpretation": "upper demand at assumed 0C gas volume, matched to MM consumption at Cref=0.2 using retained illustrative Km=0.028"
+      }
+    ],
+    "grid": "Unchanged original 144 PF0 geometry/flow/wall/beta combinations per demand scenario",
+    "retained_assumptions": "D=2e-9, Km=.028, inlet=.2, threshold=.05 and all geometry are uncalibrated for these subjects. Gas basis is not established by inspected primary source. No claim these endpoints bound real constructs.",
+    "checks": "Conservation, boundedness, no-demand limit, equal Q*beta, demand ordering; eight prespecified high-demand low-wall corner refinements plus closest-threshold case per scenario. Classifications near threshold flagged.",
+    "numerical_limits": {
+      "mass_balance": 1e-06,
+      "refinement_difference_over_inlet": 0.01
+    }
+  },
+  "checks": {
+    "all_mass_balances": true,
+    "all_concentrations_bounded": true,
+    "zero_demand_uniform": true,
+    "Q_times_beta_equivalence": true,
+    "demand_ordering": true,
+    "refinement_within_frozen_limit": true,
+    "refined_classifications_agree": true,
+    "passing_cases_obey_necessary_bounds": true
+  },
+  "by_scenario": {
+    "low_as_saturating": {
+      "above_threshold": 144,
+      "of": 144,
+      "above_by_beta_of_48": {
+        "1": 48,
+        "4": 48,
+        "16": 48
+      },
+      "400um_above_of_36": 36,
+      "minimum_free_range": [
+        0.07343645433967058,
+        0.19922652337439434
+      ]
+    },
+    "high_as_saturating": {
+      "above_threshold": 143,
+      "of": 144,
+      "above_by_beta_of_48": {
+        "1": 47,
+        "4": 48,
+        "16": 48
+      },
+      "400um_above_of_36": 35,
+      "minimum_free_range": [
+        0.03469255304490554,
+        0.1987884584110488
+      ]
+    },
+    "high_at_inlet_reference": {
+      "above_threshold": 138,
+      "of": 144,
+      "above_by_beta_of_48": {
+        "1": 45,
+        "4": 46,
+        "16": 47
+      },
+      "400um_above_of_36": 30,
+      "minimum_free_range": [
+        0.02634287114404745,
+        0.19861896574542112
+      ]
+    }
+  },
+  "maximum_relative_mass_balance_error": 3.2060386185648544e-07,
+  "refinements": [
+    {
+      "scenario": "high_at_inlet_reference",
+      "case": [
+        5e-05,
+        0.5,
+        5e-06,
+        1.0
+      ],
+      "coarse_minimum": 0.17434122434366955,
+      "fine_minimum": 0.17434072275052054,
+      "difference_over_inlet": 2.507965745079943e-06,
+      "classification_agrees": true
+    },
+    {
+      "scenario": "high_at_inlet_reference",
+      "case": [
+        5e-05,
+        0.5,
+        5e-06,
+        16.0
+      ],
+      "coarse_minimum": 0.18293295360232223,
+      "fine_minimum": 0.18293294675981278,
+      "difference_over_inlet": 3.421254723967593e-08,
+      "classification_agrees": true
+    },
+    {
+      "scenario": "high_at_inlet_reference",
+      "case": [
+        5e-05,
+        32.0,
+        5e-06,
+        1.0
+      ],
+      "coarse_minimum": 0.18336425766531908,
+      "fine_minimum": 0.1833642527162011,
+      "difference_over_inlet": 2.4745589882746444e-08,
+      "classification_agrees": true
+    },
+    {
+      "scenario": "high_at_inlet_reference",
+      "case": [
+        5e-05,
+        32.0,
+        5e-06,
+        16.0
+      ],
+      "coarse_minimum": 0.18349907279317063,
+      "fine_minimum": 0.18349906800617452,
+      "difference_over_inlet": 2.393498052533083e-08,
+      "classification_agrees": true
+    },
+    {
+      "scenario": "high_at_inlet_reference",
+      "case": [
+        0.0004,
+        0.5,
+        5e-06,
+        1.0
+      ],
+      "coarse_minimum": 0.02634287114404745,
+      "fine_minimum": 0.02630490315266544,
+      "difference_over_inlet": 0.00018983995691005534,
+      "classification_agrees": true
+    },
+    {
+      "scenario": "high_at_inlet_reference",
+      "case": [
+        0.0004,
+        0.5,
+        5e-06,
+        16.0
+      ],
+      "coarse_minimum": 0.049402986083967884,
+      "fine_minimum": 0.04939555692573258,
+      "difference_over_inlet": 3.714579117651551e-05,
+      "classification_agrees": true
+    },
+    {
+      "scenario": "high_at_inlet_reference",
+      "case": [
+        0.0004,
+        32.0,
+        5e-06,
+        1.0
+      ],
+      "coarse_minimum": 0.05094675351992154,
+      "fine_minimum": 0.050939655584145004,
+      "difference_over_inlet": 3.548967888268584e-05,
+      "classification_agrees": true
+    },
+    {
+      "scenario": "high_at_inlet_reference",
+      "case": [
+        0.0004,
+        32.0,
+        5e-06,
+        16.0
+      ],
+      "coarse_minimum": 0.05143749481559311,
+      "fine_minimum": 0.05143046251096689,
+      "difference_over_inlet": 3.516152313108589e-05,
+      "classification_agrees": true
+    },
+    {
+      "scenario": "low_as_saturating",
+      "case": [
+        0.00039999999999999996,
+        0.5,
+        5e-06,
+        1.0
+      ],
+      "coarse_minimum": 0.07343645433967061,
+      "fine_minimum": 0.07341778401836876,
+      "difference_over_inlet": 9.335160650922325e-05,
+      "classification_agrees": true
+    },
+    {
+      "scenario": "high_as_saturating",
+      "case": [
+        0.00039999999999999996,
+        0.5,
+        5e-06,
+        4.0
+      ],
+      "coarse_minimum": 0.054773293100387144,
+      "fine_minimum": 0.05476500715529229,
+      "difference_over_inlet": 4.142972547426654e-05,
+      "classification_agrees": true
+    },
+    {
+      "scenario": "high_at_inlet_reference",
+      "case": [
+        0.00039999999999999996,
+        0.5,
+        5e-06,
+        16.0
+      ],
+      "coarse_minimum": 0.049402986083967905,
+      "fine_minimum": 0.0493955569257326,
+      "difference_over_inlet": 3.714579117651551e-05,
+      "classification_agrees": true
+    }
+  ],
+  "monotonicity_decreases": []
+}

@@ -1,0 +1,69 @@
+PA0 synthetic archive harness validation
+
+Run started UTC: 2026-10-15T13:26:12.234998+00:00
+Python: <LOCAL_PYTHON>
+Release manifest SHA-256: b89724c22d37c9172eabd41332311f84e9b74261411bf78f18fec87862665efb
+Cases: 41; positive accepts: 3/3; negative rejections: 38/38
+Expected-diagnostic discrimination: 41/41; unexpected results: 0
+Elapsed seconds: 2.403788
+
+Observed baseline: 12 invented events; 6 corrections; 6 commitments; 2 restricted synthetic records; 26 immutable revision records; 24 loadable revisions; 4 packets; 30 evaluator questions; fixed factual recovery denominator 18; 8 development and 8 confirmation scenarios.
+
+Case outcomes:
+PASS positive_baseline: expected_valid=True; observed_valid=True; diagnostics=none
+PASS positive_exact_disputed_and_restricted_custody: expected_valid=True; observed_valid=True; diagnostics=none
+PASS positive_deterministic_rebuild: expected_valid=True; observed_valid=True; diagnostics=none
+PASS negative_one_byte_edit: expected_valid=False; observed_valid=False; diagnostics=CONTENT_INTEGRITY,FILE_INTEGRITY,SOURCE_PACKET_MISMATCH
+PASS negative_manifest_replacement: expected_valid=False; observed_valid=False; diagnostics=UNTRUSTED_MANIFEST
+PASS negative_duplicate_revision: expected_valid=False; observed_valid=False; diagnostics=CONDITION_CONTENT_MISMATCH,DUPLICATE_REVISION,EXPOSURE_MISMATCH,SOURCE_PACKET_MISMATCH
+PASS negative_missing_parent: expected_valid=False; observed_valid=False; diagnostics=BROKEN_CORRECTION,MISSING_PARENT,QUESTION_SEMANTICS_MISMATCH,SCORING_KEY_MISMATCH,SCORING_SOURCE_MISMATCH,SOURCE_PACKET_MISMATCH
+PASS negative_cross_item_parent: expected_valid=False; observed_valid=False; diagnostics=CROSS_ITEM_PARENT,QUESTION_SEMANTICS_MISMATCH,SCORING_KEY_MISMATCH,SCORING_SOURCE_MISMATCH,SOURCE_PACKET_MISMATCH
+PASS negative_revision_cycle: expected_valid=False; observed_valid=False; diagnostics=REVISION_CYCLE,SOURCE_PACKET_MISMATCH
+PASS negative_false_supported_status: expected_valid=False; observed_valid=False; diagnostics=CONDITION_CONTENT_MISMATCH,CORRECTION_HISTORY_STATUS,FALSE_SUPPORTED_CLAIM,SOURCE_PACKET_MISMATCH,UNSUPPORTED_PACKET_CLAIM
+PASS negative_unsupported_source_claim: expected_valid=False; observed_valid=False; diagnostics=CONDITION_CONTENT_MISMATCH,CURRENT_MAP_COVERAGE,QUESTION_SEMANTICS_MISMATCH,SCORING_KEY_MISMATCH,SOURCE_PACKET_MISMATCH,UNSUPPORTED_PACKET_CLAIM,UNSUPPORTED_SOURCE_CLAIM
+PASS negative_claim_without_source: expected_valid=False; observed_valid=False; diagnostics=CONDITION_CONTENT_MISMATCH,UNSUPPORTED_PACKET_CLAIM
+PASS negative_nonexistent_source: expected_valid=False; observed_valid=False; diagnostics=CONDITION_CONTENT_MISMATCH,UNKNOWN_SOURCE_REVISION,UNRECEIPTED_SOURCE
+PASS negative_correction_removed_from_packet: expected_valid=False; observed_valid=False; diagnostics=CONDITION_CONTENT_MISMATCH,EXPOSURE_MISMATCH,SOURCE_PACKET_MISMATCH
+PASS negative_evaluator_canary: expected_valid=False; observed_valid=False; diagnostics=CONTROL_TEXT_MISMATCH,EVALUATOR_LEAK,EVALUATOR_PATH_LEAK
+PASS negative_evaluator_question: expected_valid=False; observed_valid=False; diagnostics=CONTROL_TEXT_MISMATCH,EVALUATOR_LEAK
+PASS negative_evaluator_file_copy: expected_valid=False; observed_valid=False; diagnostics=UNALLOWLISTED_PARTICIPANT_FILE
+PASS negative_withheld_reference: expected_valid=False; observed_valid=False; diagnostics=EXPOSURE_MISMATCH,PROHIBITED_LOAD
+PASS negative_revoked_reference: expected_valid=False; observed_valid=False; diagnostics=EXPOSURE_MISMATCH,PROHIBITED_LOAD
+PASS negative_withheld_marker: expected_valid=False; observed_valid=False; diagnostics=CONTROL_TEXT_MISMATCH,RESTRICTED_CONTENT_LEAK
+PASS negative_control_fact_leak: expected_valid=False; observed_valid=False; diagnostics=CONTROL_FACT_LEAK,UNRECEIPTED_SOURCE
+PASS negative_tool_scope_escalation: expected_valid=False; observed_valid=False; diagnostics=EVALUATOR_PATH_LEAK,PACKET_CAPABILITY_SCOPE
+PASS negative_summary_without_source: expected_valid=False; observed_valid=False; diagnostics=MISSING_DERIVATION_SOURCE,SOURCE_PACKET_MISMATCH
+PASS negative_missing_derivation_source: expected_valid=False; observed_valid=False; diagnostics=MISSING_DERIVATION_SOURCE,SOURCE_PACKET_MISMATCH
+PASS negative_manifest_path_traversal: expected_valid=False; observed_valid=False; diagnostics=UNSAFE_MANIFEST_PATH,UNTRUSTED_MANIFEST
+PASS negative_unmanifested_file: expected_valid=False; observed_valid=False; diagnostics=UNMANIFESTED_FILE
+PASS negative_obsolete_current_pointer: expected_valid=False; observed_valid=False; diagnostics=INVALID_CURRENT_REVISION,QUESTION_SEMANTICS_MISMATCH,SCORING_KEY_MISMATCH,SCORING_SOURCE_MISMATCH
+PASS negative_duplicate_exposure: expected_valid=False; observed_valid=False; diagnostics=DUPLICATE_EXPOSURE,EXPOSURE_MISMATCH
+PASS negative_changed_denominator: expected_valid=False; observed_valid=False; diagnostics=DENOMINATOR_MISMATCH
+PASS negative_revocation_after_packet_creation: expected_valid=False; observed_valid=False; diagnostics=CONDITION_CONTENT_MISMATCH,EXPOSURE_MISMATCH,PROHIBITED_LOAD,RESTRICTED_CONTENT_LEAK,SOURCE_PACKET_MISMATCH
+PASS review_regression_wrong_answer_key: expected_valid=False; observed_valid=False; diagnostics=SCORING_KEY_MISMATCH
+PASS review_regression_wrong_availability: expected_valid=False; observed_valid=False; diagnostics=EVIDENCE_AVAILABILITY_MISMATCH
+PASS review_regression_receipt_extra_history: expected_valid=False; observed_valid=False; diagnostics=EXPOSURE_RECEIPT_SCHEMA
+PASS review_regression_receipt_history_substitution: expected_valid=False; observed_valid=False; diagnostics=EXPOSURE_RECEIPT_SCHEMA
+PASS review_regression_policy_escalation: expected_valid=False; observed_valid=False; diagnostics=POLICY_CAPABILITY_ESCALATION
+PASS review_regression_empty_current_map: expected_valid=False; observed_valid=False; diagnostics=CURRENT_MAP_COVERAGE,QUESTION_SEMANTICS_MISMATCH,SCORING_KEY_MISMATCH,SCORING_SOURCE_MISMATCH
+PASS review_regression_malformed_origin: expected_valid=False; observed_valid=False; diagnostics=RECORD_SCHEMA
+PASS review_regression_nested_manifest_bypass: expected_valid=False; observed_valid=False; diagnostics=UNALLOWLISTED_PARTICIPANT_FILE,UNMANIFESTED_FILE
+PASS negative_question_prompt_substitution: expected_valid=False; observed_valid=False; diagnostics=QUESTION_SEMANTICS_MISMATCH
+PASS negative_scenario_key: expected_valid=False; observed_valid=False; diagnostics=SCENARIO_KEY_MISMATCH
+PASS negative_malformed_scenario: expected_valid=False; observed_valid=False; diagnostics=SCENARIO_SCHEMA
+
+Participant packet sizes (not token counts):
+A: 29374 bytes; 29374 characters; 24 source revisions; 24 claims
+B: 5858 bytes; 5858 characters; 24 source revisions; 24 claims
+C: 1216 bytes; 1216 characters; 0 source revisions; 0 claims
+D: 954 bytes; 954 characters; 0 source revisions; 0 claims
+
+Interpretation and limits:
+Checks classify deliberately constructed offline fixture faults. Counts do not estimate security failure rates, prove semantic isolation, measure model reconstruction, or establish identity/continuity.
+Each case uses a temporary copy. Most semantic cases regenerate a test-only manifest/anchor to exercise non-hash validation; integrity cases retain the original anchor. The immutable baseline is revalidated after all tests. Temporary mutated copies are removed by TemporaryDirectory; diagnostics and tested manifest hashes are retained.
+Synthetic authored truth only; no real-event verification.
+Leakage checks are exact canary/prompt/path scans plus strict packet-content allowlists, not a semantic or information-theoretic leakage proof.
+Filesystem directory separation is not OS access isolation.
+No LLM inference, physical action, independent timestamp, signature or identity test.
+
+No LLM, model API, private history, physical body, or identity hypothesis was tested. Rejected mutations are an intentionally selected test set, not an empirical distribution of real attacks. The local release anchor provides a comparison reference, not independent authorship authentication or a timestamp. Source records and evaluator files are fully visible to the human operator; only the four explicit candidate packet files are intended for candidate delivery. Do not give a future candidate a workspace filesystem tool that reaches evaluator_only.

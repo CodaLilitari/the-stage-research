@@ -1,0 +1,19 @@
+{
+  "executed_utc": "2026-10-15T14:10:18.296295+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "freeze_sha256": "de8d93d7a81b837b8d3f90e2e8100c45efb110fe8f204a4ca8869d0789dfbcad",
+  "input_sha256": {
+    "analyze.py": "137d0bc56e2f2c2aaa3d9960b645a2ace1f6a0ea7e77b36cc2bebff900f1602f",
+    "source_extraction.txt": "6202103ac5e9b972b9f4b1777d90be9f8e09de34cbfb9f2347397f57f29d0ab2",
+    "data_receipt.json": "bda057eaf05f106ad036ce411dbab54fd0ac604021100207b1c71b208f4f0dc3",
+    "data\\3A.csv": "6fa0200eb1079b42f641ca69311923f6d4c0bf66cccdc878f259586272afd75f",
+    "data\\3B.csv": "25680dd65cdadbddf997b6913e06c2a0ed8c9d54f92080a4c793b93e1b91ca36"
+  },
+  "outputs_sha256": {
+    "force_by_count.csv": "16f29119e285c4a3984ecc9557bd1c646a03d844a9f8312e94407ad30c39f186",
+    "force_scaling.png": "8c86533e11f3df68f4e7e96231317c6f9dbbf7159baa9405768f76960a0b6021",
+    "report.txt": "1993249067238ed45e6da29d6faadc7959b9a724fd6d6eaf440ff42f4a537d96",
+    "results.json": "e2935907298200c53a5054bf7a6476d824941d5d5b2d35166d2930cdf6b0c1ba"
+  }
+}

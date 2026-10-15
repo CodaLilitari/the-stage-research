@@ -1,0 +1,186 @@
+{
+  "schema": "stage.package.manifest.v1",
+  "meaning": "local byte fixity, not authenticating time or truth",
+  "files": [
+    {
+      "path": "README.md",
+      "size_bytes": 3780,
+      "sha256": "85ecb407824a8bb0d4dff6d4c329400d581e2a98e53389ef959bfb0844e25878"
+    },
+    {
+      "path": "docs/DEVIATIONS.md",
+      "size_bytes": 533,
+      "sha256": "7860d36077a31fabbbdd86913304712d1b31eb195bb966b6f508458c24a03a08"
+    },
+    {
+      "path": "docs/H_S_EXPANSION.md",
+      "size_bytes": 27930,
+      "sha256": "431a890e5ff845a28005d958a283c97702e4171bb55e7e2e568567a7eed582c3"
+    },
+    {
+      "path": "docs/SOURCES.md",
+      "size_bytes": 8976,
+      "sha256": "db6340bce4dff968e953f136cc4c4f9ea7863545bdb45da951641ff6ea56b809"
+    },
+    {
+      "path": "history/r1/inputs/freeze_receipt.json",
+      "size_bytes": 575,
+      "sha256": "9451d753efa6aca167dc3769c2909386abd6f2e0285616fb3880a4256e753952"
+    },
+    {
+      "path": "history/r1/inputs/protocol.json",
+      "size_bytes": 2126,
+      "sha256": "60b5a0d61ef83cbf6db7f16b5f94fb638c49affaf941b7cc51a8ae204115542e"
+    },
+    {
+      "path": "history/r1/results/console.txt",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "history/r1/results/execution/H_equilibrium.csv",
+      "size_bytes": 1786,
+      "sha256": "d8d37ef38fb1ac0da9d9c345f9b240aebf18821f32a870a6403cb881c7ef1c69"
+    },
+    {
+      "path": "history/r1/results/execution/H_kinetic_controls.csv",
+      "size_bytes": 343,
+      "sha256": "68f8a722b4b56e79efd49eb2da25a0323b86e48e0740d64076e86f34c0c818ea"
+    },
+    {
+      "path": "history/r1/results/execution/S_transport.csv",
+      "size_bytes": 39633,
+      "sha256": "b90efd7beca3c7f576674e1cbb42450de49148be18aaec91aae285262174eb64"
+    },
+    {
+      "path": "history/r1/results/execution/summary.json",
+      "size_bytes": 4355,
+      "sha256": "fbb8c4bcbb7db7ee40e0951c4bda71a6d8d178c279c236a4b5e30bb0992b49ae"
+    },
+    {
+      "path": "history/r1/results/resources.txt",
+      "size_bytes": 811,
+      "sha256": "b92cc01384b865642d5ee83de5ee43a221737cc5ea975c815bf102313e3e2353"
+    },
+    {
+      "path": "history/r1/results/stderr.txt",
+      "size_bytes": 439,
+      "sha256": "25ed3d89d8097fbcc8c20517424c4c3c687100b5709847af58a1ff7247fc0625"
+    },
+    {
+      "path": "history/r1/results/tests.txt",
+      "size_bytes": 1690,
+      "sha256": "889089ef8b66ff54647e73114abeea7f624fabb9b36a42fe868389a3a99943a3"
+    },
+    {
+      "path": "history/r1/src/diagnostics.py",
+      "size_bytes": 8241,
+      "sha256": "1921d14a1fb155f028b143acd4e7cbef5b7d10363763a8db823386b25a363620"
+    },
+    {
+      "path": "history/r1/tests/test_diagnostics.py",
+      "size_bytes": 2479,
+      "sha256": "7a83b30aedc948b8999e2b68a64070a129129305077673594c678e08cbb8a41a"
+    },
+    {
+      "path": "inputs/freeze_receipt.json",
+      "size_bytes": 521,
+      "sha256": "1bf33434ae544ae6118b0f34af6e6c5d0272999976f0ad0c8bc487338d91ff6a"
+    },
+    {
+      "path": "inputs/protocol.json",
+      "size_bytes": 2577,
+      "sha256": "96d4b84ef19b9ecbd453c6b85d9133bfdfbabf2dbc6901b23b74c01da441716a"
+    },
+    {
+      "path": "proposed_ct1/CT1_SPEC.md",
+      "size_bytes": 9002,
+      "sha256": "f4e864dec4bec30fbe688a41c26857be651b81504833dd82899e5a13d7614bda"
+    },
+    {
+      "path": "proposed_ct1/cases.jsonl",
+      "size_bytes": 180279,
+      "sha256": "90e1b2257aef7f03de3b393fd6ce2b0651fc608e84cc8b88f2b2e079f6ac8e2c"
+    },
+    {
+      "path": "proposed_ct1/make_plan.py",
+      "size_bytes": 2112,
+      "sha256": "542429f7196b4b4279890f83811ea8ff340da24cd9334975ab13c23dff979018"
+    },
+    {
+      "path": "proposed_ct1/planner_receipt.json",
+      "size_bytes": 103,
+      "sha256": "d29af5e09b7e5501934fa70d45fddce6d701f53468e48e016f1d05f44b19aa79"
+    },
+    {
+      "path": "results/RESULTS.md",
+      "size_bytes": 4470,
+      "sha256": "03631c2d70a451cdddba75a0100643d63c5696e76fc3c852c0571048187658d0"
+    },
+    {
+      "path": "results/console.txt",
+      "size_bytes": 4366,
+      "sha256": "4bf21cd108f65e18136f77df8c8d09b379096193a296f5f7fe4048a8ca6140ea"
+    },
+    {
+      "path": "results/execution/H_equilibrium.csv",
+      "size_bytes": 1786,
+      "sha256": "d8d37ef38fb1ac0da9d9c345f9b240aebf18821f32a870a6403cb881c7ef1c69"
+    },
+    {
+      "path": "results/execution/H_kinetic_controls.csv",
+      "size_bytes": 343,
+      "sha256": "68f8a722b4b56e79efd49eb2da25a0323b86e48e0740d64076e86f34c0c818ea"
+    },
+    {
+      "path": "results/execution/S_transport.csv",
+      "size_bytes": 49489,
+      "sha256": "f6c2947c8f34449fd2be7af1a928b150a293996ecd647562bd9bcddd24d0bec8"
+    },
+    {
+      "path": "results/execution/summary.json",
+      "size_bytes": 4366,
+      "sha256": "4bf21cd108f65e18136f77df8c8d09b379096193a296f5f7fe4048a8ca6140ea"
+    },
+    {
+      "path": "results/final_return_reproduction.json",
+      "size_bytes": 212,
+      "sha256": "7d3d39f5b18ac1faec10d244b56c07732417755a3edcfb68937dae8e8a5e99bf"
+    },
+    {
+      "path": "results/final_return_tests.txt",
+      "size_bytes": 1115,
+      "sha256": "14594216e5dc06b0c17d521324a65027c03b411c9a803483b44fbe10a73370d1"
+    },
+    {
+      "path": "results/resources.txt",
+      "size_bytes": 773,
+      "sha256": "e6491c846b0be70c79852c6fccc9a5c216257aad8243bbd4c706c6b032eafc5c"
+    },
+    {
+      "path": "results/stderr.txt",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "results/tests.txt",
+      "size_bytes": 1115,
+      "sha256": "14594216e5dc06b0c17d521324a65027c03b411c9a803483b44fbe10a73370d1"
+    },
+    {
+      "path": "src/check_package.py",
+      "size_bytes": 913,
+      "sha256": "6746554964eabbb3122c0cf96f058b65e89045bb3b0b957e948d5916c5dceff5"
+    },
+    {
+      "path": "src/diagnostics.py",
+      "size_bytes": 8275,
+      "sha256": "0e6c7c399da88efca39613e557854cd3f971c92b98dba77c2addaf7d5a661a75"
+    },
+    {
+      "path": "tests/test_diagnostics.py",
+      "size_bytes": 2479,
+      "sha256": "aaae80b70fec3004d79461ea2795b70e6b7a05adea97ffcc488327b7ddf90add"
+    }
+  ]
+}

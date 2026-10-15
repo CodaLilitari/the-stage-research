@@ -1,0 +1,76 @@
+[
+  {
+    "name": "mit_osi",
+    "url": "https://opensource.org/license/mit",
+    "checked_utc": "2026-10-15T15:52:39.831426+00:00",
+    "status": 200,
+    "final_url": "https://opensource.org/license/mit",
+    "bytes": 185639,
+    "sha256": "67a7890b53c817a215dc841106a5fbbea8667e34bc41ade8523b584842e69f31"
+  },
+  {
+    "name": "copyright_facts",
+    "url": "https://www.copyright.gov/help/faq/faq-protect.html",
+    "checked_utc": "2026-10-15T15:52:40.018447+00:00",
+    "status": 200,
+    "final_url": "https://www.copyright.gov/help/faq/faq-protect.html",
+    "bytes": 34865,
+    "sha256": "b8c9dcf3147d175e50db8a705574cf82c6bdba22eefd96f36f9a840bf33098b6"
+  },
+  {
+    "name": "banerjee_license",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0269939",
+    "checked_utc": "2026-10-15T15:52:40.142358+00:00",
+    "status": 200,
+    "final_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0269939",
+    "bytes": 330759,
+    "sha256": "283931be5776bb0a65c42898e2cd8f8736454e5c8b3d0899f0e82a1897757113",
+    "creative_commons_links": [
+      "http://creativecommons.org/licenses/by/4.0/"
+    ]
+  },
+  {
+    "name": "pandas_license",
+    "url": "https://raw.githubusercontent.com/pandas-dev/pandas/main/LICENSE",
+    "checked_utc": "2026-10-15T15:52:40.564406+00:00",
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/pandas-dev/pandas/main/LICENSE",
+    "bytes": 1634,
+    "sha256": "9850f6b5bdef7346503065807b878deb8058b976c5c329f4c4d23bf4796ce9ae",
+    "first_lines": [
+      "BSD 3-Clause License",
+      "",
+      "Copyright (c) 2008-2011, AQR Capital Management, LLC, Lambda Foundry, Inc. and PyData Development Team"
+    ]
+  },
+  {
+    "name": "jax_license",
+    "url": "https://raw.githubusercontent.com/jax-ml/jax/main/LICENSE",
+    "checked_utc": "2026-10-15T15:52:40.675035+00:00",
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/jax-ml/jax/main/LICENSE",
+    "bytes": 11358,
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "first_lines": [
+      "",
+      "                                 Apache License",
+      "                           Version 2.0, January 2004"
+    ]
+  },
+  {
+    "name": "uniprot_license",
+    "url": "https://rest.uniprot.org/help/license",
+    "checked_utc": "2026-10-15T15:52:40.757710+00:00",
+    "status": 200,
+    "final_url": "https://rest.uniprot.org/help/license",
+    "bytes": 914,
+    "sha256": "5960c22bf17f22286504b927dbb3ca41713c571ed91a10fe7a88ddd964b416ce",
+    "verified_fields": {
+      "id": "license",
+      "lastModified": "2024-12-18",
+      "license": "CC-BY-4.0",
+      "scope": "all copyrightable parts of UniProt databases",
+      "other_rights": "No unrestricted permission for patents or other rights; research/informational use disclaimer."
+    }
+  }
+]

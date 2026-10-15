@@ -1,0 +1,14 @@
+{
+  "csv_sha256": "731269d24bae031c369c6db61bef7e954b2382ef50a5f3303174ad0f70348f0d",
+  "fault_checks_canonical_sha256": "dbaa596b23ae4df80e79db1c5c7bff021ddbf3dda81bffde5bd4d782a71483e8",
+  "finished_at_utc_local_clock": "2026-10-15T13:26:46.844381+00:00",
+  "freeze_sha256": "b847a687b96edacd5d3b20444b2a3abe12cbe3469092a2d2a5b734c0287ed5d5",
+  "interpreter": "<LOCAL_PYTHON>",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "results_canonical_sha256": "4c1e0c925121aa32c38465eec35fc4a8c2b35914f64d4fc7f090ae9f163ed391",
+  "runtime": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "started_at_utc_local_clock": "2026-10-15T13:26:46.308023+00:00",
+  "status": "executed_completed",
+  "test_tuning_or_retries": 0,
+  "traces_sha256": "2a10ddd3b19b19d141c18f1f9882d91e3ed8e7813255ca2d99979828a19e6fcf"
+}

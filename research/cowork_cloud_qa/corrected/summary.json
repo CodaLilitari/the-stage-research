@@ -1,0 +1,175 @@
+{
+  "aligned_axis_effects": {
+    "q_scenario": {
+      "groups": {
+        "assumed_resting_bulk_scenario": {
+          "n": 243,
+          "passes": 243
+        },
+        "bulk_occlusion_unit_corrected_scenario": {
+          "n": 243,
+          "passes": 243
+        },
+        "reported_per_cell_times_ROI_density_scenario": {
+          "n": 243,
+          "passes": 216
+        }
+      },
+      "pass_rate_range": 0.11111111111111116
+    },
+    "density_case": {
+      "groups": {
+        "4e6_cells_in_100uL": {
+          "n": 243,
+          "passes": 234
+        },
+        "4e6_cells_in_200uL": {
+          "n": 243,
+          "passes": 234
+        },
+        "stated_conc_2e6_per_mL": {
+          "n": 243,
+          "passes": 234
+        }
+      },
+      "pass_rate_range": 0.0
+    },
+    "D_case": {
+      "groups": {
+        "cheema_11pct_compressed": {
+          "n": 243,
+          "passes": 234
+        },
+        "cheema_34pct_compressed": {
+          "n": 243,
+          "passes": 225
+        },
+        "dilute_gel_upper_bound": {
+          "n": 243,
+          "passes": 243
+        }
+      },
+      "pass_rate_range": 0.07407407407407407
+    },
+    "surface_case": {
+      "groups": {
+        "open_ali": {
+          "n": 243,
+          "passes": 243
+        },
+        "sealed": {
+          "n": 243,
+          "passes": 225
+        },
+        "stucker_lower_bound": {
+          "n": 243,
+          "passes": 234
+        }
+      },
+      "pass_rate_range": 0.07407407407407407
+    },
+    "wall_case": {
+      "groups": {
+        "high_2e-4": {
+          "n": 243,
+          "passes": 243
+        },
+        "low_5e-6": {
+          "n": 243,
+          "passes": 216
+        },
+        "mid_5e-5": {
+          "n": 243,
+          "passes": 243
+        }
+      },
+      "pass_rate_range": 0.11111111111111116
+    },
+    "height_case": {
+      "groups": {
+        "H_1000um": {
+          "n": 243,
+          "passes": 234
+        },
+        "H_2000um": {
+          "n": 243,
+          "passes": 234
+        },
+        "H_500um": {
+          "n": 243,
+          "passes": 234
+        }
+      },
+      "pass_rate_range": 0.0
+    }
+  },
+  "provider_manifest": [
+    {
+      "file": "build_parameter_table.py",
+      "match": true
+    },
+    {
+      "file": "pf1s_skin.py",
+      "match": true
+    },
+    {
+      "file": "pf1s_criterion.py",
+      "match": true
+    },
+    {
+      "file": "pf1s_figure.py",
+      "match": true
+    },
+    {
+      "file": "skin_transport_parameters.csv",
+      "match": true
+    },
+    {
+      "file": "pf1s_cases.csv",
+      "match": true
+    },
+    {
+      "file": "parameter_table_meta.json",
+      "match": true
+    },
+    {
+      "file": "pf1s_results.json",
+      "match": true
+    },
+    {
+      "file": "pf1s_criterion.json",
+      "match": true
+    },
+    {
+      "file": "pf1s_report.md",
+      "match": true
+    },
+    {
+      "file": "pf1s_figure.png",
+      "match": true
+    },
+    {
+      "file": "parameter_table_build.log",
+      "match": true
+    },
+    {
+      "file": "pf1s_execution_log.txt",
+      "match": true
+    },
+    {
+      "file": "pf1s_criterion_log.txt",
+      "match": true
+    }
+  ],
+  "provider_thiele_squared_ranges": {
+    "thiele_modulus_dermis": [
+      0.0023799999999999997,
+      0.5599999999999999
+    ],
+    "thiele_modulus_epidermis": [
+      0.14999999999999997,
+      485.99999999999994
+    ]
+  },
+  "note": "Marginal ranges depend on analyst grid; they are not importance measures over a biological population."
+}

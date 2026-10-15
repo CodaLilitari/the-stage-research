@@ -1,0 +1,76 @@
+GROK BOT MECHANICS AUDIT AND MECH1 COUPLED GEOMETRY/POWER SCREEN
+Coda with Richard Pemberton | 15 October 2026
+
+Outcome: the returned arithmetic reproduces, but the universal biological and architecture conclusions do not follow. Preserve the useful separation of tissue-support and actuation interfaces. Replace the ten-channel sizing recommendation with a coupled oxygen-distance/hydraulics calculation, and distinguish fluid hydraulic power from total electrical or thermal load. No physical module has been built or validated by this work.
+
+PRESERVATION AND REPLAY
+The 36,742-byte supplied stage-mech.tar.gz was enumerated and safely copied into returned/ using a data-only extractor. It contained seven regular files. Absolute paths, traversal, backslashes/drive paths, links, devices, duplicate destinations and excessive sizes were rejected by the extractor; no permissions or archive metadata were applied. archive_receipt.json records all member sizes/hashes. The original archive is unchanged.
+
+All returned code and reports were read before execution. o2_perfusion.py imports only math/itertools and prints calculations; it has no file/network/system side effects. Local execution with Python 3.12.14 exited 0 with no stderr. Its output matches the saved cloud output exactly after CRLF-to-LF normalization. This verifies the returned calculation, not direct observation of the cloud run. Original report text and output are preserved without edits. A local code/config freeze preceded the new coupled screen and replay.
+
+SOURCE CHECKS THAT CHANGE THE INTERPRETATION
+1. Place et al. 2017 (PMC5699948) is a review and illustrative diffusion calculation, not a measured 3-D engineered-muscle benchmark. Its 0.181 mM oxygen value is estimated from solution equilibrium and its 2.69e-9 m2/s diffusivity is extrapolated for medium; the article says direct complete-medium measurements were unavailable. The 40 mmHg/0.052 mM level is illustrative physiology, not a universal survival threshold. Its cell OCR ranges span different cell lines, not measured MuMuTA tissue. The returned numerics use these reported estimates correctly but their biological scope is narrower than the conclusion. The linked 2020 corrigendum changes FBS protein concentration units from mg/dL to g/dL and explicitly says that this does not change the D estimate. The Figure 5 caption's 0.018 mM maximum-gradient text is inconsistent with the surrounding 0.181 mM derivation; the returned calculation follows the latter.
+
+2. The Kawai 2025 correction is verified in the full correction text on Waseda's publication record. It changes the reported one-hour PBS leakage to 0.54 g (dermis equivalent) and 0.13 g (skin equivalent), plus three scale bars. These are cumulative leakage measurements after one hour for those samples, not directly measured evaporation rates or universal g/hour makeup requirements. Neither exposed area, time dependence nor atmospheric water loss can be inferred from the corrected numbers alone. The original 2022 paper's full assay details were not inspected in this bounded audit, so no conversion to evaporative loss is made.
+
+3. Source access was improved for HASEL. AAAS Science in the Classroom hosts the original Acome2018 report text with teaching annotations. The primary report text states more than one million donut-actuator cycles at 150 g and 15% strain, 21% conversion efficiency, and a distinct high-power single-unit mechanical rupture at 158,061 cycles. Thus the million-cycle result need not be labeled forum-only and efficiency is not unavailable. Main text also supports 614 W/kg peak power, 70 J/kg work for the cited two-unit configuration, and stacked-actuator response up to 20 Hz. These metrics belong to different configurations/tests and must not be combined into one all-purpose actuator specification. Supplementary figures/raw traces were not independently examined.
+
+4. Clone's official Android page supports the stated Myofiber performance claims as company assertions. The 40 SLPM / 100 psi / 500 W pump tuple was not located on the inspected official page. Treat it as an unverified secondary-reported nameplate scenario, not primary measured performance. In particular, 'SLPM' requires clarification: standard gas volume flow cannot automatically be used as actual incompressible liquid flow. If 40 actual liquid L/min and 100 psi occurred simultaneously, their product would be 459.65 W; that conditional arithmetic is correct. The 69-fold ratio merely divides a claimed actuator pressure by an assumed 10 kPa tissue-loop budget.
+
+5. Aubin2019 publisher abstract and supplementary-video descriptions confirm an untethered aquatic energy/hydraulic system and zinc-iodide catholyte actuation. The 1.56 body-length/min motion is stated by the primary video description. The abstract's 'up to 36 hours' remains an abstract-level duration claim, not independently verified continuous swimming time. Detailed pump curves/electrolyte composition were not available in the inspected text. The Grok Bot 0.5-3.5 M ZnI2 sweep is therefore not established as the robot's actual formulation. Ideal three-ion osmolarity is not a validated high-concentration osmolality measurement; mOsm/L and mOsm/kg also are not interchangeable without further assumptions.
+
+6. Ren2025's author-owned Dryad page confirms the ~8 mN / ~4 mm actuator summary and attribution to Ren, Morimoto and Takeuchi. Its accessible README includes actual tissue cross-section/width data categories; these do not, by themselves, supply OCR or cell density. This audit did not reanalyse those raw files or independently confirm all fatigue, culture-lifetime, skin-thickness and tensile-strength claims in Grok Bot's comparison. They remain at their stated limited read depths.
+
+7. The 50-fold carrier statement is a conditional content ratio: (1.34 ml/g x 150 g/L / 22.4 ml/mmol) / 0.181 mmol/L = about 49.6. Those Hb assumptions were not verified against a primary carrier study. Required flow depends on the unloadable inlet-to-outlet content difference, not total inlet content alone. Equal extraction fraction, appropriate kinetics, viscosity, free oxygen and compatibility cannot be assumed for an unnamed carrier. No particular carrier or fiftyfold practical flow reduction is established here.
+
+WHAT THE ORIGINAL EQUATIONS DO AND DO NOT ESTABLISH
+The zero-order slab result L=sqrt(2D(Cin-Cfloor)/q) is correct for its ideal one-sided fixed-boundary slab. The 621-micrometre middle value is a conditional maximum distance in that model, not a universal muscle-thickness cap. Changing density, OCR, diffusivity, boundary, geometry or the chosen floor changes it. A cylinder oxygenated over its outer surface is a different geometry from a perfusion channel that must feed tissue outward. Its radius formula cannot establish the spacing of internal channels.
+
+For the returned middle flow, ten 200-micrometre-diameter, 30-mm channels have deltaP=1185.17 Pa and shear=1.97528 Pa. Multiplying pressure drop by total flow gives 23.5724 microwatts of fluid hydraulic power. It excludes pump inefficiency, fixed electrical demand, reservoirs/manifolds, oxygenation, heaters/cooling and controls. Even at assumed 50% or 10% efficiency, channel-only electrical requirements become 47.14 or 235.72 microwatts before overhead. Comparing one module's channel-only minimum against a whole-android nameplate cannot establish a seven-order system-level power advantage.
+
+Ten 200-micrometre channels is not a universal hydraulic minimum: fewer wider channels can satisfy the same hydraulic assumptions, whereas thinner or longer channels need more. More crucially, hydraulics does not determine distance from each tissue cell to an oxygen source. That missing coupling was the purpose of the new calculation.
+
+MECH1: EXECUTED COUPLED ANALYTIC SCREEN
+Declared model: n identical parallel cylindrical lumens, radius r, length L, each supplying an equal-volume annular tissue territory with no flux at its outer radius R. Total consuming tissue volume V excludes lumen volume. The annuli are a continuum approximation, not an exact tessellation of a finite block. Oxygen supply comes only from lumens; no atmospheric uptake is included. Demand q is uniform and zero order. Flow is steady, fully developed, laminar and Newtonian; lumen oxygen is treated as cross-sectionally mixed. The optional wall coefficient lumps unmodeled interfacial resistance; internal mass transfer, networks, bends, compliance and biological adaptation are omitted.
+
+Geometry:
+  R^2 = r^2 + V/(n*pi*L)
+Steady radial oxygen drop from lumen-side tissue surface to territory perimeter:
+  deltaC_radial = q/(4D) * [2R^2*ln(R/r) - R^2 + r^2]
+Optional finite wall drop:
+  deltaC_wall = q*(R^2-r^2)/(2*r*Pwall)
+Axial drop at full assumed consumption:
+  deltaC_axial = q*V/Qtotal
+Required flow to retain the chosen floor:
+  Qmin = q*V/[Cin-Cfloor-deltaC_radial-deltaC_wall]
+If that denominator is nonpositive, no finite flow satisfies this model.
+
+Hydraulic resistance of the n parallel channels is Rh=8*mu*L/(n*pi*r^4). Upper flow bounds come from pressure, wall shear and hydraulic power, with P_hydraulic=Rh*Qtotal^2. We additionally constrain lumen volume/(tissue+lumen volume) <=0.10. This geometric-volume gate is an analyst choice, not a biological threshold or mechanical packing proof.
+
+Central assumptions: 1 mL tissue, q=0.0018 mol/m3/s, D=2.69e-9 m2/s, viscosity=0.00078 Pa s, channel length 30 mm, inlet .181 mol/m3, floor .052 mol/m3. Limits are assumed pressure 2 kPa, shear 2 Pa, channel hydraulic power 100 microwatts, and channel volume fraction 10%. Diameters 100/200/300/500 micrometres and all integer n=1..256 were scanned under ideal, 0.05 and 0.2 mm/s wall transfer: 3072 central rows.
+
+A separate sparse 1440-row sensitivity crosses 0.1/1 mL tissue, q=.0001/.0018/.012, D=2e-9/2.69e-9, viscosity=.00078/.0012, the same diameters/walls and channel counts 10/25/50/100/200. Demand endpoints derive from the returned OCR-density assumptions; D=2e-9 is also used as a literature parameter in the inspected muscle-on-chip modeling paper. These are scenario bounds, not confidence limits or measured target-tissue variation. Some central/sensitivity settings overlap; 4512 is the row count, not 4512 independent experiments.
+
+RESULTS THAT CHANGE THE GEOMETRY DISCUSSION
+The returned 10 x 200 micrometre case, allocated uniformly over 1 mL tissue, has a computed radial drop of 0.659903 mol/m3 under the same q/D assumptions. This already exceeds inlet .181 before any axial or wall loss. Its chosen 50% extraction yields outlet .0905; the formal zero-order minimum is negative. Negative concentration is an infeasibility signal for the assumed consuming territory, not a physical oxygen prediction. No inference is made about all other possible layouts, atmospheric supply or actual MuMuTA physiology.
+
+First feasible channel counts among n=1..256 under all central declared limits:
+ diameter      ideal wall       Pwall 0.05 mm/s      Pwall 0.2 mm/s
+ 100 um            106                133                  112
+ 200 um             41                 53                   44
+ 300 um             31                 38                   32
+ 500 um           none               none                 none
+
+'None' means no count satisfies this screen, including its 10% channel-volume cap; it is not a universal impossibility. At 200 micrometres, the first cases require 4.4448, 5.5761 and 4.6829 mL/min respectively, with channel hydraulic powers 79.759, 97.103 and 82.497 microwatts. They sit close to chosen limits and are not recommended builds. Larger channel counts trade lumen volume and manufacturing burden for shorter tissue distances, lower flow requirements and lower channel pressure loss. This, rather than a fixed channel count or a presumed carrier multiplier, is the concrete useful design tradeoff.
+
+Across the 4512 rows, 946 pass the declared gates. That tally is neither a probability nor a population result; it depends on grid weighting and repeated settings. All seven internal checks passed, including a separate numerical quadrature of the radial gradient, conservation at Qmin, the pressure/shear identity, zero-demand limit, finite-wall ordering and rejection of five malformed inputs. Maximum Reynolds number among passing rows is 27.14, consistent with laminar flow for this straight-tube approximation. No separate independent reviewer had completed this new screen at report time.
+
+ARCHITECTURE DISPOSITION
+Separate compatible-medium tissue support from sealed actuation/energy hardware is a reasonable initial engineering choice, especially for zinc-iodide electrochemistry or dielectric liquids. The audit does not prove that any actuator fluid can never share a tissue-support circuit. Fluid identity and pressure topology are different design variables: branches can have different pressure drops, and actuation can couple mechanically through isolation. Shared-medium compatibility, contamination, temperature, sterile lifetime, pump behavior and fail-safe operation need evidence; the current papers do not validate that design. Conversely, treating uncharacterized electrolyte or dielectric oil as perfusate is unsupported. Use two separated subsystems as a bounded default, not as a theorem that all possible common-fluid architectures fail.
+
+For the first module, compare independently actuated living coverage against a living-muscle-assisted option with explicit tissue-support boundaries. This is an architecture comparison only. The returned culture, filtration, gas, temperature and pressure prescriptions are not validated protocols and are not adopted as experimental instructions here.
+
+CONTINUING SOURCE/INFERENCE LIMITS
+No wet-lab or clinical work, uploads, external messages, Git operation or publication occurred. No new software was installed. New outputs remain under research/grokbot_mechanics. Original cloud archives and prior project experiments were not modified. Source HTML/text and read-depth notes are retained. The donor cloud claim about earlier research authorship was not independently investigated or adopted as history. Grok Bot's conditional public-hosting assent is separate from source rights, final-export review and any future publication authorization.
+
+The separate Nua feedback item remains: an observed absolute occlusion increment is real as a measured outcome, but saying an absolute blood-supply baseline is physiologically established still exceeds what the transient data identify. No new message was sent to Nua from this audit.

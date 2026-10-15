@@ -1,0 +1,64 @@
+{
+  "original_execution_exit": 0,
+  "ranking_rows": 6,
+  "mean_equilibrium_comparison": [
+    {
+      "sample": "hRBC_Banerjee2022",
+      "at_means": 0.5787729981228154,
+      "claimed": 0.583,
+      "monte_carlo_mean": 0.5636366032636128
+    },
+    {
+      "sample": "PEG_LEH_176nm_Rameez_Banerjee2022",
+      "at_means": 0.503791406208521,
+      "claimed": null,
+      "monte_carlo_mean": 0.4992102644468563
+    },
+    {
+      "sample": "NMU_HbV_PLP_Ref",
+      "at_means": 0.5878050694544206,
+      "claimed": 0.579,
+      "monte_carlo_mean": 0.5847019826853946
+    },
+    {
+      "sample": "PEG_LEH_256nm_Banerjee2022",
+      "at_means": 0.38714371027181005,
+      "claimed": 0.391,
+      "monte_carlo_mean": 0.3840432788719824
+    },
+    {
+      "sample": "hHb_Banerjee2022",
+      "at_means": 0.21866943724480192,
+      "claimed": 0.207,
+      "monte_carlo_mean": 0.21940895513105552
+    },
+    {
+      "sample": "HBOC201_Hemopure_Ref",
+      "at_means": 0.4222534767238828,
+      "claimed": 0.457,
+      "monte_carlo_mean": 0.421601617378742
+    }
+  ],
+  "primary_table_inspected": "Banerjee2022Table1 publisher PNG and main text,2026-10-15",
+  "material_source_issues": [
+    "RBC diameter2000\u20138000nm is a range; Gemini encodes5000mean/3000SD, which is not a reported mean/SD.",
+    "Rameez suspension Hb11\u201313 and internalHb50\u201375 are ranges; Gemini midpoint/half-range are not SDs.",
+    "Rameez metHb<1.0% does not support0.8mean/0.2SD.",
+    "HBOC201/NMU reference rows contain source-unverified point estimates and SDs; exclude from empirical rankings pending verification.",
+    "Main text specifies SF-17/SX17MV; draft says SX-18MV. Additional equilibrium buffer claims require their own source.",
+    "20C kinetic constants cannot be silently treated as calibrated37C mission kinetics."
+  ],
+  "model_issues": [
+    "NO-radius relation,precapillary penalty,redox scaling and missing-rate defaults are hypothetical; no fitted physiological linkage supplied.",
+    "Intrinsic equilibrium ranks are compared to unequal-concentration net-content ranks; normalization comment is not implemented.",
+    "MonteCarlo SDs are neither calibrated population uncertainty nor confidence intervals; several source SDs were invented from ranges.",
+    "Held-out checks use synthetic Hill samples,not withheld experimental measurements; FIM condition depends on parameter units.",
+    "P50 is half-saturation,not generally the linear-pressure Hill inflection."
+  ],
+  "disposition": "Preserve original proposal and local run; do not accept product ranking or clinical inference. Correct verified-table subset separately before integration.",
+  "source_hashes": {
+    "banerjee2022.html": "283931be5776bb0a65c42898e2cd8f8736454e5c8b3d0899f0e82a1897757113",
+    "banerjee2022_table1.png": "789ad381b5791c96da9b7317430a0b40157e0e9a45089074563313010c83a7a4"
+  },
+  "limits": "Bounded audit, not verification of all clinical/regulatory claims or all sources."
+}

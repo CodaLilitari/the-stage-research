@@ -1,0 +1,45 @@
+{
+  "counts": {
+    "seed_fixtures": 256,
+    "profiles": 4,
+    "algorithm_trials": 8192,
+    "episodes": 49152,
+    "scored_transitions": 3932160,
+    "failures_in_completed_batches": 0
+  },
+  "primary": {
+    "mean": 0.3420168961958852,
+    "ci95": [
+      0.3295972194934139,
+      0.35404920945941015
+    ],
+    "n_seeds": 256,
+    "profile": "primary",
+    "difference": "cumulative minus window",
+    "episodes": [
+      3
+    ],
+    "metric": "early32_distance"
+  },
+  "stable": {
+    "mean": 0.005960395046461494,
+    "ci95": [
+      0.005274753119965749,
+      0.0066606376378683324
+    ],
+    "n_seeds": 256,
+    "profile": "primary",
+    "difference": "window minus cumulative",
+    "episodes": [
+      1,
+      2
+    ],
+    "metric": "mean_distance"
+  },
+  "design_rule_passed": true,
+  "overlap": {
+    "status": "all_retained_completed_receipts_match",
+    "count": 1656,
+    "unrecorded_in_flight_work": "unknown; completion receipts were buffered, not a durable start journal"
+  }
+}

@@ -1,0 +1,1 @@
+Stopped own process after source inspection showed --disable-unified-memory deletes the requested XLA memory-fraction setting. No inference result existed. Corrected by explicit TF_FORCE_UNIFIED_MEMORY=0 without that CLI flag. Sampled peak RSS before termination was 1.028 GiB.

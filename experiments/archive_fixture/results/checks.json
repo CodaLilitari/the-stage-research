@@ -1,0 +1,733 @@
+{
+  "baseline": {
+    "counts": {
+      "corrections": 6,
+      "factual_recovery_denominator": 18,
+      "questions": 30,
+      "records": 26,
+      "unique_revisions": 26
+    },
+    "issues": [],
+    "limits": [
+      "Synthetic authored truth only; no real-event verification.",
+      "Leakage checks are exact canary/prompt/path scans plus strict packet-content allowlists, not a semantic or information-theoretic leakage proof.",
+      "Filesystem directory separation is not OS access isolation.",
+      "No LLM inference, physical action, independent timestamp, signature or identity test."
+    ],
+    "packet_stats": {
+      "A": {
+        "bytes": 29374,
+        "characters": 29374,
+        "claims": 24,
+        "source_revisions": 24
+      },
+      "B": {
+        "bytes": 5858,
+        "characters": 5858,
+        "claims": 24,
+        "source_revisions": 24
+      },
+      "C": {
+        "bytes": 1216,
+        "characters": 1216,
+        "claims": 0,
+        "source_revisions": 0
+      },
+      "D": {
+        "bytes": 954,
+        "characters": 954,
+        "claims": 0,
+        "source_revisions": 0
+      }
+    },
+    "passed": true
+  },
+  "cases": [
+    {
+      "anchor_mode": "original_anchor_integrity_fault",
+      "case": "positive_baseline",
+      "discrimination_pass": true,
+      "expected_valid": true,
+      "issue_count": 0,
+      "manifest_sha256_tested": "b89724c22d37c9172eabd41332311f84e9b74261411bf78f18fec87862665efb",
+      "observed_diagnostics": [],
+      "observed_valid": true,
+      "required_diagnostics": []
+    },
+    {
+      "anchor_mode": "test_only_reanchored_semantic_fault_or_positive",
+      "case": "positive_exact_disputed_and_restricted_custody",
+      "discrimination_pass": true,
+      "expected_valid": true,
+      "issue_count": 0,
+      "manifest_sha256_tested": "b89724c22d37c9172eabd41332311f84e9b74261411bf78f18fec87862665efb",
+      "observed_diagnostics": [],
+      "observed_valid": true,
+      "required_diagnostics": []
+    },
+    {
+      "anchor_mode": "original_anchor_integrity_fault",
+      "case": "positive_deterministic_rebuild",
+      "discrimination_pass": true,
+      "expected_valid": true,
+      "issue_count": 0,
+      "manifest_sha256_tested": "b89724c22d37c9172eabd41332311f84e9b74261411bf78f18fec87862665efb",
+      "observed_diagnostics": [],
+      "observed_valid": true,
+      "required_diagnostics": []
+    },
+    {
+      "anchor_mode": "original_anchor_integrity_fault",
+      "case": "negative_one_byte_edit",
+      "discrimination_pass": true,
+      "expected_valid": false,
+      "issue_count": 3,
+      "manifest_sha256_tested": "b89724c22d37c9172eabd41332311f84e9b74261411bf78f18fec87862665efb",
+      "observed_diagnostics": [
+        "CONTENT_INTEGRITY",
+        "FILE_INTEGRITY",
+        "SOURCE_PACKET_MISMATCH"
+      ],
+      "observed_valid": false,
+      "required_diagnostics": [
+        "FILE_INTEGRITY",
+        "CONTENT_INTEGRITY"
+      ]
+    },
+    {
+      "anchor_mode": "original_anchor_integrity_fault",
+      "case": "negative_manifest_replacement",
+      "discrimination_pass": true,
+      "expected_valid": false,
+      "issue_count": 1,
+      "manifest_sha256_tested": "b89724c22d37c9172eabd41332311f84e9b74261411bf78f18fec87862665efb",
+      "observed_diagnostics": [
+        "UNTRUSTED_MANIFEST"
+      ],
+      "observed_valid": false,
+      "required_diagnostics": [
+        "UNTRUSTED_MANIFEST"
+      ]
+    },
+    {
+      "anchor_mode": "test_only_reanchored_semantic_fault_or_positive",
+      "case": "negative_duplicate_revision",
+      "discrimination_pass": true,
+      "expected_valid": false,
+      "issue_count": 6,
+      "manifest_sha256_tested": "8cb50673c9981056ea0bf583f3c5c137dbfafe48b9225c2afb59a1d86b8eaf04",
+      "observed_diagnostics": [
+        "CONDITION_CONTENT_MISMATCH",
+        "DUPLICATE_REVISION",
+        "EXPOSURE_MISMATCH",
+        "SOURCE_PACKET_MISMATCH"
+      ],
+      "observed_valid": false,
+      "required_diagnostics": [
+        "DUPLICATE_REVISION"
+      ]
+    },
+    {
+      "anchor_mode": "test_only_reanchored_semantic_fault_or_positive",
+      "case": "negative_missing_parent",
+      "discrimination_pass": true,
+      "expected_valid": false,
+      "issue_count": 6,
+      "manifest_sha256_tested": "699470d809e06c77a5197d8ceb7d95cc029e84519972080ed7957bac5f2827f4",
+      "observed_diagnostics": [
+        "BROKEN_CORRECTION",
+        "MISSING_PARENT",
+        "QUESTION_SEMANTICS_MISMATCH",
+        "SCORING_KEY_MISMATCH",
+        "SCORING_SOURCE_MISMATCH",
+        "SOURCE_PACKET_MISMATCH"
+      ],
+      "observed_valid": false,
+      "required_diagnostics": [
+        "MISSING_PARENT",
+        "BROKEN_CORRECTION"
+      ]
+    },
+    {
+      "anchor_mode": "test_only_reanchored_semantic_fault_or_positive",
+      "case": "negative_cross_item_parent",
+      "discrimination_pass": true,
+      "expected_valid": false,
+      "issue_count": 5,
+      "manifest_sha256_tested": "b8f3e6da2090b8051ff2cd217f2329dd8d1d488deabf127b8e88752a78a0348b",
+      "observed_diagnostics": [
+        "CROSS_ITEM_PARENT",
+        "QUESTION_SEMANTICS_MISMATCH",
+        "SCORING_KEY_MISMATCH",
+        "SCORING_SOURCE_MISMATCH",
+        "SOURCE_PACKET_MISMATCH"
+      ],
+      "observed_valid": false,
+      "required_diagnostics": [
+        "CROSS_ITEM_PARENT"
+      ]
+    },
+    {
+      "anchor_mode": "test_only_reanchored_semantic_fault_or_positive",
+      "case": "negative_revision_cycle",
+      "discrimination_pass": true,
+      "expected_valid": false,
+      "issue_count": 2,
+      "manifest_sha256_tested": "3a0d17012c935cea51f2dc4c98f48bb57f3ecd591bd059f9703f7053dbce4771",
+      "observed_diagnostics": [
+        "REVISION_CYCLE",
+        "SOURCE_PACKET_MISMATCH"
+      ],
+      "observed_valid": false,
+      "required_diagnostics": [
+        "REVISION_CYCLE"
+      ]
+    },
+    {
+      "anchor_mode": "test_only_reanchored_semantic_fault_or_positive",
+      "case": "negative_false_supported_status",
+      "discrimination_pass": true,
+      "expected_valid": false,
+      "issue_count": 7,
+      "manifest_sha256_tested": "3e814a65714d37e09796d692171c3ab8250a8bea9239548bf65cc4f8945e1490",
+      "observed_diagnostics": [
+        "CONDITION_CONTENT_MISMATCH",
+        "CORRECTION_HISTORY_STATUS",
+        "FALSE_SUPPORTED_CLAIM",
+        "SOURCE_PACKET_MISMATCH",
+        "UNSUPPORTED_PACKET_CLAIM"
+      ],
+      "observed_valid": false,
+      "required_diagnostics": [
+        "FALSE_SUPPORTED_CLAIM",
+        "CORRECTION_HISTORY_STATUS"
+      ]
+    },
+    {
+      "anchor_mode": "test_only_reanchored_semantic_fault_or_positive",
+      "case": "negative_unsupported_source_claim",
+      "discrimination_pass": true,
+      "expected_valid": false,
+      "issue_count": 9,
+      "manifest_sha256_tested": "30908f9ab4e5190f83ab720d353b19c3dea387d883030d9e953e99d7f1fd11d9",
+      "observed_diagnostics": [
+        "CONDITION_CONTENT_MISMATCH",
+        "CURRENT_MAP_COVERAGE",
+        "QUESTION_SEMANTICS_MISMATCH",
+        "SCORING_KEY_MISMATCH",
+        "SOURCE_PACKET_MISMATCH",
+        "UNSUPPORTED_PACKET_CLAIM",
+        "UNSUPPORTED_SOURCE_CLAIM"
+      ],
+      "observed_valid": false,
+      "required_diagnostics": [
+        "UNSUPPORTED_SOURCE_CLAIM"
+      ]
+    },
+    {
+      "anchor_mode": "test_only_reanchored_semantic_fault_or_positive",
+      "case": "negative_claim_without_source",
+      "discrimination_pass": true,
+      "expected_valid": false,
+      "issue_count": 2,
+      "manifest_sha256_tested": "7d076aa71ddf72d32caffd0d9e753869fb8ce5b323f4d9ad3ac36d4238ac4550",
+      "observed_diagnostics": [
+        "CONDITION_CONTENT_MISMATCH",
+        "UNSUPPORTED_PACKET_CLAIM"
+      ],
+      "observed_valid": false,
+      "required_diagnostics": [
+        "UNSUPPORTED_PACKET_CLAIM"
+      ]
+    },
+    {
+      "anchor_mode": "test_only_reanchored_semantic_fault_or_positive",
+      "case": "negative_nonexistent_source",
+      "discrimination_pass": true,
+      "expected_valid": false,
+      "issue_count": 3,
+      "manifest_sha256_tested": "03155b8626788bf2bd219da7641944ec38258c88f400aa6b06b636cb568c5741",
+      "observed_diagnostics": [
+        "CONDITION_CONTENT_MISMATCH",
+        "UNKNOWN_SOURCE_REVISION",
+        "UNRECEIPTED_SOURCE"
+      ],
+      "observed_valid": false,
+      "required_diagnostics": [
+        "UNKNOWN_SOURCE_REVISION"
+      ]
+    },
+    {
+      "anchor_mode": "test_only_reanchored_semantic_fault_or_positive",
+      "case": "negative_correction_removed_from_packet",
+      "discrimination_pass": true,
+      "expected_valid": false,
+      "issue_count": 3,
+      "manifest_sha256_tested": "ce89324208594a3fa2b793129bcd76f79155f318e597d183031d16847afbeed8",
+      "observed_diagnostics": [
+        "CONDITION_CONTENT_MISMATCH",
+        "EXPOSURE_MISMATCH",
+        "SOURCE_PACKET_MISMATCH"
+      ],
+      "observed_valid": false,
+      "required_diagnostics": [
+        "CONDITION_CONTENT_MISMATCH",
+        "EXPOSURE_MISMATCH"
+      ]
+    },
+    {
+      "anchor_mode": "test_only_reanchored_semantic_fault_or_positive",
+      "case": "negative_evaluator_canary",
+      "discrimination_pass": true,
+      "expected_valid": false,
+      "issue_count": 3,
+      "manifest_sha256_tested": "4382d43f7ab41cc57e28f85b5807a40d76dae4b6c99e678301e1ea71a6fced19",
+      "observed_diagnostics": [
+        "CONTROL_TEXT_MISMATCH",
+        "EVALUATOR_LEAK",
+        "EVALUATOR_PATH_LEAK"
+      ],
+      "observed_valid": false,
+      "required_diagnostics": [
+        "EVALUATOR_LEAK"
+      ]
+    },
+    {
+      "anchor_mode": "test_only_reanchored_semantic_fault_or_positive",
+      "case": "negative_evaluator_question",
+      "discrimination_pass": true,
+      "expected_valid": false,
+      "issue_count": 2,
+      "manifest_sha256_tested": "cb5400618c9f84eb3869b19c219eed9b7e6380de8cb9574f4c37021f75de2f99",
+      "observed_diagnostics": [
+        "CONTROL_TEXT_MISMATCH",
+        "EVALUATOR_LEAK"
+      ],
+      "observed_valid": false,
+      "required_diagnostics": [
+        "EVALUATOR_LEAK"
+      ]
+    },
+    {
+      "anchor_mode": "test_only_reanchored_semantic_fault_or_positive",
+      "case": "negative_evaluator_file_copy",
+      "discrimination_pass": true,
+      "expected_valid": false,
+      "issue_count": 1,
+      "manifest_sha256_tested": "039eb6abde49561f242a6cc65f29a87e2cd2b9710697c80ad68bccf35a2a91b3",
+      "observed_diagnostics": [
+        "UNALLOWLISTED_PARTICIPANT_FILE"
+      ],
+      "observed_valid": false,
+      "required_diagnostics": [
+        "UNALLOWLISTED_PARTICIPANT_FILE"
+      ]
+    },
+    {
+      "anchor_mode": "test_only_reanchored_semantic_fault_or_positive",
+      "case": "negative_withheld_reference",
+      "discrimination_pass": true,
+      "expected_valid": false,
+      "issue_count": 2,
+      "manifest_sha256_tested": "5bef41eb9bc7a58edbc16181b8a799d069c45df05be340cfea03bc6665b59f3b",
+      "observed_diagnostics": [
+        "EXPOSURE_MISMATCH",
+        "PROHIBITED_LOAD"
+      ],
+      "observed_valid": false,
+      "required_diagnostics": [
+        "PROHIBITED_LOAD"
+      ]
+    },
+    {
+      "anchor_mode": "test_only_reanchored_semantic_fault_or_positive",
+      "case": "negative_revoked_reference",
+      "discrimination_pass": true,
+      "expected_valid": false,
+      "issue_count": 2,
+      "manifest_sha256_tested": "221a11d5c9efccbd8d36883f6f64427f3bd2d548793c4341544e468ea2b310c3",
+      "observed_diagnostics": [
+        "EXPOSURE_MISMATCH",
+        "PROHIBITED_LOAD"
+      ],
+      "observed_valid": false,
+      "required_diagnostics": [
+        "PROHIBITED_LOAD"
+      ]
+    },
+    {
+      "anchor_mode": "test_only_reanchored_semantic_fault_or_positive",
+      "case": "negative_withheld_marker",
+      "discrimination_pass": true,
+      "expected_valid": false,
+      "issue_count": 2,
+      "manifest_sha256_tested": "1120c927477c2f473a72b99f144741168e8d64f74d0d163eb7e3c2853644e17d",
+      "observed_diagnostics": [
+        "CONTROL_TEXT_MISMATCH",
+        "RESTRICTED_CONTENT_LEAK"
+      ],
+      "observed_valid": false,
+      "required_diagnostics": [
+        "RESTRICTED_CONTENT_LEAK"
+      ]
+    },
+    {
+      "anchor_mode": "test_only_reanchored_semantic_fault_or_positive",
+      "case": "negative_control_fact_leak",
+      "discrimination_pass": true,
+      "expected_valid": false,
+      "issue_count": 2,
+      "manifest_sha256_tested": "abb6a43359a3db8616cb566c08871691fd11d1c67cc8763924ad74b3c0f94d32",
+      "observed_diagnostics": [
+        "CONTROL_FACT_LEAK",
+        "UNRECEIPTED_SOURCE"
+      ],
+      "observed_valid": false,
+      "required_diagnostics": [
+        "CONTROL_FACT_LEAK"
+      ]
+    },
+    {
+      "anchor_mode": "test_only_reanchored_semantic_fault_or_positive",
+      "case": "negative_tool_scope_escalation",
+      "discrimination_pass": true,
+      "expected_valid": false,
+      "issue_count": 2,
+      "manifest_sha256_tested": "75965022d4417c21c6879d5bb45773a0cba0ee934aec519478ac6601ab8d696b",
+      "observed_diagnostics": [
+        "EVALUATOR_PATH_LEAK",
+        "PACKET_CAPABILITY_SCOPE"
+      ],
+      "observed_valid": false,
+      "required_diagnostics": [
+        "PACKET_CAPABILITY_SCOPE",
+        "EVALUATOR_PATH_LEAK"
+      ]
+    },
+    {
+      "anchor_mode": "test_only_reanchored_semantic_fault_or_positive",
+      "case": "negative_summary_without_source",
+      "discrimination_pass": true,
+      "expected_valid": false,
+      "issue_count": 2,
+      "manifest_sha256_tested": "5c0e67f384145760c8fca7824f3599bde16b826cf509d0664b4d4f0ccc1a3c58",
+      "observed_diagnostics": [
+        "MISSING_DERIVATION_SOURCE",
+        "SOURCE_PACKET_MISMATCH"
+      ],
+      "observed_valid": false,
+      "required_diagnostics": [
+        "MISSING_DERIVATION_SOURCE"
+      ]
+    },
+    {
+      "anchor_mode": "test_only_reanchored_semantic_fault_or_positive",
+      "case": "negative_missing_derivation_source",
+      "discrimination_pass": true,
+      "expected_valid": false,
+      "issue_count": 2,
+      "manifest_sha256_tested": "6ef4f8dcb05d17887fd501d10f3fbb8906900e86d36aea0031b98dded1606385",
+      "observed_diagnostics": [
+        "MISSING_DERIVATION_SOURCE",
+        "SOURCE_PACKET_MISMATCH"
+      ],
+      "observed_valid": false,
+      "required_diagnostics": [
+        "MISSING_DERIVATION_SOURCE"
+      ]
+    },
+    {
+      "anchor_mode": "original_anchor_integrity_fault",
+      "case": "negative_manifest_path_traversal",
+      "discrimination_pass": true,
+      "expected_valid": false,
+      "issue_count": 2,
+      "manifest_sha256_tested": "b89724c22d37c9172eabd41332311f84e9b74261411bf78f18fec87862665efb",
+      "observed_diagnostics": [
+        "UNSAFE_MANIFEST_PATH",
+        "UNTRUSTED_MANIFEST"
+      ],
+      "observed_valid": false,
+      "required_diagnostics": [
+        "UNSAFE_MANIFEST_PATH"
+      ]
+    },
+    {
+      "anchor_mode": "original_anchor_integrity_fault",
+      "case": "negative_unmanifested_file",
+      "discrimination_pass": true,
+      "expected_valid": false,
+      "issue_count": 1,
+      "manifest_sha256_tested": "b89724c22d37c9172eabd41332311f84e9b74261411bf78f18fec87862665efb",
+      "observed_diagnostics": [
+        "UNMANIFESTED_FILE"
+      ],
+      "observed_valid": false,
+      "required_diagnostics": [
+        "UNMANIFESTED_FILE"
+      ]
+    },
+    {
+      "anchor_mode": "test_only_reanchored_semantic_fault_or_positive",
+      "case": "negative_obsolete_current_pointer",
+      "discrimination_pass": true,
+      "expected_valid": false,
+      "issue_count": 7,
+      "manifest_sha256_tested": "ef338253ca82c3f20e12d578c185827961ae7dbf5f34d3dfa8ef4768ef58bd33",
+      "observed_diagnostics": [
+        "INVALID_CURRENT_REVISION",
+        "QUESTION_SEMANTICS_MISMATCH",
+        "SCORING_KEY_MISMATCH",
+        "SCORING_SOURCE_MISMATCH"
+      ],
+      "observed_valid": false,
+      "required_diagnostics": [
+        "INVALID_CURRENT_REVISION"
+      ]
+    },
+    {
+      "anchor_mode": "test_only_reanchored_semantic_fault_or_positive",
+      "case": "negative_duplicate_exposure",
+      "discrimination_pass": true,
+      "expected_valid": false,
+      "issue_count": 2,
+      "manifest_sha256_tested": "566c789f9de296a93ce49c6651fa5c7d992778c49d723ee70a702544b62b07e9",
+      "observed_diagnostics": [
+        "DUPLICATE_EXPOSURE",
+        "EXPOSURE_MISMATCH"
+      ],
+      "observed_valid": false,
+      "required_diagnostics": [
+        "DUPLICATE_EXPOSURE"
+      ]
+    },
+    {
+      "anchor_mode": "test_only_reanchored_semantic_fault_or_positive",
+      "case": "negative_changed_denominator",
+      "discrimination_pass": true,
+      "expected_valid": false,
+      "issue_count": 1,
+      "manifest_sha256_tested": "df6a11ab109ddc51e95b88163bb25806e26d45adbe1539e752f6251b4e7a76a8",
+      "observed_diagnostics": [
+        "DENOMINATOR_MISMATCH"
+      ],
+      "observed_valid": false,
+      "required_diagnostics": [
+        "DENOMINATOR_MISMATCH"
+      ]
+    },
+    {
+      "anchor_mode": "test_only_reanchored_semantic_fault_or_positive",
+      "case": "negative_revocation_after_packet_creation",
+      "discrimination_pass": true,
+      "expected_valid": false,
+      "issue_count": 9,
+      "manifest_sha256_tested": "a8c69fac71e44a88c699f79cdb91357f8c6720ff29f2946348b0e35a98f1466f",
+      "observed_diagnostics": [
+        "CONDITION_CONTENT_MISMATCH",
+        "EXPOSURE_MISMATCH",
+        "PROHIBITED_LOAD",
+        "RESTRICTED_CONTENT_LEAK",
+        "SOURCE_PACKET_MISMATCH"
+      ],
+      "observed_valid": false,
+      "required_diagnostics": [
+        "PROHIBITED_LOAD"
+      ]
+    },
+    {
+      "anchor_mode": "test_only_reanchored_semantic_fault_or_positive",
+      "case": "review_regression_wrong_answer_key",
+      "discrimination_pass": true,
+      "expected_valid": false,
+      "issue_count": 1,
+      "manifest_sha256_tested": "f5ccb16a728d5ccb006681f3025eaccb8c53a892a863616efeac2cd059e5cbdc",
+      "observed_diagnostics": [
+        "SCORING_KEY_MISMATCH"
+      ],
+      "observed_valid": false,
+      "required_diagnostics": [
+        "SCORING_KEY_MISMATCH"
+      ]
+    },
+    {
+      "anchor_mode": "test_only_reanchored_semantic_fault_or_positive",
+      "case": "review_regression_wrong_availability",
+      "discrimination_pass": true,
+      "expected_valid": false,
+      "issue_count": 1,
+      "manifest_sha256_tested": "288a8bbc661087973fe5a9de36849ba8726f24fdf991e3e53fc7f5e179a768f0",
+      "observed_diagnostics": [
+        "EVIDENCE_AVAILABILITY_MISMATCH"
+      ],
+      "observed_valid": false,
+      "required_diagnostics": [
+        "EVIDENCE_AVAILABILITY_MISMATCH"
+      ]
+    },
+    {
+      "anchor_mode": "test_only_reanchored_semantic_fault_or_positive",
+      "case": "review_regression_receipt_extra_history",
+      "discrimination_pass": true,
+      "expected_valid": false,
+      "issue_count": 1,
+      "manifest_sha256_tested": "901f741c21d3171f3ed019544174f03aefb294a12f952daef989101dee674ac3",
+      "observed_diagnostics": [
+        "EXPOSURE_RECEIPT_SCHEMA"
+      ],
+      "observed_valid": false,
+      "required_diagnostics": [
+        "EXPOSURE_RECEIPT_SCHEMA"
+      ]
+    },
+    {
+      "anchor_mode": "test_only_reanchored_semantic_fault_or_positive",
+      "case": "review_regression_receipt_history_substitution",
+      "discrimination_pass": true,
+      "expected_valid": false,
+      "issue_count": 1,
+      "manifest_sha256_tested": "00ba29bfde75b54441387605fd09f067b5966d648abaf219ba721539baf66876",
+      "observed_diagnostics": [
+        "EXPOSURE_RECEIPT_SCHEMA"
+      ],
+      "observed_valid": false,
+      "required_diagnostics": [
+        "EXPOSURE_RECEIPT_SCHEMA"
+      ]
+    },
+    {
+      "anchor_mode": "test_only_reanchored_semantic_fault_or_positive",
+      "case": "review_regression_policy_escalation",
+      "discrimination_pass": true,
+      "expected_valid": false,
+      "issue_count": 1,
+      "manifest_sha256_tested": "646c58d160ec31db265bb6af6a5590a359313700f6529568fe354572cdf49e6b",
+      "observed_diagnostics": [
+        "POLICY_CAPABILITY_ESCALATION"
+      ],
+      "observed_valid": false,
+      "required_diagnostics": [
+        "POLICY_CAPABILITY_ESCALATION"
+      ]
+    },
+    {
+      "anchor_mode": "test_only_reanchored_semantic_fault_or_positive",
+      "case": "review_regression_empty_current_map",
+      "discrimination_pass": true,
+      "expected_valid": false,
+      "issue_count": 43,
+      "manifest_sha256_tested": "300d29872ff4d25b7a89f0b2a2c303d9a86056801de7c75e371b9a6becbcfe79",
+      "observed_diagnostics": [
+        "CURRENT_MAP_COVERAGE",
+        "QUESTION_SEMANTICS_MISMATCH",
+        "SCORING_KEY_MISMATCH",
+        "SCORING_SOURCE_MISMATCH"
+      ],
+      "observed_valid": false,
+      "required_diagnostics": [
+        "CURRENT_MAP_COVERAGE"
+      ]
+    },
+    {
+      "anchor_mode": "test_only_reanchored_semantic_fault_or_positive",
+      "case": "review_regression_malformed_origin",
+      "discrimination_pass": true,
+      "expected_valid": false,
+      "issue_count": 1,
+      "manifest_sha256_tested": "8a61b2f4442b311bb7474850ea7c3965d6861b6e697ba177d19627103d653659",
+      "observed_diagnostics": [
+        "RECORD_SCHEMA"
+      ],
+      "observed_valid": false,
+      "required_diagnostics": [
+        "RECORD_SCHEMA"
+      ]
+    },
+    {
+      "anchor_mode": "original_anchor_integrity_fault",
+      "case": "review_regression_nested_manifest_bypass",
+      "discrimination_pass": true,
+      "expected_valid": false,
+      "issue_count": 2,
+      "manifest_sha256_tested": "b89724c22d37c9172eabd41332311f84e9b74261411bf78f18fec87862665efb",
+      "observed_diagnostics": [
+        "UNALLOWLISTED_PARTICIPANT_FILE",
+        "UNMANIFESTED_FILE"
+      ],
+      "observed_valid": false,
+      "required_diagnostics": [
+        "UNMANIFESTED_FILE",
+        "UNALLOWLISTED_PARTICIPANT_FILE"
+      ]
+    },
+    {
+      "anchor_mode": "test_only_reanchored_semantic_fault_or_positive",
+      "case": "negative_question_prompt_substitution",
+      "discrimination_pass": true,
+      "expected_valid": false,
+      "issue_count": 1,
+      "manifest_sha256_tested": "8849e9fd762d3357ad4153b2d97b36c45fb5d531af58ebafe4557bd09e7142f8",
+      "observed_diagnostics": [
+        "QUESTION_SEMANTICS_MISMATCH"
+      ],
+      "observed_valid": false,
+      "required_diagnostics": [
+        "QUESTION_SEMANTICS_MISMATCH"
+      ]
+    },
+    {
+      "anchor_mode": "test_only_reanchored_semantic_fault_or_positive",
+      "case": "negative_scenario_key",
+      "discrimination_pass": true,
+      "expected_valid": false,
+      "issue_count": 1,
+      "manifest_sha256_tested": "c7b0deeb583768b8ddbdd9920065b973c5eeb9900b74ece5b7d9a19fa907bae6",
+      "observed_diagnostics": [
+        "SCENARIO_KEY_MISMATCH"
+      ],
+      "observed_valid": false,
+      "required_diagnostics": [
+        "SCENARIO_KEY_MISMATCH"
+      ]
+    },
+    {
+      "anchor_mode": "test_only_reanchored_semantic_fault_or_positive",
+      "case": "negative_malformed_scenario",
+      "discrimination_pass": true,
+      "expected_valid": false,
+      "issue_count": 1,
+      "manifest_sha256_tested": "a5e8ada67a187a8f289f92c5abda313602b86ba4b2a5a6d0120b0b8f20b8ed9c",
+      "observed_diagnostics": [
+        "SCENARIO_SCHEMA"
+      ],
+      "observed_valid": false,
+      "required_diagnostics": [
+        "SCENARIO_SCHEMA"
+      ]
+    }
+  ],
+  "diagnostic_discrimination_passes": 41,
+  "elapsed_seconds": 2.403788,
+  "external_requests": 0,
+  "finished_at_utc": "2026-10-15T13:26:14.638644+00:00",
+  "interpretation": "Checks classify deliberately constructed offline fixture faults. Counts do not estimate security failure rates, prove semantic isolation, measure model reconstruction, or establish identity/continuity.",
+  "model_calls": 0,
+  "mutation_method": "Each case uses a temporary copy. Most semantic cases regenerate a test-only manifest/anchor to exercise non-hash validation; integrity cases retain the original anchor. The immutable baseline is revalidated after all tests. Temporary mutated copies are removed by TemporaryDirectory; diagnostics and tested manifest hashes are retained.",
+  "negative_cases": 38,
+  "negative_rejections": 38,
+  "physical_actions": 0,
+  "positive_accepts": 3,
+  "positive_cases": 3,
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "python_executable": "<LOCAL_PYTHON>",
+  "release_manifest_sha256": "b89724c22d37c9172eabd41332311f84e9b74261411bf78f18fec87862665efb",
+  "run_type": "offline_synthetic_harness_validation",
+  "source_sha256": {
+    "build_fixture.py": "d9dc35ca7ebfe7b6e690d12542d2e661bd52841ccd50166e0904caefd8560ea8",
+    "run_checks.py": "da87bfc938643437eb3b408627c0df018edd106dee5aebc1831c7799b6369cba",
+    "validate_fixture.py": "ac6dc9217619932315be76f1ff9c0be861b34cdae371b4fa170e53c2f1bab65b"
+  },
+  "started_at_utc": "2026-10-15T13:26:12.234998+00:00",
+  "total_cases": 41,
+  "unexpected_results": 0
+}

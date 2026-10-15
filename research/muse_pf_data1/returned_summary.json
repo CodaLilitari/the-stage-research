@@ -1,0 +1,117 @@
+{
+  "provenance": {
+    "doi": "10.1113/jphysiol.2001.013067",
+    "pmcid": "PMC2290093",
+    "table": "Table 1",
+    "n_volunteers": 20,
+    "acquired": "2026-10-15",
+    "method": "transcription from open-access HTML table",
+    "sha256_raw_csv": "10ac98cb0645d445c779b5c3bf4a268cb9e9e953316a72e45328a16c2c6efaf3"
+  },
+  "transcription_checks": {
+    "P_red": {
+      "mean": 101.35,
+      "sd": 12.158059921411457,
+      "mean_ok": true,
+      "sd_ok": true
+    },
+    "J_red": {
+      "mean": 0.33349999999999996,
+      "sd": 0.09959259114274674,
+      "mean_ok": true,
+      "sd_ok": true
+    },
+    "P_norm": {
+      "mean": 163.125,
+      "sd": 8.608250326530387,
+      "mean_ok": true,
+      "sd_ok": true
+    },
+    "J_norm": {
+      "mean": 0.5290000000000001,
+      "sd": 0.26512956117816494,
+      "mean_ok": true,
+      "sd_ok": true
+    },
+    "dJ": {
+      "mean": 0.036500000000000005,
+      "sd": 0.012475238632882676,
+      "mean_ok": true,
+      "sd_ok": true
+    }
+  },
+  "instrument_check": {
+    "P_membrane": 0.006509090909090909,
+    "typical_dP_Torr": 61.775,
+    "implied_flux_scale": 0.4020990909090909
+  },
+  "occlusion_effect": {
+    "delta_mean": 0.036500000000000005,
+    "delta_sd": 0.012475238632882676,
+    "rel_increase_pct_mean": 9.49850182095881,
+    "rel_increase_pct_sd": 6.321374086402429,
+    "ttest_t": 13.084556308785103,
+    "ttest_p": 5.92888761122588e-11,
+    "wilcoxon_p": 1.9073486328125e-06
+  },
+  "age_groups": {
+    "young_mean": 0.5149999999999999,
+    "young_sd": 0.22396676340723215,
+    "old_mean": 0.5414285714285714,
+    "old_sd": 0.24443326092743403,
+    "ttest_p": 0.8205955561210563
+  },
+  "absolute_vs_proportional": {
+    "pearson_r_delta_vs_flux": -0.14735007828918276,
+    "pearson_p": 0.5352987190604386,
+    "ols_slope": -0.006933317360247983,
+    "ols_intercept": 0.04016772488357119,
+    "ols_intercept_se": 0.01096952467250177,
+    "ols_p_slope": 0.5352987190604384,
+    "through_origin_slope": 0.054369338180139656,
+    "ss_resid_with_intercept": 0.002892797481244103,
+    "ss_resid_through_origin": 0.009109652746523571,
+    "sensitivity_drop_v19": {
+      "pearson_r": -0.36212625941108867,
+      "ols_slope": -0.017206460514875448,
+      "ols_intercept": 0.04709683684270216
+    }
+  },
+  "flux_vs_pO2": {
+    "per_subject_slope_mean": 0.003080025696602882,
+    "per_subject_slope_sd": 0.0030653580717682864,
+    "per_subject_intercept_mean": 0.0397375968573729,
+    "per_subject_intercept_sd": 0.24366484832783433,
+    "intercept_ttest_t": 0.7293293919524922,
+    "intercept_ttest_p": 0.47469587273118063,
+    "mean_flux_ratio": 0.7598915181300556,
+    "mean_pO2_ratio": 0.6215236450797063
+  },
+  "layer_thickness_um": {
+    "population_median": 302.6920286695559,
+    "ci95": [
+      54.2405437165044,
+      662.2038714192236
+    ],
+    "paper_range": [
+      251,
+      360
+    ],
+    "per_subject_median_range": [
+      54.11731203485091,
+      646.4651799911646
+    ]
+  },
+  "pf0_comparison": {
+    "skin_q_mol_m3_s_range": [
+      0.0010014306151645207,
+      0.0014374276176851283
+    ],
+    "pf0_q_mol_m3_s": 0.02,
+    "demand_ratio_pf0_over_skin": 16.40111731843576,
+    "penetration_depth_um": {
+      "skin_q": 809.965858994952,
+      "pf0_q": 200.0
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "actual_output_config_differences": {
+    "msa_mode": {
+      "fold1": "single_sequence",
+      "fold2": "mmseqs2_uniref_env"
+    }
+  },
+  "all_other_actual_output_configuration_fields_identical": true
+}

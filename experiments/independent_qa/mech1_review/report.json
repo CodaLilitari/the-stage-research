@@ -1,0 +1,243 @@
+{
+  "scope": "Independent within-project Decimal evaluation of all saved rows, direct flow inequalities, Simpson radial-gradient integration and original counterexample. No import or execution of the frozen implementation; no biological validation or source-paper re-review.",
+  "derivation": "Steady cylindrical conservation gives D*(rho*Cprime)prime=q*rho. With Cprime(R)=0, -Cprime(rho)=q*(R\u00b2-rho\u00b2)/(2D*rho). Integrating from lumen radius r to R yields the stated positive radial drop. Wall flux equals q times per-channel tissue volume divided by wall area. Uniform axial demand gives distal bulk drop qV/Q. Adding radial and wall drops to distal bulk depletion gives the implemented Q lower bound. Each hydraulic cap has units m\u00b3/s; hydraulic power is fluid power, not total electrical input.",
+  "passed": 35,
+  "total": 35,
+  "checks": [
+    {
+      "name": "all 4512 scalar rows and classifications",
+      "passed": true,
+      "details": {
+        "rows": 4512,
+        "max_absolute_errors": {
+          "territory_radius_um": 4.547473508864641e-13,
+          "radial_drop_mol_m3": 1.7763568394002505e-15,
+          "wall_drop_mol_m3": 8.881784197001252e-16,
+          "remaining_axial_drop_budget": 3.552713678800501e-15,
+          "Q_max_mL_min": 1.4210854715202004e-14,
+          "channel_volume_mL": 4.440892098500626e-16,
+          "channel_fraction": 1.1102230246251565e-16,
+          "Q_min_mL_min": 2.6352608983870596e-10,
+          "pressure_at_Qmin_Pa": 5.75091689825058e-07,
+          "shear_at_Qmin_Pa": 4.788489604834467e-10,
+          "hydraulic_power_at_Qmin_uW": 2.498924732208252e-05,
+          "Re_at_Qmin": 9.840732673183084e-10
+        },
+        "mismatches": []
+      }
+    },
+    {
+      "name": "row denominators",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "reported passing count",
+      "passed": true,
+      "details": 946
+    },
+    {
+      "name": "minimum count diameter100 wallideal",
+      "passed": true,
+      "details": {
+        "minimum": 106,
+        "count": 151
+      }
+    },
+    {
+      "name": "feasible count diameter100 wallideal",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "minimum count diameter200 wallideal",
+      "passed": true,
+      "details": {
+        "minimum": 41,
+        "count": 77
+      }
+    },
+    {
+      "name": "feasible count diameter200 wallideal",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "minimum count diameter300 wallideal",
+      "passed": true,
+      "details": {
+        "minimum": 31,
+        "count": 22
+      }
+    },
+    {
+      "name": "feasible count diameter300 wallideal",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "minimum count diameter500 wallideal",
+      "passed": true,
+      "details": {
+        "minimum": null,
+        "count": 0
+      }
+    },
+    {
+      "name": "feasible count diameter500 wallideal",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "minimum count diameter100 wall5e-05",
+      "passed": true,
+      "details": {
+        "minimum": 133,
+        "count": 124
+      }
+    },
+    {
+      "name": "feasible count diameter100 wall5e-05",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "minimum count diameter200 wall5e-05",
+      "passed": true,
+      "details": {
+        "minimum": 53,
+        "count": 65
+      }
+    },
+    {
+      "name": "feasible count diameter200 wall5e-05",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "minimum count diameter300 wall5e-05",
+      "passed": true,
+      "details": {
+        "minimum": 38,
+        "count": 15
+      }
+    },
+    {
+      "name": "feasible count diameter300 wall5e-05",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "minimum count diameter500 wall5e-05",
+      "passed": true,
+      "details": {
+        "minimum": null,
+        "count": 0
+      }
+    },
+    {
+      "name": "feasible count diameter500 wall5e-05",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "minimum count diameter100 wall0.0002",
+      "passed": true,
+      "details": {
+        "minimum": 112,
+        "count": 145
+      }
+    },
+    {
+      "name": "feasible count diameter100 wall0.0002",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "minimum count diameter200 wall0.0002",
+      "passed": true,
+      "details": {
+        "minimum": 44,
+        "count": 74
+      }
+    },
+    {
+      "name": "feasible count diameter200 wall0.0002",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "minimum count diameter300 wall0.0002",
+      "passed": true,
+      "details": {
+        "minimum": 32,
+        "count": 21
+      }
+    },
+    {
+      "name": "feasible count diameter300 wall0.0002",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "minimum count diameter500 wall0.0002",
+      "passed": true,
+      "details": {
+        "minimum": null,
+        "count": 0
+      }
+    },
+    {
+      "name": "feasible count diameter500 wall0.0002",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "radial flux integral n10",
+      "passed": true,
+      "details": 0.6599031136548841
+    },
+    {
+      "name": "radial flux integral n40",
+      "passed": true,
+      "details": 0.10827721386369893
+    },
+    {
+      "name": "radial flux integral n41",
+      "passed": true,
+      "details": 0.10470209436792827
+    },
+    {
+      "name": "radial flux integral n53",
+      "passed": true,
+      "details": 0.07359644116757956
+    },
+    {
+      "name": "radial flux integral n100",
+      "passed": true,
+      "details": 0.029872273867572487
+    },
+    {
+      "name": "original ten-channel radial counterexample",
+      "passed": true,
+      "details": "0.6599031136548836322296756630189768478287711345762428826"
+    },
+    {
+      "name": "original ten-channel formal minimum",
+      "passed": true,
+      "details": "-0.5694031136548836322296756630189768478287711345762428826"
+    },
+    {
+      "name": "source matches freeze",
+      "passed": true,
+      "details": null
+    }
+  ],
+  "interpretation": "No material equation, units, count or saved-row error found in this declared screen. Central 200um minima are41/53/44 under ideal/0.05/0.2mm/s walls. Thresholds, territories, well-mixed lumen and zero-order demand are assumptions; passing rows do not establish feasible tissue engineering. Equal annular territories do not tessellate a finite construct, and original ten-channel failure does not rule out other geometries or atmospheric supply.",
+  "inputs_sha256": {
+    "coupled_screen.py": "c91cefc2b772b66fba451ad6da562d17b1999d9739d3bb1e3a0be96462c27282",
+    "freeze.json": "b009acd576489a0e67184df0bce01abeb5d6a409c55fe5e857da6dc895065ff2",
+    "screen_cases.csv": "6876be7da124a03e6a97183035768d36f62e0f8db46d4ed89c17b46aa0295086",
+    "screen_results.json": "9d0b1e7cc413591f28b9c1c02703ca62b88bb2d27f060c6340be3ecabfed668b"
+  }
+}

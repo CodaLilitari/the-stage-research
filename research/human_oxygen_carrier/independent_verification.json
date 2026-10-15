@@ -1,0 +1,12 @@
+{
+  "checks": {
+    "all_10368_saved_rows_independent_algebra": true,
+    "all_36_optima_analytic_derivative_sign_change": true,
+    "table_hash_matches_report": true,
+    "source_hash_matches_report": true
+  },
+  "maximum_absolute_content_error": 1.7763568394002505e-15,
+  "passed": 4,
+  "count": 4,
+  "scope": "Independent algebra on every saved row and analytic optimum signs. Model assumptions are not empirically validated; not a clinical optimum or material ranking."
+}

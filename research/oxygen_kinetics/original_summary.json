@@ -1,0 +1,24 @@
+{
+  "fixed_endpoints": {
+    "PL": 100.0,
+    "PU": 10.0,
+    "Hill_n": 2.0,
+    "B_capacity": 5.0
+  },
+  "times": {
+    "tauL": 0.8,
+    "tauU": 0.8
+  },
+  "theoretical_equilibrium_P50_opt": 31.622776601683793,
+  "caseA_constant_kinetics": {
+    "best_P50": 32.0,
+    "max_q_cyc": 3.1154676255595852,
+    "preserves_equilibrium_optimum": true
+  },
+  "caseB_affinity_dependent_kinetics": {
+    "best_P50": 41.0,
+    "max_q_cyc": 3.2324746498460972,
+    "optimum_shifted": true,
+    "shift_description": "Peak shifted from 31.62 to 41.00 because finite off-rates penalize high-affinity carriers."
+  }
+}

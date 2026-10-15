@@ -1,0 +1,39 @@
+{
+  "fold1_mean_plddt": 44.8149645390071,
+  "fold2_mean_plddt": 68.03354609929077,
+  "fold1_ptm_rounded": 0.3,
+  "fold2_ptm_rounded": 0.59,
+  "rmsd_comparison": [
+    {
+      "reference": "2DN1",
+      "chain": "A",
+      "matched_CA": 140,
+      "fold1_rmsd_A": 12.373975995041912,
+      "fold2_rmsd_A": 2.9776882494537107
+    },
+    {
+      "reference": "2DN2",
+      "chain": "A",
+      "matched_CA": 140,
+      "fold1_rmsd_A": 12.341520775973029,
+      "fold2_rmsd_A": 2.7771617200130443
+    },
+    {
+      "reference": "2DN2",
+      "chain": "C",
+      "matched_CA": 140,
+      "fold1_rmsd_A": 12.38206389308167,
+      "fold2_rmsd_A": 2.8223087270638367
+    }
+  ],
+  "adjacent_CA_distance_min_A": 3.657843218203445,
+  "adjacent_CA_distance_max_A": 4.019952016314614,
+  "baseline_manifest_files_unchanged": 49,
+  "changed_command_positions": [
+    1,
+    2,
+    4
+  ],
+  "setting_check": "Only input/output paths and MSA-mode value changed; model, seed, recycle, max-MSA, templates, relaxation, weights and environment match.",
+  "comparison_limit": "One known target, one stochastic seed; max-MSA1:1 retained. No biological or novel-fold validation."
+}

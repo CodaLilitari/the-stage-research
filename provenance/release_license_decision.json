@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-15",
+  "decision": "MIT original code/tests and original executable examples, including the specified Lilitari XML definitions and embedded examples; CC BY 4.0 authored surrounding prose/figures/derived outputs to extent rights held; source-specific exceptions in LICENSE_MAP.csv",
+  "lilitari_embedded_example_scope": "Within Lilitari's contributions, original runnable code, command examples and interface-schema examples embedded in documentation are MIT-licensed; surrounding prose remains CC BY 4.0. The two original MuJoCo XML model definitions are MIT-licensed. Numerical fixtures, result files and third-party material retain their file-specific license entries.",
+  "lilitari_original_mit_model_definitions": [
+    "experiments/lily_independent_qa/received_first_leaf/first_leaf/optional/planar_point.xml",
+    "experiments/lily_independent_qa/received_first_leaf/first_leaf/optional/two_link_arm.xml"
+  ],
+  "scope_reference": "rights/SOURCE_RIGHTS.txt section 8; documentation map notes preserve the embedded MIT example exception within CC BY prose",
+  "authority": "Project direction authorized a public current-work snapshot after collaborator conditions are met. This release-specific decision supersedes no historical record.",
+  "human_credit": "Richard Pemberton",
+  "destinations": [
+    "https://gitlab.com/codalilitari",
+    "https://richard-pemberton-research.darkahn.chatgpt.site"
+  ],
+  "publication_performed_by_curation": false,
+  "rights_limit": "Contributor assent is not a provider or third-party rights grant. No claim of copyright ownership follows from an AI label.",
+  "exact_export_reviews": "Coordinator records completed final reviews separately; this decision record is not their completion receipt."
+}

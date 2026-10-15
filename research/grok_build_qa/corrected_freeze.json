@@ -1,0 +1,19 @@
+{
+  "before_first_corrected_execution_utc": "2026-10-15T15:13:04.625183+00:00",
+  "original_sha256": "00fd5b98815a22021d58c7cd6801eb7da19f1a8e4e35f98d293bfb1c3b826429",
+  "corrected_sha256": "2ff7bebe9fca95bc9b6088b8563ed08d71cbb2218c55de1e098ecbf3f181299b",
+  "changed_functions": [
+    "hydraulic_power",
+    "delivered_oxygen_mol_s",
+    "_interval_or_empty",
+    "gamma_linear",
+    "global_supply_met",
+    "branch_delivered",
+    "local_supply_met",
+    "power_ok_linear",
+    "series_path"
+  ],
+  "other_change": "Strict sweep membership; derivative attribution",
+  "roundoff_policy": "Strict binary64 inequalities; may conservatively reject a rounded near-boundary point. No dimensioned absolute tolerance may create supply or power. Flow-fraction sum retains dimensionless 1e-12 input tolerance.",
+  "limits": "No arbitrary-precision solver or proof over all finite floating-point inputs; extreme overflow/subnormal behavior is outside declared scientific range. No biological validation."
+}

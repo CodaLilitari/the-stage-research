@@ -1,0 +1,88 @@
+{
+  "rows": 4512,
+  "checks": {
+    "radial_independent_quadrature": true,
+    "oxygen_budget_at_required_flow": true,
+    "pressure_shear_identity": true,
+    "zero_demand_requires_zero_flow": true,
+    "finite_wall_increases_required_flow": true,
+    "weak_wall_impossible_even_infinite_flow": true,
+    "five_invalid_inputs_rejected": true
+  },
+  "original_midcase": {
+    "Q_mL_min": 1.1933701657458562,
+    "pressure_Pa": 1185.167947497128,
+    "shear_Pa": 1.9752799124952134,
+    "radial_drop": 0.6599031136548835,
+    "outlet_bulk_C": 0.0905,
+    "formal_minimum_C": -0.5694031136548835,
+    "interpretation": "A negative formal zero-order concentration indicates infeasibility of the assumed uniformly consuming tissue territory, not a physical prediction of negative oxygen.",
+    "hydraulic_power_uW": 23.572401165688728,
+    "electric_power_uW_scenarios": {
+      "0.1": 235.72401165688726,
+      "0.5": 47.144802331377456
+    }
+  },
+  "minimum_counts": [
+    {
+      "P": null,
+      "d": 100,
+      "n": 106
+    },
+    {
+      "P": null,
+      "d": 200,
+      "n": 41
+    },
+    {
+      "P": null,
+      "d": 300,
+      "n": 31
+    },
+    {
+      "P": null,
+      "d": 500,
+      "n": null
+    },
+    {
+      "P": 5e-05,
+      "d": 100,
+      "n": 133
+    },
+    {
+      "P": 5e-05,
+      "d": 200,
+      "n": 53
+    },
+    {
+      "P": 5e-05,
+      "d": 300,
+      "n": 38
+    },
+    {
+      "P": 5e-05,
+      "d": 500,
+      "n": null
+    },
+    {
+      "P": 0.0002,
+      "d": 100,
+      "n": 112
+    },
+    {
+      "P": 0.0002,
+      "d": 200,
+      "n": 44
+    },
+    {
+      "P": 0.0002,
+      "d": 300,
+      "n": 32
+    },
+    {
+      "P": 0.0002,
+      "d": 500,
+      "n": null
+    }
+  ]
+}

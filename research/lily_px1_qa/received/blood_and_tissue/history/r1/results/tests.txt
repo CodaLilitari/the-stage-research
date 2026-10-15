@@ -1,0 +1,26 @@
+test_bad_numeric_inputs (test_diagnostics.DiagnosticsTests.test_bad_numeric_inputs) ... ok
+test_counterexample (test_diagnostics.DiagnosticsTests.test_counterexample) ... ok
+test_distal_optimum (test_diagnostics.DiagnosticsTests.test_distal_optimum) ... ok
+test_fixed_supply (test_diagnostics.DiagnosticsTests.test_fixed_supply) ... ok
+test_grid_convergence (test_diagnostics.DiagnosticsTests.test_grid_convergence) ... ok
+test_hill_half_saturation (test_diagnostics.DiagnosticsTests.test_hill_half_saturation) ... ok
+test_hill_optimum (test_diagnostics.DiagnosticsTests.test_hill_optimum) ... ok
+test_hill_zero (test_diagnostics.DiagnosticsTests.test_hill_zero) ... ok
+test_kinetics (test_diagnostics.DiagnosticsTests.test_kinetics) ... ok
+test_mass_balance (test_diagnostics.DiagnosticsTests.test_mass_balance) ... FAIL
+test_no_wall_transfer (test_diagnostics.DiagnosticsTests.test_no_wall_transfer) ... ok
+test_nondimensional_no_depletion (test_diagnostics.DiagnosticsTests.test_nondimensional_no_depletion) ... ok
+
+======================================================================
+FAIL: test_mass_balance (test_diagnostics.DiagnosticsTests.test_mass_balance)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/stage_bioperfusion/tests/test_diagnostics.py", line 25, in test_mass_balance
+    self.assertLess(integrate(8,.99,256)['mass_balance_abs_error'],1e-8)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1.2917726555095044e-08 not less than 1e-08
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.001s
+
+FAILED (failures=1)

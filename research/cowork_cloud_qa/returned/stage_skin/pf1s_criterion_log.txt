@@ -1,0 +1,41 @@
+==============================================================================
+PF1-S CRITERION ANALYSIS
+==============================================================================
+
+1. WHAT THE EVIDENCE IDENTIFIES
+   For a homogeneous slab the single-group reduction holds to solver tolerance: scaling demand and diffusivity together leaves the field unchanged, so q and D are not separately identifiable there.
+   In the LAYERED construct the same scaling moves the minimum by up to 33% of the inlet concentration, so phi2 alone does NOT close the problem.
+   The layered geometry is governed by at least phi2_epi together with the layer conductance ratio D_epi/D_derm, the wall and surface Biot numbers, and the thickness ratios h_epi/H and Lx/H.
+   The practical consequence is stronger, not weaker, than a single-group claim: an experiment that reports a skin 'qmax' without independently pinning epidermal thickness, epidermal diffusivity AND the dermal diffusivity it sits on has not identified a transportable parameter.
+   homogeneous slab, max relative difference under common scaling: 1.433e-07
+   layered construct, same test:                                   3.291e-01
+
+2. CRITICAL VALUE OF THE IDENTIFIED GROUP
+   sealed_surface               q_epi_crit=0.02342 mol/m^3/s   phi2_crit=1.171
+   barrier_intact_stucker       q_epi_crit=0.02883 mol/m^3/s   phi2_crit=1.441
+   open_air_liquid_interface    q_epi_crit=0.08973 mol/m^3/s   phi2_crit=4.487
+
+   Literature readings placed against that boundary:
+     textbook_resting_skin_bulk             q=0.003     phi2=0.15
+     balu_as_read_by_collaborator_umol      q=0.00972   phi2=0.486
+     balu_recomputed_from_own_inputs        q=0.1       phi2=5
+     balu_as_printed_mmol                   q=9.72      phi2=486
+   Span of the literature readings: 3240x
+
+3. MEASURABLE OXYGEN BUDGET (Rhee geometry, H=1 mm, mid wall)
+   demand                                 surface                      minpO2  atm share   circuit flux
+   textbook_resting_skin_bulk             sealed                       130.84      0.00%      8.598e-08
+   textbook_resting_skin_bulk             barrier_intact_stucker       133.94      6.48%      8.048e-08
+   textbook_resting_skin_bulk             open_air_liquid_interface    143.84     37.78%      5.377e-08
+   balu_as_read_by_collaborator_umol      sealed                        94.77      0.00%      1.892e-07
+   balu_as_read_by_collaborator_umol      barrier_intact_stucker       103.63      8.79%      1.735e-07
+   balu_as_read_by_collaborator_umol      open_air_liquid_interface    133.65     51.57%      9.409e-08
+   balu_recomputed_from_own_inputs        sealed                         0.49      0.00%      7.188e-07
+   balu_recomputed_from_own_inputs        barrier_intact_stucker         2.16      8.15%      7.120e-07
+   balu_recomputed_from_own_inputs        open_air_liquid_interface     30.36     61.73%      5.396e-07
+
+4. PAIRED SEAL TEST - the falsification contrast
+   textbook_resting_skin_bulk             sealed  130.84  intact  133.94  open  143.84  | circuit share intact  93.5%  open  62.2%
+   balu_as_read_by_collaborator_umol      sealed   94.77  intact  103.63  open  133.65  | circuit share intact  91.2%  open  48.4%
+   balu_recomputed_from_own_inputs        sealed    0.49  intact    2.16  open   30.36  | circuit share intact  91.8%  open  38.3%
+

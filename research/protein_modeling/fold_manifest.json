@@ -1,0 +1,251 @@
+{
+  "scope": "HB-FOLD1 artifact manifest; package binaries excluded, installed versions and resolved wheel provenance retained; weight hashes in weight_receipt.json",
+  "created_utc": "2026-10-15T14:15:02Z",
+  "files": [
+    {
+      "path": "analyze_hemoglobin.py",
+      "bytes": 8770,
+      "sha256": "fbb8a4612eac06139ca5e73529ad7cd6861fb1b0fede6ab3ea7e63458ddeaddc"
+    },
+    {
+      "path": "attempt1_fold_console.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "attempt1_fold_run_freeze.json",
+      "bytes": 1966,
+      "sha256": "1bfdadfeb640ebaf2b638b4c51092af7c5c17007d231f4f568d0c3235be78ec5"
+    },
+    {
+      "path": "attempt1_fold_run_receipt.json",
+      "bytes": 5899,
+      "sha256": "5dc1adb0e4aaeb35cb62dfe536db5229a821fa353dfec38912e64a9e5833d2bb"
+    },
+    {
+      "path": "attempt1_note.txt",
+      "bytes": 279,
+      "sha256": "ef1770d94f462d6afeb8ac0a9ce9b65a068a4d9f1e874e5009b479fca698425e"
+    },
+    {
+      "path": "batch_upstream_v1_6_3.py.txt",
+      "bytes": 94154,
+      "sha256": "a65a1fb4301ae82de8b307a8d698f327a79b8fa66c8f053f4ddeff52c87020c4"
+    },
+    {
+      "path": "ca_residuals.csv",
+      "bytes": 57575,
+      "sha256": "71fd0bfca811a4dcf61bcb8caa28df4456bd86f6134b83f11b2dc8ed61d69b9f"
+    },
+    {
+      "path": "chain_alignment.csv",
+      "bytes": 391,
+      "sha256": "ebe100526d6cbbd7c49422f415d8010713266fb1eb5c7b7cff5057cd508865f3"
+    },
+    {
+      "path": "colabfold_download_estimate.json",
+      "bytes": 28636,
+      "sha256": "06cf8f990d35cbb7bd7caa7bf0fc6e7c99a1a99a3d2214be35e9fd6975cfb0c4"
+    },
+    {
+      "path": "colabfold_installed.txt",
+      "bytes": 1349,
+      "sha256": "601d1e248a2132337e396f8bc6dbaca86e78531169dde486493e12a90a38cf66"
+    },
+    {
+      "path": "colabfold_requirements.in",
+      "bytes": 48,
+      "sha256": "35607db5b8f218e0e4d6fc8c62d87af53640a6e540dddc366e5c567ffb939940"
+    },
+    {
+      "path": "colabfold_requirements.lock",
+      "bytes": 3964,
+      "sha256": "e44534494f126facbc44dccec6f72fd75e1c72a2bdd72b48246816aa724ba895"
+    },
+    {
+      "path": "download_receipt.json",
+      "bytes": 1043,
+      "sha256": "52c677b81958fe747f321ebd1ea60879108ca7e6f836a506478f5336a4c66f85"
+    },
+    {
+      "path": "download_upstream_v1_6_3.py.txt",
+      "bytes": 5308,
+      "sha256": "b39c12d434c5a0d3ddaf1df9735d7531c6b13345d3ff035ba17160fe160aabbb"
+    },
+    {
+      "path": "evaluate_fold.py",
+      "bytes": 3026,
+      "sha256": "2dbe37d0b23fe79e3bc47a62720b46e3e48cb27fcdae604c37cf2be87fb63eb0"
+    },
+    {
+      "path": "fetch_alphafold_params.py",
+      "bytes": 1577,
+      "sha256": "467273d6d67c495d65ce83c17a92383b25d0d9a46a5258cd5714433fc1bedaa9"
+    },
+    {
+      "path": "fold_console.log",
+      "bytes": 1235,
+      "sha256": "c2ef9d53401ab901299d8377bc9dfd7ea4f82c9f8895e673b718e793f61bc997"
+    },
+    {
+      "path": "fold_evaluation.json",
+      "bytes": 1470,
+      "sha256": "58a5cf2262bd0c9abfcb7b758a6ac7649540febd4563e65633ccf60374316927"
+    },
+    {
+      "path": "fold_report.txt",
+      "bytes": 7442,
+      "sha256": "c60c101c80ff7f89ed5393be1f5b778b59c9c61615a1258ab9537bff46594c59"
+    },
+    {
+      "path": "fold_residuals.csv",
+      "bytes": 17161,
+      "sha256": "152f2c9475b9cded311d04d9a2e7de09a9ed078ae421d918926a00ca556bfd04"
+    },
+    {
+      "path": "fold_run_freeze.json",
+      "bytes": 1970,
+      "sha256": "8e2cbb24ca1b3b80b9eb4810a93a4ca15e35103d841fd66403120c26f4191bf6"
+    },
+    {
+      "path": "fold_run_receipt.json",
+      "bytes": 7007,
+      "sha256": "b3fcb5989b0d377cb428f97d7b1a8d0b153d1787eab9ff83909f991059376c64"
+    },
+    {
+      "path": "fold_single_sequence/cite.bibtex",
+      "bytes": 1303,
+      "sha256": "049aaa36cf57c8abf86853ab224f80fb388517148b62d1ba1c67616312012fee"
+    },
+    {
+      "path": "fold_single_sequence/config.json",
+      "bytes": 1161,
+      "sha256": "cfd138ef8fc0630b4bc133a170cca3eb7f0c9c866c59ea3361a7b6b2adfc5678"
+    },
+    {
+      "path": "fold_single_sequence/human_alpha_141_RCSB_2DN1.a3m",
+      "bytes": 153,
+      "sha256": "4d885db39e76aa58c8ed79872a7fbf3885395311085a3c8f3ff80037b5e5ffee"
+    },
+    {
+      "path": "fold_single_sequence/human_alpha_141_RCSB_2DN1.done.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fold_single_sequence/human_alpha_141_RCSB_2DN1_coverage.png",
+      "bytes": 55547,
+      "sha256": "6bcdc10e9a7c28cb15262e1df29093f746a2ac4e2a59206b34d48c335df464a2"
+    },
+    {
+      "path": "fold_single_sequence/human_alpha_141_RCSB_2DN1_pae.png",
+      "bytes": 133218,
+      "sha256": "0a536c351fb05a236e827c3f20f195f1dd485e0f16e0db4d0df208e2fb4aedef"
+    },
+    {
+      "path": "fold_single_sequence/human_alpha_141_RCSB_2DN1_plddt.png",
+      "bytes": 82418,
+      "sha256": "203a29ccad4fe7a2316c6239248062aec33092b74f2967bee0cb17da498838b9"
+    },
+    {
+      "path": "fold_single_sequence/human_alpha_141_RCSB_2DN1_predicted_aligned_error_v1.json",
+      "bytes": 134457,
+      "sha256": "c99672f132d0ce6aa2ef972592b8d0662fe99ae28cb2ec515b730dec63a0e7fe"
+    },
+    {
+      "path": "fold_single_sequence/human_alpha_141_RCSB_2DN1_scores_rank_001_alphafold2_ptm_model_3_seed_000.json",
+      "bytes": 115390,
+      "sha256": "762c02e0abca6561fcf4332929064c92bc16bbf54c0cd71b94eec071a3868271"
+    },
+    {
+      "path": "fold_single_sequence/human_alpha_141_RCSB_2DN1_unrelaxed_rank_001_alphafold2_ptm_model_3_seed_000.pdb",
+      "bytes": 86832,
+      "sha256": "baa984d15d7b4c5d07be28f70b7161444153940b761fc27810cbcbfa1c1b9ad3"
+    },
+    {
+      "path": "fold_single_sequence/log.txt",
+      "bytes": 662,
+      "sha256": "ae144b6855a2707a13a01512823bfdd2e8de39ee9914ca44215db9b86aa9d3a5"
+    },
+    {
+      "path": "heme_geometry.csv",
+      "bytes": 1077,
+      "sha256": "d25ab23b3c40fbca8ba61196e34948be1ac25558e932e4f45254d6f39452a62e"
+    },
+    {
+      "path": "human_alpha_141.fasta",
+      "bytes": 171,
+      "sha256": "980a28a6fe3b44bfe159aba9a7dc02877fe35361d468734a614652267cc12abe"
+    },
+    {
+      "path": "independent_verification.json",
+      "bytes": 6685,
+      "sha256": "01b2529ae003f23f9f46ceac1128ee73f7b3f7a049ffdfa0e3c4fcbf9b149a55"
+    },
+    {
+      "path": "public_hemoglobin_sequences.fasta",
+      "bytes": 352,
+      "sha256": "f74ffd1a5e2177da285738c97ea6738750f572afe53e56199a05674458231578"
+    },
+    {
+      "path": "raw/2DN1.cif",
+      "bytes": 533746,
+      "sha256": "cd114c21d276ad69d7e0b667e0edae1161e089c25c04bcfe7468e4102e484bc9"
+    },
+    {
+      "path": "raw/2DN1_entry.json",
+      "bytes": 15001,
+      "sha256": "d9f0b797b1df6f4c38616a5377652ff12562d75dc6cf970adae3b9543d190340"
+    },
+    {
+      "path": "raw/2DN2.cif",
+      "bytes": 937733,
+      "sha256": "b228200cbc09d0cfa6c147d49ded52917cb028d177e6780544e8028c0d5bc6ca"
+    },
+    {
+      "path": "raw/2DN2_entry.json",
+      "bytes": 14975,
+      "sha256": "3f17e61cd5c517f7c5e650e974f267a8bb1b934b86387bf177972610beba0d2c"
+    },
+    {
+      "path": "raw/P69905.json",
+      "bytes": 271287,
+      "sha256": "7bd75c3a8e28a4a7c61c20a9efda889ca37c113ed2829b34c732d3ac1f98bcc8"
+    },
+    {
+      "path": "report.txt",
+      "bytes": 9131,
+      "sha256": "f20dd7b6e12aa85365fe8e0d4f04af324ac0f028931cf2701e2a9fc83ed2689f"
+    },
+    {
+      "path": "requirements-isolated.txt",
+      "bytes": 29,
+      "sha256": "b519d87b8a293239d34c9e2db71ba2628df999be716d753575ae6bc0e485b424"
+    },
+    {
+      "path": "rerun_check.json",
+      "bytes": 548,
+      "sha256": "a98d9de100dae8d9a638cd5b873e36c2ac09b4f87740961f589b0292a3fd809b"
+    },
+    {
+      "path": "results.json",
+      "bytes": 19467,
+      "sha256": "4fc0f55616c6152a7559a6dbc009088d1455b1bf1b15744ca149dd5066c68fa6"
+    },
+    {
+      "path": "run_fold_bounded.py",
+      "bytes": 3512,
+      "sha256": "59cd6892146b8c06bb1be71f448def332b3e7899d0fac3a0e4433864a266d2d1"
+    },
+    {
+      "path": "weight_receipt.json",
+      "bytes": 1982,
+      "sha256": "d233d788abb095721944f823dd0b23f23f94c86588ed6bc308889e317e1fd650"
+    },
+    {
+      "path": "wsl_status.txt",
+      "bytes": 206,
+      "sha256": "7129be3cf02233c5be24606708f83ad700af17e5f27100c87a5c9cd2a344ebff"
+    }
+  ]
+}

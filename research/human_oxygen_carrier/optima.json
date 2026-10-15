@@ -1,0 +1,326 @@
+[
+  {
+    "analytic_P50_mmHg": 24.49489742783178,
+    "analytic_max_delta_saturation": 0.42020410288672866,
+    "grid_max_P50_mmHg": 24,
+    "grid_max_delta_saturation": 0.42016806722689065,
+    "hill_n": 1.0,
+    "load_pressure_mmHg": 60.0,
+    "unload_pressure_mmHg": 10.0
+  },
+  {
+    "analytic_P50_mmHg": 34.64101615137755,
+    "analytic_max_delta_saturation": 0.26794919243112275,
+    "grid_max_P50_mmHg": 35,
+    "grid_max_delta_saturation": 0.26794258373205737,
+    "hill_n": 1.0,
+    "load_pressure_mmHg": 60.0,
+    "unload_pressure_mmHg": 20.0
+  },
+  {
+    "analytic_P50_mmHg": 48.98979485566356,
+    "analytic_max_delta_saturation": 0.10102051443364368,
+    "grid_max_P50_mmHg": 49,
+    "grid_max_delta_saturation": 0.10102051334913914,
+    "hill_n": 1.0,
+    "load_pressure_mmHg": 60.0,
+    "unload_pressure_mmHg": 40.0
+  },
+  {
+    "analytic_P50_mmHg": 28.284271247461902,
+    "analytic_max_delta_saturation": 0.477592250072517,
+    "grid_max_P50_mmHg": 28,
+    "grid_max_delta_saturation": 0.4775828460038985,
+    "hill_n": 1.0,
+    "load_pressure_mmHg": 80.0,
+    "unload_pressure_mmHg": 10.0
+  },
+  {
+    "analytic_P50_mmHg": 40.0,
+    "analytic_max_delta_saturation": 0.3333333333333332,
+    "grid_max_P50_mmHg": 40,
+    "grid_max_delta_saturation": 0.3333333333333332,
+    "hill_n": 1.0,
+    "load_pressure_mmHg": 80.0,
+    "unload_pressure_mmHg": 20.0
+  },
+  {
+    "analytic_P50_mmHg": 56.568542494923804,
+    "analytic_max_delta_saturation": 0.17157287525380982,
+    "grid_max_P50_mmHg": 57,
+    "grid_max_delta_saturation": 0.17157047181879742,
+    "hill_n": 1.0,
+    "load_pressure_mmHg": 80.0,
+    "unload_pressure_mmHg": 40.0
+  },
+  {
+    "analytic_P50_mmHg": 31.622776601683793,
+    "analytic_max_delta_saturation": 0.5194938532959157,
+    "grid_max_P50_mmHg": 32,
+    "grid_max_delta_saturation": 0.5194805194805195,
+    "hill_n": 1.0,
+    "load_pressure_mmHg": 100.0,
+    "unload_pressure_mmHg": 10.0
+  },
+  {
+    "analytic_P50_mmHg": 44.721359549995796,
+    "analytic_max_delta_saturation": 0.3819660112501052,
+    "grid_max_P50_mmHg": 45,
+    "grid_max_delta_saturation": 0.3819628647214856,
+    "hill_n": 1.0,
+    "load_pressure_mmHg": 100.0,
+    "unload_pressure_mmHg": 20.0
+  },
+  {
+    "analytic_P50_mmHg": 63.245553203367585,
+    "analytic_max_delta_saturation": 0.2251482265544139,
+    "grid_max_P50_mmHg": 63,
+    "grid_max_delta_saturation": 0.2251474179522307,
+    "hill_n": 1.0,
+    "load_pressure_mmHg": 100.0,
+    "unload_pressure_mmHg": 40.0
+  },
+  {
+    "analytic_P50_mmHg": 24.49489742783178,
+    "analytic_max_delta_saturation": 0.7142857142857142,
+    "grid_max_P50_mmHg": 24,
+    "grid_max_delta_saturation": 0.7141399714344011,
+    "hill_n": 2.0,
+    "load_pressure_mmHg": 60.0,
+    "unload_pressure_mmHg": 10.0
+  },
+  {
+    "analytic_P50_mmHg": 34.64101615137755,
+    "analytic_max_delta_saturation": 0.5,
+    "grid_max_P50_mmHg": 35,
+    "grid_max_delta_saturation": 0.4999601434834595,
+    "hill_n": 2.0,
+    "load_pressure_mmHg": 60.0,
+    "unload_pressure_mmHg": 20.0
+  },
+  {
+    "analytic_P50_mmHg": 48.98979485566356,
+    "analytic_max_delta_saturation": 0.1999999999999999,
+    "grid_max_P50_mmHg": 49,
+    "grid_max_delta_saturation": 0.19999999167013766,
+    "hill_n": 2.0,
+    "load_pressure_mmHg": 60.0,
+    "unload_pressure_mmHg": 40.0
+  },
+  {
+    "analytic_P50_mmHg": 28.284271247461902,
+    "analytic_max_delta_saturation": 0.7777777777777777,
+    "grid_max_P50_mmHg": 28,
+    "grid_max_delta_saturation": 0.7777464249362585,
+    "hill_n": 2.0,
+    "load_pressure_mmHg": 80.0,
+    "unload_pressure_mmHg": 10.0
+  },
+  {
+    "analytic_P50_mmHg": 40.0,
+    "analytic_max_delta_saturation": 0.5999999999999999,
+    "grid_max_P50_mmHg": 40,
+    "grid_max_delta_saturation": 0.5999999999999999,
+    "hill_n": 2.0,
+    "load_pressure_mmHg": 80.0,
+    "unload_pressure_mmHg": 20.0
+  },
+  {
+    "analytic_P50_mmHg": 56.568542494923804,
+    "analytic_max_delta_saturation": 0.3333333333333332,
+    "grid_max_P50_mmHg": 57,
+    "grid_max_delta_saturation": 0.3333162278080653,
+    "hill_n": 2.0,
+    "load_pressure_mmHg": 80.0,
+    "unload_pressure_mmHg": 40.0
+  },
+  {
+    "analytic_P50_mmHg": 31.622776601683793,
+    "analytic_max_delta_saturation": 0.8181818181818182,
+    "grid_max_P50_mmHg": 32,
+    "grid_max_delta_saturation": 0.8181437846381109,
+    "hill_n": 2.0,
+    "load_pressure_mmHg": 100.0,
+    "unload_pressure_mmHg": 10.0
+  },
+  {
+    "analytic_P50_mmHg": 44.721359549995796,
+    "analytic_max_delta_saturation": 0.6666666666666669,
+    "grid_max_P50_mmHg": 45,
+    "grid_max_delta_saturation": 0.6666523779925845,
+    "hill_n": 2.0,
+    "load_pressure_mmHg": 100.0,
+    "unload_pressure_mmHg": 20.0
+  },
+  {
+    "analytic_P50_mmHg": 63.245553203367585,
+    "analytic_max_delta_saturation": 0.4285714285714287,
+    "grid_max_P50_mmHg": 63,
+    "grid_max_delta_saturation": 0.42856613432603863,
+    "hill_n": 2.0,
+    "load_pressure_mmHg": 100.0,
+    "unload_pressure_mmHg": 40.0
+  },
+  {
+    "analytic_P50_mmHg": 24.49489742783178,
+    "analytic_max_delta_saturation": 0.8365107205199465,
+    "grid_max_P50_mmHg": 24,
+    "grid_max_delta_saturation": 0.8363200159337968,
+    "hill_n": 2.7,
+    "load_pressure_mmHg": 60.0,
+    "unload_pressure_mmHg": 10.0
+  },
+  {
+    "analytic_P50_mmHg": 34.64101615137755,
+    "analytic_max_delta_saturation": 0.6300887384020764,
+    "grid_max_P50_mmHg": 35,
+    "grid_max_delta_saturation": 0.6300151443571975,
+    "hill_n": 2.7,
+    "load_pressure_mmHg": 60.0,
+    "unload_pressure_mmHg": 20.0
+  },
+  {
+    "analytic_P50_mmHg": 48.98979485566356,
+    "analytic_max_delta_saturation": 0.26705405827155665,
+    "grid_max_P50_mmHg": 49,
+    "grid_max_delta_saturation": 0.26705403866188193,
+    "hill_n": 2.7,
+    "load_pressure_mmHg": 60.0,
+    "unload_pressure_mmHg": 40.0
+  },
+  {
+    "analytic_P50_mmHg": 28.284271247461902,
+    "analytic_max_delta_saturation": 0.886132269955765,
+    "grid_max_P50_mmHg": 28,
+    "grid_max_delta_saturation": 0.8860968777503826,
+    "hill_n": 2.7,
+    "load_pressure_mmHg": 80.0,
+    "unload_pressure_mmHg": 10.0
+  },
+  {
+    "analytic_P50_mmHg": 40.0,
+    "analytic_max_delta_saturation": 0.733262885246357,
+    "grid_max_P50_mmHg": 40,
+    "grid_max_delta_saturation": 0.733262885246357,
+    "hill_n": 2.7,
+    "load_pressure_mmHg": 80.0,
+    "unload_pressure_mmHg": 20.0
+  },
+  {
+    "analytic_P50_mmHg": 56.568542494923804,
+    "analytic_max_delta_saturation": 0.43648022806036824,
+    "grid_max_P50_mmHg": 57,
+    "grid_max_delta_saturation": 0.436443053718613,
+    "hill_n": 2.7,
+    "load_pressure_mmHg": 80.0,
+    "unload_pressure_mmHg": 40.0
+  },
+  {
+    "analytic_P50_mmHg": 31.622776601683793,
+    "analytic_max_delta_saturation": 0.9144831777069279,
+    "grid_max_P50_mmHg": 32,
+    "grid_max_delta_saturation": 0.9144448063265902,
+    "hill_n": 2.7,
+    "load_pressure_mmHg": 100.0,
+    "unload_pressure_mmHg": 10.0
+  },
+  {
+    "analytic_P50_mmHg": 44.721359549995796,
+    "analytic_max_delta_saturation": 0.7955496270115833,
+    "grid_max_P50_mmHg": 45,
+    "grid_max_delta_saturation": 0.7955290927769458,
+    "hill_n": 2.7,
+    "load_pressure_mmHg": 100.0,
+    "unload_pressure_mmHg": 20.0
+  },
+  {
+    "analytic_P50_mmHg": 63.245553203367585,
+    "analytic_max_delta_saturation": 0.550080158914975,
+    "grid_max_P50_mmHg": 63,
+    "grid_max_delta_saturation": 0.5500695786005314,
+    "hill_n": 2.7,
+    "load_pressure_mmHg": 100.0,
+    "unload_pressure_mmHg": 40.0
+  },
+  {
+    "analytic_P50_mmHg": 24.49489742783178,
+    "analytic_max_delta_saturation": 0.9459459459459457,
+    "grid_max_P50_mmHg": 25,
+    "grid_max_delta_saturation": 0.9457800717346797,
+    "hill_n": 4.0,
+    "load_pressure_mmHg": 60.0,
+    "unload_pressure_mmHg": 10.0
+  },
+  {
+    "analytic_P50_mmHg": 34.64101615137755,
+    "analytic_max_delta_saturation": 0.7999999999999999,
+    "grid_max_P50_mmHg": 35,
+    "grid_max_delta_saturation": 0.799877556748304,
+    "hill_n": 4.0,
+    "load_pressure_mmHg": 60.0,
+    "unload_pressure_mmHg": 20.0
+  },
+  {
+    "analytic_P50_mmHg": 48.98979485566356,
+    "analytic_max_delta_saturation": 0.38461538461538436,
+    "grid_max_P50_mmHg": 49,
+    "grid_max_delta_saturation": 0.38461532774332025,
+    "hill_n": 4.0,
+    "load_pressure_mmHg": 60.0,
+    "unload_pressure_mmHg": 40.0
+  },
+  {
+    "analytic_P50_mmHg": 28.284271247461902,
+    "analytic_max_delta_saturation": 0.9692307692307692,
+    "grid_max_P50_mmHg": 28,
+    "grid_max_delta_saturation": 0.9692067970285622,
+    "hill_n": 4.0,
+    "load_pressure_mmHg": 80.0,
+    "unload_pressure_mmHg": 10.0
+  },
+  {
+    "analytic_P50_mmHg": 40.0,
+    "analytic_max_delta_saturation": 0.8823529411764706,
+    "grid_max_P50_mmHg": 40,
+    "grid_max_delta_saturation": 0.8823529411764706,
+    "hill_n": 4.0,
+    "load_pressure_mmHg": 80.0,
+    "unload_pressure_mmHg": 20.0
+  },
+  {
+    "analytic_P50_mmHg": 56.568542494923804,
+    "analytic_max_delta_saturation": 0.5999999999999996,
+    "grid_max_P50_mmHg": 57,
+    "grid_max_delta_saturation": 0.5999113283928013,
+    "hill_n": 4.0,
+    "load_pressure_mmHg": 80.0,
+    "unload_pressure_mmHg": 40.0
+  },
+  {
+    "analytic_P50_mmHg": 31.622776601683793,
+    "analytic_max_delta_saturation": 0.9801980198019802,
+    "grid_max_P50_mmHg": 32,
+    "grid_max_delta_saturation": 0.9801763973431237,
+    "hill_n": 4.0,
+    "load_pressure_mmHg": 100.0,
+    "unload_pressure_mmHg": 10.0
+  },
+  {
+    "analytic_P50_mmHg": 44.721359549995796,
+    "analytic_max_delta_saturation": 0.9230769230769232,
+    "grid_max_P50_mmHg": 45,
+    "grid_max_delta_saturation": 0.9230558502387419,
+    "hill_n": 4.0,
+    "load_pressure_mmHg": 100.0,
+    "unload_pressure_mmHg": 20.0
+  },
+  {
+    "analytic_P50_mmHg": 63.245553203367585,
+    "analytic_max_delta_saturation": 0.7241379310344831,
+    "grid_max_P50_mmHg": 63,
+    "grid_max_delta_saturation": 0.7241170831660126,
+    "hill_n": 4.0,
+    "load_pressure_mmHg": 100.0,
+    "unload_pressure_mmHg": 40.0
+  }
+]

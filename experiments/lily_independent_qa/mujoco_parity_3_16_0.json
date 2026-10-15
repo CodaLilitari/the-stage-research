@@ -1,0 +1,15 @@
+{
+  "status": "executed",
+  "engine": "MuJoCo",
+  "version": "3.16.0",
+  "seed": 10000,
+  "supplied_algorithm_label": "window",
+  "trace_file_sha256": "3bcede514dea66166b2a773cb02f0764e5753051bdf04f4d3342391e8be30863",
+  "xml_sha256": "2f9616ea0a58e2b1e04740145321b24c6044799127d4eddd3977837196822f3b",
+  "steps": 480,
+  "max_position_or_velocity_error": 4.440892098500626e-16,
+  "restore_max_error": 2.220446049250313e-16,
+  "acceptance_tolerance": 1e-10,
+  "passed": true,
+  "limits": "State-transition parity for this planar body and supplied trace, not a new adaptation study or physical validation."
+}

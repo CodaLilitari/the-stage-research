@@ -1,0 +1,15 @@
+<mujoco model="stage_planar_point_parity">
+  <compiler angle="radian"/>
+  <option timestep="0.1" gravity="0 0 0" integrator="Euler"/>
+  <worldbody>
+    <body name="point" pos="0 0 0">
+      <joint name="x" type="slide" axis="1 0 0" damping="3.333333333333333"/>
+      <joint name="y" type="slide" axis="0 1 0" damping="3.333333333333333"/>
+      <geom type="sphere" size="0.05" mass="1" contype="0" conaffinity="0"/>
+    </body>
+  </worldbody>
+  <actuator>
+    <motor name="fx" joint="x" gear="1"/>
+    <motor name="fy" joint="y" gear="1"/>
+  </actuator>
+</mujoco>

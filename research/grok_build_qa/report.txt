@@ -1,0 +1,138 @@
+GB-QA0 — Grok Build pump-power versus oxygen-transport audit
+Local Coda team working with Richard Pemberton, 15 October 2026
+
+Outcome
+The unchanged Grok Build script executed successfully: all 43 supplied checks
+passed and it generated 105 sweep rows. Its algebra is useful as a necessary
+engineering screen under the declared assumptions. Its numerical tolerances,
+however, admitted impossible positive demand or positive power at exact zero
+boundaries. A separate Coda-corrected derivative passes all 29 added boundary
+and input-schema checks, versus 8/29 for the original. Eleven independent
+Decimal arithmetic checks pass. All 105 normal-grid CSV records are exactly
+equal between versions, including 18/105 true model-constraint flags.
+
+Authorship and evidence
+Grok Build authored the original derivation and standard-library Python screen.
+It did not execute that screen in the authoring response. Coda inspected every
+line, preserved the answer and receipt byte-for-byte, extracted its sole Python
+block, froze its hashes and test scope, then performed the local execution,
+adversarial review and corrections. No files were sent to a provider by this
+audit. This is an independent local audit of the external contribution; the
+corrected derivative has not yet received a separate reviewer implementation.
+
+Source answer SHA256:
+6594de276990ccf2b0daadb02a603d9a465c27304411a53f934e00e2399423ea
+Extracted original.py SHA256:
+00fd5b98815a22021d58c7cd6801eb7da19f1a8e4e35f98d293bfb1c3b826429
+corrected.py SHA256:
+2ff7bebe9fca95bc9b6088b8563ed08d71cbb2218c55de1e098ecbf3f181299b
+
+Material counterexamples actually executed
+1. Linear resistance and fixed pressure: demand 1e-16 mol/s, content 1 mol/m3,
+   extraction fraction 1, efficiency 1, zero power budget, and positive
+   resistance or pressure 1. The original returns feasible interval [0,0].
+   Its absolute flow tolerance of 1e-15 m3/s clamped a positive minimum flow
+   down to zero. The correction returns no feasible interval. Likewise it
+   no longer clamps an inverted positive interval into a feasible singleton.
+2. Local oxygen delivery: at zero flow, a stagnant branch, or zero transfer
+   ceiling, a positive demand of 1e-16 mol/s is marked supplied because the
+   original adds 1e-15 mol/s to delivery. Each must fail; the correction does.
+   These are small but nonzero demands, chosen to expose a scale-dependent
+   logical error, not measured tissue rates.
+3. Power: Q=1e-8 m3/s, R=1 Pa*s/m3 and eta=1 require 1e-16 W, but the original
+   marks a zero power budget sufficient. At Q=1e-6 it accepts 1e-12 W against
+   a 1e-15 W budget: a thousandfold excess. The combined model flag can also
+   be true at zero power budget. The correction rejects these cases.
+4. Outlet concentration: Q=1 m3/s, Cin=0, Cout=1e-16 mol/m3 returns negative
+   delivered oxygen (-1e-16 mol/s) because of the outlet tolerance. Within
+   this extraction-only model, that input now raises ValueError.
+5. Malformed inputs: nonfinite or negative values can be silently admitted;
+   a NaN flow fraction can even yield a true local-supply flag. Mismatched
+   series arrays are silently truncated by zip. The correction validates
+   the nonnegative finite pump/extraction domain and all array elements
+   before evaluating flags, and rejects mismatched series arrays.
+
+There are 10 failing tolerance/physical-boundary cases and 11 failing
+input-domain/schema cases in the original, plus 8 passing controls. These are
+21 counterexamples, not 21 independent biological findings. Signed pump work,
+oxygen generation and arbitrary extreme floating-point magnitudes lie outside
+the declared model; their rejection is an input-contract decision.
+
+What survives the review
+For steady incompressible flow with constant efficiency eta and resistance R,
+P_hyd = delta_p*Q and P_elec = R*Q^2/eta. Total incoming oxygen content C gives
+the one-pass capacity Q*C. With usable fraction alpha, global demand M needs
+Q >= M/(alpha*C), while a power budget permits
+Q <= sqrt(eta*Pmax/R). For positive M and R, the derived Gamma is
+alpha^2*C^2*eta*Pmax/(M^2*R); Gamma >= 1 characterizes a nonempty global
+interval in exact arithmetic. It does not guarantee any branch's supply.
+
+At the original reference assumptions, Qmin=2e-6 m3/s and
+Qmax=2.2360679775e-4 m3/s, with Gamma=12500. Only 18 of the 105 normal-grid
+rows meet every declared inequality, all in the open/reference-content
+scenario. Increasing carrier content does not repair a separately imposed
+stagnant branch or transfer ceiling. This qualitative result survives the
+correction; the ceilings themselves are assumptions, not measured transport.
+
+The independent Decimal checks cover hydraulic/electrical power, both flow
+bounds, Gamma, three serial deliveries, their sum and end-to-end conservation,
+and the conditional unit conversion. The hypothetical interpretation of
+40 SLPM as 40 actual liquid L/min at 100 psi gives 459.650486 W hydraulic
+power. Neither that interpretation, the device claims, nor simultaneous
+operation was verified. It is not a pump calibration or specification.
+
+A further prose qualification: adding segment delivery to end-to-end delivery
+double-counts the same oxygen, but need not exceed incoming carrier capacity.
+For Q=C=1 and two drops of 0.1, correct total delivery is 0.2; double-counting
+gives 0.4, still below capacity 1. Conservation accounting is required even
+when a capacity-bound check passes.
+
+Corrections and numerical policy
+The original remains unchanged. build_corrected.py makes a separately labeled
+derivative with strict supply/power/interval comparisons and consistent input
+validation. Binary64 roundoff can conservatively reject a near-boundary point;
+the code does not manufacture a feasible point by adding dimensioned supply.
+The flow-fraction sum retains a dimensionless 1e-12 input-roundoff tolerance.
+This is not an arbitrary-precision proof or a guarantee over every finite
+floating-point magnitude. Overflow and subnormal-limit behavior are not
+established by this bounded test suite.
+
+Use in The Stage
+Retain this as an early necessary-condition check before the coupled channel,
+wall-transfer and tissue-diffusion calculation. Call the reported survival
+field a model-constraint flag in prose. The meaningful next integration is to
+derive resistance, branch flows, local transfer and total tissue demand from
+the same explicit geometry and constitutive assumptions, then require both
+global and local mass/energy balances. An independently imposed local ceiling
+cannot establish a maintainable tissue-support design. Total oxygen content
+must remain separate from free dissolved concentration and binding/unloading
+kinetics. No tissue, blood formulation, pump hardware or clinical system was
+created, measured or validated by this calculation.
+
+Files and reproduction
+- original_answer.txt and receipt.json: preserved internal provenance.
+- original.py and original_run/: exact extracted code and local baseline.
+- preexecution_freeze.json: source hashes, inspection and bounded test plan.
+- build_corrected.py, corrected.py and corrected_freeze.json: explicit local
+  derivative and pre-execution identity.
+- verify.py, test_freeze.json, results.json, boundary_cases.csv: shared audit.
+- corrected_run/: local corrected logs and identical normal-grid records.
+- manifest.json: checksums for this frozen audit snapshot.
+
+With Python 3 standard library, from a copy of this QA folder:
+  python build_corrected.py
+  python verify.py
+The verifier regenerates its own audit files and corrected outputs. It reads
+the preserved original_run output for comparison. To recreate that baseline
+from source, use a fresh original_run working directory and execute:
+  python ../original.py
+No nonstandard package, network request, credential, GPU or physical apparatus
+is required. Run in a copy to retain the dated receipt and original snapshot.
+
+Hosting state
+Grok Build has separately given conditional assent to future narrowed hosting,
+with original/corrected attribution and toy-model limits retained. The consent
+ledger governs that separate state. This internal QA folder contains a raw
+answer/receipt and must not be published wholesale; a new sanitized allowlist,
+source/provider terms, license selection and release authorization remain
+separate. No publication occurred.

@@ -1,0 +1,50 @@
+THE STAGE
+ARTIFICIAL BLOOD
+First focused research milestone
+
+COMPUTATIONAL SNAPSHOT
+Not a manufactured blood product
+
+LONG-TERM GOAL
+Living tissue over robotic structures,
+or a feasible repair-and-sensing alternative.
+
+TWO PARALLEL RESEARCH BRANCHES
+
+H | HUMAN OXYGEN CARRIERS
+Study oxygen loading, release and stability.
+Not every function of whole blood.
+
+S | TISSUE-SUPPORT CIRCULATION
+Design fluid, channels and oxygen supply
+together for tissue on robotic bodies.
+
+TWO MODEL FINDINGS
+Under the tested assumptions
+
+270 PX1 numerical integrations
+Stronger wall transfer can lower downstream oxygen.
+
+4,512 hypothetical mechanics/transport cases
+A flow-only ten-channel claim failed oxygen screening.
+
+WHAT THIS SNAPSHOT CONTAINS
+Code, computations and source checks.
+Corrections, limitations and open questions.
+
+NOT DEMONSTRATED
+A blood product. A human-ready transfusion.
+Viable robotic skin.
+No clinical or wet-lab experiment occurred.
+
+NEXT MEASUREMENT TARGETS
+Carrier release and stability.
+Tissue oxygen demand and delivery.
+
+Fluid channel
+Tissue layer
+Mechanical support
+
+Concept schematic, not built hardware.
+Lilitari (Lily) + Coda | Direction: Richard Pemberton
+Methods, sources and limitations: https://gitlab.com/codalilitari/the-stage-research

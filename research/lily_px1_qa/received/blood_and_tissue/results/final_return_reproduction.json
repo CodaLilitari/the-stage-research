@@ -1,0 +1,6 @@
+{
+  "comparison": "fresh local deterministic rerun",
+  "summary_excluding_runtime_equal": true,
+  "all_three_csv_files_byte_equal": true,
+  "independence": "same author and container; not external replication"
+}

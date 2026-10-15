@@ -1,0 +1,438 @@
+{
+  "timestamp_utc": "2026-10-15T15:14:50.570839+00:00",
+  "test_code_sha256": "aaf5180f39bf894fd1361e3570dff08fc7185bda05dba4da31ffea9e023dcb29",
+  "cases": [
+    {
+      "id": "linear_zero_power_positive_demand",
+      "function": "feasible_interval_linear",
+      "arguments": [
+        1e-16,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "expected": null
+    },
+    {
+      "id": "fixed_dp_zero_power_positive_demand",
+      "function": "feasible_interval_fixed_dp",
+      "arguments": [
+        1e-16,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "expected": null
+    },
+    {
+      "id": "positive_but_reversed_interval",
+      "function": "_interval_or_empty",
+      "arguments": [
+        1.0000000000005,
+        1
+      ],
+      "expected": null
+    },
+    {
+      "id": "zero_flow_positive_branch_demand",
+      "function": "local_supply_met",
+      "arguments": [
+        0,
+        [
+          1
+        ],
+        1,
+        1,
+        [
+          1
+        ],
+        [
+          1e-16
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "id": "stagnant_branch_positive_demand",
+      "function": "local_supply_met",
+      "arguments": [
+        1,
+        [
+          1,
+          0
+        ],
+        1,
+        1,
+        [
+          1,
+          1
+        ],
+        [
+          0.5,
+          1e-16
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "id": "zero_transfer_ceiling_positive_demand",
+      "function": "local_supply_met",
+      "arguments": [
+        1,
+        [
+          1
+        ],
+        1,
+        1,
+        [
+          0
+        ],
+        [
+          1e-16
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "id": "zero_power_positive_flow",
+      "function": "power_ok_linear",
+      "arguments": [
+        1e-08,
+        1,
+        0,
+        1
+      ],
+      "expected": false
+    },
+    {
+      "id": "thousandfold_power_budget_excess",
+      "function": "power_ok_linear",
+      "arguments": [
+        1e-06,
+        1,
+        1e-15,
+        1
+      ],
+      "expected": false
+    },
+    {
+      "id": "zero_power_complete_flag",
+      "function": "complete_flag",
+      "arguments": [
+        1e-08,
+        1,
+        1,
+        1e-09,
+        0,
+        1
+      ],
+      "expected": false
+    },
+    {
+      "id": "outlet_above_inlet",
+      "function": "delivered_oxygen_mol_s",
+      "arguments": [
+        1,
+        0,
+        1e-16
+      ],
+      "expected": "ValueError"
+    },
+    {
+      "id": "negative_pressure",
+      "function": "hydraulic_power",
+      "arguments": [
+        -1,
+        1
+      ],
+      "expected": "ValueError"
+    },
+    {
+      "id": "gamma_infinite_demand",
+      "function": "gamma_linear",
+      "arguments": [
+        "inf",
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "expected": "ValueError"
+    },
+    {
+      "id": "gamma_nan_concentration",
+      "function": "gamma_linear",
+      "arguments": [
+        1,
+        1,
+        "nan",
+        1,
+        1,
+        1
+      ],
+      "expected": "ValueError"
+    },
+    {
+      "id": "global_negative_demand",
+      "function": "global_supply_met",
+      "arguments": [
+        1,
+        1,
+        1,
+        -1
+      ],
+      "expected": "ValueError"
+    },
+    {
+      "id": "global_nan_zero_demand",
+      "function": "global_supply_met",
+      "arguments": [
+        "nan",
+        1,
+        1,
+        0
+      ],
+      "expected": "ValueError"
+    },
+    {
+      "id": "local_negative_demand",
+      "function": "local_supply_met",
+      "arguments": [
+        1,
+        [
+          1
+        ],
+        1,
+        1,
+        [
+          1
+        ],
+        [
+          -1
+        ]
+      ],
+      "expected": "ValueError"
+    },
+    {
+      "id": "local_nan_fraction",
+      "function": "local_supply_met",
+      "arguments": [
+        1,
+        [
+          "nan"
+        ],
+        1,
+        1,
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "expected": "ValueError"
+    },
+    {
+      "id": "local_bad_late_branch",
+      "function": "local_supply_met",
+      "arguments": [
+        0,
+        [
+          0.5,
+          0.5
+        ],
+        1,
+        1,
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          "nan"
+        ]
+      ],
+      "expected": "ValueError"
+    },
+    {
+      "id": "branch_fraction_above_one",
+      "function": "branch_delivered",
+      "arguments": [
+        1,
+        1.1,
+        1,
+        1,
+        1
+      ],
+      "expected": "ValueError"
+    },
+    {
+      "id": "series_mismatched_arrays",
+      "function": "series_path",
+      "arguments": [
+        1,
+        1,
+        [
+          0.2,
+          0.3
+        ],
+        [
+          1
+        ]
+      ],
+      "expected": "ValueError"
+    },
+    {
+      "id": "series_nan_drop",
+      "function": "series_path",
+      "arguments": [
+        1,
+        1,
+        [
+          "nan"
+        ],
+        [
+          1
+        ]
+      ],
+      "expected": "ValueError"
+    },
+    {
+      "id": "local_mismatched_arrays",
+      "function": "local_supply_met",
+      "arguments": [
+        1,
+        [
+          1
+        ],
+        1,
+        1,
+        [],
+        [
+          1
+        ]
+      ],
+      "expected": "ValueError"
+    },
+    {
+      "id": "zero_supply_zero_demand",
+      "function": "local_supply_met",
+      "arguments": [
+        0,
+        [
+          1
+        ],
+        0,
+        1,
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "id": "zero_power_zero_demand_interval",
+      "function": "feasible_interval_linear",
+      "arguments": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "expected": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "positive_interior_local",
+      "function": "local_supply_met",
+      "arguments": [
+        1,
+        [
+          0.5,
+          0.5
+        ],
+        1,
+        1,
+        [
+          1,
+          1
+        ],
+        [
+          0.4,
+          0.4
+        ]
+      ],
+      "expected": true
+    },
+    {
+      "id": "positive_interior_power",
+      "function": "power_ok_linear",
+      "arguments": [
+        0.25,
+        0.5,
+        1,
+        1
+      ],
+      "expected": true
+    },
+    {
+      "id": "zero_content_positive_demand",
+      "function": "feasible_interval_linear",
+      "arguments": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "expected": null
+    },
+    {
+      "id": "zero_flow_global_positive_demand",
+      "function": "global_supply_met",
+      "arguments": [
+        0,
+        1,
+        1,
+        1e-16
+      ],
+      "expected": false
+    },
+    {
+      "id": "fraction_sum_invalid",
+      "function": "local_supply_met",
+      "arguments": [
+        1,
+        [
+          0.2,
+          0.2
+        ],
+        1,
+        1,
+        [
+          1,
+          1
+        ],
+        [
+          0.1,
+          0.1
+        ]
+      ],
+      "expected": "ValueError"
+    }
+  ],
+  "policy": "Test definitions frozen before imports/execution; expected physical boundaries derived from inequalities, not output snapshots."
+}

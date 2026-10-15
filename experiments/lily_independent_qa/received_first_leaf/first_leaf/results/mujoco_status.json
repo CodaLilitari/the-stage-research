@@ -1,0 +1,21 @@
+{
+  "status": "not_executed",
+  "engine": "MuJoCo",
+  "version_target": "3.3.7",
+  "xml_well_formedness_checked": true,
+  "python_source_compiles": true,
+  "runtime_import_success": false,
+  "attempts": [
+    {
+      "route": "pip index",
+      "result": "DNS resolution failed; no installation"
+    },
+    {
+      "route": "container.download",
+      "result": "Direct official PyPI wheel download failed; no file installed",
+      "wheel_expected_sha256": "1657312f4f4591ade7c7a21187065e3ab16e6a45d9c8c6abe8772fdc4b585789"
+    }
+  ],
+  "charges": 0,
+  "limits": "XML parsing and Python compilation are not MuJoCo validation. Both XMLs and the parity adapter remain unexecuted."
+}

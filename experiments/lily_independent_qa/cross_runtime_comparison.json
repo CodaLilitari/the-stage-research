@@ -1,0 +1,60 @@
+{
+  "profiles": {
+    "primary": {
+      "original": 2048,
+      "rerun": 2048,
+      "receipt_mismatches": 700,
+      "episode_max_numeric_differences": {
+        "velocity_mse": 2.7755575615628914e-17
+      },
+      "episode_nonnumeric_differences": 0
+    },
+    "no_delay": {
+      "original": 2048,
+      "rerun": 2048,
+      "receipt_mismatches": 660,
+      "episode_max_numeric_differences": {
+        "velocity_mse": 1.3877787807814457e-17
+      },
+      "episode_nonnumeric_differences": 0
+    },
+    "clean": {
+      "original": 2048,
+      "rerun": 2048,
+      "receipt_mismatches": 41,
+      "episode_max_numeric_differences": {
+        "velocity_mse": 0.008675683332044947,
+        "mean_distance": 0.9811979403774778,
+        "body_model_error": 0.03943870850976333,
+        "final_distance": 2.419547762995723,
+        "early32_distance": 0.7059384496215484
+      },
+      "episode_nonnumeric_differences": 5
+    },
+    "stationary": {
+      "original": 2048,
+      "rerun": 2048,
+      "receipt_mismatches": 683,
+      "episode_max_numeric_differences": {
+        "velocity_mse": 2.7755575615628914e-17
+      },
+      "episode_nonnumeric_differences": 0
+    }
+  },
+  "witness_difference_fields": {
+    "velocity_mse": {
+      "count": 7,
+      "max_absolute": 6.938893903907228e-18
+    }
+  },
+  "first_difference": {
+    "file": "evaluation_no_delay_episode_reset_witness.jsonl.gz",
+    "record": 135,
+    "field": "velocity_mse",
+    "original": 0.00026358578690454477,
+    "rerun": 0.0002635857869045447
+  },
+  "paired_contrasts_exact_equal": true,
+  "by_profile_exact_equal": false,
+  "counts_equal": true
+}

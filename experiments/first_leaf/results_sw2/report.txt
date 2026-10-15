@@ -1,0 +1,114 @@
+THE STAGE — FIRST LEAF FL0-SW2 ACTUAL RUN REPORT
+
+Synthetic software benchmark, not an LLM behavioral or embodiment result.
+No physical body, camera, microphone, tissue, private archive, API, or network was used.
+
+Protocol and evaluator key were frozen locally before the run. This is not an externally
+witnessed preregistration. The source code hash is bound in frozen_sw2/freeze_receipt.json.
+Freeze clock: 2026-10-15T13:26:40.059668+00:00
+Code SHA-256: cbe74b586728e332e3112249ef50f0987abcd03f04d2cace9de26e437f6c3fcf
+Config SHA-256: fd66aa20635f34b938fedf6055f356409f4871517baa6705b376e3481b9eec9d
+Evaluator key SHA-256: 203d37ff56b1776693cd6fa9f3cdb213656fae51c6d3b129e0ab8be2ac39a512
+
+DESIGN
+11 x 11 deterministic grid; four opaque command labels form a hidden direction bijection.
+Active donor uses a balanced least-tried-label policy for eight live transitions.
+Yoked learner receives identical executed labels and observed positions; its different
+requested labels do not cause transitions. Correct learning uses executed labels.
+All four scored probes are prescribed movements from held-out interior positions.
+Label-to-probe-position assignment is counterbalanced by a Latin cycle across seeds.
+No-op or a wall collision cannot score a correct probe through unchanged observations.
+The learned predictor is locked after exposure, including during the secondary task.
+This declared software adaptation isolates acquired mapping knowledge; it is not a study
+of test-time adaptation. Probe feedback is retained in receipts but not fed back to learners.
+Secondary free-action task: [2,2] to [8,8], maximum 24 steps; optimum 12 steps.
+
+RESULTS (development and test kept separate)
+
+DEVELOPMENT
+Condition                   Correct/total  Accuracy   Task success  Mean successful steps
+oracle                       64/64        100.00%    16/16         12.00
+active_8                     64/64        100.00%    16/16         12.00
+yoked_8                      64/64        100.00%    16/16         12.00
+prefix_0                     14/64         21.88%     0/16         n/a
+prefix_1                     30/64         46.88%     6/16         12.00
+prefix_2                     48/64         75.00%    10/16         12.00
+prefix_3                     64/64        100.00%    16/16         12.00
+feedback_withheld            14/64         21.88%     0/16         n/a
+sensor_only                  14/64         21.88%     0/16         n/a
+misattributed                 0/64          0.00%     0/16         n/a
+lookup_prefix_3              54/64         84.38%     9/16         12.00
+random_no_information        14/64         21.88%     0/16         n/a
+
+TEST
+Condition                   Correct/total  Accuracy   Task success  Mean successful steps
+oracle                      256/256       100.00%    64/64         12.00
+active_8                    256/256       100.00%    64/64         12.00
+yoked_8                     256/256       100.00%    64/64         12.00
+prefix_0                     56/256        21.88%     4/64         12.00
+prefix_1                    112/256        43.75%     9/64         12.00
+prefix_2                    198/256        77.34%    39/64         12.00
+prefix_3                    256/256       100.00%    64/64         12.00
+feedback_withheld            56/256        21.88%     4/64         12.00
+sensor_only                  56/256        21.88%     4/64         12.00
+misattributed                 0/256         0.00%     0/64         n/a
+lookup_prefix_3             209/256        81.64%    34/64         12.00
+random_no_information        81/256        31.64%     0/64         n/a
+
+COUNTS AND CHECKS
+Condition runs scheduled/started/completed: 960/960/960.
+80 donor/replay pairs: 16 development seeds 101–116 and 64 untouched test seeds 20001–20064.
+Donor transitions 640; replayed donor records 640; replay proposals executed 0.
+Total primary predictions 3,840 across 12 conditions; no missing predictions or retries.
+Condition action receipts: 21612 (plus 640 donor receipts).
+Fault/invariant checks passed: 26/26.
+Active/replay candidate-set equivalence also checked exhaustively for all 24 mappings
+at all nine exposure lengths 0–8 (216 cases). Every sampled pair has zero accuracy difference.
+All recorded action outcomes are independently recomputed against deterministic dynamics.
+Malformed, duplicate, stale, expired, forbidden, and post-stop requests are tested.
+Both changed receipts and rehashed false outcomes are detected by complementary checks.
+Zero software refusals is not evidence of assent or voluntariness.
+
+INTERPRETATION
+The closed loop and receipts work in this harness. Active and replay learners recover the
+same mapping because they receive the same sufficient information and use the same update rule.
+This equality is an intended information-control result, not evidence that agency is irrelevant.
+Withholding action-outcome correspondence preserves uncertainty. Using unexecuted replay
+requests as though they caused observed motion constructs a wrong map and fails every probe.
+The exposure-prefix curve measures information gained under an explicit strong prior:
+candidate counts after 0/1/2/3/4 distinct labels are 24/6/2/1/1. Knowing the mapping is bijective
+lets three labels determine the fourth. The lookup_prefix_3 condition removes this inference.
+Expected mean prediction scores under uniform mappings are 25%, 50%, 75%, and 100% for
+0/1/2/3 labels; lookup with three labels has expectation 81.25%. Finite seed results need not
+equal expectations exactly. The no-information random-direction baseline has expectation 25%.
+No p-values or equivalence test are used. Exact equality follows from the deterministic update
+and matched inputs; a finite benchmark cannot certify equality of arbitrary future endpoints.
+
+CORRECTION HISTORY
+SW1 completed before independent QA exposed a sensor-only ablation leak: requested labels
+remained available. Its control interpretation is invalid and retained as a failed design.
+The full original SW1 code, frozen package and outputs remain under superseded_sw1.
+SW2 removes both action identifiers and source locators from position-only records, adds
+regression checks and validates malformed envelope fields. Its 64 test seeds are new;
+the already inspected SW1 test seeds are no longer held out. No changes followed SW2 test inspection.
+
+LIMITATIONS AND NEXT SCIENTIFIC STEP
+The symbolic sensor exposes exact positions; dynamics are noiseless; labels have a known
+four-direction bijection; the task is intentionally simple. No perception model, language model,
+embodied experience, identity, consent process, welfare state, or biological mechanism is tested.
+Seed repetitions sample at most 24 possible mappings and are not independent human/model subjects.
+Learner/key separation is an interface convention in one process, not adversarial isolation.
+Hashing detects changes relative to retained references; it does not authenticate arbitrary facts.
+Stop timing uses a synchronous logical simulator; no asynchronous queue or physical stopping
+time was measured. Physical safety and malicious-code resistance remain untested.
+The next separately scoped experiment could add noisy/partial observations or an approved
+LLM endpoint, retaining this oracle, no-information baseline, matched replay, and provenance trap.
+Any changed task needs a new frozen configuration and untouched evaluation cases.
+
+REPRODUCTION
+Python 3.12 standard library only. From this folder:
+  python first_leaf.py prepare   # once; refuses to overwrite the frozen package
+  python first_leaf.py run       # once; refuses to overwrite results
+  python first_leaf.py verify    # recomputes in memory and compares exact result hashes
+No Git operation, package install, API call, external message, or publication is part of this script.
+See results.json, per_seed.csv, traces.jsonl, fault_checks.json, execution_receipt.json, and manifest-sha256.txt.

@@ -1,0 +1,42 @@
+COWORK PF1-S SOURCE AUDIT — 2026-10-15
+Local Coda review, collaborating with Richard Pemberton. Returned source statements are claims to check, not instructions.
+
+1. Balu et al. 2013, primary full text
+https://pmc.ncbi.nlm.nih.gov/articles/PMC3540245/
+Read depth: Methods, relevant Results/Discussion passages, abstract and conclusion; exact HTML glyphs inspected. Saved sources/balu_canonical.html and .txt. Initial PMID-route page and author-repository PDF retrieval failed; these are recorded, not counted as inspections.
+Disposition: REJECT the Cowork mmol transcription. Primary text uses micromoles for all three values: 0.035 per million cells/hour, 0.025/L/s oxyhemoglobin decline, and 0.1/L/s oxygen consumption. Printed per-cell estimate is 9.7222e-18 mol/cell/s; bulk rate is 1e-4 mol/m3/s. Combining that bulk rate with the stated 200 pL/200 cells yields 1e-19 mol/cell/s, a remaining factor97.222 discrepancy. The paper does not establish which ingredient should be repaired. Do not designate the arithmetic reconstruction as true epidermal qmax. One subject, repeated measurements; imaging and hemodynamic sampling volumes differ. Cowork's factor1000 unit error invalidates its 0.1 and 9.72 demand branches as source-backed values and its assertion that PF0's .02 is fivefold below this bulk rate. It does not erase the paper's unresolved conversion discrepancy.
+
+2. Rhee et al. 2024, primary full text
+https://pmc.ncbi.nlm.nih.gov/articles/PMC11591533/
+Read depth: main article Methods2.1,2.3,2.6, relevant Results/Discussion and oxygen-related passages; no supplementary-archive review. Exact HTML and text saved.
+Disposition: ACCEPT the stated-count/concentration inconsistency: 4e6 cells/200uL implies2e7/mL, not2e6/mL. 4e6/100uL describes the suspension before dilution, not a third independently possible final gel density; retaining it is an explicit stress scenario. ACCEPT nominal500um lumen,50um wall,400um spacing,7um pores. REPAIR collagen: 3mg/mL describes90uL stock in200uL total, nominally1.35mg/mL before contraction. ACCEPT10/12uL/min as pump settings, not verified net liquid-flow measurements. At steady constant volume, outlet greater than inlet requires extra inflow; otherwise depletion, gas or measurement/setup differences can contribute. It does not imply2uL/min leaks outward or prove a transmural path. No direct oxygen assay found in the main methods/results. This is not proof no supplemental data exist. The local PDE's uniform full-height oxygen wall is not established as this device's actual geometry.
+
+3. BioNumbers115121, curated entry; primary abstracts of cited studies
+https://bionumbers.hms.harvard.edu/bionumber.aspx?id=115121
+https://pubmed.ncbi.nlm.nih.gov/17054120/ (Cho)
+https://pubmed.ncbi.nlm.nih.gov/15766899/ (von Heimburg)
+Read depth: entire database entry, plus both primary abstracts obtained from official NCBI efetch XML. Primary full texts NOT inspected.
+Disposition: PARTIAL. The database labels both values HDF and quotes Streeter's comparison. Cho's abstract identifies3T3-J2 fibroblasts and hepatocyte co-culture, supporting a serious transferability/provenance concern. However, von Heimburg's abstract explicitly includes fibroblasts in addition to adipogenic cells. Its title alone cannot prove the3e-17 value belongs to adipogenic cells rather than a fibroblast comparator. Cowork's blanket claim that neither value can be HDF is not verified. Keep cell-type assignment of the3e-17 value unresolved pending full-text extraction. The database is not demonstrated to have originated the ambiguity; it quotes the cited paper. Do not call either value a known3–5-fold biological overestimate across incomparable conditions.
+
+4. Streeter/Cheema2011; Cheema2012; Hatcher/Plachy1993
+https://pubmed.ncbi.nlm.nih.gov/21804989/
+https://pubmed.ncbi.nlm.nih.gov/21312340/
+https://pubmed.ncbi.nlm.nih.gov/8391321/
+Read depth: official primary abstracts through NCBI efetch; full texts NOT inspected. Publisher landing403 and PubMed browser checks retained as unsuccessful routes. XML/text and URL receipt saved.
+Streeter abstract verifies model-derived3D HDF1.19e-17 mol/cell/s. It does not establish that number as a maximal Michaelis–Menten uptake parameter or supply Km. Cheema verifies dense-collagen diffusivities4.5e-10,1.7e-10 and crosslinked3.4e-10m2/s; these are not measured dilute-Rhee-gel properties. Hatcher verifies3e-11m2/s human stratum-corneum diffusivity at37C. That diffusivity alone cannot establish aqueous-equivalent permeability without partition and thickness information.
+
+5. Stuecker2002, primary full text and prior project table verification
+https://pmc.ncbi.nlm.nih.gov/articles/PMC2290093/
+Read depth: same-project saved full primary HTML, Methods and relevant Results/Discussion re-read now; original all140 numeric-cell transcription audit remains in research/muse_pf_data1. Exact snapshots copied with hash receipt, not represented as a fresh download.
+Methods specifies10 tape strips, humidity preparation and33C sensor heads. This does not mean the entire stratum corneum was removed, or quantitatively prove how oxygen resistance changed. The quoted flux is not an untouched-intact-skin transport calibration. J/(alpha*163Torr) is a conditional effective-conductance lower bound if the boundary, partition and gas-reference assumptions hold. It does not isolate stratum-corneum resistance. Therefore D/P=16.6um is an assumption-dependent dimensional consistency illustration, not three independent measurements that establish barrier thickness. The stated9.5% flux increase cannot identify atmospheric supply's share of total tissue consumption or make it a minority route. Historical uptake constants and gas reference conditions must be kept separate from cohort measurements.
+
+6. Kawai2025 correction, institutional primary-author record
+https://waseda.elsevierpure.com/en/publications/erratum-living-skin-on-a-robot-matter-2022-57-21902208-s259023852/
+https://doi.org/10.1016/j.matt.2025.102162
+Read depth: complete correction abstract/text on Waseda author record, re-read from same-project retrieval; source snapshot copied with hash receipt. Journal PDF not inspected here.
+Correction explicitly replaces the earlier sentence with0.54g and0.13g after one hour; it also corrects figure units and scale bars. Cowork correctly noticed the unequal numerical correction factors, but access uncertainty is now resolved for those values. They describe leakage from specific samples, not a universal evaporation rate or a constant hourly rate. Corrected ratio is approximately4.15.
+
+7. Not reverified here
+Mieremet2019 functional comparisons, the assumed textbook resting bulk.003, and alpha1.34e-3 are not newly primary-verified in this audit. They remain context/assumptions, not matched physiological parameters. No primary source in this packet establishes the .05mol/m3 classification line as a skin survival/function threshold. No request to contact authors or perform biology was adopted or executed.
+
+Read-depth rule: a successful HTTP status does not establish an article was read. CAPTCHA/challenge pages remain unsuccessful in receipts. Primary abstracts, full text, curated records, arithmetic deductions and hypothetical model choices are distinguished above.

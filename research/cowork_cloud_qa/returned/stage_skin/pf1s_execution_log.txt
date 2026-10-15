@@ -1,0 +1,75 @@
+==============================================================================
+PF1-S ACTUAL COMPUTATIONAL RUN
+==============================================================================
+Main cases: 972; above PF0's assumed 0.05 mol/m^3 line: 460
+Verification: 6/6 checks pass
+  V1_zero_demand_uniform: pass=True
+  V2_analytic_zero_order_slab: pass=True
+  V3_mass_balance: pass=True
+  V4_mesh_refinement: pass=True
+  V5_bounded: pass=True
+  V6_surface_monotonic: pass=True
+
+Derived surface conductance lower bound from Stucker 2002:
+  P_surf >= 1.804e-06 m/s
+  implied stratum corneum thickness from Hatcher D: 16.6 um
+
+Dermal demand implied by each reading of Rhee section 2.6:
+  stated_conc_2e6_per_mL       2.380e-05 mol/m^3/s
+  4e6_cells_in_200uL           2.380e-04 mol/m^3/s
+  4e6_cells_in_100uL           4.760e-04 mol/m^3/s
+
+Which ambiguity decides the outcome (pass-rate range across the axis):
+  epidermal_demand_case        1.000
+  wall_case                    0.080
+  surface_case                 0.056
+  dermal_D_case                0.052
+  rhee_density_reading         0.003
+  thickness_case               0.003
+
+Pass rate by epidermal demand case:
+  balu_as_printed_mmol                      0/243  = 0.000
+  balu_as_read_by_collaborator_umol       217/243  = 0.893
+  balu_recomputed_from_own_inputs           0/243  = 0.000
+  textbook_resting_skin_bulk              243/243  = 1.000
+
+Pass rate by reading of Rhee section 2.6 cell density:
+  4e6_cells_in_100uL                      153/324  = 0.472
+  4e6_cells_in_200uL                      153/324  = 0.472
+  stated_conc_2e6_per_mL                  154/324  = 0.475
+
+Rhee's own published operating point (dilute gel D, Stucker surface, mid wall, H=1 mm):
+  epi demand textbook_resting_skin_bulk             density stated_conc_2e6_per_mL   min pO2   134.97 mmHg  pass=True
+  epi demand textbook_resting_skin_bulk             density 4e6_cells_in_200uL       min pO2   133.94 mmHg  pass=True
+  epi demand textbook_resting_skin_bulk             density 4e6_cells_in_100uL       min pO2   132.74 mmHg  pass=True
+  epi demand balu_as_read_by_collaborator_umol      density stated_conc_2e6_per_mL   min pO2   104.62 mmHg  pass=True
+  epi demand balu_as_read_by_collaborator_umol      density 4e6_cells_in_200uL       min pO2   103.63 mmHg  pass=True
+  epi demand balu_as_read_by_collaborator_umol      density 4e6_cells_in_100uL       min pO2   102.55 mmHg  pass=True
+  epi demand balu_recomputed_from_own_inputs        density stated_conc_2e6_per_mL   min pO2     2.18 mmHg  pass=False
+  epi demand balu_recomputed_from_own_inputs        density 4e6_cells_in_200uL       min pO2     2.16 mmHg  pass=False
+  epi demand balu_recomputed_from_own_inputs        density 4e6_cells_in_100uL       min pO2     2.13 mmHg  pass=False
+
+Km sensitivity (Km is the least-evidenced parameter in the ledger):
+  Km=0.0028  q_epi=0.003    min pO2   131.87 mmHg  pass=True
+  Km=0.0028  q_epi=0.00972  min pO2    96.10 mmHg  pass=True
+  Km=0.0028  q_epi=0.1      min pO2     0.03 mmHg  pass=False
+  Km=0.028   q_epi=0.003    min pO2   133.94 mmHg  pass=True
+  Km=0.028   q_epi=0.00972  min pO2   103.63 mmHg  pass=True
+  Km=0.028   q_epi=0.1      min pO2     2.16 mmHg  pass=False
+  Km=0.28    q_epi=0.003    min pO2   142.07 mmHg  pass=True
+  Km=0.28    q_epi=0.00972  min pO2   128.29 mmHg  pass=True
+  Km=0.28    q_epi=0.1      min pO2    39.77 mmHg  pass=True
+
+Elapsed: 28.60 s
+
+LIMIT: No packet source supplies demand, diffusivity, solubility, oxygen dependence and a functional threshold for the same engineered skin construct. This is a sensitivity and identifiability study, not a calibrated skin prediction.
+LIMIT: The dermal demand is built from Streeter & Cheema's model-derived average rate, which is NOT a Michaelis-Menten qmax, multiplied by a cell density that the source geometry paper reports inconsistently. Both factors are weak.
+LIMIT: No packet source supplies a Km for dermal fibroblasts or keratinocytes. PF0's 0.028 mol/m^3 is carried unchanged and swept, not justified.
+LIMIT: Epidermal diffusivity and epidermal thickness are assumed; Rhee reports neither.
+LIMIT: Construct thickness is not reported by Rhee and is swept as a declared unknown rather than fitted.
+LIMIT: Cheema's diffusivities are for plastic-compressed dense collagen and are included only as flagged lower bounds; applying them to Rhee's 3 mg/mL gel is marked as a non-permitted combination and is reported separately.
+LIMIT: The Stucker flux and the Hatcher & Plachy diffusivity could not be re-read from primary sources in this cloud pass; they are carried as collaborator-reported and every result depending on them is labelled.
+LIMIT: Rhee's outlet flow exceeds its inlet flow by 20%, implying a transmural or ambient flow this steady diffusion-reaction model does not represent. Neither does PF0.
+LIMIT: Steady state only. No interstitial convection, glucose, CO2, lactate, pH, heat, hydration, immune or mechanical model. Cell density is fixed and does not respond to oxygen.
+LIMIT: The 0.05 mol/m^3 line is PF0's assumption, carried only so the two runs are comparable. It certifies nothing about viability or function, and Mieremet et al. 2019 is direct evidence that skin function is not monotone in oxygen.
+LIMIT: Mesh refinement and mass balance are numerical verification. They are not biological validation, and no biological experiment was performed.

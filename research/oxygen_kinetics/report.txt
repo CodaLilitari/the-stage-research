@@ -1,0 +1,58 @@
+OK0: FINITE-CONTACT OXYGEN-CARRIER TOY MODEL
+Executed locally 2026-10-15. This is a two-phase clamped-bath model with explicitly hypothetical parameters, not an empirical hemoglobin model or a tissue-delivery prediction.
+
+ORIGIN, REVIEW AND EXECUTION
+The complete Antigravity response was preserved byte-for-byte in original_answer.txt; its source hash and static review are in pre_execution_review.json. The sole Python code block was extracted as original_proposal.py without changing its code. Both its source and the corrected implementation/configuration were hashed in freeze.json before execution. The returned response itself was not modified.
+
+The original code was inspected in full before execution: imports are Python standard library and NumPy, and its only output action writes a relative CSV. It was executed with a separate working directory original_run. It returned code 0, passed its seven checks, and produced a 76-point sweep. The actual original grid maxima were P50=32 for constant rates and P50=41 for its affinity-dependent unloading-rate scenario. Its prose forecast of approximately 42-45 was not the executed result. original_execution.log, original_execution_receipt.json and original_summary.json preserve the outcome.
+
+The corrected implementation kinetics.py uses only Python's standard library. It produced 152 case-specific sweep rows and passed 28 checks, including eight numerical ODE comparisons. No source structure, HB-FOLD1/HB-FOLD2 prediction, measured hemoglobin property, or HC0 hypothetical setting was fitted to this model. Parameter values were taken from the returned proposal solely to compare its mathematics and numerical behavior.
+
+MODEL AND UNITS
+A carrier alternates between loading and unloading baths held at fixed oxygen pressures. During each phase:
+  dS/dt = k_phase * (S_equilibrium - S).
+Hill equilibrium saturation is S(P)=P^n/(P^n+P50^n). For eL=exp(-kL*tL) and eU=exp(-kU*tU), the cyclic steady-state saturation change is:
+  deltaS = [(1-eL)(1-eU)/(1-eL*eU)] * [S(PL)-S(PU)].
+The phase endpoints follow the exact affine cycle-map fixed point when kL*tL+kU*tU>0.
+
+B*deltaS is bound-oxygen amount per carrier volume per cycle (mol/m³/cycle). Dividing by tL+tU yields a volume-normalized exchange rate (mol/m³/s). It is not an area flux, whole-organ oxygen delivery, tissue uptake or a prediction of survival. At cyclic steady state, uptake and release by the carrier agree because its oxygen inventory returns to its starting value. The baths are maintained by external sources/sinks; the combined system is not a closed finite oxygen reservoir. Finite-bath depletion, dissolved oxygen, membranes, flow distributions, tissue consumption, heat, pH, allostery and biological stability are outside this model.
+
+Frozen hypothetical sweep values: PL=100 mmHg, PU=10 mmHg, Hill n=2, B=5 mol/m³, tL=tU=0.8 s, kL=2.5/s. Constant case kU=2.5/s. Dependent case kU=2.5*(P50/sqrt(PL*PU))/s. P50 values 5 through 80 in integer steps. The dependent rate is an assumption about effective unloading relaxation, not a measured molecular off-rate.
+
+EXECUTED MAIN RESULT
+With rates independent of P50, the finite-contact attenuation is independent of affinity, so maximizing equilibrium saturation difference also maximizes per-cycle exchange. The analytic equilibrium optimum is sqrt(100*10)=31.6227766 mmHg. Bounded numerical maximization on the declared interval [5,80] returns 31.6227758, agreeing within the frozen tolerance. At this point:
+  equilibrium saturation difference =0.8181818182
+  kinetic attenuation factor         =0.7615941560
+  finite-cycle saturation change     =0.6231224912
+  bound amount per carrier volume    =3.1156124562 mol/m³/cycle
+  volume-normalized exchange rate    =1.9472577851 mol/m³/s
+
+For the explicitly assumed P50-dependent unloading relaxation, the bounded numerical maximum is P50=41.2997700 mmHg, with 3.2325638760 mol/m³/cycle. Thus this particular coupling shifts the optimum toward higher P50. This is a conditional result of the specified function, not a general law that finite kinetics always favors weaker binding. A coarse grid maximum is an approximation; the continuous numerical result is not a closed-form optimum or an empirical optimum.
+
+AFFINITY DOES NOT IDENTIFY AN OFF-RATE
+The returned prose said higher affinity fundamentally comes from slower unbinding. That is false as a general statement. Define a separate, noncooperative one-site toy model:
+  dS/dt = kon*P*(1-S) - koff*S.
+Direct algebra gives P50=koff/kon and relaxation k(P)=kon*P+koff. Higher affinity can therefore arise through larger kon at unchanged koff. At nonzero unloading pressure, relaxation kU is not just koff.
+
+Executed counterexamples use PL=100, PU=10, n=1, B=5 and tL=tU=0.1 s; these differ deliberately from the n=2 main sweep and are not fitted biological constants:
+Case                         kon        koff     P50     kU       q per volume
+Reference                    0.1        2         20       3        0.582845
+Faster association           0.2        2         10       4        0.647735
+Both rates ten times faster  1.0       20         20      30        2.375518
+kon units are (mmHg*s)^-1; koff and kU are s^-1; P50 is mmHg; q is mol/m³/cycle. In the second row affinity increases without slowing koff, and effective unloading relaxation is faster. In the third row equilibrium affinity is unchanged while finite-contact exchange increases markedly. Equilibrium affinity alone therefore does not determine dynamic throughput, even in this simple model.
+
+CORRECTIONS AND LIMIT CHECKS
+The original denominator threshold and subtraction of near-identical exponentials erase tiny positive contact effects. The corrected formula uses expm1 and computes deltaS directly from the attenuation factor. At equal k=1/s and tL=tU=1e-18 s, per-cycle exchange is positive but tiny; dividing by the tiny cycle period gives the finite fast-cycling limit B*deltaS_equilibrium*k/4. This mathematical limit assumes zero transfer/transit overhead and is not an achievable pump specification. Shrinking just one contact time while keeping the other fixed instead drives exchange and the volume-normalized rate to zero.
+
+If both integrated rates are zero, every initial saturation is a fixed point; the implementation returns no unique endpoint rather than inventing one. For a zero-length cycle, an exchange rate per time is undefined. With equal bath pressures, exchange is zero and normalized efficiency deltaS/deltaS_equilibrium is undefined; the implementation keeps this separate from the algebraic attenuation factor. Zero capacity, zero contact, fast equilibration, the equal-rate tanh identity, pressure-unit invariance, seconds-to-milliseconds conversion, linear capacity scaling and invalid-input rejection were tested.
+
+Independent numerical RK4 integration was performed for four frozen parameter sets from initial saturation 0 and 1. Its integration step was bounded by k*dt<=0.02 with at least 20 steps per phase. The cycle count was chosen from the exact map's contraction bound to reduce initial-state dependence below 1e-13; it was not arbitrarily fixed at 40 cycles for all rates. Across eight comparisons the maximum endpoint error was 2.3271421e-10 and maximum loading-minus-unloading imbalance was 3.2751579e-15. These checks validate the implemented equations within the chosen cases; they do not validate the equations as biology. Within-project independent implementation QA passed 179/179 checks: experiments/independent_qa/ok0_run_1792074813960296800/report.json. A separately written Decimal fixed-point calculation reproduced all 152 sweep rows within 2.22e-15; an analytic derivative with bisection gave the dependent optimum 41.2997705706, matching the bounded search. Eight saved RK4 comparisons were verified. The reviewer also reproduced the original tiny-contact defect and verified the correction through contact times of 1e-20 s.
+
+Numerical scope correction: the frozen source comment describing arbitrarily slow relaxation is too broad. At contact times near 1e-200 s, multiplying two attenuation numerators underflows in double precision and can incorrectly erase the finite fast-cycling rate. No declared sweep or numerical test uses that regime. The source remains preserved; use the demonstrated numerical range rather than interpreting its comment as a universal guarantee. This model represents one carrier parcel alternating between clamped phases, not two finite well-mixed continuous-flow stirred tanks.
+
+REPRODUCTION
+From the workspace:
+& '.\.venv-stage\Scripts\python.exe' 'research\oxygen_kinetics\kinetics.py'
+The script verifies its hash against freeze.json, then recomputes the bounded results offline. It overwrites only this run's generated results/CSV files. Source review, original returned text, original extracted code, original execution records and freeze remain separate. Results are deterministic; no randomized subject sample, clinical efficacy threshold or significance claim is involved.
+
+Useful next scientific step: obtain measured association/dissociation or effective transfer data for an explicitly chosen oxygen carrier and measurement conditions. Only then can the present hypothetical rate-affinity coupling be replaced by a constrained parameter model. A fold or a static heme-distance measurement alone does not supply those rates.

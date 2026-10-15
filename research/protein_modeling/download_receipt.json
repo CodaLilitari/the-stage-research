@@ -1,0 +1,30 @@
+[
+  {
+    "file": "2DN1.cif",
+    "url": "https://files.rcsb.org/download/2DN1.cif",
+    "bytes": 533746,
+    "sha256": "cd114c21d276ad69d7e0b667e0edae1161e089c25c04bcfe7468e4102e484bc9",
+    "retrieved_utc": "2026-10-15T13:51:32.467850+00:00"
+  },
+  {
+    "file": "2DN2.cif",
+    "url": "https://files.rcsb.org/download/2DN2.cif",
+    "bytes": 937733,
+    "sha256": "b228200cbc09d0cfa6c147d49ded52917cb028d177e6780544e8028c0d5bc6ca",
+    "retrieved_utc": "2026-10-15T13:51:32.955803+00:00"
+  },
+  {
+    "file": "2DN1_entry.json",
+    "url": "https://data.rcsb.org/rest/v1/core/entry/2DN1",
+    "bytes": 15001,
+    "sha256": "d9f0b797b1df6f4c38616a5377652ff12562d75dc6cf970adae3b9543d190340",
+    "retrieved_utc": "2026-10-15T13:51:33.239568+00:00"
+  },
+  {
+    "file": "2DN2_entry.json",
+    "url": "https://data.rcsb.org/rest/v1/core/entry/2DN2",
+    "bytes": 14975,
+    "sha256": "3f17e61cd5c517f7c5e650e974f267a8bb1b934b86387bf177972610beba0d2c",
+    "retrieved_utc": "2026-10-15T13:51:33.493563+00:00"
+  }
+]

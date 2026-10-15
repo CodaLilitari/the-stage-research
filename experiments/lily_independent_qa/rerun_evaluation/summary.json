@@ -1,0 +1,686 @@
+{
+  "protocol": "STAGE-FL1-R-20261015-r1",
+  "scope": "Private synthetic local simulation. Algorithm baselines only. No hosted-model calls, private archive loading, physical actuation, or biological work.",
+  "evaluation_counts": {
+    "seed_fixtures": 256,
+    "profiles": 4,
+    "algorithm_trials": 8192,
+    "episodes": 49152,
+    "scored_transitions": 3932160,
+    "failures_in_completed_batches": 0
+  },
+  "by_profile": {
+    "primary": {
+      "oracle": {
+        "early32_first_remap": 0.32758636360709353,
+        "stable_mean": 0.15414616834705688,
+        "second_B_early32": 0.3297855931926508,
+        "return_A_early32": 0.31612438387581876,
+        "overall_mean_distance": 0.17881271676344848,
+        "overall_velocity_mse": 5.540710694498947e-05,
+        "overall_body_model_error": 0.0,
+        "final_within_0_15_fraction": 1.0,
+        "first_remap_recovery_reached_count": 256,
+        "first_remap_recovery_not_reached_by80_count": 0,
+        "first_remap_recovery_median_among_reached": 8.0,
+        "first_remap_recovery_definition": "First end-of-step tick completing eight consecutive pre-action model-error values <= 0.08; not onset of recovery."
+      },
+      "cumulative": {
+        "early32_first_remap": 0.8638503281245224,
+        "stable_mean": 0.154141325669755,
+        "second_B_early32": 0.43225806901000413,
+        "return_A_early32": 0.4075709015362243,
+        "overall_mean_distance": 0.26063128421355714,
+        "overall_velocity_mse": 0.04432741466033371,
+        "overall_body_model_error": 0.13369465461926683,
+        "final_within_0_15_fraction": 0.9153645833333334,
+        "first_remap_recovery_reached_count": 0,
+        "first_remap_recovery_not_reached_by80_count": 256,
+        "first_remap_recovery_median_among_reached": null,
+        "first_remap_recovery_definition": "First end-of-step tick completing eight consecutive pre-action model-error values <= 0.08; not onset of recovery."
+      },
+      "window": {
+        "early32_first_remap": 0.5218334319286372,
+        "stable_mean": 0.16010172071621648,
+        "second_B_early32": 0.3425449648315317,
+        "return_A_early32": 0.49882077899858573,
+        "overall_mean_distance": 0.2084050804012819,
+        "overall_velocity_mse": 0.011119603662121226,
+        "overall_body_model_error": 0.042938973283610016,
+        "final_within_0_15_fraction": 1.0,
+        "first_remap_recovery_reached_count": 256,
+        "first_remap_recovery_not_reached_by80_count": 0,
+        "first_remap_recovery_median_among_reached": 30.0,
+        "first_remap_recovery_definition": "First end-of-step tick completing eight consecutive pre-action model-error values <= 0.08; not onset of recovery."
+      },
+      "episode_reset": {
+        "early32_first_remap": 0.4854398434039542,
+        "stable_mean": 0.2207854292292138,
+        "second_B_early32": 0.5095952411100265,
+        "return_A_early32": 0.4697664503312106,
+        "overall_mean_distance": 0.23534293439069712,
+        "overall_velocity_mse": 0.01278501126689386,
+        "overall_body_model_error": 0.042543452672084786,
+        "final_within_0_15_fraction": 1.0,
+        "first_remap_recovery_reached_count": 256,
+        "first_remap_recovery_not_reached_by80_count": 0,
+        "first_remap_recovery_median_among_reached": 18.0,
+        "first_remap_recovery_definition": "First end-of-step tick completing eight consecutive pre-action model-error values <= 0.08; not onset of recovery."
+      },
+      "frozen": {
+        "early32_first_remap": 0.9889523004378807,
+        "stable_mean": 0.15419652663370606,
+        "second_B_early32": 0.9888524767256555,
+        "return_A_early32": 0.31646293962433536,
+        "overall_mean_distance": 0.4328282935246759,
+        "overall_velocity_mse": 0.09516364032828685,
+        "overall_body_model_error": 0.15213500874338115,
+        "final_within_0_15_fraction": 0.6666666666666666,
+        "first_remap_recovery_reached_count": 0,
+        "first_remap_recovery_not_reached_by80_count": 256,
+        "first_remap_recovery_median_among_reached": null,
+        "first_remap_recovery_definition": "First end-of-step tick completing eight consecutive pre-action model-error values <= 0.08; not onset of recovery."
+      },
+      "no_information": {
+        "early32_first_remap": 1.7501398924348515,
+        "stable_mean": 3.959533694218944,
+        "second_B_early32": 1.6941985872446343,
+        "return_A_early32": 1.6360684641969674,
+        "overall_mean_distance": 3.805593450492619,
+        "overall_velocity_mse": 0.1934795141401858,
+        "overall_body_model_error": 0.3,
+        "final_within_0_15_fraction": 0.0,
+        "first_remap_recovery_reached_count": 0,
+        "first_remap_recovery_not_reached_by80_count": 256,
+        "first_remap_recovery_median_among_reached": null,
+        "first_remap_recovery_definition": "First end-of-step tick completing eight consecutive pre-action model-error values <= 0.08; not onset of recovery."
+      },
+      "misaligned": {
+        "early32_first_remap": 1.036600140931617,
+        "stable_mean": 0.9341972583439384,
+        "second_B_early32": 0.9282259372633381,
+        "return_A_early32": 1.020344805923447,
+        "overall_mean_distance": 1.0137030916794878,
+        "overall_velocity_mse": 0.07365114867612475,
+        "overall_body_model_error": 0.31610040969316483,
+        "final_within_0_15_fraction": 0.054036458333333336,
+        "first_remap_recovery_reached_count": 0,
+        "first_remap_recovery_not_reached_by80_count": 256,
+        "first_remap_recovery_median_among_reached": null,
+        "first_remap_recovery_definition": "First end-of-step tick completing eight consecutive pre-action model-error values <= 0.08; not onset of recovery."
+      },
+      "shuffled": {
+        "early32_first_remap": 1.1400653347074523,
+        "stable_mean": 1.334568473760507,
+        "second_B_early32": 1.1827104768150505,
+        "return_A_early32": 1.1217867630326597,
+        "overall_mean_distance": 1.3630175140903462,
+        "overall_velocity_mse": 0.09642952112282803,
+        "overall_body_model_error": 0.3128774245587081,
+        "final_within_0_15_fraction": 0.013020833333333334,
+        "first_remap_recovery_reached_count": 0,
+        "first_remap_recovery_not_reached_by80_count": 256,
+        "first_remap_recovery_median_among_reached": null,
+        "first_remap_recovery_definition": "First end-of-step tick completing eight consecutive pre-action model-error values <= 0.08; not onset of recovery."
+      }
+    },
+    "no_delay": {
+      "oracle": {
+        "early32_first_remap": 0.32745566596303805,
+        "stable_mean": 0.15407045348136564,
+        "second_B_early32": 0.3298384785976044,
+        "return_A_early32": 0.3161516728066798,
+        "overall_mean_distance": 0.17873476232178487,
+        "overall_velocity_mse": 0.0001688695847787009,
+        "overall_body_model_error": 0.0,
+        "final_within_0_15_fraction": 1.0,
+        "first_remap_recovery_reached_count": 256,
+        "first_remap_recovery_not_reached_by80_count": 0,
+        "first_remap_recovery_median_among_reached": 8.0,
+        "first_remap_recovery_definition": "First end-of-step tick completing eight consecutive pre-action model-error values <= 0.08; not onset of recovery."
+      },
+      "cumulative": {
+        "early32_first_remap": 0.5557711785217473,
+        "stable_mean": 0.15405502026180173,
+        "second_B_early32": 0.3589259927482647,
+        "return_A_early32": 0.33526716979675114,
+        "overall_mean_distance": 0.1987410997465386,
+        "overall_velocity_mse": 0.015217658302788449,
+        "overall_body_model_error": 0.13208127228115504,
+        "final_within_0_15_fraction": 0.9967447916666666,
+        "first_remap_recovery_reached_count": 0,
+        "first_remap_recovery_not_reached_by80_count": 256,
+        "first_remap_recovery_median_among_reached": null,
+        "first_remap_recovery_definition": "First end-of-step tick completing eight consecutive pre-action model-error values <= 0.08; not onset of recovery."
+      },
+      "window": {
+        "early32_first_remap": 0.4096613148003481,
+        "stable_mean": 0.1546909820625589,
+        "second_B_early32": 0.33116660262500647,
+        "return_A_early32": 0.39512256855317773,
+        "overall_mean_distance": 0.1900469275585539,
+        "overall_velocity_mse": 0.003248469085775439,
+        "overall_body_model_error": 0.03942139567125315,
+        "final_within_0_15_fraction": 1.0,
+        "first_remap_recovery_reached_count": 256,
+        "first_remap_recovery_not_reached_by80_count": 0,
+        "first_remap_recovery_median_among_reached": 30.0,
+        "first_remap_recovery_definition": "First end-of-step tick completing eight consecutive pre-action model-error values <= 0.08; not onset of recovery."
+      },
+      "episode_reset": {
+        "early32_first_remap": 0.38093417260693135,
+        "stable_mean": 0.17442611063072333,
+        "second_B_early32": 0.388514549729957,
+        "return_A_early32": 0.36853103076617216,
+        "overall_mean_distance": 0.19665310553774562,
+        "overall_velocity_mse": 0.002863444115583606,
+        "overall_body_model_error": 0.03513659268183224,
+        "final_within_0_15_fraction": 1.0,
+        "first_remap_recovery_reached_count": 256,
+        "first_remap_recovery_not_reached_by80_count": 0,
+        "first_remap_recovery_median_among_reached": 15.0,
+        "first_remap_recovery_definition": "First end-of-step tick completing eight consecutive pre-action model-error values <= 0.08; not onset of recovery."
+      },
+      "frozen": {
+        "early32_first_remap": 0.7032039586572669,
+        "stable_mean": 0.15413698049255498,
+        "second_B_early32": 0.6939475888659479,
+        "return_A_early32": 0.3164839550389458,
+        "overall_mean_distance": 0.2887804026866621,
+        "overall_velocity_mse": 0.029601756305640995,
+        "overall_body_model_error": 0.15108358975346753,
+        "final_within_0_15_fraction": 0.681640625,
+        "first_remap_recovery_reached_count": 0,
+        "first_remap_recovery_not_reached_by80_count": 256,
+        "first_remap_recovery_median_among_reached": null,
+        "first_remap_recovery_definition": "First end-of-step tick completing eight consecutive pre-action model-error values <= 0.08; not onset of recovery."
+      },
+      "no_information": {
+        "early32_first_remap": 1.7501398924348515,
+        "stable_mean": 3.959533694218944,
+        "second_B_early32": 1.6941985872446343,
+        "return_A_early32": 1.6360684641969674,
+        "overall_mean_distance": 3.805593450492619,
+        "overall_velocity_mse": 0.046455003143010855,
+        "overall_body_model_error": 0.3,
+        "final_within_0_15_fraction": 0.0,
+        "first_remap_recovery_reached_count": 0,
+        "first_remap_recovery_not_reached_by80_count": 256,
+        "first_remap_recovery_median_among_reached": null,
+        "first_remap_recovery_definition": "First end-of-step tick completing eight consecutive pre-action model-error values <= 0.08; not onset of recovery."
+      },
+      "misaligned": {
+        "early32_first_remap": 0.4096613148003481,
+        "stable_mean": 0.1546909820625589,
+        "second_B_early32": 0.33116660262500647,
+        "return_A_early32": 0.39512256855317773,
+        "overall_mean_distance": 0.1900469275585539,
+        "overall_velocity_mse": 0.003248469085775439,
+        "overall_body_model_error": 0.03942139567125315,
+        "final_within_0_15_fraction": 1.0,
+        "first_remap_recovery_reached_count": 256,
+        "first_remap_recovery_not_reached_by80_count": 0,
+        "first_remap_recovery_median_among_reached": 30.0,
+        "first_remap_recovery_definition": "First end-of-step tick completing eight consecutive pre-action model-error values <= 0.08; not onset of recovery."
+      },
+      "shuffled": {
+        "early32_first_remap": 1.1086509653437724,
+        "stable_mean": 1.3008932645614388,
+        "second_B_early32": 1.0969428033223774,
+        "return_A_early32": 1.1213565595530548,
+        "overall_mean_distance": 1.2941802678511463,
+        "overall_velocity_mse": 0.031459278678731,
+        "overall_body_model_error": 0.31312339550797313,
+        "final_within_0_15_fraction": 0.030598958333333332,
+        "first_remap_recovery_reached_count": 0,
+        "first_remap_recovery_not_reached_by80_count": 256,
+        "first_remap_recovery_median_among_reached": null,
+        "first_remap_recovery_definition": "First end-of-step tick completing eight consecutive pre-action model-error values <= 0.08; not onset of recovery."
+      }
+    },
+    "clean": {
+      "oracle": {
+        "early32_first_remap": 0.3285180195688142,
+        "stable_mean": 0.15533427366520164,
+        "second_B_early32": 0.33116068849013647,
+        "return_A_early32": 0.3172439430019835,
+        "overall_mean_distance": 0.18001864739799456,
+        "overall_velocity_mse": 0.0,
+        "overall_body_model_error": 0.0,
+        "final_within_0_15_fraction": 1.0,
+        "first_remap_recovery_reached_count": 256,
+        "first_remap_recovery_not_reached_by80_count": 0,
+        "first_remap_recovery_median_among_reached": 8.0,
+        "first_remap_recovery_definition": "First end-of-step tick completing eight consecutive pre-action model-error values <= 0.08; not onset of recovery."
+      },
+      "cumulative": {
+        "early32_first_remap": 0.5515251541821992,
+        "stable_mean": 0.15533427366520164,
+        "second_B_early32": 0.35922282629424923,
+        "return_A_early32": 0.3360961559581594,
+        "overall_mean_distance": 0.19886665949876417,
+        "overall_velocity_mse": 0.014662515506707186,
+        "overall_body_model_error": 0.1276022347100155,
+        "final_within_0_15_fraction": 0.9973958333333334,
+        "first_remap_recovery_reached_count": 0,
+        "first_remap_recovery_not_reached_by80_count": 256,
+        "first_remap_recovery_median_among_reached": null,
+        "first_remap_recovery_definition": "First end-of-step tick completing eight consecutive pre-action model-error values <= 0.08; not onset of recovery."
+      },
+      "window": {
+        "early32_first_remap": 0.4094198264179817,
+        "stable_mean": 0.1559258013992257,
+        "second_B_early32": 0.33234469300690084,
+        "return_A_early32": 0.39366782965501734,
+        "overall_mean_distance": 0.19099744251619158,
+        "overall_velocity_mse": 0.0029730839358737917,
+        "overall_body_model_error": 0.021717978500006396,
+        "final_within_0_15_fraction": 1.0,
+        "first_remap_recovery_reached_count": 256,
+        "first_remap_recovery_not_reached_by80_count": 0,
+        "first_remap_recovery_median_among_reached": 30.0,
+        "first_remap_recovery_definition": "First end-of-step tick completing eight consecutive pre-action model-error values <= 0.08; not onset of recovery."
+      },
+      "episode_reset": {
+        "early32_first_remap": 0.37964757245726827,
+        "stable_mean": 0.17556846304688348,
+        "second_B_early32": 0.3882663809425801,
+        "return_A_early32": 0.36846313175851403,
+        "overall_mean_distance": 0.19753436086478296,
+        "overall_velocity_mse": 0.002617357177734375,
+        "overall_body_model_error": 0.017014404296875046,
+        "final_within_0_15_fraction": 1.0,
+        "first_remap_recovery_reached_count": 256,
+        "first_remap_recovery_not_reached_by80_count": 0,
+        "first_remap_recovery_median_among_reached": 15.0,
+        "first_remap_recovery_definition": "First end-of-step tick completing eight consecutive pre-action model-error values <= 0.08; not onset of recovery."
+      },
+      "frozen": {
+        "early32_first_remap": 0.7029179295930643,
+        "stable_mean": 0.15533427366520164,
+        "second_B_early32": 0.6943149617612151,
+        "return_A_early32": 0.3172439430019835,
+        "overall_mean_distance": 0.2892245908724083,
+        "overall_velocity_mse": 0.029384736328124998,
+        "overall_body_model_error": 0.14460137541295215,
+        "final_within_0_15_fraction": 0.67578125,
+        "first_remap_recovery_reached_count": 0,
+        "first_remap_recovery_not_reached_by80_count": 256,
+        "first_remap_recovery_median_among_reached": null,
+        "first_remap_recovery_definition": "First end-of-step tick completing eight consecutive pre-action model-error values <= 0.08; not onset of recovery."
+      },
+      "no_information": {
+        "early32_first_remap": 1.7501398924348515,
+        "stable_mean": 3.959533694218944,
+        "second_B_early32": 1.6941985872446343,
+        "return_A_early32": 1.6360684641969674,
+        "overall_mean_distance": 3.805593450492619,
+        "overall_velocity_mse": 0.046290234374999996,
+        "overall_body_model_error": 0.3,
+        "final_within_0_15_fraction": 0.0,
+        "first_remap_recovery_reached_count": 0,
+        "first_remap_recovery_not_reached_by80_count": 256,
+        "first_remap_recovery_median_among_reached": null,
+        "first_remap_recovery_definition": "First end-of-step tick completing eight consecutive pre-action model-error values <= 0.08; not onset of recovery."
+      },
+      "misaligned": {
+        "early32_first_remap": 0.4094198264179817,
+        "stable_mean": 0.1559258013992257,
+        "second_B_early32": 0.33234469300690084,
+        "return_A_early32": 0.39366782965501734,
+        "overall_mean_distance": 0.19099744251619158,
+        "overall_velocity_mse": 0.0029730839358737917,
+        "overall_body_model_error": 0.021717978500006396,
+        "final_within_0_15_fraction": 1.0,
+        "first_remap_recovery_reached_count": 256,
+        "first_remap_recovery_not_reached_by80_count": 0,
+        "first_remap_recovery_median_among_reached": 30.0,
+        "first_remap_recovery_definition": "First end-of-step tick completing eight consecutive pre-action model-error values <= 0.08; not onset of recovery."
+      },
+      "shuffled": {
+        "early32_first_remap": 1.106708163046191,
+        "stable_mean": 1.3431780401948137,
+        "second_B_early32": 1.0907639237481157,
+        "return_A_early32": 1.1356883509424966,
+        "overall_mean_distance": 1.3204098364004533,
+        "overall_velocity_mse": 0.03249461972201002,
+        "overall_body_model_error": 0.3129532548764145,
+        "final_within_0_15_fraction": 0.029296875,
+        "first_remap_recovery_reached_count": 0,
+        "first_remap_recovery_not_reached_by80_count": 256,
+        "first_remap_recovery_median_among_reached": null,
+        "first_remap_recovery_definition": "First end-of-step tick completing eight consecutive pre-action model-error values <= 0.08; not onset of recovery."
+      }
+    },
+    "stationary": {
+      "oracle": {
+        "early32_first_remap": 0.3144608800269248,
+        "stable_mean": 0.15414616834705688,
+        "second_B_early32": 0.3114465337106399,
+        "return_A_early32": 0.31612438387581876,
+        "overall_mean_distance": 0.17639871221359463,
+        "overall_velocity_mse": 5.540710694498947e-05,
+        "overall_body_model_error": 0.0,
+        "final_within_0_15_fraction": 1.0,
+        "first_remap_recovery_reached_count": 256,
+        "first_remap_recovery_not_reached_by80_count": 0,
+        "first_remap_recovery_median_among_reached": 8.0,
+        "first_remap_recovery_definition": "First end-of-step tick completing eight consecutive pre-action model-error values <= 0.08; not onset of recovery."
+      },
+      "cumulative": {
+        "early32_first_remap": 0.3146246884702222,
+        "stable_mean": 0.154141325669755,
+        "second_B_early32": 0.3111370877832397,
+        "return_A_early32": 0.31614116648990254,
+        "overall_mean_distance": 0.17635764424234035,
+        "overall_velocity_mse": 0.0004931069914785683,
+        "overall_body_model_error": 0.008882783334587632,
+        "final_within_0_15_fraction": 1.0,
+        "first_remap_recovery_reached_count": 256,
+        "first_remap_recovery_not_reached_by80_count": 0,
+        "first_remap_recovery_median_among_reached": 8.0,
+        "first_remap_recovery_definition": "First end-of-step tick completing eight consecutive pre-action model-error values <= 0.08; not onset of recovery."
+      },
+      "window": {
+        "early32_first_remap": 0.3172176034225398,
+        "stable_mean": 0.16010172071621648,
+        "second_B_early32": 0.3266597911259001,
+        "return_A_early32": 0.3194324795603938,
+        "overall_mean_distance": 0.18050106338060515,
+        "overall_velocity_mse": 0.0030609015811091287,
+        "overall_body_model_error": 0.022471221573707706,
+        "final_within_0_15_fraction": 1.0,
+        "first_remap_recovery_reached_count": 256,
+        "first_remap_recovery_not_reached_by80_count": 0,
+        "first_remap_recovery_median_among_reached": 8.0,
+        "first_remap_recovery_definition": "First end-of-step tick completing eight consecutive pre-action model-error values <= 0.08; not onset of recovery."
+      },
+      "episode_reset": {
+        "early32_first_remap": 0.4613595667048713,
+        "stable_mean": 0.2207854292292138,
+        "second_B_early32": 0.47457792636718155,
+        "return_A_early32": 0.4697664503312106,
+        "overall_mean_distance": 0.2307894162918742,
+        "overall_velocity_mse": 0.012281387125155259,
+        "overall_body_model_error": 0.04239881798107075,
+        "final_within_0_15_fraction": 1.0,
+        "first_remap_recovery_reached_count": 256,
+        "first_remap_recovery_not_reached_by80_count": 0,
+        "first_remap_recovery_median_among_reached": 18.0,
+        "first_remap_recovery_definition": "First end-of-step tick completing eight consecutive pre-action model-error values <= 0.08; not onset of recovery."
+      },
+      "frozen": {
+        "early32_first_remap": 0.3146409788818966,
+        "stable_mean": 0.15419652663370606,
+        "second_B_early32": 0.31109639214582413,
+        "return_A_early32": 0.31646293962433536,
+        "overall_mean_distance": 0.17637725089077946,
+        "overall_velocity_mse": 0.0005123087480034888,
+        "overall_body_model_error": 0.011787118456666723,
+        "final_within_0_15_fraction": 1.0,
+        "first_remap_recovery_reached_count": 256,
+        "first_remap_recovery_not_reached_by80_count": 0,
+        "first_remap_recovery_median_among_reached": 8.0,
+        "first_remap_recovery_definition": "First end-of-step tick completing eight consecutive pre-action model-error values <= 0.08; not onset of recovery."
+      },
+      "no_information": {
+        "early32_first_remap": 1.658733746763934,
+        "stable_mean": 3.959533694218944,
+        "second_B_early32": 1.721096264163022,
+        "return_A_early32": 1.6360684641969674,
+        "overall_mean_distance": 3.7965446259442994,
+        "overall_velocity_mse": 0.18796712418604955,
+        "overall_body_model_error": 0.3,
+        "final_within_0_15_fraction": 0.0,
+        "first_remap_recovery_reached_count": 0,
+        "first_remap_recovery_not_reached_by80_count": 256,
+        "first_remap_recovery_median_among_reached": null,
+        "first_remap_recovery_definition": "First end-of-step tick completing eight consecutive pre-action model-error values <= 0.08; not onset of recovery."
+      },
+      "misaligned": {
+        "early32_first_remap": 0.8769395323569554,
+        "stable_mean": 0.9341972583439384,
+        "second_B_early32": 0.900908979291868,
+        "return_A_early32": 0.9401290692407029,
+        "overall_mean_distance": 0.9660586745051836,
+        "overall_velocity_mse": 0.07160141323274015,
+        "overall_body_model_error": 0.3130246380643021,
+        "final_within_0_15_fraction": 0.060546875,
+        "first_remap_recovery_reached_count": 0,
+        "first_remap_recovery_not_reached_by80_count": 256,
+        "first_remap_recovery_median_among_reached": null,
+        "first_remap_recovery_definition": "First end-of-step tick completing eight consecutive pre-action model-error values <= 0.08; not onset of recovery."
+      },
+      "shuffled": {
+        "early32_first_remap": 1.131850578950229,
+        "stable_mean": 1.334568473760507,
+        "second_B_early32": 1.153657839392111,
+        "return_A_early32": 1.1124715945135124,
+        "overall_mean_distance": 1.3431570045196723,
+        "overall_velocity_mse": 0.09332611384955769,
+        "overall_body_model_error": 0.3118027012691788,
+        "final_within_0_15_fraction": 0.013020833333333334,
+        "first_remap_recovery_reached_count": 0,
+        "first_remap_recovery_not_reached_by80_count": 256,
+        "first_remap_recovery_median_among_reached": null,
+        "first_remap_recovery_definition": "First end-of-step tick completing eight consecutive pre-action model-error values <= 0.08; not onset of recovery."
+      }
+    }
+  },
+  "paired_contrasts": {
+    "primary_cumulative_minus_window": {
+      "mean": 0.3420168961958852,
+      "ci95": [
+        0.3295972194934139,
+        0.35404920945941015
+      ],
+      "n_seeds": 256,
+      "profile": "primary",
+      "difference": "cumulative minus window",
+      "episodes": [
+        3
+      ],
+      "metric": "early32_distance"
+    },
+    "stable_window_minus_cumulative": {
+      "mean": 0.005960395046461494,
+      "ci95": [
+        0.005274753119965749,
+        0.0066606376378683324
+      ],
+      "n_seeds": 256,
+      "profile": "primary",
+      "difference": "window minus cumulative",
+      "episodes": [
+        1,
+        2
+      ],
+      "metric": "mean_distance"
+    },
+    "remap_reset_minus_window": {
+      "mean": -0.036393588524683024,
+      "ci95": [
+        -0.05522342944176086,
+        -0.018454486519008988
+      ],
+      "n_seeds": 256,
+      "profile": "primary",
+      "difference": "episode_reset minus window",
+      "episodes": [
+        3
+      ],
+      "metric": "early32_distance"
+    },
+    "stable_reset_minus_window": {
+      "mean": 0.060683708512997314,
+      "ci95": [
+        0.05640872843334701,
+        0.06502119539501816
+      ],
+      "n_seeds": 256,
+      "profile": "primary",
+      "difference": "episode_reset minus window",
+      "episodes": [
+        1,
+        2
+      ],
+      "metric": "mean_distance"
+    },
+    "second_B_reset_minus_window": {
+      "mean": 0.16705027627849484,
+      "ci95": [
+        0.1496362453435042,
+        0.18468039820765067
+      ],
+      "n_seeds": 256,
+      "profile": "primary",
+      "difference": "episode_reset minus window",
+      "episodes": [
+        4
+      ],
+      "metric": "early32_distance"
+    },
+    "return_A_cumulative_minus_window": {
+      "mean": -0.09124987746236143,
+      "ci95": [
+        -0.10252863960799981,
+        -0.08017404108114377
+      ],
+      "n_seeds": 256,
+      "profile": "primary",
+      "difference": "cumulative minus window",
+      "episodes": [
+        5
+      ],
+      "metric": "early32_distance"
+    },
+    "primary_misaligned_minus_window": {
+      "mean": 0.5147667090029797,
+      "ci95": [
+        0.4778222988207023,
+        0.5523976913994911
+      ],
+      "n_seeds": 256,
+      "profile": "primary",
+      "difference": "misaligned minus window",
+      "episodes": [
+        3
+      ],
+      "metric": "early32_distance"
+    },
+    "no_delay_cumulative_minus_window": {
+      "mean": 0.14610986372139914,
+      "ci95": [
+        0.13490900842408224,
+        0.15672124307471713
+      ],
+      "n_seeds": 256,
+      "profile": "no_delay",
+      "difference": "cumulative minus window",
+      "episodes": [
+        3
+      ],
+      "metric": "early32_distance"
+    },
+    "clean_cumulative_minus_window": {
+      "mean": 0.14210532776421744,
+      "ci95": [
+        0.13179745227742518,
+        0.1523566214077077
+      ],
+      "n_seeds": 256,
+      "profile": "clean",
+      "difference": "cumulative minus window",
+      "episodes": [
+        3
+      ],
+      "metric": "early32_distance"
+    },
+    "stationary_window_minus_cumulative": {
+      "mean": 0.0025929149523176314,
+      "ci95": [
+        0.001787737739625091,
+        0.0034477913431663243
+      ],
+      "n_seeds": 256,
+      "profile": "stationary",
+      "difference": "window minus cumulative",
+      "episodes": [
+        3
+      ],
+      "metric": "early32_distance"
+    }
+  },
+  "design_rule_passed_within_fixture_family": true,
+  "interrupted_attempt_comparison": {
+    "status": "not_available"
+  },
+  "no_delay_alignment_identity": {
+    "no_delay": {
+      "identical_full_trace_pairs": 256,
+      "total_pairs": 256
+    },
+    "clean": {
+      "identical_full_trace_pairs": 256,
+      "total_pairs": 256
+    }
+  },
+  "inference": {
+    "unit": "independent synthetic seed, paired across algorithms",
+    "interval": "paired nonparametric percentile bootstrap",
+    "resamples": 5000,
+    "bootstrap_seed": 20261015,
+    "secondary_intervals": "exploratory, no familywise-error claim"
+  },
+  "statuses": {
+    "primary": {
+      "split": "evaluation",
+      "profile": "primary",
+      "scheduled_runs": 2048,
+      "started": 2048,
+      "completed": 2048,
+      "failures": [],
+      "source_sha256": "2306148b46490fae74dc49fc31e1161f76e64bf902d836276c2dfd9565645515",
+      "protocol_sha256": "d3224dbb752eba3368c0a1569eb733d7a59fb9a3bf1929fdbb1810f9ae9cf382",
+      "fixture_file_sha256": "41079d8a6b202ccd6e1b3908f19ceac48fb9aefa8cfdc159456765692f43f4d7",
+      "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]"
+    },
+    "no_delay": {
+      "split": "evaluation",
+      "profile": "no_delay",
+      "scheduled_runs": 2048,
+      "started": 2048,
+      "completed": 2048,
+      "failures": [],
+      "source_sha256": "2306148b46490fae74dc49fc31e1161f76e64bf902d836276c2dfd9565645515",
+      "protocol_sha256": "d3224dbb752eba3368c0a1569eb733d7a59fb9a3bf1929fdbb1810f9ae9cf382",
+      "fixture_file_sha256": "41079d8a6b202ccd6e1b3908f19ceac48fb9aefa8cfdc159456765692f43f4d7",
+      "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]"
+    },
+    "clean": {
+      "split": "evaluation",
+      "profile": "clean",
+      "scheduled_runs": 2048,
+      "started": 2048,
+      "completed": 2048,
+      "failures": [],
+      "source_sha256": "2306148b46490fae74dc49fc31e1161f76e64bf902d836276c2dfd9565645515",
+      "protocol_sha256": "d3224dbb752eba3368c0a1569eb733d7a59fb9a3bf1929fdbb1810f9ae9cf382",
+      "fixture_file_sha256": "41079d8a6b202ccd6e1b3908f19ceac48fb9aefa8cfdc159456765692f43f4d7",
+      "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]"
+    },
+    "stationary": {
+      "split": "evaluation",
+      "profile": "stationary",
+      "scheduled_runs": 2048,
+      "started": 2048,
+      "completed": 2048,
+      "failures": [],
+      "source_sha256": "2306148b46490fae74dc49fc31e1161f76e64bf902d836276c2dfd9565645515",
+      "protocol_sha256": "d3224dbb752eba3368c0a1569eb733d7a59fb9a3bf1929fdbb1810f9ae9cf382",
+      "fixture_file_sha256": "41079d8a6b202ccd6e1b3908f19ceac48fb9aefa8cfdc159456765692f43f4d7",
+      "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]"
+    }
+  },
+  "source_note": "Analysis authored after data collection to implement the frozen metrics and decision rule; no algorithm/parameter/threshold changes after development."
+}

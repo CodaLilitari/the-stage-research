@@ -1,0 +1,831 @@
+{
+  "completed_utc": "2026-10-15T15:14:50.675581+00:00",
+  "authorship": {
+    "original": "Grok Build (xAI route)",
+    "audit_and_corrected_derivative": "Coda/local team working with Richard Pemberton"
+  },
+  "original_script_sha256": "00fd5b98815a22021d58c7cd6801eb7da19f1a8e4e35f98d293bfb1c3b826429",
+  "corrected_script_sha256": "2ff7bebe9fca95bc9b6088b8563ed08d71cbb2218c55de1e098ecbf3f181299b",
+  "supplied_checks": {
+    "original_count": 43,
+    "corrected_count": 43,
+    "original": [
+      {
+        "name": "dimensions_power_and_molar_flow",
+        "passed": true,
+        "detail": "Pa*m^3/s -> W and mol/m^3 * m^3/s -> mol/s"
+      },
+      {
+        "name": "efficiency_rejects_outside_0_1",
+        "passed": true,
+        "detail": "accepted invalid: []"
+      },
+      {
+        "name": "efficiency_one_equates_electrical_and_hydraulic",
+        "passed": true,
+        "detail": "eta=1 => P_elec = P_hyd"
+      },
+      {
+        "name": "efficiency_loss_is_nonnegative",
+        "passed": true,
+        "detail": "P_elec - P_hyd >= 0 for eta in (0, 1]"
+      },
+      {
+        "name": "zero_demand_q_min_is_zero_even_if_capacity_zero",
+        "passed": true,
+        "detail": "Q_min(M=0)=0"
+      },
+      {
+        "name": "zero_demand_oxygen_met_at_zero_flow",
+        "passed": true,
+        "detail": "J=0 meets M=0"
+      },
+      {
+        "name": "branch_demands_sum_to_module_demand",
+        "passed": true,
+        "detail": "M = sum m_i"
+      },
+      {
+        "name": "zero_capacity_positive_demand_has_no_finite_flow",
+        "passed": true,
+        "detail": "C_in=0 and M>0 => Q_min = inf"
+      },
+      {
+        "name": "zero_capacity_global_fails_at_large_flow",
+        "passed": true,
+        "detail": "Q*C_in = 0 < M"
+      },
+      {
+        "name": "zero_flow_power_is_zero",
+        "passed": true,
+        "detail": "Q=0 => P_hyd = P_elec = 0"
+      },
+      {
+        "name": "zero_flow_meets_demand_only_when_demand_is_zero",
+        "passed": true,
+        "detail": "delivered oxygen rate is 0 at Q=0"
+      },
+      {
+        "name": "zero_flow_separates_power_from_survival",
+        "passed": true,
+        "detail": "P_elec=0 can coexist with survival flag False"
+      },
+      {
+        "name": "monotonic_pump_cost_fixed_resistance",
+        "passed": true,
+        "detail": "P_elec sequence [0.0, 0.00019999999999999998, 0.020000000000000004, 0.08000000000000002, 2.0]"
+      },
+      {
+        "name": "quadratic_scaling_fixed_resistance",
+        "passed": true,
+        "detail": "P(2Q)/P(Q) = 4 because P = R Q^2 / eta"
+      },
+      {
+        "name": "analytic_derivative_positive",
+        "passed": true,
+        "detail": "dP_elec/dQ = 2 R Q / eta"
+      },
+      {
+        "name": "monotonic_pump_cost_fixed_delta_p",
+        "passed": true,
+        "detail": "at fixed delta_p > 0, P scales linearly with Q"
+      },
+      {
+        "name": "necessary_global_condition_catches_shortfall",
+        "passed": true,
+        "detail": "Q*C_in < M => not met"
+      },
+      {
+        "name": "carrier_upper_bound",
+        "passed": true,
+        "detail": "J <= Q*C_in when C_out >= 0"
+      },
+      {
+        "name": "reference_interval_nonempty",
+        "passed": true,
+        "detail": "[2e-06, 0.00022360679774997898]"
+      },
+      {
+        "name": "q_min_meets_demand_exactly",
+        "passed": true,
+        "detail": "alpha*C*Q_min = M"
+      },
+      {
+        "name": "q_max_meets_power_exactly",
+        "passed": true,
+        "detail": "P_elec(Q_max)=10.0"
+      },
+      {
+        "name": "interior_point_meets_global_power_and_oxygen",
+        "passed": true,
+        "detail": "midpoint of the closed-form interval"
+      },
+      {
+        "name": "just_below_q_min_fails_oxygen",
+        "passed": true,
+        "detail": "Q=1.999998e-06"
+      },
+      {
+        "name": "just_above_q_max_fails_power",
+        "passed": true,
+        "detail": "Q=0.00022360702135677671"
+      },
+      {
+        "name": "low_carrier_gamma_below_one",
+        "passed": true,
+        "detail": "Gamma=0.0125"
+      },
+      {
+        "name": "reference_carrier_gamma_above_one",
+        "passed": true,
+        "detail": "Gamma=12500.000000000002"
+      },
+      {
+        "name": "higher_carrier_can_open_global_interval",
+        "passed": true,
+        "detail": "global power limit only"
+      },
+      {
+        "name": "more_carrier_does_not_clear_local_ceiling",
+        "passed": true,
+        "detail": "branch 2 demand 1e-6 > ceiling 5e-7 at every tested Q and C_in"
+      },
+      {
+        "name": "global_budget_can_pass_while_local_fails",
+        "passed": true,
+        "detail": "interval midpoint, blocking ceiling"
+      },
+      {
+        "name": "stagnant_branch_stays_unsupplied",
+        "passed": true,
+        "detail": "phi_2 = 0 => delivery_2 = 0 for any finite C_in"
+      },
+      {
+        "name": "open_ceilings_pass_inside_interval",
+        "passed": true,
+        "detail": "equal split, ceilings above branch demand"
+      },
+      {
+        "name": "series_sum_equals_end_to_end",
+        "passed": true,
+        "detail": "drops 0.2+0.3+0.1 at Q=0.01"
+      },
+      {
+        "name": "double_count_would_exceed_carrier",
+        "passed": true,
+        "detail": "the screen keeps a single delivered total"
+      },
+      {
+        "name": "downstream_inlet_is_upstream_outlet",
+        "passed": true,
+        "detail": "second inlet is 0.2; total delivery equals Q*C_in"
+      },
+      {
+        "name": "segment_ceiling_limits_extraction_before_downstream",
+        "passed": true,
+        "detail": "first segment stops at its ceiling"
+      },
+      {
+        "name": "series_zero_flow_delivers_nothing",
+        "passed": true,
+        "detail": "no flow extraction term at Q=0"
+      },
+      {
+        "name": "fixed_pressure_interval_matches_formula",
+        "passed": true,
+        "detail": "interval=(2e-06, 5e-05)"
+      },
+      {
+        "name": "singleton_interval_when_gamma_is_one",
+        "passed": true,
+        "detail": "Q*=0.00022360679774997898"
+      },
+      {
+        "name": "zero_power_ceiling_only_allows_zero_flow",
+        "passed": true,
+        "detail": "P_elec_max = 0 => Q_max = 0"
+      },
+      {
+        "name": "nameplate_not_used_as_calibration",
+        "passed": true,
+        "detail": "toy R and P_elec_max stay on assumed values"
+      },
+      {
+        "name": "conditional_liquid_product_is_delta_p_times_Q",
+        "passed": true,
+        "detail": "liquid reading is delta_p * Q; gas SLPM reading stays undefined"
+      },
+      {
+        "name": "five_quantities_are_separately_defined",
+        "passed": true,
+        "detail": "P_elec, P_hyd, carrier, partial delivery, survival flag"
+      },
+      {
+        "name": "survival_flag_can_fail_at_unchanged_power",
+        "passed": true,
+        "detail": "local ceiling flips the flag without changing P_elec"
+      }
+    ],
+    "corrected": [
+      {
+        "name": "dimensions_power_and_molar_flow",
+        "passed": true,
+        "detail": "Pa*m^3/s -> W and mol/m^3 * m^3/s -> mol/s"
+      },
+      {
+        "name": "efficiency_rejects_outside_0_1",
+        "passed": true,
+        "detail": "accepted invalid: []"
+      },
+      {
+        "name": "efficiency_one_equates_electrical_and_hydraulic",
+        "passed": true,
+        "detail": "eta=1 => P_elec = P_hyd"
+      },
+      {
+        "name": "efficiency_loss_is_nonnegative",
+        "passed": true,
+        "detail": "P_elec - P_hyd >= 0 for eta in (0, 1]"
+      },
+      {
+        "name": "zero_demand_q_min_is_zero_even_if_capacity_zero",
+        "passed": true,
+        "detail": "Q_min(M=0)=0"
+      },
+      {
+        "name": "zero_demand_oxygen_met_at_zero_flow",
+        "passed": true,
+        "detail": "J=0 meets M=0"
+      },
+      {
+        "name": "branch_demands_sum_to_module_demand",
+        "passed": true,
+        "detail": "M = sum m_i"
+      },
+      {
+        "name": "zero_capacity_positive_demand_has_no_finite_flow",
+        "passed": true,
+        "detail": "C_in=0 and M>0 => Q_min = inf"
+      },
+      {
+        "name": "zero_capacity_global_fails_at_large_flow",
+        "passed": true,
+        "detail": "Q*C_in = 0 < M"
+      },
+      {
+        "name": "zero_flow_power_is_zero",
+        "passed": true,
+        "detail": "Q=0 => P_hyd = P_elec = 0"
+      },
+      {
+        "name": "zero_flow_meets_demand_only_when_demand_is_zero",
+        "passed": true,
+        "detail": "delivered oxygen rate is 0 at Q=0"
+      },
+      {
+        "name": "zero_flow_separates_power_from_survival",
+        "passed": true,
+        "detail": "P_elec=0 can coexist with survival flag False"
+      },
+      {
+        "name": "monotonic_pump_cost_fixed_resistance",
+        "passed": true,
+        "detail": "P_elec sequence [0.0, 0.00019999999999999998, 0.020000000000000004, 0.08000000000000002, 2.0]"
+      },
+      {
+        "name": "quadratic_scaling_fixed_resistance",
+        "passed": true,
+        "detail": "P(2Q)/P(Q) = 4 because P = R Q^2 / eta"
+      },
+      {
+        "name": "analytic_derivative_positive",
+        "passed": true,
+        "detail": "dP_elec/dQ = 2 R Q / eta"
+      },
+      {
+        "name": "monotonic_pump_cost_fixed_delta_p",
+        "passed": true,
+        "detail": "at fixed delta_p > 0, P scales linearly with Q"
+      },
+      {
+        "name": "necessary_global_condition_catches_shortfall",
+        "passed": true,
+        "detail": "Q*C_in < M => not met"
+      },
+      {
+        "name": "carrier_upper_bound",
+        "passed": true,
+        "detail": "J <= Q*C_in when C_out >= 0"
+      },
+      {
+        "name": "reference_interval_nonempty",
+        "passed": true,
+        "detail": "[2e-06, 0.00022360679774997898]"
+      },
+      {
+        "name": "q_min_meets_demand_exactly",
+        "passed": true,
+        "detail": "alpha*C*Q_min = M"
+      },
+      {
+        "name": "q_max_meets_power_exactly",
+        "passed": true,
+        "detail": "P_elec(Q_max)=10.0"
+      },
+      {
+        "name": "interior_point_meets_global_power_and_oxygen",
+        "passed": true,
+        "detail": "midpoint of the closed-form interval"
+      },
+      {
+        "name": "just_below_q_min_fails_oxygen",
+        "passed": true,
+        "detail": "Q=1.999998e-06"
+      },
+      {
+        "name": "just_above_q_max_fails_power",
+        "passed": true,
+        "detail": "Q=0.00022360702135677671"
+      },
+      {
+        "name": "low_carrier_gamma_below_one",
+        "passed": true,
+        "detail": "Gamma=0.0125"
+      },
+      {
+        "name": "reference_carrier_gamma_above_one",
+        "passed": true,
+        "detail": "Gamma=12500.000000000002"
+      },
+      {
+        "name": "higher_carrier_can_open_global_interval",
+        "passed": true,
+        "detail": "global power limit only"
+      },
+      {
+        "name": "more_carrier_does_not_clear_local_ceiling",
+        "passed": true,
+        "detail": "branch 2 demand 1e-6 > ceiling 5e-7 at every tested Q and C_in"
+      },
+      {
+        "name": "global_budget_can_pass_while_local_fails",
+        "passed": true,
+        "detail": "interval midpoint, blocking ceiling"
+      },
+      {
+        "name": "stagnant_branch_stays_unsupplied",
+        "passed": true,
+        "detail": "phi_2 = 0 => delivery_2 = 0 for any finite C_in"
+      },
+      {
+        "name": "open_ceilings_pass_inside_interval",
+        "passed": true,
+        "detail": "equal split, ceilings above branch demand"
+      },
+      {
+        "name": "series_sum_equals_end_to_end",
+        "passed": true,
+        "detail": "drops 0.2+0.3+0.1 at Q=0.01"
+      },
+      {
+        "name": "double_count_would_exceed_carrier",
+        "passed": true,
+        "detail": "the screen keeps a single delivered total"
+      },
+      {
+        "name": "downstream_inlet_is_upstream_outlet",
+        "passed": true,
+        "detail": "second inlet is 0.2; total delivery equals Q*C_in"
+      },
+      {
+        "name": "segment_ceiling_limits_extraction_before_downstream",
+        "passed": true,
+        "detail": "first segment stops at its ceiling"
+      },
+      {
+        "name": "series_zero_flow_delivers_nothing",
+        "passed": true,
+        "detail": "no flow extraction term at Q=0"
+      },
+      {
+        "name": "fixed_pressure_interval_matches_formula",
+        "passed": true,
+        "detail": "interval=(2e-06, 5e-05)"
+      },
+      {
+        "name": "singleton_interval_when_gamma_is_one",
+        "passed": true,
+        "detail": "Q*=0.00022360679774997898"
+      },
+      {
+        "name": "zero_power_ceiling_only_allows_zero_flow",
+        "passed": true,
+        "detail": "P_elec_max = 0 => Q_max = 0"
+      },
+      {
+        "name": "nameplate_not_used_as_calibration",
+        "passed": true,
+        "detail": "toy R and P_elec_max stay on assumed values"
+      },
+      {
+        "name": "conditional_liquid_product_is_delta_p_times_Q",
+        "passed": true,
+        "detail": "liquid reading is delta_p * Q; gas SLPM reading stays undefined"
+      },
+      {
+        "name": "five_quantities_are_separately_defined",
+        "passed": true,
+        "detail": "P_elec, P_hyd, carrier, partial delivery, survival flag"
+      },
+      {
+        "name": "survival_flag_can_fail_at_unchanged_power",
+        "passed": true,
+        "detail": "local ceiling flips the flag without changing P_elec"
+      }
+    ]
+  },
+  "sweep": {
+    "original_rows": 105,
+    "corrected_rows": 105,
+    "exact_csv_fields_equal": true,
+    "model_flag_true_counts": {
+      "original": {
+        "open_local_reference_C": 18
+      },
+      "corrected": {
+        "open_local_reference_C": 18
+      }
+    }
+  },
+  "boundary_cases": [
+    {
+      "id": "linear_zero_power_positive_demand",
+      "expected": null,
+      "original": [
+        0.0,
+        0.0
+      ],
+      "corrected": null,
+      "original_pass": false,
+      "corrected_pass": true
+    },
+    {
+      "id": "fixed_dp_zero_power_positive_demand",
+      "expected": null,
+      "original": [
+        0.0,
+        0.0
+      ],
+      "corrected": null,
+      "original_pass": false,
+      "corrected_pass": true
+    },
+    {
+      "id": "positive_but_reversed_interval",
+      "expected": null,
+      "original": [
+        1,
+        1
+      ],
+      "corrected": null,
+      "original_pass": false,
+      "corrected_pass": true
+    },
+    {
+      "id": "zero_flow_positive_branch_demand",
+      "expected": false,
+      "original": true,
+      "corrected": false,
+      "original_pass": false,
+      "corrected_pass": true
+    },
+    {
+      "id": "stagnant_branch_positive_demand",
+      "expected": false,
+      "original": true,
+      "corrected": false,
+      "original_pass": false,
+      "corrected_pass": true
+    },
+    {
+      "id": "zero_transfer_ceiling_positive_demand",
+      "expected": false,
+      "original": true,
+      "corrected": false,
+      "original_pass": false,
+      "corrected_pass": true
+    },
+    {
+      "id": "zero_power_positive_flow",
+      "expected": false,
+      "original": true,
+      "corrected": false,
+      "original_pass": false,
+      "corrected_pass": true
+    },
+    {
+      "id": "thousandfold_power_budget_excess",
+      "expected": false,
+      "original": true,
+      "corrected": false,
+      "original_pass": false,
+      "corrected_pass": true
+    },
+    {
+      "id": "zero_power_complete_flag",
+      "expected": false,
+      "original": true,
+      "corrected": false,
+      "original_pass": false,
+      "corrected_pass": true
+    },
+    {
+      "id": "outlet_above_inlet",
+      "expected": "ValueError",
+      "original": -1e-16,
+      "corrected": "ValueError",
+      "original_pass": false,
+      "corrected_pass": true
+    },
+    {
+      "id": "negative_pressure",
+      "expected": "ValueError",
+      "original": -1.0,
+      "corrected": "ValueError",
+      "original_pass": false,
+      "corrected_pass": true
+    },
+    {
+      "id": "gamma_infinite_demand",
+      "expected": "ValueError",
+      "original": 0.0,
+      "corrected": "ValueError",
+      "original_pass": false,
+      "corrected_pass": true
+    },
+    {
+      "id": "gamma_nan_concentration",
+      "expected": "ValueError",
+      "original": "nan",
+      "corrected": "ValueError",
+      "original_pass": false,
+      "corrected_pass": true
+    },
+    {
+      "id": "global_negative_demand",
+      "expected": "ValueError",
+      "original": true,
+      "corrected": "ValueError",
+      "original_pass": false,
+      "corrected_pass": true
+    },
+    {
+      "id": "global_nan_zero_demand",
+      "expected": "ValueError",
+      "original": true,
+      "corrected": "ValueError",
+      "original_pass": false,
+      "corrected_pass": true
+    },
+    {
+      "id": "local_negative_demand",
+      "expected": "ValueError",
+      "original": true,
+      "corrected": "ValueError",
+      "original_pass": false,
+      "corrected_pass": true
+    },
+    {
+      "id": "local_nan_fraction",
+      "expected": "ValueError",
+      "original": true,
+      "corrected": "ValueError",
+      "original_pass": false,
+      "corrected_pass": true
+    },
+    {
+      "id": "local_bad_late_branch",
+      "expected": "ValueError",
+      "original": false,
+      "corrected": "ValueError",
+      "original_pass": false,
+      "corrected_pass": true
+    },
+    {
+      "id": "branch_fraction_above_one",
+      "expected": "ValueError",
+      "original": 1,
+      "corrected": "ValueError",
+      "original_pass": false,
+      "corrected_pass": true
+    },
+    {
+      "id": "series_mismatched_arrays",
+      "expected": "ValueError",
+      "original": {
+        "segment_inlet_mol_m3": [
+          1.0
+        ],
+        "segment_delivery_mol_s": [
+          0.2
+        ],
+        "delivered_once_mol_s": 0.2,
+        "end_to_end_mol_s": 0.19999999999999996,
+        "carrier_capacity_mol_s": 1.0,
+        "path_outlet_mol_m3": 0.8
+      },
+      "corrected": "ValueError",
+      "original_pass": false,
+      "corrected_pass": true
+    },
+    {
+      "id": "series_nan_drop",
+      "expected": "ValueError",
+      "original": {
+        "segment_inlet_mol_m3": [
+          1.0
+        ],
+        "segment_delivery_mol_s": [
+          "nan"
+        ],
+        "delivered_once_mol_s": "nan",
+        "end_to_end_mol_s": "nan",
+        "carrier_capacity_mol_s": 1.0,
+        "path_outlet_mol_m3": "nan"
+      },
+      "corrected": "ValueError",
+      "original_pass": false,
+      "corrected_pass": true
+    },
+    {
+      "id": "local_mismatched_arrays",
+      "expected": "ValueError",
+      "original": "ValueError",
+      "corrected": "ValueError",
+      "original_pass": true,
+      "corrected_pass": true
+    },
+    {
+      "id": "zero_supply_zero_demand",
+      "expected": true,
+      "original": true,
+      "corrected": true,
+      "original_pass": true,
+      "corrected_pass": true
+    },
+    {
+      "id": "zero_power_zero_demand_interval",
+      "expected": [
+        0.0,
+        0.0
+      ],
+      "original": [
+        0.0,
+        0.0
+      ],
+      "corrected": [
+        0.0,
+        0.0
+      ],
+      "original_pass": true,
+      "corrected_pass": true
+    },
+    {
+      "id": "positive_interior_local",
+      "expected": true,
+      "original": true,
+      "corrected": true,
+      "original_pass": true,
+      "corrected_pass": true
+    },
+    {
+      "id": "positive_interior_power",
+      "expected": true,
+      "original": true,
+      "corrected": true,
+      "original_pass": true,
+      "corrected_pass": true
+    },
+    {
+      "id": "zero_content_positive_demand",
+      "expected": null,
+      "original": null,
+      "corrected": null,
+      "original_pass": true,
+      "corrected_pass": true
+    },
+    {
+      "id": "zero_flow_global_positive_demand",
+      "expected": false,
+      "original": false,
+      "corrected": false,
+      "original_pass": true,
+      "corrected_pass": true
+    },
+    {
+      "id": "fraction_sum_invalid",
+      "expected": "ValueError",
+      "original": "ValueError",
+      "corrected": "ValueError",
+      "original_pass": true,
+      "corrected_pass": true
+    }
+  ],
+  "boundary_summary": {
+    "total": 29,
+    "original_pass": 8,
+    "corrected_pass": 29
+  },
+  "independent_arithmetic": [
+    {
+      "id": "hydraulic_power_W",
+      "decimal_expected": "0.0400000000",
+      "binary64_actual": 0.04,
+      "passed": true
+    },
+    {
+      "id": "electrical_power_W",
+      "decimal_expected": "0.080000000",
+      "binary64_actual": 0.08,
+      "passed": true
+    },
+    {
+      "id": "q_min_m3_s",
+      "decimal_expected": "0.000002",
+      "binary64_actual": 2e-06,
+      "passed": true
+    },
+    {
+      "id": "q_max_m3_s",
+      "decimal_expected": "0.000223606797749978969640917366873127623544061835961152572427090",
+      "binary64_actual": 0.00022360679774997898,
+      "passed": true
+    },
+    {
+      "id": "Gamma_dimensionless",
+      "decimal_expected": "1.25E+4",
+      "binary64_actual": 12500.000000000002,
+      "passed": true
+    },
+    {
+      "id": "series_segment_0_mol_s",
+      "decimal_expected": "1.2",
+      "binary64_actual": 1.2,
+      "passed": true
+    },
+    {
+      "id": "series_segment_1_mol_s",
+      "decimal_expected": "0.6",
+      "binary64_actual": 0.6,
+      "passed": true
+    },
+    {
+      "id": "series_segment_2_mol_s",
+      "decimal_expected": "0.2",
+      "binary64_actual": 0.20000000000000007,
+      "passed": true
+    },
+    {
+      "id": "series_total_mol_s",
+      "decimal_expected": "2",
+      "binary64_actual": 2.0,
+      "passed": true
+    },
+    {
+      "id": "series_end_to_end_mol_s",
+      "decimal_expected": "2",
+      "binary64_actual": 2.0,
+      "passed": true
+    },
+    {
+      "id": "conditional_actual_liquid_product_W",
+      "decimal_expected": "459.650486211224089114844896356459379585425837518341703350074",
+      "binary64_actual": 459.65048621122406,
+      "passed": true
+    }
+  ],
+  "arithmetic_pass_count": 11,
+  "double_counting_counterexample": {
+    "two_series_drops": [
+      0.1,
+      0.1
+    ],
+    "Q": 1,
+    "C_in": 1,
+    "correct_delivery": 0.2,
+    "double_counted_delivery": 0.39999999999999997,
+    "carrier_capacity": 1,
+    "double_counted_value_still_below_capacity": true,
+    "implication": "A carrier upper-bound check is necessary but not sufficient to detect oxygen double counting."
+  },
+  "corrected_process_exit_code": 0,
+  "limits": [
+    "Original and corrected are toy algebra only; no empirical pump, carrier, tissue or clinical validation.",
+    "This is local independent review of Grok Build, not external validation of Coda corrections.",
+    "Strict binary64 comparisons preserve zero boundaries but can conservatively reject near-boundary rounding.",
+    "Finite validation is not a proof against overflow/underflow over all finite IEEE-754 values.",
+    "Local ceilings and branch flow fractions remain assumed independent inputs, not solved transport or vessel geometry.",
+    "The model flag is an inequality conjunction; relabel it as model-constraint flag in scientific interpretation.",
+    "Conditional nameplate calculation is unverified and is not a simultaneous measured operating point."
+  ]
+}

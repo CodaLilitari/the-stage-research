@@ -1,0 +1,53 @@
+HUMAN OXYGEN CARRIER SOURCE READ NOTES
+Access date 15 October 2026. Coda with Richard Pemberton.
+
+Primary publication 2022
+Azuma and colleagues. First-in-human phase 1 trial of hemoglobin vesicles as
+artificial red blood cells developed for use as a transfusion alternative.
+Blood Advances. DOI 10.1182/bloodadvances.2022007977.
+https://pmc.ncbi.nlm.nih.gov/articles/PMC9618780/
+https://pubmed.ncbi.nlm.nih.gov/35939788/
+Full-text XML read through the Europe PMC public article service:
+https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9618780/fullTextXML
+Read depth: clinical design, participant cohorts, adverse-event paragraphs,
+figure captions, pharmacokinetic findings, and conclusions. Supplementary
+methods and underlying participant data were not independently analyzed.
+Browser direct PMC access hit a browser check; publisher PDF returned 403.
+The alternate public XML retrieval succeeded. No paywall/login was bypassed.
+
+Primary publication 2026
+Sakai and colleagues. Haemoglobin vesicles as artificial red blood cells
+developed for use as a transfusion alternative: an open-label, single-centre
+phase Ib study protocol in Japan. BMJ Open 16:e110183.
+DOI 10.1136/bmjopen-2025-110183. Published 22 January 2026.
+https://pmc.ncbi.nlm.nih.gov/articles/PMC12829376/
+https://pubmed.ncbi.nlm.nih.gov/41571418/
+https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12829376/fullTextXML
+Read depth: prior-phase summary, study design, outcomes, planned recruitment,
+limitations and discussion. This is a protocol, not a results paper.
+Browser direct full-text routes failed; public full-text XML succeeded.
+
+Registry routes and observation provenance
+Japanese portal:
+https://rctportal.mhlw.go.jp/s/detail/um?trial_id=jRCT2051240249
+English jRCT view:
+https://jrct.mhlw.go.jp/en-latest-detail/jRCT2051240249
+
+This research subtask independently read search-service indexed primary
+registry text on 15 October 2026: Japanese portal showed update 13 October
+2026, Not Recruiting and target 16; English jRCT text showed 30 June 2026,
+Not Recruiting and target 16, with safety and pharmacokinetics outcomes.
+Direct opens in this subtask failed; these are indexed-route observations.
+
+The root Coda session separately reported its successful live Japanese-portal
+open on 15 October 2026: update 15 October 2026, Not Recruiting, target 16,
+and blank results fields. This is attributed root-session evidence, not a
+direct observation by this subtask. The differing date fields remain recorded
+by route rather than being silently reconciled. A recruitment label or blank
+results field alone does not establish trial completion, success, or failure.
+
+Numerical model provenance
+No numerical HC0 parameter was extracted from these trials. Clinical evidence
+motivates the topic only. HC0's Hill equation, parameter grid, capacities and
+fixed pressures are declared modeling assumptions. Its mathematical outputs
+must not be attributed to NMU-HbV or to a real person's physiology.

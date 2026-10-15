@@ -1,0 +1,51 @@
+{
+  "canonicalization": "Hash exact file bytes; JSON is UTF-8, LF, sorted keys, 2-space indentation, terminal LF.",
+  "files": {
+    "evaluator_only/questions_and_key.json": {
+      "bytes": 13917,
+      "sha256": "a1246003240a2ba9c9d49e803ed0bb8ca62d1241b4ac69df0b40547aa91f5277"
+    },
+    "evaluator_only/scenarios_confirmation.json": {
+      "bytes": 2803,
+      "sha256": "a4956e8a1434d99167ba36388219ba46d355de3123c551d21500b39512ac5ce3"
+    },
+    "evaluator_only/scenarios_development.json": {
+      "bytes": 2850,
+      "sha256": "61e7fcc8fd22daaec3685cce60758fb4389fa32ce91f6f934e5dda0ed50300a5"
+    },
+    "evaluator_only/truth.json": {
+      "bytes": 1887,
+      "sha256": "8bc6f074225a1d7515ec7a0acc71c966d866dae38c6c6281776d5928d3ef1837"
+    },
+    "participant_packets/A/packet.json": {
+      "bytes": 29374,
+      "sha256": "8452ac7ac859d91e35239161f8cf4cc12e6e62e240e374373750cfad9c9ac6c3"
+    },
+    "participant_packets/B/packet.json": {
+      "bytes": 5858,
+      "sha256": "10d172000fdce9f8324ea3a74a9e41cce9451bac0bbfa361a5b58493b147b0e4"
+    },
+    "participant_packets/C/packet.json": {
+      "bytes": 1216,
+      "sha256": "1894b0d6b09dbae7f0798477bc5159be1f87e76f9e30b38ca668e422a2608c3f"
+    },
+    "participant_packets/D/packet.json": {
+      "bytes": 954,
+      "sha256": "f78ddbf853f193f8bb62107b040c8ca9890b0bbc2e8ecf53f58902ef91d02bbd"
+    },
+    "release_metadata.json": {
+      "bytes": 430,
+      "sha256": "ba294e32ac1516f823725af3279aed27228b25206720f2c23de7500b9681d1ae"
+    },
+    "source/policy.json": {
+      "bytes": 428,
+      "sha256": "e5cce81c4155b76bccbf2695e64bffaa0184c81300ccd824ca11ae0e541c20e7"
+    },
+    "source/records.json": {
+      "bytes": 24047,
+      "sha256": "5c8ca1a9fae677619e15f2413aff28d7bc99183ad56f0a0045aaabac32044a3b"
+    }
+  },
+  "hash_algorithm": "sha256",
+  "schema": "pa0-manifest-1"
+}

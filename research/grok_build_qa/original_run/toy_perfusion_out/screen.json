@@ -1,0 +1,317 @@
+{
+  "screen": "toy_pump_power_vs_oxygen_transport",
+  "execution_note": "computed_* fields are filled by running this script",
+  "biological_realism_claimed": false,
+  "clinical_or_wetlab_design": false,
+  "units": {
+    "flow": "m^3/s",
+    "pressure": "Pa",
+    "resistance": "Pa*s/m^3",
+    "power": "W",
+    "oxygen_content": "mol/m^3 total oxygen per liquid volume, declared",
+    "oxygen_rate": "mol/s",
+    "efficiency": "1"
+  },
+  "identities": {
+    "P_hyd_W": "delta_p_Pa * Q_m3_s",
+    "P_elec_W": "P_hyd_W / eta",
+    "delta_p_linear_Pa": "R * Q",
+    "carrier_capacity_mol_s": "Q * C_in",
+    "delivered_available_mol_s": "alpha_max * Q * C_in",
+    "global_necessary_condition": "Q * C_in >= M, and alpha_max * Q * C_in >= M",
+    "Gamma": "(alpha_max^2 * C_in^2 * eta * P_elec_max) / (M^2 * R)",
+    "model_survival_flag": "global_supply_met AND local_supply_met AND power_met"
+  },
+  "assumptions": {
+    "label": "hypothetical_round_values",
+    "status": "assumed_not_measured",
+    "resistance_Pa_s_per_m3": 100000000.0,
+    "eta": 0.5,
+    "p_elec_max_W": 10.0,
+    "alpha_max": 1.0,
+    "demand_mol_s": 2e-06,
+    "branch_demands_mol_s": [
+      1e-06,
+      1e-06
+    ],
+    "c_in_reference_mol_m3": 1.0,
+    "c_in_low_mol_m3": 0.001,
+    "c_in_high_mol_m3": 1000.0,
+    "equal_split": [
+      0.5,
+      0.5
+    ],
+    "ceilings_open_mol_s": [
+      0.01,
+      0.01
+    ],
+    "ceilings_blocking_mol_s": [
+      0.01,
+      5e-07
+    ],
+    "stagnant_split": [
+      1.0,
+      0.0
+    ],
+    "fixed_delta_p_Pa": 100000.0
+  },
+  "computed_reference_interval_linear_m3_s": [
+    2e-06,
+    0.00022360679774997898
+  ],
+  "computed_reference_gamma": 12500.000000000002,
+  "computed_q_max_m3_s": 0.00022360679774997898,
+  "computed_q_min_reference_m3_s": 2e-06,
+  "nameplate_conditional": {
+    "status": "conditional_unit_arithmetic_on_unverified_claims",
+    "figures_are_measurements": false,
+    "simultaneous_operating_point_known": false,
+    "used_as_calibration": false,
+    "slpm_note": "SLPM is a gas-metrology unit. Reading 40 SLPM as 40 actual liquid L/min is an extra assumption.",
+    "hydraulic_power_uses": "actual volumetric flow, P_hyd = delta_p * Q_actual",
+    "interpretation_actual_liquid_L_per_min": {
+      "Q_m3_s": 0.0006666666666666666,
+      "delta_p_Pa": 689475.7293168361,
+      "P_hyd_W": 459.65048621122406,
+      "claimed_P_elec_W": 500.0,
+      "implied_eta_if_these_three_were_one_point": 0.9193009724224481
+    },
+    "interpretation_gas_SLPM": {
+      "Q_actual_m3_s": null,
+      "P_hyd_W": null,
+      "reason": "Standard gas flow equals actual volume flow only at the meter standard state. delta_p * Q_standard is not hydraulic power."
+    },
+    "rating_product_note": "Nameplate max pressure and nameplate max flow are separate ratings. On a falling pump curve their product exceeds delta_p * Q at a real point."
+  },
+  "cornell_2019_soft_fish": {
+    "item": "Cornell 2019 soft robotic fish",
+    "relevance_to_this_screen": "Electrochemical storage plus hydraulic actuation. It supplies no parameter for this perfusion screen."
+  },
+  "checks": [
+    {
+      "name": "dimensions_power_and_molar_flow",
+      "passed": true,
+      "detail": "Pa*m^3/s -> W and mol/m^3 * m^3/s -> mol/s"
+    },
+    {
+      "name": "efficiency_rejects_outside_0_1",
+      "passed": true,
+      "detail": "accepted invalid: []"
+    },
+    {
+      "name": "efficiency_one_equates_electrical_and_hydraulic",
+      "passed": true,
+      "detail": "eta=1 => P_elec = P_hyd"
+    },
+    {
+      "name": "efficiency_loss_is_nonnegative",
+      "passed": true,
+      "detail": "P_elec - P_hyd >= 0 for eta in (0, 1]"
+    },
+    {
+      "name": "zero_demand_q_min_is_zero_even_if_capacity_zero",
+      "passed": true,
+      "detail": "Q_min(M=0)=0"
+    },
+    {
+      "name": "zero_demand_oxygen_met_at_zero_flow",
+      "passed": true,
+      "detail": "J=0 meets M=0"
+    },
+    {
+      "name": "branch_demands_sum_to_module_demand",
+      "passed": true,
+      "detail": "M = sum m_i"
+    },
+    {
+      "name": "zero_capacity_positive_demand_has_no_finite_flow",
+      "passed": true,
+      "detail": "C_in=0 and M>0 => Q_min = inf"
+    },
+    {
+      "name": "zero_capacity_global_fails_at_large_flow",
+      "passed": true,
+      "detail": "Q*C_in = 0 < M"
+    },
+    {
+      "name": "zero_flow_power_is_zero",
+      "passed": true,
+      "detail": "Q=0 => P_hyd = P_elec = 0"
+    },
+    {
+      "name": "zero_flow_meets_demand_only_when_demand_is_zero",
+      "passed": true,
+      "detail": "delivered oxygen rate is 0 at Q=0"
+    },
+    {
+      "name": "zero_flow_separates_power_from_survival",
+      "passed": true,
+      "detail": "P_elec=0 can coexist with survival flag False"
+    },
+    {
+      "name": "monotonic_pump_cost_fixed_resistance",
+      "passed": true,
+      "detail": "P_elec sequence [0.0, 0.00019999999999999998, 0.020000000000000004, 0.08000000000000002, 2.0]"
+    },
+    {
+      "name": "quadratic_scaling_fixed_resistance",
+      "passed": true,
+      "detail": "P(2Q)/P(Q) = 4 because P = R Q^2 / eta"
+    },
+    {
+      "name": "analytic_derivative_positive",
+      "passed": true,
+      "detail": "dP_elec/dQ = 2 R Q / eta"
+    },
+    {
+      "name": "monotonic_pump_cost_fixed_delta_p",
+      "passed": true,
+      "detail": "at fixed delta_p > 0, P scales linearly with Q"
+    },
+    {
+      "name": "necessary_global_condition_catches_shortfall",
+      "passed": true,
+      "detail": "Q*C_in < M => not met"
+    },
+    {
+      "name": "carrier_upper_bound",
+      "passed": true,
+      "detail": "J <= Q*C_in when C_out >= 0"
+    },
+    {
+      "name": "reference_interval_nonempty",
+      "passed": true,
+      "detail": "[2e-06, 0.00022360679774997898]"
+    },
+    {
+      "name": "q_min_meets_demand_exactly",
+      "passed": true,
+      "detail": "alpha*C*Q_min = M"
+    },
+    {
+      "name": "q_max_meets_power_exactly",
+      "passed": true,
+      "detail": "P_elec(Q_max)=10.0"
+    },
+    {
+      "name": "interior_point_meets_global_power_and_oxygen",
+      "passed": true,
+      "detail": "midpoint of the closed-form interval"
+    },
+    {
+      "name": "just_below_q_min_fails_oxygen",
+      "passed": true,
+      "detail": "Q=1.999998e-06"
+    },
+    {
+      "name": "just_above_q_max_fails_power",
+      "passed": true,
+      "detail": "Q=0.00022360702135677671"
+    },
+    {
+      "name": "low_carrier_gamma_below_one",
+      "passed": true,
+      "detail": "Gamma=0.0125"
+    },
+    {
+      "name": "reference_carrier_gamma_above_one",
+      "passed": true,
+      "detail": "Gamma=12500.000000000002"
+    },
+    {
+      "name": "higher_carrier_can_open_global_interval",
+      "passed": true,
+      "detail": "global power limit only"
+    },
+    {
+      "name": "more_carrier_does_not_clear_local_ceiling",
+      "passed": true,
+      "detail": "branch 2 demand 1e-6 > ceiling 5e-7 at every tested Q and C_in"
+    },
+    {
+      "name": "global_budget_can_pass_while_local_fails",
+      "passed": true,
+      "detail": "interval midpoint, blocking ceiling"
+    },
+    {
+      "name": "stagnant_branch_stays_unsupplied",
+      "passed": true,
+      "detail": "phi_2 = 0 => delivery_2 = 0 for any finite C_in"
+    },
+    {
+      "name": "open_ceilings_pass_inside_interval",
+      "passed": true,
+      "detail": "equal split, ceilings above branch demand"
+    },
+    {
+      "name": "series_sum_equals_end_to_end",
+      "passed": true,
+      "detail": "drops 0.2+0.3+0.1 at Q=0.01"
+    },
+    {
+      "name": "double_count_would_exceed_carrier",
+      "passed": true,
+      "detail": "the screen keeps a single delivered total"
+    },
+    {
+      "name": "downstream_inlet_is_upstream_outlet",
+      "passed": true,
+      "detail": "second inlet is 0.2; total delivery equals Q*C_in"
+    },
+    {
+      "name": "segment_ceiling_limits_extraction_before_downstream",
+      "passed": true,
+      "detail": "first segment stops at its ceiling"
+    },
+    {
+      "name": "series_zero_flow_delivers_nothing",
+      "passed": true,
+      "detail": "no flow extraction term at Q=0"
+    },
+    {
+      "name": "fixed_pressure_interval_matches_formula",
+      "passed": true,
+      "detail": "interval=(2e-06, 5e-05)"
+    },
+    {
+      "name": "singleton_interval_when_gamma_is_one",
+      "passed": true,
+      "detail": "Q*=0.00022360679774997898"
+    },
+    {
+      "name": "zero_power_ceiling_only_allows_zero_flow",
+      "passed": true,
+      "detail": "P_elec_max = 0 => Q_max = 0"
+    },
+    {
+      "name": "nameplate_not_used_as_calibration",
+      "passed": true,
+      "detail": "toy R and P_elec_max stay on assumed values"
+    },
+    {
+      "name": "conditional_liquid_product_is_delta_p_times_Q",
+      "passed": true,
+      "detail": "liquid reading is delta_p * Q; gas SLPM reading stays undefined"
+    },
+    {
+      "name": "five_quantities_are_separately_defined",
+      "passed": true,
+      "detail": "P_elec, P_hyd, carrier, partial delivery, survival flag"
+    },
+    {
+      "name": "survival_flag_can_fail_at_unchanged_power",
+      "passed": true,
+      "detail": "local ceiling flips the flag without changing P_elec"
+    }
+  ],
+  "limitations": [
+    "Steady incompressible flow, constant eta, linear resistance or fixed delta_p.",
+    "Oxygen balance is one pass of total content C. A recycle loop needs an explicit oxygenator balance before another pass is credited.",
+    "Segment deliveries and the end-to-end drop are the same oxygen and are stored once.",
+    "Local ceilings and flow fractions are independent assumed numbers.",
+    "The survival flag is the inequality boolean only.",
+    "Nameplate 500 W, 40 SLPM and 100 psi are unverified claims, not a simultaneous point, and do not set R, eta, or demand.",
+    "Heat from pump losses is not coupled into the module.",
+    "No solubility, binding curve, metabolism data set, culture method, or clinical target is used."
+  ]
+}

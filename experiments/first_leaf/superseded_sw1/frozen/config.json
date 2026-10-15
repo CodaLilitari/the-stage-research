@@ -1,0 +1,181 @@
+{
+  "asserted_expectations": [
+    "Oracle, active_8, yoked_8, prefix_3 recover all probe outcomes and finish in 12 steps.",
+    "Active and yoked full-information post-exposure hypotheses and predictions are identical.",
+    "Misattributed replay requests yield a consistently wrong deranged map and zero probe accuracy.",
+    "Withheld feedback and sensor-only records retain all 24 prior permutations."
+  ],
+  "authority": "Local implementation and run requested by Richard Pemberton through parent Coda task; no external transmission or spending.",
+  "claim": "Synthetic software mapping benchmark; no LLM or embodied subject tested.",
+  "conditions": [
+    "oracle",
+    "active_8",
+    "yoked_8",
+    "prefix_0",
+    "prefix_1",
+    "prefix_2",
+    "prefix_3",
+    "feedback_withheld",
+    "sensor_only",
+    "misattributed",
+    "lookup_prefix_3",
+    "random_no_information"
+  ],
+  "dev_seeds": [
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116
+  ],
+  "directions": [
+    [
+      0,
+      -1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      -1,
+      0
+    ]
+  ],
+  "evaluation_update_rule": "Post-exposure predictor frozen during primary probes and secondary task. Feedback is recorded, not used to train.",
+  "expected_probe_means_under_uniform_mapping": {
+    "lookup_prefix_3": 0.8125,
+    "prefix_0": 0.25,
+    "prefix_1": 0.5,
+    "prefix_2": 0.75,
+    "prefix_3": 1.0,
+    "random_no_information": 0.25
+  },
+  "exposure_steps": 8,
+  "grid_size": 11,
+  "labels": [
+    "ka",
+    "zu",
+    "mi",
+    "pe"
+  ],
+  "primary": "Correct next-position predictions / 4 nontrivial prescribed probes, summarized by seed.",
+  "privacy": "Synthetic labels, coordinates and seeds only. No personal archive or sensor data.",
+  "probe_commands": "Each label exactly once, Latin-cycle counterbalanced by seed index.",
+  "probe_states": [
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      9
+    ],
+    [
+      9,
+      1
+    ],
+    [
+      9,
+      9
+    ]
+  ],
+  "protocol": "FL0-SW1",
+  "relation_to_companion": "Software adaptation: locked post-exposure knowledge removes test-time learning as a confound; not an LLM replication of FL0.",
+  "sample_size_status": "Fixed finite benchmark budgets, not power calculations or a human/LLM population sample.",
+  "secondary": "Reach [8,8] from [2,2] within 24 live control steps; shortest path is 12.",
+  "seed_order": "Saved deterministic randomized schedule within each split; development precedes test.",
+  "stops": "Abort on any failed invariant, provenance mismatch, invalid key, or unexpected outcome; no auto-retry.",
+  "task_start": [
+    2,
+    2
+  ],
+  "task_step_limit": 24,
+  "task_target": [
+    8,
+    8
+  ],
+  "test_seeds": [
+    10001,
+    10002,
+    10003,
+    10004,
+    10005,
+    10006,
+    10007,
+    10008,
+    10009,
+    10010,
+    10011,
+    10012,
+    10013,
+    10014,
+    10015,
+    10016,
+    10017,
+    10018,
+    10019,
+    10020,
+    10021,
+    10022,
+    10023,
+    10024,
+    10025,
+    10026,
+    10027,
+    10028,
+    10029,
+    10030,
+    10031,
+    10032,
+    10033,
+    10034,
+    10035,
+    10036,
+    10037,
+    10038,
+    10039,
+    10040,
+    10041,
+    10042,
+    10043,
+    10044,
+    10045,
+    10046,
+    10047,
+    10048,
+    10049,
+    10050,
+    10051,
+    10052,
+    10053,
+    10054,
+    10055,
+    10056,
+    10057,
+    10058,
+    10059,
+    10060,
+    10061,
+    10062,
+    10063,
+    10064
+  ],
+  "timestamp_limit": "Local clock and hashes; not an independently witnessed preregistration or trusted timestamp.",
+  "version": 1
+}

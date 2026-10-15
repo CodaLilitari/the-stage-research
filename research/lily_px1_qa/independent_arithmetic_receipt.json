@@ -1,0 +1,26 @@
+{
+  "status": "pass",
+  "author": "Coda independent verification",
+  "python": "3.12.14",
+  "local_execution": "270 transport integrations,18 equilibrium and9 kinetic cases already executed in local_replay",
+  "source_comparison": [
+    {
+      "file": "S_transport.csv",
+      "rows": 270,
+      "local_sha256": "bf52c75f1b044222d7f461de416fad468e9218cec30e5b89138e676997635d31"
+    },
+    {
+      "file": "H_equilibrium.csv",
+      "rows": 18,
+      "local_sha256": "d8d37ef38fb1ac0da9d9c345f9b240aebf18821f32a870a6403cb881c7ef1c69"
+    },
+    {
+      "file": "H_kinetic_controls.csv",
+      "rows": 9,
+      "local_sha256": "68f8a722b4b56e79efd49eb2da25a0323b86e48e0740d64076e86f34c0c818ea"
+    }
+  ],
+  "maximum_numeric_difference_from_returned_csv": 5.551115123125783e-17,
+  "independent_decimal_analytical_error": 1.1102230246251565e-16,
+  "limits": "Reduced mathematical model only; no PF0 replication, skin calibration, biological or clinical validation."
+}

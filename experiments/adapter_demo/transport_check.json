@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "transport": "actual subprocess stdin/stdout JSON-lines",
+  "requests": 6,
+  "initial_observations": 1,
+  "receipts": 6,
+  "admitted": 2,
+  "rejected": 4
+}

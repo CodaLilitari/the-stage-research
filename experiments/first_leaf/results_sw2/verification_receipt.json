@@ -1,0 +1,13 @@
+{
+  "exact_recomputation": {
+    "csv": "731269d24bae031c369c6db61bef7e954b2382ef50a5f3303174ad0f70348f0d",
+    "fault_checks": "dbaa596b23ae4df80e79db1c5c7bff021ddbf3dda81bffde5bd4d782a71483e8",
+    "results": "4c1e0c925121aa32c38465eec35fc4a8c2b35914f64d4fc7f090ae9f163ed391",
+    "traces": "2a10ddd3b19b19d141c18f1f9882d91e3ed8e7813255ca2d99979828a19e6fcf"
+  },
+  "interpretation": "Same implementation/runtime replay, not independent scientific replication.",
+  "manifest_files_checked": 33,
+  "original_run_unchanged": true,
+  "status": "passed",
+  "verified_at_utc_local_clock": "2026-10-15T13:26:54.275129+00:00"
+}

@@ -1,0 +1,33 @@
+FL0-SW2 post-run clarification and internal independent-code review
+15 October 2026
+
+The frozen benchmark source and scored SW2 outputs remain unchanged.
+
+The sentence in results_sw2/report.txt saying action outcomes were
+"independently recomputed against deterministic dynamics" describes an internal
+consistency check that shares moved() with the simulator. That check alone is
+not an independent implementation or external scientific replication.
+
+After SW2 completed, a separate Codex subagent wrote an alternative arithmetic
+transition check and reviewed the retained artifacts. Its reported review is:
+  - frozen source hash matches the executed source;
+  - 22,252 donor and condition receipts checked by separate transition code;
+  - all 3,840 probe scores and aggregate totals match;
+  - all 80 active/replay evidence pairs have identical learning information;
+  - exact same-implementation recomputation matches the retained results;
+  - all 640 actual sensor-only learner packets contain only integer pre/post
+    arrays, with no requested/executed label or source-receipt locator;
+  - an alternative request-based learner retains 24 candidates on these packets;
+  - the originally demonstrated malformed-envelope counterexamples now reject.
+
+The separate reviewer retained its methods and output at:
+<PROJECT_ROOT>\experiments\independent_qa\fl0_run_1792070867199792000\report.json
+
+This is independent code/arithmetic checking by another agent within the same
+project workflow. It is not external scientific replication, a physical test,
+or an LLM embodiment result. The parent Coda task receives the review directly.
+
+SW1's invalid sensor-only interpretation and the original counterexamples are
+retained in superseded_sw1 and the independent review's earlier run record.
+SW2 uses new test seeds and fixes the control; the observed SW1 test cases are
+not treated as untouched confirmation data.

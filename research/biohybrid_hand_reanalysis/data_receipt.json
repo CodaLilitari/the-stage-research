@@ -1,0 +1,85 @@
+{
+  "dataset_doi": "10.5061/dryad.xd2547drh",
+  "dataset_version_date": "2025-01-22",
+  "retrieved_utc": "2026-10-15T14:08:04.179592+00:00",
+  "files": [
+    {
+      "name": "3A.csv",
+      "url": "https://datadryad.org/data_file/preview/3804657",
+      "bytes": 578,
+      "content_type": "text/csv",
+      "repository_digest_matches": true,
+      "metadata_url": "https://datadryad.org/api/v2/files/3804657",
+      "retrieval_method": "lossless_public_preview_reconstruction_verified_against_repository_sha256",
+      "sha256": "6fa0200eb1079b42f641ca69311923f6d4c0bf66cccdc878f259586272afd75f"
+    },
+    {
+      "name": "3B.csv",
+      "url": "https://datadryad.org/data_file/preview/3804664",
+      "bytes": 1108,
+      "content_type": "text/csv",
+      "repository_digest_matches": true,
+      "metadata_url": "https://datadryad.org/api/v2/files/3804664",
+      "retrieval_method": "lossless_public_preview_reconstruction_verified_against_repository_sha256",
+      "sha256": "25680dd65cdadbddf997b6913e06c2a0ed8c9d54f92080a4c793b93e1b91ca36"
+    },
+    {
+      "name": "README.md",
+      "retrieved": false,
+      "reason": "API download HTTP 401; public file_stream HTTP 403; preview unavailable",
+      "repository_metadata": {
+        "_links": {
+          "self": {
+            "href": "/api/v2/files/3804684"
+          },
+          "stash:dataset": {
+            "href": "/api/v2/datasets/doi%3A10.5061%2Fdryad.xd2547drh"
+          },
+          "stash:version": {
+            "href": "/api/v2/versions/341068"
+          },
+          "stash:files": {
+            "href": "/api/v2/versions/341068/files"
+          },
+          "stash:download": {
+            "href": "/api/v2/files/3804684/download"
+          },
+          "curies": [
+            {
+              "name": "stash",
+              "href": "https://github.com/datadryad/dryad-app/blob/main/documentation/apis/link_relations.md#{rel}",
+              "templated": "true"
+            }
+          ]
+        },
+        "path": "README.md",
+        "size": 4416,
+        "mimeType": "text/markdown",
+        "status": "created",
+        "digest": "1f9e2f61ded2d129e0d7c7fac135440801d8f2ad796994457d9f609d36806780",
+        "digestType": "sha-256"
+      },
+      "definitions_read_from": "https://datadryad.org/dataset/doi:10.5061/dryad.xd2547drh"
+    }
+  ],
+  "metadata_url": "https://datadryad.org/api/v2/datasets/doi%3A10.5061%2Fdryad.xd2547drh",
+  "metadata": {
+    "title": "Biohybrid hand actuated by multiple human muscle tissues",
+    "versionNumber": 7,
+    "publicationDate": "2025-01-22",
+    "lastModificationDate": "2025-01-22",
+    "license": "https://spdx.org/licenses/CC0-1.0.html",
+    "relatedWorks": [
+      {
+        "relationship": "article",
+        "identifierType": "DOI",
+        "identifier": "https://doi.org/10.1109/mems58180.2024.10439503"
+      },
+      {
+        "relationship": "primary_article",
+        "identifierType": "DOI",
+        "identifier": "https://doi.org/10.1126/scirobotics.adr5512"
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "mse_by_controller": {
+    "fresh": 2.0325788817640178e-07,
+    "stale": 0.0012757377742557458,
+    "zero": 0.00041073206641744015,
+    "permuted_receipts": 0.0005775318401370013,
+    "oracle": 5.452755834724848e-35
+  },
+  "fresh_beats_stale_seed_count": 64,
+  "seed_count": 64,
+  "probes": 1024,
+  "checks": {
+    "bounded_command_rejected": true,
+    "repeat_reset_equal": true,
+    "oracle_matches_integrator": true,
+    "finite_predictions": true
+  },
+  "interpretation": "Fresh calibration uses post-change observations; stale calibration does not. This is a system-identification baseline under the declared model, not a test of AI adaptation.",
+  "limitations": [
+    "One uncoupled frictionless degree of freedom; no contact or latency.",
+    "Predetermined calibration actions, not autonomous exploration.",
+    "Gaussian measurement noise only in calibration; test targets are noiseless simulator velocities.",
+    "Local freeze is not independently witnessed preregistration; no parameter tuning after freeze.",
+    "No LLM, biology, physical robot, personal identity or subjective experience was tested."
+  ]
+}

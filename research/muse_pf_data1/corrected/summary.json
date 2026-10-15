@@ -1,0 +1,292 @@
+{
+  "scope": "Exploratory analysis of 20 rounded published rows. Confidence intervals are conditional subject-sampling calculations, not total measurement or population-generalization uncertainty. No equivalence margin or mechanistic identification was prespecified.",
+  "normal_flux": {
+    "n": 20,
+    "mean": 0.5290000000000001,
+    "sd": 0.26512956117816494,
+    "se": 0.0592847721639066,
+    "mean_t95_ci": [
+      0.4049155458008275,
+      0.6530844541991728
+    ]
+  },
+  "occlusion_absolute": {
+    "n": 20,
+    "mean": 0.036500000000000005,
+    "sd": 0.012475238632882676,
+    "se": 0.0027895481618657207,
+    "mean_t95_ci": [
+      0.030661408596284568,
+      0.04233859140371544
+    ]
+  },
+  "occlusion_relative_percent": {
+    "n": 20,
+    "mean": 9.49850182095881,
+    "sd": 6.32137408640243,
+    "se": 1.413502216840146,
+    "mean_t95_ci": [
+      6.540007680152915,
+      12.456995961764704
+    ]
+  },
+  "occlusion_t_p": 5.928887611225882e-11,
+  "age_groups": {
+    "young": {
+      "n": 10,
+      "mean": 0.5149999999999999,
+      "sd": 0.22396676340723215,
+      "se": 0.07082450925429071,
+      "mean_t95_ci": [
+        0.3547838290887384,
+        0.6752161709112614
+      ]
+    },
+    "older": {
+      "n": 10,
+      "mean": 0.5429999999999999,
+      "sd": 0.31273169188796823,
+      "se": 0.09889444428839826,
+      "mean_t95_ci": [
+        0.31928522449205177,
+        0.7667147755079481
+      ]
+    },
+    "older_volunteers": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "welch_p": 0.8208081106736109,
+    "pooled_p": 0.8205414592803826,
+    "original_strict_over_70_excludes": [
+      13,
+      18,
+      20
+    ]
+  },
+  "association": {
+    "pearson_r": -0.14735007828918287,
+    "pearson_p": 0.5352987190604385,
+    "pearson_fisher95_ci": [
+      -0.5537625143734157,
+      0.315759982528524
+    ],
+    "slope_se": 0.01096952467250177,
+    "intercept_se": 0.006458246514760137
+  },
+  "candidate_models": {
+    "constant": {
+      "coefficients_intercept_then_slope_if_affine": [
+        0.03649999999999999
+      ],
+      "coefficient_se": [
+        0.0027895481618657207
+      ],
+      "coefficient_t95_ci": [
+        [
+          0.030661408596284554,
+          0.042338591403715424
+        ]
+      ],
+      "sse": 0.002957,
+      "aicc_omitting_common_constant": -171.68036388037459,
+      "loocv_mse": 0.00016382271468144043,
+      "n": 20,
+      "regression_parameters": 1
+    },
+    "proportional": {
+      "coefficients_intercept_then_slope_if_affine": [
+        0.054369338180139636
+      ],
+      "coefficient_se": [
+        0.008316341291241876
+      ],
+      "coefficient_t95_ci": [
+        [
+          0.036963035812901335,
+          0.07177564054737794
+        ]
+      ],
+      "sse": 0.00910965274652357,
+      "aicc_omitting_common_constant": -149.17717684357316,
+      "loocv_mse": 0.0005115418208797969,
+      "n": 20,
+      "regression_parameters": 1
+    },
+    "affine": {
+      "coefficients_intercept_then_slope_if_affine": [
+        0.040167724883571176,
+        -0.0069333173602479726
+      ],
+      "coefficient_se": [
+        0.0064582465147601355,
+        0.01096952467250177
+      ],
+      "coefficient_t95_ci": [
+        [
+          0.02659945243940174,
+          0.05373599732774061
+        ],
+        [
+          -0.029979433515674794,
+          0.01611279879517885
+        ]
+      ],
+      "sse": 0.0028927974812441044,
+      "aicc_omitting_common_constant": -169.32527064038072,
+      "loocv_mse": 0.0001833386210426866,
+      "n": 20,
+      "regression_parameters": 2
+    }
+  },
+  "leave_v19_out_exploratory": {
+    "constant": {
+      "coefficients_intercept_then_slope_if_affine": [
+        0.03757894736842106
+      ],
+      "coefficient_se": [
+        0.002711590661410897
+      ],
+      "coefficient_t95_ci": [
+        [
+          0.031882106783751134,
+          0.043275787953090984
+        ]
+      ],
+      "sse": 0.002514631578947368,
+      "aicc_omitting_common_constant": -164.92129114142145,
+      "loocv_mse": 0.0001474629629629629,
+      "n": 19,
+      "regression_parameters": 1
+    },
+    "proportional": {
+      "coefficients_intercept_then_slope_if_affine": [
+        0.05424612053410323
+      ],
+      "coefficient_se": [
+        0.00847715439009491
+      ],
+      "coefficient_t95_ci": [
+        [
+          0.03643628003742676,
+          0.0720559610307797
+        ]
+      ],
+      "sse": 0.008960850364489355,
+      "aicc_omitting_common_constant": -140.77725344936704,
+      "loocv_mse": 0.0005303478069982454,
+      "n": 19,
+      "regression_parameters": 1
+    },
+    "affine": {
+      "coefficients_intercept_then_slope_if_affine": [
+        0.04709683684270218,
+        -0.01720646051487545
+      ],
+      "coefficient_se": [
+        0.0064862633014695775,
+        0.01074194953031564
+      ],
+      "coefficient_t95_ci": [
+        [
+          0.033412017487333114,
+          0.06078165619807125
+        ],
+        [
+          -0.039869992970234656,
+          0.005457071940483754
+        ]
+      ],
+      "sse": 0.002184874291195705,
+      "aicc_omitting_common_constant": -164.74208331390307,
+      "loocv_mse": 0.00014010861556190107,
+      "n": 19,
+      "regression_parameters": 2
+    }
+  },
+  "pressure": {
+    "paired_normal_minus_reduced_flux": {
+      "n": 20,
+      "mean": 0.19549999999999998,
+      "sd": 0.18132480307593418,
+      "se": 0.04054545856845518,
+      "mean_t95_ci": [
+        0.11063737991920782,
+        0.28036262008079216
+      ]
+    },
+    "two_point_slopes": {
+      "n": 20,
+      "mean": 0.003080025696602882,
+      "sd": 0.0030653580717682864,
+      "se": 0.0006854349023851567,
+      "mean_t95_ci": [
+        0.0016453939581797378,
+        0.004514657435026026
+      ]
+    },
+    "two_point_extrapolated_intercepts": {
+      "n": 20,
+      "mean": 0.0397375968573729,
+      "sd": 0.24366484832783433,
+      "se": 0.05448511645882135,
+      "mean_t95_ci": [
+        -0.07430106249817822,
+        0.15377625621292404
+      ]
+    },
+    "intercept_t_p": 0.4746958727311805,
+    "limitation": "Two observations define each line exactly: these data cannot test individual linearity. A nonsignificant intercept test does not establish proportionality."
+  },
+  "depth": {
+    "consuming_mean_flux_scenario_range_um": [
+      250.71090047393372,
+      359.8639455782314
+    ],
+    "total_including_15_um_mean_flux_scenario_range_um": [
+      265.71090047393375,
+      374.8639455782314
+    ],
+    "conditional_mean_total_t95_by_demand": {
+      "1470.0": [
+        290.4527522454609,
+        459.27513891100193
+      ],
+      "2110.0": [
+        206.90310227527368,
+        324.51869867259376
+      ]
+    },
+    "per_subject_total_scenario_extent_um": [
+      48.17535545023697,
+      783.7074829931972
+    ],
+    "limitations": "T=J/q assumes compatible gas-volume reference conventions and homogeneous demand. The historical q range is not measured in these subjects. It is not a channel-spacing or safety threshold."
+  },
+  "gas_reference_scenarios": {
+    "0C_1atm_ideal_gas": {
+      "ml_per_mol_assumed": 22414.0,
+      "q_observed_mol_m3_s_range": [
+        0.0010930668332292317,
+        0.0015689598762678087
+      ]
+    },
+    "25C_1atm_ideal_gas": {
+      "ml_per_mol_assumed": 24465.0,
+      "q_observed_mol_m3_s_range": [
+        0.0010014306151645207,
+        0.0014374276176851283
+      ]
+    }
+  },
+  "instrument_correction": "The membrane driving difference is external minus skin-surface PO2 within one condition; normal minus reduced skin-surface pressures is not that membrane difference.",
+  "original_mc_interpretation": "Empirical subject-mixture and an independent analyst-chosen uniform demand scenario. Central 95% scenario interval, not confidence interval or posterior."
+}

@@ -1,0 +1,10 @@
+{
+  "local_timestamp_utc": "2026-10-15T14:02:27.525193+00:00",
+  "stage": "Before r2 execution, after r1 numerical verification failure",
+  "meaning": "Not independent preregistration or biological evaluation",
+  "hashes": {
+    "inputs/protocol.json": "96d4b84ef19b9ecbd453c6b85d9133bfdfbabf2dbc6901b23b74c01da441716a",
+    "src/diagnostics.py": "0e6c7c399da88efca39613e557854cd3f971c92b98dba77c2addaf7d5a661a75",
+    "tests/test_diagnostics.py": "aaae80b70fec3004d79461ea2795b70e6b7a05adea97ffcc488327b7ddf90add"
+  }
+}

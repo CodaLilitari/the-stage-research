@@ -1,0 +1,76 @@
+=== INPUTS ===
+C0_medium_mM         0.181      mM           [REPORTED] Place2017 PMC5699948 text: O2 in medium at PO2 141.4 mmHg, 37 C
+D_O2_cm2s            2.69e-05   cm^2/s       [REPORTED] Place2017 PMC5699948 Fig.5 legend: medium + 10% FBS
+OCR_low              10         amol/cell/s  [REPORTED] Place2017: many cell lines 10-60 amol/cell/s
+OCR_high             120        amol/cell/s  [REPORTED] Place2017: cell lines 1-120; >100 for several primary cells
+C_crit_mM            0.052      mM           [REPORTED] Place2017: ~40 mmHg physiologic target = 0.052 mM
+mu_medium            0.00078    Pa s         [REPORTED] Bacabac2005: 0.0078 poise at 37 C (via thesis ch.2 / search summary)
+blood_O2_mL_per_L    201        mL O2/L      [DERIVED] textbook Hufner constant x normal Hb; not reverified to a page
+clone_Q_SLPM         40         L/min        [COMPANY] Clone pump 40 SLPM
+clone_p_psi          100        psi          [COMPANY] Clone pump 100 psi
+clone_pump_W         500        W            [COMPANY] Clone 500 W pump
+cell_density_per_mL  1e+07..1e+08 cells/mL   [ASSUMED envelope for engineered muscle; not taken from MuMuTA paper]
+tissue_volume_mL     0.1..1 mL         [ASSUMED tissue volume of one finger module]
+channel_d_um         100..500 um         [ASSUMED perfusion channel diameter envelope]
+dP_tissue_max_kPa    2..10 kPa        [ASSUMED tolerable pressure drop across a soft perfused tissue loop]
+O2_extraction_frac   0.3..0.7 -          [ASSUMED fraction of inlet O2 the tissue may extract per pass]
+
+=== 1. Krogh-type diffusion limit (zero-order uptake), plain oxygenated medium ===
+slab fed one side: L = sqrt(2 D dC / Q);  cylinder fed at surface: R = sqrt(4 D dC / Q)
+OCR amol/c/s  cells/mL  Q mol/m3/s | slab um (C->0) slab um (C->40mmHg) cyl diam um (C->0)
+          10     1e+07   1.000e-04 |           3121                2634               8826
+          10     3e+07   3.000e-04 |           1802                1521               5096
+          10     1e+08   1.000e-03 |            987                 833               2791
+          60     1e+07   6.000e-04 |           1274                1075               3603
+          60     3e+07   1.800e-03 |            736                 621               2080
+          60     1e+08   6.000e-03 |            403                 340               1139
+         120     1e+07   1.200e-03 |            901                 760               2548
+         120     3e+07   3.600e-03 |            520                 439               1471
+         120     1e+08   1.200e-02 |            285                 240                806
+
+=== 2. Perfusion flow required per module (convective O2 supply) ===
+Qflow = V_tissue * Q_O2 / (f_extract * C_in)
+blood O2 content 201 mL/L = 8.97 mM (DERIVED), ratio to medium = 50x
+plain medium (air-eq)    V=0.1mL OCR=10 rho=1e+07 f=0.7: flow = 0.00474 mL/min
+plain medium (air-eq)    V=0.1mL OCR=60 rho=3e+07 f=0.5: flow = 0.119 mL/min
+plain medium (air-eq)    V=1.0mL OCR=60 rho=3e+07 f=0.5: flow = 1.19 mL/min
+plain medium (air-eq)    V=1.0mL OCR=120 rho=1e+08 f=0.3: flow = 13.3 mL/min
+whole blood equiv (Hb)   V=0.1mL OCR=10 rho=1e+07 f=0.7: flow = 9.55e-05 mL/min
+whole blood equiv (Hb)   V=0.1mL OCR=60 rho=3e+07 f=0.5: flow = 0.00241 mL/min
+whole blood equiv (Hb)   V=1.0mL OCR=60 rho=3e+07 f=0.5: flow = 0.0241 mL/min
+whole blood equiv (Hb)   V=1.0mL OCR=120 rho=1e+08 f=0.3: flow = 0.267 mL/min
+
+=== 3. Hagen-Poiseuille: max straight channel length for that flow at a pressure budget ===
+dP = 128 mu L q / (pi d^4)  ->  L_max = dP pi d^4 / (128 mu q); wall shear tau = 32 mu q /(pi d^3)
+mid case total flow (plain medium, 1 mL, OCR 60, 3e7/mL, f 0.5) = 1.19 mL/min
+d=100um n=  1 dP=   2kPa  Lmax=      0.32 mm  tau= 158.022 Pa
+d=100um n=  1 dP=  10kPa  Lmax=      1.58 mm  tau= 158.022 Pa
+d=100um n= 10 dP=   2kPa  Lmax=      3.16 mm  tau=  15.802 Pa
+d=100um n= 10 dP=  10kPa  Lmax=     15.82 mm  tau=  15.802 Pa
+d=100um n=100 dP=   2kPa  Lmax=     31.64 mm  tau=   1.580 Pa
+d=100um n=100 dP=  10kPa  Lmax=    158.21 mm  tau=   1.580 Pa
+d=200um n=  1 dP=   2kPa  Lmax=      5.06 mm  tau=  19.753 Pa
+d=200um n=  1 dP=  10kPa  Lmax=     25.31 mm  tau=  19.753 Pa
+d=200um n= 10 dP=   2kPa  Lmax=     50.63 mm  tau=   1.975 Pa
+d=200um n= 10 dP=  10kPa  Lmax=    253.13 mm  tau=   1.975 Pa
+d=200um n=100 dP=   2kPa  Lmax=    506.26 mm  tau=   0.198 Pa
+d=200um n=100 dP=  10kPa  Lmax=   2531.29 mm  tau=   0.198 Pa
+d=500um n=  1 dP=   2kPa  Lmax=    197.76 mm  tau=   1.264 Pa
+d=500um n=  1 dP=  10kPa  Lmax=    988.78 mm  tau=   1.264 Pa
+d=500um n= 10 dP=   2kPa  Lmax=   1977.57 mm  tau=   0.126 Pa
+d=500um n= 10 dP=  10kPa  Lmax=   9887.84 mm  tau=   0.126 Pa
+d=500um n=100 dP=   2kPa  Lmax=  19775.68 mm  tau=   0.013 Pa
+d=500um n=100 dP=  10kPa  Lmax=  98878.39 mm  tau=   0.013 Pa
+
+=== 4. Hydraulic power scale comparison ===
+Clone claimed hydraulic power p*Q = 460 W (DERIVED from company claims) vs claimed pump 500 W electrical
+tissue loop, 30 mm channels d=200um n=10: dP=1185.2 Pa, hydraulic power=23.6 uW
+tissue loop, 30 mm channels d=100um n=100: dP=1896.3 Pa, hydraulic power=37.7 uW
+pressure ratio actuator/tissue-loop (100 psi vs 10 kPa budget) = 69x
+
+=== 5. Osmolality check for sharing an RFB electrolyte (ideal van 't Hoff, DERIVED) ===
+ZnI2 0.5 M -> ~1500 mOsm/L ideal (3 ions) vs ~290 mOsm/kg plasma (textbook)  ratio 5.2x
+ZnI2 1.0 M -> ~3000 mOsm/L ideal (3 ions) vs ~290 mOsm/kg plasma (textbook)  ratio 10.3x
+ZnI2 3.5 M -> ~10500 mOsm/L ideal (3 ions) vs ~290 mOsm/kg plasma (textbook)  ratio 36.2x
+
+DONE

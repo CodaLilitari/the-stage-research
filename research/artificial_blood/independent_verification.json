@@ -1,0 +1,54 @@
+{
+  "checks": {
+    "source_matches_frozen_run": true,
+    "144_unique_cases": true,
+    "recount_threshold_outcomes": true,
+    "recount_beta_outcomes": true,
+    "independent_unit_conversion_and_mass_balance": true,
+    "dilute_analytic_limit_refines": true,
+    "dilute_analytic_limit_within_0_1_percent": true,
+    "four_saved_cases_reproduce": true
+  },
+  "passed": 8,
+  "count": 8,
+  "dilute_limit": [
+    {
+      "cells": 24,
+      "actual": 2.6135437905488953e-09,
+      "linear_analytic_cell_center": 2.6083012724636837e-09,
+      "relative_error": 0.0020099357925243795
+    },
+    {
+      "cells": 48,
+      "actual": 2.603332481328921e-09,
+      "linear_analytic_cell_center": 2.6022514313870224e-09,
+      "relative_error": 0.00041542870487433964
+    },
+    {
+      "cells": 96,
+      "actual": 2.6007785164557873e-09,
+      "linear_analytic_cell_center": 2.6007397034883333e-09,
+      "relative_error": 1.4923818558980881e-05
+    }
+  ],
+  "reruns": [
+    {
+      "row": 0,
+      "absolute_difference": 6.938893903907228e-18
+    },
+    {
+      "row": 35,
+      "absolute_difference": 0.0
+    },
+    {
+      "row": 73,
+      "absolute_difference": 1.3010426069826053e-18
+    },
+    {
+      "row": 143,
+      "absolute_difference": 1.4094628242311558e-18
+    }
+  ],
+  "worst_mass_balance": 1.8170886497060643e-08,
+  "scope": "Independent arithmetic, analytic limiting solution and subset reproducibility. Not validation against living tissue. PF0 original monotonicity failure remains a reported failure."
+}

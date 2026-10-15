@@ -1,0 +1,155 @@
+{
+  "scope": "Arithmetic scenarios only: observed/derived rates are not measured qmax; no clinical or wetlab inference",
+  "arithmetic": {
+    "source_units": "micromoles, not millimoles",
+    "bulk_mol_m3_s": "0.0001000",
+    "derived_mol_cell_s": "1E-19",
+    "derived_umol_per_million_cells_hour": "0.0003600",
+    "printed_mol_cell_s": "9.722222222222222222222222222E-18",
+    "printed_over_derived": "97.22222222222222222222222222",
+    "rhee_final_collagen_mg_ml_before_contraction": "1.35",
+    "rhee_required_net_extra_inflow_ul_min_if_steady_liquid": "2",
+    "mm_slope_at_C005_over_slope_at_zero": 0.12886259040105194,
+    "mm_fraction_qmax_at_C005": 0.6410256410256411
+  },
+  "provider_replay": {
+    "n": 972,
+    "pass": 460,
+    "numeric_max_abs_differences": {
+      "q_epi_mol_m3_s": 0,
+      "cell_density_m3": 0,
+      "q_derm_mol_m3_s": 0,
+      "D_derm_m2_s": 0,
+      "P_surf_m_s": 0,
+      "P_wall_m_s": 0,
+      "H_m": 0,
+      "min_free_O2_mol_m3": 7.077671781985373e-15,
+      "min_pO2_mmHg": 5.286437954055145e-12,
+      "fraction_below_PF0_threshold": 0,
+      "surface_fraction_of_delivery": 6.983302824892235e-14,
+      "relative_mass_balance_error": 3.2018106705877023e-13,
+      "thiele_modulus_dermis": 0,
+      "thiele_modulus_epidermis": 0,
+      "biot_wall": 0
+    },
+    "categorical_mismatches": []
+  },
+  "corrected_scenario_count": 729,
+  "group_counts": {
+    "bulk_occlusion_unit_corrected_scenario": {
+      "n": 243,
+      "original_pass": 243,
+      "aligned_pass": 243
+    },
+    "assumed_resting_bulk_scenario": {
+      "n": 243,
+      "original_pass": 243,
+      "aligned_pass": 243
+    },
+    "reported_per_cell_times_ROI_density_scenario": {
+      "n": 243,
+      "original_pass": 217,
+      "aligned_pass": 216
+    }
+  },
+  "original_mesh_passes": 703,
+  "aligned_mesh_passes": 702,
+  "max_mesh_min_difference": 0.009376185302619092,
+  "max_aligned_mass_balance": 1.4043787640854138e-07,
+  "mesh_classification_changes": [
+    {
+      "id": 550,
+      "q_scenario": "reported_per_cell_times_ROI_density_scenario",
+      "density_case": "stated_conc_2e6_per_mL",
+      "D_case": "cheema_34pct_compressed",
+      "surface_case": "stucker_lower_bound",
+      "wall_case": "low_5e-6",
+      "height_case": "H_1000um",
+      "q_epi": 0.00972,
+      "q_derm": 2.38e-05,
+      "D_derm": 1.7e-10,
+      "D_epi": 1e-09,
+      "P_wall": 5e-06,
+      "P_surf": 1.8038641150077831e-06,
+      "H": 0.001,
+      "h_epi": 0.0001,
+      "Km": 0.028,
+      "C_lumen": 0.2,
+      "C_air": 0.2,
+      "Lx": 0.0002,
+      "nx": 36,
+      "ny": 54,
+      "original_min": 0.050259261760648696,
+      "aligned_min": 0.046006431852619864,
+      "original_pass": true,
+      "aligned_pass": false,
+      "aligned_ny": 100,
+      "original_epi_um": 92.59259259259258,
+      "aligned_epi_um": 100.0,
+      "aligned_mass_balance": 2.140315059672848e-13
+    }
+  ],
+  "near_threshold_refinements": [
+    {
+      "id": 551,
+      "coarse_min": 0.04600665574262242,
+      "fine_min": 0.046056937529812256,
+      "coarse_pass": false,
+      "fine_pass": false,
+      "absolute_difference": 5.0281787189833393e-05,
+      "fine_mass_balance": 3.346553454689152e-13
+    },
+    {
+      "id": 550,
+      "coarse_min": 0.046006431852619864,
+      "fine_min": 0.046056710989048365,
+      "coarse_pass": false,
+      "fine_pass": false,
+      "absolute_difference": 5.027913642850074e-05,
+      "fine_mass_balance": 3.211143048829927e-13
+    },
+    {
+      "id": 549,
+      "coarse_min": 0.04581936027265956,
+      "fine_min": 0.04586716961401577,
+      "coarse_pass": false,
+      "fine_pass": false,
+      "absolute_difference": 4.780934135621001e-05,
+      "fine_mass_balance": 3.5861211142191465e-13
+    },
+    {
+      "id": 705,
+      "coarse_min": 0.054778773194645546,
+      "fine_min": 0.054800005817178074,
+      "coarse_pass": true,
+      "fine_pass": true,
+      "absolute_difference": 2.12326225325285e-05,
+      "fine_mass_balance": 1.382870108177068e-10
+    },
+    {
+      "id": 706,
+      "coarse_min": 0.054819843521583644,
+      "fine_min": 0.05484098116710877,
+      "coarse_pass": true,
+      "fine_pass": true,
+      "absolute_difference": 2.113764552512387e-05,
+      "fine_mass_balance": 1.0932641184556536e-10
+    },
+    {
+      "id": 707,
+      "coarse_min": 0.05481985928123645,
+      "fine_min": 0.05484099685945839,
+      "coarse_pass": true,
+      "fine_pass": true,
+      "absolute_difference": 2.1137578221940012e-05,
+      "fine_mass_balance": 7.97265945867949e-11
+    }
+  ],
+  "independent_analytic_robin_check": {
+    "analytic_min": 0.17200000000000001,
+    "solver_cell_center_min": 0.1720000000156375,
+    "absolute_difference": 1.563749130184533e-11,
+    "pass": true
+  },
+  "seconds": 24.391192148
+}

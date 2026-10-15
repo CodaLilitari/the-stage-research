@@ -1,0 +1,556 @@
+{
+  "checks": [
+    {
+      "details": "malformed_or_forbidden",
+      "name": "reject_None",
+      "passed": true
+    },
+    {
+      "details": "malformed_or_forbidden",
+      "name": "reject_{'action': 'ka'}",
+      "passed": true
+    },
+    {
+      "details": "malformed_or_forbidden",
+      "name": "reject_'delete_archive'",
+      "passed": true
+    },
+    {
+      "details": "malformed_or_forbidden",
+      "name": "reject_''",
+      "passed": true
+    },
+    {
+      "details": "A repeated command ID cannot move again.",
+      "name": "duplicate_no_second_transition",
+      "passed": true
+    },
+    {
+      "details": "No motion on a command bound to an earlier observation.",
+      "name": "stale_observation_rejected",
+      "passed": true
+    },
+    {
+      "details": "Logical time is controlled by the simulation; no physical timing is tested.",
+      "name": "expired_command_rejected",
+      "passed": true
+    },
+    {
+      "details": "Synchronous harness has no asynchronous pending queue.",
+      "name": "stop_latches_all_future_dispatch",
+      "passed": true
+    },
+    {
+      "details": "No-op is available but excluded from all scored probes.",
+      "name": "noop_audited_without_motion",
+      "passed": true
+    },
+    {
+      "details": "Boundary condition only; never a probe.",
+      "name": "boundary_clips_without_escape",
+      "passed": true
+    },
+    {
+      "details": "Digest checked against the recorded bytes.",
+      "name": "receipt_tampering_detected",
+      "passed": true
+    },
+    {
+      "details": "Transition recomputation catches a changed post-state even with new hash.",
+      "name": "rehashed_false_motion_detected",
+      "passed": true
+    },
+    {
+      "details": "24 possible true permutations x 9 exposure lengths; identical learning evidence yields identical candidate sets.",
+      "name": "exact_active_replay_equivalence",
+      "passed": true
+    },
+    {
+      "details": [
+        24,
+        6,
+        2,
+        1,
+        1
+      ],
+      "name": "bijection_prior_counts",
+      "passed": true
+    },
+    {
+      "details": "Interface check only; no adversarial process isolation or confidentiality claim.",
+      "name": "receipt_structure_contains_no_mapping_key",
+      "passed": true
+    }
+  ],
+  "exhaustive_equivalence_cases": 216,
+  "fault_receipts": [
+    {
+      "authorized": false,
+      "command_id": "bad",
+      "deadline": 10000,
+      "denial_reason": "malformed_or_forbidden",
+      "executed": null,
+      "logical_time": 0,
+      "outcome": "rejected_no_transition",
+      "post": {
+        "observation_id": "fault:malformed:obs:0",
+        "position": [
+          5,
+          5
+        ],
+        "sequence": 0
+      },
+      "pre": {
+        "observation_id": "fault:malformed:obs:0",
+        "position": [
+          5,
+          5
+        ],
+        "sequence": 0
+      },
+      "receipt_hash": "dcc76aa19aa736777f523938d37282e44be9d6bbf29e473c7ef74c72df8496e2",
+      "requested": null,
+      "session": "fault:malformed",
+      "source_observation": "fault:malformed:obs:0"
+    },
+    {
+      "authorized": false,
+      "command_id": "bad",
+      "deadline": 10000,
+      "denial_reason": "malformed_or_forbidden",
+      "executed": null,
+      "logical_time": 0,
+      "outcome": "rejected_no_transition",
+      "post": {
+        "observation_id": "fault:malformed:obs:0",
+        "position": [
+          5,
+          5
+        ],
+        "sequence": 0
+      },
+      "pre": {
+        "observation_id": "fault:malformed:obs:0",
+        "position": [
+          5,
+          5
+        ],
+        "sequence": 0
+      },
+      "receipt_hash": "8ee4a5d2fd10379e9c16bd0b0f8e5569817beb41dfa601ed3454d996fbfa17ed",
+      "requested": {
+        "action": "ka"
+      },
+      "session": "fault:malformed",
+      "source_observation": "fault:malformed:obs:0"
+    },
+    {
+      "authorized": false,
+      "command_id": "bad",
+      "deadline": 10000,
+      "denial_reason": "malformed_or_forbidden",
+      "executed": null,
+      "logical_time": 0,
+      "outcome": "rejected_no_transition",
+      "post": {
+        "observation_id": "fault:malformed:obs:0",
+        "position": [
+          5,
+          5
+        ],
+        "sequence": 0
+      },
+      "pre": {
+        "observation_id": "fault:malformed:obs:0",
+        "position": [
+          5,
+          5
+        ],
+        "sequence": 0
+      },
+      "receipt_hash": "d67417de1a33cdfe5513c8ca3e812598b401b2b1471a2dd20f4889b7a4781b68",
+      "requested": "delete_archive",
+      "session": "fault:malformed",
+      "source_observation": "fault:malformed:obs:0"
+    },
+    {
+      "authorized": false,
+      "command_id": "bad",
+      "deadline": 10000,
+      "denial_reason": "malformed_or_forbidden",
+      "executed": null,
+      "logical_time": 0,
+      "outcome": "rejected_no_transition",
+      "post": {
+        "observation_id": "fault:malformed:obs:0",
+        "position": [
+          5,
+          5
+        ],
+        "sequence": 0
+      },
+      "pre": {
+        "observation_id": "fault:malformed:obs:0",
+        "position": [
+          5,
+          5
+        ],
+        "sequence": 0
+      },
+      "receipt_hash": "4f0bc7593737faf3df0fcdf949900bcb2cdce12872faa76fd073088307fe865e",
+      "requested": "",
+      "session": "fault:malformed",
+      "source_observation": "fault:malformed:obs:0"
+    },
+    {
+      "authorized": true,
+      "command_id": "same",
+      "deadline": 10000,
+      "denial_reason": null,
+      "executed": "ka",
+      "logical_time": 0,
+      "outcome": "verified_in_simulator",
+      "post": {
+        "observation_id": "fault:duplicate:obs:1",
+        "position": [
+          5,
+          4
+        ],
+        "sequence": 1
+      },
+      "pre": {
+        "observation_id": "fault:duplicate:obs:0",
+        "position": [
+          5,
+          5
+        ],
+        "sequence": 0
+      },
+      "receipt_hash": "feab6591c801072ec30f326c6ba649982a203716ca23feaacf18c3434289a18a",
+      "requested": "ka",
+      "session": "fault:duplicate",
+      "source_observation": "fault:duplicate:obs:0"
+    },
+    {
+      "authorized": false,
+      "command_id": "same",
+      "deadline": 10000,
+      "denial_reason": "duplicate_command",
+      "executed": null,
+      "logical_time": 0,
+      "outcome": "rejected_no_transition",
+      "post": {
+        "observation_id": "fault:duplicate:obs:1",
+        "position": [
+          5,
+          4
+        ],
+        "sequence": 1
+      },
+      "pre": {
+        "observation_id": "fault:duplicate:obs:1",
+        "position": [
+          5,
+          4
+        ],
+        "sequence": 1
+      },
+      "receipt_hash": "91c94b11b986a8052d8a1d3c9dfe3ff4127d4c3ae8ff94650866462faeab4290",
+      "requested": "ka",
+      "session": "fault:duplicate",
+      "source_observation": "fault:duplicate:obs:1"
+    },
+    {
+      "authorized": true,
+      "command_id": "advance",
+      "deadline": 10000,
+      "denial_reason": null,
+      "executed": "zu",
+      "logical_time": 0,
+      "outcome": "verified_in_simulator",
+      "post": {
+        "observation_id": "fault:stale:obs:1",
+        "position": [
+          6,
+          5
+        ],
+        "sequence": 1
+      },
+      "pre": {
+        "observation_id": "fault:stale:obs:0",
+        "position": [
+          5,
+          5
+        ],
+        "sequence": 0
+      },
+      "receipt_hash": "4a925628940dd32a8454a99dcb2ba15ef36a81a04585ce9e8be4e17f775629c6",
+      "requested": "zu",
+      "session": "fault:stale",
+      "source_observation": "fault:stale:obs:0"
+    },
+    {
+      "authorized": false,
+      "command_id": "stale",
+      "deadline": 10000,
+      "denial_reason": "stale_observation",
+      "executed": null,
+      "logical_time": 0,
+      "outcome": "rejected_no_transition",
+      "post": {
+        "observation_id": "fault:stale:obs:1",
+        "position": [
+          6,
+          5
+        ],
+        "sequence": 1
+      },
+      "pre": {
+        "observation_id": "fault:stale:obs:1",
+        "position": [
+          6,
+          5
+        ],
+        "sequence": 1
+      },
+      "receipt_hash": "14299827a233d472c60280c22b6f0d7d901d76484f8d23b3a57d73842e837288",
+      "requested": "zu",
+      "session": "fault:stale",
+      "source_observation": "fault:stale:obs:0"
+    },
+    {
+      "authorized": false,
+      "command_id": "late",
+      "deadline": 3,
+      "denial_reason": "expired_command",
+      "executed": null,
+      "logical_time": 4,
+      "outcome": "rejected_no_transition",
+      "post": {
+        "observation_id": "fault:expiry:obs:0",
+        "position": [
+          5,
+          5
+        ],
+        "sequence": 0
+      },
+      "pre": {
+        "observation_id": "fault:expiry:obs:0",
+        "position": [
+          5,
+          5
+        ],
+        "sequence": 0
+      },
+      "receipt_hash": "332d4e4f144f9e3aec4b132be7ede7e9a5b51ddc4d72beae617d695839ed5a78",
+      "requested": "ka",
+      "session": "fault:expiry",
+      "source_observation": "fault:expiry:obs:0"
+    },
+    {
+      "authorized": true,
+      "command_id": "stop",
+      "deadline": 10000,
+      "denial_reason": null,
+      "executed": "stop",
+      "logical_time": 0,
+      "outcome": "verified_in_simulator",
+      "post": {
+        "observation_id": "fault:stop:obs:1",
+        "position": [
+          5,
+          5
+        ],
+        "sequence": 1
+      },
+      "pre": {
+        "observation_id": "fault:stop:obs:0",
+        "position": [
+          5,
+          5
+        ],
+        "sequence": 0
+      },
+      "receipt_hash": "e82c336ea19eea20d261d73cfe86e848fd2685c854bd0c68e8671f0bb0509b62",
+      "requested": "stop",
+      "session": "fault:stop",
+      "source_observation": "fault:stop:obs:0"
+    },
+    {
+      "authorized": false,
+      "command_id": "after:ka",
+      "deadline": 10000,
+      "denial_reason": "stop_latched",
+      "executed": null,
+      "logical_time": 0,
+      "outcome": "rejected_no_transition",
+      "post": {
+        "observation_id": "fault:stop:obs:1",
+        "position": [
+          5,
+          5
+        ],
+        "sequence": 1
+      },
+      "pre": {
+        "observation_id": "fault:stop:obs:1",
+        "position": [
+          5,
+          5
+        ],
+        "sequence": 1
+      },
+      "receipt_hash": "cd25e950f057a3fe802f802e40cc4a911d2d891c80e48671641d4b00e7ca624c",
+      "requested": "ka",
+      "session": "fault:stop",
+      "source_observation": "fault:stop:obs:1"
+    },
+    {
+      "authorized": false,
+      "command_id": "after:zu",
+      "deadline": 10000,
+      "denial_reason": "stop_latched",
+      "executed": null,
+      "logical_time": 0,
+      "outcome": "rejected_no_transition",
+      "post": {
+        "observation_id": "fault:stop:obs:1",
+        "position": [
+          5,
+          5
+        ],
+        "sequence": 1
+      },
+      "pre": {
+        "observation_id": "fault:stop:obs:1",
+        "position": [
+          5,
+          5
+        ],
+        "sequence": 1
+      },
+      "receipt_hash": "e7838708ac6d065e1edc523e3023c2c6eabb92a8f7b9141e89666c36cf689957",
+      "requested": "zu",
+      "session": "fault:stop",
+      "source_observation": "fault:stop:obs:1"
+    },
+    {
+      "authorized": false,
+      "command_id": "after:mi",
+      "deadline": 10000,
+      "denial_reason": "stop_latched",
+      "executed": null,
+      "logical_time": 0,
+      "outcome": "rejected_no_transition",
+      "post": {
+        "observation_id": "fault:stop:obs:1",
+        "position": [
+          5,
+          5
+        ],
+        "sequence": 1
+      },
+      "pre": {
+        "observation_id": "fault:stop:obs:1",
+        "position": [
+          5,
+          5
+        ],
+        "sequence": 1
+      },
+      "receipt_hash": "f4d9ed5009aae2cdc208cc6e7dfbfd4e68403f5607b358aaf0bcc0d25b92763d",
+      "requested": "mi",
+      "session": "fault:stop",
+      "source_observation": "fault:stop:obs:1"
+    },
+    {
+      "authorized": false,
+      "command_id": "after:pe",
+      "deadline": 10000,
+      "denial_reason": "stop_latched",
+      "executed": null,
+      "logical_time": 0,
+      "outcome": "rejected_no_transition",
+      "post": {
+        "observation_id": "fault:stop:obs:1",
+        "position": [
+          5,
+          5
+        ],
+        "sequence": 1
+      },
+      "pre": {
+        "observation_id": "fault:stop:obs:1",
+        "position": [
+          5,
+          5
+        ],
+        "sequence": 1
+      },
+      "receipt_hash": "58f1cc396fe2e40d9bc89af78923398a55c1c9f4e6ee9ba9122e1c21c852bd1f",
+      "requested": "pe",
+      "session": "fault:stop",
+      "source_observation": "fault:stop:obs:1"
+    },
+    {
+      "authorized": true,
+      "command_id": "noop",
+      "deadline": 10000,
+      "denial_reason": null,
+      "executed": "noop",
+      "logical_time": 0,
+      "outcome": "verified_in_simulator",
+      "post": {
+        "observation_id": "fault:noop:obs:1",
+        "position": [
+          5,
+          5
+        ],
+        "sequence": 1
+      },
+      "pre": {
+        "observation_id": "fault:noop:obs:0",
+        "position": [
+          5,
+          5
+        ],
+        "sequence": 0
+      },
+      "receipt_hash": "957d8cd477b293bcf459e3af3345d6ac5749b28e285efefff2824baf3e2f5b12",
+      "requested": "noop",
+      "session": "fault:noop",
+      "source_observation": "fault:noop:obs:0"
+    },
+    {
+      "authorized": true,
+      "command_id": "wall",
+      "deadline": 10000,
+      "denial_reason": null,
+      "executed": "ka",
+      "logical_time": 0,
+      "outcome": "verified_in_simulator",
+      "post": {
+        "observation_id": "fault:boundary:obs:1",
+        "position": [
+          0,
+          0
+        ],
+        "sequence": 1
+      },
+      "pre": {
+        "observation_id": "fault:boundary:obs:0",
+        "position": [
+          0,
+          0
+        ],
+        "sequence": 0
+      },
+      "receipt_hash": "f0f787aad12109fae53471012bbf189b8a1a3d265152bf6db0924f7c0448cfa4",
+      "requested": "ka",
+      "session": "fault:boundary",
+      "source_observation": "fault:boundary:obs:0"
+    }
+  ],
+  "passed": 15,
+  "total": 15
+}

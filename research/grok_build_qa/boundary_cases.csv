@@ -1,0 +1,30 @@
+id,expected,original,corrected,original_pass,corrected_pass
+linear_zero_power_positive_demand,,"[0.0, 0.0]",,False,True
+fixed_dp_zero_power_positive_demand,,"[0.0, 0.0]",,False,True
+positive_but_reversed_interval,,"[1, 1]",,False,True
+zero_flow_positive_branch_demand,False,True,False,False,True
+stagnant_branch_positive_demand,False,True,False,False,True
+zero_transfer_ceiling_positive_demand,False,True,False,False,True
+zero_power_positive_flow,False,True,False,False,True
+thousandfold_power_budget_excess,False,True,False,False,True
+zero_power_complete_flag,False,True,False,False,True
+outlet_above_inlet,ValueError,-1e-16,ValueError,False,True
+negative_pressure,ValueError,-1.0,ValueError,False,True
+gamma_infinite_demand,ValueError,0.0,ValueError,False,True
+gamma_nan_concentration,ValueError,nan,ValueError,False,True
+global_negative_demand,ValueError,True,ValueError,False,True
+global_nan_zero_demand,ValueError,True,ValueError,False,True
+local_negative_demand,ValueError,True,ValueError,False,True
+local_nan_fraction,ValueError,True,ValueError,False,True
+local_bad_late_branch,ValueError,False,ValueError,False,True
+branch_fraction_above_one,ValueError,1,ValueError,False,True
+series_mismatched_arrays,ValueError,"{""segment_inlet_mol_m3"": [1.0], ""segment_delivery_mol_s"": [0.2], ""delivered_once_mol_s"": 0.2, ""end_to_end_mol_s"": 0.19999999999999996, ""carrier_capacity_mol_s"": 1.0, ""path_outlet_mol_m3"": 0.8}",ValueError,False,True
+series_nan_drop,ValueError,"{""segment_inlet_mol_m3"": [1.0], ""segment_delivery_mol_s"": [""nan""], ""delivered_once_mol_s"": ""nan"", ""end_to_end_mol_s"": ""nan"", ""carrier_capacity_mol_s"": 1.0, ""path_outlet_mol_m3"": ""nan""}",ValueError,False,True
+local_mismatched_arrays,ValueError,ValueError,ValueError,True,True
+zero_supply_zero_demand,True,True,True,True,True
+zero_power_zero_demand_interval,"[0.0, 0.0]","[0.0, 0.0]","[0.0, 0.0]",True,True
+positive_interior_local,True,True,True,True,True
+positive_interior_power,True,True,True,True,True
+zero_content_positive_demand,,,,True,True
+zero_flow_global_positive_demand,False,False,False,True,True
+fraction_sum_invalid,ValueError,ValueError,ValueError,True,True

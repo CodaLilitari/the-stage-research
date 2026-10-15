@@ -1,0 +1,207 @@
+{
+  "scope": "Independent local review of corrected PF-DATA1 analysis; not external scientific replication. No producer analysis module was imported. One original PF0 solver case replayed; not all432 and not a second independent transport solver.",
+  "checks": [
+    {
+      "name": "all frozen source hashes",
+      "passed": true,
+      "detail": 9
+    },
+    {
+      "name": "producer manifest hashes and sizes",
+      "passed": true,
+      "detail": 35
+    },
+    {
+      "name": "primary table exact 140-cell correspondence",
+      "passed": true,
+      "detail": {
+        "rows": 20,
+        "cells": 140
+      }
+    },
+    {
+      "name": "saved primary audit agrees with direct extraction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "normal_flux moments and conditional t interval",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "occlusion_absolute moments and conditional t interval",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "occlusion_relative_percent moments and conditional t interval",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "corrected age cohorts and means",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "constant direct OLS, SSE, AICc and refit LOOCV",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "proportional direct OLS, SSE, AICc and refit LOOCV",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "affine direct OLS, SSE, AICc and refit LOOCV",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlation and distinct slope/intercept errors",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "20 per-subject depth and two-point transformations",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "conditional scenario assumptions disclosed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "three hypothetical gas/qmax conversions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "original and copied PF0 solver exact hashes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all432 grid keys and threshold counts",
+      "passed": true,
+      "detail": {
+        "low_as_saturating": 144,
+        "high_as_saturating": 143,
+        "high_at_inlet_reference": 138
+      }
+    },
+    {
+      "name": "all432 delivery units and mass-balance arithmetic",
+      "passed": true,
+      "detail": 3.2060386185648544e-07
+    },
+    {
+      "name": "seven failed cases all400um",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "saved11 refinement arithmetic and class labels",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "one near-threshold original-solver replay",
+      "passed": true,
+      "detail": {
+        "case": [
+          0.0004,
+          0.5,
+          5e-06,
+          16.0
+        ],
+        "qmax": 0.0017886142589453018,
+        "minimum": 0.049402986083967884,
+        "maximum_field_difference": 0.0
+      }
+    },
+    {
+      "name": "original PF0 stress outcome retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "claimed biological conclusions remain withdrawn",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "passed": 23,
+  "total": 23,
+  "source_table_cells": 140,
+  "rows_reviewed": 20,
+  "saved_pf0_rows_recounted": 432,
+  "solver_cases_replayed": 1,
+  "independent_models": {
+    "constant": {
+      "coefficients": [
+        0.0365
+      ],
+      "sse": 0.002957,
+      "aicc": -171.68036388037459,
+      "direct_refit_loocv_mse": 0.00016382271468144043
+    },
+    "proportional": {
+      "coefficients": [
+        0.054369338180139636
+      ],
+      "sse": 0.00910965274652357,
+      "aicc": -149.17717684357316,
+      "direct_refit_loocv_mse": 0.0005115418208797968
+    },
+    "affine": {
+      "coefficients": [
+        0.04016772488357118,
+        -0.006933317360247983
+      ],
+      "sse": 0.0028927974812441035,
+      "aicc": -169.32527064038072,
+      "direct_refit_loocv_mse": 0.00018333862104268664
+    }
+  },
+  "replay": {
+    "depth_um": 400.0,
+    "flow_uL_min": 0.5,
+    "wall_permeability_mm_s": 0.005,
+    "beta_hypothetical": 16.0,
+    "minimum_free_tissue_mol_m3": 0.049402986083967884,
+    "outlet_free_mol_m3": 0.19626468755025395,
+    "fraction_below_threshold": 0.024739583333333332,
+    "all_cells_above_threshold": false,
+    "uptake_mol_s": 4.98041660015003e-13,
+    "delivery_mol_s": 4.980416599661419e-13,
+    "relative_mass_balance_error": 9.81064725722057e-11,
+    "maximum_relative_station_residual": 4.277848411332326e-15,
+    "necessary_local_bound_passes": true,
+    "necessary_supply_bound_passes": true,
+    "infinite_flow_zero_order_conservative_minimum": -0.014633711073436195
+  },
+  "limitations": [
+    "Conditional sampling intervals omit instrument/calibration/rounding/selection effects.",
+    "Demand range is from historical literature, not measured for these20 volunteers; gas reference remains assumed.",
+    "Three qmax scenarios and retained D/Km/inlet/threshold/geometry do not bound real skin constructs.",
+    "No independent p-value-library implementation or biological mechanism identification performed.",
+    "No published physical measurement or tissue viability result generated."
+  ],
+  "source_hashes": {
+    "raw/stuecker2002_table1.csv": "10ac98cb0645d445c779b5c3bf4a268cb9e9e953316a72e45328a16c2c6efaf3",
+    "primary/article.html": "7ef16479b4611317d6c740cc9a28af52cef5b5fed2b1dccdbb4a735fc11ce1db",
+    "primary/table_verification.json": "b8ec6f1322585b06b160b8397d179cc74e9e96c6e010c67c3aab351086ee58c8",
+    "corrected/analysis.py": "c84a44c9a7cb36d3e5dea36e166cd33ceb43094b9a72f050549c070278bf8207",
+    "corrected/summary.json": "3e103a1e7599f85bbbce2a9da1a21f1fd04b1569bc4d50c20920e218a08517c5",
+    "corrected/pf0_sensitivity.py": "68834f571883fb64f2019456697ecc0d6d03aca9eb3c7d006b580871b73bfff1",
+    "corrected/pf0_cases.csv": "76fa2847d180f872abb88b3719eda6b07a83ce399d94bf24dd804445ee7c673d",
+    "corrected/pf0_results.json": "4711489a4d9e35d929f34a64b816fc8715cb72193e0fb1adcab57612a96ca999",
+    "report.txt": "45223de0492e8bfaba9a29d105f0674b85fa84a44073acec4e82f5229a346281",
+    "manifest.json": "71cd3aa94f9489114a1bb0440f8c28c9c500b751f02c4487c6fe06bf38e92b6e"
+  },
+  "qa_source_sha256": "21c9aa2e4b97458fb94b0a4327e94eb4540345e65e8a17094ded7cbbde7ae9aa"
+}

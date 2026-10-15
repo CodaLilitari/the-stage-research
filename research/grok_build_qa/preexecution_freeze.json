@@ -1,0 +1,27 @@
+{
+  "frozen_before_first_execution_utc": "2026-10-15T15:11:41.484872+00:00",
+  "authorship": "Original derivation/script: Grok Build; execution, adversarial checks and corrections: local Coda team working with Richard Pemberton",
+  "inputs": {
+    "original_answer.txt": "6594de276990ccf2b0daadb02a603d9a465c27304411a53f934e00e2399423ea",
+    "receipt.json": "f86a00438343c95c7351b009fb0f16d41e7db3b1bcc5b1d2459e1226dd212751",
+    "original.py": "00fd5b98815a22021d58c7cd6801eb7da19f1a8e4e35f98d293bfb1c3b826429"
+  },
+  "static_review": "All 803 lines inspected. Standard library only; no network or subprocess; main writes only toy_perfusion_out CSV/JSON relative to isolated working directory. Original not executed by provider.",
+  "imports": [
+    "from __future__ import annotations",
+    "import csv",
+    "import json",
+    "import math",
+    "import sys",
+    "from pathlib import Path"
+  ],
+  "planned_checks": [
+    "Execute original declared 105-row screen and supplied checks unchanged",
+    "Counterexamples: positive demand with zero power; positive local demand at zero flow, stagnant branch or zero ceiling; small positive flow at zero power budget",
+    "Reject outflow content above inflow; malformed arrays and nonfinite or negative inputs",
+    "Correct a separate copy with strict inequality comparisons and consistent input validation; preserve default sweep and supplied checks",
+    "Compare explicit Decimal arithmetic for representative interior points and series conservation"
+  ],
+  "scientific_scope": "Synthetic algebra/implementation validation only. Total oxygen content does not specify free concentration, binding, finite unloading, vascular geometry, tissue viability or a pump operating curve.",
+  "no_publication": true
+}

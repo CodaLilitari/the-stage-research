@@ -1,0 +1,168 @@
+[
+  {
+    "name": "dryad_dataset",
+    "url": "https://datadryad.org/api/v2/datasets/doi%3A10.5061%2Fdryad.xd2547drh",
+    "checked_utc": "2026-10-15T15:43:25.578075+00:00",
+    "status": 200,
+    "final_url": "https://datadryad.org/api/v2/datasets/doi%3A10.5061%2Fdryad.xd2547drh",
+    "bytes": 3994,
+    "sha256": "4cb99b2a3be2ec5dabc8ec64a61528f4200e82788c785746bd72dd017dd63a24",
+    "verified_fields": {
+      "title": "Biohybrid hand actuated by multiple human muscle tissues",
+      "versionNumber": 7,
+      "publicationDate": "2025-01-22",
+      "lastModificationDate": "2025-01-22",
+      "license": "https://spdx.org/licenses/CC0-1.0.html"
+    }
+  },
+  {
+    "name": "rcsb_policies",
+    "url": "https://www.rcsb.org/pages/policies",
+    "checked_utc": "2026-10-15T15:43:26.198388+00:00",
+    "status": 200,
+    "final_url": "https://www.rcsb.org/pages/policies",
+    "bytes": 56921,
+    "sha256": "a7435d14132082d80945131e90a5c0b136a6b0ec8a5291fa88d272e1f71fad2f"
+  },
+  {
+    "name": "pmc_copyright",
+    "url": "https://pmc.ncbi.nlm.nih.gov/about/copyright/",
+    "checked_utc": "2026-10-15T15:43:26.592879+00:00",
+    "status": 200,
+    "final_url": "https://pmc.ncbi.nlm.nih.gov/about/copyright/",
+    "bytes": 85464,
+    "sha256": "aced757ff1b7b88870e96c89bf4360999df206749bf43723d8e54f0a8c564628"
+  },
+  {
+    "name": "cc0_legalcode",
+    "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode.txt",
+    "checked_utc": "2026-10-15T15:43:26.942950+00:00",
+    "status": 200,
+    "final_url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode.txt",
+    "bytes": 7048,
+    "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+    "saved_as": "licenses/CC0-1.0.txt"
+  },
+  {
+    "name": "ccby4_legalcode",
+    "url": "https://creativecommons.org/licenses/by/4.0/legalcode.txt",
+    "checked_utc": "2026-10-15T15:43:27.854584+00:00",
+    "status": 200,
+    "final_url": "https://creativecommons.org/licenses/by/4.0/legalcode.txt",
+    "bytes": 18657,
+    "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
+    "saved_as": "licenses/CC-BY-4.0.txt"
+  },
+  {
+    "name": "mit_spdx_text",
+    "url": "https://raw.githubusercontent.com/spdx/license-list-data/main/text/MIT.txt",
+    "checked_utc": "2026-10-15T15:43:27.984298+00:00",
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/spdx/license-list-data/main/text/MIT.txt",
+    "bytes": 1078,
+    "sha256": "b05785f9f18e6716bab63424b11454513b9943a222595b70411009202fc592b5",
+    "saved_as": "licenses/MIT-template.txt"
+  },
+  {
+    "name": "colabfold_license",
+    "url": "https://raw.githubusercontent.com/sokrypton/ColabFold/v1.6.3/LICENSE",
+    "checked_utc": "2026-10-15T15:43:28.190683+00:00",
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/sokrypton/ColabFold/v1.6.3/LICENSE",
+    "bytes": 1075,
+    "sha256": "f7a0429ad8a5ebc35994ba24d65a2962fc8c106ff28d2c7e43125ba4d2208108",
+    "first_nonempty_lines": [
+      "MIT License",
+      "Copyright (c) 2021 Sergey Ovchinnikov",
+      "Permission is hereby granted, free of charge, to any person obtaining a copy",
+      "of this software and associated documentation files (the \"Software\"), to deal",
+      "in the Software without restriction, including without limitation the rights"
+    ]
+  },
+  {
+    "name": "alphafold_readme",
+    "url": "https://raw.githubusercontent.com/google-deepmind/alphafold/main/README.md",
+    "checked_utc": "2026-10-15T15:43:28.374496+00:00",
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/google-deepmind/alphafold/main/README.md",
+    "bytes": 35387,
+    "sha256": "39a82c6f8ecfaf16872275167e98ff00109321f8de150edf5212dc9ed36f3763",
+    "license_lines": [
+      "AlphaFold 2 and its output are for theoretical modeling only. They are not",
+      "The AlphaFold parameters are made available under the terms of the Creative"
+    ]
+  },
+  {
+    "name": "numpy_license",
+    "url": "https://raw.githubusercontent.com/numpy/numpy/main/LICENSE.txt",
+    "checked_utc": "2026-10-15T15:43:28.582417+00:00",
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/numpy/numpy/main/LICENSE.txt",
+    "bytes": 1543,
+    "sha256": "1be1df33863f97a7bc1c4d67980bd6c69c9a6fef0a5ee76e6ad6cb91e56e8491",
+    "first_nonempty_lines": [
+      "Copyright (c) 2005-2025, NumPy Developers.",
+      "All rights reserved.",
+      "Redistribution and use in source and binary forms, with or without",
+      "modification, are permitted provided that the following conditions are",
+      "met:"
+    ]
+  },
+  {
+    "name": "scipy_license",
+    "url": "https://raw.githubusercontent.com/scipy/scipy/main/LICENSE.txt",
+    "checked_utc": "2026-10-15T15:43:28.773470+00:00",
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/scipy/scipy/main/LICENSE.txt",
+    "bytes": 1531,
+    "sha256": "221e59f5e910fd7f94e44f0dac77436a11338c285c6346232e4a850a50da0e94",
+    "first_nonempty_lines": [
+      "Copyright (c) 2001-2002 Enthought, Inc. 2003, SciPy Developers.",
+      "All rights reserved.",
+      "Redistribution and use in source and binary forms, with or without",
+      "modification, are permitted provided that the following conditions",
+      "are met:"
+    ]
+  },
+  {
+    "name": "matplotlib_license",
+    "url": "https://matplotlib.org/stable/project/license.html",
+    "checked_utc": "2026-10-15T15:43:28.972263+00:00",
+    "status": 200,
+    "final_url": "https://matplotlib.org/stable/project/license.html",
+    "bytes": 98898,
+    "sha256": "273d15fae1bb2156c49fa88c82aac87a7ddcc1c445639fe6529dc6c8ee253c04"
+  },
+  {
+    "name": "biopython_license",
+    "url": "https://raw.githubusercontent.com/biopython/biopython/master/LICENSE.rst",
+    "checked_utc": "2026-10-15T15:43:29.295714+00:00",
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/biopython/biopython/master/LICENSE.rst",
+    "bytes": 3267,
+    "sha256": "11d1ebcaad2eb9f0f09a3df1deb4aca99a4da366ae9ae70f828c7447a24de453",
+    "first_nonempty_lines": [
+      "Biopython is currently released under the \"Biopython License Agreement\"",
+      "(given in full below). Unless stated otherwise in individual file headers,",
+      "all Biopython's files are under the \"Biopython License Agreement\".",
+      "Some files are explicitly dual licensed under your choice of the",
+      "\"Biopython License Agreement\" or the \"BSD 3-Clause License\" (both given"
+    ]
+  },
+  {
+    "name": "mujoco_license",
+    "url": "https://raw.githubusercontent.com/google-deepmind/mujoco/main/LICENSE",
+    "checked_utc": "2026-10-15T15:43:29.513875+00:00",
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/google-deepmind/mujoco/main/LICENSE",
+    "bytes": 11358,
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "first_nonempty_lines": [
+      "                                 Apache License",
+      "                           Version 2.0, January 2004",
+      "                        http://www.apache.org/licenses/",
+      "   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION",
+      "   1. Definitions."
+    ]
+  }
+]

@@ -1,0 +1,510 @@
+{
+  "axis_effect_detail": {
+    "dermal_D_case": {
+      "cheema_11pct_compressed": {
+        "n": 324,
+        "pass": 153,
+        "pass_rate": 0.4722222222222222
+      },
+      "cheema_34pct_compressed": {
+        "n": 324,
+        "pass": 145,
+        "pass_rate": 0.44753086419753085
+      },
+      "dilute_gel_upper_bound": {
+        "n": 324,
+        "pass": 162,
+        "pass_rate": 0.5
+      }
+    },
+    "epidermal_demand_case": {
+      "balu_as_printed_mmol": {
+        "n": 243,
+        "pass": 0,
+        "pass_rate": 0.0
+      },
+      "balu_as_read_by_collaborator_umol": {
+        "n": 243,
+        "pass": 217,
+        "pass_rate": 0.8930041152263375
+      },
+      "balu_recomputed_from_own_inputs": {
+        "n": 243,
+        "pass": 0,
+        "pass_rate": 0.0
+      },
+      "textbook_resting_skin_bulk": {
+        "n": 243,
+        "pass": 243,
+        "pass_rate": 1.0
+      }
+    },
+    "rhee_density_reading": {
+      "4e6_cells_in_100uL": {
+        "n": 324,
+        "pass": 153,
+        "pass_rate": 0.4722222222222222
+      },
+      "4e6_cells_in_200uL": {
+        "n": 324,
+        "pass": 153,
+        "pass_rate": 0.4722222222222222
+      },
+      "stated_conc_2e6_per_mL": {
+        "n": 324,
+        "pass": 154,
+        "pass_rate": 0.47530864197530864
+      }
+    },
+    "surface_case": {
+      "open_ali": {
+        "n": 324,
+        "pass": 162,
+        "pass_rate": 0.5
+      },
+      "sealed": {
+        "n": 324,
+        "pass": 144,
+        "pass_rate": 0.4444444444444444
+      },
+      "stucker_lower_bound": {
+        "n": 324,
+        "pass": 154,
+        "pass_rate": 0.47530864197530864
+      }
+    },
+    "thickness_case": {
+      "H_1000um": {
+        "n": 324,
+        "pass": 154,
+        "pass_rate": 0.47530864197530864
+      },
+      "H_2000um": {
+        "n": 324,
+        "pass": 153,
+        "pass_rate": 0.4722222222222222
+      },
+      "H_500um": {
+        "n": 324,
+        "pass": 153,
+        "pass_rate": 0.4722222222222222
+      }
+    },
+    "wall_case": {
+      "high_2e-4": {
+        "n": 324,
+        "pass": 162,
+        "pass_rate": 0.5
+      },
+      "low_5e-6": {
+        "n": 324,
+        "pass": 136,
+        "pass_rate": 0.41975308641975306
+      },
+      "mid_5e-5": {
+        "n": 324,
+        "pass": 162,
+        "pass_rate": 0.5
+      }
+    }
+  },
+  "axis_pass_rate_range_larger_means_more_decisive": {
+    "dermal_D_case": 0.05246913580246915,
+    "epidermal_demand_case": 1.0,
+    "rhee_density_reading": 0.0030864197530864335,
+    "surface_case": 0.05555555555555558,
+    "thickness_case": 0.0030864197530864335,
+    "wall_case": 0.08024691358024694
+  },
+  "cases_above_PF0_threshold": 460,
+  "code_sha256": "05de597075e5a2e014d01d5477407b38d99008bfc32e655d26b5efcad88283a6",
+  "derived_constants": {
+    "P_surf_lower_bound_m_s": 1.8038641150077831e-06,
+    "q_derm_from_each_rhee_reading_mol_m3_s": {
+      "4e6_cells_in_100uL": 0.00047599999999999997,
+      "4e6_cells_in_200uL": 0.00023799999999999998,
+      "stated_conc_2e6_per_mL": 2.38e-05
+    }
+  },
+  "elapsed_seconds": 28.603378556000052,
+  "finished_at_utc": "2026-10-15T14:43:43.861900+00:00",
+  "geometry_source": "Rhee et al. Bioengineering 2024;11:1055 (channel 500 um inner edge, 50 um wall, 400 um spacing, 10 uL/min in / 12 uL/min out)",
+  "km_sensitivity": [
+    {
+      "Km_mol_m3": 0.0028,
+      "all_above_PF0_threshold": true,
+      "min_free_O2_mol_m3": 0.17669945150063524,
+      "min_pO2_mmHg": 131.8652623139069,
+      "q_epi_mol_m3_s": 0.003
+    },
+    {
+      "Km_mol_m3": 0.0028,
+      "all_above_PF0_threshold": true,
+      "min_free_O2_mol_m3": 0.12877792326533866,
+      "min_pO2_mmHg": 96.10292780995422,
+      "q_epi_mol_m3_s": 0.00972
+    },
+    {
+      "Km_mol_m3": 0.0028,
+      "all_above_PF0_threshold": false,
+      "min_free_O2_mol_m3": 4.6080343234241836e-05,
+      "min_pO2_mmHg": 0.03438831584644913,
+      "q_epi_mol_m3_s": 0.1
+    },
+    {
+      "Km_mol_m3": 0.028,
+      "all_above_PF0_threshold": true,
+      "min_free_O2_mol_m3": 0.17947486321581982,
+      "min_pO2_mmHg": 133.9364650864327,
+      "q_epi_mol_m3_s": 0.003
+    },
+    {
+      "Km_mol_m3": 0.028,
+      "all_above_PF0_threshold": true,
+      "min_free_O2_mol_m3": 0.1388706572120555,
+      "min_pO2_mmHg": 103.63481881496678,
+      "q_epi_mol_m3_s": 0.00972
+    },
+    {
+      "Km_mol_m3": 0.028,
+      "all_above_PF0_threshold": false,
+      "min_free_O2_mol_m3": 0.002893080994090737,
+      "min_pO2_mmHg": 2.159015667231893,
+      "q_epi_mol_m3_s": 0.1
+    },
+    {
+      "Km_mol_m3": 0.28,
+      "all_above_PF0_threshold": true,
+      "min_free_O2_mol_m3": 0.19036999638001237,
+      "min_pO2_mmHg": 142.06716147762117,
+      "q_epi_mol_m3_s": 0.003
+    },
+    {
+      "Km_mol_m3": 0.28,
+      "all_above_PF0_threshold": true,
+      "min_free_O2_mol_m3": 0.1719036232253251,
+      "min_pO2_mmHg": 128.28628598904857,
+      "q_epi_mol_m3_s": 0.00972
+    },
+    {
+      "Km_mol_m3": 0.28,
+      "all_above_PF0_threshold": true,
+      "min_free_O2_mol_m3": 0.05329254473092149,
+      "min_pO2_mmHg": 39.77055576934439,
+      "q_epi_mol_m3_s": 0.1
+    }
+  ],
+  "limits": [
+    "No packet source supplies demand, diffusivity, solubility, oxygen dependence and a functional threshold for the same engineered skin construct. This is a sensitivity and identifiability study, not a calibrated skin prediction.",
+    "The dermal demand is built from Streeter & Cheema's model-derived average rate, which is NOT a Michaelis-Menten qmax, multiplied by a cell density that the source geometry paper reports inconsistently. Both factors are weak.",
+    "No packet source supplies a Km for dermal fibroblasts or keratinocytes. PF0's 0.028 mol/m^3 is carried unchanged and swept, not justified.",
+    "Epidermal diffusivity and epidermal thickness are assumed; Rhee reports neither.",
+    "Construct thickness is not reported by Rhee and is swept as a declared unknown rather than fitted.",
+    "Cheema's diffusivities are for plastic-compressed dense collagen and are included only as flagged lower bounds; applying them to Rhee's 3 mg/mL gel is marked as a non-permitted combination and is reported separately.",
+    "The Stucker flux and the Hatcher & Plachy diffusivity could not be re-read from primary sources in this cloud pass; they are carried as collaborator-reported and every result depending on them is labelled.",
+    "Rhee's outlet flow exceeds its inlet flow by 20%, implying a transmural or ambient flow this steady diffusion-reaction model does not represent. Neither does PF0.",
+    "Steady state only. No interstitial convection, glucose, CO2, lactate, pH, heat, hydration, immune or mechanical model. Cell density is fixed and does not respond to oxygen.",
+    "The 0.05 mol/m^3 line is PF0's assumption, carried only so the two runs are comparable. It certifies nothing about viability or function, and Mieremet et al. 2019 is direct evidence that skin function is not monotone in oxygen.",
+    "Mesh refinement and mass balance are numerical verification. They are not biological validation, and no biological experiment was performed."
+  ],
+  "main_cases": 972,
+  "numpy_version": "2.5.3",
+  "python_version": "3.13.16",
+  "rhee_published_operating_point": [
+    {
+      "D_derm_m2_s": 2e-09,
+      "H_m": 0.001,
+      "P_surf_m_s": 1.8038641150077831e-06,
+      "P_wall_m_s": 5e-05,
+      "all_above_PF0_threshold": true,
+      "biot_wall": 5.0,
+      "cell_density_m3": 2000000000000.0,
+      "converged": true,
+      "dermal_D_case": "dilute_gel_upper_bound",
+      "epidermal_demand_case": "textbook_resting_skin_bulk",
+      "fraction_below_PF0_threshold": 0.0,
+      "min_free_O2_mol_m3": 0.18086449438815372,
+      "min_pO2_mmHg": 134.97350327474157,
+      "q_derm_mol_m3_s": 2.38e-05,
+      "q_epi_mol_m3_s": 0.003,
+      "relative_mass_balance_error": 3.0338138194786516e-10,
+      "rhee_density_reading": "stated_conc_2e6_per_mL",
+      "surface_case": "stucker_lower_bound",
+      "surface_fraction_of_delivery": 0.10038712359851715,
+      "thickness_case": "H_1000um",
+      "thiele_modulus_dermis": 0.0023799999999999997,
+      "thiele_modulus_epidermis": 0.14999999999999997,
+      "wall_case": "mid_5e-5"
+    },
+    {
+      "D_derm_m2_s": 2e-09,
+      "H_m": 0.001,
+      "P_surf_m_s": 1.8038641150077831e-06,
+      "P_wall_m_s": 5e-05,
+      "all_above_PF0_threshold": true,
+      "biot_wall": 5.0,
+      "cell_density_m3": 20000000000000.0,
+      "converged": true,
+      "dermal_D_case": "dilute_gel_upper_bound",
+      "epidermal_demand_case": "textbook_resting_skin_bulk",
+      "fraction_below_PF0_threshold": 0.0,
+      "min_free_O2_mol_m3": 0.17947486321581982,
+      "min_pO2_mmHg": 133.9364650864327,
+      "q_derm_mol_m3_s": 0.00023799999999999998,
+      "q_epi_mol_m3_s": 0.003,
+      "relative_mass_balance_error": 2.7699262523590354e-10,
+      "rhee_density_reading": "4e6_cells_in_200uL",
+      "surface_case": "stucker_lower_bound",
+      "surface_fraction_of_delivery": 0.06484241725955088,
+      "thickness_case": "H_1000um",
+      "thiele_modulus_dermis": 0.023799999999999995,
+      "thiele_modulus_epidermis": 0.14999999999999997,
+      "wall_case": "mid_5e-5"
+    },
+    {
+      "D_derm_m2_s": 2e-09,
+      "H_m": 0.001,
+      "P_surf_m_s": 1.8038641150077831e-06,
+      "P_wall_m_s": 5e-05,
+      "all_above_PF0_threshold": true,
+      "biot_wall": 5.0,
+      "cell_density_m3": 40000000000000.0,
+      "converged": true,
+      "dermal_D_case": "dilute_gel_upper_bound",
+      "epidermal_demand_case": "textbook_resting_skin_bulk",
+      "fraction_below_PF0_threshold": 0.0,
+      "min_free_O2_mol_m3": 0.1778691387277137,
+      "min_pO2_mmHg": 132.73816322963708,
+      "q_derm_mol_m3_s": 0.00047599999999999997,
+      "q_epi_mol_m3_s": 0.003,
+      "relative_mass_balance_error": 3.0671053685982997e-10,
+      "rhee_density_reading": "4e6_cells_in_100uL",
+      "surface_case": "stucker_lower_bound",
+      "surface_fraction_of_delivery": 0.048257308739068264,
+      "thickness_case": "H_1000um",
+      "thiele_modulus_dermis": 0.04759999999999999,
+      "thiele_modulus_epidermis": 0.14999999999999997,
+      "wall_case": "mid_5e-5"
+    },
+    {
+      "D_derm_m2_s": 2e-09,
+      "H_m": 0.001,
+      "P_surf_m_s": 1.8038641150077831e-06,
+      "P_wall_m_s": 5e-05,
+      "all_above_PF0_threshold": true,
+      "biot_wall": 5.0,
+      "cell_density_m3": 2000000000000.0,
+      "converged": true,
+      "dermal_D_case": "dilute_gel_upper_bound",
+      "epidermal_demand_case": "balu_as_read_by_collaborator_umol",
+      "fraction_below_PF0_threshold": 0.0,
+      "min_free_O2_mol_m3": 0.1401847992406993,
+      "min_pO2_mmHg": 104.61552182141737,
+      "q_derm_mol_m3_s": 2.38e-05,
+      "q_epi_mol_m3_s": 0.00972,
+      "relative_mass_balance_error": 1.4432056909342473e-12,
+      "rhee_density_reading": "stated_conc_2e6_per_mL",
+      "surface_case": "stucker_lower_bound",
+      "surface_fraction_of_delivery": 0.10474725372157039,
+      "thickness_case": "H_1000um",
+      "thiele_modulus_dermis": 0.0023799999999999997,
+      "thiele_modulus_epidermis": 0.48599999999999993,
+      "wall_case": "mid_5e-5"
+    },
+    {
+      "D_derm_m2_s": 2e-09,
+      "H_m": 0.001,
+      "P_surf_m_s": 1.8038641150077831e-06,
+      "P_wall_m_s": 5e-05,
+      "all_above_PF0_threshold": true,
+      "biot_wall": 5.0,
+      "cell_density_m3": 20000000000000.0,
+      "converged": true,
+      "dermal_D_case": "dilute_gel_upper_bound",
+      "epidermal_demand_case": "balu_as_read_by_collaborator_umol",
+      "fraction_below_PF0_threshold": 0.0,
+      "min_free_O2_mol_m3": 0.1388706572120555,
+      "min_pO2_mmHg": 103.63481881496678,
+      "q_derm_mol_m3_s": 0.00023799999999999998,
+      "q_epi_mol_m3_s": 0.00972,
+      "relative_mass_balance_error": 1.2244725341780875e-12,
+      "rhee_density_reading": "4e6_cells_in_200uL",
+      "surface_case": "stucker_lower_bound",
+      "surface_fraction_of_delivery": 0.08791188933028815,
+      "thickness_case": "H_1000um",
+      "thiele_modulus_dermis": 0.023799999999999995,
+      "thiele_modulus_epidermis": 0.48599999999999993,
+      "wall_case": "mid_5e-5"
+    },
+    {
+      "D_derm_m2_s": 2e-09,
+      "H_m": 0.001,
+      "P_surf_m_s": 1.8038641150077831e-06,
+      "P_wall_m_s": 5e-05,
+      "all_above_PF0_threshold": true,
+      "biot_wall": 5.0,
+      "cell_density_m3": 40000000000000.0,
+      "converged": true,
+      "dermal_D_case": "dilute_gel_upper_bound",
+      "epidermal_demand_case": "balu_as_read_by_collaborator_umol",
+      "fraction_below_PF0_threshold": 0.0,
+      "min_free_O2_mol_m3": 0.1374161926827132,
+      "min_pO2_mmHg": 102.54939752441284,
+      "q_derm_mol_m3_s": 0.00047599999999999997,
+      "q_epi_mol_m3_s": 0.00972,
+      "relative_mass_balance_error": 9.96931631344842e-13,
+      "rhee_density_reading": "4e6_cells_in_100uL",
+      "surface_case": "stucker_lower_bound",
+      "surface_fraction_of_delivery": 0.07508698627720503,
+      "thickness_case": "H_1000um",
+      "thiele_modulus_dermis": 0.04759999999999999,
+      "thiele_modulus_epidermis": 0.48599999999999993,
+      "wall_case": "mid_5e-5"
+    },
+    {
+      "D_derm_m2_s": 2e-09,
+      "H_m": 0.001,
+      "P_surf_m_s": 1.8038641150077831e-06,
+      "P_wall_m_s": 5e-05,
+      "all_above_PF0_threshold": false,
+      "biot_wall": 5.0,
+      "cell_density_m3": 2000000000000.0,
+      "converged": true,
+      "dermal_D_case": "dilute_gel_upper_bound",
+      "epidermal_demand_case": "balu_recomputed_from_own_inputs",
+      "fraction_below_PF0_threshold": 0.07716049382716049,
+      "min_free_O2_mol_m3": 0.0029266374953218835,
+      "min_pO2_mmHg": 2.184057832329764,
+      "q_derm_mol_m3_s": 2.38e-05,
+      "q_epi_mol_m3_s": 0.1,
+      "relative_mass_balance_error": 5.563716091953624e-13,
+      "rhee_density_reading": "stated_conc_2e6_per_mL",
+      "surface_case": "stucker_lower_bound",
+      "surface_fraction_of_delivery": 0.08482290424485792,
+      "thickness_case": "H_1000um",
+      "thiele_modulus_dermis": 0.0023799999999999997,
+      "thiele_modulus_epidermis": 4.999999999999999,
+      "wall_case": "mid_5e-5"
+    },
+    {
+      "D_derm_m2_s": 2e-09,
+      "H_m": 0.001,
+      "P_surf_m_s": 1.8038641150077831e-06,
+      "P_wall_m_s": 5e-05,
+      "all_above_PF0_threshold": false,
+      "biot_wall": 5.0,
+      "cell_density_m3": 20000000000000.0,
+      "converged": true,
+      "dermal_D_case": "dilute_gel_upper_bound",
+      "epidermal_demand_case": "balu_recomputed_from_own_inputs",
+      "fraction_below_PF0_threshold": 0.07767489711934156,
+      "min_free_O2_mol_m3": 0.002893080994090737,
+      "min_pO2_mmHg": 2.159015667231893,
+      "q_derm_mol_m3_s": 0.00023799999999999998,
+      "q_epi_mol_m3_s": 0.1,
+      "relative_mass_balance_error": 5.130081161108714e-13,
+      "rhee_density_reading": "4e6_cells_in_200uL",
+      "surface_case": "stucker_lower_bound",
+      "surface_fraction_of_delivery": 0.08151915075264476,
+      "thickness_case": "H_1000um",
+      "thiele_modulus_dermis": 0.023799999999999995,
+      "thiele_modulus_epidermis": 4.999999999999999,
+      "wall_case": "mid_5e-5"
+    },
+    {
+      "D_derm_m2_s": 2e-09,
+      "H_m": 0.001,
+      "P_surf_m_s": 1.8038641150077831e-06,
+      "P_wall_m_s": 5e-05,
+      "all_above_PF0_threshold": false,
+      "biot_wall": 5.0,
+      "cell_density_m3": 40000000000000.0,
+      "converged": true,
+      "dermal_D_case": "dilute_gel_upper_bound",
+      "epidermal_demand_case": "balu_recomputed_from_own_inputs",
+      "fraction_below_PF0_threshold": 0.0787037037037037,
+      "min_free_O2_mol_m3": 0.002856469078096209,
+      "min_pO2_mmHg": 2.1316933418628428,
+      "q_derm_mol_m3_s": 0.00047599999999999997,
+      "q_epi_mol_m3_s": 0.1,
+      "relative_mass_balance_error": 5.131895924852382e-13,
+      "rhee_density_reading": "4e6_cells_in_100uL",
+      "surface_case": "stucker_lower_bound",
+      "surface_fraction_of_delivery": 0.07814849277595878,
+      "thickness_case": "H_1000um",
+      "thiele_modulus_dermis": 0.04759999999999999,
+      "thiele_modulus_epidermis": 4.999999999999999,
+      "wall_case": "mid_5e-5"
+    }
+  ],
+  "run_type": "PF1-S layered skin oxygen transport and identifiability screen",
+  "scipy_version": "see scipy",
+  "started_at_utc": "2026-10-15T14:43:15.258271+00:00",
+  "stratum_corneum_crosscheck": {
+    "D_stratum_corneum_m2_s": 3e-11,
+    "P_surf_lower_bound_m_s": 1.8038641150077831e-06,
+    "implied_barrier_thickness_um": 16.630964467005075,
+    "independently_reported_forearm_SC_thickness_um": "10-20 (general dermatology range, NOT from a packet source)",
+    "interpretation": "Assuming the stratum corneum's O2 solubility equals the aqueous value, the Stucker in vivo flux and the Hatcher & Plachy EPR diffusivity together imply a barrier of about this thickness. Agreement with the independently known forearm stratum corneum thickness is a genuine three-way consistency check across measurements that were never combined by their authors. It is NOT a validation: both inputs were access-blocked in this pass, and the lipid-rich barrier's true O2 partition coefficient is unmeasured, so a partition coefficient above 1 would scale the implied thickness up proportionally."
+  },
+  "verification_check_count": 6,
+  "verification_checks": {
+    "V1_zero_demand_uniform": {
+      "max_deviation": 0.0,
+      "pass": true
+    },
+    "V2_analytic_zero_order_slab": {
+      "abs_error_relative_to_inlet": 4.849240176074687e-08,
+      "analytic_min": 0.15000000000000002,
+      "numeric_min": 0.14999999030151967,
+      "pass": true
+    },
+    "V3_mass_balance": {
+      "pass": true,
+      "worst_relative_error": 7.084938980439323e-10
+    },
+    "V4_mesh_refinement": {
+      "cases": [
+        {
+          "D_derm": 2e-09,
+          "abs_error_rel_inlet": 0.00835807835970856,
+          "coarse": 0.17947486321581985,
+          "fine": 0.17780324754387813,
+          "q_epi": 0.003
+        },
+        {
+          "D_derm": 1.7e-10,
+          "abs_error_rel_inlet": 0.006176353572119875,
+          "coarse": 0.15834157077195943,
+          "fine": 0.15710630005753545,
+          "q_epi": 0.003
+        },
+        {
+          "D_derm": 2e-09,
+          "abs_error_rel_inlet": 0.004084108106383265,
+          "coarse": 0.002893080994090734,
+          "fine": 0.002076259372814081,
+          "q_epi": 0.1
+        },
+        {
+          "D_derm": 1.7e-10,
+          "abs_error_rel_inlet": 0.0011962499916765717,
+          "coarse": 0.000679487731137927,
+          "fine": 0.00044023773280261265,
+          "q_epi": 0.1
+        }
+      ],
+      "pass": true,
+      "worst_abs_error_rel_inlet": 0.00835807835970856
+    },
+    "V5_bounded": {
+      "max": 0.18261577533774326,
+      "min": 1.78764973157497e-05,
+      "pass": true
+    },
+    "V6_surface_monotonic": {
+      "pass": true
+    }
+  },
+  "verification_pass_count": 6
+}

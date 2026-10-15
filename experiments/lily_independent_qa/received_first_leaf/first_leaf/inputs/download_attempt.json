@@ -1,0 +1,7 @@
+{
+  "tool": "python -m pip index versions mujoco",
+  "status": "failed",
+  "reason": "DNS name resolution unavailable in execution container",
+  "installed": false,
+  "charges": 0
+}

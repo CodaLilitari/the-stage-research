@@ -1,0 +1,23 @@
+{
+  "csv_sha256": "fdf2d940c096e80bbf41d86e3c350a4d8641890e2af6bff47f737e6ba95c69ae",
+  "evidence_status_counts": {
+    "analyst_assumed": 3,
+    "as_printed": 7,
+    "asserted_no_data": 1,
+    "measured": 10,
+    "model_derived": 8,
+    "recomputed_here": 2,
+    "standard_constant": 2
+  },
+  "generated_at_utc": "2026-10-15T14:40:13.348981+00:00",
+  "generator_sha256": "8b39cfff0bcb833af2550c4c24bc515e851de862312e35943b5e1a31aff9e248",
+  "python_version": "3.13.16",
+  "rows": 33,
+  "rows_with_combination_flags": 29,
+  "verification_counts": {
+    "not_verified_here": 8,
+    "verified_curated": 1,
+    "verified_primary": 22,
+    "verified_primary+curated": 2
+  }
+}

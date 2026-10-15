@@ -1,0 +1,17 @@
+{
+  "commitments": 6,
+  "conditions": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "correction_pairs": 6,
+  "fixture_identity": "Mica (invented)",
+  "isolation_limit": "Separate filesystem directories and packet allowlists only; no OS or model sandbox has been installed or evaluated.",
+  "not_a_model_experiment": true,
+  "release_id": "PA0-SYNTH-001",
+  "restricted_test_records": 2,
+  "source_events": 12,
+  "synthetic": true
+}

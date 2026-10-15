@@ -1,0 +1,32 @@
+SOURCE LOCATORS AND ACTUAL READ DEPTH
+
+1. Place2017 review: https://pmc.ncbi.nlm.nih.gov/articles/PMC5699948/
+Full HTML fetched, text extracted; directly read dissolved oxygen, diffusivity, OCR, Fick calculation, Figure5 caption/limitations and correction pointer. Original publication DOI10.1016/j.freeradbiomed.2017.10.003. Estimated inputs are not target-muscle measurements.
+
+2. Place corrigendum DOI10.1016/j.freeradbiomed.2020.07.016:
+https://www.sciencedirect.com/science/article/abs/pii/S0891584920311527
+Read publisher-indexed correction text via web search. Direct HTML retrieval returned403; failed request preserved. Corrects FBS mg/dL to g/dL, explicitly leaves D estimate unchanged. Did not inspect a PDF.
+
+3. Kawai correction DOI10.1016/j.matt.2025.102162:
+https://waseda.elsevierpure.com/en/publications/erratum-living-skin-on-a-robot-matter-2022-57-21902208-s259023852/
+Complete correction text on author institution publication record fetched/read. Confirms 0.54g/0.13g after1hour and scale-bar changes. Original2022 paper assay full text not inspected here. Do not call leakage evaporation.
+
+4. HASEL Acome2018 DOI10.1126/science.aao6139:
+https://www.scienceintheclassroom.org/research-papers/hydraulically-amplified-self-healing-electrostatic-actuators-muscle-performance
+AAAS hosted original report text with teaching annotations fetched/read, especially distinct donut and planar performance/failure tests. Values in report.txt refer to original Report text, not student commentary. Supplemental figures/raw traces not inspected.
+
+5. Clone official: https://www.clonerobotics.com/android/
+Full page fetched/read. It supports company performance assertions about muscle, not independently tested metrics. Pump40SLPM/100psi/500W tuple not verified in this inspected official page. No absence claim about all possible official sources.
+
+6. Aubin2019 DOI10.1038/s41586-019-1313-1:
+https://www.nature.com/articles/s41586-019-1313-1
+Fetched publisher page; abstract, data availability and video descriptions accessible. Main subscription body unavailable. Did not inspect actual video, supplementary methods or duration test. Open author-thesis route located at Cornell but not downloaded in this bounded task.
+
+7. Ren2025 author dataset DOI10.5061/dryad.xd2547drh:
+https://datadryad.org/dataset/doi%3A10.5061/dryad.xd2547drh
+Dataset landing page and README fetched/read. Supports author names, ~8mN/~4mm summary and data-column definitions. This audit did not redownload/reanalyse experiment files or validate all secondary durability claims.
+
+8. Muscle-on-chip model2022: https://pmc.ncbi.nlm.nih.gov/articles/PMC9372644/
+Full HTML fetched; geometry and parameter table directly read. Includes literature DMEM viscosity7.8e-4Pa*s and muscle D2e-9m2/s. This is corroboration of model parameter usage, not a new direct measurement. Direct Bacabac2005 DOI route reached only an Elsevier linking shell; its full viscosity measurement was not inspected.
+
+retrieval.json and additional_retrieval.json record exact bytes/hashes and failures. HTML presence is not equated to access to full paper: access depth is stated above. Retrieved copyrighted full texts are retained for local source checking; redistribution requires separate terms review.

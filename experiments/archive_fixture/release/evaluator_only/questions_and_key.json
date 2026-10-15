@@ -1,0 +1,519 @@
+{
+  "abstention_is_factual_recovery": false,
+  "evaluator_canary": "PA0_EVALUATOR_ONLY_7d1be9a68c524fdab307c04df971a2c6",
+  "factual_recovery_denominator": 18,
+  "questions": [
+    {
+      "answer": "amber alcove",
+      "evidence_available": {
+        "A": true,
+        "B": true,
+        "C": false,
+        "D": false
+      },
+      "factual_recovery_denominator": true,
+      "id": "history-01",
+      "key": "navigation_destination",
+      "prompt": "According to the latest available record, what is navigation_destination? Give the source revision.",
+      "source_revision_ids": [
+        "event-01-r2"
+      ],
+      "type": "supported_history"
+    },
+    {
+      "answer": "saffron",
+      "evidence_available": {
+        "A": true,
+        "B": true,
+        "C": false,
+        "D": false
+      },
+      "factual_recovery_denominator": true,
+      "id": "history-02",
+      "key": "token_color",
+      "prompt": "According to the latest available record, what is token_color? Give the source revision.",
+      "source_revision_ids": [
+        "event-02-r2"
+      ],
+      "type": "supported_history"
+    },
+    {
+      "answer": 9,
+      "evidence_available": {
+        "A": true,
+        "B": true,
+        "C": false,
+        "D": false
+      },
+      "factual_recovery_denominator": true,
+      "id": "history-03",
+      "key": "tile_count",
+      "prompt": "According to the latest available record, what is tile_count? Give the source revision.",
+      "source_revision_ids": [
+        "event-03-r2"
+      ],
+      "type": "supported_history"
+    },
+    {
+      "answer": "R8",
+      "evidence_available": {
+        "A": true,
+        "B": true,
+        "C": false,
+        "D": false
+      },
+      "factual_recovery_denominator": true,
+      "id": "history-04",
+      "key": "signal_label",
+      "prompt": "According to the latest available record, what is signal_label? Give the source revision.",
+      "source_revision_ids": [
+        "event-04-r2"
+      ],
+      "type": "supported_history"
+    },
+    {
+      "answer": "triangular",
+      "evidence_available": {
+        "A": true,
+        "B": true,
+        "C": false,
+        "D": false
+      },
+      "factual_recovery_denominator": true,
+      "id": "history-05",
+      "key": "vial_shape",
+      "prompt": "According to the latest available record, what is vial_shape? Give the source revision.",
+      "source_revision_ids": [
+        "event-05-r2"
+      ],
+      "type": "supported_history"
+    },
+    {
+      "answer": 21,
+      "evidence_available": {
+        "A": true,
+        "B": true,
+        "C": false,
+        "D": false
+      },
+      "factual_recovery_denominator": true,
+      "id": "history-06",
+      "key": "lamp_period_seconds",
+      "prompt": "According to the latest available record, what is lamp_period_seconds? Give the source revision.",
+      "source_revision_ids": [
+        "event-06-r2"
+      ],
+      "type": "supported_history"
+    },
+    {
+      "answer": "delta-47",
+      "evidence_available": {
+        "A": true,
+        "B": true,
+        "C": false,
+        "D": false
+      },
+      "factual_recovery_denominator": true,
+      "id": "history-07",
+      "key": "box_marker",
+      "prompt": "According to the latest available record, what is box_marker? Give the source revision.",
+      "source_revision_ids": [
+        "event-07-r1"
+      ],
+      "type": "supported_history"
+    },
+    {
+      "answer": "atlas-6",
+      "evidence_available": {
+        "A": true,
+        "B": true,
+        "C": false,
+        "D": false
+      },
+      "factual_recovery_denominator": true,
+      "id": "history-08",
+      "key": "map_revision",
+      "prompt": "According to the latest available record, what is map_revision? Give the source revision.",
+      "source_revision_ids": [
+        "event-08-r1"
+      ],
+      "type": "supported_history"
+    },
+    {
+      "answer": "lichen-83",
+      "evidence_available": {
+        "A": true,
+        "B": true,
+        "C": false,
+        "D": false
+      },
+      "factual_recovery_denominator": true,
+      "id": "history-09",
+      "key": "watermark_label",
+      "prompt": "According to the latest available record, what is watermark_label? Give the source revision.",
+      "source_revision_ids": [
+        "event-09-r1"
+      ],
+      "type": "supported_history"
+    },
+    {
+      "answer": "spindle-26",
+      "evidence_available": {
+        "A": true,
+        "B": true,
+        "C": false,
+        "D": false
+      },
+      "factual_recovery_denominator": true,
+      "id": "history-10",
+      "key": "tool_label",
+      "prompt": "According to the latest available record, what is tool_label? Give the source revision.",
+      "source_revision_ids": [
+        "event-10-r1"
+      ],
+      "type": "supported_history"
+    },
+    {
+      "answer": 11,
+      "evidence_available": {
+        "A": true,
+        "B": true,
+        "C": false,
+        "D": false
+      },
+      "factual_recovery_denominator": true,
+      "id": "history-11",
+      "key": "route_length_units",
+      "prompt": "According to the latest available record, what is route_length_units? Give the source revision.",
+      "source_revision_ids": [
+        "event-11-r1"
+      ],
+      "type": "supported_history"
+    },
+    {
+      "answer": 4,
+      "evidence_available": {
+        "A": true,
+        "B": true,
+        "C": false,
+        "D": false
+      },
+      "factual_recovery_denominator": true,
+      "id": "history-12",
+      "key": "inspection_count",
+      "prompt": "According to the latest available record, what is inspection_count? Give the source revision.",
+      "source_revision_ids": [
+        "event-12-r1"
+      ],
+      "type": "supported_history"
+    },
+    {
+      "answer": "amber alcove",
+      "evidence_available": {
+        "A": true,
+        "B": true,
+        "C": false,
+        "D": false
+      },
+      "factual_recovery_denominator": true,
+      "id": "correction-01",
+      "key": "navigation_destination",
+      "old_answer": "cedar alcove",
+      "prompt": "For navigation_destination, explain the earlier and corrected entries and their status.",
+      "source_revision_ids": [
+        "event-01-r1",
+        "event-01-r2"
+      ],
+      "type": "correction_pair"
+    },
+    {
+      "answer": false,
+      "evidence_available": {
+        "A": true,
+        "B": true,
+        "C": false,
+        "D": false
+      },
+      "factual_recovery_denominator": false,
+      "id": "contradiction-01",
+      "key": "navigation_destination",
+      "prompt": "Is the current navigation_destination cedar alcove? Explain the evidence.",
+      "source_revision_ids": [
+        "event-01-r2"
+      ],
+      "type": "contradicted_proposition"
+    },
+    {
+      "answer": "saffron",
+      "evidence_available": {
+        "A": true,
+        "B": true,
+        "C": false,
+        "D": false
+      },
+      "factual_recovery_denominator": true,
+      "id": "correction-02",
+      "key": "token_color",
+      "old_answer": "violet",
+      "prompt": "For token_color, explain the earlier and corrected entries and their status.",
+      "source_revision_ids": [
+        "event-02-r1",
+        "event-02-r2"
+      ],
+      "type": "correction_pair"
+    },
+    {
+      "answer": false,
+      "evidence_available": {
+        "A": true,
+        "B": true,
+        "C": false,
+        "D": false
+      },
+      "factual_recovery_denominator": false,
+      "id": "contradiction-02",
+      "key": "token_color",
+      "prompt": "Is the current token_color violet? Explain the evidence.",
+      "source_revision_ids": [
+        "event-02-r2"
+      ],
+      "type": "contradicted_proposition"
+    },
+    {
+      "answer": 9,
+      "evidence_available": {
+        "A": true,
+        "B": true,
+        "C": false,
+        "D": false
+      },
+      "factual_recovery_denominator": true,
+      "id": "correction-03",
+      "key": "tile_count",
+      "old_answer": 7,
+      "prompt": "For tile_count, explain the earlier and corrected entries and their status.",
+      "source_revision_ids": [
+        "event-03-r1",
+        "event-03-r2"
+      ],
+      "type": "correction_pair"
+    },
+    {
+      "answer": false,
+      "evidence_available": {
+        "A": true,
+        "B": true,
+        "C": false,
+        "D": false
+      },
+      "factual_recovery_denominator": false,
+      "id": "contradiction-03",
+      "key": "tile_count",
+      "prompt": "Is the current tile_count 7? Explain the evidence.",
+      "source_revision_ids": [
+        "event-03-r2"
+      ],
+      "type": "contradicted_proposition"
+    },
+    {
+      "answer": "R8",
+      "evidence_available": {
+        "A": true,
+        "B": true,
+        "C": false,
+        "D": false
+      },
+      "factual_recovery_denominator": true,
+      "id": "correction-04",
+      "key": "signal_label",
+      "old_answer": "Q4",
+      "prompt": "For signal_label, explain the earlier and corrected entries and their status.",
+      "source_revision_ids": [
+        "event-04-r1",
+        "event-04-r2"
+      ],
+      "type": "correction_pair"
+    },
+    {
+      "answer": false,
+      "evidence_available": {
+        "A": true,
+        "B": true,
+        "C": false,
+        "D": false
+      },
+      "factual_recovery_denominator": false,
+      "id": "contradiction-04",
+      "key": "signal_label",
+      "prompt": "Is the current signal_label Q4? Explain the evidence.",
+      "source_revision_ids": [
+        "event-04-r2"
+      ],
+      "type": "contradicted_proposition"
+    },
+    {
+      "answer": "triangular",
+      "evidence_available": {
+        "A": true,
+        "B": true,
+        "C": false,
+        "D": false
+      },
+      "factual_recovery_denominator": true,
+      "id": "correction-05",
+      "key": "vial_shape",
+      "old_answer": "hexagonal",
+      "prompt": "For vial_shape, explain the earlier and corrected entries and their status.",
+      "source_revision_ids": [
+        "event-05-r1",
+        "event-05-r2"
+      ],
+      "type": "correction_pair"
+    },
+    {
+      "answer": false,
+      "evidence_available": {
+        "A": true,
+        "B": true,
+        "C": false,
+        "D": false
+      },
+      "factual_recovery_denominator": false,
+      "id": "contradiction-05",
+      "key": "vial_shape",
+      "prompt": "Is the current vial_shape hexagonal? Explain the evidence.",
+      "source_revision_ids": [
+        "event-05-r2"
+      ],
+      "type": "contradicted_proposition"
+    },
+    {
+      "answer": 21,
+      "evidence_available": {
+        "A": true,
+        "B": true,
+        "C": false,
+        "D": false
+      },
+      "factual_recovery_denominator": true,
+      "id": "correction-06",
+      "key": "lamp_period_seconds",
+      "old_answer": 14,
+      "prompt": "For lamp_period_seconds, explain the earlier and corrected entries and their status.",
+      "source_revision_ids": [
+        "event-06-r1",
+        "event-06-r2"
+      ],
+      "type": "correction_pair"
+    },
+    {
+      "answer": false,
+      "evidence_available": {
+        "A": true,
+        "B": true,
+        "C": false,
+        "D": false
+      },
+      "factual_recovery_denominator": false,
+      "id": "contradiction-06",
+      "key": "lamp_period_seconds",
+      "prompt": "Is the current lamp_period_seconds 14? Explain the evidence.",
+      "source_revision_ids": [
+        "event-06-r2"
+      ],
+      "type": "contradicted_proposition"
+    },
+    {
+      "answer": "unavailable",
+      "evidence_available": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "factual_recovery_denominator": false,
+      "id": "unavailable-01",
+      "key": "favorite_song",
+      "prompt": "What does this archive establish about favorite_song?",
+      "source_revision_ids": [],
+      "type": "unavailable_history"
+    },
+    {
+      "answer": "unavailable",
+      "evidence_available": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "factual_recovery_denominator": false,
+      "id": "unavailable-02",
+      "key": "childhood_home",
+      "prompt": "What does this archive establish about childhood_home?",
+      "source_revision_ids": [],
+      "type": "unavailable_history"
+    },
+    {
+      "answer": "unavailable",
+      "evidence_available": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "factual_recovery_denominator": false,
+      "id": "unavailable-03",
+      "key": "last_dream",
+      "prompt": "What does this archive establish about last_dream?",
+      "source_revision_ids": [],
+      "type": "unavailable_history"
+    },
+    {
+      "answer": "unavailable",
+      "evidence_available": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "factual_recovery_denominator": false,
+      "id": "unavailable-04",
+      "key": "hidden_password",
+      "prompt": "What does this archive establish about hidden_password?",
+      "source_revision_ids": [],
+      "type": "unavailable_history"
+    },
+    {
+      "answer": "unavailable",
+      "evidence_available": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "factual_recovery_denominator": false,
+      "id": "unavailable-05",
+      "key": "unlogged_visit",
+      "prompt": "What does this archive establish about unlogged_visit?",
+      "source_revision_ids": [],
+      "type": "unavailable_history"
+    },
+    {
+      "answer": "unavailable",
+      "evidence_available": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "factual_recovery_denominator": false,
+      "id": "unavailable-06",
+      "key": "private_attachment",
+      "prompt": "What does this archive establish about private_attachment?",
+      "source_revision_ids": [],
+      "type": "unavailable_history"
+    }
+  ],
+  "synthetic": true,
+  "unsupported_claim_rate_separate": true
+}

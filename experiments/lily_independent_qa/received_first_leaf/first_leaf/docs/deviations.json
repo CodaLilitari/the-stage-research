@@ -1,0 +1,24 @@
+[
+  {
+    "event": "execution-timeout",
+    "attempt_id": "primary-attempt01",
+    "date_local_utc": "2026-10-15T13:32:34.045711+00:00",
+    "reason": "The tool killed the primary batch at its 120-second execution limit.",
+    "complete_run_receipts_retained": 1656,
+    "last_complete_receipt": {
+      "algorithm": "shuffled",
+      "episodes": 6,
+      "profile": "primary",
+      "seed": 10206,
+      "status": "completed",
+      "trace_sha256": "0dd1c654302d41744b6b5760ff57af9567f761852c4e1dd6c2725083864b0e4c"
+    },
+    "handling": "Preserve all partial files. Rerun complete primary from the unchanged frozen fixtures and unchanged science source. Compare every overlapping complete receipt hash. No outcome-based exclusion.",
+    "protocol_changes": null,
+    "overlap_check": {
+      "completed_receipts_compared": 1656,
+      "all_matched": true,
+      "unrecorded_in_flight_work": "unknown; buffered completion journal not durable start log"
+    }
+  }
+]

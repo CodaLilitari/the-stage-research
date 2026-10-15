@@ -1,0 +1,178 @@
+[
+  {
+    "name": "no capacity",
+    "passed": true,
+    "details": null
+  },
+  {
+    "name": "no gradient and undefined normalized efficiency",
+    "passed": true,
+    "details": null
+  },
+  {
+    "name": "zero loading or unloading contact",
+    "passed": true,
+    "details": null
+  },
+  {
+    "name": "both inactive: no unique CSS",
+    "passed": true,
+    "details": null
+  },
+  {
+    "name": "zero cycle period has undefined rate",
+    "passed": true,
+    "details": null
+  },
+  {
+    "name": "fast relaxation equilibrium limit",
+    "passed": true,
+    "details": null
+  },
+  {
+    "name": "symmetric tanh identity",
+    "passed": true,
+    "details": null
+  },
+  {
+    "name": "constant-rate optimum preserved",
+    "passed": true,
+    "details": null
+  },
+  {
+    "name": "hypothetical dependent-rate optimum shifts",
+    "passed": true,
+    "details": null
+  },
+  {
+    "name": "tiny contact stable nonzero and finite fast-cycling rate",
+    "passed": true,
+    "details": {
+      "sl_eq": 0.9090909090909092,
+      "su_eq": 0.09090909090909095,
+      "unique_css": true,
+      "exit_l": 0.5000000000000001,
+      "exit_u": 0.5000000000000001,
+      "delta_eq": 0.8181818181818182,
+      "kinetic_factor": 5e-19,
+      "delta_cycle": 4.0909090909090913e-19,
+      "q_per_volume": 2.045454545454546e-18,
+      "rate_per_volume": 1.022727272727273,
+      "efficiency": 5e-19
+    }
+  },
+  {
+    "name": "pressure-unit rescaling invariance",
+    "passed": true,
+    "details": null
+  },
+  {
+    "name": "seconds-to-milliseconds dimensional conversion",
+    "passed": true,
+    "details": null
+  },
+  {
+    "name": "capacity linear scaling",
+    "passed": true,
+    "details": null
+  },
+  {
+    "name": "reject invalid (-1, 1, 1, 1, 1)",
+    "passed": true,
+    "details": null
+  },
+  {
+    "name": "reject invalid (1, nan, 1, 1, 1)",
+    "passed": true,
+    "details": null
+  },
+  {
+    "name": "reject invalid (1, 1, -1, 1, 1)",
+    "passed": true,
+    "details": null
+  },
+  {
+    "name": "reject invalid (1, 1, 1, 1, -1)",
+    "passed": true,
+    "details": null
+  },
+  {
+    "name": "RK4 CSS and cycle balance 1",
+    "passed": true,
+    "details": {
+      "endpoint_error": 2.3271420901416207e-10,
+      "mass_balance_error": 0.0
+    }
+  },
+  {
+    "name": "RK4 CSS and cycle balance 2",
+    "passed": true,
+    "details": {
+      "endpoint_error": 2.3271420901416207e-10,
+      "mass_balance_error": 0.0
+    }
+  },
+  {
+    "name": "RK4 CSS and cycle balance 3",
+    "passed": true,
+    "details": {
+      "endpoint_error": 3.358979761003411e-13,
+      "mass_balance_error": 3.2751579226442118e-15
+    }
+  },
+  {
+    "name": "RK4 CSS and cycle balance 4",
+    "passed": true,
+    "details": {
+      "endpoint_error": 3.8336001040306655e-13,
+      "mass_balance_error": 3.2751579226442118e-15
+    }
+  },
+  {
+    "name": "RK4 CSS and cycle balance 5",
+    "passed": true,
+    "details": {
+      "endpoint_error": 1.1251555243063649e-11,
+      "mass_balance_error": 0.0
+    }
+  },
+  {
+    "name": "RK4 CSS and cycle balance 6",
+    "passed": true,
+    "details": {
+      "endpoint_error": 1.1251555243063649e-11,
+      "mass_balance_error": 0.0
+    }
+  },
+  {
+    "name": "RK4 CSS and cycle balance 7",
+    "passed": true,
+    "details": {
+      "endpoint_error": 6.743383629270738e-12,
+      "mass_balance_error": 0.0
+    }
+  },
+  {
+    "name": "RK4 CSS and cycle balance 8",
+    "passed": true,
+    "details": {
+      "endpoint_error": 6.743383629270738e-12,
+      "mass_balance_error": 0.0
+    }
+  },
+  {
+    "name": "association counterexample",
+    "passed": true,
+    "details": null
+  },
+  {
+    "name": "same affinity does not determine kinetic throughput",
+    "passed": true,
+    "details": null
+  },
+  {
+    "name": "sweep endpoints bounded and cycles balanced",
+    "passed": true,
+    "details": null
+  }
+]

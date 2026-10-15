@@ -1,0 +1,11 @@
+SEPARATE LOCAL REVIEWER QA — completed 2026-10-15
+
+Primary units: experiments/independent_qa/cowork_units_review/primary_unit_report.json
+7/7 checks pass. Direct parsing of saved canonical primary HTML and separate Decimal conversion. Live web route hit a browser check; review uses preserved primary bytes.
+
+Numerical QA: experiments/independent_qa/cowork_units_review/numeric_report.json
+29/29 checks pass. All 729 saved-row classifications/group counts recomputed; five selected unchanged-source solver replays; independently assembled 2D residual and mass-balance arithmetic; id550 original/aligned/refined result; nearest-six selection; exact aligned100um layer; analytic finite-Robin limit.
+
+Scope: a separate local Coda-team reviewer, not an external-provider review or biological replication. The nonlinear PDE solver was not independently reimplemented. No material unit/count/numerical discrepancy was found within these checks. See the original receipts for tolerances and scope.
+
+Figure: corrected/audit_figure.png was rendered from saved results and visually inspected. Labels, counts, thresholds and the changed case are visible. No numerical analysis was rerun merely to generate the figure.

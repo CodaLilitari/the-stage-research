@@ -1,0 +1,159 @@
+{
+  "source": "Dryad 10.5061/dryad.xd2547drh v7, article 10.1126/scirobotics.adr5512",
+  "analysis_type": "descriptive reuse; no new biological experiment",
+  "3A": {
+    "observation_statistics_mN": {
+      "in sheet": {
+        "mean": 4.393609295466667,
+        "sample_sd_ddof1": 0.4359324277084263,
+        "count": 15,
+        "min": 3.709150327,
+        "max": 4.863834423
+      },
+      "in bundle": {
+        "mean": 3.067538126466667,
+        "sample_sd_ddof1": 0.931584565472128,
+        "count": 15,
+        "min": 1.846405229,
+        "max": 4.226579521
+      }
+    },
+    "group_mean_ratio_sheet_over_bundle": 1.432291666583923,
+    "pairing": "not identified; no paired contrast computed",
+    "printed_mean_max_error": 5.333333774615312e-10,
+    "printed_sd_max_errors_by_ddof": {
+      "0": 0.031588372053880764,
+      "1": 5.278719683587951e-10
+    }
+  },
+  "3B": {
+    "sample_count": 3,
+    "observations": 24,
+    "samples_force_mN": {
+      "sample1": {
+        "1": 0.810457516,
+        "2": 1.339869281,
+        "3": 2.360566449,
+        "4": 3.011982571,
+        "5": 3.835511983,
+        "6": 4.4291939,
+        "7": 5.178649237,
+        "8": 5.136165577
+      },
+      "sample2": {
+        "1": 0.825708061,
+        "2": 1.555555556,
+        "3": 3.066448802,
+        "4": 3.667755991,
+        "5": 4.847494553,
+        "6": 5.468409586,
+        "7": 6.595860566,
+        "8": 7.892156863
+      },
+      "sample3": {
+        "1": 0.456427015,
+        "2": 0.922657952,
+        "3": 1.4291939,
+        "4": 1.913943355,
+        "5": 2.89869281,
+        "6": 3.252723312,
+        "7": 3.964052288,
+        "8": 4.286492375
+      }
+    },
+    "summary": [
+      {
+        "tissue_count": 1,
+        "force_mean_mN": 0.697530864,
+        "force_sd_mN": 0.2089412460062885,
+        "relative_mean": 1.0,
+        "relative_sd": 0.0,
+        "relative_per_count_mean": 1.0,
+        "relative_per_count_sd": 0.0
+      },
+      {
+        "tissue_count": 2,
+        "force_mean_mN": 1.272694263,
+        "force_sd_mN": 0.32175177788119597,
+        "relative_mean": 1.852870178461669,
+        "relative_sd": 0.18607822506279328,
+        "relative_per_count_mean": 0.9264350892308345,
+        "relative_per_count_sd": 0.09303911253139664
+      },
+      {
+        "tissue_count": 3,
+        "force_mean_mN": 2.285403050333333,
+        "force_sd_mN": 0.8212113344962432,
+        "relative_mean": 3.2525398818919924,
+        "relative_sd": 0.41408377181213407,
+        "relative_per_count_mean": 1.0841799606306641,
+        "relative_per_count_sd": 0.138027923937378
+      },
+      {
+        "tissue_count": 4,
+        "force_mean_mN": 2.864560639,
+        "force_sd_mN": 0.8861515728555,
+        "relative_mean": 4.117222593998713,
+        "relative_sd": 0.36871426168189686,
+        "relative_per_count_mean": 1.0293056484996783,
+        "relative_per_count_sd": 0.09217856542047421
+      },
+      {
+        "tissue_count": 5,
+        "force_mean_mN": 3.8605664486666664,
+        "force_sd_mN": 0.9746424231826465,
+        "relative_mean": 5.651358203176166,
+        "relative_sd": 0.8311544682272364,
+        "relative_per_count_mean": 1.1302716406352333,
+        "relative_per_count_sd": 0.1662308936454473
+      },
+      {
+        "tissue_count": 6,
+        "force_mean_mN": 4.383442265999999,
+        "force_sd_mN": 1.108551453568238,
+        "relative_mean": 6.404745570169712,
+        "relative_sd": 0.8518915514970589,
+        "relative_per_count_mean": 1.0674575950282854,
+        "relative_per_count_sd": 0.1419819252495098
+      },
+      {
+        "tissue_count": 7,
+        "force_mean_mN": 5.2461873636666665,
+        "force_sd_mN": 1.3172033829111445,
+        "relative_mean": 7.687625267682689,
+        "relative_sd": 1.1767275667377786,
+        "relative_per_count_mean": 1.098232181097527,
+        "relative_per_count_sd": 0.16810393810539692
+      },
+      {
+        "tissue_count": 8,
+        "force_mean_mN": 5.771604938333334,
+        "force_sd_mN": 1.884951322038546,
+        "relative_mean": 8.42894040256045,
+        "relative_sd": 1.813272195837596,
+        "relative_per_count_mean": 1.0536175503200562,
+        "relative_per_count_sd": 0.2266590244796995
+      }
+    ],
+    "within_actuator_8_over_1_ratios": {
+      "sample1": 6.337365593633411,
+      "sample2": 9.55804749373762,
+      "sample3": 9.39140812031032
+    },
+    "within_actuator_8_minus_7_mN": {
+      "sample1": -0.042483660000000256,
+      "sample2": 1.2962962970000005,
+      "sample3": 0.32244008699999993
+    },
+    "relative_formula_max_abs_error": 6.161197774190441e-09,
+    "duplicate_block_max_abs_error": 0.0
+  },
+  "checks": {
+    "3A_row_counts": true,
+    "3B_sample_count_and_coverage": true,
+    "relative_formula": true,
+    "duplicate_block": true,
+    "printed_3A_means": true,
+    "printed_3A_sd_convention_identified": true
+  }
+}

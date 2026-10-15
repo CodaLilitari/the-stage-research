@@ -1,0 +1,154 @@
+{
+  "protocol_id": "STAGE-PX1-HS-20261015-r1",
+  "status": "executed",
+  "S_parameter_cases": 54,
+  "S_mesh_runs": 216,
+  "H_equilibrium_cases": 18,
+  "H_kinetic_cases": 9,
+  "checks": {
+    "rk4_exact_solution": true,
+    "independent_quadrature_conservation": false,
+    "hill_optimum": true,
+    "clamped_supply_monotone": true,
+    "total_extraction_monotone": true,
+    "no_transfer_no_uptake": true,
+    "kinetics_below_equilibrium": true,
+    "finite_nonnegative_outputs": true
+  },
+  "all_checks_pass": false,
+  "RK4_max_error_N256": 3.813580571124242e-11,
+  "quadrature_max_balance_error_N256": 1.3450104918710792e-08,
+  "max_relative_Hill_optimum_error": 0.0010920766090416478,
+  "distal_decreasing_adjacent_pairs": [
+    {
+      "Da": 2.0,
+      "lower_wall_fraction": 0.5,
+      "upper_wall_fraction": 0.75,
+      "lower_distal": 0.18393972058572117,
+      "upper_distal": 0.16734762011132237
+    },
+    {
+      "Da": 2.0,
+      "lower_wall_fraction": 0.75,
+      "upper_wall_fraction": 0.9,
+      "lower_distal": 0.16734762011132237,
+      "upper_distal": 0.1487689993994279
+    },
+    {
+      "Da": 2.0,
+      "lower_wall_fraction": 0.9,
+      "upper_wall_fraction": 0.99,
+      "lower_distal": 0.1487689993994279,
+      "upper_distal": 0.1366885449377839
+    },
+    {
+      "Da": 2.0,
+      "lower_wall_fraction": 0.99,
+      "upper_wall_fraction": 1.0,
+      "lower_distal": 0.1366885449377839,
+      "upper_distal": 0.1353352832366127
+    },
+    {
+      "Da": 4.0,
+      "lower_wall_fraction": 0.25,
+      "upper_wall_fraction": 0.5,
+      "lower_distal": 0.09196986029286058,
+      "upper_distal": 0.06766764161830635
+    },
+    {
+      "Da": 4.0,
+      "lower_wall_fraction": 0.5,
+      "upper_wall_fraction": 0.75,
+      "lower_distal": 0.06766764161830635,
+      "upper_distal": 0.03734030127589796
+    },
+    {
+      "Da": 4.0,
+      "lower_wall_fraction": 0.75,
+      "upper_wall_fraction": 0.9,
+      "lower_distal": 0.03734030127589796,
+      "upper_distal": 0.024591350202563304
+    },
+    {
+      "Da": 4.0,
+      "lower_wall_fraction": 0.9,
+      "upper_wall_fraction": 0.99,
+      "lower_distal": 0.024591350202563304,
+      "upper_distal": 0.01887248314869552
+    },
+    {
+      "Da": 4.0,
+      "lower_wall_fraction": 0.99,
+      "upper_wall_fraction": 1.0,
+      "lower_distal": 0.01887248314869552,
+      "upper_distal": 0.01831563888873418
+    },
+    {
+      "Da": 8.0,
+      "lower_wall_fraction": 0.1,
+      "upper_wall_fraction": 0.25,
+      "lower_distal": 0.044932896411722156,
+      "upper_distal": 0.033833820809153176
+    },
+    {
+      "Da": 8.0,
+      "lower_wall_fraction": 0.25,
+      "upper_wall_fraction": 0.5,
+      "lower_distal": 0.033833820809153176,
+      "upper_distal": 0.00915781944436709
+    },
+    {
+      "Da": 8.0,
+      "lower_wall_fraction": 0.5,
+      "upper_wall_fraction": 0.75,
+      "lower_distal": 0.00915781944436709,
+      "upper_distal": 0.0018590641324997689
+    },
+    {
+      "Da": 8.0,
+      "lower_wall_fraction": 0.75,
+      "upper_wall_fraction": 0.9,
+      "lower_distal": 0.0018590641324997689,
+      "upper_distal": 0.0006719272275390113
+    },
+    {
+      "Da": 8.0,
+      "lower_wall_fraction": 0.9,
+      "upper_wall_fraction": 0.99,
+      "lower_distal": 0.0006719272275390113,
+      "upper_distal": 0.00035976830323009734
+    },
+    {
+      "Da": 8.0,
+      "lower_wall_fraction": 0.99,
+      "upper_wall_fraction": 1.0,
+      "lower_distal": 0.00035976830323009734,
+      "upper_distal": 0.00033546262790251185
+    }
+  ],
+  "counterexample": {
+    "Da": 4,
+    "lower_transfer": {
+      "wall_fraction": 0.25,
+      "channel_out": 0.36787944117144233,
+      "distal_tissue": 0.09196986029286058,
+      "extraction_fraction": 0.6321205588285577,
+      "clamped_supply_tissue": 0.25,
+      "distal_derivative_wrt_f": 0.0
+    },
+    "higher_transfer": {
+      "wall_fraction": 0.9,
+      "channel_out": 0.02732372244729256,
+      "distal_tissue": 0.024591350202563304,
+      "extraction_fraction": 0.9726762775527075,
+      "clamped_supply_tissue": 0.9,
+      "distal_derivative_wrt_f": -0.07104167836296066
+    }
+  },
+  "runtime": {
+    "python": "3.13.5",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+    "wall_seconds": 0.05077650299972447
+  },
+  "inference": "Exact model diagnostics, no empirical uncertainty interval or claim of biological validation."
+}

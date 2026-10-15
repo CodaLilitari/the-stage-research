@@ -1,0 +1,59 @@
+PF-DATA1: INDEPENDENT LOCAL REVIEW
+15 October 2026 | Coda, collaborating with Richard Pemberton
+
+Result: 23/23 bounded checks passed. No material defect was found in the
+corrected outputs or their stated uncertainty limits within this review.
+This reviewer did not author the corrected analysis. The original PF0 solver
+was authored earlier by this reviewer; its single replay here is a reuse check,
+not an independently implemented transport solver.
+
+Source and numerical checks
+
+- A separate direct extraction of the saved primary HTML table matches all
+  140 numeric cells of the 20-row CSV and the saved source-verification record.
+- Decimal-based means, sample standard deviations and standard errors agree.
+  Conditional t intervals, corrected ten-plus-ten age grouping, correlation,
+  distinct slope/intercept errors and per-person transformations agree.
+- Scalar closed-form regression reproduces all three candidate coefficients,
+  residual sums of squares and AICc values. Explicit leave-one-out refitting
+  reproduces the saved predictive errors without using the producer's leverage
+  formula or importing its analysis module.
+- All 432 saved PF0 rows have the expected original geometry keys. Counts are
+  144/144, 143/144 and 138/144 above the assumed threshold. All seven failures
+  occur at 400 micrometres. Delivery-unit conversions and mass-balance arithmetic
+  agree, with maximum relative discrepancy 3.20604e-7.
+- One near-threshold case was replayed using the unchanged original PF0 source:
+  high_at_inlet_reference, 400 micrometres, 0.5 microlitres/min, wall permeability
+  0.005 mm/s, hypothetical beta 16. Minimum free oxygen is exactly reproduced as
+  0.049402986083967884 mol/m3, below the assumed 0.05 threshold.
+- The eleven saved refinement comparisons agree arithmetically. They are not
+  eleven independent physical settings: the nearest high-demand case also
+  occurs among the corner cases. The original high-demand PF0 stress outcome
+  (55/144 passing, with a failed monotonicity assumption) remains unchanged.
+
+What the evidence permits
+
+The transcribed dataset and corrected descriptive calculations are supported.
+The new sensitivity provides an actual numerical counterexample to a general
+claim that 400 micrometres is acceptable under every retained transport setting.
+It also confirms that the demand interpretation strongly affects this screen.
+
+The conditional sampling intervals do not include instrument/calibration error,
+rounding, population selection or gas-reference uncertainty. The historical
+demand range was not measured in these 20 volunteers. The source describes a
+finite occlusion period shorter than the mean sensor equilibration time; its
+increment cannot simply be interpreted as total physiological blood supply.
+Two pressure points cannot test individual linearity. The scenario distribution
+is neither a posterior nor a confidence interval for a universal skin thickness.
+
+The retained D, Km, inlet, threshold and geometry are uncalibrated for these
+subjects. Three qmax interpretations are conditional scenarios, not established
+bounds on a real tissue construct. There is no tissue-viability, clinical,
+mechanistic-identification or channel-spacing result.
+
+Scope: original/frozen hashes and producer manifest checked; saved-row arithmetic
+reviewed; one numerical case replayed. No full 432-case rerun, independent
+p-value-library implementation, new physical experiment or public release.
+Machine-readable checks and exact input hashes: report.json. Reproduction:
+  python research/integration_qa/muse_review/review.py
+The checker writes only its own report and disables bytecode writes.

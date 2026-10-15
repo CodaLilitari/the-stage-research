@@ -1,0 +1,1372 @@
+{
+  "scope": "Independent equations over32 retained witnesses; code reuse explicitly limited to adversarial interface calls",
+  "checks": [
+    {
+      "name": "evaluation freeze src/first_leaf.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "evaluation freeze inputs/protocol.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "evaluation freeze inputs/evaluation_fixtures.jsonl.gz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "evaluation freeze inputs/development_fixtures.jsonl.gz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness hash primary/oracle",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness denominator primary/oracle",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics primary/oracle/0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics primary/oracle/1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics primary/oracle/2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics primary/oracle/3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics primary/oracle/4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics primary/oracle/5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness hash primary/cumulative",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness denominator primary/cumulative",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics primary/cumulative/0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics primary/cumulative/1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics primary/cumulative/2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics primary/cumulative/3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics primary/cumulative/4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics primary/cumulative/5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness hash primary/window",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness denominator primary/window",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics primary/window/0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics primary/window/1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics primary/window/2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics primary/window/3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics primary/window/4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics primary/window/5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness hash primary/episode_reset",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness denominator primary/episode_reset",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics primary/episode_reset/0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics primary/episode_reset/1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics primary/episode_reset/2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics primary/episode_reset/3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics primary/episode_reset/4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics primary/episode_reset/5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness hash primary/frozen",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness denominator primary/frozen",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics primary/frozen/0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics primary/frozen/1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics primary/frozen/2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics primary/frozen/3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics primary/frozen/4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics primary/frozen/5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness hash primary/no_information",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness denominator primary/no_information",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics primary/no_information/0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics primary/no_information/1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics primary/no_information/2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics primary/no_information/3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics primary/no_information/4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics primary/no_information/5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness hash primary/misaligned",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness denominator primary/misaligned",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics primary/misaligned/0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics primary/misaligned/1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics primary/misaligned/2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics primary/misaligned/3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics primary/misaligned/4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics primary/misaligned/5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness hash primary/shuffled",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness denominator primary/shuffled",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics primary/shuffled/0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics primary/shuffled/1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics primary/shuffled/2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics primary/shuffled/3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics primary/shuffled/4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics primary/shuffled/5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness hash no_delay/oracle",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness denominator no_delay/oracle",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics no_delay/oracle/0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics no_delay/oracle/1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics no_delay/oracle/2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics no_delay/oracle/3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics no_delay/oracle/4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics no_delay/oracle/5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness hash no_delay/cumulative",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness denominator no_delay/cumulative",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics no_delay/cumulative/0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics no_delay/cumulative/1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics no_delay/cumulative/2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics no_delay/cumulative/3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics no_delay/cumulative/4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics no_delay/cumulative/5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness hash no_delay/window",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness denominator no_delay/window",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics no_delay/window/0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics no_delay/window/1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics no_delay/window/2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics no_delay/window/3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics no_delay/window/4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics no_delay/window/5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness hash no_delay/episode_reset",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness denominator no_delay/episode_reset",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics no_delay/episode_reset/0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics no_delay/episode_reset/1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics no_delay/episode_reset/2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics no_delay/episode_reset/3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics no_delay/episode_reset/4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics no_delay/episode_reset/5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness hash no_delay/frozen",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness denominator no_delay/frozen",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics no_delay/frozen/0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics no_delay/frozen/1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics no_delay/frozen/2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics no_delay/frozen/3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics no_delay/frozen/4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics no_delay/frozen/5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness hash no_delay/no_information",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness denominator no_delay/no_information",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics no_delay/no_information/0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics no_delay/no_information/1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics no_delay/no_information/2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics no_delay/no_information/3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics no_delay/no_information/4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics no_delay/no_information/5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness hash no_delay/misaligned",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness denominator no_delay/misaligned",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics no_delay/misaligned/0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics no_delay/misaligned/1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics no_delay/misaligned/2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics no_delay/misaligned/3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics no_delay/misaligned/4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics no_delay/misaligned/5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness hash no_delay/shuffled",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness denominator no_delay/shuffled",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics no_delay/shuffled/0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics no_delay/shuffled/1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics no_delay/shuffled/2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics no_delay/shuffled/3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics no_delay/shuffled/4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics no_delay/shuffled/5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness hash clean/oracle",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness denominator clean/oracle",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics clean/oracle/0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics clean/oracle/1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics clean/oracle/2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics clean/oracle/3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics clean/oracle/4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics clean/oracle/5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness hash clean/cumulative",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness denominator clean/cumulative",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics clean/cumulative/0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics clean/cumulative/1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics clean/cumulative/2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics clean/cumulative/3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics clean/cumulative/4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics clean/cumulative/5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness hash clean/window",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness denominator clean/window",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics clean/window/0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics clean/window/1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics clean/window/2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics clean/window/3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics clean/window/4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics clean/window/5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness hash clean/episode_reset",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness denominator clean/episode_reset",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics clean/episode_reset/0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics clean/episode_reset/1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics clean/episode_reset/2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics clean/episode_reset/3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics clean/episode_reset/4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics clean/episode_reset/5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness hash clean/frozen",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness denominator clean/frozen",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics clean/frozen/0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics clean/frozen/1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics clean/frozen/2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics clean/frozen/3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics clean/frozen/4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics clean/frozen/5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness hash clean/no_information",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness denominator clean/no_information",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics clean/no_information/0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics clean/no_information/1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics clean/no_information/2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics clean/no_information/3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics clean/no_information/4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics clean/no_information/5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness hash clean/misaligned",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness denominator clean/misaligned",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics clean/misaligned/0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics clean/misaligned/1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics clean/misaligned/2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics clean/misaligned/3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics clean/misaligned/4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics clean/misaligned/5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness hash clean/shuffled",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness denominator clean/shuffled",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics clean/shuffled/0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics clean/shuffled/1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics clean/shuffled/2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics clean/shuffled/3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics clean/shuffled/4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics clean/shuffled/5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness hash stationary/oracle",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness denominator stationary/oracle",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics stationary/oracle/0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics stationary/oracle/1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics stationary/oracle/2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics stationary/oracle/3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics stationary/oracle/4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics stationary/oracle/5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness hash stationary/cumulative",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness denominator stationary/cumulative",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics stationary/cumulative/0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics stationary/cumulative/1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics stationary/cumulative/2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics stationary/cumulative/3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics stationary/cumulative/4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics stationary/cumulative/5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness hash stationary/window",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness denominator stationary/window",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics stationary/window/0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics stationary/window/1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics stationary/window/2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics stationary/window/3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics stationary/window/4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics stationary/window/5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness hash stationary/episode_reset",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness denominator stationary/episode_reset",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics stationary/episode_reset/0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics stationary/episode_reset/1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics stationary/episode_reset/2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics stationary/episode_reset/3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics stationary/episode_reset/4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics stationary/episode_reset/5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness hash stationary/frozen",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness denominator stationary/frozen",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics stationary/frozen/0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics stationary/frozen/1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics stationary/frozen/2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics stationary/frozen/3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics stationary/frozen/4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics stationary/frozen/5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness hash stationary/no_information",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness denominator stationary/no_information",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics stationary/no_information/0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics stationary/no_information/1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics stationary/no_information/2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics stationary/no_information/3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics stationary/no_information/4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics stationary/no_information/5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness hash stationary/misaligned",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness denominator stationary/misaligned",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics stationary/misaligned/0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics stationary/misaligned/1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics stationary/misaligned/2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics stationary/misaligned/3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics stationary/misaligned/4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics stationary/misaligned/5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness hash stationary/shuffled",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "witness denominator stationary/shuffled",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics stationary/shuffled/0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics stationary/shuffled/1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics stationary/shuffled/2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics stationary/shuffled/3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics stationary/shuffled/4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent distance metrics stationary/shuffled/5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all independent witness equations and sensor alignment",
+      "passed": true,
+      "detail": {
+        "position": 0.0,
+        "velocity": 0.0,
+        "distance": 0.0,
+        "velocity_mse": 6.938893903907228e-18,
+        "body_model_error": 0.0,
+        "sensor": 0.0
+      }
+    },
+    {
+      "name": "witness transitions checked",
+      "passed": true,
+      "detail": 15360
+    },
+    {
+      "name": "deep malformed request counterexample is observed",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "passed": 263,
+  "total": 263,
+  "witness_transitions": 15360,
+  "max_errors": {
+    "position": 0.0,
+    "velocity": 0.0,
+    "distance": 0.0,
+    "velocity_mse": 6.938893903907228e-18,
+    "body_model_error": 0.0,
+    "sensor": 0.0
+  },
+  "findings": [
+    {
+      "id": "gateway-pending-sequence",
+      "severity": "medium for reuse; no effect on scored FL1",
+      "evidence": {
+        "two_same_sequence_admissions": true,
+        "sequence_after_both_executed": 2
+      },
+      "interpretation": "Standalone Gateway allows two distinct IDs at the same sequence before either is recorded, then records both. The serialized file relay does not expose this interleaving; reserve one pending slot or revalidate the sequence at commit before async reuse."
+    },
+    {
+      "id": "gateway-stop-pending",
+      "severity": "medium for reuse; no effect on scored FL1",
+      "evidence": {
+        "stopped": true,
+        "pending_command_executed_after_stop": true
+      },
+      "interpretation": "Standalone Gateway can record an already-admitted command after stop is latched. Its current relay commits admission/execution in one locked transaction, so this is a primitive contract limitation, not evidence of physical execution."
+    },
+    {
+      "id": "relay-nested-json",
+      "severity": "low; fail-closed robustness",
+      "evidence": {
+        "depth": 6000,
+        "bytes": 12007,
+        "exception": "RecursionError",
+        "state_unchanged": true,
+        "lock_removed": true
+      },
+      "interpretation": "A size-valid deeply nested request raises uncaught RecursionError rather than writing a rejection receipt. State remains unchanged and lock is released. Catch parser depth errors at the relay boundary in a future version."
+    }
+  ],
+  "initial_audit_correction": "attempt01 was preserved. Depth1100 parsed on Python3.12 and received a proper rejection event; its inferred RecursionError description was wrong and was not reported externally. Depth6000 is the executed counterexample reported here, with an explicit diagnostic assertion.",
+  "source_sha256": "c732579e92e6a5a0ee65b7a7ec3851994dd93cc353a709d13806ce4cacccd468"
+}

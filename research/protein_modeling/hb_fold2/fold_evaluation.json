@@ -1,0 +1,40 @@
+{
+  "status": "HB-FOLD2 prediction executed; interpret coordinate and confidence measurements together",
+  "sequence_mapping": "Prediction/PDB mature index i (1..141) = UniProt P69905 full-translation position i+1 (2..142). Initiator Met at UniProt1 absent from input. All fits use mature2..141 (140 CA) because 2DN1 mature1 is unmodeled.",
+  "prediction_file": "human_alpha_141_unrelaxed_rank_001_alphafold2_ptm_model_3_seed_000.pdb",
+  "prediction_sha256": "b41f803dae4658083696dde5fffdcab3d71a8ca63d0f42ee752297fa7856b06c",
+  "plddt_mean": 68.03354609929077,
+  "plddt_min": 48.16,
+  "plddt_max": 88.88,
+  "plddt_below_50_count": 1,
+  "ptm_rounded_score_json": 0.59,
+  "fits": [
+    {
+      "reference": "2DN1",
+      "chain": "A",
+      "matched_CA": 140,
+      "rmsd_A": 2.9776882494537107,
+      "max_residual_A": 7.850731134427693
+    },
+    {
+      "reference": "2DN2",
+      "chain": "A",
+      "matched_CA": 140,
+      "rmsd_A": 2.7771617200130443,
+      "max_residual_A": 7.3643528562181935
+    },
+    {
+      "reference": "2DN2",
+      "chain": "C",
+      "matched_CA": 140,
+      "rmsd_A": 2.8223087270638367,
+      "max_residual_A": 7.483629567041336
+    }
+  ],
+  "checks": [
+    "141 predicted amino acids exactly match source input",
+    "Public P69905 mature-sequence mapping exact",
+    "All 420 evaluated residue identities match",
+    "Three Kabsch and Biopython RMSDs agree within 1e-10 A"
+  ]
+}

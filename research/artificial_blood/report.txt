@@ -1,0 +1,20 @@
+PF0 ACTUAL COMPUTATIONAL RUN
+
+Main cases: 144; above the assumed oxygen threshold: 55.
+Passing cases by hypothetical capacity beta (48 each): {'1.0': 16, '4.0': 19, '16.0': 20}
+Checks: 6/7; {'all_mass_balances_pass': True, 'all_concentrations_bounded': True, 'zero_demand_uniform': True, 'flow_wall_capacity_monotonic': False, 'flow_times_capacity_degeneracy': True, 'necessary_bounds_never_falsely_passed': True, 'eight_refinement_cases_within_declared_limit': True}
+Maximum relative mass-balance error: 1.81709e-08
+Maximum eight-case refinement difference / inlet: 0.000251238
+Cases failing the local necessary bound regardless of flow/capacity: 72
+Elapsed seconds: 27.162
+
+The exact Q*beta equivalence is built into the assumed equilibrium capacity law. It is an implementation check, not evidence that a material with those properties exists. Increasing total carrier content cannot remove a transverse diffusion or wall-transfer limit while free inlet oxygen stays fixed.
+
+All inputs were frozen locally before this main run. No independent timestamp or biological experiment was used.
+
+Liver-like illustrative demand is not measured skin demand.
+Planar one-wall geometry, steady state, no interstitial flow, fixed cell density and abundant other nutrients.
+Carrier multiplier is hypothetical instantaneous linear equilibrium; it does not change free oxygen, D, wall permeability, viscosity or pump power.
+Threshold classifies a model oxygen field; it does not certify survival or tissue function.
+No glucose, CO2, lactate, pH, heat, immune, sterility or mechanical-deformation model.
+Numerical mesh refinement and mass balance are verification, not biological validation or replication of the full 2026 network study.

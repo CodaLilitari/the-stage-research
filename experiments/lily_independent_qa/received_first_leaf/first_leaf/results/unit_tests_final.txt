@@ -1,0 +1,48 @@
+test_bad_request_logged (test_relay.RelayTests.test_bad_request_logged) ... ok
+test_cannot_overwrite_session (test_relay.RelayTests.test_cannot_overwrite_session) ... ok
+test_collision_lock_blocks_writer (test_relay.RelayTests.test_collision_lock_blocks_writer) ... ok
+test_duplicate_survives_state_restore (test_relay.RelayTests.test_duplicate_survives_state_restore) ... ok
+test_full_episode_and_explicit_reset (test_relay.RelayTests.test_full_episode_and_explicit_reset) ... ok
+test_public_packet_has_no_hidden_fixture (test_relay.RelayTests.test_public_packet_has_no_hidden_fixture) ... ok
+test_stopped_does_not_advance (test_relay.RelayTests.test_stopped_does_not_advance) ... ok
+test_alignment_ablation_no_delay_identity (test_stage.ExperimentTests.test_alignment_ablation_no_delay_identity) ... ok
+test_body_change (test_stage.ExperimentTests.test_body_change) ... ok
+test_checkpoint_context_hash_rejected (test_stage.ExperimentTests.test_checkpoint_context_hash_rejected) ... ok
+test_clean_oracle_predicts_velocity (test_stage.ExperimentTests.test_clean_oracle_predicts_velocity) ... ok
+test_cross_process_resume (test_stage.ExperimentTests.test_cross_process_resume) ... ok
+test_duplicate_frames_do_not_learn_twice (test_stage.ExperimentTests.test_duplicate_frames_do_not_learn_twice) ... ok
+test_fixture_reproducible (test_stage.ExperimentTests.test_fixture_reproducible) ... ok
+test_frozen_stops_updating_after_episode_zero (test_stage.ExperimentTests.test_frozen_stops_updating_after_episode_zero) ... ok
+test_full_checkpoint (test_stage.ExperimentTests.test_full_checkpoint) ... ok
+test_mapping_derangement (test_stage.ExperimentTests.test_mapping_derangement) ... ok
+test_mean_learning (test_stage.ExperimentTests.test_mean_learning) ... ok
+test_no_information_does_not_learn (test_stage.ExperimentTests.test_no_information_does_not_learn) ... ok
+test_nonadjacent_frame_rejected (test_stage.ExperimentTests.test_nonadjacent_frame_rejected) ... ok
+test_replay_equality (test_stage.ExperimentTests.test_replay_equality) ... ok
+test_same_seed_same_full_output_digest (test_stage.ExperimentTests.test_same_seed_same_full_output_digest) ... ok
+test_seed_sets_disjoint (test_stage.ExperimentTests.test_seed_sets_disjoint) ... ok
+test_stationary_profile_no_change (test_stage.ExperimentTests.test_stationary_profile_no_change) ... ok
+test_window_revises_old_mean (test_stage.ExperimentTests.test_window_revises_old_mean) ... ok
+test_body_revision_mismatch (test_stage.GatewayTests.test_body_revision_mismatch) ... ok
+test_bool_is_not_sequence (test_stage.GatewayTests.test_bool_is_not_sequence) ... ok
+test_cannot_execute_twice (test_stage.GatewayTests.test_cannot_execute_twice) ... ok
+test_cannot_falsely_record_execution (test_stage.GatewayTests.test_cannot_falsely_record_execution) ... ok
+test_duplicate_id_changed_content_rejected (test_stage.GatewayTests.test_duplicate_id_changed_content_rejected) ... ok
+test_duplicate_json_key (test_stage.GatewayTests.test_duplicate_json_key) ... ok
+test_duplicate_suppresses_second_dispatch (test_stage.GatewayTests.test_duplicate_suppresses_second_dispatch) ... ok
+test_expired_deadline (test_stage.GatewayTests.test_expired_deadline) ... ok
+test_nonfinite (test_stage.GatewayTests.test_nonfinite) ... ok
+test_session_mismatch (test_stage.GatewayTests.test_session_mismatch) ... ok
+test_size_limit (test_stage.GatewayTests.test_size_limit) ... ok
+test_stale_observation (test_stage.GatewayTests.test_stale_observation) ... ok
+test_stop_does_not_need_fresh_frame (test_stage.GatewayTests.test_stop_does_not_need_fresh_frame) ... ok
+test_stop_latches (test_stage.GatewayTests.test_stop_latches) ... ok
+test_substitution_not_silent (test_stage.GatewayTests.test_substitution_not_silent) ... ok
+test_unknown_action (test_stage.GatewayTests.test_unknown_action) ... ok
+test_unknown_field (test_stage.GatewayTests.test_unknown_field) ... ok
+test_valid_request (test_stage.GatewayTests.test_valid_request) ... ok
+
+----------------------------------------------------------------------
+Ran 43 tests in 1.396s
+
+OK

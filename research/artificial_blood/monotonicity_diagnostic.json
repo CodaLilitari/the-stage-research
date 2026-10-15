@@ -1,0 +1,66 @@
+{
+  "both_coupled_reversals_reproduced": true,
+  "diagnostic_source_sha256": "649f13fc24ea4c5a516c5fdb86d9a3f81833147b37509e3dd39ba7c7465cc3d0",
+  "elapsed_seconds": 8.159783800016157,
+  "fixed_lumen_monotonicity_holds": true,
+  "interpretation": "The predeclared universal wall-permeability monotonicity expectation was too strong. Improved wall transfer raises local oxygen under a fixed lumen concentration but can increase upstream extraction and lower the downstream minimum in a limited-flow channel. The original failed check remains failed; this diagnostic supplies a mechanism-specific counterexample, not a retroactive pass.",
+  "rows": [
+    {
+      "P_mm_s": 0.005,
+      "depth_um": 200.0,
+      "fixed_lumen_minimum": 0.0018555976514212347,
+      "mass_balance_error": 2.8925689697217938e-09,
+      "refined_coupled_minimum": 0.0008849279620594296,
+      "refined_outlet_free": 0.11947163057345797,
+      "refined_uptake": 6.710697432800682e-13
+    },
+    {
+      "P_mm_s": 0.05,
+      "depth_um": 200.0,
+      "fixed_lumen_minimum": 0.02796805680633625,
+      "mass_balance_error": 1.1449248587292788e-10,
+      "refined_coupled_minimum": 0.0009220819443053644,
+      "refined_outlet_free": 0.02726807817682618,
+      "refined_uptake": 1.4394326816949777e-12
+    },
+    {
+      "P_mm_s": 0.2,
+      "depth_um": 200.0,
+      "fixed_lumen_minimum": 0.046649708082197004,
+      "mass_balance_error": 1.3632163404715343e-10,
+      "refined_coupled_minimum": 0.0006676448800864092,
+      "refined_outlet_free": 0.014674751237684363,
+      "refined_uptake": 1.544377072808765e-12
+    },
+    {
+      "P_mm_s": 0.005,
+      "depth_um": 400.0,
+      "fixed_lumen_minimum": 4.1505965974574774e-05,
+      "mass_balance_error": 1.7491183789927784e-10,
+      "refined_coupled_minimum": 2.0138907646119216e-05,
+      "refined_outlet_free": 0.11945603195094659,
+      "refined_uptake": 6.711997336247111e-13
+    },
+    {
+      "P_mm_s": 0.05,
+      "depth_um": 400.0,
+      "fixed_lumen_minimum": 0.0005297750648751049,
+      "mass_balance_error": 3.475573341406877e-10,
+      "refined_coupled_minimum": 2.0494540392993947e-05,
+      "refined_outlet_free": 0.026745149353049495,
+      "refined_uptake": 1.443790421556121e-12
+    },
+    {
+      "P_mm_s": 0.2,
+      "depth_um": 400.0,
+      "fixed_lumen_minimum": 0.0008732164664676643,
+      "mass_balance_error": 1.9743475358541832e-10,
+      "refined_coupled_minimum": 1.4375421024683023e-05,
+      "refined_outlet_free": 0.01394437233415292,
+      "refined_uptake": 1.5504635635759437e-12
+    }
+  ],
+  "source_pf0_sha256": "f3fe9e427f5ce6b636248a9832dba74d4549daf16d7988718c263ea7d1084aba",
+  "started_at_utc": "2026-10-15T13:51:58.208952+00:00",
+  "status": "post-run diagnostic, not a prespecified confirmatory test"
+}

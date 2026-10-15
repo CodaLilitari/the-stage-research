@@ -1,0 +1,155 @@
+{
+  "scope": "Within-project independent code QA, not biological validation or independent model rerun",
+  "checks": [
+    {
+      "check": "frozen commands differ only input/output/MSA mode",
+      "passed": true,
+      "detail": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "check": "freeze identical environment_overrides",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "freeze identical weight_sha256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "freeze identical requirements_lock_sha256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "freeze identical input_sha256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual model config differs only MSA mode",
+      "passed": true,
+      "detail": [
+        "msa_mode"
+      ]
+    },
+    {
+      "check": "explicit model row caps",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reference correspondence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "HB-FOLD1 exactly 141 CA",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "HB-FOLD1 all 140 matched identities",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "HB-FOLD1 score confidence recomputed",
+      "passed": true,
+      "detail": 44.8149645390071
+    },
+    {
+      "check": "HB-FOLD1 independent quaternion RMSD",
+      "passed": true,
+      "detail": {
+        "float64_rmsd_A": 12.373976043981413,
+        "reported_rmsd_A": 12.373975995041912,
+        "tolerance_A": 1e-06
+      }
+    },
+    {
+      "check": "HB-FOLD1 parser precision explains submicroangstrom difference",
+      "passed": true,
+      "detail": {
+        "float32_parsed_quaternion_rmsd_A": 12.373975995041906,
+        "reported_rmsd_A": 12.373975995041912
+      }
+    },
+    {
+      "check": "HB-FOLD2 exactly 141 CA",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "HB-FOLD2 all 140 matched identities",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "HB-FOLD2 score confidence recomputed",
+      "passed": true,
+      "detail": 68.03354609929077
+    },
+    {
+      "check": "HB-FOLD2 independent quaternion RMSD",
+      "passed": true,
+      "detail": {
+        "float64_rmsd_A": 2.977688317146969,
+        "reported_rmsd_A": 2.9776882494537107,
+        "tolerance_A": 1e-06
+      }
+    },
+    {
+      "check": "HB-FOLD2 parser precision explains submicroangstrom difference",
+      "passed": true,
+      "detail": {
+        "float32_parsed_quaternion_rmsd_A": 2.977688249453687,
+        "reported_rmsd_A": 2.9776882494537107
+      }
+    },
+    {
+      "check": "input MSA row count",
+      "passed": true,
+      "detail": 4522
+    },
+    {
+      "check": "unchanged mature query sequence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "MSA input hash retained",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "passed": 21,
+  "total": 21,
+  "metrics": [
+    {
+      "name": "HB-FOLD1",
+      "pdb_sha256": "baa984d15d7b4c5d07be28f70b7161444153940b761fc27810cbcbfa1c1b9ad3",
+      "mean_plddt": 44.8149645390071,
+      "rmsd_A_to_2DN1_A": 12.373976043981413,
+      "matched_CA": 140
+    },
+    {
+      "name": "HB-FOLD2",
+      "pdb_sha256": "b41f803dae4658083696dde5fffdcab3d71a8ca63d0f42ee752297fa7856b06c",
+      "mean_plddt": 68.03354609929077,
+      "rmsd_A_to_2DN1_A": 2.977688317146969,
+      "matched_CA": 140
+    }
+  ],
+  "limits": [
+    "One known target and one seed.",
+    "4522 input alignment rows do not mean 4522 explicit model rows; caps are 1:1. Cluster profiles can contain information from more input rows; cap is not a two-sequence information bound.",
+    "No affinity, heme function or clinical implication."
+  ],
+  "initial_audit": "hb_fold2_run_1792074405157365200/report.json preserves the initial 17/19 result. Both initial discrepancies were only 4.9e-8 and 6.8e-8 A: a float64 direct parse versus the primary Bio.PDB float32 parse, not a source/result defect. This rerun checks both the independent parse within 1e-6 A and identical parsed precision within 1e-10 A.",
+  "auditor_source_sha256": "1822cf5c3e5ecd5ca7e749fd76c0aed678acd68711c3062936839b60c25f7440"
+}

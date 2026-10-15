@@ -1,0 +1,7 @@
+{
+  "method": "SQLite join and average on paired seed/episode rows",
+  "primary_difference": 0.3420168961958852,
+  "pairs": 256,
+  "matches_analysis": true,
+  "independent_researcher": false
+}

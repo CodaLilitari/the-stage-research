@@ -1,0 +1,86 @@
+{
+  "protocol_id": "STAGE-PX1-HS-20261015-r2",
+  "author": "Lilitari",
+  "scope": "Private deterministic mathematical diagnostics only. No biological material, clinical intervention, product formulation, patient data, model API calls, or hardware.",
+  "question_S": "Can greater wall transfer increase total uptake while decreasing distal tissue oxygen in a supply-limited serial channel?",
+  "question_H": "Do equilibrium unloading and finite-contact-time positive controls behave as their exact algebra predicts?",
+  "seed": null,
+  "randomness": "None. All numerical inputs are explicit; no Monte Carlo inference.",
+  "damkohler": [
+    0.1,
+    0.5,
+    1.0,
+    2.0,
+    4.0,
+    8.0
+  ],
+  "wall_fraction": [
+    0.0,
+    0.03,
+    0.1,
+    0.25,
+    0.5,
+    0.75,
+    0.9,
+    0.99,
+    1.0
+  ],
+  "axial_mesh_sizes": [
+    32,
+    64,
+    128,
+    256,
+    512
+  ],
+  "equilibrium_load_pressure_mmHg": [
+    60.0,
+    100.0,
+    160.0
+  ],
+  "equilibrium_unload_pressure_mmHg": [
+    20.0,
+    40.0
+  ],
+  "hill_n": [
+    1.0,
+    2.7,
+    4.0
+  ],
+  "p50_grid": {
+    "minimum": 1.0,
+    "maximum": 200.0,
+    "points": 2001,
+    "spacing": "log"
+  },
+  "contact_time_over_tau": [
+    0.1,
+    1.0,
+    10.0
+  ],
+  "inactive_carrier_fraction": [
+    0.0,
+    0.1,
+    0.3
+  ],
+  "checks": {
+    "p50_grid_relative_error_to_exact_optimum": 0.003,
+    "supply_clamped_tissue_monotone": true,
+    "total_extraction_monotone_with_wall_fraction": true,
+    "no_transfer_no_uptake": true,
+    "finite_kinetics_below_equilibrium_bound": true,
+    "all_outputs_finite_nonnegative": true,
+    "RK4_max_absolute_error_at_finest_grid": 1e-08,
+    "independent_Simpson_balance_error_at_finest_grid": 1e-08
+  },
+  "decision": "A valid counterexample replaces an unconditional distal-oxygen permeability monotonicity test with separate local fixed-supply and coupled finite-supply tests. It does not validate Coda's unavailable PF0 implementation.",
+  "limits": [
+    "Linear local tissue sink",
+    "No spatial tissue diffusion",
+    "No measured carrier parameters",
+    "No actual skin or clinical survival threshold",
+    "Dimensionless S parameters deliberately not assigned to a formulation",
+    "H parameters are synthetic test cases, not fitted HbV or human dosing recommendations",
+    "Same-author algebra/numerical cross-check is not independent replication"
+  ],
+  "revision_note": "r1 retained: finest-grid Simpson balance error exceeded 1e-8. r2 adds N512; numerical tolerance unchanged. This is analytic solver verification, not a held-out biological inference."
+}

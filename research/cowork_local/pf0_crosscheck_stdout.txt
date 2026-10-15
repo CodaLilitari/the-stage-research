@@ -1,0 +1,52 @@
+
+=== 2026-10-15T15:14:22Z python3 -B pf0_crosscheck.py ===
+{
+  "checks": {
+    "inputs_match_pf0_manifest": true,
+    "V1_mimic_reproduces_pf0_minima_and_outlets_1e-9": true,
+    "V2_continuum_close_to_pf0_within_1pct_of_inlet": true,
+    "V2_no_threshold_classification_flips": true,
+    "continuum_refinement_below_1e-8_of_inlet": true,
+    "fixed_lumen_ceiling_matches_pf0_96cell_within_0.5pct": true,
+    "dilute_first_order_closed_form_1e-6": true,
+    "zero_order_closed_form_1e-5": true,
+    "necessary_bounds_consistent": true,
+    "pf0_outputs_depend_only_on_Qbeta_1e-12": true,
+    "pf0_low_flow_wall_reversals_preserved_in_continuum": true
+  },
+  "check_pass_count": 11,
+  "check_count": 11,
+  "elapsed_seconds": 14.537800340000047
+}
+{
+  "V1": {
+    "max_abs_minimum_difference_mol_m3": 6.851932216056511e-11,
+    "max_abs_outlet_difference_mol_m3": 3.077599286527288e-11,
+    "max_rel_uptake_difference": 1.903142919567337e-09,
+    "max_mass_balance_error": 1.8170886145799008e-08,
+    "seconds": 1.2165219839999963,
+    "reproduces_pf0": true
+  },
+  "V2": {
+    "max_abs_minimum_difference_over_inlet": 0.002901495124768335,
+    "max_rel_minimum_difference": 0.1778474185470671,
+    "max_abs_outlet_difference_over_inlet": 0.008639389732502788,
+    "max_rel_uptake_difference": 0.009948037054204998,
+    "pf0_cases_above_threshold": 55,
+    "continuum_cases_above_threshold": 55,
+    "continuum_above_threshold_by_beta": {
+      "1.0": 16,
+      "4.0": 19,
+      "16.0": 20
+    },
+    "pf0_minimum_exceeds_continuum_cases": 144,
+    "sign_note": "PF0's cell-centre minimum and backward-Euler axial depletion both bias its minima upward"
+  },
+  "flips": 0,
+  "refinement": 2.0570575798295465e-09,
+  "dilute": 5.269951778540152e-10,
+  "zero": 2.0631006026368486e-06,
+  "continuum_nonmonotone_groups": 2
+}
+[wall 14.72 s, max RSS 36952 kB]
+[exit 0 at 2026-10-15T15:14:36Z]

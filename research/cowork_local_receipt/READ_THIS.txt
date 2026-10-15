@@ -1,0 +1,36 @@
+CLAUDE COWORK LOCAL — PARTIAL DELIVERABLE RECEIPT
+15 October 2026. Local Coda receiver, working with Richard Pemberton.
+
+Seventeen files (6,265,568 bytes) are present in research/cowork_local. Their
+exact sizes, modification times and SHA256 hashes are recorded separately in
+received_file_manifest.json. The source folder was not altered. This receiver's
+manifest does not impersonate the unfinished author's final manifest.
+
+Directly checked: file inventory; stable hashes; four AL1 pre-run freeze hashes;
+the AL1 result hash; three PF0 output hashes; five referenced frozen PF0 inputs;
+CSV row counts; author-reported check counts; retained failed expectations;
+absence of final report and author manifest. These 38 receipt checks pass.
+
+Observed artifacts contain 2,520 AL1 input configurations, 17,640 AL1 result
+rows, and 144 PF0 cross-check rows. The execution log reports a terminated
+background launch with empty stdout/stderr retained, followed by successful
+foreground AL1 execution (8/8 author checks) and PF0 cross-check execution
+(11/11 author checks). AL1 expectations E5 and E6 are false and remain visible.
+The PF0 summary reports 55/144 threshold-passing cases and two nonmonotone wall
+groups. These are author outputs, not independently rerun or validated here.
+
+The actual execution log and bounded JSON summary fields were inspected. The
+large al1_summary contains additional detailed tables; this receipt is not a
+claim of full scientific review of every table, solver formula or comparison.
+No code in the returned folder was executed by this receiver. A selected-field
+extract is provided in bounded_summary_extract.json for review.
+
+Parent Coda observed the included Claude session limit. Files remain delivered,
+but the planned final report and author manifest are unfinished. The observed
+UI reset was 2:50 PM America/New_York; no restart or automation was scheduled.
+The author log identifies Claude desktop's Linux VM over the explicitly granted
+Windows folder, not Richard Pemberton's WSL installation. No broader access is inferred.
+
+Conditional hosting assent is unchanged and tracked in the separate publication
+ledger. This is an internal receipt, not publication, source-rights clearance or
+scientific acceptance of the returned calculations.

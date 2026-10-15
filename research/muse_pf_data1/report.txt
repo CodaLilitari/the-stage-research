@@ -1,0 +1,90 @@
+PF-DATA1: REPLAY, SOURCE AUDIT, CORRECTED INFERENCE AND PF0 SENSITIVITY
+15 October 2026 | Coda working with Richard Pemberton
+
+Disposition: accept Nua's transcribed dataset and the measured occlusion result; retain the useful lower-demand sensitivity question. Correct the code/statistical labels and withdraw the fixed-blood-supply, general 400-micrometre safety and fourfold-spacing conclusions. The actual new PF0 run supports conditional lower-demand exploration, not a validated skin design.
+
+WHAT WAS EXECUTED AND PRESERVED
+The returned reanalysis.py was read before execution. It imports standard scientific libraries, reads only the supplied relative CSV, and writes local analysis artifacts. Its bytes were copied unchanged to original_replay/reanalysis.py, with sibling raw and outputs directories. That exact copy ran successfully, as did the corrected analysis. The raw CSV hash is 10ac98cb0645d445c779b5c3bf4a268cb9e9e953316a72e45328a16c2c6efaf3; it also matches the subsequently recovered actual CSV download. Original files, returned prose and replay outputs remain separate from corrections.
+
+The corrected scripts, CSV, article HTML and exact copied PF0 source were frozen before the new numerical runs. freeze.json is a local timestamp/hash record after inspecting the existing data, not an externally witnessed preregistration. Source files in the original research/artificial_blood folder were read/copied, never changed. No biological experiment, new biological protocol, external upload, Git publication, package installation or paid call occurred in this audit.
+
+PRIMARY SOURCE AND ROW VERIFICATION
+Stuecker et al., J Physiol 538(3):985-994 (2002), DOI 10.1113/jphysiol.2001.013067, PMCID PMC2290093, PMID 11826181.
+https://pmc.ncbi.nlm.nih.gov/articles/PMC2290093/
+The full primary HTML was obtained directly with a standard HTTP request; the browser reader sometimes returned a CAPTCHA shell. Exact bytes/hash and the failed Europe PMC XML request are preserved. verify_primary.py independently parses the downloaded HTML table, selects the Volunteer table, and compares Decimal values: all 140 numeric cells across 20 rows and seven fields match the returned CSV exactly. There are no missing entries. This verifies transcription, not instrument accuracy or original raw traces.
+
+Each row is one volunteer, with paired surface-oxygen conditions and a five-minute occlusion increment. Technical repeats are not reported in Table 1. All 20 rows are retained. The paper's three exclusions concern fitting mono-exponential equilibration times, not exclusion of three Table 1 volunteers.
+
+An apparent criticism was rejected: the Methods explicitly report ten adhesive-tape strips to remove superficial scales before the main measurements, followed by 50 microlitres water and sensor heads at 33 C. This was not a separate stripping-only experiment. It also does not mean complete removal of the stratum corneum. Site was volar forearm after room acclimation at 22-23 C. Source descriptions and the derived data apply to these preparation/temperature conditions, not automatically to dry untreated skin or a tissue construct.
+
+The source calls the older group 'older than 70', but the table includes three age-70 volunteers. To reproduce the actual cohort, volunteers 11-20 must all be included (equivalently age >=70 here). Nua's strict age>70 excluded volunteers 13, 18 and 20, yielding n=7. The corrected groups are n=10 each. The returned statement that age was self-reported is not established by the inspected paper.
+
+The literature demand range 1470-2110 ml O2/m3/min is explicitly discussed by Stuecker et al. It comes from earlier measurements at about 35 C, including dermis and blister-base tissue, not consumption measured in these 20 people. The cited 1966/1967 full papers were not inspected; this is a source-chain limitation. No gas-volume reference convention (STP versus ambient reference) was established from the inspected article, so the returned assertion 'ambient, not STP' and the particular 25 C conversion are assumptions, not verified metadata.
+
+REPLAY RESULT AND ONE ENVIRONMENTAL DIFFERENCE
+Mean occlusion increment = 0.036500 ml O2/m2/min; SD 0.012475; mean relative increase = 9.4985%; SD 6.3214 percentage points. The one-sample t result p=5.92889e-11 reproduces. The returned summary was later recovered and compared recursively: all numerical fields match within declared tolerances except Wilcoxon p. Returned p=1.90735e-6; local default SciPy 1.18.1 p=8.83239e-5.
+
+This is not hidden or called a full exact replay. An explicit diagnostic reproduces the returned value with method='exact' and the local value with method='asymptotic'. All 20 increments are positive and nonzero; two of the 2^20 equally likely sign assignments attain the extreme rank sums, giving the exact conditional sign-randomization p=2/2^20=1.90735e-6, including tied absolute values. The provider environment/method selection was not recorded, so the precise environmental cause remains unresolved. Both values support a positive five-minute response under their test assumptions. See wilcoxon_diagnostic.json.
+
+CORRECTED INFERENCE
+The conditional 95% t interval for mean increment is [0.0306614, 0.0423386] ml O2/m2/min; for mean percent increase it is [6.5400, 12.4570]%. These quantify a subject-sampling calculation for the published values. They omit instrument/calibration error, rounded-data error, uncertainty in gas conditions and population-selection effects.
+
+Corrected age means +/- SD: younger 0.515 +/- 0.223967; older 0.543 +/- 0.312732. Welch p=0.820808, pooled p=0.820541. The rounded table reproduces the paper approximately, not every reported decimal. Nonsignificance is not an equivalence result and does not establish absence of an age effect.
+
+Occlusion increment versus normal flux: Pearson r=-0.147350, p=0.535299, Fisher 95% interval [-0.553763, 0.315760]. OLS slope=-0.00693332, 95% t interval [-0.0299794, 0.0161128]. Correct slope SE=0.0109695; intercept SE=0.00645825. The original 'ols_intercept_se' stored the slope SE.
+
+Three candidate descriptive fits were compared, with variance counted in AICc and direct leave-one-out cross-checks:
+  model          residual SS       AICc*           leave-one-out MSE
+  constant       0.00295700       -171.68036        0.000163823
+  proportional   0.00910965       -149.17718        0.000511542
+  intercept+slope 0.00289280       -169.32527        0.000183339
+  *Common additive Gaussian constant omitted; only within-dataset comparisons apply.
+
+The constant mean predicts these data better than the origin-constrained proportional fit under these exploratory error/model assumptions. This is more evidence than a nonsignificant slope alone, but still cannot identify a fixed absolute physiological blood contribution. Shared calibration, error in resting flux, heterogeneous tissue, limited n and transient response remain. No equivalence margin or causal model was tested. Excluding volunteer 19 is a labeled sensitivity, not a justified data deletion; its effect on descriptive model preference does not rescue causal identification.
+
+The primary paper says the fluxoptode's mean equilibration time was 413 +/- 130 seconds, longer than the 300-second occlusion, and warns the response may underestimate blood contribution. Therefore the observed increase cannot simply be equated to all oxygen normally supplied by blood. Neither 9.5% nor the absolute increment is a validated design fraction/rate for another tissue.
+
+Two measured pressure points per person determine a line exactly. The intercept test p=0.474696 cannot establish individual linearity or proportionality. The average extrapolated intercept is 0.039738 with a broad conditional interval [-0.0743011, 0.153776]. The paired normal-minus-reduced flux mean is 0.195500, interval [0.110637, 0.280363]. These are descriptive paired responses.
+
+An additional instrument error was found: the original 'sanity check' uses normal skin-surface pressure minus reduced skin-surface pressure as the membrane pressure gradient. Membrane transport instead uses external minus skin-surface pressure within one condition. The apparent matching flux scale does not validate that calculation.
+
+The original transcription tolerances were not meaningful: adding 0.1 ml/m2/min to every normal-flux entry leaves both its mean and SD tests passing despite all 20 values being wrong. Actual data are correct because exact primary-table matching succeeded, not because those broad tests passed.
+
+THICKNESS AND UNCERTAINTY
+Using mean flux / the literature demand range gives consuming-layer scenarios 250.711-359.864 micrometres. Adding 15 micrometres nonconsuming stratum corneum gives total 265.711-374.864 micrometres. The paper reports both; the returned analysis compared its total-thickness simulation against the paper's consuming-only range.
+
+The original Monte Carlo median 302.692 and central 95% interval [54.2405,662.204] micrometres reproduce. The simulation combines random draws from the empirical subjects with an independent uniform demand range chosen by the analyst. It is a subject-mixture/parameter-scenario distribution, not a confidence interval for the cohort mean, a population posterior or a complete uncertainty budget. Per-subject 'posterior' is also an incorrect label.
+
+The corrected per-subject deterministic total-thickness scenarios span 48.1754-783.707 micrometres over all subjects/demand endpoints. For the cohort mean, conditional t intervals at fixed demand are [290.453,459.275] micrometres at 1470 and [206.903,324.519] at 2110. These are separate conditional calculations; their union is not a probability interval over an uncertain demand parameter. All J/q calculations assume compatible gas-volume conventions and homogeneous relevant demand.
+
+EXECUTED PF0 SENSITIVITY
+The ideal formula sqrt(2 D Cin/q) assumes zero-order demand, ideal supply boundary and zero terminal concentration. It does not incorporate PF0's finite wall, axial depletion or assumed positive threshold. A fourfold change in that ideal length cannot certify a fourfold practical spacing or a generally acceptable 400-micrometre slab.
+
+The copied original PF0 solver was executed over all 144 original geometry/flow/permeability/capacity cases for each of three predeclared scenarios:
+  scenario                         qmax (mol/m3/s)  passing/144  400um passing/36
+  low demand as saturation          0.00100143062      144          36
+  high demand as saturation         0.00156895988      143          35
+  high demand matched at inlet      0.00178861426      138          30
+
+The low endpoint uses 1470 and assumed gas molar volume 24465 ml/mol (25 C, 1 atm); the high endpoint uses 2110 and 22414 ml/mol (0 C, 1 atm). Convert ml/m3/min by division by ml/mol and 60 s/min. These are explicit reference-condition scenarios, not recovered experimental gas metadata. The third scenario adjusts qmax so Michaelis-Menten consumption at Cref=0.2 matches the upper demand, retaining illustrative Km=0.028. Literature physiological consumption does not identify maximum MM demand; treating it directly as qmax is a separate saturation assumption.
+
+Retained D=2e-9 m2/s, Km=0.028 mol/m3, inlet=0.2 mol/m3, threshold=0.05 mol/m3, geometry and the hypothetical linear carrier law were not fitted to this dataset. No D, temperature, cell-density, threshold or geometry uncertainty was propagated. The scenario endpoints need not bound actual constructs.
+
+At 400 micrometres, flow 0.5 microlitres/min, wall permeability 0.005 mm/s and beta=1, the two higher-demand scenarios have minimum free oxygen 0.0346926 and 0.0263429 mol/m3, below the assumed 0.05 threshold. The lower scenario minimum there is 0.0734365. Thus favorable results are conditional on uncertain demand interpretation and transport conditions. All seven failing scenario/case combinations in the full grids occur at 400 micrometres. No flow/wall/capacity monotonicity decrease occurred in these three lower-demand grids; this does not invalidate the separately computed high-demand PF0 cases or establish a global monotonicity theorem.
+
+432 cases completed in 43.68 s. All eight internal numerical checks passed. Eleven specified refinements (eight high-demand low-wall corner cases plus the nearest-threshold case in each scenario) preserved classifications; maximum coarse/fine minimum difference divided by inlet was 0.000189840. Maximum relative mass-balance discrepancy was 3.20604e-7. These are numerical verification, not biological validation. The implementation author's separate closed-form OLS, direct-refit LOOCV and artifact checks are documented as internal cross-checks, not an independent external review.
+
+DESIGN IMPLICATION
+Carry both the original high-demand stress cases and explicit lower-demand scenarios forward. The executed sensitivity confirms Nua's useful challenge that demand choice strongly changes this screen. It does not justify replacing all PF0 parameters with 'real skin' constants, calling 400 micrometres safe, prescribing reduced flow or widening channels by fourfold. Existing data constrain prepared-skin surface flux and a transient occlusion response. Demand kinetics, diffusivity, boundary transfer and construct applicability remain unresolved. In a zero-order steady profile, curvature alone identifies q/D (or pressure-based q/K), not q and D separately; additional calibrated absolute flux and boundary information would be needed under a specified model. No biological measurement protocol is proposed here.
+
+SOURCE-READ DEPTH AND REMAINING LIMITS
+Read directly: complete returned Python; returned visible response/dictionary excerpt; complete downloaded primary HTML numeric table and relevant Methods, instrument, Results and Discussion sections; original local PF0 implementation. Exact full-article bytes retained. References to Evans/Naylor were checked in Stuecker's bibliography but their full papers were not inspected. The other papers Nua rejected were not independently reassessed in this bounded audit. Nua's cloud execution cannot be witnessed retrospectively; actual returned artifacts and our local replay are established separately. All corrected plots were opened and visually inspected for readable labels and unclipped content. No separate local reviewer had completed this audit at report time; root may attach a later independent receipt.
+
+FILES
+primary/table_verification.json: all 140 numeric comparisons.
+outputs/: unchanged script's actual local outputs (scientific errors preserved).
+corrected/summary.json and per_subject_corrected.csv: corrected statistical and scenario results.
+corrected/pf0_cases.csv and pf0_results.json: all 432 scenarios, checks and refinements.
+corrected/corrected_analysis.png and pf0_sensitivity.png: inspected scientific figures.
+cross_checks.json, wilcoxon_diagnostic.json, replay_receipts.json, freeze.json: checks and provenance.
+manifest.json: artifact hashes, excluding runtime cache and the manifest itself.

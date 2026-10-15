@@ -1,0 +1,246 @@
+{
+  "timestamp_utc": "2026-10-15T15:25:00.260907+00:00",
+  "state": "files_received_and_bounded_logs_inspected; final_report_and_author_manifest_unfinished",
+  "execution_state": "Saved author logs report foreground AL1 and PF0 cross-check exit 0; no rerun by Coda in this receipt",
+  "interruption": "Parent observed included session limit; live UI reset reported 2:50 PM America/New_York. No automation or restart scheduled.",
+  "claim_scope": "Hashes, inventory, CSV row counts and author self-check consistency only; not independent solver/formula validation.",
+  "checks": [
+    {
+      "id": "exact_17_file_inventory",
+      "passed": true
+    },
+    {
+      "id": "AL1_freeze:al1_scan.py",
+      "passed": true
+    },
+    {
+      "id": "AL1_freeze:stage_transport.py",
+      "passed": true
+    },
+    {
+      "id": "AL1_freeze:al1_config.json",
+      "passed": true
+    },
+    {
+      "id": "AL1_freeze:al1_inputs.csv",
+      "passed": true
+    },
+    {
+      "id": "AL1_summary_result_hash",
+      "passed": true
+    },
+    {
+      "id": "PF0_returned_output:lumen_film_groups.csv",
+      "passed": true
+    },
+    {
+      "id": "PF0_returned_output:pf0_crosscheck_cases.csv",
+      "passed": true
+    },
+    {
+      "id": "PF0_returned_output:pf0_wall_optimum.csv",
+      "passed": true
+    },
+    {
+      "id": "PF0_existing_input:cases.csv",
+      "passed": true
+    },
+    {
+      "id": "PF0_existing_input:freeze.json",
+      "passed": true
+    },
+    {
+      "id": "PF0_existing_input:monotonicity_diagnostic.json",
+      "passed": true
+    },
+    {
+      "id": "PF0_existing_input:pf0.py",
+      "passed": true
+    },
+    {
+      "id": "PF0_existing_input:results.json",
+      "passed": true
+    },
+    {
+      "id": "AL1_input_row_count",
+      "passed": true
+    },
+    {
+      "id": "AL1_result_row_count",
+      "passed": true
+    },
+    {
+      "id": "AL1_self_check_count_consistent",
+      "passed": true
+    },
+    {
+      "id": "PF0_self_check_count_consistent",
+      "passed": true
+    },
+    {
+      "id": "AL1_failed_expectations_retained",
+      "passed": true
+    },
+    {
+      "id": "provider_final_manifest_absent",
+      "passed": true
+    },
+    {
+      "id": "provider_final_report_absent",
+      "passed": true
+    },
+    {
+      "id": "stable_snapshot:stage_transport.py",
+      "passed": true
+    },
+    {
+      "id": "stable_snapshot:pf0_wall_optimum.csv",
+      "passed": true
+    },
+    {
+      "id": "stable_snapshot:pf0_crosscheck_summary.json",
+      "passed": true
+    },
+    {
+      "id": "stable_snapshot:pf0_crosscheck_stdout.txt",
+      "passed": true
+    },
+    {
+      "id": "stable_snapshot:pf0_crosscheck_cases.csv",
+      "passed": true
+    },
+    {
+      "id": "stable_snapshot:pf0_crosscheck.py",
+      "passed": true
+    },
+    {
+      "id": "stable_snapshot:lumen_film_groups.csv",
+      "passed": true
+    },
+    {
+      "id": "stable_snapshot:execution_log.txt",
+      "passed": true
+    },
+    {
+      "id": "stable_snapshot:al1_summary.json",
+      "passed": true
+    },
+    {
+      "id": "stable_snapshot:al1_scan.py",
+      "passed": true
+    },
+    {
+      "id": "stable_snapshot:al1_run_stdout_v2.txt",
+      "passed": true
+    },
+    {
+      "id": "stable_snapshot:al1_run_stdout.txt",
+      "passed": true
+    },
+    {
+      "id": "stable_snapshot:al1_run_stderr.txt",
+      "passed": true
+    },
+    {
+      "id": "stable_snapshot:al1_results.csv",
+      "passed": true
+    },
+    {
+      "id": "stable_snapshot:al1_inputs.csv",
+      "passed": true
+    },
+    {
+      "id": "stable_snapshot:al1_freeze.json",
+      "passed": true
+    },
+    {
+      "id": "stable_snapshot:al1_config.json",
+      "passed": true
+    }
+  ],
+  "passed": 38,
+  "total": 38,
+  "csv_structure": {
+    "al1_inputs.csv": {
+      "rows": 2520,
+      "fields": [
+        "config_id",
+        "geometry",
+        "hotspot_demand_ratio_r",
+        "hotspot_depth_um",
+        "transfer",
+        "P_wall_mm_s",
+        "lumen_film",
+        "P_eff_mm_s",
+        "beta",
+        "total_flow_uL_min",
+        "n_channels",
+        "module_labels",
+        "module_depths_um",
+        "module_demand_multipliers",
+        "module_q_mol_m3_s"
+      ]
+    },
+    "al1_results.csv": {
+      "rows": 17640,
+      "fields": [
+        "geometry",
+        "hotspot_demand_ratio_r",
+        "hotspot_depth_um",
+        "transfer",
+        "P_eff_mm_s",
+        "beta",
+        "total_flow_uL_min",
+        "arrangement",
+        "worst_min_mol_m3",
+        "worst_module",
+        "min_ceiling_mol_m3",
+        "worst_over_ceiling",
+        "reaches_reference_0p05",
+        "module_minima_mol_m3",
+        "module_ceilings_mol_m3",
+        "flow_fractions",
+        "series_order",
+        "pressure_drop_Pa",
+        "pump_power_W",
+        "power_relative_to_uniform_parallel",
+        "global_supply_ratio",
+        "worst_at_equal_power_beta1_mol_m3"
+      ]
+    },
+    "pf0_crosscheck_cases.csv": {
+      "rows": 144,
+      "fields": [
+        "depth_um",
+        "flow_uL_min",
+        "P_mm_s",
+        "beta",
+        "qbeta_uL_min",
+        "kappa_Km_over_Cin",
+        "Phi2_qH2_over_DCin",
+        "zero_order_transverse_drop_over_Cin",
+        "Biot_PH_over_D",
+        "zero_order_wall_drop_over_Cin",
+        "Da_conv_qV_over_QbetaCin",
+        "first_order_NTU",
+        "first_order_thiele_phi",
+        "pf0_minimum_mol_m3",
+        "pf0_mimic_minimum_mol_m3",
+        "continuum_minimum_mol_m3",
+        "continuum_ceiling_mol_m3",
+        "pf0_outlet_mol_m3",
+        "continuum_outlet_mol_m3",
+        "continuum_extraction_fraction",
+        "continuum_minimum_over_ceiling",
+        "pf0_above_threshold",
+        "continuum_above_threshold",
+        "regime"
+      ]
+    }
+  },
+  "final_report_present": false,
+  "author_manifest_present": false,
+  "scientific_acceptance": "not established by receipt",
+  "consent": "unchanged; conditional hosting assent remains in separate ledger",
+  "environment": "Author log reports Claude desktop Linux VM accessing explicitly granted Windows project through FUSE, not Richard Pemberton WSL; environment is self-reported execution metadata."
+}

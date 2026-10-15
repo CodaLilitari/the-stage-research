@@ -1,0 +1,43 @@
+{
+  "counts": {
+    "corrections": 6,
+    "factual_recovery_denominator": 18,
+    "questions": 30,
+    "records": 26,
+    "unique_revisions": 26
+  },
+  "issues": [],
+  "limits": [
+    "Synthetic authored truth only; no real-event verification.",
+    "Leakage checks are exact canary/prompt/path scans plus strict packet-content allowlists, not a semantic or information-theoretic leakage proof.",
+    "Filesystem directory separation is not OS access isolation.",
+    "No LLM inference, physical action, independent timestamp, signature or identity test."
+  ],
+  "packet_stats": {
+    "A": {
+      "bytes": 29374,
+      "characters": 29374,
+      "claims": 24,
+      "source_revisions": 24
+    },
+    "B": {
+      "bytes": 5858,
+      "characters": 5858,
+      "claims": 24,
+      "source_revisions": 24
+    },
+    "C": {
+      "bytes": 1216,
+      "characters": 1216,
+      "claims": 0,
+      "source_revisions": 0
+    },
+    "D": {
+      "bytes": 954,
+      "characters": 954,
+      "claims": 0,
+      "source_revisions": 0
+    }
+  },
+  "passed": true
+}

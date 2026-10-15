@@ -1,0 +1,172 @@
+THE STAGE: ARTIFICIAL BLOOD, PERFUSION AND A FIRST TRANSPORT RESULT
+Coda's local assessment for Richard Pemberton | 15 October 2026
+
+Recommendation
+--------------
+For the stated destination of living tissue over a robotic body, the most direct
+near-term research object is a perfused, replaceable living-tissue module with
+an external support loop. That is an engineering judgment about this project's
+dependencies, not a prediction that building it will be easy. Human transfusion
+oxygen therapeutics are a serious established research field, but developing one
+would add a separate clinical product problem before solving the tissue module's
+transport problem. Neither route starts with an all-purpose replacement for blood.
+
+Three different things currently share the name "artificial blood"
+---------------------------------------------------------------
+1. HUMAN OXYGEN THERAPEUTIC. A carrier intended to transport oxygen in a human
+   circulation must be evaluated in that biological environment. The 2022 HbV
+   first-in-human study assessed safety and pharmacokinetics in healthy adults;
+   reported infusion reactions and fever limit any claim of simple readiness.
+   It was not a demonstration of whole-blood replacement or clinical rescue
+   efficacy. The paper is historical evidence, not a current approval inventory.
+   Source: Azuma et al., Blood Advances 2022, DOI 10.1182/bloodadvances.2022007977.
+   https://pmc.ncbi.nlm.nih.gov/articles/PMC9618780/
+   Read depth: primary indexed text covering rationale, trial design and adverse
+   findings; direct PMC opening was challenged. No dosing or preparation advice
+   is inferred here. The parent assessment separately checks current trials.
+
+   FDA's 2018 research account emphasizes that HBOCs differ biochemically and
+   that oxidation/reactivity can compromise both oxygen transport and safety.
+   Capacity alone is therefore an inadequate product specification. Its dated
+   regulatory statement must not be presented as an October 2026 status check.
+   https://www.fda.gov/vaccines-blood-biologics/science-research-biologics/fda-comparison-characteristics-hemoglobin-based-oxygen-carriers-could-guide-development-safe-and
+   Read depth: FDA research summary of its comparative biochemical study.
+
+2. ENGINEERED-TISSUE PERFUSATE. The target is a complete support system: a fluid,
+   delivery network, exchange surfaces and regeneration/removal functions. A
+   bench-supported tissue patch need not simultaneously reproduce every human
+   blood function. Oxygen delivery still depends on flow, distance, wall transfer
+   and consumption; total carrier capacity cannot substitute for those terms.
+   Nutrient/waste transport and the fluid's compatibility with the selected tissue
+   remain separate required questions. The PF0 run below addresses oxygen only.
+
+   Grebenyuk et al. (2023) demonstrated synthetic microfluidic networks supporting
+   neural and liver constructs at multi-mm scale. Their common grid was
+   2.6 x 2.6 x 1.5 mm with 250-micrometer inter-vessel spacing. This establishes
+   experimental precedent for an engineered delivery architecture, not a living
+   skin envelope over moving machinery or a complete artificial circulation.
+   The authors explicitly distinguish it from adaptive natural vessels and
+   selective blood-brain-barrier interactions.
+   https://www.nature.com/articles/s41467-022-35619-1
+   https://pmc.ncbi.nlm.nih.gov/articles/PMC9837048/
+   Read depth: primary abstract, geometry/results, viability comparisons and
+   discussion. The fabrication recipe is outside this assessment.
+
+3. NONLIVING ROBOT FLUID. Hydraulic power transmission, cooling, or energy storage
+   can each be useful without nourishing cells. Aubin et al. (2019) demonstrated
+   a soft aquatic robot combining flow-battery energy storage and hydraulic
+   actuation. That is a relevant synthetic-circulation precedent, not transfusable
+   blood or a demonstrated tissue-compatible perfusate. For a biohybrid body,
+   separate mechanical and biological loops may be easier to reason about first.
+   https://doi.org/10.1038/s41586-019-1313-1
+   https://pubmed.ncbi.nlm.nih.gov/31217583/
+   Read depth: original paper abstract and bibliographic record, not full methods.
+
+The 2026 primary model and the scope of our reduction
+--------------------------------------------------
+Bonart et al. couples channel flow, wall exchange and tissue metabolism, including
+blockage, spatial density and axial depletion. Its examples are computational;
+PF0 is a smaller independent planar model, not replication of the full network.
+The paper's illustrative high-demand values give density 2e14 cells/m3,
+q_cell=1e-16 mol/cell/s, qmax=0.02 mol/m3/s, Km=0.028 mol/m3, D=2e-9 m2/s,
+free inlet=0.2 mol/m3 and assumed hypoxia threshold=0.05 mol/m3. These are
+liver-like benchmark values, not measured skin parameters. Wall permeability
+0.05–0.2 mm/s is its example range; PF0 also adds a 0.005 mm/s stress case.
+https://www.nature.com/articles/s41598-026-53301-0
+Accessible publisher route:
+https://www.nature.com/articles/s41598-026-53301-0?error=cookies_not_supported
+Read depth: primary design process, governing equations, assumptions and example
+parameters. The deposited implementation exists at the DOI below; it was not
+installed or executed for PF0. It identifies itself as prototype code.
+https://zenodo.org/records/20305817
+
+PF0 equations (our reduced model, SI units throughout)
+----------------------------------------------------
+Within each one-sided slab, 0 < x < H:
+  D d2C/dx2 - qmax*C/(Km+C) = 0
+  -D*dC/dx at x=0 = P*(C_lumen - C_wall)
+  dC/dx at x=H = 0
+Along a supplying channel of width W:
+  Q * beta * dC_lumen/dz = -W*J_wall
+
+C denotes FREE oxygen, in mol/m3. The deliberately hypothetical equilibrium law
+C_total=beta*C_free applies in the lumen only. Increasing beta adds reversible
+content at the same free concentration; it never multiplies diffusivity or free
+inlet oxygen. This linear law specifies neither a chemical material nor its
+affinity, release kinetics, viscosity, oxidation or toxicity. More realistic
+binding would replace beta with dC_total/dC_free and require new parameters.
+
+The software uses finite-volume tissue balances, a nonnegative Newton solve,
+finite wall resistance, and implicit axial depletion. It integrates delivered
+oxygen against tissue uptake. A finite-volume cell minimum is a discretized
+field estimate, not a directly measured biological concentration.
+
+Useful analytic rejection tests, derived here
+--------------------------------------------
+Let qcrit=qmax*Ccrit/(Km+Ccrit). If every cell is to stay above Ccrit, its oxygen
+use is at least qcrit. A necessary local condition is therefore:
+  Cin - qcrit*(H/P + H^2/(2D)) >= Ccrit.
+Failure rejects that slab even with no axial depletion and unlimited flow or
+carrier capacity at the same free inlet. An independent necessary supply bound
+is Q*beta*(Cin-Ccrit) >= qcrit*W*H*length. Passing either is not sufficient.
+Replacing qcrit by qmax gives a conservative zero-order slab lower bound under
+a fixed lumen concentration; a negative value signals failure of that bound,
+not a prediction of physically negative oxygen.
+
+Executed PF0 result
+-------------------
+The code and inputs were frozen before the main run. The 144-case sweep used
+depths 50/100/200/400 micrometers, four flows, three permeabilities and three
+hypothetical capacities. Geometry and sweep ranges are declared modeling choices,
+not a prescription for culturing tissue. Results:
+
+  Cases above the assumed threshold: 55/144.
+  At beta 1, 4 and 16: respectively 16, 19 and 20 passes out of 48 each.
+  Cases failing the local necessary bound: 72/144.
+  Maximum relative mass-balance error: 1.82e-8.
+  Largest difference on eight doubled-grid checks: 0.0251% of inlet concentration.
+  Predeclared checks: 6/7 passed; the failed check is retained.
+
+The important failure is informative: the initial expectation that greater wall
+permeability must always improve the global minimum was false for two low-flow,
+deep-tissue groups. A separately labeled post-run diagnosis refined six cases
+and reproduced both reversals. Increasing permeability improved the fixed-lumen
+local profile but increased upstream extraction, reducing downstream oxygen.
+For 200-micrometer depth, the refined downstream minimum fell from 0.0009221
+to 0.0006676 mol/m3 when P increased from 0.05 to 0.2 mm/s at the fixed low-flow
+case. These remain far below the assumed threshold. This is a coupled-model
+counterexample; it does not establish a biological effect. The original failed
+check has not been converted into a retrospective pass.
+
+Within PF0, flow and capacity enter as Q*beta; their equivalence is a property
+of the stipulated law, not evidence for a realizable carrier. Additional carrier
+capacity has diminishing value when diffusion distance or wall transfer is the
+dominant limit. PF0 has no pump-power, mechanical-deformation, glucose, CO2,
+lactate, pH, thermal or tissue-function model. It cannot certify viable skin.
+
+Concrete next step for living tissue over machinery
+--------------------------------------------------
+Choose a nonneural skin/tissue module and source its actual demand, transport,
+thickness and stress ranges before claiming that route is feasible. Extend the
+same conservative network to couple oxygen and a waste/nutrient constraint,
+then perturb channel compression/occlusion during a prescribed motion cycle.
+Compare network redesign against more flow or more carrier content, measuring
+the worst local condition and pump cost rather than mean oxygen alone. That
+tests a requirement directly created by living tissue on moving robotic parts.
+It remains a computational design program until appropriate experimental data
+can validate its tissue-specific assumptions.
+
+Reproduction and retained artifacts
+----------------------------------
+From <PROJECT_ROOT>:
+  .venv-stage\Scripts\python.exe research\artificial_blood\pf0.py --freeze
+  .venv-stage\Scripts\python.exe research\artificial_blood\pf0.py
+Both refuse to overwrite existing frozen/main results. Reproduce in a fresh
+copy with the same source and config, retaining this original result bundle.
+The separately labeled diagnostic is:
+  .venv-stage\Scripts\python.exe research\artificial_blood\diagnose_monotonicity.py
+
+Read results.json, cases.csv, report.txt, freeze.json, execution_receipt.json,
+oxygen_screen.png and monotonicity_diagnostic.json alongside this review.
+No wet-lab preparation, human administration, external consultation, purchase,
+clinical result, physical-body demonstration or identity claim occurred here.

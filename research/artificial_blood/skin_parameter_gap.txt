@@ -1,0 +1,151 @@
+SKIN PARAMETER GAP — bounded primary-source assessment, 2026-10-15
+Prepared by the local Coda team for Richard Pemberton. Research only; no PF1 run.
+
+Decision
+The next oxygen model should have separate dermal scaffold, viable epidermis,
+and outer barrier layers, with an explicitly air-exposed or covered surface.
+There are useful measured human-cell demand and matrix-transport anchors, but
+this search did not establish a single matched dataset supplying demand,
+diffusivity, solubility, oxygen dependence, and functional thresholds for the
+same engineered-skin construct. Replacing all liver-like PF0 parameters with
+one alleged "skin parameter set" would overstate the evidence.
+
+1. Human dermal fibroblast oxygen demand — best immediate candidate
+Streeter & Cheema, Analyst 2011, 136:4013–4019.
+https://doi.org/10.1039/C1AN15249A
+https://pubs.rsc.org/en/content/articlelanding/2011/an/c1an15249a
+Primary publisher abstract inspected. Oxygen tension was measured at positions
+inside 3D native type-I collagen scaffolds while cell density was varied;
+consumption was then inferred with a mathematical model. The reported mean
+human dermal fibroblast rate is 1.19e-17 mol cell^-1 s^-1. This is a measured-
+profile/model-derived rate, not a direct single-cell measurement or necessarily
+the Michaelis–Menten maximum. It is about 8.4 times lower than PF0's 1e-16
+mol cell^-1 s^-1 liver-like assumption (our arithmetic).
+Donor count, donor dispersion, passage, temperature, full density range,
+uncertainty, and fitted oxygen-dependence parameters were not verified here;
+the full article route returned an access barrier. No raw dataset was recovered.
+Use as a provisional fibroblast-specific sensitivity anchor only. Do not pair
+it automatically with PF0's liver cell density or retain its Km without a label.
+
+2. Human epidermal demand — useful independent but indirect anchor
+Balu et al., Biophysical Journal 2013, "In Vivo Multiphoton NADH Fluorescence
+Reveals Depth-Dependent Keratinocyte Metabolism in Human Skin."
+https://pmc.ncbi.nlm.nih.gov/articles/PMC3540245/
+https://pubmed.ncbi.nlm.nih.gov/23332078/
+Primary indexed article text inspected; direct full-text requests challenged.
+During arterial occlusion, optical hemodynamic measurements and NADH changes
+were combined to estimate near-basal keratinocyte demand: approximately
+0.035 micromol per 10^6 cells per hour, equivalent to 9.72e-18 mol cell^-1 s^-1
+(our unit conversion). The estimate uses an approximately 200-picoliter imaged
+region containing about 200 cells. It is not a whole-epidermis or cultured-skin
+qmax measurement, and depends on the optical/inference assumptions. Donor
+distribution and uncertainty around this particular estimate were not verified.
+Keep it separate from the fibroblast estimate; similar numbers do not establish
+equal demand across cell types, differentiation states, culture ages, or injury.
+
+3. Oxygen diffusivity of an engineered dermal matrix
+Cheema et al., J Tissue Engineering and Regenerative Medicine 2012, 6:77–84.
+https://doi.org/10.1002/term.402
+https://pubmed.ncbi.nlm.nih.gov/21312340/
+Primary abstract inspected. Optical-fiber core oxygen monitoring and Fick-law
+fitting gave D = 4.5e-6 cm^2/s for 11% collagen density, 1.7e-6 cm^2/s for 34%,
+and 3.4e-6 cm^2/s for photochemically crosslinked 11% collagen. In SI these are
+4.5e-10, 1.7e-10, and 3.4e-10 m^2/s. These are material-specific dense collagen
+measurements, not native-human-dermis constants or values for a dilute gel.
+They are 4.4–11.8 times smaller than PF0's 2e-9 m^2/s (our arithmetic).
+Full methods, precise density definition, temperature, replicates, and raw
+transients were not verified in this bounded pass. Preserve that uncertainty;
+do not map a stated collagen mg/mL concentration onto these percentages without
+checking the definitions and final hydrated construct state.
+
+4. The outer skin barrier has a distinct diffusivity
+Hatcher & Plachy, Biochimica et Biophysica Acta 1993, 1149:73–78.
+https://doi.org/10.1016/0005-2736(93)90026-V
+https://pubmed.ncbi.nlm.nih.gov/8391321/
+Primary abstract inspected. EPR time-dependent oxygen line broadening gave
+human stratum-corneum D = 3e-7 cm^2/s at 37 C = 3e-11 m^2/s; approximate
+activation energy 44 kJ/mol. This isolated outer-barrier measurement must not
+be assigned to living dermis. Donor numbers, hydration conditions and variance
+were not recovered. Oxygen solubility/partitioning is separately needed to
+turn D into pressure-based conductance; diffusivity alone is not permeability.
+
+5. Public human measurements constrain the external boundary, not total demand
+Stucker et al., Journal of Physiology 2002, 538:985–994.
+https://doi.org/10.1113/jphysiol.2001.013067
+https://pmc.ncbi.nlm.nih.gov/articles/PMC2290093/
+Primary full-text methods and Table 1 inspected. The public table gives
+individual measurements for 20 healthy volunteers: ten aged under 30 and ten
+over 70. At the humidified volar forearm, 33 C, surface pO2 163 +/- 9 Torr,
+external uptake was 0.53 +/- 0.27 mL O2 min^-1 m^-2 (mean +/- SD). Surface
+preparation included removal of superficial horny scales; this is not an
+untouched, dry, covered, or submerged skin boundary. Five-minute blood-flow
+interruption increased this external flux by 9.5 +/- 6.3%. The paper's
+0.25–0.40 mm externally supplied depth is model-derived using other transport
+data; it is not a universal viability thickness. This table is the clearest
+immediately accessible donor-level numerical dataset found here. Use it to
+check an air-exposed model's surface flux, not as whole-skin oxygen demand or
+a specified pump flow. Retain gas-volume units until reference gas conditions
+are checked for a molar conversion.
+
+6. Functional oxygen conditions do not reduce to a universal minimum
+Mieremet et al., Scientific Reports 2019, 9:7811.
+https://doi.org/10.1038/s41598-019-44204-4
+https://pmc.ncbi.nlm.nih.gov/articles/PMC6534609/
+Primary methods/results inspected through publisher/indexed full text. Human
+fibroblast/keratinocyte skin-equivalent batches used five primary-cell donors
+from healthy surplus breast skin; models were compared at 3% versus 20%
+external oxygen during 14–15 days at an air–liquid interface. Lower oxygen
+changed proliferation, differentiation and barrier lipids, with several
+features closer to native skin. This is evidence against "more oxygen always
+better," not a direct tissue concentration, demand curve, safe lower bound,
+or robot-skin endurance test. Raw/processed data are available on request,
+not verified here as a public download. A functional endpoint and local
+dissolved concentration must replace PF0's arbitrary 0.05 mol/m^3 pass line
+before any claim of a skin survival or performance requirement.
+
+7. A perfused engineered-human-skin example gives a geometry-specific flow
+Rhee et al., Bioengineering 2024, 11:1055.
+https://doi.org/10.3390/bioengineering11111055
+https://pmc.ncbi.nlm.nih.gov/articles/PMC11591533/
+Primary indexed full text inspected. A collagen/fibroblast dermis and neonatal
+human keratinocyte epidermis surround printed channels, with 500-micrometer
+inner edge and 400-micrometer inter-channel spacing; inlet flow is 10 microliter/
+minute. The setup maintains an air–liquid interface and permits gas exchange.
+This is an operating point, not a measured minimum oxygen-sufficient flow.
+Fluorescein transport and tissue/response endpoints do not identify local O2
+profiles, extraction, qmax, or wall O2 permeability. Experiments are generally
+triplicate, not demonstrated as three independent donors; donor spread is not
+established. Raw datasets are on request. The text's cell-count/concentration
+statement in section 2.6 is arithmetically inconsistent, so its stated seeding
+density should not become a model input without clarification. No formulation
+or fabrication procedure is reproduced here.
+
+Concrete next science input (proposal, not a new run)
+Choose one explicitly defined engineered-skin geometry and culture state, then
+assemble a parameter ledger with separate observed, fitted and assumed fields:
+- Cell-type fractions and actual viable cell density per layer, not initial
+  seeding density; donor, passage, time, temperature and differentiation state.
+- q_cell(C) for fibroblasts and keratinocytes. The two demand anchors above can
+  seed a sensitivity range but do not jointly identify qmax and Km.
+- D and oxygen solubility/partition coefficient for each hydrated matrix and
+  barrier, plus the channel-wall transfer resistance. Do not collapse them.
+- Surface boundary: air, covered, or submerged; gas transfer and cover material
+  belong in the boundary condition. Preserve atmospheric entry separately from
+  circuit delivery in the oxygen budget.
+- Measured inlet/outlet free oxygen, local tissue oxygen profiles and functional
+  outcomes for the selected construct. No dataset recovered here identifies
+  the minimum circulation rate that preserves living, repairing robot skin.
+
+For computation, q_volume = sum_i(n_i * q_cell_i) has units mol m^-3 s^-1.
+A necessary oxygen balance is Q*(Ctotal,in-Ctotal,out) + surface O2 input >=
+integrated tissue consumption. It is necessary, not sufficient: an adequate
+global balance can coexist with local hypoxia. Pressure/flow, shear, nutrient
+delivery, waste removal, heat, hydration and mechanical damage need separate
+quantities; oxygen-only inference does not establish full perfusion needs.
+
+Immediate bounded follow-up should recover full methods/data for sources 1–3,
+extract Table 1 of source 5 with its conditions, and select a matched skin
+construct before freezing a layered model. If matched data remain unavailable,
+label the next result a sensitivity/identifiability study, not a calibrated
+skin prediction. No new model was run, no source authors were contacted, and
+no experimental outputs were modified during this task.

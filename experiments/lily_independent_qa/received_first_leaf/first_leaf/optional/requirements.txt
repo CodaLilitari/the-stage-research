@@ -1,0 +1,3 @@
+# Optional MuJoCo bridge only. The executed FL1 experiment needs no packages.
+# 3.3.7 is an intentional reproducibility pin, not a claim about the latest release.
+mujoco==3.3.7
