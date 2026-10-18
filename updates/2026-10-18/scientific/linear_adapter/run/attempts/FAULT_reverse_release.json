@@ -1,0 +1,42 @@
+{
+  "failure": {
+    "call_trace": {
+      "calls": {
+        "content": 43,
+        "hydraulics": 1,
+        "slab": 0,
+        "solve": 1,
+        "validate": 1
+      },
+      "overrides": [
+        "seq: linear c/cin with B=gamma*cin",
+        "DELIBERATE WRONG content argument/recording: reverse_release",
+        "slab: IMPOSED J=G*c; c-array is API placeholder, NOT tissue"
+      ]
+    },
+    "message": "Saturation bound failed; no clipping applied",
+    "traceback": "Traceback (most recent call last):\n  File \"<PROJECT_ROOT>\\research\\resumption_2026-10-18\\linear_adapter\\study.py\", line 27, in attempt\n    result=adapter.execute(spec,heartbeat)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<PROJECT_ROOT>\\research\\resumption_2026-10-18\\linear_adapter\\adapter.py\", line 60, in execute\n    result=original['solve'](case,cfg,heartbeat)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<PROJECT_ROOT>\\research\\resumption_2026-10-18\\linear_adapter\\pinned_sources\\ab_ct0_model.py\", line 217, in solve\n    raise ArithmeticError('Saturation bound failed; no clipping applied')\nArithmeticError: Saturation bound failed; no clipping applied\n",
+    "type": "ArithmeticError"
+  },
+  "input": {
+    "L": 0.001,
+    "alpha": 0.2,
+    "attempt_id": "FAULT_reverse_release",
+    "block": "fault",
+    "cin": 0.2,
+    "expected_Q_uL_min": 0.75,
+    "expected_T": 8.0,
+    "expected_envelope_violation": false,
+    "fault": "reverse_release",
+    "flow_mode": "envelope",
+    "gamma": 4.0,
+    "gap": 0.0001,
+    "id": "FAULT_reverse_release",
+    "k": 0.03333333333333333,
+    "mu": 4.0,
+    "ny": 2,
+    "nz": 32,
+    "profile": "H_finite",
+    "w": 0.001
+  }
+}

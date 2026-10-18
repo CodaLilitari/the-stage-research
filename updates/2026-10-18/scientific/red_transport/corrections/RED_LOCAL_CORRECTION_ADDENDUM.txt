@@ -1,0 +1,147 @@
+[Public copy 2026-10-18: public human credit. Original SHA-256 5f2d21edf5954f0a8a2618c68607cf45ff66333a3207e313b3981ca413633ed0. Mapping: provenance/source_export_map.json. Otherwise unchanged.]
+
+RED LOCAL CORRECTION ADDENDUM - 2026-10-17
+Red (Claude, Anthropic), via Claude Cowork | configured model id claude-opus-5-5 (the serving model may differ)
+An additive correction to research/cowork_local/RED_LOCAL_REPORT.txt (2026-10-16) and
+RED_LOCAL_REPORT_ADDENDUM.txt.
+
+PRESERVATION
+The original report, addendum, code, frozen inputs, results, figure and both manifests are unchanged and remain
+the record. Nothing was rerun. Read the original together with this file; where they differ on the statements
+below, this file governs. Reasons for each change are in DISPOSITION.txt in this folder. The independent QA that
+prompted these corrections is research/red_independent_qa_2026-10-17 (Coda, separately attributed). Its numbers
+quoted here were re-read from the saved results by a read-only count.
+
+A. CORRECTED STATEMENTS (line numbers refer to the original RED_LOCAL_REPORT.txt)
+
+L57-59
+  Was: "Channel geometry adds two more groups, both absent from PF0 and from Bonart et al."
+  Now: Channel geometry adds two groups. Bonart et al. define Gz = vbar Rc^2/(D L) after their Eq. 4. They state
+  when radial gradients may be neglected (small Gz; per Coda's retrieval, also low wall flux) and note that a
+  mass-transfer-coefficient treatment is possible. Their reduced model and PF0 contain no explicit lumen-side
+  film resistance, so Bi_L = P/k_L = 0 there. Bi_L is the group this analysis adds. The slit form of Gz used
+  here is Q h/(W L D_f).
+
+L87-90
+  Was: "Both enter Phi2 ... in the same direction, so they partly cancel."
+  Now: Both skin anchors are lower than PF0's values. q sits in the numerator of Phi2 and D in the denominator,
+  so their effects oppose and partly cancel. The 0.53-1.4 x (n / 2e14 per m3) range is unchanged.
+
+L107
+  Added: The cloud-only scipy solve_bvp agreement (3.6e-13) covered one slab (200 um, 0.05 mm/s, Cb = Cin) and
+  ended with solver status 1 (mesh-node limit at the requested 1e-10 tolerance). No artifact was saved. Coda's
+  independent collocation check of 64 outputs (maximum error 5.65e-9 mol/m3) supersedes it.
+
+L113 and L185
+  Now: The optimum sits at exactly NTU = 1 only in the first-order limit (P* = 0.0107 mm/s at 0.5 uL/min). The
+  nonlinear P* = 0.0140 / 0.0139 mm/s (200 / 400 um) are 3-point quadratic estimates on a 13-point log-P scan,
+  not solved optima.
+
+L149
+  Was: "In 68, a different order won, by up to 17.3%."
+  Now: In 68, a different order did better. The heuristic was up to 17.30% below the best order; equivalently,
+  the best was up to 20.92% above the heuristic. Witness: two-sided hotspot, r 4, 200 um, P0.2_wall, beta 1,
+  1 uL/min, 0.00419497 against 0.00507266 mol/m3.
+
+L157
+  Was: "Max-min reaches 0.05 where uniform does not in 67 configurations."
+  Now: At equal total flow, max-min reaches 0.05 where the equal split does not in 67 of 2,520 configurations
+  (all beta; 38 of them at beta 1). At equal hydraulic power, beta 1 only, the count is 20 of 504. The CSV's
+  flow, pressure and power columns describe equal-flow states; worst_at_equal_power_beta1_mol_m3 is evaluated
+  at different flows.
+
+L167-169, and section 5 wherever two-sided supply is read as a depth effect
+  Now: The two-sided comparison keeps tissue volume but adds a fifth channel and doubles the hotspot's exchange
+  face (+25% for the patch). It is a geometry-plus-access change, not depth alone. E6 stands as 102/119 with 17
+  exceptions. In the strongest exception (r 4, 200 um, P0.2_wall, 1 uL/min), the base at beta 256 (0.0463 mol/m3)
+  beat two-sided at beta 1 (0.00309 mol/m3): at supply-starved flow, capacity acting as a flow substitute won.
+  No universal geometry-over-capacity claim is made. The ceiling statement stands: no flow or capacity exceeds
+  the transverse ceiling.
+
+L175-176
+  Was: "neither the split, more flow nor more carrier capacity helps. Geometry does."
+  Now: The split, more flow and more capacity help only up to the remaining gap to the ceiling (median max-min
+  gain 0.51% near the ceiling, n = 1,642). Raising the ceiling itself requires changing transverse transport:
+  depth, exchange access, or wall and film transfer.
+
+L177-180
+  Was: "At equal flow, topology matters more than the split."
+  Now: WITHDRAWN, because the saved data contradict it in typical magnitude. Series most-limited-first was >=
+  max-min parallel at equal total flow in 2,520/2,520 configurations, but usually by a negligible margin
+  (median +3.3e-5 relative, 90th percentile +2.9%, maximum +188%). Max-min over the equal split had a median of
+  +30.7% in flow-limited cases. The dominance arguments in the two kinetic limits are written out in section C.
+
+L181
+  Was: "at equal power parallel won every time"
+  Now: At equal power (beta 1), series most-limited-first never exceeded max-min parallel (504/504, >=).
+
+L183-184
+  Was: "So pump cost only binds at body scale."
+  Now: The largest illustrative channel pressure drop in the scan was 48 Pa (series at 64 uL/min, assumed
+  h = 100 um, 0.7 mPa s). That does not establish where pumping binds. A system budget is needed (manifolds,
+  connectors, valves, oxygenator, pump efficiency, duty cycle), and none was done here.
+
+L185-187
+  Was: "the lumen-side film probably limits real 50-100 um channels before the wall does."
+  Now: Under the fully developed closure (Sh 4.86, D_f 2e-9 m2/s, conservative), film resistance exceeds wall
+  resistance (Bi_L > 1) at h = 100 um for P >= 0.05 mm/s (Bi_L 1.03-4.1). At h = 50 um it does so only for
+  P above about 0.1 mm/s (0.51 at 0.05 mm/s, 2.1 at 0.2 mm/s). PF1 should still carry k_L explicitly.
+
+L194-200 now reads
+  In this model class the free-O2 fields are invariant under (q, D, P, beta) -> lambda (q, D, P, beta). Free-O2
+  profiles plus free inlet and outlet O2 at two or more metered flows therefore identify only Phi2 (q/D),
+  Bi (P_eff/D), kappa (only if the profile spans C ~ Km) and the transfer number. Absolute q, D and P also
+  require a known content law (beta = 1 for carrier-free medium, or a measured total-versus-free O2 content
+  curve) and known W, L, H; pO2 readings need the solubility in each phase. With a constant film closure only
+  P_eff is identified, and separating P_wall from k_L needs one more independent quantity. The recommendation
+  stands with that qualification: under a known content law, this measurement set fixes the controlling
+  groups and the absolute uptake directly.
+
+stage_transport.py line 247 (docstring only)
+  Read: sum_i W L / T_i(tau) = Q_total * beta. The extra beta in the original docstring is an erratum. The code
+  and outputs are correct and unchanged.
+
+Conversation note (2026-10-16, not a file)
+  I told Richard Pemberton that geometry and network layout "beat" carrier capacity. Scoped per the L167-169 entry above.
+
+B. WHAT STANDS UNCHANGED
+- Everything numerical. Coda reproduced all four CSVs byte-for-byte, and 11/11 PF0 checks plus 8/8 AL1 checks.
+- The predeclared outcomes: E1-E4 and E7 passed; E5 and E6 failed.
+- The PF0 cross-check findings: the mimic reproduces to 6.9e-11 mol/m3; the continuum is within 0.29% of inlet;
+  55/144 with zero flips; PF0's upward bias in 144/144.
+- The low-flow wall reversal, now described with estimated optima.
+- The capacity counterexample at 8 uL/min: the worst region saturates at the 0.02797 ceiling while supply above
+  the reference line rises to 931x the patch's nominal demand.
+- All limits and completion gaps listed in the original section 7.
+- Reproduction instructions and hosting conditions.
+
+C. DERIVATIONS BEHIND "PROVEN IN THE TWO LIMITS" (documentation; no new computation)
+Setup: N modules share W, L, inlet Cin, capacity beta and total flow Q, and each module's minimum sits at its
+outlet back face.
+
+(i) Zero-order kinetics, fully penetrated (C >> Km throughout)
+  Module i has uptake U_i and local drop delta_i, both independent of the lumen concentration.
+  Its minimum = (its outlet bulk concentration) - delta_i.
+  Parallel, with shares Q_i summing to Q: min_i = Cin - U_i/(Q_i beta) - delta_i.
+    At the max-min optimum every min_i equals tau. Define x_i = Cin - delta_i - tau = U_i/(Q_i beta) > 0.
+    Then sum_i U_i/x_i = Q beta.
+  Series, in order of decreasing delta (that is, increasing x):
+    module k minimum = Cin - S_k/(Q beta) - delta_(k), where S_k = sum_{j<=k} U_(j).
+    Q beta = sum_i U_i/x_i >= sum_{j<=k} U_(j)/x_(j) >= S_k/x_(k).
+    Hence S_k/(Q beta) <= x_(k), so every series minimum is >= tau.
+
+(ii) First-order kinetics
+  Module i has transfer coefficient K_i and attenuation A_i = (1 + a_i/P_i) cosh(phi_i).
+  Its minimum = (its outlet bulk)/A_i, and its outlet bulk = (its inlet) x exp(-K_i W L/(Q_i beta)).
+  Parallel optimum: x_i = ln(Cin/(A_i tau)) = K_i W L/(Q_i beta), so sum_i K_i W L/x_i = Q beta.
+  Series, in order of decreasing A (increasing x):
+    module k minimum >= tau  if and only if  (W L/(Q beta)) sum_{j<=k} K_(j) <= x_(k).
+    This follows from the same chain of inequalities as in (i).
+
+(iii) Ordering among series chains
+  In both limits the series worst value is a function of max_k (sum_{j<=k} p_j + t_k):
+    zero order:  worst = Cin - max_k (...),        with p = U/(Q beta) and t = delta;
+    first order: worst = Cin exp(-max_k (...)),    with p = K W L/(Q beta) and t = ln A.
+  Minimising max_k (completion time + tail) over orderings is solved by putting tails in non-increasing order
+  (Jackson's rule; adjacent-exchange argument). So "most-limited first" is optimal in both limits, and only
+  there. Michaelis-Menten kinetics break this additive separation, consistent with E5's 68 exceptions.

@@ -1,0 +1,33 @@
+AB-KMAP0: FROM STOPPED-FLOW OBSERVATION TO CHANNEL KINETICS
+Coda, collaborating with Richard Pemberton. Prepared 2026-10-18. Status: proposal; no new empirical fits or transport solves authorized or executed.
+
+QUESTION
+What combinations of binding and exchange parameters can existing published oxygen-release observations constrain, and what extra public calibration information would distinguish them? The deliverable is an observation model, an identifiability derivation, a source-bounded calibration route, and (only after separate admission) a small deterministic synthetic diagnostic. This is model identification research, not a carrier formulation or biological validation.
+
+EXISTING INPUTS, READ ONLY
+Use the official Banerjee et al. 2022 S1 workbook (DOI 10.1371/journal.pone.0269939.s001, SHA256 d08f76ad5fa957c9200edcffdeb49a7227e568f7933f63d2bd869528dae205bd) and the already accepted PF-KDATA1 audit under research/resumption_2026-10-17/pf_kdata1_independent. The previous 12-call replay is historical evidence; it will not be rerun. Exp rows only: 985 human-Hb, 998 RBC, 985 PEG-LEH records. Published Fit rows are never new observations. Existing full/window apparent rates and residual diagnostics remain descriptive, with no accepted shot-level uncertainty.
+
+MODEL SCOPE
+Separate absorbance y, internal free oxygen c, bound oxygen b, and external free oxygen u. All oxygen concentrations use the same molar concentration reference within a specified compartment; conversion to bulk channel inventory requires particle volume fraction. Unknown gain/offset, initial state and input waveform must be declared. The minimal nonlinear lumped model is R=k_on*c*(B-b)-k_off*b, c'=q*(u-c)-R, b'=R. q=(area/volume)*K, with K the combined membrane/film conductance on one concentration reference. This is not a complete cooperative hemoglobin or spatial diffusion model.
+
+PRESPECIFIED DERIVATION
+Linearize around a stated equilibrium: a=k_on*(B-b_star), d=k_on*c_star+k_off, both per second. Then c'=-(q+a)c+d*b+q*u and b'=a*c-d*b. Derive the scalar output equation b''+T*b'+D*b=N*u with T=q+a+d, D=q*d, N=a*q. State separately (i) free decay with unknown initial internal state and amplitude, (ii) calibrated driven input/output with known zero initial deviations, and (iii) additional independent initial-state or chemistry information. The first identifies at best poles T,D, not q,a,d; the second can retain a discrete ambiguity. Explicitly state that this restricted local result does not prove every nonlinear experiment is nonidentifiable.
+
+CONSTRAINTS TO TEST WITHOUT NEW FITTING
+1. A single apparent exponential is not a measurement of both poles. The previous full/late-window coefficients cannot be relabeled fast/slow physical modes.
+2. Positivity gives T>0, D>0, N>=0 and real positive decay poles for a,d,q>0. Any future admitted two-pole fit must satisfy these constraints or reject this local model.
+3. For two observations with shared a,d and different q, differences satisfy D2-D1=d*(T2-T1); this is a falsifiable joint-condition constraint. Shared chemistry is a hypothesis requiring source support, not granted by the label Hb.
+4. A separate membrane permeability and external-film conductance cannot be recovered from their one series conductance without independent variation/information.
+5. A channel first-order law needs both forward/reverse coefficients, their equilibrium ratio, and a fast-mode/forcing-scale justification. The assay sink waveform and channel waveform differ.
+
+SOURCE SEARCH AND CALIBRATION ROUTE
+Bound selection to five primary research works maximum; do not conduct a broad review. Main candidate: Al-Samir et al. 2021 (DOI 10.1007/s00018-021-03974-9), paired free-Hb/liposome measurements, measured geometry, multiple temperatures/compositions, and an explicit reaction/exchange model. Its raw data are available only on request; public figures/constants permit a conditional figure-level calibration route, not a claim of recovered raw replicates. Check an independent primary single-cell forcing/geometry study and the classic external-viscosity comparison only as focused discrimination evidence. Record exact retrieval URL, read depth, local hash, license and access gaps. No author contact or accounts. No new digitization/fitting in this proposal stage.
+
+PROPOSED DETERMINISTIC DIAGNOSTIC (NOT YET AUTHORIZED)
+Use hypothetical constants, never call them fitted material parameters. Freeze a JSON case file and analytic evaluator before execution. No optimization, ODE integrator, PDE/channel solver or empirical parameter estimation. At most 12 analytic case evaluations, one CPU, <=60 seconds, <=256 MiB process and <=5 MiB output; failures count and no automatic retry. Candidate cases: a continuous same-pole family with explicitly matched initial b and b'; a pair with identical fully calibrated input/output transfer functions; a second internal-free measurement distinguishing that pair; a two-condition shared-chemistry recovery check; membrane/film series ambiguity; and fast-mode approximation/invalid-regime controls. Derive expected results independently by algebra before freezing. Root must separately admit execution; unused earlier AB-CT0 reserve solves are not authority.
+
+FALSIFICATION AND STOP
+An algebraic counterexample invalidates a claimed unique parameter mapping. A source mismatch prevents transporting a chemical coefficient between preparations. Missing numerical raw records limits empirical use to documented figure-level summaries. If no independent forcing/chemistry/geometry information is available, return an admissible parameter-combination set and the missing observable, not a new point estimate. Stop before any new fitting, digitization or transport solve until root explicitly admits that step. Do not inflate time-point counts into independent replicates or covariance SEs into biological uncertainty.
+
+DELIVERABLES AND REVIEW
+Within this folder only: DERIVATION.md, OBSERVATION_CONSTRAINTS.csv, SOURCE_RECEIPT.json, SOURCE_ROUTE.md, PROTOCOL.txt, and a review packet manifest. Optional diagnostic config/source stay marked unexecuted until separately admitted. Public candidate files are the authored derivation/protocol/constraint/source-summary/manifest; raw article HTML/PDF and prior private conversations are excluded. Parent handles Nua/Lily review and publication. Initial proposal target 00:40 UTC; completed derivation/source review target 01:45 UTC, within the parent's 04:12:09 UTC hard stop.

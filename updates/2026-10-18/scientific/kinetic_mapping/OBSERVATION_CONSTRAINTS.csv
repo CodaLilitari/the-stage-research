@@ -1,0 +1,11 @@
+id,observation_or_assumption,identifies_or_constrains,does_not_identify,next_discriminator,status
+O1,One uncalibrated single apparent exponential,One descriptive rate for its specified window,Two poles or microscopic release or channel k,Test adequacy with independent observation model,Existing PF-KDATA1 descriptive result
+O2,Two resolved free-decay poles with internal initial state and gain free,"T=q+a+d; D=q*d",Unique q a d,Compatible independent chemistry or internal-free measurement,Derived local-model constraint
+O3,Calibrated driven zero-state input/output,"T D N and the complete local b/u kernel",Unique q a d in general,Resolve twofold partner using independent state or chemistry,Derived local-model constraint
+O4,Known equilibrium initial state,Restricts initial state and differential capacity,Always resolves the twofold partner,Independent nonequilibrium state information or internal-free trajectory,Derived counterexample
+O5,Two distinct exchange conditions with shared chemistry,"d=DeltaD/DeltaT; q_i=D_i/d; a=T_i-q_i-d",Validity of shared chemistry,Positive common coefficients and calibrated gain invariance,Future falsifiable joint-condition test
+O6,One measured combined conductance K,Series sum of membrane and film resistances,Separate membrane and film conductance,Independent film or membrane information,Derived exact ambiguity
+O7,Known absolute gain and internal capacity,Removes one concentration scale ambiguity,Cooperative binding mechanism or assay-to-channel transfer,Independent concentration-dependent or dynamic calibration,Conditional calibration information
+O8,Strong correlated residuals in existing averaged traces,Failure of independent-residual uncertainty interpretation,Shot-level or donor uncertainty or two physical modes,Raw replicate evidence and adequate model,Existing audited result
+O9,Separated poles and slow forcing,Conditional first-order forward/reverse approximation,Validity under fast forcing or changed preparation,Fast-mode error and held-out input prediction,Derived reduction
+O10,Changing channel film and external oxygen,Need to change exchange and driving input,Universal stopped-flow rate in channel,Conserved total oxygen plus compatible channel transfer model,Mapping requirement

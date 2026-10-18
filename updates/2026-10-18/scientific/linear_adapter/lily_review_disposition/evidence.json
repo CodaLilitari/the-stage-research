@@ -1,0 +1,242 @@
+{
+  "scope": "Source inspection and saved-result extraction only; adapter author disposition, not a new independent solver validation.",
+  "freeze_sha256": "5f801cb30df09855da41d2d86467723980a0dea46f639ff000a4feda02e75d1a",
+  "frozen_bindings_match": true,
+  "assessment_source_sha256": "6392d88aaf3dfbce12d8bd8da03833b08fcaea8d2e696230f4111eb4a0460bee",
+  "source_hashes": {
+    "adapter.py": "9db5cf262568c9070060eec5d73365471edb6d66207f4fedfd2f68c9f856f9a3",
+    "pinned_sources/ab_ct0_model.py": "0a6ab8f0876f2be8e1973f8ef077bf33bbd8e25e07e780b1d7ffa48e0135d1a5",
+    "pinned_sources/ab_ct0_config.json": "570b9e2dd493632891af55c062fcd13620b1a05acda522f18c33d8ddca3948e0",
+    "cases.json": "6f745ff80e8a6d097f7a3686abd01c8cdfbd48af03b78f29cab12dabf47c530a"
+  },
+  "witnesses": {
+    "L01_N128": {
+      "result_sha256": "5b8b3b314bbe8b6f2e4969183fa3dd76e5cabf52c9082dabb6b4b1e2944aafd4",
+      "first_free": 0.1995012468827554,
+      "first_bound": 0.7980049875310216,
+      "first_equilibrium_bound": 0.7980049875310216,
+      "first_bound_disequilibrium": 0.0,
+      "dt": 0.0625,
+      "calls": {
+        "content": 5531,
+        "hydraulics": 1,
+        "slab": 0,
+        "solve": 1,
+        "validate": 1
+      },
+      "overrides": [
+        "seq: linear c/cin with B=gamma*cin",
+        "slab: IMPOSED J=G*c; c-array is API placeholder, NOT tissue"
+      ],
+      "flow_uL_min": 0.75,
+      "residence_s": 8.000000000000002,
+      "inlet_bound": 0.8,
+      "outlet_bound": 0.5811512571217462,
+      "wall_mol_s": 3.419511607482598e-12,
+      "uptake_mol_s": 3.419511607482598e-12,
+      "lumen_loss_mol_s": 3.4195116074727153e-12,
+      "first_finite_difference_free": -0.007980049875913942,
+      "first_finite_difference_bound": -0.031920199503655766
+    },
+    "L02_N128": {
+      "result_sha256": "743fb999901feb3c9c3c3b277ba9d0c359fdfd4a7b5398b80cc7493d0a699dc1",
+      "first_free": 0.1975308641975062,
+      "first_bound": 0.8,
+      "first_equilibrium_bound": 0.7901234567900248,
+      "first_bound_disequilibrium": 0.00987654320997522,
+      "dt": 0.0625,
+      "calls": {
+        "content": 5377,
+        "hydraulics": 1,
+        "slab": 0,
+        "solve": 1,
+        "validate": 1
+      },
+      "overrides": [
+        "seq: linear c/cin with B=gamma*cin",
+        "slab: IMPOSED J=G*c; c-array is API placeholder, NOT tissue"
+      ],
+      "flow_uL_min": 0.75,
+      "residence_s": 8.000000000000002,
+      "inlet_bound": 0.8,
+      "outlet_bound": 0.8,
+      "wall_mol_s": 1.9902280590806076e-12,
+      "uptake_mol_s": 1.9902280590806076e-12,
+      "lumen_loss_mol_s": 1.9902280590645196e-12,
+      "first_finite_difference_free": -0.03950617283990088,
+      "first_finite_difference_bound": 0.0
+    },
+    "L03_N128": {
+      "result_sha256": "e9f8a17c844c73f3684fa18af13758f68fcf0056f3af19e4717363caa771ef83",
+      "first_free": 0.19755097884462886,
+      "first_bound": 0.7999796339197057,
+      "first_equilibrium_bound": 0.7902039153785154,
+      "first_bound_disequilibrium": 0.009775718541190304,
+      "dt": 0.0625,
+      "calls": {
+        "content": 5377,
+        "hydraulics": 1,
+        "slab": 0,
+        "solve": 1,
+        "validate": 1
+      },
+      "overrides": [
+        "seq: linear c/cin with B=gamma*cin",
+        "slab: IMPOSED J=G*c; c-array is API placeholder, NOT tissue"
+      ],
+      "flow_uL_min": 0.75,
+      "residence_s": 8.000000000000002,
+      "inlet_bound": 0.8,
+      "outlet_bound": 0.723348827410744,
+      "wall_mol_s": 2.406753834239112e-12,
+      "uptake_mol_s": 2.406753834239112e-12,
+      "lumen_loss_mol_s": 2.4067538342382247e-12,
+      "first_finite_difference_free": -0.0391843384859385,
+      "first_finite_difference_bound": -0.0003258572847091301
+    },
+    "L06_N128": {
+      "result_sha256": "fe0d8c4d39a3cdeb921c741cf7f4eac0908aac67dda1afab649870a4fb1c9c4d",
+      "first_free": 0.1995012468827554,
+      "first_bound": 0.7980049875310535,
+      "first_equilibrium_bound": 0.7980049875310216,
+      "first_bound_disequilibrium": 3.197442310920451e-14,
+      "dt": 0.0625,
+      "calls": {
+        "content": 5531,
+        "hydraulics": 1,
+        "slab": 0,
+        "solve": 1,
+        "validate": 1
+      },
+      "overrides": [
+        "seq: linear c/cin with B=gamma*cin",
+        "slab: IMPOSED J=G*c; c-array is API placeholder, NOT tissue"
+      ],
+      "flow_uL_min": 0.75,
+      "residence_s": 8.000000000000002,
+      "inlet_bound": 0.8,
+      "outlet_bound": 0.5811512571217693,
+      "wall_mol_s": 3.419511607482598e-12,
+      "uptake_mol_s": 3.419511607482598e-12,
+      "lumen_loss_mol_s": 3.419511607472427e-12,
+      "first_finite_difference_free": -0.007980049875913942,
+      "first_finite_difference_bound": -0.031920199503144175
+    },
+    "L08_N128": {
+      "result_sha256": "c96ad61657b1e63d61cd4d6dba5edc5163bea0e0c4eae6933f1c384971d7acb2",
+      "first_free": 0.2,
+      "first_bound": 0.8,
+      "first_equilibrium_bound": 0.8,
+      "first_bound_disequilibrium": 0.0,
+      "dt": 0.0625,
+      "calls": {
+        "content": 1,
+        "hydraulics": 1,
+        "slab": 0,
+        "solve": 1,
+        "validate": 1
+      },
+      "overrides": [
+        "seq: linear c/cin with B=gamma*cin",
+        "slab: IMPOSED J=G*c; c-array is API placeholder, NOT tissue"
+      ],
+      "flow_uL_min": 0.75,
+      "residence_s": 8.000000000000002,
+      "inlet_bound": 0.8,
+      "outlet_bound": 0.8,
+      "wall_mol_s": 0.0,
+      "uptake_mol_s": 0.0,
+      "lumen_loss_mol_s": 0.0,
+      "first_finite_difference_free": 0.0,
+      "first_finite_difference_bound": 0.0
+    },
+    "COUPLED_N128": {
+      "result_sha256": "5af6a1f44f8224fcc4aa89a70e2eb3f868706cfdf1472095bbc33733e4e9f1b9",
+      "first_free": 0.1956503430012162,
+      "first_bound": 0.7999638282162264,
+      "first_equilibrium_bound": 0.7826013720048648,
+      "first_bound_disequilibrium": 0.017362456211361565,
+      "dt": 0.0625,
+      "calls": {
+        "content": 5377,
+        "hydraulics": 1,
+        "slab": 5376,
+        "solve": 1,
+        "validate": 1
+      },
+      "overrides": [
+        "seq: linear c/cin with B=gamma*cin"
+      ],
+      "flow_uL_min": 0.75,
+      "residence_s": 8.000000000000002,
+      "inlet_bound": 0.8,
+      "outlet_bound": 0.6934170307648052,
+      "wall_mol_s": 3.180724821563346e-12,
+      "uptake_mol_s": 3.180724821562648e-12,
+      "lumen_loss_mol_s": 3.1807248215635397e-12,
+      "first_finite_difference_free": -0.06959451198054101,
+      "first_finite_difference_bound": -0.0005787485403789816
+    },
+    "RAD_high_Y64": {
+      "result_sha256": "48dcc21f4ffafe415c93c39bbc664634b74693daab4449dd491310dc90b2ac5f",
+      "first_free": 0.2,
+      "first_bound": 0.0,
+      "first_equilibrium_bound": 0.0,
+      "first_bound_disequilibrium": 0.0,
+      "dt": null,
+      "calls": {
+        "content": 1,
+        "hydraulics": 1,
+        "slab": 1,
+        "solve": 1,
+        "validate": 1
+      },
+      "overrides": [],
+      "flow_uL_min": 2.0,
+      "residence_s": 3.0000000000000004,
+      "inlet_bound": 0.0,
+      "outlet_bound": 0.0,
+      "wall_mol_s": 7.17333375900801e-12,
+      "uptake_mol_s": 7.173333759006449e-12,
+      "lumen_loss_mol_s": null
+    }
+  },
+  "global_binding_inspection": {
+    "content": [
+      "seq"
+    ],
+    "slab": [
+      "reaction"
+    ],
+    "solve": [
+      "content",
+      "hydraulics",
+      "slab"
+    ]
+  },
+  "radial_fixture": {
+    "md": 2.2360679774997894,
+    "kt": 1,
+    "finite_P_values": [
+      5e-06,
+      0.0002
+    ],
+    "radial_zero_reaction_tested": false,
+    "partition_coefficient": 1,
+    "boundary": "single fluid-facing Robin wall plus sealed distal face"
+  },
+  "separate_coordinator_qa": {
+    "sha256": "db646f0e5ca2bcab15b6a593554d1bdfaf6b941d461035e48e72a97efd191515",
+    "passed": 430,
+    "total": 430,
+    "stations": 2920,
+    "radial_cells": 14576,
+    "worst_scaled_residuals": {
+      "step_total": 9.9885625e-13,
+      "step_bound": 3.0616883835925616e-16,
+      "BE_path": 6.408225610776112e-11,
+      "radial_balance": 3.026628125e-14,
+      "global_content": 8.794306244279807e-11
+    }
+  }
+}

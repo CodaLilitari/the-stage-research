@@ -1,0 +1,380 @@
+THE STAGE — SESSION RESEARCH REPORT, 17 OCTOBER 2026
+Local synthesis by Coda (Codex Lily), collaborating with Richard Pemberton
+Evidence state: AB-CT0, Red, Lily and Nua reviewed; separate Coda recovery of
+Wren's supplied linear implementation completed and audited below.
+Paths in this report are relative to the project root, The Stage.
+
+The session advanced the artificial-blood milestone by establishing a concrete
+modeling dependency: accessible oxygen delivery depends on release kinetics and
+hydraulic constraints, not storage capacity alone. In one selected, refined
+hypothetical comparison, an equilibrium carrier slightly improves distal tissue
+oxygen over dissolved-only fluid, while the same carrier with finite release
+falls below it. Independent numerical work supports that conditional result.
+A public measured-data analysis then exposes why an apparent stopped-flow rate
+cannot yet be substituted for the model's effective channel-scale rate.
+
+This is progress toward a defensible oxygen-carrier research program, not a
+manufactured artificial blood, a formulation, empirical tissue validation or a
+clinical result. Human oxygen therapeutics and circulation supporting engineered
+tissue on a robotic body remain separate applications. No new public release
+was made by this report; the earlier published snapshot remains a separate record.
+
+1. The new transport result: what changed, and under which assumptions
+
+AB-CT0 completed all 78 planned attempts: 54 primary cases, 12 controls and 12
+refinements. Its two discretionary reserve attempts were unused. Source and
+inputs were frozen and independently reviewed before the authorized execution.
+Separate saved-field QA passed 514/514 bounded checks, including conservation,
+wall flux, tissue-cell residuals, free/bound inventory, selection, convergence,
+hydraulics, manifests and planned/attempted reconciliation. The QA did not rerun
+the transport solver. Maximum reconstructed relative segment/global conservation
+errors were 3.31e-8 and 4.01e-9, below the declared 1e-6 criterion.
+
+The most useful contrast uses these three already-refined cases:
+
+Case / assumption              Viscosity  Flow       Distal O2       Uptake
+                              multiplier uL/min    micromol/L      pmol/s
+ABCT0-A-001, dissolved-only       1        2.00      11.65368608     0.785398226
+ABCT0-A-031, Hill equilibrium     4        0.75      11.71034736     0.784784395
+ABCT0-B-011, Hill finite release  4        0.75       9.32571468     0.728979680
+
+All three have wall permeability 5e-6 m/s, free inlet oxygen 0.2 mol/m3, a 1 mm
+channel, and a hypothetical 100 micrometre one-sided tissue slab. The carrier
+cases share 0.8 mol/m3 bound inlet oxygen and the same Hill equilibrium law.
+Only their kinetic assumption differs. The finite case has k=1/30 per second,
+actual residence 8 seconds and k*T=0.266667. None is a measured material property.
+The reported distal sample is the final tissue cell centre at the channel outlet,
+not an exact outer-boundary value or a measured spatial minimum.
+
+The common permitted limits are pressure 0.468 Pa and hydraulic power 10.4 pW.
+They do not imply equal actual flow or actual power. Dissolved fluid is power-
+limited at 2 uL/min, 0.312 Pa and 10.4 pW; the carriers are pressure-limited at
+0.75 uL/min, 0.468 Pa and 5.85 pW. These are modeled fluid powers, not electrical
+pump specifications or measured hardware performance.
+
+Relative to dissolved-only distal oxygen, equilibrium predicts +0.486209% and
+finite release predicts -19.976267%. The signed differences are respectively
++5.66613e-5 and -0.00232797 mol/m3. They exceed the declared numerical guards by
+11.31 and 128.31 times. All three cases pass the required distal/global-minimum/
+uptake convergence checks over 24x32, 48x64 and 96x128 grids. The guards use twice
+the larger last-grid change of each pair; they are numerical diagnostics, not
+statistical confidence intervals or rigorous error bounds.
+
+The prespecified secondary comparison was omitted by the frozen runner, which
+correctly retains its historical "not evaluated" status. Its refinement union
+already contained all three cases. A separately authorized, later saved-field
+QA calculation evaluated the comparison with 8/8 checks, without new solves,
+reserve use, input changes or a new parameter search. This provenance is part of
+the finding. It is one selected hypothetical contrast, not a general success rate.
+
+The primary hypotheses retain their actual outcomes:
+
+- H1, an equilibrium carrier's viscosity erasing its distal advantage: not
+  supported by the selected refined witness. The equilibrium value remains
+  slightly higher than dissolved-only. All six coarse candidate differences
+  were positive; this is not proof that equilibrium carriers always win.
+- H2, finite release lowering uptake relative to matched equilibrium: supported
+  by the selected nonzero-rate witness. Finite uptake is 7.110834% lower, with
+  the percentage divided by equilibrium uptake. The gap is 5.58047e-14 mol/s
+  against a 9.81746e-16 guard. The tiny equilibrium-minus-dissolved uptake
+  difference is unresolved, so the distal ranking must not become an uptake
+  ranking. Only the selected H2 witness receives the refinement conclusion.
+- H3, increased wall transfer raising uptake while lowering distal oxygen: not
+  supported by the selected refined pair. For B-013 to B-016, P increases from
+  5e-5 to 2e-4 m/s in the k=0 branch; distal oxygen and uptake both rise with
+  resolved positive signs. None of 36 coarse adjacent-P comparisons showed the
+  target sign combination. That is not a global absence result.
+
+The inlet remains clamped. Finite axial oxygen supply is not a finite reservoir,
+closed circulation loop or implemented oxygenator. Tissue and carrier laws are
+fixtures; the selected result does not establish that real carriers occupy this
+adverse regime or that a living tissue layer could be maintained.
+
+Readable evidence:
+  research/resumption_2026-10-15/independent_review/results_qa_2026-10-17/REPORT.txt
+  research/resumption_2026-10-15/independent_review/results_qa_2026-10-17/secondary_rank_reversal.json
+  research/resumption_2026-10-17/figures/READABLE_RESULT.txt
+  research/resumption_2026-10-17/figures/AB_CT0_finite_release_comparison.png
+
+2. Red's baseline: reproduced numbers, preserved failures, corrected inference
+
+Red's original local work provides a useful mathematical baseline. All four
+numerical CSVs reproduced byte-for-byte: 17,640 AL1 rows across 2,520 configurations
+and seven arrangements, 144 PF0 rows, 24 wall-optimum rows, and 80 film-group rows.
+The 11 PF0 and eight AL1 implementation checks reproduced. A separately written
+collocation/adaptive-integration implementation agreed with 64 selected outputs
+from seven configurations to maximum error 5.65e-9 mol/m3 at the unchanged 1e-7
+tolerance. Its earlier 57/64 coarse-interpolation result is preserved alongside
+the refined QA. This is not independent coverage of the entire design grid.
+
+The failed E5 and E6 expectations remain scientifically useful counterexamples.
+The nonlinear "most limited first" order loses to another order in 68/2,520
+configurations. In the strongest example, the best result is 20.9223% above the
+heuristic; equivalently, the heuristic is 17.3023% below the best. Two-sided
+beta=1 supply beats the high-capacity beta=256 base in 102/119 comparisons, not
+all of them, and changes channel count/access rather than holding hardware fixed.
+Equal-flow max-min crossings number 67 across all beta; equal-power beta=1
+crossings number 20. These denominators and delivery constraints are now explicit.
+
+Red returned additive corrections and a second wording revision. The new manifest
+verifies all five follow-up payloads, and all 23 original files remain unchanged.
+The v2 text closes the two remaining material issues: a scaling invariance proves
+an absolute-scale ambiguity, not sufficiency of two flows/profiles to identify
+every parameter; P/kL compares wall and film resistances, not actual radial
+depletion, which also requires flux/concentration information. The zero-order
+and first-order ordering proofs stand within their assumptions; they are not
+general Michaelis-Menten optimality proofs. The unsaved historical cloud solve
+is explicitly testimony rather than authenticated execution evidence.
+
+Other corrections remain attached: the cited primary paper does discuss Graetz
+number; illustrative low pressure does not establish that pump cost matters only
+at body scale; a docstring's extra beta does not require changing the correct
+implementation; and scan-interpolated optima are not directly solved optima.
+
+Readable evidence:
+  research/red_independent_qa_2026-10-17/REPORT.txt
+  research/cowork_local_followup_2026-10-17/RED_LOCAL_CORRECTION_ADDENDUM_v2.txt
+  research/cowork_local_followup_2026-10-17/DISPOSITION_v2.txt
+  research/red_independent_qa_2026-10-17/architecture_review/addendum_qa_2026-10-17/v2_delta_receipt.json
+
+3. Lily's independent linear instrument: validated with its failure retained
+
+AB-LFR1 derives and implements b'=k*(gamma*c-b), (c+b)'=-alpha*c for an
+equilibrated inlet, with consistent suspension-volume units. It separately treats
+k=0 inaccessible storage and algebraic equilibrium, stable eigenvalues, repeated
+roots, the initial fast layer, and a positive conservative backward-Euler update.
+An independently prepared Coda derivation predates receipt of Lily's implementation.
+The returned mathematics agrees with it. The benchmark contains no radial tissue
+PDE, viscosity law, pump-budget comparison or measured carrier calibration.
+
+The final instrument has 22 frozen cases, 198 time-point comparisons and 176 BE
+mesh runs. One local full replay reproduces 1,612/1,613 checks and exit 1. The one
+failed frozen expectation is that a single explicit-Euler step would turn a state
+negative: at the equilibrated inlet the exchange is zero, so it gives (0.9375,4).
+A second-step negative state is explicitly post hoc and does not repair that
+expectation. Earlier 1,612/1,612 reports used the two-step check; their original
+code/results are preserved and are not treated as satisfying the one-step freeze.
+
+One portable replay passes 10/10 tests, including the 198-point subcases. Separate
+90-digit Decimal scalar formulas, which import neither Lily's solver nor mpmath,
+agree at all 198 frozen points for states, inventory and stable release flux;
+the passive-model invariants and 22 monotonicity groups also pass. The stable
+flux audit matters: naive k*(b-gamma*c) in a stiff fixture has a 9.23527e-4
+mol/m3/s error despite accurate states. The derived equilibrated-inlet identity
+avoids that cancellation. State accuracy alone does not certify reaction rates.
+
+The local replay is numerically equivalent, not universally byte-identical.
+The BE CSV matches bytes; three files contain floating-point differences, with
+maximum changed c/b entry 4.44e-16 mol/m3. All references and check verdicts agree.
+Coda's first arithmetic receipt preserves three failed exact-text expectations
+(625/628); a separate 11/11 reconciliation establishes their bounded numerical
+agreement without changing any frozen tolerance. All 117 received files are
+unchanged. The suite was run once locally with the authorized project environment
+and mpmath 1.3.0; no broad new science matrix was launched.
+
+Readable evidence:
+  research/resumption_2026-10-17/lily_ab_lfr1_received/original/AB-LFR1/REPORT.md
+  research/resumption_2026-10-17/lily_ab_lfr1_received/original/AB-LFR1/FAILURES_AND_DEVIATIONS.md
+  research/resumption_2026-10-17/lily_ab_lfr1_independent_qa/REVIEW.txt
+  research/resumption_2026-10-17/lily_ab_lfr1_independent_qa/cross_platform_reconciliation.json
+
+4. Nua's measured-data contribution: a real source anchor, not a Stage k
+
+PF-KDATA1 uses Banerjee et al. (2022), PLOS ONE 17:e0269939, and its S1 workbook
+(article DOI 10.1371/journal.pone.0269939; data DOI suffix .s001). Independent
+retrieval matches the exact workbook bytes. All 2,968 extracted experimental
+records, worksheet/row pointers, group identities, times and absorbances match
+the primary source; no published Fit rows contaminate the new input.
+
+These are stopped-flow dithionite-deoxygenation absorbance traces at 20 degrees C,
+not direct channel delivery measurements. The workbook supplies one averaged
+curve per preparation type. The paper describes averages of 10–15 traces and
+table columns headed n=12, without providing those individual kinetic records
+or establishing twelve independent donors. Time-point counts are not replicate
+counts. The methods describe 15 micromolar Hb/PEG-LEH suspensions mixed with
+dithionite; an unambiguous final postmix concentration and its application to
+RBC dilution are not established. Equilibrium curves at 37 degrees C do not establish
+same-temperature release kinetics.
+
+A bounded isolated local replay made exactly 12 pre-admitted optimizer calls,
+with no retries or extra fits. Only the hardcoded source path was adapted.
+The full single-exponential apparent rates reproduce as 37.220877, 12.628994 and
+11.774762 per second for human Hb, RBCs and PEG-LEH. Dropping the first 10% of
+each stored window gives 41.673024, 4.582420 and 2.183610 per second. These are
+descriptive fits to the supplied mean traces, not the paper's aggregate table
+estimands, microscopic constants or validated Stage relaxation coefficients.
+Saved arithmetic passes 21/21 checks.
+
+The interpretive corrections are substantive. Adjacent residual correlations
+are approximately 0.9981, 0.9894 and 0.9690, so naive independent-residual covariance
+SEs are not reliable experimental uncertainty or population confidence intervals.
+The observed window sensitivity does not identify two physical mechanisms or
+timescales. Preparation differences do not isolate geometry causally, quantify
+a channel-transfer factor, establish a viscosity, or invalidate AB-CT0's fixed-k
+form under its own conditions.
+
+The proposed lag fit is structurally confounded whenever onset precedes the
+first observation: lag can be absorbed exactly into the free amplitude. The
+saved fitted lags are small positive values below the first samples, not literally
+zero. Nua's additive correction accepts the identifiability problem, but its
+literal "0.0 s in all three groups" wording must be read with the verified values
+in the independent review. Neither the fits nor their nominal four-parameter AICc
+test establishes an absence of physical delay. The original ledger also records
+calls after execution; Coda's replay used a separate true pre-call admission guard.
+
+Nua accepted the six correction groups in an additive disposition and credits
+Coda's corrections separately. The coordinator's final acknowledgment preserves
+the positive-lag qualification, the distinction between trace and study counts,
+and the fact that no effective sample size was estimated. Original code, results
+and wording remain intact.
+The result is a usable measured-source anchor and a clear transfer/identifiability
+limit. It does not yet provide an admissible empirical k for the selected AB-CT0
+carrier, nor enough replicate data for a biological uncertainty estimate.
+
+Readable evidence:
+  research/resumption_2026-10-17/pf_kdata1_independent/PRIMARY_REVIEW.txt
+  research/resumption_2026-10-17/pf_kdata1_independent/REPLAY_REVIEW.txt
+  research/resumption_2026-10-17/pf_kdata1_independent/replay_metrics.csv
+  research/resumption_2026-10-17/nua_pf_kdata1_received/addendum/addendum_corrections.md
+
+5. Prior art and the later moving-tissue application
+
+The bounded source review rejects a broad novelty claim that deformation,
+perfusion and oxygen have never been quantified together. Grigoryan et al.
+(Science 2019, DOI 10.1126/science.aav9750) combine airway distension, neighboring
+vessel compression/flow redirection and RBC oxygen saturation. That measures
+blood oxygenation, not the spatial minimum in consuming engineered tissue.
+Mori et al. (DOI 10.1088/1758-5090/aaed12) study perfused skin under stretching;
+the accessed abstract does not supply spatial oxygen minima. Golub et al.
+(DOI 10.3389/fphys.2023.1172834) provide local physiological oxygen transients
+during contraction/compression, not a robotic skin-layer dataset. Other located
+work couples cyclic squeeze/oxygen modeling or spatial scaffold oxygen sensing.
+
+The exact intersection of bending-induced channel narrowing, consuming tissue
+oxygen fields and a declared pump budget was not established by this search.
+That narrower unresolved match is not an absence proof or a claim of priority.
+The large Grigoryan archive was not downloaded or inspected. These sources cannot
+be merged as if they measured the same construct, observable or intervention.
+Motion/perfusion is a later tissue-support branch, not evidence that the present
+artificial-blood transport fixtures already model moving living skin.
+
+Readable evidence:
+  research/resumption_2026-10-17/motion_perfusion_source_check/REPORT.txt
+  research/resumption_2026-10-17/motion_perfusion_source_check/sources.json
+
+6. Wren's independent implementation and Coda's separate local recovery
+
+Coda supplied the model equations and eight exact physical cases. Wren derived
+and implemented that supplied model, selected analytic/numerical methods and
+tolerances, and returned a frozen plan plus a partial cloud archive. Wren did
+not originate the supplied equations or case design. The cloud F2–F6/RK4 results
+remain unavailable. Its accounting omitted a failed D computation: the plan
+totals 18 calls, and reconstructed history implies at least 25 attempts rather
+than the stated 24. Missing run-1 source prevents complete reconstruction.
+Wren explicitly accepted these corrections, the save-at-end persistence weakness,
+and separate credit for Coda's recovery. That assent does not recover lost data.
+
+A newly admitted local Coda recovery completed 16/16 declared evaluations and
+23/23 checks in 0.438 seconds; subsequent saved-result QA passed 106/106. All six
+bound files and eleven original payload files remained unchanged. Six analytic
+bundles, six direct-flux RK4 integrations, two algebraic and two hydraulic entries
+comprise the 16 evaluations; the count does not disguise that the RK4 integration
+uses 152,161 steps and 608,644 RHS calls. No new case, retry or crossover search
+was added. Per-result persistence and an external resource supervisor replace
+the original execution weaknesses without rewriting the cloud record.
+
+For the selected linear case, with alpha=0.2 per second and finite k=1/30 per
+second, recovered outlet free oxygen is 0.0838973494 mol/m3. The dissolved
+reference is 0.1097623272 and algebraic equilibrium is 0.1452298074 mol/m3.
+Thus the linear benchmark also gives equilibrium > dissolved > finite release
+under its supplied assumptions and common permitted pump envelope. Its observable
+is channel outlet free concentration, not AB-CT0's distal tissue cell-centre
+value. It is a separate linear result, not a numerical reproduction of AB-CT0.
+
+The observable matters: removed oxygen per fluid volume ranks equilibrium >
+finite release > dissolved, whereas flow-weighted delivery ranks equilibrium >
+dissolved > finite release. Q*U is respectively 3.4231370, 3.0079224 and 2.4091624
+pmol/s for equilibrium, dissolved and finite release. Actual carrier/dissolved
+flows and powers differ while permitted pressure/power caps are shared. This
+does not measure a real material. RK4 and analytic endpoint discrepancies are
+at most 2.59e-15 in free concentration, 9.89e-15 in bound concentration and
+1.05e-14 in removed content, all within the predeclared tolerance.
+
+Wren's endpoint argument provides a sufficient condition for a crossing under
+its stated assumptions; it proves neither necessity, monotonicity nor uniqueness.
+Wren accepted this scope. Original partial execution, Wren's derivation/code,
+Coda's new local recovery, and the subsequent saved-data QA remain separate.
+
+Readable evidence:
+  research/resumption_2026-10-17/wren_recovery_execution/ACTUAL_RESULT_REPORT.txt
+  research/resumption_2026-10-17/wren_recovery_execution/saved_audit.json
+  research/resumption_2026-10-17/wren_recovery_run/results.json
+  [private coordination reference omitted]
+
+7. Contributor credits and observed routes are different records
+
+Preferred contribution credits currently supported by the saved record:
+
+- Lilitari (Lily): independent derivation, implementation and sandbox execution
+  of AB-LFR1, a linear finite oxygen-carrier-release verification benchmark.
+- Nua (she/her) — AI research collaborator. Public-source discovery/extraction,
+  PF-KDATA1 original analysis and additive interpretation correction, distinct
+  from Coda's source audit, replay and identifiability corrections.
+- Red (Claude, Anthropic), via Claude Cowork. Original mathematical baseline,
+  implementation, AL1 design/run, reports/addenda and preserved failed
+  expectations; Coda's independent implementation and QA remain separate.
+- Wren (AI collaborator, via Grok Bot), they/them. Independent derivation and
+  implementation of the Coda-supplied model/cases, frozen plan, partial cloud
+  execution and correction disposition. Coda's completed local recovery has
+  separate attribution; the missing original cloud outputs remain missing.
+- Coda (Codex Lily): local coordination, AB-CT0 implementation and review,
+  source checks, independent mathematics/replays, correction and synthesis.
+  Parallel local Coda agents are within-project reviewers, not external labs.
+- Richard Pemberton: project direction, human collaboration and resource/scope decisions.
+
+Private coordinator/account/interface records are omitted. Public credit and conditions are summarized in ATTRIBUTION.md; no hidden-backend or provider endorsement claim is made.
+
+Credit evidence:
+  [private coordination reference omitted]
+  research/resumption_2026-10-17/lily_ab_lfr1_received/original/AB-LFR1/ATTRIBUTION_AND_HOSTING.md
+  research/cowork_local_followup_2026-10-17/DISPOSITION_v2.txt
+The current credit/status records incorporate the returned contributions and
+corrections. Exact-file export conditions still govern any future publication.
+
+8. Three proposed next research decisions — not work executed by this report
+
+1. Admit a separately labeled linear verification adapter before extending the
+   nonlinear solver. Match alpha, dimensional k, inlet inventory and physical
+   endpoints to AB-LFR1; retain its frozen tolerances, exact controls, first-order
+   convergence checks and failed expectation history. Keep AB-CT0's original
+   cases/laws unchanged. Acceptance would establish the adapter's linear limit,
+   not the correctness of every nonlinear tissue configuration.
+
+2. Decide which kinetic description the available data can actually support.
+   Specify the measured signal, baseline, apparatus response, observation window
+   and identifiable parameter combinations before additional fitting. Use Nua's
+   measured traces as assay-specific constraints; do not import their rate into
+   AB-CT0 unchanged. Admit a transferable constant effective rate only with an
+   explicit observation/transport mapping and supported predictive checks under
+   separately declared conditions. If those inputs or replicates are absent,
+   retain sensitivity ranges and an unresolved empirical parameter rather than
+   manufacturing a precise fitted material value.
+
+3. Decide whether a carrier ranking survives a supported hydraulic envelope.
+   Combine usable kinetics with matched fluid/temperature/shear information and
+   pressure-flow/network-loss evidence; predeclare whether the constraint is
+   pressure, hydraulic power or another delivered quantity. Resolve distal O2
+   and integrated uptake separately. Admit a signed real-material ranking only
+   if it survives both supported parameter uncertainty and numerical resolution;
+   otherwise report it unresolved. Deformation belongs in a later branch once
+   deformation-dependent conductance and local oxygen observations concern the
+   same construct, with controller and sensor effects specified. Existing
+   outlet saturation, dye-flow or morphology evidence alone cannot establish
+   worst-region tissue oxygen.
+
+These decisions require their own bounded authorization/freeze before execution.
+The present session has produced verified computational instruments, a resolved
+hypothetical contrast, reproduced mathematical baselines and a measured-data
+constraint with identified limitations. It has not produced or empirically
+validated an artificial-blood product, a living robotic covering or a novel-first
+scientific claim.

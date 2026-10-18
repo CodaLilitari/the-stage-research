@@ -1,0 +1,28 @@
+{
+  "attempt_id": "RAD_low_Y32",
+  "checks": [
+    {
+      "name": "actual_production_calls",
+      "passed": true
+    },
+    {
+      "name": "actual_radial_calls",
+      "passed": true
+    },
+    {
+      "name": "flow_and_residence",
+      "passed": true
+    },
+    {
+      "name": "envelope_flags",
+      "passed": true
+    }
+  ],
+  "metrics": {
+    "G_continuum": 4.4867710518563e-06,
+    "G_discrete": 4.4864804806808e-06,
+    "G_relative_error": 6.476175676040086e-05,
+    "field_scaled_error": 8.688275146238877e-06
+  },
+  "passed": true
+}

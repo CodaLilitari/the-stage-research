@@ -1,0 +1,90 @@
+{
+  "files": [
+    {
+      "bytes": 10352,
+      "path": "adapter.py",
+      "sha256": "9db5cf262568c9070060eec5d73365471edb6d66207f4fedfd2f68c9f856f9a3"
+    },
+    {
+      "bytes": 24392,
+      "path": "cases.json",
+      "sha256": "6f745ff80e8a6d097f7a3686abd01c8cdfbd48af03b78f29cab12dabf47c530a"
+    },
+    {
+      "bytes": 1592,
+      "path": "pinned_sources/ab_ct0_config.json",
+      "sha256": "570b9e2dd493632891af55c062fcd13620b1a05acda522f18c33d8ddca3948e0"
+    },
+    {
+      "bytes": 13462,
+      "path": "pinned_sources/ab_ct0_model.py",
+      "sha256": "0a6ab8f0876f2be8e1973f8ef077bf33bbd8e25e07e780b1d7ffa48e0135d1a5"
+    },
+    {
+      "bytes": 7217,
+      "path": "pinned_sources/lily_benchmark.py",
+      "sha256": "5273764a1565396fb172c546fdf7ae34cf99a0cdb22816f73e5160aea6d7bf7e"
+    },
+    {
+      "bytes": 4304,
+      "path": "prepare_freeze.py",
+      "sha256": "fc0f31d633ed6484e868af9edfb1c08008ee19ea61773a46319c52a9f78e6f94"
+    },
+    {
+      "bytes": 8232,
+      "path": "PROTOCOL.txt",
+      "sha256": "5e89abc20ca280894a4b7ee50fc3b284c0e4cc4cabc907318e9e9aa7995ac707"
+    },
+    {
+      "bytes": 1590,
+      "path": "README.txt",
+      "sha256": "fd2cf5c046703d92fd50a40596011c98c608607eb51a5f1d8cb96818ddb2e2e0"
+    },
+    {
+      "bytes": 7749,
+      "path": "run_bounded.py",
+      "sha256": "8b97146840b018f63756280c8d88f1a60989c6077751d11ba6c03c0801f97f1a"
+    },
+    {
+      "bytes": 851,
+      "path": "source_provenance.json",
+      "sha256": "7de849ee4087cdfb708666d8c8d018db24bc10c5a67cf23b91d794636ca8691a"
+    },
+    {
+      "bytes": 5280,
+      "path": "study.py",
+      "sha256": "3056d005fc6660620309ce91a76901569d1697bfbcb552fe57445fc14d750e25"
+    },
+    {
+      "bytes": 333,
+      "path": "tolerances.json",
+      "sha256": "a0e5f4ae0853ffde30dca47acd48353d4cf59908c3a8b4e981e9144732bed82c"
+    }
+  ],
+  "limits": {
+    "memory_bytes": 1073741824,
+    "output_bytes": 67108864,
+    "wall_seconds": 300,
+    "workers": 1
+  },
+  "model_calls_during_preparation": 0,
+  "planned_attempts": 51,
+  "source_inputs": [
+    {
+      "pinned_path": "pinned_sources/ab_ct0_model.py",
+      "project_path": "research/resumption_2026-10-15/ab_ct0_v1/model.py",
+      "sha256": "0a6ab8f0876f2be8e1973f8ef077bf33bbd8e25e07e780b1d7ffa48e0135d1a5"
+    },
+    {
+      "pinned_path": "pinned_sources/ab_ct0_config.json",
+      "project_path": "research/resumption_2026-10-15/ab_ct0_v1/config.json",
+      "sha256": "570b9e2dd493632891af55c062fcd13620b1a05acda522f18c33d8ddca3948e0"
+    },
+    {
+      "pinned_path": "pinned_sources/lily_benchmark.py",
+      "project_path": "research/resumption_2026-10-17/lily_ab_lfr1_received/original/AB-LFR1/benchmark.py",
+      "sha256": "5273764a1565396fb172c546fdf7ae34cf99a0cdb22816f73e5160aea6d7bf7e"
+    }
+  ],
+  "status": "PREPARED_NOT_EXECUTED"
+}

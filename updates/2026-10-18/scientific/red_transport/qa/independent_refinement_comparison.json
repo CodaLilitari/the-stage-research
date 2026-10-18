@@ -1,0 +1,15 @@
+{
+  "coarse_report_sha256": "81b2d39d4073f8304392fcc4d9f0d6c4414b53770f227ba3ab00396cc2922fa5",
+  "fine_report_sha256": "353b5eedbfba8ef98c9c09c153d67336cd34de0902b280fa3daaa5c666e88132",
+  "coarse_passed": 57,
+  "fine_passed": 64,
+  "total": 64,
+  "coarse_max_absolute_error": 3.3939453440712253e-07,
+  "fine_max_absolute_error": 5.648835156579768e-09,
+  "maximum_error_reduction_factor": 60.08221606746579,
+  "same_acceptance_tolerance_mol_m3": 1e-07,
+  "only_refinement_source_change": "High-range table resolution 801 to 3201 points; low-range extension and acceptance tolerance unchanged.",
+  "source_comparison_verified_only_grid_resolution_change": true,
+  "source_original_outputs_changed": false,
+  "interpretation": "Observed numerical convergence of the separate QA implementation; not a proof of exactness or a full independent grid replay."
+}

@@ -1,0 +1,2384 @@
+{
+  "scope": "Independent saved-result arithmetic audit; zero transport/fit calls",
+  "auditor": "Coda coordinator, separate implementation from adapter author",
+  "freeze_sha256": "5f801cb30df09855da41d2d86467723980a0dea46f639ff000a4feda02e75d1a",
+  "source_sha256": "3cf9c440e562b4865418397597405b525d62ba40245a6085ff361293eecb7394",
+  "checks": [
+    {
+      "name": "frozen_inputs",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "all_frozen_attempts_once",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "precall_records_and_result_hashes",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L00_N32:hydraulics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L00_N32:actual_code_calls",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L00_N32:field_scope",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L00_N32:independent_decimal_balances_and_path",
+      "passed": true,
+      "details": {
+        "step": 1.5370064225460122e-13,
+        "bound": 0.0,
+        "path": 2.7088175181807775e-12,
+        "global": 3.73485462470666e-12
+      }
+    },
+    {
+      "name": "L00_N64:hydraulics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L00_N64:actual_code_calls",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L00_N64:field_scope",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L00_N64:independent_decimal_balances_and_path",
+      "passed": true,
+      "details": {
+        "step": 2.987022699787152e-13,
+        "bound": 0.0,
+        "path": 1.0510384138711912e-11,
+        "global": 1.444688540801174e-11
+      }
+    },
+    {
+      "name": "L00_N128:hydraulics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L00_N128:actual_code_calls",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L00_N128:field_scope",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L00_N128:independent_decimal_balances_and_path",
+      "passed": true,
+      "details": {
+        "step": 9.10493592656493e-13,
+        "bound": 0.0,
+        "path": 6.408225610776112e-11,
+        "global": 8.794306244279807e-11
+      }
+    },
+    {
+      "name": "L01_N32:hydraulics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L01_N32:actual_code_calls",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L01_N32:field_scope",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L01_N32:independent_decimal_balances_and_path",
+      "passed": true,
+      "details": {
+        "step": 9.79935e-13,
+        "bound": 1.25e-16,
+        "path": 9.642151021126303e-13,
+        "global": 9.085575e-13
+      }
+    },
+    {
+      "name": "L01_N64:hydraulics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L01_N64:actual_code_calls",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L01_N64:field_scope",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L01_N64:independent_decimal_balances_and_path",
+      "passed": true,
+      "details": {
+        "step": 9.445875e-13,
+        "bound": 7.5e-17,
+        "path": 9.063041486044085e-13,
+        "global": 8.25755875e-13
+      }
+    },
+    {
+      "name": "L01_N128:hydraulics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L01_N128:actual_code_calls",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L01_N128:field_scope",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L01_N128:independent_decimal_balances_and_path",
+      "passed": true,
+      "details": {
+        "step": 9.963875e-13,
+        "bound": 1.25e-16,
+        "path": 1.701921707363006e-12,
+        "global": 7.90601375e-13
+      }
+    },
+    {
+      "name": "L02_N32:hydraulics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L02_N32:actual_code_calls",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L02_N32:field_scope",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L02_N32:independent_decimal_balances_and_path",
+      "passed": true,
+      "details": {
+        "step": 9.554e-13,
+        "bound": 0.0,
+        "path": 1.978968257151329e-12,
+        "global": 3.09262e-13
+      }
+    },
+    {
+      "name": "L02_N64:hydraulics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L02_N64:actual_code_calls",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L02_N64:field_scope",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L02_N64:independent_decimal_balances_and_path",
+      "passed": true,
+      "details": {
+        "step": 9.322975e-13,
+        "bound": 0.0,
+        "path": 3.1979749157602645e-12,
+        "global": 8.27614875e-13
+      }
+    },
+    {
+      "name": "L02_N128:hydraulics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L02_N128:actual_code_calls",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L02_N128:field_scope",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L02_N128:independent_decimal_balances_and_path",
+      "passed": true,
+      "details": {
+        "step": 8.98271875e-13,
+        "bound": 0.0,
+        "path": 5.849452883844398e-12,
+        "global": 1.2869826875e-12
+      }
+    },
+    {
+      "name": "L03_N32:hydraulics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L03_N32:actual_code_calls",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L03_N32:field_scope",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L03_N32:independent_decimal_balances_and_path",
+      "passed": true,
+      "details": {
+        "step": 9.6535375e-13,
+        "bound": 1.9664721368952933e-16,
+        "path": 4.282831321195432e-12,
+        "global": 2.18534875e-12
+      }
+    },
+    {
+      "name": "L03_N64:hydraulics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L03_N64:actual_code_calls",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L03_N64:field_scope",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L03_N64:independent_decimal_balances_and_path",
+      "passed": true,
+      "details": {
+        "step": 9.36883125e-13,
+        "bound": 2.937467131936053e-16,
+        "path": 4.400963907382039e-12,
+        "global": 4.47647625e-13
+      }
+    },
+    {
+      "name": "L03_N128:hydraulics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L03_N128:actual_code_calls",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L03_N128:field_scope",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L03_N128:independent_decimal_balances_and_path",
+      "passed": true,
+      "details": {
+        "step": 9.2664125e-13,
+        "bound": 3.0037581380160316e-16,
+        "path": 6.512938179128684e-12,
+        "global": 7.09905e-14
+      }
+    },
+    {
+      "name": "L04_N32:hydraulics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L04_N32:actual_code_calls",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L04_N32:field_scope",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L04_N32:independent_decimal_balances_and_path",
+      "passed": true,
+      "details": {
+        "step": 9.9885625e-13,
+        "bound": 1.8333333333333334e-16,
+        "path": 1.207697928282982e-12,
+        "global": 5.9574625e-13
+      }
+    },
+    {
+      "name": "L04_N64:hydraulics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L04_N64:actual_code_calls",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L04_N64:field_scope",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L04_N64:independent_decimal_balances_and_path",
+      "passed": true,
+      "details": {
+        "step": 9.7865875e-13,
+        "bound": 2.567073170731707e-16,
+        "path": 2.888853611172252e-12,
+        "global": 1.78124375e-12
+      }
+    },
+    {
+      "name": "L04_N128:hydraulics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L04_N128:actual_code_calls",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L04_N128:field_scope",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L04_N128:independent_decimal_balances_and_path",
+      "passed": true,
+      "details": {
+        "step": 9.43955625e-13,
+        "bound": 2.808641975308642e-16,
+        "path": 4.293139907749646e-12,
+        "global": 1.525872e-12
+      }
+    },
+    {
+      "name": "L05_N32:hydraulics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L05_N32:actual_code_calls",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L05_N32:field_scope",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L05_N32:independent_decimal_balances_and_path",
+      "passed": true,
+      "details": {
+        "step": 9.688125e-13,
+        "bound": 1.6071428571428571e-16,
+        "path": 8.789047586994142e-13,
+        "global": 7.092635e-13
+      }
+    },
+    {
+      "name": "L05_N64:hydraulics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L05_N64:actual_code_calls",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L05_N64:field_scope",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L05_N64:independent_decimal_balances_and_path",
+      "passed": true,
+      "details": {
+        "step": 9.789125e-13,
+        "bound": 2.916666666666667e-16,
+        "path": 9.043414327079915e-13,
+        "global": 4.92443375e-13
+      }
+    },
+    {
+      "name": "L05_N128:hydraulics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L05_N128:actual_code_calls",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L05_N128:field_scope",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L05_N128:independent_decimal_balances_and_path",
+      "passed": true,
+      "details": {
+        "step": 9.907228125e-13,
+        "bound": 2.692307692307692e-16,
+        "path": 1.5980180258337712e-12,
+        "global": 1.012961e-12
+      }
+    },
+    {
+      "name": "L06_N32:hydraulics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L06_N32:actual_code_calls",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L06_N32:field_scope",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L06_N32:independent_decimal_balances_and_path",
+      "passed": true,
+      "details": {
+        "step": 9.78435e-13,
+        "bound": 2.0783578914716865e-16,
+        "path": 9.80904694877109e-13,
+        "global": 9.319575e-13
+      }
+    },
+    {
+      "name": "L06_N64:hydraulics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L06_N64:actual_code_calls",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L06_N64:field_scope",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L06_N64:independent_decimal_balances_and_path",
+      "passed": true,
+      "details": {
+        "step": 9.4464875e-13,
+        "bound": 2.2420324845520636e-16,
+        "path": 8.902329886671775e-13,
+        "global": 8.02555875e-13
+      }
+    },
+    {
+      "name": "L06_N128:hydraulics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L06_N128:actual_code_calls",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L06_N128:field_scope",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L06_N128:independent_decimal_balances_and_path",
+      "passed": true,
+      "details": {
+        "step": 9.958875e-13,
+        "bound": 2.574419541798809e-16,
+        "path": 1.7201950189882876e-12,
+        "global": 8.13701375e-13
+      }
+    },
+    {
+      "name": "L07_N32:hydraulics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L07_N32:actual_code_calls",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L07_N32:field_scope",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L07_N32:independent_decimal_balances_and_path",
+      "passed": true,
+      "details": {
+        "step": 8.2824625e-13,
+        "bound": 0.0,
+        "path": 7.338899979540005e-12,
+        "global": 1.252530125e-11
+      }
+    },
+    {
+      "name": "L07_N64:hydraulics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L07_N64:actual_code_calls",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L07_N64:field_scope",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L07_N64:independent_decimal_balances_and_path",
+      "passed": true,
+      "details": {
+        "step": 7.61649375e-13,
+        "bound": 0.0,
+        "path": 1.2008951105488067e-11,
+        "global": 1.8399395e-11
+      }
+    },
+    {
+      "name": "L07_N128:hydraulics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L07_N128:actual_code_calls",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L07_N128:field_scope",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L07_N128:independent_decimal_balances_and_path",
+      "passed": true,
+      "details": {
+        "step": 4.329625e-13,
+        "bound": 0.0,
+        "path": 1.034007297429726e-11,
+        "global": 6.7388671875e-12
+      }
+    },
+    {
+      "name": "L08_N32:hydraulics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L08_N32:actual_code_calls",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L08_N32:field_scope",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L08_N32:independent_decimal_balances_and_path",
+      "passed": true,
+      "details": {
+        "step": 0.0,
+        "bound": 0.0,
+        "path": 1.5e-59,
+        "global": 0.0
+      }
+    },
+    {
+      "name": "L08_N64:hydraulics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L08_N64:actual_code_calls",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L08_N64:field_scope",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L08_N64:independent_decimal_balances_and_path",
+      "passed": true,
+      "details": {
+        "step": 0.0,
+        "bound": 0.0,
+        "path": 2.5e-59,
+        "global": 0.0
+      }
+    },
+    {
+      "name": "L08_N128:hydraulics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L08_N128:actual_code_calls",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L08_N128:field_scope",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L08_N128:independent_decimal_balances_and_path",
+      "passed": true,
+      "details": {
+        "step": 0.0,
+        "bound": 0.0,
+        "path": 5e-59,
+        "global": 0.0
+      }
+    },
+    {
+      "name": "L09_N32:hydraulics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L09_N32:actual_code_calls",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L09_N32:field_scope",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L09_N32:independent_decimal_balances_and_path",
+      "passed": true,
+      "details": {
+        "step": 9.380046875e-13,
+        "bound": 2.345807289370278e-16,
+        "path": 2.8748464839238785e-12,
+        "global": 7.4341653125e-13
+      }
+    },
+    {
+      "name": "L09_N64:hydraulics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L09_N64:actual_code_calls",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L09_N64:field_scope",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L09_N64:independent_decimal_balances_and_path",
+      "passed": true,
+      "details": {
+        "step": 9.2492109375e-13,
+        "bound": 1.9012246010789539e-16,
+        "path": 4.394497276671976e-12,
+        "global": 1.014507828125e-12
+      }
+    },
+    {
+      "name": "L09_N128:hydraulics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L09_N128:actual_code_calls",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L09_N128:field_scope",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L09_N128:independent_decimal_balances_and_path",
+      "passed": true,
+      "details": {
+        "step": 9.17453125e-13,
+        "bound": 2.7556812236862182e-16,
+        "path": 6.426847617482365e-12,
+        "global": 1.8354383671875e-12
+      }
+    },
+    {
+      "name": "L10_N32:hydraulics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L10_N32:actual_code_calls",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L10_N32:field_scope",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L10_N32:independent_decimal_balances_and_path",
+      "passed": true,
+      "details": {
+        "step": 9.249215625e-13,
+        "bound": 1.9012246010789539e-16,
+        "path": 1.8156043507182744e-12,
+        "global": 5.4786625e-14
+      }
+    },
+    {
+      "name": "L10_N64:hydraulics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L10_N64:actual_code_calls",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L10_N64:field_scope",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L10_N64:independent_decimal_balances_and_path",
+      "passed": true,
+      "details": {
+        "step": 9.17453125e-13,
+        "bound": 2.7556812236862182e-16,
+        "path": 2.632837917702645e-12,
+        "global": 8.478184375e-14
+      }
+    },
+    {
+      "name": "L10_N128:hydraulics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L10_N128:actual_code_calls",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L10_N128:field_scope",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L10_N128:independent_decimal_balances_and_path",
+      "passed": true,
+      "details": {
+        "step": 9.11483984375e-13,
+        "bound": 2.666400866723514e-16,
+        "path": 4.485509189054833e-12,
+        "global": 6.933157578125e-13
+      }
+    },
+    {
+      "name": "L11_N32:hydraulics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L11_N32:actual_code_calls",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L11_N32:field_scope",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L11_N32:independent_decimal_balances_and_path",
+      "passed": true,
+      "details": {
+        "step": 7.831772383354048e-13,
+        "bound": 1.3571428571428572e-28,
+        "path": 2.5889677072714523e-12,
+        "global": 1.5271347299423606e-12
+      }
+    },
+    {
+      "name": "L11_N64:hydraulics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L11_N64:actual_code_calls",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L11_N64:field_scope",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L11_N64:independent_decimal_balances_and_path",
+      "passed": true,
+      "details": {
+        "step": 7.985544992636679e-13,
+        "bound": 2.1097560975609755e-28,
+        "path": 1.2753560597671773e-11,
+        "global": 2.6085900994162376e-11
+      }
+    },
+    {
+      "name": "L11_N128:hydraulics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L11_N128:actual_code_calls",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L11_N128:field_scope",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L11_N128:independent_decimal_balances_and_path",
+      "passed": true,
+      "details": {
+        "step": 8.780398268363157e-13,
+        "bound": 2.0246913580246912e-28,
+        "path": 2.2781558040313577e-11,
+        "global": 3.3803143759102996e-11
+      }
+    },
+    {
+      "name": "RAD_low_Y8:hydraulics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "RAD_low_Y8:actual_code_calls",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "RAD_low_Y8:field_scope",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "RAD_low_Y8:wall_and_reaction_None",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "RAD_low_Y8:independent_radial_FV_residual",
+      "passed": true,
+      "details": 2.585e-15
+    },
+    {
+      "name": "RAD_low_Y16:hydraulics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "RAD_low_Y16:actual_code_calls",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "RAD_low_Y16:field_scope",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "RAD_low_Y16:wall_and_reaction_None",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "RAD_low_Y16:independent_radial_FV_residual",
+      "passed": true,
+      "details": 4.12375e-15
+    },
+    {
+      "name": "RAD_low_Y32:hydraulics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "RAD_low_Y32:actual_code_calls",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "RAD_low_Y32:field_scope",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "RAD_low_Y32:wall_and_reaction_None",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "RAD_low_Y32:independent_radial_FV_residual",
+      "passed": true,
+      "details": 1.321203125e-14
+    },
+    {
+      "name": "RAD_low_Y64:hydraulics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "RAD_low_Y64:actual_code_calls",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "RAD_low_Y64:field_scope",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "RAD_low_Y64:wall_and_reaction_None",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "RAD_low_Y64:independent_radial_FV_residual",
+      "passed": true,
+      "details": 3.026628125e-14
+    },
+    {
+      "name": "RAD_high_Y8:hydraulics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "RAD_high_Y8:actual_code_calls",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "RAD_high_Y8:field_scope",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "RAD_high_Y8:wall_and_reaction_None",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "RAD_high_Y8:independent_radial_FV_residual",
+      "passed": true,
+      "details": 1.79375e-16
+    },
+    {
+      "name": "RAD_high_Y16:hydraulics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "RAD_high_Y16:actual_code_calls",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "RAD_high_Y16:field_scope",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "RAD_high_Y16:wall_and_reaction_None",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "RAD_high_Y16:independent_radial_FV_residual",
+      "passed": true,
+      "details": 2.94125e-16
+    },
+    {
+      "name": "RAD_high_Y32:hydraulics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "RAD_high_Y32:actual_code_calls",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "RAD_high_Y32:field_scope",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "RAD_high_Y32:wall_and_reaction_None",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "RAD_high_Y32:independent_radial_FV_residual",
+      "passed": true,
+      "details": 7.92046875e-16
+    },
+    {
+      "name": "RAD_high_Y64:hydraulics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "RAD_high_Y64:actual_code_calls",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "RAD_high_Y64:field_scope",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "RAD_high_Y64:wall_and_reaction_None",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "RAD_high_Y64:independent_radial_FV_residual",
+      "passed": true,
+      "details": 1.88390625e-15
+    },
+    {
+      "name": "COUPLED_N32:hydraulics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N32:actual_code_calls",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N32:field_scope",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N32:wall_and_reaction_3.125e-05",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N32:wall_and_reaction_6.25e-05",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N32:wall_and_reaction_9.375e-05",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N32:wall_and_reaction_0.000125",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N32:wall_and_reaction_0.00015625",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N32:wall_and_reaction_0.0001875",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N32:wall_and_reaction_0.00021875",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N32:wall_and_reaction_0.00025",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N32:wall_and_reaction_0.00028125000000000003",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N32:wall_and_reaction_0.0003125",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N32:wall_and_reaction_0.00034375",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N32:wall_and_reaction_0.000375",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N32:wall_and_reaction_0.00040625000000000004",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N32:wall_and_reaction_0.0004375",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N32:wall_and_reaction_0.00046875",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N32:wall_and_reaction_0.0005",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N32:wall_and_reaction_0.00053125",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N32:wall_and_reaction_0.0005625000000000001",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N32:wall_and_reaction_0.00059375",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N32:wall_and_reaction_0.000625",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N32:wall_and_reaction_0.00065625",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N32:wall_and_reaction_0.0006875",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N32:wall_and_reaction_0.00071875",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N32:wall_and_reaction_0.00075",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N32:wall_and_reaction_0.00078125",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N32:wall_and_reaction_0.0008125000000000001",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N32:wall_and_reaction_0.00084375",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N32:wall_and_reaction_0.000875",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N32:wall_and_reaction_0.00090625",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N32:wall_and_reaction_0.0009375",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N32:wall_and_reaction_0.00096875",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N32:wall_and_reaction_0.001",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N32:independent_radial_FV_residual",
+      "passed": true,
+      "details": 2.5297734375e-15
+    },
+    {
+      "name": "COUPLED_N32:independent_decimal_balances_and_path",
+      "passed": true,
+      "details": {
+        "step": 9.96225e-13,
+        "bound": 1.7141229751487115e-16,
+        "path": 2.197133185363304e-12,
+        "global": 7.838575e-14
+      }
+    },
+    {
+      "name": "COUPLED_N64:hydraulics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:actual_code_calls",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:field_scope",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_1.5625e-05",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_3.125e-05",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_4.6875e-05",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_6.25e-05",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_7.8125e-05",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_9.375e-05",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.000109375",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.000125",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.00014062500000000002",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.00015625",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.000171875",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.0001875",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.00020312500000000002",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.00021875",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.000234375",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.00025",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.000265625",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.00028125000000000003",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.000296875",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.0003125",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.000328125",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.00034375",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.000359375",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.000375",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.000390625",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.00040625000000000004",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.000421875",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.0004375",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.000453125",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.00046875",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.000484375",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.0005",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.000515625",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.00053125",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.000546875",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.0005625000000000001",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.000578125",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.00059375",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.000609375",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.000625",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.000640625",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.00065625",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.0006718750000000001",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.0006875",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.000703125",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.00071875",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.000734375",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.00075",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.000765625",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.00078125",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.0007968750000000001",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.0008125000000000001",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.000828125",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.00084375",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.000859375",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.000875",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.000890625",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.00090625",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.0009218750000000001",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.0009375",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.000953125",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.00096875",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.000984375",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:wall_and_reaction_0.001",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N64:independent_radial_FV_residual",
+      "passed": true,
+      "details": 2.179359375e-15
+    },
+    {
+      "name": "COUPLED_N64:independent_decimal_balances_and_path",
+      "passed": true,
+      "details": {
+        "step": 9.65411875e-13,
+        "bound": 2.1591744034847214e-16,
+        "path": 3.31855594486043e-12,
+        "global": 1.65072425e-12
+      }
+    },
+    {
+      "name": "COUPLED_N128:hydraulics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:actual_code_calls",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:field_scope",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_7.8125e-06",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_1.5625e-05",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_2.34375e-05",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_3.125e-05",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_3.90625e-05",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_4.6875e-05",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_5.46875e-05",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_6.25e-05",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_7.031250000000001e-05",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_7.8125e-05",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_8.59375e-05",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_9.375e-05",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.00010156250000000001",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.000109375",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0001171875",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.000125",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0001328125",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.00014062500000000002",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0001484375",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.00015625",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0001640625",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.000171875",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0001796875",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0001875",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0001953125",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.00020312500000000002",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0002109375",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.00021875",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0002265625",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.000234375",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0002421875",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.00025",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0002578125",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.000265625",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0002734375",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.00028125000000000003",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0002890625",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.000296875",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0003046875",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0003125",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0003203125",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.000328125",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.00033593750000000003",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.00034375",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0003515625",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.000359375",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0003671875",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.000375",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0003828125",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.000390625",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.00039843750000000003",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.00040625000000000004",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0004140625",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.000421875",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0004296875",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0004375",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0004453125",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.000453125",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.00046093750000000003",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.00046875",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0004765625",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.000484375",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0004921875",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0005",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0005078125",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.000515625",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0005234375",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.00053125",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0005390625",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.000546875",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0005546875000000001",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0005625000000000001",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0005703125",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.000578125",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0005859375",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.00059375",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0006015625",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.000609375",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0006171875",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.000625",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0006328125",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.000640625",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0006484375",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.00065625",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0006640625",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0006718750000000001",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0006796875000000001",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0006875",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0006953125",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.000703125",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0007109375",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.00071875",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0007265625",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.000734375",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0007421875",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.00075",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0007578125",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.000765625",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0007734375",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.00078125",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0007890625",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0007968750000000001",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0008046875000000001",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0008125000000000001",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0008203125",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.000828125",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0008359375",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.00084375",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0008515625",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.000859375",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0008671875",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.000875",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0008828125",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.000890625",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0008984375",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.00090625",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0009140625",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0009218750000000001",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0009296875000000001",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0009375",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0009453125",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.000953125",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0009609375",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.00096875",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0009765625",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.000984375",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.0009921875",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:wall_and_reaction_0.001",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "COUPLED_N128:independent_radial_FV_residual",
+      "passed": true,
+      "details": 2.574609375e-15
+    },
+    {
+      "name": "COUPLED_N128:independent_decimal_balances_and_path",
+      "passed": true,
+      "details": {
+        "step": 9.31028125e-13,
+        "bound": 3.0616883835925616e-16,
+        "path": 3.1032379686078496e-12,
+        "global": 5.5829625e-14
+      }
+    },
+    {
+      "name": "FAULT_reverse_release:specific_guard",
+      "passed": true,
+      "details": "Saturation bound failed; no clipping applied"
+    },
+    {
+      "name": "FAULT_spatial_k:wrong_model_discriminated",
+      "passed": true,
+      "details": 0.21385613149181307
+    },
+    {
+      "name": "FAULT_double_perimeter:wrong_model_discriminated",
+      "passed": true,
+      "details": 0.21774437037594405
+    },
+    {
+      "name": "FAULT_total_sink:specific_guard",
+      "passed": true,
+      "details": "Physical axial bracket failed"
+    }
+  ],
+  "passed": 430,
+  "total": 430,
+  "stations_audited": 2920,
+  "real_radial_cells_audited": 14576,
+  "worst_scaled_residuals": {
+    "step_total": 9.9885625e-13,
+    "step_bound": 3.0616883835925616e-16,
+    "BE_path": 6.408225610776112e-11,
+    "radial_balance": 3.026628125e-14,
+    "global_content": 8.794306244279807e-11
+  },
+  "mutations": [
+    {
+      "id": "FAULT_reverse_release",
+      "outcome": "Saturation bound failed; no clipping applied"
+    },
+    {
+      "id": "FAULT_spatial_k",
+      "outcome": "independent BE mismatch",
+      "max_scaled": 0.21385613149181307
+    },
+    {
+      "id": "FAULT_double_perimeter",
+      "outcome": "independent BE mismatch",
+      "max_scaled": 0.21774437037594405
+    },
+    {
+      "id": "FAULT_total_sink",
+      "outcome": "Physical axial bracket failed"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+ "byline": "Wren (AI collaborator, via Grok Bot)",
+ "status": "HONEST PARTIAL: 24/24 ledger calls used; only values captured from truncated run-2 output are reported. See DEVIATIONS.md.",
+ "frozen_plan_sha256": "1267daf210c3bf9799ad5e76a95ba4fb26aeda6b4f1eb413b9efb6c4cbb983f6",
+ "units": "c,b,U mol/m^3 fluid; T s; Q m^3/s; Q*U mol/s",
+ "captured_by_code": {
+  "D": {"a":0.2,"gamma":0,"T":3.0,"c":0.10976232721880529,"b":0.0,"U":0.09023767278119472,"a_int_c":0.09023767278119472,"Q":3.3333333333333335e-11,"QU":3.0079224260398243e-12},
+  "E": {"a":0.2,"gamma":4,"T":8.0,"c":0.1452298074147382,"b":0.5809192296589528,"total_out":0.726149037073691,"U":0.27385096292630895,"U_expm1_form":0.27385096292630906,"Q":1.2500000000000004e-11,"QU":3.4231370365788627e-12},
+  "F1": {"a":0.2,"k":0,"gamma":4,"T":8.0,"b":0.8000000000000002,"U":0.1596206964010688,"a_int_c":0.15962069640106885,"Q":1.2500000000000004e-11,"QU":1.9952587050133605e-12}
+ },
+ "hand_derived_not_ledger": {
+  "F1_c": "1 - U - b = 0.04037930 (= 0.2 e^-1.6)",
+  "hydraulics": {"R_dissolved":9.36e9,"R_carrier":3.744e10,"dissolved":"power cap binds (pressure-cap Q 5e-11 > power-cap Q 3.333e-11); dP=0.312 Pa; power=1.04e-11 W; residence 3.0 s",
+                  "carrier":"pressure cap binds (pressure-cap Q 1.25e-11 < power-cap Q 1.667e-11); dP=0.468 Pa; power=5.85e-12 W; residence 8.0 s"}
+ },
+ "not_obtained": ["F2","F3","F4","F5","F6 c,b,U","all RK4 validations","F6 vs equilibrium at T=80","k* crossover","positivity/limit checks for F2-F6"]
+}

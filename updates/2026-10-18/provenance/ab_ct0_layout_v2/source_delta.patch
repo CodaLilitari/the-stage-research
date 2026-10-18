@@ -1,0 +1,48 @@
+--- original/plot_saved_comparison.py
++++ layout_v2/plot_saved_comparison_layout_v2.py
+@@ -91,11 +91,44 @@
+ ax2.set_title('Finite release lowers uptake',loc='left',fontsize=13.5,pad=22,weight='bold')
+ fig.text(.255,.331,f'Against dissolved: equilibrium {eq_gain:+.3f}%; finite {finite_gain:+.3f}%.\nBoth distal signs exceed the declared numerical guard.',fontsize=10.6,linespacing=1.5)
+ fig.text(.665,.331,f'Finite uptake is {kinetic_loss:.3f}% below equilibrium.\nEquilibrium versus dissolved uptake is unresolved.',fontsize=10.6,linespacing=1.5)
+-fig.text(.045,.258,'Flow and viscosity are explicit',fontsize=11.5,weight='bold')
++fig.text(.045,.278,'Flow and viscosity are explicit',fontsize=11.5,weight='bold')
+ fig.text(.045,.215,'Dissolved: μ/μ₀ = 1, Q = 2 µL/min, residence = 3 s.   Both carriers: μ/μ₀ = 4, Q = 0.75 µL/min, residence = 8 s.\nFinite carrier: k = 0.03333 s⁻¹; k × residence = 0.2667.   Same wall permeability: 5 × 10⁻⁶ m/s.',fontsize=10.7,linespacing=1.55)
+ fig.text(.045,.151,'Same budgets: ΔP ≤ 0.468 Pa and hydraulic power ≤ 10.4 pW. Inlet free O₂ = 200 µmol/L; both carriers add 800 µmol/L bound O₂.',fontsize=10.5)
+ fig.text(.045,.105,'Points are fine-grid values; ± labels and whiskers show |fine − middle| grid changes, not confidence intervals or rigorous error bounds.',fontsize=10.2,color='#596878')
+ fig.text(.045,.060,'Hypothetical carrier • clamped inlet, not a finite reservoir • one prespecified secondary comparison • no biological validation',fontsize=10.6,weight='bold')
++# Layout-only v2 audit: compare the same artist graph before/after one vertical move.
++# This neither imports a transport model nor changes data, text, limits or plotted series.
++fig.set_dpi(180)
++heading=next(t for t in fig.texts if t.get_text()=='Flow and viscosity are explicit')
++body=next(t for t in fig.texts if t.get_text().startswith('Dissolved: μ/μ₀'))
++interpretation=[t for t in fig.texts if t.get_position()[1]==.331]
++def figure_signature():
++ return {'texts':[t.get_text() for t in fig.findobj(matplotlib.text.Text)],
++         'axes':[{'position':list(a.get_position().bounds),'xlim':list(a.get_xlim()),'ylim':list(a.get_ylim()),
++                  'lines':[{'x':list(map(float,l.get_xdata())),'y':list(map(float,l.get_ydata()))} for l in a.lines]} for a in fig.axes]}
++def bounds(t):
++ return list(map(float,t.get_window_extent(fig.canvas.get_renderer()).bounds))
++def read_layout():
++ fig.canvas.draw()
++ h,b=bounds(heading),bounds(body)
++ return {'heading_bbox_px':h,'body_bbox_px':b,'heading_body_gap_px':h[1]-(b[1]+b[3]),
++         'interpretation_heading_gap_px':min(bounds(t)[1] for t in interpretation)-(h[1]+h[3])}
++fig.canvas.draw()  # Materialize automatic tick labels before comparing artist signatures.
++original_signature=figure_signature()
++heading.set_y(.258)
++before_layout=read_layout()
++heading.set_y(.278)
++after_layout=read_layout()
++assert figure_signature()==original_signature
++assert after_layout['heading_body_gap_px']>20
++assert after_layout['interpretation_heading_gap_px']>20
++canvas_w,canvas_h=fig.canvas.get_width_height()
++figure_text_bounds=[{'text':t.get_text(),'bbox_px':bounds(t)} for t in fig.texts]
++assert all(x>=0 and y>=0 and x+w<=canvas_w and y+h<=canvas_h for x,y,w,h in (r['bbox_px'] for r in figure_text_bounds))
++dump('renderer_layout_receipt.json',{'scope':'One vertical heading move; identical artist text, axes, limits and data',
++      'dpi':180,'canvas_pixels':[canvas_w,canvas_h],'old_heading_y':.258,'new_heading_y':.278,
++      'before':before_layout,'after':after_layout,'identical_artist_signature':True,
++      'figure_text_bounds':figure_text_bounds,'transport_solves':0})
+ for ext in ['png','svg','pdf']:
+  fig.savefig(OUT/f'AB_CT0_finite_release_comparison.{ext}',dpi=180)
+ plt.close(fig)

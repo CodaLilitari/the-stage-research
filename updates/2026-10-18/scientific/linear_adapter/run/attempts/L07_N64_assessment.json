@@ -1,0 +1,62 @@
+{
+  "attempt_id": "L07_N64",
+  "checks": [
+    {
+      "name": "actual_production_calls",
+      "passed": true
+    },
+    {
+      "name": "radial_closure_explicit",
+      "passed": true
+    },
+    {
+      "name": "flow_and_residence",
+      "passed": true
+    },
+    {
+      "name": "envelope_flags",
+      "passed": true
+    },
+    {
+      "max_scaled": 1.2007721206241939e-11,
+      "name": "discrete_BE_path",
+      "passed": true
+    },
+    {
+      "name": "discrete_BE_uptake",
+      "passed": true,
+      "scaled": 6.388500839449307e-12
+    },
+    {
+      "max_scaled": 0.0,
+      "name": "independent_Lily_BE_endpoint",
+      "passed": true
+    },
+    {
+      "bound_scaled": 0.0,
+      "name": "separate_total_and_bound_updates",
+      "passed": true,
+      "total_scaled": 7.616476893623769e-13
+    },
+    {
+      "name": "nonnegative_unclipped_states",
+      "passed": true
+    },
+    {
+      "max_relative": 0.0,
+      "name": "endpoint_coordinates",
+      "passed": true
+    }
+  ],
+  "metrics": {
+    "alpha_reference": 0.2,
+    "continuum_endpoint_scaled_error": 0.0040111950038083585,
+    "discrete_path_scaled_error": 1.2007721206241939e-11,
+    "discrete_uptake_scaled_error": 6.388500839449307e-12,
+    "endpoint_exact": [
+      0.04037930359893108,
+      0.0
+    ]
+  },
+  "passed": true
+}

@@ -1,0 +1,160 @@
+INDEPENDENT LINEAR TWO-STATE BENCHMARK DERIVATION
+Coda (Codex Lily) | 17 October 2026
+Prepared before receiving Lily's benchmark implementation. This is symbolic
+analysis, not a transport run or an empirical carrier model.
+
+Assumptions and units
+
+Use residence time t in seconds. c and b are free and bound oxygen content in
+mol/m3 fluid. a>=0 is a CONSTANT free-oxygen extraction rate in s^-1, k>=0 is a
+CONSTANT effective exchange rate in s^-1, gamma>=0 is dimensionless, c0>=0,
+and b0=gamma*c0. There is no added oxygen along the trajectory:
+
+  b' = k*(gamma*c-b)
+  (c+b)' = -a*c
+  c' = -(a+k*gamma)*c+k*b.
+
+gamma is a linear equilibrium storage ratio, not a measured binding capacity,
+Hill coefficient or material identity. All conclusions below require this
+homogeneous linear law and equilibrated inlet. They are not general theorems
+about Michaelis-Menten tissue, Hill binding, variable extraction or arbitrary
+initial loading.
+
+Eigenvalues and exact solution
+
+Let g=1+gamma, S=a+k*g, and
+  delta^2 = S^2-4*a*k
+          = (a-k)^2+2*a*k*gamma+k^2*gamma*(2+gamma)
+          = (a-k*g)^2+4*a*k*gamma.
+The nonnegative decay rates are
+  r_fast=(S+delta)/2,
+  r_slow=2*a*k/(S+delta),
+with eigenvalues -r_slow and -r_fast. The second expression avoids subtracting
+nearly equal S and delta. Branch S=0 explicitly before dividing. Algebra gives
+r_slow*r_fast=a*k and r_slow+r_fast=S.
+
+For a,k,gamma>0 the roots are distinct and
+  0<r_slow<a/g<a<r_fast.
+Writing d=r_fast-r_slow=delta,
+  c(t)/c0 = w_s*exp(-r_slow*t)+w_f*exp(-r_fast*t),
+  w_s=(r_fast-a)/d,  w_f=(a-r_slow)/d,  w_s+w_f=1.
+Both weights are nonnegative. This satisfies c(0)=c0 and c'(0)=-a*c0.
+
+The bound content is
+  b(t)=gamma*c0*[r_fast*exp(-r_slow*t)-r_slow*exp(-r_fast*t)]/d.
+A stable equivalent is
+  E(t)=exp(-r_slow*t)*[-expm1(-d*t)]/d,
+  b(t)=gamma*c0*[exp(-r_slow*t)+r_slow*E(t)].
+The continuous d=0 limit is E(t)=t*exp(-r_slow*t). Branch zero parameters
+explicitly; do not form 0*infinity and then rely on cancellation.
+
+Stable weights near a repeated root or a vanishing coefficient
+
+Put x=a-k*g. Since delta^2-x^2=4*a*k*gamma:
+  if x>=0: w_s=2*a*k*gamma/[delta*(delta+x)], w_f=1-w_s;
+  if x< 0: w_f=2*a*k*gamma/[delta*(delta-x)], w_s=1-w_f.
+These avoid subtracting nearly equal positive quantities for the small weight.
+Handle gamma=0 separately. Scale rate inputs before squaring/multiplication if
+the accepted domain could overflow/underflow; a hypot-style discriminant can
+help. A raw exp(-S*t/2)*cosh(delta*t/2) representation risks 0*infinity at long
+times even when the true solution is finite. Near-zero d must use an analytic
+divided-difference limit, not division by an arbitrary epsilon.
+
+Total content and cumulative extraction
+
+Set alpha=a/g. The normalized total content is another positive mixture:
+  [c(t)+b(t)]/(g*c0) = W_s*exp(-r_slow*t)+W_f*exp(-r_fast*t),
+  W_s=(r_fast-alpha)/d, W_f=(alpha-r_slow)/d.
+W_s+W_f=1 and W_s*r_slow+W_f*r_fast=alpha.
+The near-cancellation product identity is
+  (alpha-r_slow)*(r_fast-alpha)=a^2*gamma/g^2.
+It can rationalize a small total-content weight just as above.
+
+The extracted oxygen CONTENT per fluid volume is
+  U(t)=g*c0-c(t)-b(t)=integral_0^t a*c(u) du.
+For small t, compute stably as
+  U(t)=g*c0*[W_s*(-expm1(-r_slow*t))+W_f*(-expm1(-r_fast*t))].
+Do not confuse U [mol/m3] with channel delivery Q*U(T) [mol/s]. Inlet-minus-
+outlet and the integral agree analytically; a numerical implementation should
+also compare an independently evaluated integral or analytic expression.
+
+Exact invariant/limit checks
+
+1. c(0)=c0; b(0)=gamma*c0; c'(0)=-a*c0; b'(0)=0.
+   c''(0)=a*(a+k*gamma)*c0 and b''(0)=-a*k*gamma*c0.
+2. c,b>=0; both are nonincreasing for this equilibrated, constant-coefficient
+   problem. b>=gamma*c, and 0<=U<=g*c0. For a,k>0, total content tends to zero.
+3. k=0: c=c0*exp(-a*t), b=gamma*c0. Only initially free oxygen is accessible;
+   U=c0*(1-exp(-a*t))<=c0. High inlet bound inventory is not instant delivery.
+4. gamma=0: b=0 and c=c0*exp(-a*t), independent of k. The second eigenmode is
+   unexcited by the prescribed inlet and must not affect physical results.
+5. a=0: the equilibrated inlet stays c=c0,b=gamma*c0 and U=0. c0=0 gives
+   the identically zero solution; avoid normalizing a zero state.
+6. Repeated roots in the nonnegative domain occur only with gamma=0,a=k,
+   or the all-zero rate degeneracy. For gamma=0,a=k=r and arbitrary b0,
+   exp(Mt)=exp(-r*t)*[[1,r*t],[0,1]]. Under the specified b0=0 this reduces
+   exactly to c=c0*exp(-r*t),b=0. Positive gamma with positive a,k cannot
+   have an exactly repeated eigenvalue, although it can be nearly degenerate.
+7. k->infinity, fixed positive t: b->gamma*c and c->c0*exp[-a*t/g].
+   There is a fast derivative initial layer with timescale approximately
+   1/(k*g): finite-k c'(0)=-a*c0, but the equilibrium-limit derivative is
+   -a*c0/g. An equilibrated inlet removes an order-one state jump; the fast
+   free-state amplitude is approximately a*gamma/[k*g^2], not zero. Do not
+   require derivative convergence at t=0 or declare large finite k identical
+   to algebraic equilibrium.
+
+Two useful inequalities — only within the stated linear assumptions
+
+At the SAME residence time, c_finite(t)>=c0*exp(-a*t), because b-gamma*c>=0
+and c'=-a*c+k*(b-gamma*c). Thus a passive equilibrated carrier cannot produce
+a free-oxygen rank BELOW dissolved-only at the same a and same residence time.
+If code shows that, check changed flow, changed a, initial loading or a defect.
+
+Convexity of exp gives
+  (c+b)/(g*c0) >= exp(-alpha*t),
+because the positive total-content mixture has weighted mean rate alpha.
+Consequently U_finite(t)<=g*c0*[1-exp(-alpha*t)]=U_equilibrium(t).
+This cumulative-uptake ordering does NOT imply a fixed free-oxygen ordering:
+for a,k,gamma>0, finite c initially falls faster than equilibrium c, yet its
+slower nonzero decay mode eventually exceeds the equilibrium free concentration.
+At least one free-concentration crossing follows. Do not transfer the uptake
+inequality to distal/free oxygen, or extrapolate either statement to nonlinear
+binding/tissue or a variable extraction coefficient.
+
+Pump-budget rank reversal
+
+Assume the same geometry, inlet free oxygen and extraction coefficient a>0.
+Let T_D be dissolved residence time and T_C carrier residence time. If outlet
+tissue oxygen equals the same positive constant times outlet free oxygen in
+both branches, its ranking is the same. This applies to a common linear slab
+coupling; it is not automatic if transfer/geometry changes.
+
+Equilibrium carrier beats dissolved exactly when
+  exp[-a*T_C/g] > exp[-a*T_D], i.e. T_C/g<T_D.
+At k=0, carrier free oxygen is lower when T_C>T_D. Therefore the strict interval
+  1<T_C/T_D<g, equivalently 1/g<Q_C/Q_D<1,
+guarantees a rank reversal for sufficiently small NONZERO k by continuity.
+This establishes existence in the linear benchmark, not a real material result.
+
+A conservative explicit sufficient rate bound follows from b<=gamma*c0 and
+c'<=-a*c+k*gamma*c0:
+  0<k<a*[exp(-a*T_D)-exp(-a*T_C)]/
+          [gamma*(1-exp(-a*T_C))].
+Together with the strict residence-time interval, this ensures finite carrier
+free oxygen remains below dissolved while equilibrium carrier is above it.
+The bound is sufficient, not an exact critical rate. Avoid evaluating its small
+exponential differences with unstable subtraction.
+
+For hydraulic resistance R_C=m*R_D and common limits:
+  Q(R)=min(deltaP_max/R, sqrt(power_max/R)).
+Pressure-only operation gives Q_C/Q_D=1/m; power-only gives1/sqrt(m). With a
+cap switch, compute the min separately for each branch; do not mix fixed-flow
+and envelope comparisons. For the inherited illustrative Q_D=2,Q_C=0.75 and
+gamma=4, 1/5<0.75/2<1 satisfies the existence interval. This is pure arithmetic,
+not evaluation of a transport case, and the linear law differs from AB-CT0 Hill.
+
+Equal pump budgets do not mean equal inlet TOTAL oxygen flux, equal oxygenator
+replenishment cost or equal carrier-production cost. Report Q, T, a, gamma, k,
+inlet free/bound/total contents and Q*U(T) separately. Keep dimensional k fixed
+as flow changes; resetting k*T to a common value removes the intended kinetic
+residence-time effect.

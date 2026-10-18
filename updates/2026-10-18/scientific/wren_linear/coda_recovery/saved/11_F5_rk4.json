@@ -1,0 +1,7 @@
+{
+  "c": 0.2,
+  "b": 0.8,
+  "U_integrated": 0.0,
+  "steps": 8000,
+  "rhs_evaluations": 32000
+}

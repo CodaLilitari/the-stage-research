@@ -1,0 +1,29 @@
+Coda QA development record (2026-10-17; these are QA-helper issues, not Red failures)
+
+1. First saved-arithmetic audit invocation stopped at a SyntaxError: a missing closing
+   parenthesis in the independent Decimal hydraulic-resistance expression. Corrected
+   before the first completed audit. The completed audit reports zero arithmetic issues.
+2. Initial independent BVP run completed four selected cases, then deliberately raised
+   ValueError('bulk below independent table range') on the strongest E5 witness's
+   equal-power series calculation. Its initial bulk table stopped at 1e-12 mol/m3.
+   The initial source is preserved as independent_bvp_check_initial.py. It also emitted
+   an adaptive-quadrature roundoff warning at an unnecessarily strict 2e-10 relative
+   quadrature request. This incomplete run produced no final correctness receipt.
+   Revised independent helper extends the collocation table to 1e-60 using 80 additional
+   logarithmic low-concentration points, retaining the original 801 high-range points.
+   Quadrature request is 2e-8 relative; all observed warnings are retained in its report.
+   Acceptance tolerance remains 1e-7 mol/m3, declared before this execution.
+3. An inline replay-comparison helper stopped at an unmatched closing parenthesis
+   before reading/comparing results. Fixed in the saved compare_replay.py helper.
+
+No collaborator source or result was changed to address any QA-helper event.
+
+4. The first completed independent BVP audit used 801 high-range bulk-table
+   points and returned 57/64 comparisons within the unchanged 1e-7 mol/m3 target.
+   Seven failures all involved the high-beta/high-permeability base-geometry
+   witness; maximum discrepancy was 3.3939453440712253e-7 mol/m3. No quadrature
+   warnings occurred. Preserved as independent_bvp_coarse_report.json and
+   independent_bvp_check_coarse.py. A separately recorded 3201-point refinement
+   retains the original acceptance tolerance and all selected configurations;
+   it tests whether interpolation error in the independent helper explains the
+   disagreement. It does not alter or replace Red's frozen outcomes.

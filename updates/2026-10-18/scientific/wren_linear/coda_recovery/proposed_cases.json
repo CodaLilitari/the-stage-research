@@ -1,0 +1,22 @@
+{
+  "status": "proposed_not_executed",
+  "c0": 0.2,
+  "finite_cases": {
+    "F1": [0.2, 0.0, 4.0, 8.0],
+    "F2": [0.2, "1/30", 4.0, 8.0],
+    "F3": [0.2, 10.0, 4.0, 8.0],
+    "F4": [0.2, 0.2, 0.0, 8.0],
+    "F5": [0.0, 0.2, 4.0, 8.0],
+    "F6": [0.2, "1/30", 4.0, 80.0]
+  },
+  "finite_case_fields": ["a_s_inverse", "k_s_inverse", "gamma", "T_seconds"],
+  "D": {"a": 0.2, "gamma": 0, "T": 3.0},
+  "E": {"a": 0.2, "gamma": 4, "T": 8.0},
+  "hydraulics": {"L": 0.001, "W": 0.001, "h": 0.0001, "V": 1e-10, "mu": 0.00078, "carrier_viscosity_factor": 4, "pressure_cap": 0.468, "fluid_power_cap": 1.04e-11},
+  "counted_evaluation_cap": 16,
+  "planned_evaluations": 16,
+  "retry_reserve": 0,
+  "crossover_search": false,
+  "F6_equilibrium_diagnostic": false,
+  "original_freeze_sha256": "1267daf210c3bf9799ad5e76a95ba4fb26aeda6b4f1eb413b9efb6c4cbb983f6"
+}

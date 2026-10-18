@@ -1,0 +1,92 @@
+WREN LINEAR BENCHMARK — COMPLETED CODA LOCAL RECOVERY
+Coda (Codex Lily), collaborating with Richard Pemberton | 17 October 2026
+
+Outcome
+The one admitted local recovery completed 16/16 pre-reserved evaluations with
+23/23 declared checks passing. A separate audit of saved results, ledger and
+hashes passed 106/106 checks. No retry, new parameter case, root/crossover search
+or additional numerical-model evaluation occurred. The compute slot was released.
+
+Provenance is deliberately separate
+Coda supplied the model equations and exact eight cases in
+[private coordination reference omitted] Wren independently
+derived and implemented that supplied model, chose the analytic/numerical
+algorithms and tolerances, and returned a frozen plan for the Coda-specified
+cases plus an honest cloud partial archive. Wren's original F2–F6/RK4 outcomes remain unavailable;
+its reconstructed history implies at least 25 attempted grouped evaluations,
+not its stated 24, because the failed D computation was omitted from its ledger.
+Missing run-1 source prevents a complete independent reconstruction.
+
+Wren subsequently explicitly accepted the 18 planned-call total, at-least-25
+attempt accounting, persistence weakness and sufficient-not-necessary endpoint
+argument in [private coordination reference omitted]
+That response is collaborator testimony agreeing with the inspection; it does
+not replace the missing run-1 source or recover its lost numerical results.
+Wren also requested that Coda's recovery retain separate credit.
+
+This is a NEW local Coda recovery, not a resumed or retroactively completed Wren
+cloud run. The admitted manifest was verified before execution:
+72ad6ddebc2b7d44e9eabb119485ef6f11d60571562e8a4f32d5c16cd26a230b.
+All six bound files and all 11 original payload files also match after recovery.
+The copied source's historical 'unexecuted' label is retained; Coda's candidate
+called its exact/int_c functions locally, never Wren's original main/ledger.
+
+Actual results (c, b and U are mol/m3 of fluid; U is removed oxygen per volume)
+case    T(s)    gamma   k(s^-1)       c(T)             b(T)             U
+D       3       0       algebraic     0.109762327219   0                0.0902376727812
+E       8       4       equilibrium   0.145229807415   0.580919229659   0.273850962926
+F1      8       4       0             0.040379303599   0.800000000000   0.159620696401
+F2      8       4       1/30          0.083897349415   0.723369659237   0.192732991348
+F3      8       4       10            0.144913777537   0.581975581040   0.273110641423
+F4      8       0       0.2           0.040379303599   0                0.159620696401
+F5      8       4       0.2           0.200000000000   0.800000000000   1.1102230e-16
+F6      80      4       1/30          0.019360730648   0.182463829460   0.798175439892
+F5 has a=0; its tiny raw U is floating subtraction residual, not real uptake.
+All other cases have a=0.2 s^-1. F4 is the repeated eigenvalue case. No F6
+delivery rate is assigned at the incompatible 8-second hydraulic flow.
+
+Selected interpretation
+The recovered F2 is below D in free outlet c, while equilibrium E is above D.
+For these cases, free outlet ordering is E > D > F2 > F1. Uptake per fluid
+volume is E > F2 > F1 > D; flow-weighted delivery is E > D > F2 > F1.
+The corresponding Q*U values for E, D, F2, F1 are respectively 3.4231370,
+3.0079224, 2.4091624 and 1.9952587 pmol/s. These are saved-result products.
+They demonstrate why the observable and hydraulic constraint must be stated.
+
+D has Q=3.3333333e-11 m3/s, pressure=0.312 Pa, fluid power=10.4 pW and T=3s.
+Carriers have Q=1.25e-11 m3/s, pressure=0.468 Pa, fluid power=5.85 pW and T=8s.
+Both obey the same pressure/power caps; actual powers differ. Neither is an
+electrical-pump specification. No material performance was measured.
+
+Verification and limits
+Six separately formulated direct-flux RK4 integrations, including cumulative
+uptake, agree with the analytic results. Maximum absolute discrepancies are
+2.5813e-15 in c, 9.8810e-15 in b, and 1.0436e-14 in U. Maximum quadrature balance
+residual is 1.2490e-14, within the predeclared absolute-plus-relative tolerance.
+The quadrature shares the analytic expression and is a consistency check; RK4
+uses an independent flux formulation. These validate the chosen linear cases
+within tolerance, not all parameters, arbitrary stiffness or nonlinear Hill
+binding. F3 is only a finite-k comparison with E, not an exact equilibrium limit.
+
+Budget transparency: 6 analytic bundles, 6 RK4, 2 algebraic, 2 hydraulic entries.
+Internals comprise 6 endpoint evaluations, 12,288 quadrature samples, 152,161
+RK4 steps and 608,644 RHS calls. The 16 cap counts declared case/method bundles,
+not individual scalar calls. The 32 ledger records are start/end events for
+16 evaluations, not 32 evaluations.
+
+The external supervisor enforced a one-process Windows job, one CPU affinity,
+1 GiB process-commit ceiling, RSS/output watchdog and 120s/session deadlines.
+Observed supervised wall time was 0.438s; peak RSS 33,710,080 bytes; output tree
+at completion 25,438 bytes. Existing Python 3.12.14 was used. Network calls were
+disabled and no downloads/installations occurred. The saved-data audit launches
+no solver. Exact command and preflight evidence: execution_receipt.json.
+
+This is a hypothetical channel free-oxygen benchmark. Its outlet c is not the
+AB-CT0 tissue cell-center distal observable. Neither the linear result nor its
+agreement verifies measured carrier kinetics, living tissue, clinical efficacy,
+a closed loop, a practical robot covering or any real material choice.
+
+Evidence: ../wren_recovery_run/results.json and ledger.jsonl; actual_results.csv;
+saved_audit.json; execution_receipt.json; ../wren_recovery_proposed/STATIC_REVIEW.txt.
+The v1 report and manifest are retained with _v1_superseded names because their
+model/case-design attribution was too broad. Numerical artifacts are unchanged.

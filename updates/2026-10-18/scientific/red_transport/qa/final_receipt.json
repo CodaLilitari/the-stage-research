@@ -1,0 +1,132 @@
+{
+  "schema": "stage.red_independent_qa_final.v1",
+  "completed_utc": "2026-10-17T22:50:14.371527+00:00",
+  "author": "Coda / Codex Lily, local project independent code QA",
+  "source_folder": "<PROJECT_ROOT>\\research\\cowork_local",
+  "qa_folder": "<PROJECT_ROOT>\\research\\red_independent_qa_2026-10-17",
+  "authorized_scope": "Red cowork_local reproducibility plus independent arithmetic and selected transport comparisons; no new design scan, publication or provider contact.",
+  "source_manifest_v2_sha256": "17484cc04d069f3b4eb8cbc5eac8e18706c57570aacf195ba86977bc0b86ce22",
+  "integrity": {
+    "red_manifest": "22/22",
+    "freeze_bindings": "4/4",
+    "PF0_manifest": "11/11",
+    "red_original_files_unchanged": 23,
+    "red_original_file_count": 23,
+    "staged_source_inputs_unchanged": 13,
+    "freeze_timing": "Local author timestamp, not independently witnessed."
+  },
+  "reproduction": {
+    "four_numeric_CSV_byte_equal": true,
+    "AL1_rows": 17640,
+    "AL1_configurations": 2520,
+    "PF0_rows": 144,
+    "wall_optimum_rows": 24,
+    "film_rows": 80,
+    "original_checks_reproduced": "PF0 11/11; AL1 8/8",
+    "expectations_preserved": "E5 false; E6 false",
+    "figure_bytes_equal": false,
+    "figure_pixels_equal": false
+  },
+  "independent_correctness": {
+    "saved_arithmetic_issues": 0,
+    "selected_configurations": 7,
+    "transport_comparisons_passed": 64,
+    "transport_comparisons_total": 64,
+    "absolute_tolerance_mol_m3": 1e-07,
+    "max_absolute_error_mol_m3": 5.648835156579768e-09,
+    "coarse_failures_preserved": 7,
+    "full_independent_grid_replay": false
+  },
+  "resources": {
+    "replay": {
+      "schema": "stage.red_bounded_replay.v1",
+      "started_at_utc": "2026-10-17T22:37:39.355611+00:00",
+      "python": "<PROJECT_ROOT>\\.venv-stage\\Scripts\\python.exe",
+      "python_version": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+      "memory_limit_bytes": 1073741824,
+      "single_cpu_affinity_mask": 1,
+      "active_process_limit": 1,
+      "thread_environment": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "output_limit_bytes": 262144000,
+      "wall_limit_seconds": 900,
+      "runs": [
+        {
+          "script": "pf0_crosscheck.py",
+          "arguments": [],
+          "started_at_utc": "2026-10-17T22:37:39.355611+00:00",
+          "status": "completed",
+          "elapsed_seconds": 20.219000000040978
+        },
+        {
+          "script": "al1_scan.py",
+          "arguments": [
+            "--run"
+          ],
+          "started_at_utc": "2026-10-17T22:37:59.584109+00:00",
+          "status": "completed",
+          "elapsed_seconds": 41.18700000003446
+        },
+        {
+          "script": "al1_figure.py",
+          "arguments": [],
+          "started_at_utc": "2026-10-17T22:38:40.770015+00:00",
+          "status": "completed",
+          "elapsed_seconds": 2.390999999945052
+        }
+      ],
+      "status": "completed",
+      "finished_at_utc": "2026-10-17T22:38:43.158844+00:00",
+      "elapsed_seconds": 63.79700000002049,
+      "peak_process_memory_bytes": 138252288,
+      "final_output_tree_bytes": 6734751
+    },
+    "independent_solver_limits": {
+      "cpu_core_mask": 1,
+      "process_memory_bytes": 1073741824,
+      "timeout_seconds": 360
+    },
+    "independent_solver_final_seconds": 61.07900000002701,
+    "compute_slot_released_to_parent_utc": "2026-10-17T22:46:46Z",
+    "network_or_paid_calls_for_this_QA": 0,
+    "enforcement_note": "Windows Job Object one active process and 1 GiB allocation cap; CPU affinity one core. Replay watchdog 900 s / 250 MiB; independent solver watchdog 360 s. Runs sequential."
+  },
+  "commands": [
+    ".venv-stage\\Scripts\\python.exe -B research\\red_independent_qa_2026-10-17\\replay_bounded.py",
+    "Independent arithmetic executed through the same enforce_limits() wrapper, then audit_saved_arithmetic.py using runpy.",
+    ".venv-stage\\Scripts\\python.exe -B research\\red_independent_qa_2026-10-17\\independent_bvp_check.py",
+    ".venv-stage\\Scripts\\python.exe -B research\\red_independent_qa_2026-10-17\\compare_replay.py",
+    ".venv-stage\\Scripts\\python.exe -B research\\red_independent_qa_2026-10-17\\finalize_receipt.py"
+  ],
+  "separate_static_review": {
+    "path": "architecture_review/review.txt",
+    "sha256": "85177040af2b743f01e94421f7c88c1245d7ac05aeffc822c5c9ce1fab4859a0",
+    "scope": "13/13 static/rational evidence checks by sibling reviewer; not additional numerical solves."
+  },
+  "limitations": [
+    "Same-source replay establishes reproducibility, not independent correctness.",
+    "CSV arithmetic verifies bookkeeping and reported comparisons; independently implemented collocation covers seven selected configurations only.",
+    "Synthetic positive-parameter steady slab and hypothetical linear carrier capacity law; no skin, living-tissue, pump, carrier or clinical validation.",
+    "Paper-attribution check belongs to sibling static review; this numerical task made no network request.",
+    "Independent QA development failures and coarse discrepancies remain preserved."
+  ],
+  "evidence_sha256": {
+    "REPORT.txt": "09bf83b629589829b083515e099e745114faa3c3614f9a218acc9743afff0588",
+    "integrity_before.json": "4a8edf347355a49c1faf10b01635f9ee6fdc8096761ed1ea957b06c35a499ecb",
+    "integrity_after.json": "0d4cf4c59445201eb431936846092188f7d4ae592875c9ddc10daa93c6ae852c",
+    "replay_receipt.json": "74d73c0dbec05f1804f621ef82e2fb64dc0bd38ff285a1fa71eeca44ddc1753f",
+    "replay_comparison.json": "ecbb6f1e793f6f49a7258e52593d8adc2ad00d4e03dcf8d862ed023bdd007817",
+    "saved_arithmetic_report.json": "08bb3e159e78a2686e2f7bfe220ac6f646a7faf3d76dd7530e5970da5389a9ef",
+    "report_denominator_witnesses.json": "2cbe0ce4a4f48c412309331d2515a43d638fe61db537ca237375c7438abd609d",
+    "independent_bvp_coarse_report.json": "81b2d39d4073f8304392fcc4d9f0d6c4414b53770f227ba3ab00396cc2922fa5",
+    "independent_bvp_report.json": "353b5eedbfba8ef98c9c09c153d67336cd34de0902b280fa3daaa5c666e88132",
+    "independent_refinement_comparison.json": "40598de2682f12e09880785a72065c3c66f21591c8e5664ef8237b4fa652b7ae",
+    "qa_development_events.txt": "68ac3369a1fb1b660f76d89ceb6d7c051224ecd822756b1e26b9bae88981fb5e",
+    "figure_comparison.json": "3f0395c184463ace0490035ea101d35bbd9b6094f12f301c2a56dd6b6be84d90"
+  },
+  "final_tree_bytes_before_receipt_and_manifest": 6945117
+}

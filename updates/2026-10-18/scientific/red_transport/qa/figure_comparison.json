@@ -1,0 +1,28 @@
+{
+  "original_size": [
+    2244,
+    1088
+  ],
+  "replay_size": [
+    2244,
+    1088
+  ],
+  "original_mode": "RGBA",
+  "replay_mode": "RGBA",
+  "original_metadata": {
+    "Software": "Matplotlib version3.10.9, https://matplotlib.org/",
+    "dpi": [
+      170.0022,
+      170.0022
+    ]
+  },
+  "replay_metadata": {
+    "Software": "Matplotlib version3.11.2, https://matplotlib.org/",
+    "dpi": [
+      170.0022,
+      170.0022
+    ]
+  },
+  "rgba_pixels_equal": false,
+  "visual_inspection": "Both original and replay images inspected via view_image; same visible curves, labels and layout. Pixel and byte equality fail. Metadata records Matplotlib 3.10.9 versus 3.11.2; this is a rendering-environment difference, not numerical CSV drift. No exhaustive semantic-image equivalence claim."
+}

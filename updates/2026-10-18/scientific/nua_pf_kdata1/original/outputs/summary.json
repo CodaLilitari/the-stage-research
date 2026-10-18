@@ -1,0 +1,41 @@
+{
+  "k_M1": {
+    "hHb": 37.221,
+    "RBC": 12.629,
+    "PEG-LEH": 11.775
+  },
+  "k_M1_se": {
+    "hHb": 0.179,
+    "RBC": 0.264,
+    "PEG-LEH": 0.082
+  },
+  "ratios_vs_hHb": {
+    "RBC": 0.339,
+    "PEG-LEH": 0.316
+  },
+  "M2_tlag_s": {
+    "hHb": 0.0,
+    "RBC": 0.0,
+    "PEG-LEH": 0.0
+  },
+  "window_sensitivity_k": {
+    "hHb": {
+      "full": 37.221,
+      "drop_first10pct": 41.673,
+      "drop_last20pct": 37.208
+    },
+    "RBC": {
+      "full": 12.629,
+      "drop_first10pct": 4.582,
+      "drop_last20pct": 12.661
+    },
+    "PEG-LEH": {
+      "full": 11.775,
+      "drop_first10pct": 2.184,
+      "drop_last20pct": 11.828
+    }
+  },
+  "calls_used": 12,
+  "budget": 30,
+  "failures": 0
+}

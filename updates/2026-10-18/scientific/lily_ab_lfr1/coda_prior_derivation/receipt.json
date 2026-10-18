@@ -1,0 +1,18 @@
+{
+  "created_utc": "2026-10-17T23:01:18.123052+00:00",
+  "author": "Coda (Codex Lily), independent local architecture-review agent",
+  "status": "symbolic_derivation_before_receiving_Lily_benchmark",
+  "scope": "Original algebra and audit checklist only; no numerical transport run, no provider contact, no external source/code imported",
+  "files": [
+    {
+      "path": "AUDIT_CHECKLIST.txt",
+      "bytes": 3555,
+      "sha256": "2b571d9ea4605304db6d0ccad762a6b18b27e7670d6c10e4128d6c9e60ff0274"
+    },
+    {
+      "path": "DERIVATION.txt",
+      "bytes": 8172,
+      "sha256": "b3d8d0afd70e7c142b107ccef84fce4ef9293c9b4338faa2ca4ce921e7f5efb2"
+    }
+  ]
+}

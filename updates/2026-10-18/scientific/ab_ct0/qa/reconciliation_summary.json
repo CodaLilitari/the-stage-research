@@ -1,0 +1,9 @@
+{
+  "planned": 78,
+  "attempted": 78,
+  "completed": 78,
+  "failed": 0,
+  "not_started": 0,
+  "unallocated_reserve_slots": 2,
+  "scope": "54 primary +12 controls +12 prespecified-selection refinements; reserve slots are not missing planned cases."
+}

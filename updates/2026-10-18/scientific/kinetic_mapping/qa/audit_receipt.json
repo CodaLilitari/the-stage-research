@@ -1,0 +1,1879 @@
+{
+  "scope": "Independent exact-rational state-space and Decimal-80 saved-result audit. No producer import, evaluator replay, fits, ODE/PDE or transport calls.",
+  "passed": 272,
+  "total": 272,
+  "checks": [
+    {
+      "name": "freeze_digest",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "authorization_digest",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "binding:PROTOCOL.txt",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "binding:DERIVATION.md",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "binding:SOURCE_ROUTE.md",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "binding:SOURCE_RECEIPT.json",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "binding:OBSERVATION_CONSTRAINTS.csv",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "binding:SAVED_OBSERVATIONS.csv",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "binding:diagnostic_cases.json",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "binding:expected_outputs.json",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "binding:analytic_diagnostic.py",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "binding:RUN_AUTHORIZATION.template.json",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "binding:prepare_freeze.py",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "exact_12_case_reconciliation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "sequential_attempt_ledger",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "receipt_case_check_counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "declared_no_fits_integrations_retries",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "reported_resources_within_caps",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "admission_window_and_attempt_cap",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C01:Cayley_Hamilton",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C01:positive_real_poles",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C01:output_elimination",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C01:trace:0",
+      "passed": true,
+      "details": {
+        "actual": 1.0,
+        "reference": "1.000"
+      }
+    },
+    {
+      "name": "C01:trace:1",
+      "passed": true,
+      "details": {
+        "actual": 0.9671208878228796,
+        "reference": "0.96712088782287963082434841192153795036483060908165380009500340063657337129098406"
+      }
+    },
+    {
+      "name": "C01:trace:2",
+      "passed": true,
+      "details": {
+        "actual": 0.6809583676094323,
+        "reference": "0.68095836760943231324225658507921169415071549398486390886495184256026727580189968"
+      }
+    },
+    {
+      "name": "C01:trace:3",
+      "passed": true,
+      "details": {
+        "actual": 0.4138489450923618,
+        "reference": "0.41384894509236177685127703684530222164827850330670269643974959165400103567744290"
+      }
+    },
+    {
+      "name": "C01:trace:4",
+      "passed": true,
+      "details": {
+        "actual": 0.15225219173744184,
+        "reference": "0.15225219173744181029167087732696629964390650637641744918388976569569818730730681"
+      }
+    },
+    {
+      "name": "C01:matched_initial_value_derivative",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C01:independent:T",
+      "passed": true,
+      "details": {
+        "actual": "10",
+        "reference": "10"
+      }
+    },
+    {
+      "name": "C01:independent:D",
+      "passed": true,
+      "details": {
+        "actual": "9",
+        "reference": "9"
+      }
+    },
+    {
+      "name": "C01:independent:N",
+      "passed": true,
+      "details": {
+        "actual": "7",
+        "reference": "7"
+      }
+    },
+    {
+      "name": "C01:independent:beta",
+      "passed": true,
+      "details": {
+        "actual": "7/9",
+        "reference": "7/9"
+      }
+    },
+    {
+      "name": "C01:independent:c0",
+      "passed": true,
+      "details": {
+        "actual": "9/7",
+        "reference": "9/7"
+      }
+    },
+    {
+      "name": "C01:independent:lambda_s",
+      "passed": true,
+      "details": {
+        "actual": 1.0,
+        "reference": "1"
+      }
+    },
+    {
+      "name": "C01:independent:lambda_f",
+      "passed": true,
+      "details": {
+        "actual": 9.0,
+        "reference": "9"
+      }
+    },
+    {
+      "name": "C01:independent:slow_coefficient",
+      "passed": true,
+      "details": {
+        "actual": 1.125,
+        "reference": "1.125"
+      }
+    },
+    {
+      "name": "C01:independent:fast_coefficient",
+      "passed": true,
+      "details": {
+        "actual": -0.125,
+        "reference": "-0.125"
+      }
+    },
+    {
+      "name": "C01:all_saved_fields_covered",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C01:frozen_expected:T",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C01:frozen_expected:D",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C01:frozen_expected:N",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C01:frozen_expected:beta",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C01:frozen_expected:c0",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C01:frozen_expected:lambda_s",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C01:frozen_expected:lambda_f",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C01:frozen_expected:slow_coefficient",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C01:frozen_expected:fast_coefficient",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C02:Cayley_Hamilton",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C02:positive_real_poles",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C02:output_elimination",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C02:trace:0",
+      "passed": true,
+      "details": {
+        "actual": 1.0,
+        "reference": "1.000"
+      }
+    },
+    {
+      "name": "C02:trace:1",
+      "passed": true,
+      "details": {
+        "actual": 0.9671208878228796,
+        "reference": "0.96712088782287963082434841192153795036483060908165380009500340063657337129098406"
+      }
+    },
+    {
+      "name": "C02:trace:2",
+      "passed": true,
+      "details": {
+        "actual": 0.6809583676094323,
+        "reference": "0.68095836760943231324225658507921169415071549398486390886495184256026727580189968"
+      }
+    },
+    {
+      "name": "C02:trace:3",
+      "passed": true,
+      "details": {
+        "actual": 0.4138489450923618,
+        "reference": "0.41384894509236177685127703684530222164827850330670269643974959165400103567744290"
+      }
+    },
+    {
+      "name": "C02:trace:4",
+      "passed": true,
+      "details": {
+        "actual": 0.15225219173744184,
+        "reference": "0.15225219173744181029167087732696629964390650637641744918388976569569818730730681"
+      }
+    },
+    {
+      "name": "C02:matched_initial_value_derivative",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C02:independent:T",
+      "passed": true,
+      "details": {
+        "actual": "10",
+        "reference": "10"
+      }
+    },
+    {
+      "name": "C02:independent:D",
+      "passed": true,
+      "details": {
+        "actual": "9",
+        "reference": "9"
+      }
+    },
+    {
+      "name": "C02:independent:N",
+      "passed": true,
+      "details": {
+        "actual": "12",
+        "reference": "12"
+      }
+    },
+    {
+      "name": "C02:independent:beta",
+      "passed": true,
+      "details": {
+        "actual": "4/3",
+        "reference": "4/3"
+      }
+    },
+    {
+      "name": "C02:independent:c0",
+      "passed": true,
+      "details": {
+        "actual": "3/4",
+        "reference": "3/4"
+      }
+    },
+    {
+      "name": "C02:independent:lambda_s",
+      "passed": true,
+      "details": {
+        "actual": 1.0,
+        "reference": "1"
+      }
+    },
+    {
+      "name": "C02:independent:lambda_f",
+      "passed": true,
+      "details": {
+        "actual": 9.0,
+        "reference": "9"
+      }
+    },
+    {
+      "name": "C02:independent:slow_coefficient",
+      "passed": true,
+      "details": {
+        "actual": 1.125,
+        "reference": "1.125"
+      }
+    },
+    {
+      "name": "C02:independent:fast_coefficient",
+      "passed": true,
+      "details": {
+        "actual": -0.125,
+        "reference": "-0.125"
+      }
+    },
+    {
+      "name": "C02:all_saved_fields_covered",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C02:frozen_expected:T",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C02:frozen_expected:D",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C02:frozen_expected:N",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C02:frozen_expected:beta",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C02:frozen_expected:c0",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C02:frozen_expected:lambda_s",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C02:frozen_expected:lambda_f",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C02:frozen_expected:slow_coefficient",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C02:frozen_expected:fast_coefficient",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C03:Cayley_Hamilton",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C03:positive_real_poles",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C03:output_elimination",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C03:trace:0",
+      "passed": true,
+      "details": {
+        "actual": 1.0,
+        "reference": "1.000"
+      }
+    },
+    {
+      "name": "C03:trace:1",
+      "passed": true,
+      "details": {
+        "actual": 0.9671208878228796,
+        "reference": "0.96712088782287963082434841192153795036483060908165380009500340063657337129098406"
+      }
+    },
+    {
+      "name": "C03:trace:2",
+      "passed": true,
+      "details": {
+        "actual": 0.6809583676094323,
+        "reference": "0.68095836760943231324225658507921169415071549398486390886495184256026727580189968"
+      }
+    },
+    {
+      "name": "C03:trace:3",
+      "passed": true,
+      "details": {
+        "actual": 0.4138489450923618,
+        "reference": "0.41384894509236177685127703684530222164827850330670269643974959165400103567744290"
+      }
+    },
+    {
+      "name": "C03:trace:4",
+      "passed": true,
+      "details": {
+        "actual": 0.15225219173744184,
+        "reference": "0.15225219173744181029167087732696629964390650637641744918388976569569818730730681"
+      }
+    },
+    {
+      "name": "C03:matched_initial_value_derivative",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C03:independent:T",
+      "passed": true,
+      "details": {
+        "actual": "10",
+        "reference": "10"
+      }
+    },
+    {
+      "name": "C03:independent:D",
+      "passed": true,
+      "details": {
+        "actual": "9",
+        "reference": "9"
+      }
+    },
+    {
+      "name": "C03:independent:N",
+      "passed": true,
+      "details": {
+        "actual": "15",
+        "reference": "15"
+      }
+    },
+    {
+      "name": "C03:independent:beta",
+      "passed": true,
+      "details": {
+        "actual": "5/3",
+        "reference": "5/3"
+      }
+    },
+    {
+      "name": "C03:independent:c0",
+      "passed": true,
+      "details": {
+        "actual": "3/5",
+        "reference": "3/5"
+      }
+    },
+    {
+      "name": "C03:independent:lambda_s",
+      "passed": true,
+      "details": {
+        "actual": 1.0,
+        "reference": "1"
+      }
+    },
+    {
+      "name": "C03:independent:lambda_f",
+      "passed": true,
+      "details": {
+        "actual": 9.0,
+        "reference": "9"
+      }
+    },
+    {
+      "name": "C03:independent:slow_coefficient",
+      "passed": true,
+      "details": {
+        "actual": 1.125,
+        "reference": "1.125"
+      }
+    },
+    {
+      "name": "C03:independent:fast_coefficient",
+      "passed": true,
+      "details": {
+        "actual": -0.125,
+        "reference": "-0.125"
+      }
+    },
+    {
+      "name": "C03:all_saved_fields_covered",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C03:frozen_expected:T",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C03:frozen_expected:D",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C03:frozen_expected:N",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C03:frozen_expected:beta",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C03:frozen_expected:c0",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C03:frozen_expected:lambda_s",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C03:frozen_expected:lambda_f",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C03:frozen_expected:slow_coefficient",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C03:frozen_expected:fast_coefficient",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C04:Cayley_Hamilton",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C04:positive_real_poles",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C04:output_elimination",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C04:similarity_A",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C04:similarity_B",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C04:similarity_C",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C04:equilibrium_initial_line",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C04:distinct_positive_partner",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C04:independent:T",
+      "passed": true,
+      "details": {
+        "actual": "10",
+        "reference": "10"
+      }
+    },
+    {
+      "name": "C04:independent:D",
+      "passed": true,
+      "details": {
+        "actual": "9",
+        "reference": "9"
+      }
+    },
+    {
+      "name": "C04:independent:N",
+      "passed": true,
+      "details": {
+        "actual": "7",
+        "reference": "7"
+      }
+    },
+    {
+      "name": "C04:independent:beta",
+      "passed": true,
+      "details": {
+        "actual": "7/9",
+        "reference": "7/9"
+      }
+    },
+    {
+      "name": "C04:independent:partner_q",
+      "passed": true,
+      "details": {
+        "actual": "8",
+        "reference": "8"
+      }
+    },
+    {
+      "name": "C04:independent:partner_a",
+      "passed": true,
+      "details": {
+        "actual": "7/8",
+        "reference": "7/8"
+      }
+    },
+    {
+      "name": "C04:independent:partner_d",
+      "passed": true,
+      "details": {
+        "actual": "9/8",
+        "reference": "9/8"
+      }
+    },
+    {
+      "name": "C04:independent:same_calibrated_kernel",
+      "passed": true,
+      "details": {
+        "actual": true,
+        "reference": "True"
+      }
+    },
+    {
+      "name": "C04:all_saved_fields_covered",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C04:frozen_expected:partner_q",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C04:frozen_expected:partner_a",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C04:frozen_expected:partner_d",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C04:frozen_expected:T",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C04:frozen_expected:D",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C04:frozen_expected:N",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C04:frozen_expected:beta",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C04:frozen_expected:same_calibrated_kernel",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C05:Cayley_Hamilton",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C05:positive_real_poles",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C05:output_elimination",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C05:independent:first_c0",
+      "passed": true,
+      "details": {
+        "actual": "9/7",
+        "reference": "9/7"
+      }
+    },
+    {
+      "name": "C05:independent:second_c0",
+      "passed": true,
+      "details": {
+        "actual": "9/7",
+        "reference": "9/7"
+      }
+    },
+    {
+      "name": "C05:independent:first_cprime0",
+      "passed": true,
+      "details": {
+        "actual": "-18/7",
+        "reference": "-18/7"
+      }
+    },
+    {
+      "name": "C05:independent:second_cprime0",
+      "passed": true,
+      "details": {
+        "actual": "-72/7",
+        "reference": "-72/7"
+      }
+    },
+    {
+      "name": "C05:independent:same_b_initial_conditions",
+      "passed": true,
+      "details": {
+        "actual": true,
+        "reference": "True"
+      }
+    },
+    {
+      "name": "C05:independent:internal_derivatives_differ",
+      "passed": true,
+      "details": {
+        "actual": true,
+        "reference": "True"
+      }
+    },
+    {
+      "name": "C05:all_saved_fields_covered",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C05:frozen_expected:first_c0",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C05:frozen_expected:second_c0",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C05:frozen_expected:first_cprime0",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C05:frozen_expected:second_cprime0",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C05:frozen_expected:same_b_initial_conditions",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C05:frozen_expected:internal_derivatives_differ",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C06:Cayley_Hamilton",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C06:positive_real_poles",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C06:output_elimination",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C06:calibrated_numerators",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C06:independent:first_T",
+      "passed": true,
+      "details": {
+        "actual": "10",
+        "reference": "10"
+      }
+    },
+    {
+      "name": "C06:independent:first_D",
+      "passed": true,
+      "details": {
+        "actual": "9",
+        "reference": "9"
+      }
+    },
+    {
+      "name": "C06:independent:second_T",
+      "passed": true,
+      "details": {
+        "actual": "13",
+        "reference": "13"
+      }
+    },
+    {
+      "name": "C06:independent:second_D",
+      "passed": true,
+      "details": {
+        "actual": "45/2",
+        "reference": "45/2"
+      }
+    },
+    {
+      "name": "C06:independent:recovered_d",
+      "passed": true,
+      "details": {
+        "actual": "9/2",
+        "reference": "9/2"
+      }
+    },
+    {
+      "name": "C06:independent:recovered_a",
+      "passed": true,
+      "details": {
+        "actual": "7/2",
+        "reference": "7/2"
+      }
+    },
+    {
+      "name": "C06:independent:first_q",
+      "passed": true,
+      "details": {
+        "actual": "2",
+        "reference": "2"
+      }
+    },
+    {
+      "name": "C06:independent:second_q",
+      "passed": true,
+      "details": {
+        "actual": "5",
+        "reference": "5"
+      }
+    },
+    {
+      "name": "C06:independent:shared_chemistry_consistent",
+      "passed": true,
+      "details": {
+        "actual": true,
+        "reference": "True"
+      }
+    },
+    {
+      "name": "C06:all_saved_fields_covered",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C06:frozen_expected:first_T",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C06:frozen_expected:first_D",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C06:frozen_expected:second_T",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C06:frozen_expected:second_D",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C06:frozen_expected:recovered_d",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C06:frozen_expected:recovered_a",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C06:frozen_expected:first_q",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C06:frozen_expected:second_q",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C06:frozen_expected:shared_chemistry_consistent",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C07:Cayley_Hamilton",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C07:positive_real_poles",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C07:output_elimination",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C07:contradiction",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C07:independent:delta_T",
+      "passed": true,
+      "details": {
+        "actual": "0",
+        "reference": "0"
+      }
+    },
+    {
+      "name": "C07:independent:delta_D",
+      "passed": true,
+      "details": {
+        "actual": "6",
+        "reference": "6"
+      }
+    },
+    {
+      "name": "C07:independent:shared_chemistry_consistent",
+      "passed": true,
+      "details": {
+        "actual": false,
+        "reference": "False"
+      }
+    },
+    {
+      "name": "C07:all_saved_fields_covered",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C07:frozen_expected:delta_T",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C07:frozen_expected:delta_D",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C07:frozen_expected:shared_chemistry_consistent",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C08:independent:first_K",
+      "passed": true,
+      "details": {
+        "actual": "1",
+        "reference": "1"
+      }
+    },
+    {
+      "name": "C08:independent:second_K",
+      "passed": true,
+      "details": {
+        "actual": "1",
+        "reference": "1"
+      }
+    },
+    {
+      "name": "C08:independent:first_q",
+      "passed": true,
+      "details": {
+        "actual": "3",
+        "reference": "3"
+      }
+    },
+    {
+      "name": "C08:independent:second_q",
+      "passed": true,
+      "details": {
+        "actual": "3",
+        "reference": "3"
+      }
+    },
+    {
+      "name": "C08:independent:distinct_resistances",
+      "passed": true,
+      "details": {
+        "actual": true,
+        "reference": "True"
+      }
+    },
+    {
+      "name": "C08:all_saved_fields_covered",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C08:frozen_expected:first_K",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C08:frozen_expected:second_K",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C08:frozen_expected:first_q",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C08:frozen_expected:second_q",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C08:frozen_expected:distinct_resistances",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C09:Cayley_Hamilton",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C09:positive_real_poles",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C09:output_elimination",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C09:qssa_gain",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C09:independent:qssa_forward",
+      "passed": true,
+      "details": {
+        "actual": "7000/2007",
+        "reference": "7000/2007"
+      }
+    },
+    {
+      "name": "C09:independent:qssa_reverse",
+      "passed": true,
+      "details": {
+        "actual": "1000/223",
+        "reference": "1000/223"
+      }
+    },
+    {
+      "name": "C09:independent:beta",
+      "passed": true,
+      "details": {
+        "actual": "7/9",
+        "reference": "7/9"
+      }
+    },
+    {
+      "name": "C09:independent:epsilon_c",
+      "passed": true,
+      "details": {
+        "actual": "1/223",
+        "reference": "1/223"
+      }
+    },
+    {
+      "name": "C09:independent:lambda_s",
+      "passed": true,
+      "details": {
+        "actual": 4.48423448303456,
+        "reference": "4.48423448303455974733176480990053519330640546369257797071640447989543401765255"
+      }
+    },
+    {
+      "name": "C09:independent:relative_rate_error",
+      "passed": true,
+      "details": {
+        "actual": 1.5710530109958043e-05,
+        "reference": "0.0000157105301100550599583808570996161501680065135101365513538570205327015270031"
+      }
+    },
+    {
+      "name": "C09:independent:pole_ratio",
+      "passed": true,
+      "details": {
+        "actual": 0.004468524199741384,
+        "reference": "0.0044685241997413834023153174177198833006348238671374654404746034965772199541713681"
+      }
+    },
+    {
+      "name": "C09:all_saved_fields_covered",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C09:frozen_expected:qssa_forward",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C09:frozen_expected:qssa_reverse",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C09:frozen_expected:beta",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C09:frozen_expected:epsilon_c",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C09:frozen_expected:relative_rate_error_lt",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C09:frozen_expected:pole_ratio_lt",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C10:Cayley_Hamilton",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C10:positive_real_poles",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C10:output_elimination",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C10:qssa_gain",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C10:independent:qssa_forward",
+      "passed": true,
+      "details": {
+        "actual": "14/11",
+        "reference": "14/11"
+      }
+    },
+    {
+      "name": "C10:independent:qssa_reverse",
+      "passed": true,
+      "details": {
+        "actual": "18/11",
+        "reference": "18/11"
+      }
+    },
+    {
+      "name": "C10:independent:beta",
+      "passed": true,
+      "details": {
+        "actual": "7/9",
+        "reference": "7/9"
+      }
+    },
+    {
+      "name": "C10:independent:epsilon_c",
+      "passed": true,
+      "details": {
+        "actual": "9/11",
+        "reference": "9/11"
+      }
+    },
+    {
+      "name": "C10:independent:lambda_s",
+      "passed": true,
+      "details": {
+        "actual": 1.0,
+        "reference": "1"
+      }
+    },
+    {
+      "name": "C10:independent:relative_rate_error",
+      "passed": true,
+      "details": {
+        "actual": 0.6363636363636365,
+        "reference": "0.6363636363636363636363636363636363636363636363636363636363636363636363636363636"
+      }
+    },
+    {
+      "name": "C10:independent:pole_ratio",
+      "passed": true,
+      "details": {
+        "actual": 0.1111111111111111,
+        "reference": "0.11111111111111111111111111111111111111111111111111111111111111111111111111111111"
+      }
+    },
+    {
+      "name": "C10:all_saved_fields_covered",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C10:frozen_expected:qssa_forward",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C10:frozen_expected:qssa_reverse",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C10:frozen_expected:beta",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C10:frozen_expected:epsilon_c",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C10:frozen_expected:lambda_s",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C10:frozen_expected:relative_rate_error_gt",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C11:Cayley_Hamilton",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C11:positive_real_poles",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C11:output_elimination",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C11:low_frequency_error_identity",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C11:independent:chemical_fast_forward",
+      "passed": true,
+      "details": {
+        "actual": "9/10",
+        "reference": "9/10"
+      }
+    },
+    {
+      "name": "C11:independent:chemical_fast_reverse",
+      "passed": true,
+      "details": {
+        "actual": "1/10",
+        "reference": "1/10"
+      }
+    },
+    {
+      "name": "C11:independent:low_frequency_forward",
+      "passed": true,
+      "details": {
+        "actual": "900/1001",
+        "reference": "900/1001"
+      }
+    },
+    {
+      "name": "C11:independent:low_frequency_reverse",
+      "passed": true,
+      "details": {
+        "actual": "100/1001",
+        "reference": "100/1001"
+      }
+    },
+    {
+      "name": "C11:independent:beta",
+      "passed": true,
+      "details": {
+        "actual": "9",
+        "reference": "9"
+      }
+    },
+    {
+      "name": "C11:independent:chemical_rate_error",
+      "passed": true,
+      "details": {
+        "actual": 0.0009000899280495744,
+        "reference": "0.0009000899280494733672241363078753754161888427477803107248516079446622922194883"
+      }
+    },
+    {
+      "name": "C11:independent:internal_free_qssa_error",
+      "passed": true,
+      "details": {
+        "actual": 0.11087690336076528,
+        "reference": "0.1108769033607652312621799515070758883642495479997561717256954583181601467474898"
+      }
+    },
+    {
+      "name": "C11:independent:lambda_s",
+      "passed": true,
+      "details": {
+        "actual": 0.09991007195052663,
+        "reference": "0.09991007195052663277586369212462458381115725221968927514839205533770778043785"
+      }
+    },
+    {
+      "name": "C11:all_saved_fields_covered",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C11:frozen_expected:chemical_fast_forward",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C11:frozen_expected:chemical_fast_reverse",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C11:frozen_expected:low_frequency_forward",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C11:frozen_expected:low_frequency_reverse",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C11:frozen_expected:beta",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C11:frozen_expected:chemical_rate_error_lt",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C11:frozen_expected:internal_free_qssa_error_gt",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C12:zero_input_required",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C12:independent:R",
+      "passed": true,
+      "details": {
+        "actual": "13",
+        "reference": "13"
+      }
+    },
+    {
+      "name": "C12:independent:cprime",
+      "passed": true,
+      "details": {
+        "actual": "-17",
+        "reference": "-17"
+      }
+    },
+    {
+      "name": "C12:independent:bprime",
+      "passed": true,
+      "details": {
+        "actual": "13",
+        "reference": "13"
+      }
+    },
+    {
+      "name": "C12:independent:totalprime",
+      "passed": true,
+      "details": {
+        "actual": "-4",
+        "reference": "-4"
+      }
+    },
+    {
+      "name": "C12:independent:scaled_R",
+      "passed": true,
+      "details": {
+        "actual": "26",
+        "reference": "26"
+      }
+    },
+    {
+      "name": "C12:independent:scaled_cprime",
+      "passed": true,
+      "details": {
+        "actual": "-34",
+        "reference": "-34"
+      }
+    },
+    {
+      "name": "C12:independent:scaled_bprime",
+      "passed": true,
+      "details": {
+        "actual": "26",
+        "reference": "26"
+      }
+    },
+    {
+      "name": "C12:independent:scaled_totalprime",
+      "passed": true,
+      "details": {
+        "actual": "-8",
+        "reference": "-8"
+      }
+    },
+    {
+      "name": "C12:independent:first_output",
+      "passed": true,
+      "details": {
+        "actual": "1",
+        "reference": "1"
+      }
+    },
+    {
+      "name": "C12:independent:scaled_output",
+      "passed": true,
+      "details": {
+        "actual": "1",
+        "reference": "1"
+      }
+    },
+    {
+      "name": "C12:independent:fixed_input_symmetry_residual_per_unit_u",
+      "passed": true,
+      "details": {
+        "actual": "-2",
+        "reference": "-2"
+      }
+    },
+    {
+      "name": "C12:independent:fixed_nonzero_input_breaks_scale",
+      "passed": true,
+      "details": {
+        "actual": true,
+        "reference": "True"
+      }
+    },
+    {
+      "name": "C12:all_saved_fields_covered",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C12:frozen_expected:R",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C12:frozen_expected:cprime",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C12:frozen_expected:bprime",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C12:frozen_expected:totalprime",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C12:frozen_expected:scaled_R",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C12:frozen_expected:scaled_cprime",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C12:frozen_expected:scaled_bprime",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C12:frozen_expected:scaled_totalprime",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C12:frozen_expected:first_output",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C12:frozen_expected:scaled_output",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C12:frozen_expected:fixed_input_symmetry_residual_per_unit_u",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "C12:frozen_expected:fixed_nonzero_input_breaks_scale",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "producer_imports_standard_library_only",
+      "passed": true,
+      "details": null
+    }
+  ],
+  "reconstruction": {
+    "C01": {
+      "T": "10",
+      "D": "9",
+      "N": "7",
+      "beta": "7/9",
+      "c0": "9/7",
+      "lambda_s": "1",
+      "lambda_f": "9",
+      "slow_coefficient": "1.125",
+      "fast_coefficient": "-0.125"
+    },
+    "C02": {
+      "T": "10",
+      "D": "9",
+      "N": "12",
+      "beta": "4/3",
+      "c0": "3/4",
+      "lambda_s": "1",
+      "lambda_f": "9",
+      "slow_coefficient": "1.125",
+      "fast_coefficient": "-0.125"
+    },
+    "C03": {
+      "T": "10",
+      "D": "9",
+      "N": "15",
+      "beta": "5/3",
+      "c0": "3/5",
+      "lambda_s": "1",
+      "lambda_f": "9",
+      "slow_coefficient": "1.125",
+      "fast_coefficient": "-0.125"
+    },
+    "partner_S": [
+      [
+        "4",
+        "-27/7"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "coincident_exception": "q=a+d gives the same parameter vector and S=I; it is not a second distinct solution.",
+    "C04": {
+      "T": "10",
+      "D": "9",
+      "N": "7",
+      "beta": "7/9",
+      "partner_q": "8",
+      "partner_a": "7/8",
+      "partner_d": "9/8",
+      "same_calibrated_kernel": "True"
+    },
+    "C05": {
+      "first_c0": "9/7",
+      "second_c0": "9/7",
+      "first_cprime0": "-18/7",
+      "second_cprime0": "-72/7",
+      "same_b_initial_conditions": "True",
+      "internal_derivatives_differ": "True"
+    },
+    "C06": {
+      "first_T": "10",
+      "first_D": "9",
+      "second_T": "13",
+      "second_D": "45/2",
+      "recovered_d": "9/2",
+      "recovered_a": "7/2",
+      "first_q": "2",
+      "second_q": "5",
+      "shared_chemistry_consistent": "True"
+    },
+    "C07": {
+      "delta_T": "0",
+      "delta_D": "6",
+      "shared_chemistry_consistent": "False"
+    },
+    "C08": {
+      "first_K": "1",
+      "second_K": "1",
+      "first_q": "3",
+      "second_q": "3",
+      "distinct_resistances": "True"
+    },
+    "C09": {
+      "qssa_forward": "7000/2007",
+      "qssa_reverse": "1000/223",
+      "beta": "7/9",
+      "epsilon_c": "1/223",
+      "lambda_s": "4.48423448303455974733176480990053519330640546369257797071640447989543401765255",
+      "relative_rate_error": "0.0000157105301100550599583808570996161501680065135101365513538570205327015270031",
+      "pole_ratio": "0.0044685241997413834023153174177198833006348238671374654404746034965772199541713681"
+    },
+    "C10": {
+      "qssa_forward": "14/11",
+      "qssa_reverse": "18/11",
+      "beta": "7/9",
+      "epsilon_c": "9/11",
+      "lambda_s": "1",
+      "relative_rate_error": "0.6363636363636363636363636363636363636363636363636363636363636363636363636363636",
+      "pole_ratio": "0.11111111111111111111111111111111111111111111111111111111111111111111111111111111"
+    },
+    "C11": {
+      "chemical_fast_forward": "9/10",
+      "chemical_fast_reverse": "1/10",
+      "low_frequency_forward": "900/1001",
+      "low_frequency_reverse": "100/1001",
+      "beta": "9",
+      "chemical_rate_error": "0.0009000899280494733672241363078753754161888427477803107248516079446622922194883",
+      "internal_free_qssa_error": "0.1108769033607652312621799515070758883642495479997561717256954583181601467474898",
+      "lambda_s": "0.09991007195052663277586369212462458381115725221968927514839205533770778043785"
+    },
+    "C12": {
+      "R": "13",
+      "cprime": "-17",
+      "bprime": "13",
+      "totalprime": "-4",
+      "scaled_R": "26",
+      "scaled_cprime": "-34",
+      "scaled_bprime": "26",
+      "scaled_totalprime": "-8",
+      "first_output": "1",
+      "scaled_output": "1",
+      "fixed_input_symmetry_residual_per_unit_u": "-2",
+      "fixed_nonzero_input_breaks_scale": "True"
+    }
+  },
+  "source_bindings": [
+    {
+      "path": "FREEZE.json",
+      "sha256": "446e29b9cf9da50c446f1975acf6fa5cb8e00a38243f898397335d09f318bc61"
+    },
+    {
+      "path": "RUN_AUTHORIZATION.json",
+      "sha256": "a94f1319841b8b0ed75998ffc290c68642c32f340665566d4cb8ee7814759ac6"
+    },
+    {
+      "path": "diagnostic_cases.json",
+      "sha256": "d29716eec389718bc37466f1abb2900a07dac1b45cc4c39185644d290b5211df"
+    },
+    {
+      "path": "expected_outputs.json",
+      "sha256": "01e82fc721aa83557e2487f2be35a99adb1e18b727a93d8bb53b598b68eb3de8"
+    },
+    {
+      "path": "analytic_diagnostic.py",
+      "sha256": "cec8da69326fc3128014cc050c114763ec6dc29cdd444562c714b8312568170b"
+    },
+    {
+      "path": "DERIVATION.md",
+      "sha256": "985d8c6ab56e13cc59f213e601e7c53046cf525b6dc4ef811dd02f9d7526e4ae"
+    },
+    {
+      "path": "SOURCE_ROUTE.md",
+      "sha256": "882e66ab86a180928fc7b2c69c1938af6247746839f73b7c5112913844745df7"
+    },
+    {
+      "path": "SOURCE_RECEIPT.json",
+      "sha256": "d2d9e8366e6d28623abd7a9115edb8bf244f4e5599f8ddc043d97fc22a5d7003"
+    },
+    {
+      "path": "README.md",
+      "sha256": "5ba2a2faf48c1955f5fb56f270e205d0a15367338e07eabf8ebc1b4b0a93f955"
+    },
+    {
+      "path": "diagnostic_results/results.json",
+      "sha256": "7008582e19d29287ff448e03970e417beefca633568f22fb0d74a420291d7e65"
+    },
+    {
+      "path": "diagnostic_results/receipt.json",
+      "sha256": "ef9a384084cd4e61dafe5dcf4ec7d8d45f6bdcedb8e2d1fd567bd823d9bb8f8f"
+    },
+    {
+      "path": "diagnostic_results/attempt_ledger.json",
+      "sha256": "52011a7aaa7c21485af2956f6d77c515c77601ea125ffdeb28d98919185d17fb"
+    }
+  ],
+  "author_run": {
+    "case_records": 12,
+    "checks": 89
+  },
+  "qualifications": [
+    "Positive-parameter local linear model; partner collapses when q=a+d.",
+    "Transfer equivalence is zero-state or appropriately transformed initial state; equilibrium initial line is preserved.",
+    "Internal-free observation distinguishes the recorded release pair, not an unperturbed equilibrium or every arbitrary experiment.",
+    "QSSA requires time-scale and forcing/initial-layer conditions, not merely a favorable one-rate example.",
+    "Receipt resource enforcement is cooperative. Saved ledger has no immutable timestamp per attempt; it does not independently certify temporal execution order.",
+    "Source route spot-check only; no newly recovered empirical parameter or source-dataset replication. Nua efflux extension excluded."
+  ]
+}

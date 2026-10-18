@@ -1,0 +1,221 @@
+{
+  "analytic_test_patches": {
+    "first_order": {
+      "C_in_over_Km": 1e-09,
+      "modules_depth_m_multiplier_P": [
+        [
+          5e-05,
+          1.0,
+          5e-05
+        ],
+        [
+          0.0001,
+          0.25,
+          0.0002
+        ],
+        [
+          0.0002,
+          0.5,
+          5e-05
+        ],
+        [
+          0.00015,
+          0.25,
+          5e-06
+        ]
+      ],
+      "qbeta_uL_min": [
+        1,
+        4,
+        16,
+        64
+      ]
+    },
+    "zero_order": {
+      "Km_mol_m3": 2e-07,
+      "P_wall_m_s": 0.0002,
+      "modules_depth_m_multiplier": [
+        [
+          5e-05,
+          1.0
+        ],
+        [
+          0.0001,
+          0.25
+        ],
+        [
+          0.0001,
+          0.5
+        ],
+        [
+          0.00015,
+          0.25
+        ]
+      ],
+      "qbeta_uL_min": [
+        8,
+        16,
+        32,
+        64
+      ],
+      "s_low_relative": 0.001
+    }
+  },
+  "arrangements": {
+    "parallel_demand_prop": "fresh inlet; flow share proportional to nominal zero-order uptake q_i*H_i",
+    "parallel_maxmin": "fresh inlet; shares maximise the minimum module oxygen (equalising optimum)",
+    "parallel_uniform": "fresh inlet to every module; equal flow shares",
+    "series_best": "best distinct ordering (exhaustive)",
+    "series_limited_first": "all flow through the modules in sequence, ordered by decreasing fixed-lumen drop C_in - ceiling_i",
+    "series_limited_last": "reverse of series_limited_first",
+    "series_worst": "worst distinct ordering (exhaustive)"
+  },
+  "author": "Red (Claude, Anthropic) via Claude Cowork; configured model id claude-opus-5-5 (the serving model may differ)",
+  "capacity_multipliers_beta": [
+    1,
+    4,
+    16,
+    64,
+    256
+  ],
+  "counterexample_config": {
+    "geometry": "base",
+    "hotspot_demand_ratio_r": 4,
+    "hotspot_depth_m": 0.0002,
+    "total_flow_uL_min": 8,
+    "transfer": "P0.05_wall"
+  },
+  "figure_panels": {
+    "A": {
+      "beta": 1,
+      "geometry": "base",
+      "hotspot_demand_ratio_r": 4,
+      "hotspot_depth_m": 0.0001,
+      "transfer": "P0.05_wall",
+      "x": "total flow"
+    },
+    "B": {
+      "geometry": "base vs two_sided_hotspot",
+      "hotspot_demand_ratio_r": 4,
+      "hotspot_depth_m": 0.0002,
+      "total_flow_uL_min": 8,
+      "transfer": "P0.05_wall",
+      "x": "beta"
+    }
+  },
+  "film_note": "k_L = Sh*D_fluid/d_h, d_h = 2h for a wide slit, Sh = 4.86 (fully developed laminar flow, one transferring wall, other wall insulated, constant-concentration value); P_eff = 1/(1/P_wall + 1/k_L). Fully developed Sh is the conservative (lowest) value; entrance effects raise k_L. Neither PF0 nor Bonart et al. 2026 include this lumen-side series resistance.",
+  "geometries": {
+    "base": "every module = one channel face (W x L) plus a one-sided slab of its depth; 4 channels",
+    "two_sided_hotspot": "hotspot volume supplied from both faces, i.e. two one-sided modules of half depth, each with its own channel; baseline modules unchanged; 5 channels"
+  },
+  "hydraulics": {
+    "absolute_values_note": "absolute dp and power depend on the assumed h and mu; the ratios between arrangements do not",
+    "capacity_note": "PF0's capacity law changes neither flow nor viscosity, so the pump terms ignore beta (this favours the carrier)",
+    "channel_height_m": 0.0001,
+    "pressure_rules": "uniform parallel dp = R Q/N; allocated parallel (inline restrictors) dp = R max_i Q_i; series dp = N R Q; power = dp Q",
+    "resistance": "R = 12 mu L / (W h^3 (1 - 0.630 h/W)) per module channel; identical channels; interconnects neglected",
+    "viscosity_Pa_s": 0.0007
+  },
+  "model_class": "Per module, the PF0 constitutive model: steady 1-D one-sided slab, Michaelis-Menten uptake, finite wall transfer, no-flux back face, cross-sectionally well-mixed plug-flow lumen, hypothetical linear lumen capacity C_total = beta*C_free. Solved in the continuum limit (stage_transport.py: RK4 shooting plus the exact separable lumen integral), not on PF0's 24 x 32 grid.",
+  "name": "AL1 heterogeneous-demand flow allocation and topology screen",
+  "numerics": {
+    "equal_power_fixed_point_tolerance": 1e-12,
+    "maxmin_bisection_iterations": 100,
+    "random_allocations_per_config": 200,
+    "random_seed": 20261015,
+    "refinement_rk4_steps": 2000,
+    "refinement_s_grid_points": 4001,
+    "refinement_subset": "base geometry, P0.05_wall, r in {1,4}, hotspot depth in {100,400} um",
+    "rk4_steps": 1000,
+    "s_grid_points": 2001,
+    "s_low_relative": 1e-14
+  },
+  "patch": {
+    "baseline_demand_multiplier": 0.25,
+    "baseline_depth_m": 0.0001,
+    "baseline_modules": 3,
+    "hotspot_demand_ratio_r": [
+      1,
+      2,
+      4
+    ],
+    "hotspot_depth_m": [
+      0.0001,
+      0.0002,
+      0.0003,
+      0.0004
+    ],
+    "hotspot_modules": 1,
+    "meaning": "q_module = multiplier * q_ref. Hotspot multiplier = r * 0.25 (0.25, 0.5 or 1.0). Hypothetical heterogeneity spanning 0.25-1x the PF0 reference demand; not calibrated to any tissue."
+  },
+  "pre_freeze_disclosure": "Before this freeze the solver was unit-tested on synthetic patches (zero-order, first-order and identical-module limits) and the infinite-flow ceilings of candidate modules were computed to confirm that the grid spans flow-limited and transverse-limited regimes. No allocation or topology outcome on this grid was computed before the freeze.",
+  "predeclared_checks": {
+    "C1_identical_modules_series_equals_uniform": "|series - uniform parallel| <= 1e-9*C_in for patches whose modules are all identical",
+    "C2_zero_order_closed_forms": "max-min tau and series minimum match the zero-order closed forms to 1e-5 relative; series >= max-min",
+    "C3_first_order_closed_forms": "max-min tau and series minimum match the first-order closed forms to 1e-5 relative; series >= max-min",
+    "C4_maxmin_equalisation": "module minima at the max-min split agree to 1e-8 relative; shares sum to the total to 1e-12 relative",
+    "C5_random_allocations_never_beat_maxmin": "200 random splits per (patch, flow) at beta=1 never exceed tau by more than 1e-9 relative",
+    "C6_monotone_in_flow_and_beta": "every arrangement's worst minimum is non-decreasing in total flow and in beta (1e-12 absolute)",
+    "C7_bounded_by_ceiling": "no arrangement exceeds the patch's minimum ceiling (infinite-flow limit) by more than 1e-12",
+    "C8_refinement": "doubling RK4 steps and table points changes worst minima by <= 1e-7*C_in on the refinement subset"
+  },
+  "predeclared_expectations": {
+    "E1": "parallel_maxmin >= parallel_uniform and >= parallel_demand_prop in every configuration (optimality; failure = defect)",
+    "E2": "where the patch's minimum ceiling < 0.05, no arrangement at any beta <= 256 reaches 0.05",
+    "E3": "heterogeneous patches: median relative gain of max-min over uniform exceeds 1% where the uniform worst module is flow-limited (worst < 0.9 x minimum ceiling) and is below 1% where it is near its ceiling (>= 0.9)",
+    "E4": "series_limited_first >= parallel_maxmin at equal total flow in every configuration (proven here only for the zero-order and first-order limits; open for Michaelis-Menten kinetics)",
+    "E5": "series_limited_first equals series_best in every configuration (Jackson-rule ordering; proven only in the two limits)",
+    "E6": "where the base geometry's minimum ceiling < 0.05: two-sided hotspot at beta=1 beats the base geometry at beta=256 (both max-min, same total flow) in every configuration",
+    "E7": "secondary, equal hydraulic power at beta=1: parallel_maxmin >= series_limited_first in most configurations"
+  },
+  "question": "With the same total perfusate flow, can redistributing it among heterogeneous tissue modules, or re-arranging the modules, raise the worst-region free O2; and when do allocation or carrier capacity stop helping?",
+  "reference_parameters": {
+    "C_in_free_mol_m3": 0.2,
+    "D_tissue_m2_s": 2e-09,
+    "Km_mol_m3": 0.028,
+    "L_m": 0.001,
+    "W_m": 0.001,
+    "provenance": "PF0 values (Bonart et al. 2026 illustrative liver-like case). NOT skin measurements. Km is held fixed when demand is scaled. 0.05 mol/m3 is PF0's arbitrary pass line and is used only as a reference line, not a survival criterion.",
+    "q_ref_mol_m3_s": 0.02,
+    "reference_line_mol_m3": 0.05
+  },
+  "scope_limits": [
+    "Liver-like PF0 reference parameters and hypothetical demand multipliers; not skin or any measured tissue.",
+    "Steady state; no axial diffusion in tissue; no lateral coupling between modules; cross-sectionally well-mixed lumen except the optional film term.",
+    "Capacity beta is PF0's hypothetical instantaneous linear equilibrium; no carrier chemistry, viscosity, release kinetics or toxicity.",
+    "Oxygen only: no glucose, CO2, lactate, pH, heat, immune, sterility, shear or mechanical-deformation model.",
+    "Series arrangements pass each module's effluent to the next; waste accumulation and failure propagation are not modelled.",
+    "Hydraulic numbers assume identical slit channels and ignore interconnects; absolute values are illustrative only."
+  ],
+  "status": "computational investigation only; not a tissue, clinical or viability validation",
+  "total_flows_uL_min": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64
+  ],
+  "transfer_conditions": [
+    {
+      "P_wall_m_s": 5e-05,
+      "label": "P0.05_wall",
+      "lumen_film": false
+    },
+    {
+      "P_wall_m_s": 0.0002,
+      "label": "P0.2_wall",
+      "lumen_film": false
+    },
+    {
+      "D_fluid_m2_s": 2e-09,
+      "P_wall_m_s": 0.0002,
+      "Sherwood_dh": 4.86,
+      "label": "P0.2_wall+film_h100",
+      "lumen_film": true,
+      "slit_height_m": 0.0001
+    }
+  ],
+  "version": 1
+}

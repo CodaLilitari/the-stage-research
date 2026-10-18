@@ -1,0 +1,273 @@
+{
+  "benchmark_id": "AB-LFR1",
+  "version": "1.0",
+  "status": "FROZEN_BEFORE_EVALUATION",
+  "author": "Lilitari (Lily)",
+  "scope": "Linear equilibrium law b_eq=gamma*c with equilibrated inlet. Independent of AB-CT0 54-case matrix.",
+  "decimal_convention": "All numeric input strings are exact decimal coordinates; binary64 execution compared with high-precision evaluation.",
+  "randomness": "None; exhaustive explicit deterministic fixtures. No random seed needed.",
+  "time_fractions": [
+    "0",
+    "1e-12",
+    "1e-9",
+    "1e-6",
+    "1e-3",
+    "0.01",
+    "0.1",
+    "0.5",
+    "1"
+  ],
+  "backward_euler_segments": [
+    32,
+    64,
+    128,
+    256,
+    512,
+    1024,
+    2048,
+    4096
+  ],
+  "convergence_required_cases": [
+    "C01",
+    "C08",
+    "C09",
+    "C10",
+    "C11",
+    "C19"
+  ],
+  "tolerances": {
+    "analytic_component_atol_scaled": 2e-13,
+    "analytic_component_rtol": 3e-12,
+    "reference_dps": 90,
+    "reference_recheck_dps": 120,
+    "reference_recheck_relative": 1e-65,
+    "conservation_total_scaled": 5e-11,
+    "positivity_lower_bound": 0.0,
+    "be_conservation_total_scaled": 5e-10,
+    "be_last_order_min": 0.8,
+    "be_last_order_max": 1.2,
+    "be_selected_finest_state_error_scaled": 0.0005,
+    "semigroup_atol": 2e-12,
+    "equilibrium_limit_state_error_C13_scaled": 1e-10,
+    "weak_limit_state_error_C08_scaled": 1e-07,
+    "negative_control_difference_min_scaled": 0.1
+  },
+  "normalizations": {
+    "c": "max(c0,1 if c0==0 else 0)",
+    "b": "max(c0,b0,1 if c0==0 else 0)",
+    "conservation": "c0+b0 when positive, otherwise 1 mol/m3",
+    "be_error": "max(abs(c-c_ref)/c_scale,abs(b-b_ref)/b_scale)"
+  },
+  "checks": [
+    "analytic binary64 propagator and equilibrated trajectories versus independent high-precision augmented matrix exponential at all time fractions",
+    "zero k, zero gamma, zero alpha and zero inlet limits",
+    "exact repeated and near-repeated eigenvalue behavior; no clipping",
+    "semigroup at T/2 plus T/2 and positivity of propagator and states",
+    "independently integrated sink and net release in augmented reference, global and separate free/bound inventories",
+    "conservative backward Euler endpoint and segment/global inventories at all meshes",
+    "first-order BE convergence on six selected nontrivial fixtures; exempt machine-floor errors",
+    "weak finite k approaches inaccessible-storage control; finite fast rates approach separately evaluated algebraic equilibrium",
+    "negative controls: total-content-driven sink on C04, one explicit-Euler step on C13, and substitution of equilibrium for k=0 C04",
+    "dimensions: C19 area1e-7m2, exchange_perimeter1e-3m, length1e-3m, Q=2e-9/60m3s, effective_G=5e-5ms; synthetic G is not a measured tissue permeability"
+  ],
+  "cases": [
+    {
+      "id": "C00",
+      "purpose": "all_zero",
+      "alpha_s_inv": "0",
+      "k_s_inv": "0",
+      "gamma": "0",
+      "T_s": "1",
+      "c0_mol_m3": "1"
+    },
+    {
+      "id": "C01",
+      "purpose": "dissolved_only",
+      "alpha_s_inv": "1",
+      "k_s_inv": "0",
+      "gamma": "0",
+      "T_s": "1",
+      "c0_mol_m3": "1"
+    },
+    {
+      "id": "C02",
+      "purpose": "zero_capacity_repeated_eigenvalue",
+      "alpha_s_inv": "1",
+      "k_s_inv": "1",
+      "gamma": "0",
+      "T_s": "1",
+      "c0_mol_m3": "1"
+    },
+    {
+      "id": "C03",
+      "purpose": "zero_capacity_stiff",
+      "alpha_s_inv": "1",
+      "k_s_inv": "1e12",
+      "gamma": "0",
+      "T_s": "1",
+      "c0_mol_m3": "1"
+    },
+    {
+      "id": "C04",
+      "purpose": "inaccessible_bound_inventory",
+      "alpha_s_inv": "1",
+      "k_s_inv": "0",
+      "gamma": "4",
+      "T_s": "1",
+      "c0_mol_m3": "1"
+    },
+    {
+      "id": "C05",
+      "purpose": "inaccessible_inventory_fast_sink",
+      "alpha_s_inv": "1000",
+      "k_s_inv": "0",
+      "gamma": "4",
+      "T_s": "1",
+      "c0_mol_m3": "1"
+    },
+    {
+      "id": "C06",
+      "purpose": "zero_sink",
+      "alpha_s_inv": "0",
+      "k_s_inv": "1",
+      "gamma": "4",
+      "T_s": "1",
+      "c0_mol_m3": "1"
+    },
+    {
+      "id": "C07",
+      "purpose": "zero_sink_large_capacity_stiff",
+      "alpha_s_inv": "0",
+      "k_s_inv": "1e6",
+      "gamma": "1e6",
+      "T_s": "1",
+      "c0_mol_m3": "1"
+    },
+    {
+      "id": "C08",
+      "purpose": "weak_finite",
+      "alpha_s_inv": "1",
+      "k_s_inv": "1e-8",
+      "gamma": "4",
+      "T_s": "1",
+      "c0_mol_m3": "1"
+    },
+    {
+      "id": "C09",
+      "purpose": "slow_finite",
+      "alpha_s_inv": "1",
+      "k_s_inv": "0.01",
+      "gamma": "4",
+      "T_s": "1",
+      "c0_mol_m3": "1"
+    },
+    {
+      "id": "C10",
+      "purpose": "intermediate_finite",
+      "alpha_s_inv": "1",
+      "k_s_inv": "1",
+      "gamma": "4",
+      "T_s": "1",
+      "c0_mol_m3": "1"
+    },
+    {
+      "id": "C11",
+      "purpose": "fast_finite",
+      "alpha_s_inv": "1",
+      "k_s_inv": "100",
+      "gamma": "4",
+      "T_s": "1",
+      "c0_mol_m3": "1"
+    },
+    {
+      "id": "C12",
+      "purpose": "faster_finite",
+      "alpha_s_inv": "1",
+      "k_s_inv": "1000",
+      "gamma": "4",
+      "T_s": "1",
+      "c0_mol_m3": "1"
+    },
+    {
+      "id": "C13",
+      "purpose": "very_stiff_finite",
+      "alpha_s_inv": "1",
+      "k_s_inv": "1e12",
+      "gamma": "4",
+      "T_s": "1",
+      "c0_mol_m3": "1"
+    },
+    {
+      "id": "C14",
+      "purpose": "near_repeated_eigenvalues",
+      "alpha_s_inv": "1",
+      "k_s_inv": "1",
+      "gamma": "1e-24",
+      "T_s": "1",
+      "c0_mol_m3": "1"
+    },
+    {
+      "id": "C15",
+      "purpose": "large_capacity",
+      "alpha_s_inv": "1",
+      "k_s_inv": "1",
+      "gamma": "1e6",
+      "T_s": "1",
+      "c0_mol_m3": "1"
+    },
+    {
+      "id": "C16",
+      "purpose": "fast_sink",
+      "alpha_s_inv": "1e6",
+      "k_s_inv": "1",
+      "gamma": "4",
+      "T_s": "1",
+      "c0_mol_m3": "1"
+    },
+    {
+      "id": "C17",
+      "purpose": "short_transit",
+      "alpha_s_inv": "1",
+      "k_s_inv": "1",
+      "gamma": "4",
+      "T_s": "1e-12",
+      "c0_mol_m3": "1"
+    },
+    {
+      "id": "C18",
+      "purpose": "zero_inlet",
+      "alpha_s_inv": "1",
+      "k_s_inv": "1",
+      "gamma": "4",
+      "T_s": "1",
+      "c0_mol_m3": "0"
+    },
+    {
+      "id": "C19",
+      "purpose": "dimensional_one_wall_fixture",
+      "alpha_s_inv": "0.5",
+      "k_s_inv": "2",
+      "gamma": "4",
+      "T_s": "3",
+      "c0_mol_m3": "0.2"
+    },
+    {
+      "id": "C20",
+      "purpose": "near_repeated_resolved_gap",
+      "alpha_s_inv": "1",
+      "k_s_inv": "1",
+      "gamma": "1e-12",
+      "T_s": "1",
+      "c0_mol_m3": "1"
+    },
+    {
+      "id": "C21",
+      "purpose": "long_transit",
+      "alpha_s_inv": "1",
+      "k_s_inv": "1",
+      "gamma": "4",
+      "T_s": "1000",
+      "c0_mol_m3": "1"
+    }
+  ]
+}

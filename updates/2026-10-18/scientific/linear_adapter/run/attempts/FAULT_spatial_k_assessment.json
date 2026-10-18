@@ -1,0 +1,75 @@
+{
+  "attempt_id": "FAULT_spatial_k",
+  "checks": [
+    {
+      "name": "wrong_model_detected",
+      "passed": true
+    },
+    {
+      "name": "other_integrity_controls",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "wrong_model_assessment": {
+    "checks": [
+      {
+        "name": "actual_production_calls",
+        "passed": true
+      },
+      {
+        "name": "radial_closure_explicit",
+        "passed": true
+      },
+      {
+        "name": "flow_and_residence",
+        "passed": true
+      },
+      {
+        "name": "envelope_flags",
+        "passed": true
+      },
+      {
+        "max_scaled": 0.2138561314918124,
+        "name": "discrete_BE_path",
+        "passed": false
+      },
+      {
+        "name": "discrete_BE_uptake",
+        "passed": false,
+        "scaled": 0.033929948153335665
+      },
+      {
+        "max_scaled": 0.0,
+        "name": "independent_Lily_BE_endpoint",
+        "passed": true
+      },
+      {
+        "bound_scaled": 0.00652875214539092,
+        "name": "separate_total_and_bound_updates",
+        "passed": false,
+        "total_scaled": 9.053868765818152e-13
+      },
+      {
+        "name": "nonnegative_unclipped_states",
+        "passed": true
+      },
+      {
+        "max_relative": 0.0,
+        "name": "endpoint_coordinates",
+        "passed": true
+      }
+    ],
+    "metrics": {
+      "alpha_reference": 0.2,
+      "continuum_endpoint_scaled_error": 0.20958138778921623,
+      "discrete_path_scaled_error": 0.2138561314918124,
+      "discrete_uptake_scaled_error": 0.033929948153335665,
+      "endpoint_exact": [
+        0.0838973494149603,
+        0.7233696592371328
+      ]
+    },
+    "passed": false
+  }
+}

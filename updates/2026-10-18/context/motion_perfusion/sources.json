@@ -1,0 +1,95 @@
+{
+  "schema": "stage.motion_perfusion_sources.v1",
+  "checked_date": "2026-10-17",
+  "scope": "Bounded primary-source novelty check; no systematic absence inference",
+  "records": [
+    {
+      "id": "S1",
+      "title": "Multivascular networks and functional intravascular topologies within biocompatible hydrogels",
+      "authors": "Grigoryan et al.",
+      "year": 2019,
+      "doi": "10.1126/science.aav9750",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7769170/",
+      "primary_repository_alternative": "https://par.nsf.gov/servlets/purl/10112114",
+      "locator": "Figure 3B-E; supplementary Movie 3; data availability",
+      "evidence_level": "Measured deformation/flow behavior and RBC oxygenation, with supporting mechanics models",
+      "sample_scale": "Figure 3E N=3 replicates; do not infer three donors or independent biological subjects",
+      "observable": "RBC saturation and perfused-vessel behavior",
+      "not_established": "Consuming-tissue spatial minimum under bending or isolated causal benefit of compression",
+      "access": "Indexed primary article text and figure caption inspected; direct PMC challenge, NSF fetch failure; movies not watched",
+      "dataset_id": "D1"
+    },
+    {
+      "id": "D1",
+      "title": "Dataset for: Multivascular networks and functional intravascular topologies within biocompatible hydrogels",
+      "creator": "Jordan Miller",
+      "year": 2019,
+      "doi": "10.5281/zenodo.2614071",
+      "url": "https://zenodo.org/records/2614071",
+      "evidence_level": "Author-deposited dataset metadata; no raw-data reanalysis",
+      "listed_files": [
+        {"name": "Grigoryan-et-al-2019-Science-FullDataset-v2.zip", "display_size": "14.0GB", "downloaded": false},
+        {"name": "Grigoryan-et-al-2019-Science-FullDataset.tar.gz", "display_size": "14.4GB", "downloaded": false},
+        {"name": "Grigoryan-et-al-2019-Science-FullDataset.zip", "display_size": "14.5GB", "downloaded": false}
+      ],
+      "limit": "All archives exceed the 25 MB task cap; internal file inventory and data licenses not independently audited",
+      "access": "Live metadata page opened successfully; no archive request"
+    },
+    {
+      "id": "S2",
+      "title": "Perfusable and stretchable 3D culture system for skin-equivalent",
+      "authors": "Mori, Morimoto, Takeuchi",
+      "online_date": "2018-11-15",
+      "volume_year": 2019,
+      "doi": "10.1088/1758-5090/aaed12",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30431022/",
+      "author_lab_page": "https://www.hybrid.t.u-tokyo.ac.jp/en/research-papers/d7f9b3c5-4e6a-4d82-9c1f-3a5b7e9d4c2f/",
+      "evidence_level": "Engineered skin culture with perfusion/stretch and morphological measurements",
+      "observable": "Epidermal morphology/differentiation and dermal cellularity",
+      "not_established": "Direct oxygen map or deformation-dependent global minimum",
+      "access": "Indexed PubMed abstract and author's laboratory description; author-repository PDF open failed",
+      "raw_dataset": "Not established in the accessed primary material"
+    },
+    {
+      "id": "S3",
+      "title": "Dynamics of PO2 and VO2 in resting and contracting rat spinotrapezius muscle",
+      "authors": "Golub, Song, Nugent, Pittman",
+      "date": "2023-07-19",
+      "doi": "10.3389/fphys.2023.1172834",
+      "url": "https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2023.1172834/full",
+      "locator": "Methods; Figures 2-3; Table 1; Data availability statement",
+      "evidence_level": "Local interstitial oxygen time series; consumption inferred from disappearance slope",
+      "sample_scale": "15 rats; Table 1 has 41/38/26 region time courses, not 105 animals. Selected 300 um regions, 5-11 sites per muscle",
+      "example_measurement": "Table 1, 1 Hz group: resting 70±1 versus contraction 39±1 mmHg, mean±SE, 41 regional time courses",
+      "not_established": "Whole-tissue worst-region map, engineered channel bending, or separately measured channel collapse",
+      "access": "Full primary HTML and tables inspected; no numerical files downloaded",
+      "raw_dataset": "Statement points to article/supplementary material; separate machine-readable raw archive not established"
+    },
+    {
+      "id": "S4",
+      "title": "Modeling the fluid-dynamics and oxygen consumption in a porous scaffold stimulated by cyclic squeeze pressure",
+      "authors": "Ferroni et al.",
+      "date": "2016-08",
+      "doi": "10.1016/j.medengphy.2016.04.016",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27189671/",
+      "evidence_level": "CFD/FSI oxygen-distribution model with preliminary culture information",
+      "observable": "Predicted microenvironmental flow, stress and oxygen distribution",
+      "not_established": "Experimental spatial oxygen validation or a bending-specific tissue minimum",
+      "access": "Primary abstract and indexed publisher text; full publisher open failed",
+      "raw_dataset": "Not located in the bounded check"
+    },
+    {
+      "id": "S5",
+      "title": "Imaging Oxygen Concentrations in Bone Scaffolds during Cellular Activity and Fluid Perfusion",
+      "authors": "Valimaki et al.",
+      "date": "2025-06-04",
+      "doi": "10.1021/acsbiomaterials.4c01845",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12264768/",
+      "evidence_level": "Ratiometric spatial oxygen imaging during perfusion cycles",
+      "sample_scale": "Yeast in robocast bone scaffolds; images below scaffold, not full 3D mammalian tissue",
+      "not_established": "Bending/compression response or an unperturbed internal oxygen minimum",
+      "access": "Indexed primary publisher and institutional manuscript text; direct ACS open failed",
+      "supplements": "Calibration/channel TIFs and image-sequence/line-profile AVI listed, not downloaded or inspected"
+    }
+  ]
+}

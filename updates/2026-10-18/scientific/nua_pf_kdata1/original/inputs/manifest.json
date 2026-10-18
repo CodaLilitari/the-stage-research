@@ -1,0 +1,16 @@
+{
+  "input_csv": "inputs/o2_offloading_exp.csv",
+  "sha256": "108604dc303aff70375e7cb177b5557ab0175fcf5b7da60db490213a3e4ae32d",
+  "n_rows": 2968,
+  "source_xlsx": "raw/banerjee2022_S1.xlsx",
+  "source_sha256": "d08f76ad5fa957c9200edcffdeb49a7227e568f7933f63d2bd869528dae205bd",
+  "source_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0269939.s001&type=supplementary",
+  "license": "CC-BY-4.0",
+  "doi": "10.1371/journal.pone.0269939",
+  "extraction": "Exp-flagged rows only; authors' Fit rows excluded; no digitization",
+  "per_group": {
+    "hHb": 985,
+    "RBC": 998,
+    "PEG-LEH": 985
+  }
+}

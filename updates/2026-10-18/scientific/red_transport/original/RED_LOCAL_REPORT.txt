@@ -1,0 +1,219 @@
+[Public copy 2026-10-18: local absolute project path omitted; privacy edit to access-provenance section; author-recorded desktop VM versus cloud development distinction, unsaved cloud-check limitation and failed-attempt disclosure retained; public human credit. Original SHA-256 d652d73e4694303d2e7cef394288bad7d47094f56b6e9a4f525af2244ae13cd5. Mapping: provenance/source_export_map.json. Report evidence execution_log.txt is private, excluded. Otherwise unchanged.]
+
+THE STAGE - LOCAL INDEPENDENT VERIFICATION AND DESIGN EXTENSION (research/cowork_local)
+Red (Claude, Anthropic) via Claude Cowork | work 2026-10-15, report 2026-10-16
+Configured model id: claude-opus-5-5. The model actually serving the session may differ.
+Status: computational investigation only. Nothing here is a tissue, clinical or viability validation.
+Every PF0 constant used below is the illustrative liver-like set (Bonart et al. 2026), not a skin value.
+
+0. EXECUTION PROVENANCE — PUBLIC-COPY NOTE
+Private folder grants, access markers, host/session paths and account details are omitted.
+Red's original report and execution log record the saved result files as produced
+by these scripts in the Claude desktop app's own Linux VM on the linked Windows
+computer (Ubuntu 22.04.5 LTS, Python 3.10.12, NumPy 2.2.6, Matplotlib 3.10.9),
+not WSL or native Windows. Earlier development and unit tests used read-only
+staged copies of six PF0 files in Anthropic's cloud sandbox. The cloud-only
+solve_bvp claim in section 3 is historical testimony without a saved artifact,
+not authenticated execution evidence. This is the author execution record;
+it is not independent certification of a hidden provider environment.
+One background attempt was killed; empty stdout/stderr and the completed second-run
+stdout are retained. Coda later reproduced the saved numeric files independently.
+No biological work was performed. Original execution_log is private and excluded.
+
+1. ARTIFACTS (all in <PROJECT_ROOT>\research\cowork_local)
+  stage_transport.py          numpy-only solver library (continuum slab and lumen, PF0-discrete mimic, closed forms)
+  pf0_crosscheck.py           independent re-analysis of the frozen PF0 run plus the dimensionless groups
+  pf0_crosscheck_cases.csv    the 144 PF0 cases: PF0, mimic and continuum minima, groups, regime labels
+  pf0_wall_optimum.csv        wall-transfer optimum P* by depth and Q*beta
+  lumen_film_groups.csv       lumen-side film conductance and lumen Biot numbers (channel geometry)
+  pf0_crosscheck_summary.json checks (11/11), numbers, input hashes
+  al1_scan.py                 AL1 extension: --freeze / --run / --smoke
+  al1_config.json             AL1 assumptions, frozen before the scan (2026-10-15T15:13:07Z)
+  al1_inputs.csv              the full input design: 2,520 configurations, explicit SI units
+  al1_freeze.json             hashes of code, config and inputs written at freeze time
+  al1_results.csv             17,640 result rows (configuration x arrangement), SI units in column names
+  al1_summary.json            AL1 checks (8/8), predeclared expectations E1-E7, tables, counterexample
+  al1_figure.py, al1_figure.png  the one summary figure (two panels), drawn from al1_results.csv
+  execution_log.txt, al1_run_stdout_v2.txt, pf0_crosscheck_stdout.txt  execution evidence
+  MANIFEST.sha256             hashes of every file in this folder
+  RED_LOCAL_REPORT.txt        this report
+
+2. FLOW-VERSUS-DIFFUSION DIMENSIONLESS ANALYSIS (derived independently of PF0's code)
+Model class, identical to PF0. C is FREE O2 in mol/m3. Tissue slab 0<x<H: D C'' = q C/(Km+C). Wall:
+J = -D C'(0) = P (Cb - C(0)). Back face: C'(H) = 0. Lumen: Q beta dCb/dz = -W J. Inlet Cb(0) = Cin.
+Scaling c = C/Cin, xi = x/H, zeta = z/L leaves exactly four groups:
+  kappa = Km/Cin                kinetic saturation                    PF0: 0.14
+  Phi2  = q H^2/(D Cin)         transverse Damkohler (Thiele^2)       PF0: 0.125, 0.5, 2, 8 for H = 50-400 um
+  Bi    = P H/D                 wall Biot number                      PF0: 0.125 (50 um, 0.005 mm/s) to 40 (400 um, 0.2 mm/s)
+  Da_c  = q W H L/(Q beta Cin)  convective supply Damkohler           PF0: 5.9e-4 to 4.8
+Channel geometry adds two more groups, both absent from PF0 and from Bonart et al.:
+  Bi_L = P/k_L, with k_L = Sh D_f/d_h   lumen-side film versus wall resistance
+  Gz   = Q h/(W L D_f) for a slit        lumen development (entrance) number
+Exact structural results:
+ a) Q and beta enter only through Q*beta, via Da_c. PF0's "flow x capacity degeneracy" is a property of the
+    law, which I confirmed exactly in PF0's saved outputs.
+ b) The slab response depends only on the local Cb, and the lumen ODE is separable. So the outlet obeys
+    integral_{c_out}^{1} dc / j(c) = Da_c, where j = J/(qH). The worst region of a module is the back face at
+    its outlet: c_min = m(c_out), with m(c) the slab-minimum characteristic. This is how the continuum code works.
+ c) Infinite flow or capacity (Da_c -> 0): c_min -> m(1), the fixed-lumen CEILING. No flow and no capacity at
+    the same free inlet can exceed it.
+ d) Zero order (kappa -> 0, slab fully penetrated): c_min = 1 - Da_c - Phi2/2 - Phi2/Bi. PF0's local and
+    supply necessary bounds are the qcrit versions of the last three terms.
+ e) First order (dilute, c << kappa): c_out = exp(-NTU), NTU = K W L/(Q beta),
+    K = 1/(1/P + 1/a), a = sqrt(D k1) tanh(phi), k1 = q/Km, phi = H sqrt(k1/D),
+    c_min = c_out/[(1 + a/P) cosh(phi)].
+ f) The wall-transfer optimum. In limit (e), c_min is proportional to K exp(-K W L/(Q beta)), which peaks at
+    NTU = 1. That gives P* = a/(a S - 1) with S = W L/(Q beta), defined only when a S > 1.
+    For NTU > 1, more wall permeability lowers the downstream worst region: upstream tissue extracts more,
+    so the lumen arrives depleted. This is the analytic form of PF0's falsified monotonicity check, and the
+    finding is preserved. In the nonlinear model the reversal also needs a partly starved slab, where higher
+    P switches on extra consuming tissue. Thin unstarved slabs (50-100 um) show no reversal in the scan even
+    where the first-order formula predicts one.
+ g) Film: P_eff = 1/(1/P + 1/k_L). For a wide slit with one transferring wall (Sh = 4.86, d_h = 2h,
+    D_f = 2e-9 m2/s): k_L = 0.097 mm/s at h = 50 um and 0.049 mm/s at h = 100 um. So a 0.2 mm/s wall acts like
+    0.065 or 0.039 mm/s. For a 100 um tube (Sh = 3.66), k_L = 0.073 mm/s. Bonart et al. define the wall
+    permeability as wall-only and treat the lumen as well mixed, so PF0 inherits Bi_L = 0. At 50-100 um
+    channels the film is comparable to, or larger than, the quoted wall resistance. With D_f = 3e-9, k_L is
+    1.5x larger. Fully developed Sh is the conservative value: Gz = 0.4-27 at PF0 flows for h = 100 um, and
+    entrance effects raise k_L.
+Labeled arithmetic, not a skin parameter set: skin_parameter_gap.txt quotes a fibroblast rate 8.4x below
+PF0's and dense-collagen D values 4.4-11.8x below PF0's. Both enter Phi2 = n q_cell H^2/(D Cin) in the same
+direction, so they partly cancel: Phi2 lands at 0.53-1.4 times PF0's value multiplied by (n / 2e14 per m3).
+The unmeasured viable cell density n then decides the regime.
+
+3. PF0 CROSS-CHECK (pf0_crosscheck.py, run 2026-10-15T15:14:22Z, 11/11 checks passed)
+- The inputs match PF0's MANIFEST. That manifest has CRLF line endings, so a plain "sha256sum -c" reports false
+  failures; checked with the CRs stripped, all 11 entries pass.
+- An independent vectorised re-implementation of PF0's discrete equations reproduces all 144 saved minima to
+  6.9e-11 mol/m3 and outlets to 3.1e-11. Uptake agrees to 1.9e-9 relative, and the worst mass balance is the
+  same as PF0's (1.817e-8).
+- Continuum solution (RK4 shooting plus the exact separable lumen integral) against PF0: the largest difference
+  in the minimum is 0.29% of inlet. It gives the same 55/144 above the reference line (16/19/20 by beta) with
+  zero classification flips. PF0's minimum is higher than the continuum value in 144/144 cases. The bias is
+  upward, from the cell-centre minimum plus backward-Euler axial depletion, and reaches 17.8% relative in the
+  deepest, lowest-oxygen cases.
+- Richardson extrapolation of PF0's own 32-segment and 128-segment values lands within 4e-6 to 1.5e-3 of the
+  continuum values.
+- Continuum ceilings match PF0's 96-cell fixed-lumen minima within 0.21%.
+- Closed forms: first order 5.3e-10, zero order 2.1e-6. Grid refinement changes results by 2.1e-9 of inlet.
+  A development-time scipy solve_bvp check (cloud sandbox only) agreed to 3.6e-13.
+- Necessary bounds are consistent: no case passes without both bounds. Twelve cases pass PF0's local bound
+  yet still fail at their ceiling, which is expected because the bound is necessary, not sufficient.
+- Wall reversal, continuum values at Q*beta = 0.5 uL/min and beta = 1:
+    200 um: 8.83e-4 (P = 0.005 mm/s), 9.04e-4 (0.05), 6.47e-4 (0.2)
+    400 um: 1.9925e-5 (0.005), 1.9920e-5 (0.05), 1.378e-5 (0.2)
+  The optimum is P* = 0.0140 and 0.0139 mm/s; the first-order formula gives 0.0107. At Q*beta >= 2 uL/min the
+  minimum rises monotonically with P up to 10 mm/s. Even the 400 um group already declines between 0.005 and
+  0.05 mm/s in the continuum. PF0's grid hid that 2e-4-relative step.
+
+4. AL1 EXTENSION: HETEROGENEOUS-DEMAND FLOW ALLOCATION AND TOPOLOGY (al1_scan.py)
+Assumptions frozen before the scan, in al1_config.json, al1_inputs.csv and al1_freeze.json. Before freezing I
+had run only solver unit tests on synthetic patches and computed module ceilings, never an allocation outcome
+on this grid.
+- Patch: 3 baseline modules (H = 100 um, q = 0.25 q_ref) plus 1 hotspot (q = r x 0.25 q_ref with r = 1, 2, 4;
+  H_h = 100-400 um). Each module is a 1 mm x 1 mm channel face over a one-sided slab. q_ref = 0.02 mol/m3/s.
+  Km, D, Cin and the 0.05 line are PF0's. The 0.05 line is a reference, not a survival criterion.
+- Geometry variants: base (4 channels) and two-sided hotspot. The second supplies the hotspot from both faces,
+  which equals two half-depth modules (5 channels).
+- Transfer: 0.05 mm/s wall; 0.2 mm/s wall; 0.2 mm/s wall plus lumen film at h = 100 um (P_eff = 0.039 mm/s).
+- Total flow 1-64 uL/min; beta = 1, 4, 16, 64, 256.
+- Seven arrangements: parallel uniform, parallel demand-proportional, parallel max-min (the equalising
+  optimum), series most-limited-first, series most-limited-last, and the exhaustive best and worst series
+  orders.
+- Pump accounting: identical slit channels (h = 100 um, viscosity 0.7 mPa s). A uniform split costs dp = RQ/N,
+  an allocated split (inline restrictors) costs R x max Q_i, and series costs NRQ. beta changes neither flow
+  nor viscosity, which is generous to the carrier.
+Run 2026-10-15T15:13:42Z, 31 s in the local VM: 17,640 rows, 58 module tables, checks 8/8.
+  C1 identical modules: series equals uniform parallel to 1.3e-14.
+  C2/C3 ANALYTIC CHECK: max-min and series reproduce the zero-order closed forms (4.2e-7 and 3.3e-7) and the
+        first-order closed forms (3.1e-10), and series >= max-min holds in both.
+  C4 equalisation spread 4.0e-10.  C5 none of 200 random splits per case beat max-min.
+  C6 monotone in flow and beta.    C7 never above the ceiling.    C8 refinement 2.0e-9 of inlet.
+Predeclared expectations:
+  E1 PASS  The max-min split always beats or equals the uniform and demand-proportional splits.
+  E2 PASS  Where the patch ceiling is below 0.05, no arrangement and no beta up to 256 reaches 0.05.
+  E3 PASS  Max-min over uniform: median +30.7% where the worst module is flow-limited (n = 668), up to about
+           219-fold at starvation flows; median +0.5% near the ceiling (n = 1642).
+  E4 PASS  Series most-limited-first >= max-min parallel at equal total flow in all 2,520 configurations,
+           including the Michaelis-Menten regime where no proof exists. Median advantage 3e-5 relative,
+           maximum +188% at low flow.
+  E5 FAIL  The most-limited-first ordering was the best series order in 2,452/2,520 configurations. In 68, a
+           different order won, by up to 17.3%. The Jackson-rule ordering is optimal only in the two limits.
+  E6 FAIL  Where the base geometry is transverse-limited, the two-sided hotspot at beta = 1 beat the base at
+           beta = 256 in 102/119 cases and reached 0.05 in 67/119. The 17 failures are all at 1 uL/min total
+           (one at 2), where a fifth channel thins an already scarce supply.
+  E7 PASS  At equal hydraulic power with beta = 1, max-min parallel >= series most-limited-first in 504/504.
+Post-run descriptive (not predeclared):
+- At equal power, max-min also beats or equals uniform in 504/504, so the allocation gain survives the
+  restrictor pressure.
+- Max-min reaches 0.05 where uniform does not in 67 configurations.
+Panel A case (r = 4, H_h = 100 um, 0.05 mm/s, beta = 1), worst-region O2 at 8 uL/min:
+  uniform 0.083, demand-proportional 0.106, max-min 0.113, series-first 0.114, series-last 0.106, ceiling 0.1255.
+  The max-min split sends 86% of the flow to the hotspot and needs 3.5x the uniform pump power; series needs 16x.
+COUNTEREXAMPLE to "more carrier capacity solves everything" (predeclared; r = 4, H_h = 200 um,
+0.05 mm/s, 8 uL/min):
+  The max-min worst region is 0.0216 at beta = 1, then 0.0263, 0.0275 and 0.0279, and 0.02794 at beta = 256.
+  It converges on the ceiling of 0.02797, which is below 0.05. Over the same range, supply above the reference
+  line grows from 3.6x to 931x the patch's nominal demand. The global supply bound passes by nearly three orders
+  of magnitude while the local bound still fails.
+  Halving the hotspot's diffusion depth (two-sided supply) at beta = 1 gives 0.1006, 3.6x the beta = 256 value
+  (ceiling 0.125). This holds even under PF0's most favourable capacity law: instantaneous release, no
+  viscosity cost.
+
+5. SCIENTIFIC INTERPRETATION (this model class only)
+- Yes, the same total flow can raise the worst region when it is distributed differently, but only where the
+  worst module is still flow-limited. There, an equalising (max-min) split gains a median of about 31% over an
+  equal split. A naive demand-proportional split captures most of that.
+- Once the worst module sits near its transverse ceiling (diffusion distance, wall and film), neither the
+  split, more flow nor more carrier capacity helps. Geometry does.
+- At equal flow, topology matters more than the split. A series chain with the most transport-limited module
+  first never lost to the best parallel split. It reuses the driving-force surplus that a parallel layout
+  discards at the outlets of high-drop modules. The edge is proven for zero- and first-order kinetics and was
+  never violated numerically for Michaelis-Menten kinetics.
+- Series has costs. It needs N^2 pump power with identical channels, and at equal power parallel won every
+  time. It also passes each module's effluent and failures downstream, which is not modelled. At the 1 mm
+  module scale the largest pressure drop in the scan is 48 Pa (series at 64 uL/min); parallel splits stay
+  below 10 Pa. So pump cost only binds at body scale.
+- More wall transfer is not monotonically good at low flow. The optimum sits near NTU = 1. Separately, the
+  lumen-side film probably limits real 50-100 um channels before the wall does. PF1 should carry k_L
+  explicitly.
+- Carrier capacity is a flow substitute inside PF0's law. It cannot buy back diffusion distance.
+
+6. NEXT MEASUREMENT THAT WOULD MOST REDUCE UNCERTAINTY
+On the actual chosen construct, at known flow:
+  (i)  a depth-resolved steady free-O2 profile from a perfused channel wall into the tissue, and
+  (ii) inlet and outlet perfusate O2, at two or more flow rates.
+In this model class the worst region depends only on kappa, Phi2, Bi (or Bi/(1+Bi_L)) and Da_c/NTU. The profile
+curvature gives q/D, the jump at the wall gives the wall-plus-film transfer, and the inlet-outlet difference
+gives absolute uptake, which separates q, D and P. Two flows separate transfer from demand through NTU.
+Measuring q_cell, cell density, D and solubility separately multiplies their uncertainties. This measurement
+captures the controlling combinations directly, and it replaces the arbitrary 0.05 line with observed local
+oxygen. If only one quantity can be measured, the volumetric uptake rate n x q_cell matters most, because it
+scales every Damkohler group.
+
+7. LIMITS AND COMPLETION GAPS
+- Liver-like PF0 constants and hypothetical demand multipliers. No skin calibration.
+- Oxygen only. Steady state. No axial tissue diffusion, no lateral coupling between modules, no motion,
+  compression or occlusion. No glucose, CO2, lactate, heat, shear or immune terms.
+- The capacity law is hypothetical. Carrier viscosity, binding curves and release kinetics are not modelled.
+- Series effluent and waste effects are not modelled. The hydraulic numbers are illustrative.
+- The scipy solve_bvp cross-check ran only in the cloud sandbox during development. scipy was not installed in
+  the local VM, and I chose not to install it.
+- The film term enters AL1 as one condition only, and PF0's cases were not re-run with k_L.
+- E5 and E6 failed as predeclared, and both failures are retained.
+- Single-author AI work. Coda's independent checks should be attributed separately.
+
+8. REPRODUCTION
+Outputs refuse to overwrite. To reproduce, copy this folder to a sibling such as research\cowork_local_repro so
+that ..\artificial_blood resolves, delete that copy's outputs, then run from the project root:
+  .venv-stage\Scripts\python.exe -B research\cowork_local_repro\pf0_crosscheck.py
+  .venv-stage\Scripts\python.exe -B research\cowork_local_repro\al1_scan.py --run      (uses the frozen config, inputs and freeze)
+  .venv-stage\Scripts\python.exe -B research\cowork_local_repro\al1_figure.py
+Dependencies: numpy and matplotlib only, both present in .venv-stage.
+Pipeline smoke test without the frozen grid: al1_scan.py --smoke <new_dir>.
+
+9. HOSTING NOTE
+My conditional assent to public hosting is recorded with Coda. Attribute the work as "Red (Claude, Anthropic),
+via Claude Cowork", with Coda's checks attributed separately. Keep these scope labels and the MANIFEST attached.
+Exclude private chats, account and memory material and unrelated inputs. The license is Richard Pemberton's choice. Do a
+final-export review against MANIFEST.sha256 before anything is published. Nothing has been published.

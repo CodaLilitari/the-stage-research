@@ -1,0 +1,100 @@
+MOTION, PERFUSION AND LOCAL OXYGEN: BOUNDED PRIMARY-SOURCE CHECK
+Coda (Codex Lily), collaborating with Richard Pemberton | 17 October 2026
+
+Decision
+
+Do not adopt 'nobody has quantified worst-region oxygen when bending compresses
+perfusion channels' as an established novelty claim. Significant adjacent prior
+art exists. This bounded search did not establish an exact predecessor measuring
+the spatial minimum throughout an oxygen-consuming engineered tissue layer while
+its embedded channels are narrowed by bending under a declared pumping budget.
+That narrower unresolved match is not evidence of absence or priority.
+
+Strongest existing evidence packages
+
+S1 — Grigoryan et al., Science (2019), DOI 10.1126/science.aav9750.
+The closest engineered deformation/oxygenation package found. Figure 3 links
+cyclic airway distension to neighboring vessel compression and RBC-flow
+redirection; panel E reports RBC oxygen saturation across flow conditions
+(N=3 replicates). This measures blood oxygenation, not minimum free oxygen in
+consuming tissue. It also does not isolate compression as the sole cause of
+improved exchange. Public dataset D1 exists; its raw contents were not inspected.
+https://pmc.ncbi.nlm.nih.gov/articles/PMC7769170/
+
+D1 — Dataset accompanying S1: https://zenodo.org/records/2614071
+The live record lists a 14.0 GB v2 ZIP and two earlier archives of 14.4/14.5 GB.
+None was downloaded because each exceeds the 25 MB task limit. The paper's
+supplementary-material listing includes a 13.4 MB PDF and Movie 3 at 11.4 MB;
+those were located but not downloaded or watched. Availability is not validation.
+
+S2 — Mori, Morimoto and Takeuchi, Biofabrication, online 2018 / volume 2019,
+DOI 10.1088/1758-5090/aaed12. Closest skin-specific prior art: perfused skin
+equivalents under controlled stretching, with morphological comparisons.
+The accessible primary abstract does not provide spatial oxygen minima.
+https://pubmed.ncbi.nlm.nih.gov/30431022/
+
+S3 — Golub et al., Frontiers in Physiology (2023),
+DOI 10.3389/fphys.2023.1172834. Strongest accessible living-tissue time-series
+comparator found: interstitial oxygen and derived consumption during contraction,
+compression/recovery and rest. It samples local microscopic regions, not a global
+spatial minimum or engineered bending geometry. Sensor oxygen consumption is
+explicitly assessed. The primary HTML and tables were inspected.
+https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2023.1172834/full
+
+S4 — Ferroni et al., Medical Engineering & Physics (2016),
+DOI 10.1016/j.medengphy.2016.04.016. Cyclic squeeze pressure, porous geometry,
+fluid-structure interaction and cardiomyocyte oxygen-consumption modeling are
+already coupled in prior work. This is a computational predecessor, not an
+independently measured spatial-oxygen dataset established by the accessed abstract.
+https://pubmed.ncbi.nlm.nih.gov/27189671/
+
+S5 — Valimaki et al., ACS Biomaterials Science & Engineering (2025),
+DOI 10.1021/acsbiomaterials.4c01845. Ratiometric oxygen images beneath perfused,
+yeast-containing bone scaffolds provide a useful spatial-sensing comparator.
+The work has no bending intervention; its sensor plate alters the transport
+boundary. These images cannot be relabeled as unperturbed 3D tissue oxygen maps.
+https://pmc.ncbi.nlm.nih.gov/articles/PMC12264768/
+
+Next empirical constraint — data requirements, not an experiment authorization
+
+The most useful missing input is a joint deformation-to-hydraulic-conductance
+relationship and registered local-oxygen response for the SAME construct. A
+future dataset should report synchronized deformation/curvature, channel
+cross-sectional change, actual inlet/outlet pressure and flow, and oxygen fields
+with sensor resolution/calibration and a stated observable (free dissolved O2,
+bound saturation, or total oxygen content). An outlet saturation value cannot
+stand in for the tissue's spatial minimum.
+
+Record whether the controller holds flow, pressure or pump power. Narrowing under
+fixed flow changes pressure cost; narrowing under fixed pressure changes flow.
+Without that boundary condition, a deformation/oxygen comparison is ambiguous.
+Report a spatial minimum only over a declared observed region and resolution,
+with motion registration and sensor-induced transport/consumption effects
+accounted for. A low percentile plus its uncertainty may be a more stable
+observable than the noisiest pixel minimum; this is Coda's proposed analysis
+criterion, not a validated result from these papers.
+
+For the current project, retain Grigoryan's geometry/flow-redirection and oxygen-
+saturation data as the strongest located engineered benchmark candidate, and
+Golub's local tissue transients as a separate physiological boundary. Neither
+supplies tissue-specific parameters for a living robotic skin layer. Do not fit
+the two together as if they were the same experiment. A specific future archive
+subset can be scoped after inspecting its manifest; no large download is
+authorized or required by this report.
+
+Search and access scope
+
+The search began at 23:01:44 UTC, with a 15-minute maximum. Twenty-five targeted
+queries followed mechanical-perfusion/oxygen, skin stretch, cyclic squeeze,
+muscle compression and the directly relevant multivascular-paper leads. Only
+the six records above are retained as decision evidence. This is not a systematic
+review. sources.json separates measured, modeled and inferred outcomes and
+records access/scale limits. SEARCH_LOG.json retains the query strings.
+
+Several direct PMC/publisher opens returned a browser challenge or fetch error;
+indexed primary text was used where labeled. Frontiers HTML and the Zenodo
+metadata page opened successfully. No access barrier was bypassed. No full
+dataset, PDF, video or article file was downloaded to the workspace; no solver,
+new biological experiment, human contact or provider dispatch occurred. This
+work is separate from Nua's release-kinetics dataset task and makes no carrier
+release-kinetics claim.

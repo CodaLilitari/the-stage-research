@@ -1,0 +1,15 @@
+{
+  "provenance":"Authored by algebra before any diagnostic execution; rational strings are exact expected values, inequalities are prespecified tolerances. No values fitted to observations.",
+  "C01":{"T":"10","D":"9","N":"7","beta":"7/9","c0":"9/7","lambda_s":"1","lambda_f":"9","slow_coefficient":"9/8","fast_coefficient":"-1/8"},
+  "C02":{"T":"10","D":"9","N":"12","beta":"4/3","c0":"3/4","lambda_s":"1","lambda_f":"9","slow_coefficient":"9/8","fast_coefficient":"-1/8"},
+  "C03":{"T":"10","D":"9","N":"15","beta":"5/3","c0":"3/5","lambda_s":"1","lambda_f":"9","slow_coefficient":"9/8","fast_coefficient":"-1/8"},
+  "C04":{"partner_q":"8","partner_a":"7/8","partner_d":"9/8","T":"10","D":"9","N":"7","beta":"7/9","same_calibrated_kernel":true},
+  "C05":{"first_c0":"9/7","second_c0":"9/7","first_cprime0":"-18/7","second_cprime0":"-72/7","same_b_initial_conditions":true,"internal_derivatives_differ":true},
+  "C06":{"first_T":"10","first_D":"9","second_T":"13","second_D":"45/2","recovered_d":"9/2","recovered_a":"7/2","first_q":"2","second_q":"5","shared_chemistry_consistent":true},
+  "C07":{"delta_T":"0","delta_D":"6","shared_chemistry_consistent":false},
+  "C08":{"first_K":"1","second_K":"1","first_q":"3","second_q":"3","distinct_resistances":true},
+  "C09":{"qssa_forward":"7000/2007","qssa_reverse":"9000/2007","beta":"7/9","epsilon_c":"9/2007","relative_rate_error_lt":0.01,"pole_ratio_lt":0.01},
+  "C10":{"qssa_forward":"14/11","qssa_reverse":"18/11","beta":"7/9","epsilon_c":"9/11","lambda_s":"1","relative_rate_error_gt":0.5},
+  "C11":{"chemical_fast_forward":"9/10","chemical_fast_reverse":"1/10","low_frequency_forward":"900/1001","low_frequency_reverse":"100/1001","beta":"9","chemical_rate_error_lt":0.001,"internal_free_qssa_error_gt":0.1},
+  "C12":{"R":"13","cprime":"-17","bprime":"13","totalprime":"-4","scaled_R":"26","scaled_cprime":"-34","scaled_bprime":"26","scaled_totalprime":"-8","first_output":"1","scaled_output":"1","fixed_input_symmetry_residual_per_unit_u":"-2","fixed_nonzero_input_breaks_scale":true}
+}

@@ -1,0 +1,15 @@
+test_all_198_states_and_rates (test_portable.PortableTests.test_all_198_states_and_rates) ... ok
+test_be_positive_conservative (test_portable.PortableTests.test_be_positive_conservative) ... ok
+test_frozen_hash (test_portable.PortableTests.test_frozen_hash) ... ok
+test_k_zero_keeps_storage_inaccessible (test_portable.PortableTests.test_k_zero_keeps_storage_inaccessible) ... ok
+test_negative_and_nonfinite_inputs_rejected (test_portable.PortableTests.test_negative_and_nonfinite_inputs_rejected) ... ok
+test_no_binding_capacity_all_rates (test_portable.PortableTests.test_no_binding_capacity_all_rates) ... ok
+test_rate_overflow_is_explicit (test_portable.PortableTests.test_rate_overflow_is_explicit) ... ok
+test_repeated_eigenvalue_offdiagonal (test_portable.PortableTests.test_repeated_eigenvalue_offdiagonal) ... ok
+test_segment_count_validation (test_portable.PortableTests.test_segment_count_validation) ... ok
+test_unsupported_zero_flow_rejected (test_portable.PortableTests.test_unsupported_zero_flow_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.006s
+
+OK

@@ -1,0 +1,745 @@
+[
+  {
+    "id": "C01",
+    "actual": {
+      "T": "10",
+      "D": "9",
+      "N": "7",
+      "beta": "7/9",
+      "c0": "9/7",
+      "lambda_s": 1.0,
+      "lambda_f": 9.0,
+      "slow_coefficient": 1.125,
+      "fast_coefficient": -0.125,
+      "trace": [
+        1.0,
+        0.9671208878228796,
+        0.6809583676094323,
+        0.4138489450923618,
+        0.15225219173744184
+      ]
+    },
+    "checks": [
+      {
+        "field": "T",
+        "passed": true,
+        "actual": "10",
+        "expected": "10"
+      },
+      {
+        "field": "D",
+        "passed": true,
+        "actual": "9",
+        "expected": "9"
+      },
+      {
+        "field": "N",
+        "passed": true,
+        "actual": "7",
+        "expected": "7"
+      },
+      {
+        "field": "beta",
+        "passed": true,
+        "actual": "7/9",
+        "expected": "7/9"
+      },
+      {
+        "field": "c0",
+        "passed": true,
+        "actual": "9/7",
+        "expected": "9/7"
+      },
+      {
+        "field": "lambda_s",
+        "passed": true,
+        "actual": 1.0,
+        "expected": "1"
+      },
+      {
+        "field": "lambda_f",
+        "passed": true,
+        "actual": 9.0,
+        "expected": "9"
+      },
+      {
+        "field": "slow_coefficient",
+        "passed": true,
+        "actual": 1.125,
+        "expected": "9/8"
+      },
+      {
+        "field": "fast_coefficient",
+        "passed": true,
+        "actual": -0.125,
+        "expected": "-1/8"
+      }
+    ],
+    "passed": true
+  },
+  {
+    "id": "C02",
+    "actual": {
+      "T": "10",
+      "D": "9",
+      "N": "12",
+      "beta": "4/3",
+      "c0": "3/4",
+      "lambda_s": 1.0,
+      "lambda_f": 9.0,
+      "slow_coefficient": 1.125,
+      "fast_coefficient": -0.125,
+      "trace": [
+        1.0,
+        0.9671208878228796,
+        0.6809583676094323,
+        0.4138489450923618,
+        0.15225219173744184
+      ]
+    },
+    "checks": [
+      {
+        "field": "T",
+        "passed": true,
+        "actual": "10",
+        "expected": "10"
+      },
+      {
+        "field": "D",
+        "passed": true,
+        "actual": "9",
+        "expected": "9"
+      },
+      {
+        "field": "N",
+        "passed": true,
+        "actual": "12",
+        "expected": "12"
+      },
+      {
+        "field": "beta",
+        "passed": true,
+        "actual": "4/3",
+        "expected": "4/3"
+      },
+      {
+        "field": "c0",
+        "passed": true,
+        "actual": "3/4",
+        "expected": "3/4"
+      },
+      {
+        "field": "lambda_s",
+        "passed": true,
+        "actual": 1.0,
+        "expected": "1"
+      },
+      {
+        "field": "lambda_f",
+        "passed": true,
+        "actual": 9.0,
+        "expected": "9"
+      },
+      {
+        "field": "slow_coefficient",
+        "passed": true,
+        "actual": 1.125,
+        "expected": "9/8"
+      },
+      {
+        "field": "fast_coefficient",
+        "passed": true,
+        "actual": -0.125,
+        "expected": "-1/8"
+      }
+    ],
+    "passed": true
+  },
+  {
+    "id": "C03",
+    "actual": {
+      "T": "10",
+      "D": "9",
+      "N": "15",
+      "beta": "5/3",
+      "c0": "3/5",
+      "lambda_s": 1.0,
+      "lambda_f": 9.0,
+      "slow_coefficient": 1.125,
+      "fast_coefficient": -0.125,
+      "trace": [
+        1.0,
+        0.9671208878228796,
+        0.6809583676094323,
+        0.4138489450923618,
+        0.15225219173744184
+      ]
+    },
+    "checks": [
+      {
+        "field": "T",
+        "passed": true,
+        "actual": "10",
+        "expected": "10"
+      },
+      {
+        "field": "D",
+        "passed": true,
+        "actual": "9",
+        "expected": "9"
+      },
+      {
+        "field": "N",
+        "passed": true,
+        "actual": "15",
+        "expected": "15"
+      },
+      {
+        "field": "beta",
+        "passed": true,
+        "actual": "5/3",
+        "expected": "5/3"
+      },
+      {
+        "field": "c0",
+        "passed": true,
+        "actual": "3/5",
+        "expected": "3/5"
+      },
+      {
+        "field": "lambda_s",
+        "passed": true,
+        "actual": 1.0,
+        "expected": "1"
+      },
+      {
+        "field": "lambda_f",
+        "passed": true,
+        "actual": 9.0,
+        "expected": "9"
+      },
+      {
+        "field": "slow_coefficient",
+        "passed": true,
+        "actual": 1.125,
+        "expected": "9/8"
+      },
+      {
+        "field": "fast_coefficient",
+        "passed": true,
+        "actual": -0.125,
+        "expected": "-1/8"
+      }
+    ],
+    "passed": true
+  },
+  {
+    "id": "C04",
+    "actual": {
+      "T": "10",
+      "D": "9",
+      "N": "7",
+      "beta": "7/9",
+      "partner_q": "8",
+      "partner_a": "7/8",
+      "partner_d": "9/8",
+      "same_calibrated_kernel": true
+    },
+    "checks": [
+      {
+        "field": "partner_q",
+        "passed": true,
+        "actual": "8",
+        "expected": "8"
+      },
+      {
+        "field": "partner_a",
+        "passed": true,
+        "actual": "7/8",
+        "expected": "7/8"
+      },
+      {
+        "field": "partner_d",
+        "passed": true,
+        "actual": "9/8",
+        "expected": "9/8"
+      },
+      {
+        "field": "T",
+        "passed": true,
+        "actual": "10",
+        "expected": "10"
+      },
+      {
+        "field": "D",
+        "passed": true,
+        "actual": "9",
+        "expected": "9"
+      },
+      {
+        "field": "N",
+        "passed": true,
+        "actual": "7",
+        "expected": "7"
+      },
+      {
+        "field": "beta",
+        "passed": true,
+        "actual": "7/9",
+        "expected": "7/9"
+      },
+      {
+        "field": "same_calibrated_kernel",
+        "passed": true,
+        "actual": true,
+        "expected": true
+      }
+    ],
+    "passed": true
+  },
+  {
+    "id": "C05",
+    "actual": {
+      "first_c0": "9/7",
+      "second_c0": "9/7",
+      "first_cprime0": "-18/7",
+      "second_cprime0": "-72/7",
+      "same_b_initial_conditions": true,
+      "internal_derivatives_differ": true
+    },
+    "checks": [
+      {
+        "field": "first_c0",
+        "passed": true,
+        "actual": "9/7",
+        "expected": "9/7"
+      },
+      {
+        "field": "second_c0",
+        "passed": true,
+        "actual": "9/7",
+        "expected": "9/7"
+      },
+      {
+        "field": "first_cprime0",
+        "passed": true,
+        "actual": "-18/7",
+        "expected": "-18/7"
+      },
+      {
+        "field": "second_cprime0",
+        "passed": true,
+        "actual": "-72/7",
+        "expected": "-72/7"
+      },
+      {
+        "field": "same_b_initial_conditions",
+        "passed": true,
+        "actual": true,
+        "expected": true
+      },
+      {
+        "field": "internal_derivatives_differ",
+        "passed": true,
+        "actual": true,
+        "expected": true
+      }
+    ],
+    "passed": true
+  },
+  {
+    "id": "C06",
+    "actual": {
+      "first_T": "10",
+      "first_D": "9",
+      "second_T": "13",
+      "second_D": "45/2",
+      "recovered_d": "9/2",
+      "recovered_a": "7/2",
+      "first_q": "2",
+      "second_q": "5",
+      "shared_chemistry_consistent": true
+    },
+    "checks": [
+      {
+        "field": "first_T",
+        "passed": true,
+        "actual": "10",
+        "expected": "10"
+      },
+      {
+        "field": "first_D",
+        "passed": true,
+        "actual": "9",
+        "expected": "9"
+      },
+      {
+        "field": "second_T",
+        "passed": true,
+        "actual": "13",
+        "expected": "13"
+      },
+      {
+        "field": "second_D",
+        "passed": true,
+        "actual": "45/2",
+        "expected": "45/2"
+      },
+      {
+        "field": "recovered_d",
+        "passed": true,
+        "actual": "9/2",
+        "expected": "9/2"
+      },
+      {
+        "field": "recovered_a",
+        "passed": true,
+        "actual": "7/2",
+        "expected": "7/2"
+      },
+      {
+        "field": "first_q",
+        "passed": true,
+        "actual": "2",
+        "expected": "2"
+      },
+      {
+        "field": "second_q",
+        "passed": true,
+        "actual": "5",
+        "expected": "5"
+      },
+      {
+        "field": "shared_chemistry_consistent",
+        "passed": true,
+        "actual": true,
+        "expected": true
+      }
+    ],
+    "passed": true
+  },
+  {
+    "id": "C07",
+    "actual": {
+      "delta_T": "0",
+      "delta_D": "6",
+      "shared_chemistry_consistent": false
+    },
+    "checks": [
+      {
+        "field": "delta_T",
+        "passed": true,
+        "actual": "0",
+        "expected": "0"
+      },
+      {
+        "field": "delta_D",
+        "passed": true,
+        "actual": "6",
+        "expected": "6"
+      },
+      {
+        "field": "shared_chemistry_consistent",
+        "passed": true,
+        "actual": false,
+        "expected": false
+      }
+    ],
+    "passed": true
+  },
+  {
+    "id": "C08",
+    "actual": {
+      "first_K": "1",
+      "second_K": "1",
+      "first_q": "3",
+      "second_q": "3",
+      "distinct_resistances": true
+    },
+    "checks": [
+      {
+        "field": "first_K",
+        "passed": true,
+        "actual": "1",
+        "expected": "1"
+      },
+      {
+        "field": "second_K",
+        "passed": true,
+        "actual": "1",
+        "expected": "1"
+      },
+      {
+        "field": "first_q",
+        "passed": true,
+        "actual": "3",
+        "expected": "3"
+      },
+      {
+        "field": "second_q",
+        "passed": true,
+        "actual": "3",
+        "expected": "3"
+      },
+      {
+        "field": "distinct_resistances",
+        "passed": true,
+        "actual": true,
+        "expected": true
+      }
+    ],
+    "passed": true
+  },
+  {
+    "id": "C09",
+    "actual": {
+      "qssa_forward": "7000/2007",
+      "qssa_reverse": "1000/223",
+      "beta": "7/9",
+      "epsilon_c": "1/223",
+      "lambda_s": 4.48423448303456,
+      "relative_rate_error": 1.5710530109958043e-05,
+      "pole_ratio": 0.004468524199741384
+    },
+    "checks": [
+      {
+        "field": "qssa_forward",
+        "passed": true,
+        "actual": "7000/2007",
+        "expected": "7000/2007"
+      },
+      {
+        "field": "qssa_reverse",
+        "passed": true,
+        "actual": "1000/223",
+        "expected": "9000/2007"
+      },
+      {
+        "field": "beta",
+        "passed": true,
+        "actual": "7/9",
+        "expected": "7/9"
+      },
+      {
+        "field": "epsilon_c",
+        "passed": true,
+        "actual": "1/223",
+        "expected": "9/2007"
+      },
+      {
+        "field": "relative_rate_error_lt",
+        "passed": true,
+        "actual": 1.5710530109958043e-05,
+        "expected": 0.01
+      },
+      {
+        "field": "pole_ratio_lt",
+        "passed": true,
+        "actual": 0.004468524199741384,
+        "expected": 0.01
+      }
+    ],
+    "passed": true
+  },
+  {
+    "id": "C10",
+    "actual": {
+      "qssa_forward": "14/11",
+      "qssa_reverse": "18/11",
+      "beta": "7/9",
+      "epsilon_c": "9/11",
+      "lambda_s": 1.0,
+      "relative_rate_error": 0.6363636363636365,
+      "pole_ratio": 0.1111111111111111
+    },
+    "checks": [
+      {
+        "field": "qssa_forward",
+        "passed": true,
+        "actual": "14/11",
+        "expected": "14/11"
+      },
+      {
+        "field": "qssa_reverse",
+        "passed": true,
+        "actual": "18/11",
+        "expected": "18/11"
+      },
+      {
+        "field": "beta",
+        "passed": true,
+        "actual": "7/9",
+        "expected": "7/9"
+      },
+      {
+        "field": "epsilon_c",
+        "passed": true,
+        "actual": "9/11",
+        "expected": "9/11"
+      },
+      {
+        "field": "lambda_s",
+        "passed": true,
+        "actual": 1.0,
+        "expected": "1"
+      },
+      {
+        "field": "relative_rate_error_gt",
+        "passed": true,
+        "actual": 0.6363636363636365,
+        "expected": 0.5
+      }
+    ],
+    "passed": true
+  },
+  {
+    "id": "C11",
+    "actual": {
+      "chemical_fast_forward": "9/10",
+      "chemical_fast_reverse": "1/10",
+      "low_frequency_forward": "900/1001",
+      "low_frequency_reverse": "100/1001",
+      "beta": "9",
+      "chemical_rate_error": 0.0009000899280495744,
+      "internal_free_qssa_error": 0.11087690336076528,
+      "lambda_s": 0.09991007195052663
+    },
+    "checks": [
+      {
+        "field": "chemical_fast_forward",
+        "passed": true,
+        "actual": "9/10",
+        "expected": "9/10"
+      },
+      {
+        "field": "chemical_fast_reverse",
+        "passed": true,
+        "actual": "1/10",
+        "expected": "1/10"
+      },
+      {
+        "field": "low_frequency_forward",
+        "passed": true,
+        "actual": "900/1001",
+        "expected": "900/1001"
+      },
+      {
+        "field": "low_frequency_reverse",
+        "passed": true,
+        "actual": "100/1001",
+        "expected": "100/1001"
+      },
+      {
+        "field": "beta",
+        "passed": true,
+        "actual": "9",
+        "expected": "9"
+      },
+      {
+        "field": "chemical_rate_error_lt",
+        "passed": true,
+        "actual": 0.0009000899280495744,
+        "expected": 0.001
+      },
+      {
+        "field": "internal_free_qssa_error_gt",
+        "passed": true,
+        "actual": 0.11087690336076528,
+        "expected": 0.1
+      }
+    ],
+    "passed": true
+  },
+  {
+    "id": "C12",
+    "actual": {
+      "R": "13",
+      "cprime": "-17",
+      "bprime": "13",
+      "totalprime": "-4",
+      "scaled_R": "26",
+      "scaled_cprime": "-34",
+      "scaled_bprime": "26",
+      "scaled_totalprime": "-8",
+      "first_output": "1",
+      "scaled_output": "1",
+      "fixed_input_symmetry_residual_per_unit_u": "-2",
+      "fixed_nonzero_input_breaks_scale": true
+    },
+    "checks": [
+      {
+        "field": "R",
+        "passed": true,
+        "actual": "13",
+        "expected": "13"
+      },
+      {
+        "field": "cprime",
+        "passed": true,
+        "actual": "-17",
+        "expected": "-17"
+      },
+      {
+        "field": "bprime",
+        "passed": true,
+        "actual": "13",
+        "expected": "13"
+      },
+      {
+        "field": "totalprime",
+        "passed": true,
+        "actual": "-4",
+        "expected": "-4"
+      },
+      {
+        "field": "scaled_R",
+        "passed": true,
+        "actual": "26",
+        "expected": "26"
+      },
+      {
+        "field": "scaled_cprime",
+        "passed": true,
+        "actual": "-34",
+        "expected": "-34"
+      },
+      {
+        "field": "scaled_bprime",
+        "passed": true,
+        "actual": "26",
+        "expected": "26"
+      },
+      {
+        "field": "scaled_totalprime",
+        "passed": true,
+        "actual": "-8",
+        "expected": "-8"
+      },
+      {
+        "field": "first_output",
+        "passed": true,
+        "actual": "1",
+        "expected": "1"
+      },
+      {
+        "field": "scaled_output",
+        "passed": true,
+        "actual": "1",
+        "expected": "1"
+      },
+      {
+        "field": "fixed_input_symmetry_residual_per_unit_u",
+        "passed": true,
+        "actual": "-2",
+        "expected": "-2"
+      },
+      {
+        "field": "fixed_nonzero_input_breaks_scale",
+        "passed": true,
+        "actual": true,
+        "expected": true
+      }
+    ],
+    "passed": true
+  }
+]

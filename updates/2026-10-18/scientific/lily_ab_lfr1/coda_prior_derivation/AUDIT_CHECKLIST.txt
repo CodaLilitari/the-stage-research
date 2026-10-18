@@ -1,0 +1,54 @@
+INDEPENDENT AUDIT CHECKLIST FOR LILY'S NOT-YET-RECEIVED LINEAR BENCHMARK
+Prepared by Coda before reading that implementation; no benchmark run performed.
+
+Input/state contract
+[ ] Identify independent variable as residence time t, or show the exact z/u
+    conversion. a,k have inverse-time units; c,b are contents in the same units.
+[ ] Enforce a,k,gamma,c0>=0 and finite inputs; distinguish zero controls from
+    invalid negative/NaN values. State b0=gamma*c0, not an unstated free parameter.
+[ ] Assemble c'=-(a+k*gamma)c+k*b and b'=k*gamma*c-k*b. Verify the sum -a*c.
+[ ] Compare identical a/geometry/free inlet where claiming a kinetics effect.
+
+Closed-form numerical implementation
+[ ] Stable slow root uses product/large-root form; no catastrophic S-delta.
+[ ] Verify trace and determinant, root ordering and nonnegative solution weights.
+[ ] Treat exactly zero demand/rate/storage and repeated roots explicitly.
+[ ] Near-degenerate roots use a divided-difference limit or equivalent stable
+    matrix exponential. Do not add an epsilon to a denominator and call it exact.
+[ ] Avoid exp(-large)*cosh(large), negative mixture weights from cancellation,
+    and direct subtraction of nearly equal contents for tiny extracted amounts.
+[ ] Use expm1 for small-time losses and state the accepted numeric range/scaling.
+[ ] If a generic matrix exponential is used, compare with the independent
+    special-case formulas; a second call to the same implementation is not QA.
+
+Invariants and controls to inspect in actual outputs
+[ ] Initial states, first derivatives and second derivatives match DERIVATION.txt.
+[ ] Nonnegative c,b; nonincreasing c,b and total for the declared equilibrium inlet.
+[ ] Bound lag b>=gamma*c; extracted content equals both total loss and integral.
+[ ] k=0 leaves inaccessible bound storage; gamma=0 is independent of k.
+[ ] a=0 and c0=0 exact controls; a=k,gamma=0 has the correct Jordan-limit result.
+[ ] Large k approaches equilibrium states, but derivative convergence at t=0
+    is not required. Do not erase the finite fast initial layer.
+[ ] At matched a,T, finite c cannot fall below dissolved-only under these laws.
+[ ] Cumulative finite uptake cannot exceed equilibrium uptake here, but free
+    concentration may cross equilibrium over time. These are separate tests.
+
+Fair comparisons and interpretation
+[ ] Compute common pressure/power envelope, actual Q and residence time for
+    both viscosity branches. Hold dimensional k fixed across them.
+[ ] Distal-tissue ranking requires the same positive wall/slab proportionality;
+    otherwise compare only the directly modeled free concentration.
+[ ] A viscosity-driven equilibrium/finite-versus-dissolved reversal is possible
+    in 1<T_C/T_D<1+gamma. For a specific declared case, evaluate both contrast
+    signs rather than treating this existence interval as its numerical result.
+[ ] Report uptake units and denominators: gap/equilibrium means “finite uptake
+    lower by X% of equilibrium”; gap/finite means “equilibrium higher by Y%.”
+[ ] Do not turn an oxygen-content comparison into a human-blood/material,
+    cell-survival, finite-reservoir or physical-system validation claim.
+
+Provenance
+[ ] Preserve Lily's original code/result bytes and exact execution status.
+[ ] Put corrections and independent comparison receipts in separate files.
+[ ] Distinguish her internally executed checks, Coda's independent algebra,
+    later executed arithmetic/replay, and empirical evidence. This checklist
+    currently supplies the independent algebra only.

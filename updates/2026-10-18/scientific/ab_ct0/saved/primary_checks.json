@@ -1,0 +1,209 @@
+{
+  "checks": [
+    {
+      "name": "hydraulic_budget_ABCT0-A-001",
+      "passed": true
+    },
+    {
+      "name": "hydraulic_budget_ABCT0-A-003",
+      "passed": true
+    },
+    {
+      "name": "hydraulic_budget_ABCT0-A-005",
+      "passed": true
+    },
+    {
+      "name": "hydraulic_budget_ABCT0-A-007",
+      "passed": true
+    },
+    {
+      "name": "hydraulic_budget_ABCT0-A-009",
+      "passed": true
+    },
+    {
+      "name": "hydraulic_budget_ABCT0-A-011",
+      "passed": true
+    },
+    {
+      "name": "hydraulic_budget_ABCT0-A-013",
+      "passed": true
+    },
+    {
+      "name": "hydraulic_budget_ABCT0-A-015",
+      "passed": true
+    },
+    {
+      "name": "hydraulic_budget_ABCT0-A-017",
+      "passed": true
+    },
+    {
+      "name": "hydraulic_budget_ABCT0-A-019",
+      "passed": true
+    },
+    {
+      "name": "hydraulic_budget_ABCT0-A-021",
+      "passed": true
+    },
+    {
+      "name": "hydraulic_budget_ABCT0-A-023",
+      "passed": true
+    },
+    {
+      "name": "hydraulic_budget_ABCT0-A-025",
+      "passed": true
+    },
+    {
+      "name": "hydraulic_budget_ABCT0-A-027",
+      "passed": true
+    },
+    {
+      "name": "hydraulic_budget_ABCT0-A-029",
+      "passed": true
+    },
+    {
+      "name": "hydraulic_budget_ABCT0-A-031",
+      "passed": true
+    },
+    {
+      "name": "hydraulic_budget_ABCT0-A-033",
+      "passed": true
+    },
+    {
+      "name": "hydraulic_budget_ABCT0-A-035",
+      "passed": true
+    },
+    {
+      "field_error": 1.632416424257599e-12,
+      "name": "k0_dissolved_match_ABCT0-B-001",
+      "passed": true,
+      "reference": "ABCT0-A-001"
+    },
+    {
+      "name": "k0_bound_retained_ABCT0-B-001",
+      "passed": true
+    },
+    {
+      "name": "hydraulic_budget_ABCT0-B-001",
+      "passed": true
+    },
+    {
+      "name": "hydraulic_budget_ABCT0-B-002",
+      "passed": true
+    },
+    {
+      "name": "hydraulic_budget_ABCT0-B-003",
+      "passed": true
+    },
+    {
+      "field_error": 9.302558723334187e-13,
+      "name": "k0_dissolved_match_ABCT0-B-004",
+      "passed": true,
+      "reference": "ABCT0-A-003"
+    },
+    {
+      "name": "k0_bound_retained_ABCT0-B-004",
+      "passed": true
+    },
+    {
+      "name": "hydraulic_budget_ABCT0-B-004",
+      "passed": true
+    },
+    {
+      "name": "hydraulic_budget_ABCT0-B-005",
+      "passed": true
+    },
+    {
+      "name": "hydraulic_budget_ABCT0-B-006",
+      "passed": true
+    },
+    {
+      "field_error": 1.517230785452739e-12,
+      "name": "k0_dissolved_match_ABCT0-B-007",
+      "passed": true,
+      "reference": "ABCT0-A-005"
+    },
+    {
+      "name": "k0_bound_retained_ABCT0-B-007",
+      "passed": true
+    },
+    {
+      "name": "hydraulic_budget_ABCT0-B-007",
+      "passed": true
+    },
+    {
+      "name": "hydraulic_budget_ABCT0-B-008",
+      "passed": true
+    },
+    {
+      "name": "hydraulic_budget_ABCT0-B-009",
+      "passed": true
+    },
+    {
+      "field_error": 7.120415368433441e-13,
+      "name": "k0_dissolved_match_ABCT0-B-010",
+      "passed": true,
+      "reference": "ABCT0-A-007"
+    },
+    {
+      "name": "k0_bound_retained_ABCT0-B-010",
+      "passed": true
+    },
+    {
+      "name": "hydraulic_budget_ABCT0-B-010",
+      "passed": true
+    },
+    {
+      "name": "hydraulic_budget_ABCT0-B-011",
+      "passed": true
+    },
+    {
+      "name": "hydraulic_budget_ABCT0-B-012",
+      "passed": true
+    },
+    {
+      "field_error": 4.420352972545061e-13,
+      "name": "k0_dissolved_match_ABCT0-B-013",
+      "passed": true,
+      "reference": "ABCT0-A-009"
+    },
+    {
+      "name": "k0_bound_retained_ABCT0-B-013",
+      "passed": true
+    },
+    {
+      "name": "hydraulic_budget_ABCT0-B-013",
+      "passed": true
+    },
+    {
+      "name": "hydraulic_budget_ABCT0-B-014",
+      "passed": true
+    },
+    {
+      "name": "hydraulic_budget_ABCT0-B-015",
+      "passed": true
+    },
+    {
+      "field_error": 5.40026356965484e-13,
+      "name": "k0_dissolved_match_ABCT0-B-016",
+      "passed": true,
+      "reference": "ABCT0-A-011"
+    },
+    {
+      "name": "k0_bound_retained_ABCT0-B-016",
+      "passed": true
+    },
+    {
+      "name": "hydraulic_budget_ABCT0-B-016",
+      "passed": true
+    },
+    {
+      "name": "hydraulic_budget_ABCT0-B-017",
+      "passed": true
+    },
+    {
+      "name": "hydraulic_budget_ABCT0-B-018",
+      "passed": true
+    }
+  ],
+  "passed": true
+}

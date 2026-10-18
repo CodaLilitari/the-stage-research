@@ -1,0 +1,10 @@
+{
+  "al1_scan_sha256": "a696f0816438edc02419157ed1da04001dfbd534179a40304f49328a2db7bc4e",
+  "config_sha256": "494ee40e064887f081c047ba840ee6caecf3d10841eb63361971d87ff9e2e616",
+  "frozen_at_utc": "2026-10-15T15:13:07.722959+00:00",
+  "inputs_sha256": "7b9fe4c935ce3d2e33d60a6a374b163c72df748515e9cb7cd68b1bd1d20eaafb",
+  "n_configurations": 2520,
+  "pre_freeze_disclosure": "Before this freeze the solver was unit-tested on synthetic patches (zero-order, first-order and identical-module limits) and the infinite-flow ceilings of candidate modules were computed to confirm that the grid spans flow-limited and transverse-limited regimes. No allocation or topology outcome on this grid was computed before the freeze.",
+  "stage_transport_sha256": "12d01844647def8e9b01cdf1c02bc83a6b3bb05ed5badf8ce1ddea12476bac54",
+  "status": "local pre-run freeze written by the author; not externally witnessed"
+}

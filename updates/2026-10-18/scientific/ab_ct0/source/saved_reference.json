@@ -1,0 +1,25 @@
+{
+  "axial_segments": 32,
+  "row_as_original_strings": {
+    "all_cells_above_threshold": "True",
+    "beta_hypothetical": "1.0",
+    "delivery_mol_s": "1.6060138855369907e-12",
+    "depth_um": "100.0",
+    "flow_uL_min": "2.0",
+    "fraction_below_threshold": "0.0",
+    "infinite_flow_zero_order_conservative_minimum": "0.11000000000000001",
+    "maximum_relative_station_residual": "2.7020033380056957e-11",
+    "minimum_free_tissue_mol_m3": "0.08294845827552598",
+    "necessary_local_bound_passes": "True",
+    "necessary_supply_bound_passes": "True",
+    "outlet_free_mol_m3": "0.1518195834338903",
+    "relative_mass_balance_error": "8.833606509940158e-11",
+    "uptake_mol_s": "1.6060138853951218e-12",
+    "wall_permeability_mm_s": "0.05"
+  },
+  "scheme": "original finite-volume tissue and backward-Euler axial depletion",
+  "source_path": "research/artificial_blood/cases.csv",
+  "source_sha256": "4d4a6566db533646e3689e0dd02d9f053ba4c2bdf20ab3feac3401fd35493810",
+  "status": "existing saved result read without rerunning scientific code",
+  "tissue_cells": 24
+}

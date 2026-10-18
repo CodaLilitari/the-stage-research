@@ -1,0 +1,602 @@
+{
+  "scope": "Saved outputs only; no benchmark or analytic reevaluation. First three failed equality expectations retained in independent_arithmetic.json. No frozen scientific threshold is altered.",
+  "checks": 11,
+  "passed": 11,
+  "failed": 0,
+  "assertions": [
+    {
+      "name": "first_receipt_unchanged_scope",
+      "passed": true
+    },
+    {
+      "name": "states.csv:row_order",
+      "passed": true
+    },
+    {
+      "name": "states.csv:reference_values_equal",
+      "passed": true
+    },
+    {
+      "name": "states.csv:computed_differences_bounded",
+      "passed": true
+    },
+    {
+      "name": "terminal.csv:row_order",
+      "passed": true
+    },
+    {
+      "name": "terminal.csv:reference_values_equal",
+      "passed": true
+    },
+    {
+      "name": "terminal.csv:computed_differences_bounded",
+      "passed": true
+    },
+    {
+      "name": "all_1613_check_names_and_verdicts_equal",
+      "passed": true
+    },
+    {
+      "name": "failed_check_exact",
+      "passed": true
+    },
+    {
+      "name": "changed_check_details_preserve_pass",
+      "passed": true
+    },
+    {
+      "name": "local_original_full_summary_equal_except_duration",
+      "passed": true
+    }
+  ],
+  "differences": [
+    {
+      "file": "states.csv",
+      "differing_cells": 23,
+      "cells": [
+        {
+          "case_id": "C06",
+          "fraction": "0.1",
+          "field": "matrix_tolerance_ratio",
+          "received": "3.7457948443791824e-05",
+          "local": "4.850989230139517e-05",
+          "abs_delta": 1.1051943857603349e-05,
+          "comparison_bound": 1.0
+        },
+        {
+          "case_id": "C08",
+          "fraction": "0.01",
+          "field": "matrix_tolerance_ratio",
+          "received": "0.0",
+          "local": "2.5849393987958657e-13",
+          "abs_delta": 2.5849393987958657e-13,
+          "comparison_bound": 1.0
+        },
+        {
+          "case_id": "C08",
+          "fraction": "1",
+          "field": "b",
+          "received": "3.9999999852848225",
+          "local": "3.999999985284822",
+          "abs_delta": 4.440892098500626e-16,
+          "comparison_bound": 2.5599999911708936e-11
+        },
+        {
+          "case_id": "C08",
+          "fraction": "1",
+          "field": "conservation_scaled",
+          "received": "2.2204460492503132e-17",
+          "local": "1.1102230246251565e-16",
+          "abs_delta": 8.881784197001253e-17,
+          "comparison_bound": 5e-11
+        },
+        {
+          "case_id": "C10",
+          "fraction": "0.1",
+          "field": "c",
+          "received": "0.9207961051126127",
+          "local": "0.9207961051126126",
+          "abs_delta": 1.1102230246251565e-16,
+          "comparison_bound": 5.9247766306756765e-12
+        },
+        {
+          "case_id": "C10",
+          "fraction": "0.1",
+          "field": "matrix_tolerance_ratio",
+          "received": "3.7477295561724625e-05",
+          "local": "5.042423082605042e-05",
+          "abs_delta": 1.2946935264325798e-05,
+          "comparison_bound": 1.0
+        },
+        {
+          "case_id": "C10",
+          "fraction": "0.1",
+          "field": "state_tolerance_ratio",
+          "received": "3.4829335999623335e-05",
+          "local": "3.7477295561724625e-05",
+          "abs_delta": 2.6479595621012894e-06,
+          "comparison_bound": 1.0
+        },
+        {
+          "case_id": "C10",
+          "fraction": "0.1",
+          "field": "conservation_scaled",
+          "received": "7.494005416219807e-17",
+          "local": "9.71445146547012e-17",
+          "abs_delta": 2.2204460492503126e-17,
+          "comparison_bound": 5e-11
+        },
+        {
+          "case_id": "C11",
+          "fraction": "1e-3",
+          "field": "c",
+          "received": "0.9991708362124766",
+          "local": "0.9991708362124767",
+          "abs_delta": 1.1102230246251565e-16,
+          "comparison_bound": 6.39502501727486e-12
+        },
+        {
+          "case_id": "C11",
+          "fraction": "1e-3",
+          "field": "matrix_tolerance_ratio",
+          "received": "3.745814647928018e-05",
+          "local": "4.8528912720387286e-05",
+          "abs_delta": 1.1070766241107105e-05,
+          "comparison_bound": 1.0
+        },
+        {
+          "case_id": "C11",
+          "fraction": "1e-3",
+          "field": "state_tolerance_ratio",
+          "received": "3.469585514826648e-05",
+          "local": "3.4721459935687966e-05",
+          "abs_delta": 2.56047874214852e-08,
+          "comparison_bound": 1.0
+        },
+        {
+          "case_id": "C11",
+          "fraction": "1e-3",
+          "field": "conservation_scaled",
+          "received": "1.1232334506949826e-16",
+          "local": "9.011888457699513e-17",
+          "abs_delta": 2.2204460492503126e-17,
+          "comparison_bound": 5e-11
+        },
+        {
+          "case_id": "C12",
+          "fraction": "1e-6",
+          "field": "matrix_tolerance_ratio",
+          "received": "0.0",
+          "local": "4.091907147834354e-06",
+          "abs_delta": 4.091907147834354e-06,
+          "comparison_bound": 1.0
+        },
+        {
+          "case_id": "C14",
+          "fraction": "1e-3",
+          "field": "matrix_tolerance_ratio",
+          "received": "8.96831017167883e-31",
+          "local": "1.0681952585276727e-06",
+          "abs_delta": 1.0681952585276727e-06,
+          "comparison_bound": 1.0
+        },
+        {
+          "case_id": "C17",
+          "fraction": "0.01",
+          "field": "matrix_tolerance_ratio",
+          "received": "3.155443620882154e-17",
+          "local": "0.0",
+          "abs_delta": 3.155443620882154e-17,
+          "comparison_bound": 1.0
+        },
+        {
+          "case_id": "C17",
+          "fraction": "0.5",
+          "field": "matrix_tolerance_ratio",
+          "received": "0.0",
+          "local": "2.0194839173052057e-15",
+          "abs_delta": 2.0194839173052057e-15,
+          "comparison_bound": 1.0
+        },
+        {
+          "case_id": "C18",
+          "fraction": "0.1",
+          "field": "matrix_tolerance_ratio",
+          "received": "3.7477295561724625e-05",
+          "local": "5.042423082605042e-05",
+          "abs_delta": 1.2946935264325798e-05,
+          "comparison_bound": 1.0
+        },
+        {
+          "case_id": "C19",
+          "fraction": "1e-6",
+          "field": "matrix_tolerance_ratio",
+          "received": "0.0",
+          "local": "1.6934562598568493e-08",
+          "abs_delta": 1.6934562598568493e-08,
+          "comparison_bound": 1.0
+        },
+        {
+          "case_id": "C20",
+          "fraction": "1e-9",
+          "field": "matrix_tolerance_ratio",
+          "received": "1.0339757501816483e-12",
+          "local": "9.4039548065783e-25",
+          "abs_delta": 1.0339757501807078e-12,
+          "comparison_bound": 1.0
+        },
+        {
+          "case_id": "C20",
+          "fraction": "1",
+          "field": "b",
+          "received": "7.357588823429458e-13",
+          "local": "7.357588823429459e-13",
+          "abs_delta": 1.0097419586828951e-28,
+          "comparison_bound": 4.0000000000441455e-13
+        },
+        {
+          "case_id": "C20",
+          "fraction": "1",
+          "field": "matrix_tolerance_ratio",
+          "received": "8.516342336673171e-05",
+          "local": "4.2581711683335817e-05",
+          "abs_delta": 4.2581711683395895e-05,
+          "comparison_bound": 1.0
+        },
+        {
+          "case_id": "C20",
+          "fraction": "1",
+          "field": "state_tolerance_ratio",
+          "received": "1.0097419586717513e-15",
+          "local": "5.048709793358756e-16",
+          "abs_delta": 5.048709793358756e-16,
+          "comparison_bound": 1.0
+        },
+        {
+          "case_id": "C20",
+          "fraction": "1",
+          "field": "conservation_scaled",
+          "received": "6.354894749816369e-17",
+          "local": "6.354894749806271e-17",
+          "abs_delta": 1.0097419586828951e-28,
+          "comparison_bound": 5e-11
+        }
+      ]
+    },
+    {
+      "file": "terminal.csv",
+      "differing_cells": 4,
+      "cells": [
+        {
+          "case_id": "C08",
+          "fraction": null,
+          "field": "b",
+          "received": "3.9999999852848225",
+          "local": "3.999999985284822",
+          "abs_delta": 4.440892098500626e-16,
+          "comparison_bound": 2.5599999911708936e-11
+        },
+        {
+          "case_id": "C08",
+          "fraction": null,
+          "field": "total_residual_scaled",
+          "received": "2.2204460492503132e-17",
+          "local": "1.1102230246251565e-16",
+          "abs_delta": 8.881784197001253e-17,
+          "comparison_bound": 5e-11
+        },
+        {
+          "case_id": "C20",
+          "fraction": null,
+          "field": "b",
+          "received": "7.357588823429458e-13",
+          "local": "7.357588823429459e-13",
+          "abs_delta": 1.0097419586828951e-28,
+          "comparison_bound": 4.0000000000441455e-13
+        },
+        {
+          "case_id": "C20",
+          "fraction": null,
+          "field": "total_residual_scaled",
+          "received": "6.354894749816369e-17",
+          "local": "6.354894749806271e-17",
+          "abs_delta": 1.0097419586828951e-28,
+          "comparison_bound": 5e-11
+        }
+      ]
+    }
+  ],
+  "changed_check_details": [
+    {
+      "name": "C06@0.1:propagator_reference",
+      "received": {
+        "name": "C06@0.1:propagator_reference",
+        "passed": true,
+        "max_tolerance_ratio": 3.7457948443791824e-05
+      },
+      "local": {
+        "name": "C06@0.1:propagator_reference",
+        "passed": true,
+        "max_tolerance_ratio": 4.850989230139517e-05
+      }
+    },
+    {
+      "name": "C06:semigroup",
+      "received": {
+        "name": "C06:semigroup",
+        "passed": true,
+        "max_abs_error": 2.220446049250313e-16
+      },
+      "local": {
+        "name": "C06:semigroup",
+        "passed": true,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "name": "C08@0.01:propagator_reference",
+      "received": {
+        "name": "C08@0.01:propagator_reference",
+        "passed": true,
+        "max_tolerance_ratio": 0.0
+      },
+      "local": {
+        "name": "C08@0.01:propagator_reference",
+        "passed": true,
+        "max_tolerance_ratio": 2.5849393987958657e-13
+      }
+    },
+    {
+      "name": "C08@1:inventory",
+      "received": {
+        "name": "C08@1:inventory",
+        "passed": true,
+        "total_scaled": 2.2204460492503132e-17,
+        "free_scaled": 3.6539174929758e-18,
+        "bound_scaled": 1.855054299952733e-17
+      },
+      "local": {
+        "name": "C08@1:inventory",
+        "passed": true,
+        "total_scaled": 1.1102230246251565e-16,
+        "free_scaled": 3.6539174929758e-18,
+        "bound_scaled": 1.0736838496953985e-16
+      }
+    },
+    {
+      "name": "C10@0.1:propagator_reference",
+      "received": {
+        "name": "C10@0.1:propagator_reference",
+        "passed": true,
+        "max_tolerance_ratio": 3.7477295561724625e-05
+      },
+      "local": {
+        "name": "C10@0.1:propagator_reference",
+        "passed": true,
+        "max_tolerance_ratio": 5.042423082605042e-05
+      }
+    },
+    {
+      "name": "C10@0.1:state_reference",
+      "received": {
+        "name": "C10@0.1:state_reference",
+        "passed": true,
+        "max_tolerance_ratio": 3.4829335999623335e-05
+      },
+      "local": {
+        "name": "C10@0.1:state_reference",
+        "passed": true,
+        "max_tolerance_ratio": 3.7477295561724625e-05
+      }
+    },
+    {
+      "name": "C10@0.1:inventory",
+      "received": {
+        "name": "C10@0.1:inventory",
+        "passed": true,
+        "total_scaled": 7.494005416219807e-17,
+        "free_scaled": 2.0816681711721684e-18,
+        "bound_scaled": 7.28583859910259e-17
+      },
+      "local": {
+        "name": "C10@0.1:inventory",
+        "passed": true,
+        "total_scaled": 9.71445146547012e-17,
+        "free_scaled": 2.42861286636753e-17,
+        "bound_scaled": 7.28583859910259e-17
+      }
+    },
+    {
+      "name": "C11@1e-3:propagator_reference",
+      "received": {
+        "name": "C11@1e-3:propagator_reference",
+        "passed": true,
+        "max_tolerance_ratio": 3.745814647928018e-05
+      },
+      "local": {
+        "name": "C11@1e-3:propagator_reference",
+        "passed": true,
+        "max_tolerance_ratio": 4.8528912720387286e-05
+      }
+    },
+    {
+      "name": "C11@1e-3:state_reference",
+      "received": {
+        "name": "C11@1e-3:state_reference",
+        "passed": true,
+        "max_tolerance_ratio": 3.469585514826648e-05
+      },
+      "local": {
+        "name": "C11@1e-3:state_reference",
+        "passed": true,
+        "max_tolerance_ratio": 3.4721459935687966e-05
+      }
+    },
+    {
+      "name": "C11@1e-3:inventory",
+      "received": {
+        "name": "C11@1e-3:inventory",
+        "passed": true,
+        "total_scaled": 1.1232334506949826e-16,
+        "free_scaled": 1.0001765041178778e-17,
+        "bound_scaled": 1.0232158002831948e-16
+      },
+      "local": {
+        "name": "C11@1e-3:inventory",
+        "passed": true,
+        "total_scaled": 9.011888457699513e-17,
+        "free_scaled": 1.2202695451324352e-17,
+        "bound_scaled": 1.0232158002831948e-16
+      }
+    },
+    {
+      "name": "C12@1e-6:propagator_reference",
+      "received": {
+        "name": "C12@1e-6:propagator_reference",
+        "passed": true,
+        "max_tolerance_ratio": 0.0
+      },
+      "local": {
+        "name": "C12@1e-6:propagator_reference",
+        "passed": true,
+        "max_tolerance_ratio": 4.091907147834354e-06
+      }
+    },
+    {
+      "name": "C14@1e-3:propagator_reference",
+      "received": {
+        "name": "C14@1e-3:propagator_reference",
+        "passed": true,
+        "max_tolerance_ratio": 8.96831017167883e-31
+      },
+      "local": {
+        "name": "C14@1e-3:propagator_reference",
+        "passed": true,
+        "max_tolerance_ratio": 1.0681952585276727e-06
+      }
+    },
+    {
+      "name": "C17@0.01:propagator_reference",
+      "received": {
+        "name": "C17@0.01:propagator_reference",
+        "passed": true,
+        "max_tolerance_ratio": 3.155443620882154e-17
+      },
+      "local": {
+        "name": "C17@0.01:propagator_reference",
+        "passed": true,
+        "max_tolerance_ratio": 0.0
+      }
+    },
+    {
+      "name": "C17@0.5:propagator_reference",
+      "received": {
+        "name": "C17@0.5:propagator_reference",
+        "passed": true,
+        "max_tolerance_ratio": 0.0
+      },
+      "local": {
+        "name": "C17@0.5:propagator_reference",
+        "passed": true,
+        "max_tolerance_ratio": 2.0194839173052057e-15
+      }
+    },
+    {
+      "name": "C18@0.1:propagator_reference",
+      "received": {
+        "name": "C18@0.1:propagator_reference",
+        "passed": true,
+        "max_tolerance_ratio": 3.7477295561724625e-05
+      },
+      "local": {
+        "name": "C18@0.1:propagator_reference",
+        "passed": true,
+        "max_tolerance_ratio": 5.042423082605042e-05
+      }
+    },
+    {
+      "name": "C19@1e-6:propagator_reference",
+      "received": {
+        "name": "C19@1e-6:propagator_reference",
+        "passed": true,
+        "max_tolerance_ratio": 0.0
+      },
+      "local": {
+        "name": "C19@1e-6:propagator_reference",
+        "passed": true,
+        "max_tolerance_ratio": 1.6934562598568493e-08
+      }
+    },
+    {
+      "name": "C20@1e-9:propagator_reference",
+      "received": {
+        "name": "C20@1e-9:propagator_reference",
+        "passed": true,
+        "max_tolerance_ratio": 1.0339757501816483e-12
+      },
+      "local": {
+        "name": "C20@1e-9:propagator_reference",
+        "passed": true,
+        "max_tolerance_ratio": 9.4039548065783e-25
+      }
+    },
+    {
+      "name": "C20@1:propagator_reference",
+      "received": {
+        "name": "C20@1:propagator_reference",
+        "passed": true,
+        "max_tolerance_ratio": 8.516342336673171e-05
+      },
+      "local": {
+        "name": "C20@1:propagator_reference",
+        "passed": true,
+        "max_tolerance_ratio": 4.2581711683335817e-05
+      }
+    },
+    {
+      "name": "C20@1:state_reference",
+      "received": {
+        "name": "C20@1:state_reference",
+        "passed": true,
+        "max_tolerance_ratio": 1.0097419586717513e-15
+      },
+      "local": {
+        "name": "C20@1:state_reference",
+        "passed": true,
+        "max_tolerance_ratio": 5.048709793358756e-16
+      }
+    },
+    {
+      "name": "C20@1:inventory",
+      "received": {
+        "name": "C20@1:inventory",
+        "passed": true,
+        "total_scaled": 6.354894749816369e-17,
+        "free_scaled": 6.354894749796174e-17,
+        "bound_scaled": 2.0194839173637706e-28
+      },
+      "local": {
+        "name": "C20@1:inventory",
+        "passed": true,
+        "total_scaled": 6.354894749806271e-17,
+        "free_scaled": 6.354894749796174e-17,
+        "bound_scaled": 1.0097419586818853e-28
+      }
+    },
+    {
+      "name": "C20:semigroup",
+      "received": {
+        "name": "C20:semigroup",
+        "passed": true,
+        "max_abs_error": 5.551115123125783e-17
+      },
+      "local": {
+        "name": "C20:semigroup",
+        "passed": true,
+        "max_abs_error": 1.1102230246251565e-16
+      }
+    }
+  ],
+  "earlier_receipt_sha256": "c0d75abc5d5720305d8830a9eed5f740d43a71915571bf8488d897782a1dc221",
+  "disposition": "Numerical and verdict reproduction, not universal byte reproduction. Differences are consistent with cross-runtime elementary-function rounding; no claim of isolating a particular library instruction. All independent 198-point scalar/flux/invariant checks passed in the first receipt."
+}

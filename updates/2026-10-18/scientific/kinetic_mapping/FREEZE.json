@@ -1,0 +1,68 @@
+{
+  "study": "AB-KMAP0",
+  "prepared_utc": "2026-10-18T00:36:02.600489+00:00",
+  "stage": "before diagnostic execution",
+  "syntax_parse_passed": true,
+  "declared_case_records": 12,
+  "empirical_fits_executed_this_task": 0,
+  "analytic_diagnostic_cases_executed": 0,
+  "transport_solves_executed": 0,
+  "saved_observation_rows_copied": 9,
+  "files": [
+    {
+      "path": "PROTOCOL.txt",
+      "bytes": 6496,
+      "sha256": "8982647145906d332e4aee9fa676e8572cbcd096fad5d13fd5d078cb3f4ca19e"
+    },
+    {
+      "path": "DERIVATION.md",
+      "bytes": 11583,
+      "sha256": "985d8c6ab56e13cc59f213e601e7c53046cf525b6dc4ef811dd02f9d7526e4ae"
+    },
+    {
+      "path": "SOURCE_ROUTE.md",
+      "bytes": 6295,
+      "sha256": "882e66ab86a180928fc7b2c69c1938af6247746839f73b7c5112913844745df7"
+    },
+    {
+      "path": "SOURCE_RECEIPT.json",
+      "bytes": 4077,
+      "sha256": "d2d9e8366e6d28623abd7a9115edb8bf244f4e5599f8ddc043d97fc22a5d7003"
+    },
+    {
+      "path": "OBSERVATION_CONSTRAINTS.csv",
+      "bytes": 2252,
+      "sha256": "aec8d161f23577b84d189d74c8a1fcffe0b1ab47ec304b31ef7ebabc62459e1b"
+    },
+    {
+      "path": "SAVED_OBSERVATIONS.csv",
+      "bytes": 903,
+      "sha256": "25886dd939ec40fa2135a885fb414288a56513458d9bfbd7bc4efc0b2e87af1a"
+    },
+    {
+      "path": "diagnostic_cases.json",
+      "bytes": 2121,
+      "sha256": "d29716eec389718bc37466f1abb2900a07dac1b45cc4c39185644d290b5211df"
+    },
+    {
+      "path": "expected_outputs.json",
+      "bytes": 2043,
+      "sha256": "01e82fc721aa83557e2487f2be35a99adb1e18b727a93d8bb53b598b68eb3de8"
+    },
+    {
+      "path": "analytic_diagnostic.py",
+      "bytes": 11970,
+      "sha256": "cec8da69326fc3128014cc050c114763ec6dc29cdd444562c714b8312568170b"
+    },
+    {
+      "path": "RUN_AUTHORIZATION.template.json",
+      "bytes": 409,
+      "sha256": "ccf0ea231598e17407a22e610fbf9afb803c7b9e3ec12d114477ddd80744dfda"
+    },
+    {
+      "path": "prepare_freeze.py",
+      "bytes": 5388,
+      "sha256": "18b5044c230508650e440fa01980d55ec96c6c7f4e82a24e8bea9f37f7eb0ed9"
+    }
+  ]
+}

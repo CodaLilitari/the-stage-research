@@ -1,0 +1,2616 @@
+{
+  "scope": "Independent saved-field arithmetic and provenance review only; no producer module import, transport solve or output mutation.",
+  "reviewer": "Coda (Codex Lily), separate local architecture-review agent",
+  "checked_utc": "2026-10-17T22:51:01.147182+00:00",
+  "freeze_sha256": "79add93ef7ee7b6cf702b77dc03ef4fd0e64e0401f11ffdf54f5d8b120d8a0af",
+  "run_manifest_sha256": "0b5d30dca6bd10d4da3897c7df3ac03ef674fbbb0c3112a4df698c0ab4330cff",
+  "code_sha256": "a12b6a277ad5b92ff076b4eed82ed4eb5c4ae086f9b158c6e80ae1e1265ee65a",
+  "passed": 514,
+  "total": 514,
+  "checks": [
+    {
+      "name": "reviewed_freeze_unchanged",
+      "passed": true
+    },
+    {
+      "name": "implementation_hashes_unchanged",
+      "passed": true
+    },
+    {
+      "name": "input_hashes_unchanged",
+      "passed": true
+    },
+    {
+      "name": "manifest_membership_complete_unique",
+      "passed": true
+    },
+    {
+      "name": "manifest:attempted_cases.csv",
+      "passed": true
+    },
+    {
+      "name": "manifest:controls_complete.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:controls_initial.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:decisions.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:execution_binding.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:ledger.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:primary_checks.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-A-001-R1.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-A-001-R2.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-A-001.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-A-002.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-A-003.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-A-004.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-A-005.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-A-006.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-A-007.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-A-008.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-A-009.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-A-010.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-A-011.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-A-012.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-A-013.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-A-014.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-A-015.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-A-016.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-A-017.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-A-018.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-A-019.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-A-020.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-A-021.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-A-022.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-A-023.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-A-024.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-A-025.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-A-026.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-A-027.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-A-028.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-A-029.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-A-030.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-A-031-R1.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-A-031-R2.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-A-031.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-A-032.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-A-033.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-A-034.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-A-035.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-A-036.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-B-001-R1.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-B-001-R2.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-B-001.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-B-002.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-B-003.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-B-004.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-B-005.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-B-006.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-B-007.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-B-008.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-B-009.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-B-010.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-B-011-R1.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-B-011-R2.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-B-011.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-B-012.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-B-013-R1.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-B-013-R2.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-B-013.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-B-014.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-B-015.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-B-016-R1.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-B-016-R2.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-B-016.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-B-017.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-B-018.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-C-001.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-C-002.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-C-003.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-C-004.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-C-005.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-C-006.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-C-007.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-C-008.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-C-009.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-C-010.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-C-011.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:profiles/ABCT0-C-012.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:refinement_selection.json",
+      "passed": true
+    },
+    {
+      "name": "manifest:REPORT.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest:resources.json",
+      "passed": true
+    },
+    {
+      "name": "78_completed_unique_counted_attempts",
+      "passed": true
+    },
+    {
+      "name": "two_reserves_unspent",
+      "passed": true
+    },
+    {
+      "name": "ledger_profile_hashes",
+      "passed": true
+    },
+    {
+      "name": "complete_plan_equals_attempted_set",
+      "passed": true
+    },
+    {
+      "name": "every_attempt_matches_frozen_or_selected_plan",
+      "passed": true
+    },
+    {
+      "name": "controls_then_three_anchors_then_primary_then_refinement",
+      "passed": true
+    },
+    {
+      "name": "all_attempts_inside_authorized_window",
+      "passed": true
+    },
+    {
+      "name": "completed_manifest_inside_run_and_user_deadlines",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-C-001:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-C-001:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-C-001:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-C-001:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-C-002:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-C-002:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-C-002:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-C-002:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-C-003:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-C-003:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-C-003:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-C-003:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-C-004:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-C-004:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-C-004:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-C-004:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-C-005:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-C-005:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-C-005:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-C-005:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-C-006:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-C-006:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-C-006:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-C-006:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-C-007:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-C-007:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-C-007:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-C-007:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-C-008:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-C-008:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-C-008:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-C-008:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-C-009:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-C-009:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-C-009:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-C-009:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-C-010:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-C-010:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-C-010:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-C-010:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-C-011:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-C-011:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-C-011:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-C-011:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-C-012:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-C-012:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-C-012:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-C-012:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-003:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-A-003:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-003:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-003:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-015:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-A-015:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-015:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-015:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-027:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-A-027:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-027:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-027:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-001:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-A-001:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-001:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-001:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-002:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-A-002:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-002:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-002:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-004:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-A-004:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-004:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-004:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-005:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-A-005:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-005:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-005:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-006:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-A-006:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-006:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-006:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-007:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-A-007:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-007:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-007:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-008:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-A-008:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-008:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-008:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-009:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-A-009:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-009:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-009:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-010:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-A-010:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-010:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-010:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-011:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-A-011:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-011:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-011:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-012:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-A-012:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-012:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-012:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-013:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-A-013:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-013:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-013:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-014:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-A-014:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-014:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-014:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-016:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-A-016:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-016:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-016:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-017:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-A-017:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-017:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-017:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-018:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-A-018:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-018:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-018:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-019:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-A-019:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-019:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-019:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-020:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-A-020:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-020:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-020:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-021:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-A-021:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-021:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-021:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-022:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-A-022:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-022:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-022:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-023:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-A-023:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-023:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-023:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-024:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-A-024:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-024:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-024:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-025:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-A-025:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-025:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-025:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-026:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-A-026:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-026:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-026:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-028:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-A-028:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-028:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-028:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-029:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-A-029:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-029:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-029:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-030:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-A-030:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-030:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-030:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-031:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-A-031:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-031:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-031:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-032:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-A-032:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-032:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-032:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-033:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-A-033:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-033:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-033:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-034:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-A-034:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-034:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-034:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-035:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-A-035:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-035:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-035:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-036:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-A-036:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-036:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-036:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-001:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-B-001:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-001:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-001:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-002:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-B-002:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-002:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-002:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-003:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-B-003:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-003:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-003:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-004:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-B-004:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-004:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-004:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-005:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-B-005:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-005:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-005:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-006:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-B-006:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-006:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-006:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-007:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-B-007:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-007:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-007:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-008:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-B-008:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-008:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-008:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-009:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-B-009:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-009:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-009:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-010:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-B-010:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-010:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-010:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-011:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-B-011:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-011:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-011:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-012:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-B-012:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-012:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-012:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-013:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-B-013:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-013:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-013:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-014:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-B-014:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-014:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-014:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-015:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-B-015:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-015:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-015:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-016:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-B-016:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-016:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-016:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-017:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-B-017:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-017:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-017:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-018:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-B-018:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-018:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-018:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-001-R1:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-A-001-R1:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-001-R1:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-001-R1:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-001-R2:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-A-001-R2:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-001-R2:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-001-R2:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-031-R1:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-A-031-R1:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-031-R1:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-031-R1:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-031-R2:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-A-031-R2:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-031-R2:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-031-R2:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-001-R1:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-B-001-R1:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-001-R1:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-001-R1:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-001-R2:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-B-001-R2:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-001-R2:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-001-R2:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-011-R1:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-B-011-R1:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-011-R1:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-011-R1:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-011-R2:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-B-011-R2:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-011-R2:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-011-R2:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-013-R1:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-B-013-R1:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-013-R1:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-013-R1:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-013-R2:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-B-013-R2:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-013-R2:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-013-R2:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-016-R1:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-B-016-R1:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-016-R1:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-016-R1:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-016-R2:field_inventory_and_summary",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "ABCT0-B-016-R2:nonnegative_bounds",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-016-R2:independent_conservation",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-016-R2:binding_update",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-C-001:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-C-002:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-C-003:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-C-004:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-C-005:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-C-006:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-C-007:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-C-008:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-C-009:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-C-010:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-C-011:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-C-012:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-003:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-015:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-027:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-001:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-002:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-004:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-005:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-006:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-007:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-008:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-009:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-010:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-011:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-012:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-013:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-014:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-016:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-017:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-018:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-019:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-020:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-021:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-022:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-023:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-024:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-025:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-026:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-028:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-029:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-030:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-031:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-032:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-033:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-034:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-035:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-036:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-001:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-002:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-003:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-004:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-005:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-006:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-007:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-008:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-009:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-010:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-011:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-012:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-013:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-014:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-015:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-016:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-017:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-018:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-001-R1:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-001-R2:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-031-R1:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-A-031-R2:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-001-R1:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-001-R2:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-011-R1:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-011-R2:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-013-R1:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-013-R2:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-016-R1:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-016-R2:hydraulic_budget_and_residence",
+      "passed": true
+    },
+    {
+      "name": "csv_matches_all_profile_numeric_summaries",
+      "passed": true
+    },
+    {
+      "name": "linear_sink_beta1:independent_continuum_control",
+      "passed": true
+    },
+    {
+      "name": "linear_sink_beta5:independent_continuum_control",
+      "passed": true
+    },
+    {
+      "name": "clamped_zero_order:independent_continuum_control",
+      "passed": true
+    },
+    {
+      "name": "large_k_decreases_distance_to_equilibrium",
+      "passed": true
+    },
+    {
+      "name": "linear_Qbeta_equivalence",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-001:k0_same_Q_dissolved_field",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-004:k0_same_Q_dissolved_field",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-007:k0_same_Q_dissolved_field",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-010:k0_same_Q_dissolved_field",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-013:k0_same_Q_dissolved_field",
+      "passed": true
+    },
+    {
+      "name": "ABCT0-B-016:k0_same_Q_dissolved_field",
+      "passed": true
+    },
+    {
+      "name": "saved_PF0_min_and_outlet",
+      "passed": true
+    },
+    {
+      "name": "zero_demand_exact_uniform_and_zero_uptake",
+      "passed": true
+    },
+    {
+      "name": "no_wall_exact_zero_tissue_unchanged_lumen",
+      "passed": true
+    },
+    {
+      "name": "clamped_wall_monotonicity",
+      "passed": true
+    },
+    {
+      "name": "all_contrasts_and_selected_pairs_match",
+      "passed": true
+    },
+    {
+      "name": "six_case_union_fill_and_tie_order_match",
+      "passed": true
+    },
+    {
+      "name": "all_18_convergence_metrics_exactly_reproduced",
+      "passed": true
+    },
+    {
+      "name": "H1:decision_and_guard_arithmetic",
+      "passed": true
+    },
+    {
+      "name": "H2:decision_and_guard_arithmetic",
+      "passed": true
+    },
+    {
+      "name": "H3:decision_and_guard_arithmetic",
+      "passed": true
+    },
+    {
+      "name": "sampled_resource_caps",
+      "passed": true
+    },
+    {
+      "name": "one_cpu_affinity",
+      "passed": true
+    }
+  ],
+  "statistics": {
+    "profiles": 78,
+    "stations": 3235,
+    "tissue_cells": 145272,
+    "max_segment_relative_balance": 3.3051677207790725e-08,
+    "max_global_relative_balance": 4.010726546182396e-09,
+    "max_tissue_normalized_residual": 9.930925210801675e-11,
+    "max_finite_s_update_error": 6.6058269965196814e-15,
+    "max_axial_content_residual": 1.999511667349907e-13,
+    "max_absolute_balance_mol_s": 3.3561948625544118e-21,
+    "manifest_payloads": 88,
+    "transport_reruns": 0,
+    "elapsed_manifest_seconds": 38.637544,
+    "peak_sampled_working_MiB": 34.38671875,
+    "output_MiB": 7.012491226196289,
+    "controls_complete_pass_count": 14,
+    "primary_checks_count": 48,
+    "H1_coarse_nonpositive": 0,
+    "H1_coarse_count": 6,
+    "H2_coarse_positive": 12,
+    "H2_coarse_count": 12,
+    "H3_coarse_reversals": 0,
+    "H3_coarse_count": 36,
+    "high_k_errors": [
+      0.00011908484802916619,
+      1.1966000238311514e-05
+    ],
+    "Qbeta_field_error": 7.821521208484228e-13,
+    "k0_max_field_difference": 1.632416424257599e-12
+  },
+  "analytic_errors": {
+    "linear_sink_beta1": {
+      "base": 0.0006841136968743916,
+      "doubled": 0.00033586557913357906
+    },
+    "linear_sink_beta5": {
+      "base": 5.401450415709608e-05,
+      "doubled": 2.4412625715980463e-05
+    },
+    "clamped_zero_order": {
+      "base": 2.1701388889738826e-05,
+      "doubled": 5.425347223211863e-06
+    }
+  },
+  "decisions": {
+    "H1": {
+      "left": "ABCT0-A-001",
+      "right": "ABCT0-A-031",
+      "status": "resolved_selected_witness_does_not_support",
+      "diagnostics": {
+        "distal_tissue": {
+          "fine_delta_right_minus_left": 5.666127806793972e-05,
+          "two_last_change_guard": 5.011502687085612e-06,
+          "resolved": true
+        }
+      },
+      "left_fine": {
+        "B": 0,
+        "P": 5e-06,
+        "Q": 3.3333333333333335e-11,
+        "Q_uL_min": 2.0,
+        "Rhyd": 9359999999.999998,
+        "Rmax": 0.02,
+        "active_cap": "power",
+        "axial_iterations": 5120,
+        "backtracks": 5504,
+        "beta": 1,
+        "bound_in_mol_s": 0.0,
+        "bound_out_mol_s": 0.0,
+        "case_id": "ABCT0-A-001-R2",
+        "clamped": false,
+        "deltaP_Pa": 0.31199999999999994,
+        "deltaP_max_Pa": 0.4679999999999999,
+        "distal_tissue": 0.011653686081216075,
+        "distal_y": 9.947916666666667e-05,
+        "flow_mode": "envelope",
+        "free_in_mol_s": 6.666666666666667e-12,
+        "free_out_mol_s": 5.881268437363543e-12,
+        "inlet_bound": 0.0,
+        "inlet_free": 0.2,
+        "inlet_s": 0.0,
+        "inlet_total": 0.2,
+        "k": null,
+        "kTref": null,
+        "k_residence": null,
+        "kt": null,
+        "lumen_loss_mol_s": 7.853982293031248e-13,
+        "mass_abs_error_mol_s": 2.8931427503286e-21,
+        "mass_relative_error": 3.6836634490503176e-09,
+        "maximum_segment_relative_error": 3.084536862578402e-08,
+        "maximum_tissue_normalized_residual": 9.471078613119435e-11,
+        "minimum_tissue": 0.011653686081216075,
+        "minimum_y": 9.947916666666667e-05,
+        "minimum_z": 0.001,
+        "mu": 1,
+        "newton_iterations": 29422,
+        "ny": 96,
+        "nz": 128,
+        "outlet_bound": 0.0,
+        "outlet_free": 0.17643805312090627,
+        "outlet_s": 0.0,
+        "outlet_total": 0.17643805312090627,
+        "parent_case_id": "ABCT0-A-001",
+        "phase": "A",
+        "power_W": 1.04e-11,
+        "power_max_W": 1.0399999999999998e-11,
+        "power_violation": false,
+        "pressure_violation": false,
+        "profile": "D",
+        "purpose": null,
+        "reaction": "mm",
+        "required_replenishment_mol_s": 7.853982293031248e-13,
+        "residence_s": 3.0000000000000004,
+        "runtime_s": 3.9800840999232605,
+        "slab_calls": 5376,
+        "status": "completed",
+        "uptake_mol_s": 7.853982264359993e-13,
+        "wall_mol_s": 7.853982293291421e-13
+      },
+      "right_fine": {
+        "B": 0.9231144413344916,
+        "P": 5e-06,
+        "Q": 1.25e-11,
+        "Q_uL_min": 0.75,
+        "Rhyd": 37439999999.99999,
+        "Rmax": 0.02,
+        "active_cap": "pressure",
+        "axial_iterations": 5213,
+        "backtracks": 5597,
+        "beta": 1,
+        "bound_in_mol_s": 1.0000000000000001e-11,
+        "bound_out_mol_s": 9.503353940537711e-12,
+        "case_id": "ABCT0-A-031-R2",
+        "clamped": false,
+        "deltaP_Pa": 0.4679999999999999,
+        "deltaP_max_Pa": 0.4679999999999999,
+        "distal_tissue": 0.011710347359284015,
+        "distal_y": 9.947916666666667e-05,
+        "flow_mode": "envelope",
+        "free_in_mol_s": 2.5000000000000003e-12,
+        "free_out_mol_s": 2.211861661564854e-12,
+        "inlet_bound": 0.8,
+        "inlet_free": 0.2,
+        "inlet_s": 0.8666314426231786,
+        "inlet_total": 1.0,
+        "k": null,
+        "kTref": null,
+        "k_residence": null,
+        "kt": null,
+        "lumen_loss_mol_s": 7.847843978974354e-13,
+        "mass_abs_error_mol_s": 3.1475556176770123e-21,
+        "mass_relative_error": 4.010726546182396e-09,
+        "maximum_segment_relative_error": 3.11001580065287e-08,
+        "maximum_tissue_normalized_residual": 9.533701334689012e-11,
+        "minimum_tissue": 0.011710347359284015,
+        "minimum_y": 9.947916666666667e-05,
+        "minimum_z": 0.001,
+        "mu": 4,
+        "newton_iterations": 30015,
+        "ny": 96,
+        "nz": 128,
+        "outlet_bound": 0.7602683152430169,
+        "outlet_free": 0.17694893292518832,
+        "outlet_s": 0.8235905335246865,
+        "outlet_total": 0.9372172481682052,
+        "parent_case_id": "ABCT0-A-031",
+        "phase": "A",
+        "power_W": 5.8499999999999995e-12,
+        "power_max_W": 1.0399999999999998e-11,
+        "power_violation": false,
+        "pressure_violation": false,
+        "profile": "H_eq",
+        "purpose": null,
+        "reaction": "mm",
+        "required_replenishment_mol_s": 7.847843978974354e-13,
+        "residence_s": 8.000000000000002,
+        "runtime_s": 4.028398200054653,
+        "slab_calls": 5469,
+        "status": "completed",
+        "uptake_mol_s": 7.847843947498797e-13,
+        "wall_mol_s": 7.84784397871073e-13
+      }
+    },
+    "H2": {
+      "left": "ABCT0-B-011",
+      "right": "ABCT0-A-031",
+      "status": "resolved_selected_witness_supports",
+      "diagnostics": {
+        "uptake_mol_s": {
+          "fine_delta_right_minus_left": 5.580471482747341e-14,
+          "two_last_change_guard": 9.8174597508097e-16,
+          "resolved": true
+        }
+      },
+      "left_fine": {
+        "B": 0.9231144413344916,
+        "P": 5e-06,
+        "Q": 1.25e-11,
+        "Q_uL_min": 0.75,
+        "Rhyd": 37439999999.99999,
+        "Rmax": 0.02,
+        "active_cap": "pressure",
+        "axial_iterations": 5120,
+        "backtracks": 5504,
+        "beta": 1,
+        "bound_in_mol_s": 1.0000000000000001e-11,
+        "bound_out_mol_s": 9.848500847453533e-12,
+        "case_id": "ABCT0-B-011-R2",
+        "clamped": false,
+        "deltaP_Pa": 0.4679999999999999,
+        "deltaP_max_Pa": 0.4679999999999999,
+        "distal_tissue": 0.009325714676076988,
+        "distal_y": 9.947916666666667e-05,
+        "flow_mode": "envelope",
+        "free_in_mol_s": 2.5000000000000003e-12,
+        "free_out_mol_s": 1.9225194713385463e-12,
+        "inlet_bound": 0.8,
+        "inlet_free": 0.2,
+        "inlet_s": 0.8666314426231786,
+        "inlet_total": 1.0,
+        "k": 0.03333333333333333,
+        "kTref": 0.1,
+        "k_residence": 0.2666666666666667,
+        "kt": null,
+        "lumen_loss_mol_s": 7.289796812079211e-13,
+        "mass_abs_error_mol_s": 1.3062987290834432e-21,
+        "mass_relative_error": 1.7919549237389705e-09,
+        "maximum_segment_relative_error": 2.890499991330235e-08,
+        "maximum_tissue_normalized_residual": 8.768314133102932e-11,
+        "minimum_tissue": 0.009325714676076988,
+        "minimum_y": 9.947916666666667e-05,
+        "minimum_z": 0.001,
+        "mu": 4,
+        "newton_iterations": 27546,
+        "ny": 96,
+        "nz": 128,
+        "outlet_bound": 0.7878800677962826,
+        "outlet_free": 0.1538015577070837,
+        "outlet_s": 0.8535020497104252,
+        "outlet_total": 0.9416816255033663,
+        "parent_case_id": "ABCT0-B-011",
+        "phase": "B",
+        "power_W": 5.8499999999999995e-12,
+        "power_max_W": 1.0399999999999998e-11,
+        "power_violation": false,
+        "pressure_violation": false,
+        "profile": "H_finite",
+        "purpose": null,
+        "reaction": "mm",
+        "required_replenishment_mol_s": 7.289796812079211e-13,
+        "residence_s": 8.000000000000002,
+        "runtime_s": 3.6764852000633255,
+        "slab_calls": 5376,
+        "status": "completed",
+        "uptake_mol_s": 7.289796799224063e-13,
+        "wall_mol_s": 7.289796812287051e-13
+      },
+      "right_fine": {
+        "B": 0.9231144413344916,
+        "P": 5e-06,
+        "Q": 1.25e-11,
+        "Q_uL_min": 0.75,
+        "Rhyd": 37439999999.99999,
+        "Rmax": 0.02,
+        "active_cap": "pressure",
+        "axial_iterations": 5213,
+        "backtracks": 5597,
+        "beta": 1,
+        "bound_in_mol_s": 1.0000000000000001e-11,
+        "bound_out_mol_s": 9.503353940537711e-12,
+        "case_id": "ABCT0-A-031-R2",
+        "clamped": false,
+        "deltaP_Pa": 0.4679999999999999,
+        "deltaP_max_Pa": 0.4679999999999999,
+        "distal_tissue": 0.011710347359284015,
+        "distal_y": 9.947916666666667e-05,
+        "flow_mode": "envelope",
+        "free_in_mol_s": 2.5000000000000003e-12,
+        "free_out_mol_s": 2.211861661564854e-12,
+        "inlet_bound": 0.8,
+        "inlet_free": 0.2,
+        "inlet_s": 0.8666314426231786,
+        "inlet_total": 1.0,
+        "k": null,
+        "kTref": null,
+        "k_residence": null,
+        "kt": null,
+        "lumen_loss_mol_s": 7.847843978974354e-13,
+        "mass_abs_error_mol_s": 3.1475556176770123e-21,
+        "mass_relative_error": 4.010726546182396e-09,
+        "maximum_segment_relative_error": 3.11001580065287e-08,
+        "maximum_tissue_normalized_residual": 9.533701334689012e-11,
+        "minimum_tissue": 0.011710347359284015,
+        "minimum_y": 9.947916666666667e-05,
+        "minimum_z": 0.001,
+        "mu": 4,
+        "newton_iterations": 30015,
+        "ny": 96,
+        "nz": 128,
+        "outlet_bound": 0.7602683152430169,
+        "outlet_free": 0.17694893292518832,
+        "outlet_s": 0.8235905335246865,
+        "outlet_total": 0.9372172481682052,
+        "parent_case_id": "ABCT0-A-031",
+        "phase": "A",
+        "power_W": 5.8499999999999995e-12,
+        "power_max_W": 1.0399999999999998e-11,
+        "power_violation": false,
+        "pressure_violation": false,
+        "profile": "H_eq",
+        "purpose": null,
+        "reaction": "mm",
+        "required_replenishment_mol_s": 7.847843978974354e-13,
+        "residence_s": 8.000000000000002,
+        "runtime_s": 4.028398200054653,
+        "slab_calls": 5469,
+        "status": "completed",
+        "uptake_mol_s": 7.847843947498797e-13,
+        "wall_mol_s": 7.84784397871073e-13
+      }
+    },
+    "H3": {
+      "left": "ABCT0-B-013",
+      "right": "ABCT0-B-016",
+      "status": "resolved_selected_witness_does_not_support",
+      "diagnostics": {
+        "distal_tissue": {
+          "fine_delta_right_minus_left": 0.008486109334582666,
+          "two_last_change_guard": 0.00017756229640290833,
+          "resolved": true
+        },
+        "uptake_mol_s": {
+          "fine_delta_right_minus_left": 7.380788679286948e-14,
+          "two_last_change_guard": 3.2234158993653817e-15,
+          "resolved": true
+        }
+      },
+      "left_fine": {
+        "B": 0.9231144413344916,
+        "P": 5e-05,
+        "Q": 1.25e-11,
+        "Q_uL_min": 0.75,
+        "Rhyd": 37439999999.99999,
+        "Rmax": 0.02,
+        "active_cap": "pressure",
+        "axial_iterations": 5120,
+        "backtracks": 0,
+        "beta": 1,
+        "bound_in_mol_s": 1.0000000000000001e-11,
+        "bound_out_mol_s": 1.0000000000000001e-11,
+        "case_id": "ABCT0-B-013-R2",
+        "clamped": false,
+        "deltaP_Pa": 0.4679999999999999,
+        "deltaP_max_Pa": 0.4679999999999999,
+        "distal_tissue": 0.03153152507332194,
+        "distal_y": 9.947916666666667e-05,
+        "flow_mode": "envelope",
+        "free_in_mol_s": 2.5000000000000003e-12,
+        "free_out_mol_s": 1.0375003224248758e-12,
+        "inlet_bound": 0.8,
+        "inlet_free": 0.2,
+        "inlet_s": 0.8666314426231786,
+        "inlet_total": 1.0,
+        "k": 0.0,
+        "kTref": 0,
+        "k_residence": 0.0,
+        "kt": null,
+        "lumen_loss_mol_s": 1.4624996775751242e-12,
+        "mass_abs_error_mol_s": 3.3561948625544118e-21,
+        "mass_relative_error": 2.2948345999768702e-09,
+        "maximum_segment_relative_error": 3.3051677207790725e-08,
+        "maximum_tissue_normalized_residual": 9.549262454895707e-11,
+        "minimum_tissue": 0.03153152507332194,
+        "minimum_y": 9.947916666666667e-05,
+        "minimum_z": 0.001,
+        "mu": 4,
+        "newton_iterations": 17517,
+        "ny": 96,
+        "nz": 128,
+        "outlet_bound": 0.8,
+        "outlet_free": 0.08300002579399006,
+        "outlet_s": 0.8666314426231786,
+        "outlet_total": 0.8830000257939901,
+        "parent_case_id": "ABCT0-B-013",
+        "phase": "B",
+        "power_W": 5.8499999999999995e-12,
+        "power_max_W": 1.0399999999999998e-11,
+        "power_violation": false,
+        "pressure_violation": false,
+        "profile": "H_finite",
+        "purpose": null,
+        "reaction": "mm",
+        "required_replenishment_mol_s": 1.4624996775751242e-12,
+        "residence_s": 8.000000000000002,
+        "runtime_s": 2.496496699983254,
+        "slab_calls": 5376,
+        "status": "completed",
+        "uptake_mol_s": 1.4624996742189293e-12,
+        "wall_mol_s": 1.462499677572763e-12
+      },
+      "right_fine": {
+        "B": 0.9231144413344916,
+        "P": 0.0002,
+        "Q": 1.25e-11,
+        "Q_uL_min": 0.75,
+        "Rhyd": 37439999999.99999,
+        "Rmax": 0.02,
+        "active_cap": "pressure",
+        "axial_iterations": 5120,
+        "backtracks": 0,
+        "beta": 1,
+        "bound_in_mol_s": 1.0000000000000001e-11,
+        "bound_out_mol_s": 1.0000000000000001e-11,
+        "case_id": "ABCT0-B-016-R2",
+        "clamped": false,
+        "deltaP_Pa": 0.4679999999999999,
+        "deltaP_max_Pa": 0.4679999999999999,
+        "distal_tissue": 0.0400176344079046,
+        "distal_y": 9.947916666666667e-05,
+        "flow_mode": "envelope",
+        "free_in_mol_s": 2.5000000000000003e-12,
+        "free_out_mol_s": 9.636924384426496e-13,
+        "inlet_bound": 0.8,
+        "inlet_free": 0.2,
+        "inlet_s": 0.8666314426231786,
+        "inlet_total": 1.0,
+        "k": 0.0,
+        "kTref": 0,
+        "k_residence": 0.0,
+        "kt": null,
+        "lumen_loss_mol_s": 1.5363075615573499e-12,
+        "mass_abs_error_mol_s": 5.499171837054254e-22,
+        "mass_relative_error": 3.5794732608515794e-10,
+        "maximum_segment_relative_error": 6.4377878153068876e-09,
+        "maximum_tissue_normalized_residual": 4.911727753397505e-12,
+        "minimum_tissue": 0.0400176344079046,
+        "minimum_y": 9.947916666666667e-05,
+        "minimum_z": 0.001,
+        "mu": 4,
+        "newton_iterations": 15772,
+        "ny": 96,
+        "nz": 128,
+        "outlet_bound": 0.8,
+        "outlet_free": 0.07709539507541197,
+        "outlet_s": 0.8666314426231786,
+        "outlet_total": 0.877095395075412,
+        "parent_case_id": "ABCT0-B-016",
+        "phase": "B",
+        "power_W": 5.8499999999999995e-12,
+        "power_max_W": 1.0399999999999998e-11,
+        "power_violation": false,
+        "pressure_violation": false,
+        "profile": "H_finite",
+        "purpose": null,
+        "reaction": "mm",
+        "required_replenishment_mol_s": 1.5363075615573499e-12,
+        "residence_s": 8.000000000000002,
+        "runtime_s": 2.2433484999928623,
+        "slab_calls": 5376,
+        "status": "completed",
+        "uptake_mol_s": 1.5363075610117988e-12,
+        "wall_mol_s": 1.536307561561716e-12
+      }
+    }
+  },
+  "limits": [
+    "Within-project independent QA; not external experimental replication.",
+    "Last-grid differences are diagnostics, not certified error bounds.",
+    "Only selected pairs refined; no global absence or clinical/material claim."
+  ]
+}

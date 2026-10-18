@@ -1,0 +1,62 @@
+{
+  "attempt_id": "L06_N32",
+  "checks": [
+    {
+      "name": "actual_production_calls",
+      "passed": true
+    },
+    {
+      "name": "radial_closure_explicit",
+      "passed": true
+    },
+    {
+      "name": "flow_and_residence",
+      "passed": true
+    },
+    {
+      "name": "envelope_flags",
+      "passed": true
+    },
+    {
+      "max_scaled": 9.818534874028728e-13,
+      "name": "discrete_BE_path",
+      "passed": true
+    },
+    {
+      "name": "discrete_BE_uptake",
+      "passed": true,
+      "scaled": 1.20570220474292e-13
+    },
+    {
+      "max_scaled": 0.0,
+      "name": "independent_Lily_BE_endpoint",
+      "passed": true
+    },
+    {
+      "bound_scaled": 2.7755575615628914e-16,
+      "name": "separate_total_and_bound_updates",
+      "passed": true,
+      "total_scaled": 9.78106484694763e-13
+    },
+    {
+      "name": "nonnegative_unclipped_states",
+      "passed": true
+    },
+    {
+      "max_relative": 0.0,
+      "name": "endpoint_coordinates",
+      "passed": true
+    }
+  ],
+  "metrics": {
+    "alpha_reference": 0.2,
+    "continuum_endpoint_scaled_error": 0.001155068198294279,
+    "discrete_path_scaled_error": 9.818534874028728e-13,
+    "discrete_uptake_scaled_error": 1.20570220474292e-13,
+    "endpoint_exact": [
+      0.145229807414735,
+      0.5809192296589634
+    ]
+  },
+  "passed": true
+}

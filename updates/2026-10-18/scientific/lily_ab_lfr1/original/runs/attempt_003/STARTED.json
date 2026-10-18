@@ -1,0 +1,13 @@
+{
+  "utc": "20261017T225737031013Z",
+  "case_hash": "026f087fe1c95bc82f941ec122e050e32c742a436628b06eda4ef837173aadea",
+  "source_hashes": {
+    "benchmark.py": "5273764a1565396fb172c546fdf7ae34cf99a0cdb22816f73e5160aea6d7bf7e",
+    "run_benchmark.py": "5857414782a7990bbc4cec1d8b3d1fd4a6c072ecd51f325cb3838db51252cbc7",
+    "FROZEN_CASES.json": "026f087fe1c95bc82f941ec122e050e32c742a436628b06eda4ef837173aadea"
+  },
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "os": "Linux",
+  "mpmath": "1.3.0",
+  "scope": "AB-LFR1 only"
+}

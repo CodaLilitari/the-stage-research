@@ -1,0 +1,50 @@
+{
+  "B": 0.9231144413344916,
+  "D": 2e-09,
+  "Km": 0.028,
+  "L": 0.001,
+  "Qref": 3.3333333333333335e-11,
+  "Tref": 3.0,
+  "analytic_doubled_concentration_tol": 0.002,
+  "axial_max": 80,
+  "axial_relative_tol": 1e-12,
+  "backtrack_max": 40,
+  "c50": 0.1,
+  "cin": 0.2,
+  "concentration_refinement_tol": 0.001,
+  "coordinate_convention": "Tissue cell centers; axial downstream segment ends. Distal is final tissue cell at outlet, not exact continuum boundary.",
+  "d": 0.0001,
+  "domain_relative_tol": 1e-12,
+  "gap": 0.0001,
+  "hill_n": 2.7,
+  "host_start_free_bytes": 2147483648,
+  "host_stop_free_bytes": 1073741824,
+  "mass_relative_tol": 1e-06,
+  "mass_residual_scale": "max(abs(lumen loss), abs(wall), abs(reaction), zero_flux_floor), segment floor scaled by dz/L; pass abs error <= max(1e-6*scale, floor)",
+  "max_attempts": 80,
+  "mu0": 0.00078,
+  "newton_max": 50,
+  "nonlinear_relative_tol": 1e-10,
+  "output_limit_bytes": 262144000,
+  "process_limit_bytes": 1073741824,
+  "refinement_grids": [
+    [
+      48,
+      64
+    ],
+    [
+      96,
+      128
+    ]
+  ],
+  "reserved_extra_solves": 2,
+  "saved_pf0_concentration_tol": 2e-09,
+  "scope": "Hypothetical finite axial flux with clamped inlet; no empirical carrier, finite reservoir, closed-loop or biological validation.",
+  "tissue_residual_scale": "max(D*cin/d, Rmax*d, P*cin), units mol/(m2*s)",
+  "uptake_refinement_relative_tol": 0.01,
+  "w": 0.001,
+  "wall_minutes": 30,
+  "worker_count": 1,
+  "zero_flux_floor": "1e-12*Qref*cin mol/s",
+  "zero_flux_relative_tol": 1e-12
+}

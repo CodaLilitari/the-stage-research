@@ -1,0 +1,3934 @@
+{
+  "scope": "Independent Decimal scalar formulas on the SAME 198 frozen time points; saved-result and provenance review, no new case or transport run.",
+  "checks": 628,
+  "passed": 625,
+  "failed": 3,
+  "assertions": [
+    {
+      "name": "C00@0:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C00@0:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C00@0:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C00@1e-12:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C00@1e-12:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C00@1e-12:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C00@1e-9:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C00@1e-9:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C00@1e-9:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C00@1e-6:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C00@1e-6:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C00@1e-6:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C00@1e-3:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C00@1e-3:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C00@1e-3:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C00@0.01:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C00@0.01:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C00@0.01:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C00@0.1:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C00@0.1:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C00@0.1:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C00@0.5:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C00@0.5:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C00@0.5:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C00@1:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C00@1:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C00@1:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C01@0:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C01@0:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C01@0:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C01@1e-12:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C01@1e-12:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C01@1e-12:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C01@1e-9:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C01@1e-9:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C01@1e-9:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C01@1e-6:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C01@1e-6:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C01@1e-6:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C01@1e-3:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C01@1e-3:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C01@1e-3:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C01@0.01:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C01@0.01:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C01@0.01:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C01@0.1:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C01@0.1:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C01@0.1:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C01@0.5:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C01@0.5:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C01@0.5:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C01@1:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C01@1:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C01@1:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C02@0:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C02@0:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C02@0:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C02@1e-12:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C02@1e-12:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C02@1e-12:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C02@1e-9:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C02@1e-9:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C02@1e-9:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C02@1e-6:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C02@1e-6:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C02@1e-6:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C02@1e-3:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C02@1e-3:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C02@1e-3:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C02@0.01:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C02@0.01:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C02@0.01:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C02@0.1:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C02@0.1:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C02@0.1:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C02@0.5:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C02@0.5:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C02@0.5:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C02@1:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C02@1:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C02@1:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C03@0:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C03@0:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C03@0:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C03@1e-12:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C03@1e-12:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C03@1e-12:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C03@1e-9:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C03@1e-9:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C03@1e-9:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C03@1e-6:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C03@1e-6:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C03@1e-6:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C03@1e-3:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C03@1e-3:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C03@1e-3:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C03@0.01:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C03@0.01:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C03@0.01:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C03@0.1:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C03@0.1:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C03@0.1:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C03@0.5:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C03@0.5:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C03@0.5:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C03@1:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C03@1:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C03@1:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C04@0:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C04@0:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C04@0:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C04@1e-12:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C04@1e-12:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C04@1e-12:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C04@1e-9:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C04@1e-9:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C04@1e-9:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C04@1e-6:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C04@1e-6:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C04@1e-6:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C04@1e-3:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C04@1e-3:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C04@1e-3:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C04@0.01:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C04@0.01:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C04@0.01:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C04@0.1:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C04@0.1:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C04@0.1:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C04@0.5:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C04@0.5:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C04@0.5:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C04@1:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C04@1:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C04@1:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C05@0:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C05@0:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C05@0:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C05@1e-12:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C05@1e-12:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C05@1e-12:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C05@1e-9:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C05@1e-9:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C05@1e-9:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C05@1e-6:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C05@1e-6:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C05@1e-6:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C05@1e-3:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C05@1e-3:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C05@1e-3:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C05@0.01:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C05@0.01:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C05@0.01:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C05@0.1:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C05@0.1:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C05@0.1:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C05@0.5:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C05@0.5:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C05@0.5:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C05@1:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C05@1:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C05@1:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C06@0:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C06@0:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C06@0:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C06@1e-12:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C06@1e-12:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C06@1e-12:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C06@1e-9:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C06@1e-9:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C06@1e-9:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C06@1e-6:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C06@1e-6:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C06@1e-6:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C06@1e-3:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C06@1e-3:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C06@1e-3:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C06@0.01:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C06@0.01:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C06@0.01:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C06@0.1:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C06@0.1:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C06@0.1:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C06@0.5:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C06@0.5:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C06@0.5:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C06@1:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C06@1:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C06@1:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C07@0:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C07@0:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C07@0:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C07@1e-12:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C07@1e-12:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C07@1e-12:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C07@1e-9:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C07@1e-9:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C07@1e-9:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C07@1e-6:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C07@1e-6:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C07@1e-6:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C07@1e-3:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C07@1e-3:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C07@1e-3:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C07@0.01:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C07@0.01:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C07@0.01:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C07@0.1:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C07@0.1:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C07@0.1:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C07@0.5:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C07@0.5:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C07@0.5:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C07@1:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C07@1:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C07@1:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C08@0:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C08@0:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C08@0:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C08@1e-12:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C08@1e-12:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C08@1e-12:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C08@1e-9:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C08@1e-9:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C08@1e-9:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C08@1e-6:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C08@1e-6:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C08@1e-6:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C08@1e-3:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C08@1e-3:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C08@1e-3:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C08@0.01:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C08@0.01:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C08@0.01:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C08@0.1:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C08@0.1:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C08@0.1:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C08@0.5:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C08@0.5:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C08@0.5:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C08@1:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C08@1:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C08@1:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C09@0:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C09@0:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C09@0:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C09@1e-12:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C09@1e-12:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C09@1e-12:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C09@1e-9:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C09@1e-9:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C09@1e-9:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C09@1e-6:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C09@1e-6:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C09@1e-6:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C09@1e-3:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C09@1e-3:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C09@1e-3:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C09@0.01:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C09@0.01:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C09@0.01:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C09@0.1:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C09@0.1:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C09@0.1:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C09@0.5:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C09@0.5:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C09@0.5:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C09@1:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C09@1:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C09@1:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C10@0:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C10@0:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C10@0:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C10@1e-12:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C10@1e-12:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C10@1e-12:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C10@1e-9:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C10@1e-9:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C10@1e-9:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C10@1e-6:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C10@1e-6:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C10@1e-6:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C10@1e-3:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C10@1e-3:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C10@1e-3:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C10@0.01:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C10@0.01:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C10@0.01:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C10@0.1:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C10@0.1:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C10@0.1:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C10@0.5:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C10@0.5:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C10@0.5:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C10@1:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C10@1:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C10@1:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C11@0:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C11@0:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C11@0:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C11@1e-12:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C11@1e-12:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C11@1e-12:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C11@1e-9:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C11@1e-9:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C11@1e-9:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C11@1e-6:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C11@1e-6:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C11@1e-6:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C11@1e-3:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C11@1e-3:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C11@1e-3:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C11@0.01:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C11@0.01:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C11@0.01:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C11@0.1:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C11@0.1:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C11@0.1:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C11@0.5:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C11@0.5:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C11@0.5:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C11@1:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C11@1:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C11@1:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C12@0:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C12@0:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C12@0:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C12@1e-12:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C12@1e-12:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C12@1e-12:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C12@1e-9:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C12@1e-9:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C12@1e-9:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C12@1e-6:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C12@1e-6:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C12@1e-6:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C12@1e-3:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C12@1e-3:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C12@1e-3:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C12@0.01:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C12@0.01:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C12@0.01:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C12@0.1:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C12@0.1:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C12@0.1:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C12@0.5:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C12@0.5:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C12@0.5:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C12@1:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C12@1:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C12@1:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C13@0:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C13@0:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C13@0:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C13@1e-12:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C13@1e-12:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C13@1e-12:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C13@1e-9:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C13@1e-9:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C13@1e-9:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C13@1e-6:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C13@1e-6:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C13@1e-6:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C13@1e-3:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C13@1e-3:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C13@1e-3:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C13@0.01:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C13@0.01:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C13@0.01:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C13@0.1:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C13@0.1:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C13@0.1:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C13@0.5:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C13@0.5:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C13@0.5:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C13@1:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C13@1:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C13@1:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C14@0:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C14@0:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C14@0:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C14@1e-12:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C14@1e-12:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C14@1e-12:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C14@1e-9:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C14@1e-9:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C14@1e-9:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C14@1e-6:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C14@1e-6:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C14@1e-6:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C14@1e-3:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C14@1e-3:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C14@1e-3:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C14@0.01:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C14@0.01:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C14@0.01:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C14@0.1:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C14@0.1:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C14@0.1:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C14@0.5:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C14@0.5:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C14@0.5:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C14@1:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C14@1:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C14@1:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C15@0:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C15@0:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C15@0:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C15@1e-12:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C15@1e-12:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C15@1e-12:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C15@1e-9:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C15@1e-9:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C15@1e-9:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C15@1e-6:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C15@1e-6:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C15@1e-6:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C15@1e-3:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C15@1e-3:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C15@1e-3:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C15@0.01:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C15@0.01:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C15@0.01:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C15@0.1:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C15@0.1:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C15@0.1:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C15@0.5:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C15@0.5:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C15@0.5:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C15@1:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C15@1:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C15@1:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C16@0:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C16@0:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C16@0:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C16@1e-12:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C16@1e-12:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C16@1e-12:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C16@1e-9:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C16@1e-9:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C16@1e-9:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C16@1e-6:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C16@1e-6:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C16@1e-6:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C16@1e-3:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C16@1e-3:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C16@1e-3:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C16@0.01:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C16@0.01:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C16@0.01:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C16@0.1:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C16@0.1:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C16@0.1:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C16@0.5:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C16@0.5:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C16@0.5:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C16@1:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C16@1:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C16@1:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C17@0:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C17@0:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C17@0:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C17@1e-12:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C17@1e-12:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C17@1e-12:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C17@1e-9:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C17@1e-9:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C17@1e-9:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C17@1e-6:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C17@1e-6:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C17@1e-6:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C17@1e-3:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C17@1e-3:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C17@1e-3:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C17@0.01:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C17@0.01:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C17@0.01:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C17@0.1:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C17@0.1:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C17@0.1:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C17@0.5:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C17@0.5:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C17@0.5:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C17@1:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C17@1:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C17@1:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C18@0:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C18@0:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C18@0:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C18@1e-12:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C18@1e-12:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C18@1e-12:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C18@1e-9:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C18@1e-9:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C18@1e-9:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C18@1e-6:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C18@1e-6:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C18@1e-6:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C18@1e-3:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C18@1e-3:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C18@1e-3:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C18@0.01:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C18@0.01:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C18@0.01:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C18@0.1:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C18@0.1:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C18@0.1:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C18@0.5:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C18@0.5:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C18@0.5:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C18@1:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C18@1:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C18@1:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C19@0:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C19@0:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C19@0:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C19@1e-12:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C19@1e-12:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C19@1e-12:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C19@1e-9:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C19@1e-9:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C19@1e-9:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C19@1e-6:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C19@1e-6:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C19@1e-6:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C19@1e-3:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C19@1e-3:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C19@1e-3:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C19@0.01:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C19@0.01:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C19@0.01:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C19@0.1:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C19@0.1:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C19@0.1:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C19@0.5:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C19@0.5:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C19@0.5:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C19@1:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C19@1:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C19@1:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C20@0:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C20@0:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C20@0:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C20@1e-12:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C20@1e-12:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C20@1e-12:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C20@1e-9:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C20@1e-9:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C20@1e-9:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C20@1e-6:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C20@1e-6:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C20@1e-6:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C20@1e-3:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C20@1e-3:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C20@1e-3:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C20@0.01:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C20@0.01:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C20@0.01:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C20@0.1:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C20@0.1:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C20@0.1:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C20@0.5:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C20@0.5:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C20@0.5:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C20@1:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C20@1:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C20@1:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C21@0:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C21@0:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C21@0:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C21@1e-12:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C21@1e-12:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C21@1e-12:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C21@1e-9:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C21@1e-9:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C21@1e-9:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C21@1e-6:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C21@1e-6:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C21@1e-6:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C21@1e-3:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C21@1e-3:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C21@1e-3:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C21@0.01:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C21@0.01:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C21@0.01:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C21@0.1:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C21@0.1:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C21@0.1:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C21@0.5:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C21@0.5:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C21@0.5:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C21@1:independent_scalar_states_and_inventory",
+      "passed": true
+    },
+    {
+      "name": "C21@1:independent_stable_flux",
+      "passed": true
+    },
+    {
+      "name": "C21@1:linear_model_invariants",
+      "passed": true
+    },
+    {
+      "name": "C00:monotone_c_b_total",
+      "passed": true
+    },
+    {
+      "name": "C01:monotone_c_b_total",
+      "passed": true
+    },
+    {
+      "name": "C02:monotone_c_b_total",
+      "passed": true
+    },
+    {
+      "name": "C03:monotone_c_b_total",
+      "passed": true
+    },
+    {
+      "name": "C04:monotone_c_b_total",
+      "passed": true
+    },
+    {
+      "name": "C05:monotone_c_b_total",
+      "passed": true
+    },
+    {
+      "name": "C06:monotone_c_b_total",
+      "passed": true
+    },
+    {
+      "name": "C07:monotone_c_b_total",
+      "passed": true
+    },
+    {
+      "name": "C08:monotone_c_b_total",
+      "passed": true
+    },
+    {
+      "name": "C09:monotone_c_b_total",
+      "passed": true
+    },
+    {
+      "name": "C10:monotone_c_b_total",
+      "passed": true
+    },
+    {
+      "name": "C11:monotone_c_b_total",
+      "passed": true
+    },
+    {
+      "name": "C12:monotone_c_b_total",
+      "passed": true
+    },
+    {
+      "name": "C13:monotone_c_b_total",
+      "passed": true
+    },
+    {
+      "name": "C14:monotone_c_b_total",
+      "passed": true
+    },
+    {
+      "name": "C15:monotone_c_b_total",
+      "passed": true
+    },
+    {
+      "name": "C16:monotone_c_b_total",
+      "passed": true
+    },
+    {
+      "name": "C17:monotone_c_b_total",
+      "passed": true
+    },
+    {
+      "name": "C18:monotone_c_b_total",
+      "passed": true
+    },
+    {
+      "name": "C19:monotone_c_b_total",
+      "passed": true
+    },
+    {
+      "name": "C20:monotone_c_b_total",
+      "passed": true
+    },
+    {
+      "name": "C21:monotone_c_b_total",
+      "passed": true
+    },
+    {
+      "name": "replay_equal_decoded_rows:states.csv",
+      "passed": false
+    },
+    {
+      "name": "replay_equal_decoded_rows:terminal.csv",
+      "passed": false
+    },
+    {
+      "name": "replay_exact_bytes:backward_euler.csv",
+      "passed": true
+    },
+    {
+      "name": "replay_equal_decoded_rows:checks.jsonl",
+      "passed": false
+    },
+    {
+      "name": "replay_summary_except_clock",
+      "passed": true
+    },
+    {
+      "name": "only_frozen_negative_expectation_failed",
+      "passed": true
+    },
+    {
+      "name": "exact_declared_counts",
+      "passed": true
+    },
+    {
+      "name": "supplementary_saved_198",
+      "passed": true
+    },
+    {
+      "name": "supplementary_report_recount",
+      "passed": true
+    },
+    {
+      "name": "stiff_subtraction_witness",
+      "passed": true
+    },
+    {
+      "name": "reported_state_discrepancies",
+      "passed": true
+    },
+    {
+      "name": "received_originals_still_unchanged",
+      "passed": true
+    }
+  ],
+  "details": [
+    {
+      "case_id": "C00",
+      "fraction": "0",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C00",
+      "fraction": "1e-12",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C00",
+      "fraction": "1e-9",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C00",
+      "fraction": "1e-6",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C00",
+      "fraction": "1e-3",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C00",
+      "fraction": "0.01",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C00",
+      "fraction": "0.1",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C00",
+      "fraction": "0.5",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C00",
+      "fraction": "1",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C01",
+      "fraction": "0",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C01",
+      "fraction": "1e-12",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C01",
+      "fraction": "1e-9",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C01",
+      "fraction": "1e-6",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C01",
+      "fraction": "1e-3",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C01",
+      "fraction": "0.01",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C01",
+      "fraction": "0.1",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.8092926974671156e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C01",
+      "fraction": "0.5",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C01",
+      "fraction": "1",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C02",
+      "fraction": "0",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C02",
+      "fraction": "1e-12",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C02",
+      "fraction": "1e-9",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C02",
+      "fraction": "1e-6",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C02",
+      "fraction": "1e-3",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C02",
+      "fraction": "0.01",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C02",
+      "fraction": "0.1",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.8092926974671156e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C02",
+      "fraction": "0.5",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C02",
+      "fraction": "1",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C03",
+      "fraction": "0",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C03",
+      "fraction": "1e-12",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C03",
+      "fraction": "1e-9",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C03",
+      "fraction": "1e-6",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C03",
+      "fraction": "1e-3",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C03",
+      "fraction": "0.01",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C03",
+      "fraction": "0.1",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.8092926974671156e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C03",
+      "fraction": "0.5",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C03",
+      "fraction": "1",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C04",
+      "fraction": "0",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C04",
+      "fraction": "1e-12",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C04",
+      "fraction": "1e-9",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C04",
+      "fraction": "1e-6",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C04",
+      "fraction": "1e-3",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C04",
+      "fraction": "0.01",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C04",
+      "fraction": "0.1",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.8092926974671156e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C04",
+      "fraction": "0.5",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C04",
+      "fraction": "1",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C05",
+      "fraction": "0",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C05",
+      "fraction": "1e-12",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C05",
+      "fraction": "1e-9",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C05",
+      "fraction": "1e-6",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C05",
+      "fraction": "1e-3",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 4.360367276375433e-05
+    },
+    {
+      "case_id": "C05",
+      "fraction": "0.01",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C05",
+      "fraction": "0.1",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C05",
+      "fraction": "0.5",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C05",
+      "fraction": "1",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C06",
+      "fraction": "0",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C06",
+      "fraction": "1e-12",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C06",
+      "fraction": "1e-9",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C06",
+      "fraction": "1e-6",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 6.938893903907228e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C06",
+      "fraction": "1e-3",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C06",
+      "fraction": "0.01",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C06",
+      "fraction": "0.1",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C06",
+      "fraction": "0.5",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C06",
+      "fraction": "1",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C07",
+      "fraction": "0",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C07",
+      "fraction": "1e-12",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C07",
+      "fraction": "1e-9",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.637978807091713e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C07",
+      "fraction": "1e-6",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.637978807091713e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C07",
+      "fraction": "1e-3",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.637978807091713e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C07",
+      "fraction": "0.01",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.637978807091713e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C07",
+      "fraction": "0.1",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.637978807091713e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C07",
+      "fraction": "0.5",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.637978807091713e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C07",
+      "fraction": "1",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.637978807091713e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C08",
+      "fraction": "0",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C08",
+      "fraction": "1e-12",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C08",
+      "fraction": "1e-9",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.469446955206221e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C08",
+      "fraction": "1e-6",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C08",
+      "fraction": "1e-3",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C08",
+      "fraction": "0.01",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C08",
+      "fraction": "0.1",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.469446952110956e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C08",
+      "fraction": "0.5",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C08",
+      "fraction": "1",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 4.258171064762129e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C09",
+      "fraction": "0",
+      "scalar_reference_ratio": 1.0000000000000001e-77,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C09",
+      "fraction": "1e-12",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.469446951953614e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C09",
+      "fraction": "1e-9",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.469446955206221e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C09",
+      "fraction": "1e-6",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.4694469519536305e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C09",
+      "fraction": "1e-3",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C09",
+      "fraction": "0.01",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C09",
+      "fraction": "0.1",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.808560221631706e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C09",
+      "fraction": "0.5",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.472888299764469e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C09",
+      "fraction": "1",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 4.158625829424924e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C10",
+      "fraction": "0",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C10",
+      "fraction": "1e-12",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.469446951953614e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C10",
+      "fraction": "1e-9",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.469446951953614e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C10",
+      "fraction": "1e-6",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C10",
+      "fraction": "1e-3",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 6.938897150019527e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C10",
+      "fraction": "0.01",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.5014681972386874e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C10",
+      "fraction": "0.1",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.7477295561724625e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C10",
+      "fraction": "0.5",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 4.3132516356733514e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C10",
+      "fraction": "1",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.9602824887649355e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C11",
+      "fraction": "0",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C11",
+      "fraction": "1e-12",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.469446951956866e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C11",
+      "fraction": "1e-9",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.4694469552062194e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C11",
+      "fraction": "1e-6",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C11",
+      "fraction": "1e-3",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.4721459935687966e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C11",
+      "fraction": "0.01",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.4746569563911784e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C11",
+      "fraction": "0.1",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C11",
+      "fraction": "0.5",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C11",
+      "fraction": "1",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 4.184705423637521e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C12",
+      "fraction": "0",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C12",
+      "fraction": "1e-12",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C12",
+      "fraction": "1e-9",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.4694469519536155e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C12",
+      "fraction": "1e-6",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.4694469535772097e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C12",
+      "fraction": "1e-3",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.470614464809245e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C12",
+      "fraction": "0.01",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.4764781821110504e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C12",
+      "fraction": "0.1",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.5355901431397466e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C12",
+      "fraction": "0.5",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.8098036323092564e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C12",
+      "fraction": "1",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 4.180248776142904e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C13",
+      "fraction": "0",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C13",
+      "fraction": "1e-12",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.469446951954136e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C13",
+      "fraction": "1e-9",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.469446952604656e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C13",
+      "fraction": "1e-6",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.469447602475495e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C13",
+      "fraction": "1e-3",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 6.940195060362104e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C13",
+      "fraction": "0.01",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 6.951915719726331e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C13",
+      "fraction": "0.1",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 7.070142212391304e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C13",
+      "fraction": "0.5",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.8092926974676266e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C13",
+      "fraction": "1",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 4.1797540097699095e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C14",
+      "fraction": "0",
+      "scalar_reference_ratio": 1.71875e-65,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C14",
+      "fraction": "1e-12",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 9.183549615799121e-28,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C14",
+      "fraction": "1e-9",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C14",
+      "fraction": "1e-6",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C14",
+      "fraction": "1e-3",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C14",
+      "fraction": "0.01",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C14",
+      "fraction": "0.1",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.8092926974671156e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C14",
+      "fraction": "0.5",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 9.183549615799121e-28,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C14",
+      "fraction": "1",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C15",
+      "fraction": "0",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C15",
+      "fraction": "1e-12",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.469446951956866e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C15",
+      "fraction": "1e-9",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C15",
+      "fraction": "1e-6",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.637978807092967e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C15",
+      "fraction": "1e-3",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.6379788104989e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C15",
+      "fraction": "0.01",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C15",
+      "fraction": "0.1",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.469450529813723e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C15",
+      "fraction": "0.5",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 6.938903661710416e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C15",
+      "fraction": "1",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.6379822176881046e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C16",
+      "fraction": "0",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C16",
+      "fraction": "1e-12",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C16",
+      "fraction": "1e-9",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.4727009818314627e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C16",
+      "fraction": "1e-6",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 8.516321622102761e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C16",
+      "fraction": "1e-3",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 2.22031296389031e-09
+    },
+    {
+      "case_id": "C16",
+      "fraction": "0.01",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C16",
+      "fraction": "0.1",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.809287730453625e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C16",
+      "fraction": "0.5",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C16",
+      "fraction": "1",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C17",
+      "fraction": "0",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C17",
+      "fraction": "1e-12",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C17",
+      "fraction": "1e-9",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C17",
+      "fraction": "1e-6",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C17",
+      "fraction": "1e-3",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.469446951953617e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C17",
+      "fraction": "0.01",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C17",
+      "fraction": "0.1",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C17",
+      "fraction": "0.5",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C17",
+      "fraction": "1",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.469446951953614e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C18",
+      "fraction": "0",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C18",
+      "fraction": "1e-12",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C18",
+      "fraction": "1e-9",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C18",
+      "fraction": "1e-6",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C18",
+      "fraction": "1e-3",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C18",
+      "fraction": "0.01",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C18",
+      "fraction": "0.1",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C18",
+      "fraction": "0.5",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C18",
+      "fraction": "1",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C19",
+      "fraction": "0",
+      "scalar_reference_ratio": 1e-77,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C19",
+      "fraction": "1e-12",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 4.336808689942017e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C19",
+      "fraction": "1e-9",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 4.336808689942017e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C19",
+      "fraction": "1e-6",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 4.336808689960313e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C19",
+      "fraction": "1e-3",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 4.3428387433441135e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C19",
+      "fraction": "0.01",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C19",
+      "fraction": "0.1",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 4.418728301522308e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C19",
+      "fraction": "0.5",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 4.918720962164416e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C19",
+      "fraction": "1",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 5.6197761447397564e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C20",
+      "fraction": "0",
+      "scalar_reference_ratio": 8.056499999991941e-73,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C20",
+      "fraction": "1e-12",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.469446951956866e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C20",
+      "fraction": "1e-9",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C20",
+      "fraction": "1e-6",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.4694502045615547e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C20",
+      "fraction": "1e-3",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.472700981837976e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C20",
+      "fraction": "0.01",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.5021156705330965e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C20",
+      "fraction": "0.1",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 1.0097419586678198e-15,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C20",
+      "fraction": "0.5",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 1.0097419586691153e-15,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C20",
+      "fraction": "1",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 5.048709793358756e-16,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C21",
+      "fraction": "0",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C21",
+      "fraction": "1e-12",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.469446951953614e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C21",
+      "fraction": "1e-9",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 0.0,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C21",
+      "fraction": "1e-6",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 6.938897150019527e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C21",
+      "fraction": "1e-3",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.9602824887649355e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C21",
+      "fraction": "0.01",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.672048195791648e-05,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C21",
+      "fraction": "0.1",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 3.308720951677439e-11,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C21",
+      "fraction": "0.5",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 1.2528584578557167e-39,
+      "stable_flux_ratio": 0.0
+    },
+    {
+      "case_id": "C21",
+      "fraction": "1",
+      "scalar_reference_ratio": 0.0,
+      "scalar_computed_ratio": 1.4481825722628293e-76,
+      "stable_flux_ratio": 0.0
+    }
+  ],
+  "raw_byte_equal": {
+    "states.csv": false,
+    "terminal.csv": false,
+    "backward_euler.csv": true,
+    "checks.jsonl": false
+  },
+  "max_independent_scalar_reference_ratio": 1.71875e-65,
+  "max_independent_scalar_computed_ratio": 8.516321622102761e-05,
+  "max_independent_stable_flux_ratio": 4.360367276375433e-05,
+  "stiff_subtraction_witness": {
+    "case_id": "C13",
+    "fraction": "1e-3",
+    "t_s": 0.001,
+    "c_ref": 0.9998000199985068,
+    "b_ref": 3.999200079994827,
+    "sink_ref": 0.9998000199985068,
+    "release_ref": 0.7998400159988375,
+    "sink": 0.999800019998507,
+    "release": 0.7998400159988376,
+    "direct_release": 0.7989164885202626,
+    "direct_release_abs_error": 0.000923527478574826,
+    "max_tolerance_ratio": 6.940195060362104e-05,
+    "passed": true
+  },
+  "independent_pre_return_derivation_sha256": "b3d8d0afd70e7c142b107ccef84fce4ef9293c9b4338faa2ca4ce921e7f5efb2",
+  "independent_pre_return_checklist_sha256": "2b571d9ea4605304db6d0ccad762a6b18b27e7670d6c10e4128d6c9e60ff0274"
+}

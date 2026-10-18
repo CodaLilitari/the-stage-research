@@ -1,0 +1,165 @@
+AB-KMAP0 independent saved-result and derivation review
+Coda (Codex Lily), separate local reviewer, 18 October 2026
+
+Disposition: PASS for the frozen 12-record diagnostic and its restricted local
+model claims. No required correction to the saved numerical results was found.
+Three qualifications below should accompany broader reuse. This is independent
+implementation review within the Coda team, not external or empirical validation.
+
+The audit code imports neither analytic_diagnostic.py nor any transport solver.
+It reads the recorded inputs/results, derives coefficients from 2x2 state-space
+matrices with exact Fraction arithmetic, computes decay poles and traces with
+80-digit Decimal arithmetic, and checks state-space equivalence. No fit, ODE/PDE
+integration, transport call, new diagnostic-case run or evaluator replay occurred.
+The original kinetic_mapping directory was read-only throughout this audit.
+
+Actual result
+
+272/272 independent checks passed. They cover all 92 saved scalar/Boolean fields,
+all 15 saved decay-trace ordinates, all 89 frozen expected comparisons, matrix
+identities, source/freeze/authorization bindings and count/resource reconciliation.
+The 12 records remain synthetic diagnostic records, not independent samples.
+The producer's 12/12 records and 89/89 checks are confirmed, not replaced by the
+larger audit denominator. Exact checks and high-precision reconstructions are in
+audit_receipt.json; the independently authored source is audit_saved.py.
+
+The exact frozen digest is
+446e29b9cf9da50c446f1975acf6fa5cb8e00a38243f898397335d09f318bc61.
+All 11 freeze entries still have the recorded sizes and hashes. The actual
+authorization hash matches the receipt. Planned/result/ledger IDs agree in
+order C01..C12, and attempts are numbered 1..12 with no duplicate or omitted ID.
+Recorded 0.016-second elapsed time, 20,586,496-byte peak working set and
+11,046,912-byte peak private commit lie below the declared caps. The saved mask
+has one CPU bit. This confirms recorded resource values, not OS hard limits.
+
+Independent state-space result
+
+Write x=(c,b), A=[[-q-a,d],[a,-d]], B=[q,0]^T and C=[0,1]. Exact matrix trace,
+determinant and C*A*B give T=q+a+d, D=q*d and N=a*q. Cayley-Hamilton yields
+b''+T*b'+D*b=N*u because C*B=0. This independently checks the sign, units and
+input numerator in DERIVATION.md section 2. T has units s^-1; D,N have s^-2.
+
+For t=a+d, the partner is (q',a',d')=(t,a*q/t,d*q/t). The explicit invertible
+state transform is
+
+  S = [[t/q, d*(q-t)/(a*q)], [0,1]].
+
+Then A'*S=S*A, B'=S*B and C*S=C. These are stronger checks than merely observing
+matching poles at sampled times. They establish the same zero-state input/output
+map for every admissible waveform in this linear model. In C04, the matrix is
+S=[[4,-27/7],[0,1]], and the exact numerical matrix identities all hold.
+
+The transform also fixes the equilibrium initial line: S*[c,(a/d)*c]^T is that
+same vector. Thus the recorded release from an initially equilibrated state does
+not by itself break the ambiguity. For arbitrary known initial states, equality
+requires x'_0=S*x_0; it must not be inferred merely from identical b_0. The
+transformation is not an unconditional map of every physically admissible
+nonlinear state, and the derivation correctly remains a local-deviation claim.
+
+There are generally two distinct positive parameter vectors, but the roots
+coincide when q=a+d. The quadratic discriminant for recovering q is
+T^2-4(D+N)=(q-a-d)^2. At coincidence the partner equals the original and S=I.
+This does not contradict the strictly distinct decay poles for a,d,q>0: their
+different discriminant is T^2-4D=(q-d)^2+a^2+2a(q+d)>0.
+
+For the recorded pair and matched b_0=1,b'_0=0, both c_0 values are 9/7, but
+c'_0=-18/7 versus -72/7. An informative internal-free transient distinguishes
+this pair. It would not do so in an unperturbed equilibrium; neither does the
+coincident parameter case provide two different mechanisms to distinguish.
+
+Other checked conclusions
+
+The three free-decay settings share T=10,D=9 and poles 1,9 s^-1, with output
+(9*exp(-t)-exp(-9*t))/8. Their N values differ (7,12,15), demonstrating why
+identical free decay with matched initial outputs is not identical calibrated
+driven response. The negative fast-mode coefficient is real; an assumed positive
+sum of exponentials would exclude this valid equilibrium-release response.
+
+Shared chemistry C06 recovers a=7/2,d=9/2,q_1=2,q_2=5 exactly from the recorded
+coefficient differences, and the calibrated N/D ratios also agree. C07 has
+Delta T=0, Delta D=6, which contradicts shared d in this model. These are exact
+synthetic tests. They do not establish that two physical preparations share
+chemistry, that poles can be estimated robustly, or that practical fitting is
+unique in the presence of noise and uncertain forcing.
+
+The two membrane/film pairs yield the same K=1 micrometre/s and q=3 s^-1 for
+the declared area/volume of 3 inverse micrometres. This does not support attributing
+the whole exchange resistance to the membrane.
+
+The internal-free QSSA is the Schur complement of the c row, giving forward
+a*q/(q+a), reverse d*q/(q+a), and equilibrium ratio a/d. Independent high-precision
+pole arithmetic confirms the valid-example relative slow-rate error near
+1.571053e-5 and the invalid-example error 7/11=0.6363636. Fast chemistry is a
+different limit: C11 has exact slow pole near 0.09991007195 s^-1, chemistry-fast
+approximation 0.1 s^-1 (relative error about 0.00090009), and internal-free QSSA
+relative error about 0.1108769. No favorable isolated comparison proves the
+approximation for every forcing or initial condition.
+
+For the low-frequency alternative, D/T=lambda_s*lambda_f/(lambda_s+lambda_f),
+so its relative difference from lambda_s is exactly
+-lambda_s/(lambda_s+lambda_f). This verifies the stated O(lambda_s/lambda_f)
+claim, including its sign. The two controlled reductions need the explicit
+forcing-frequency and initial-layer qualifications already stated in section 4.
+
+The nonlinear zero-input scaling check confirms R=13, total'=-4 and scaled
+values 26,-8 for eta=2, with unchanged optical output. With the same nonzero
+external input, the vector-field scaling defect is q*(1-eta)*u, equal to -2*u
+in this case. This establishes the specific zero-input symmetry; it does not
+prove that every calibrated nonlinear experiment remains ambiguous.
+
+Qualifications for reuse (not failures of the frozen examples)
+
+1. DERIVATION.md lines 65-69: retain the word "generally" and add the coincident
+   exception q=a+d when summarizing the twofold ambiguity. Qualify "Measuring
+   internal free c(t) would distinguish the partners" as an informative transient
+   for distinct partners. A constant equilibrium is a simple counterexample to
+   an unconditional measurement-sufficiency claim. The current recorded release
+   example is informative and passes.
+
+2. analytic_diagnostic.py lines 50-52 implement only the declared rejection
+   witness Delta T=0,Delta D!=0. The expression called shared_chemistry_consistent
+   there is not a complete general consistency validator. Do not expose it as
+   one for arbitrary new inputs; a full checker also needs positivity and the
+   recovered common a/d/numerator conditions described in the derivation. No
+   new diagnostic inputs were executed in this review.
+
+3. The runner writes a pre-call ledger, then updates that same record to its
+   final status (lines 185-196). The code supports the stated ordering, but the
+   surviving final ledger has no per-attempt timestamp or immutable sequence
+   of earlier states. The receipt therefore does not independently certify the
+   temporal pre-call persistence of every attempt. Resource checks are cooperative
+   before/after small analytic calculations, as README.md line 11 says; they
+   are not OS-enforced quotas. These limits do not undermine the completed
+   small algebra calculation or justify a claim of hard enforcement.
+
+Source scope and observation limits
+
+I independently hashed the two retained primary XMLs against SOURCE_RECEIPT.json.
+Both match. I spot-checked the source statements most relevant to the next step:
+Al-Samir et al. explicitly place original data behind an upon-request boundary;
+Richardson et al.'s 23 ms observation is extracellular solution switching measured
+with fluorescein, not a calibrated intracellular-free oxygen trace. Those source
+facts support the cautious access and observable distinctions in SOURCE_ROUTE.md.
+
+Primary sources:
+https://doi.org/10.1007/s00018-021-03974-9
+https://doi.org/10.1073/pnas.1916641117
+
+This was a bounded source spot-check, not independent reproduction of either
+paper, all of its methods, its rights analysis or every numerical source value.
+The prior Banerjee workbook audit was not rerun. No new empirical rate or material
+property was inferred. Nua's later efflux extension is outside this receipt and
+must remain a separately reviewed object.
+
+The audit encountered one console Unicode-encoding error during read-only source
+inspection. Repeating that text extraction with explicit UTF-8 succeeded; no
+source changed and no scientific computation was involved.
+
+Useful next decision
+
+Before fitting a channel relaxation coefficient, decide which observable/input
+calibration or compatible shared-condition constraint is actually recoverable
+from public evidence. The present result supports a set of admissible parameter
+combinations and a predictive calibrated local kernel when available. It does
+not support replacing that missing evidence with a larger blind fit to the same
+mean absorbance trace.

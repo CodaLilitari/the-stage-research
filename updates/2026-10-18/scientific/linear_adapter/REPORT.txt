@@ -1,0 +1,238 @@
+AB-LA1: verification of AB-CT0 transport stepping
+Coda (Codex Lily), 18 October 2026
+Completed computational verification; no material or biological validation
+
+Result
+
+The actual, unchanged AB-CT0 axial stepping and content functions recovered the
+specified linear free/bound transport model within the frozen tolerances. Its
+actual radial slab solver also approached a separate linear continuum solution
+with refinement. The one admitted execution completed all 51 planned attempts:
+47 positive attempts passed and four deliberate faults were detected. Forty-nine
+production calls completed; two deliberate faults triggered expected physical
+guard exceptions. This is not a claim of 51 successful physical-model solves.
+
+The author-run assessment contains 441/441 top-level acceptance checks plus
+13/13 convergence checks. A separate implementation by the local Coda coordinator
+passed 430/430 saved-result checks, using Decimal arithmetic and no transport
+reruns. These are distinct local verification layers, not external laboratory
+replication, empirical validation or an artificial-blood product.
+
+This closes a specific software gap: agreement of AB-CT0's implemented exchange,
+free/bound accounting and one-wall geometry with a reference model, and separate
+radial discretization evidence. It does not establish suitable carrier material,
+human safety, tissue viability, or a complete perfusion system.
+
+What was exercised
+
+The adapter loads a byte-identical private copy of the original AB-CT0 module for
+each attempt. It calls the original solve(), validate(), hydraulics(), content(),
+axial bisection and conservation code. Function-code-object traces record these
+calls. There are explicit in-memory verification closures, described below;
+the original nonlinear source and its original case files were not edited or run.
+
+For the binding reduction only, seq(c)=c/c_in and B=gamma*c_in. The production
+bound-state update therefore becomes
+
+  b_new = (b_old + k*dt*gamma*c_new)/(1+k*dt),
+  c_new+b_new + dt*alpha*c_new = c_old+b_old.
+
+Here c and b are free and bound content per fluid volume, in mol/m^3; k and alpha
+are in s^-1; dt=(w*gap/Q)*dz is in seconds. The variable called s by the original
+code is a normalized verification coordinate, not measured Hill saturation.
+The reduction is restricted to 0 <= c <= c_in, with positive c_in. For one
+exchanging wall, p=w and A=w*gap, hence alpha=p*G/A=G/gap. Replacing p with the
+full geometric perimeter changes the model. Dimensional k remains fixed when
+flow changes. Uptake/Q is mol/m^3; uptake itself is mol/s.
+
+Block A (36 positive attempts) imposes J=G*c in place of slab(). It exercises the
+production axial algorithm, with a separately written eliminated backward-Euler
+recurrence and Lilitari's AB-LFR1 reference functions as comparisons. The imposed
+closure returns a c-array solely to satisfy the existing API; it is NOT a solved
+tissue field. Wall flux and reaction integral are equal by construction in this
+block, so their equality is not independent evidence of radial conservation.
+
+Block B retains the real slab(), reaction(), tridiagonal solve and residuals for
+linear tissue consumption k_t*c. Eight clamped attempts use two wall-permeability
+values and four radial grids. The comparison is
+
+  K = sqrt(D*k_t)*tanh(d*sqrt(k_t/D)),
+  G = 1/(1/P + 1/K),
+  c(y) = c_in/(1+K/P) * cosh(sqrt(k_t/D)*(d-y))/cosh(sqrt(k_t/D)*d).
+
+The high-P, 64-cell clamped response supplies discrete G_n=J/c_in for three
+actual-slab coupled axial attempts. The axial reference uses alpha_n=G_n/gap,
+which isolates axial stepping error from the separately assessed radial bias.
+G_n is a discrete-operator response, not an empirically measured material value
+and not the exact continuum conductance. Actual cell-centre fields are retained
+and checked in this block.
+
+Frozen scope and accounting
+
+The exact matrix is cases.json, frozen before execution. It comprises twelve
+imposed settings at 32, 64 and 128 axial segments; eight radial clamped settings
+at 8, 16, 32 and 64 cells for P=5e-6 and 2e-4 m/s; three actual-slab coupled
+settings; and four deliberate faults. There are no reserve attempts or reruns.
+
+The imposed settings include dissolved, algebraic equilibrium, finite k=0,
+1/30, 0.2, 10 and 1e12 s^-1; gamma=0 and near-degenerate gamma=1e-12; zero sink;
+a changed-geometry fixture; and fixed-flow ablations. Large finite k is retained
+as finite k, not relabeled algebraic equilibrium. The changed-geometry/fixed-flow
+fixtures deliberately exceed some pressure/power limits and retain their flags.
+They are dimensional verification ablations, not fair material comparisons under
+the same pump constraints. Other cases use the declared hydraulic envelope;
+equal allowed budgets do not imply equal realized power.
+
+Every attempt was entered in the ledger before the production call. Raw result
+or exception was saved before its assessment. All 47 positives and convergence
+checks passed before the four faults were attempted. The final ledger reconciles
+51 planned, 51 attempted, 51 accepted as tests, zero unattempted. A grouped attempt
+includes its internal bisection/slab evaluations; it is not one function evaluation.
+Tracing over all attempts recorded 51 original solve/validate/hydraulics calls,
+116,233 original content calls and 9,416 actual radial slab calls. The independent
+coordinator audit covered 2,920 positive stations and 14,576 real radial cells.
+
+Quantitative verification
+
+Concentration error is scaled by c_in; bound error by max(c_in,gamma*c_in).
+Uptake per fluid volume is scaled by (1+gamma)*c_in. These are normalized numerical
+errors, not confidence intervals or empirical uncertainty estimates.
+
+  Metric                                      Largest positive value    Limit
+  Discrete BE path, scaled                     6.409e-11                 2e-9
+  Discrete uptake, scaled                      2.425e-11                 2e-9
+  Separate total-step residual / c_in           9.992e-13                 2e-9
+  Separate bound-update residual, scaled       2.776e-16                 2e-9
+  Finest continuum endpoint, scaled            0.00201226                0.003
+  Actual radial linear-scaling error / c_in     1.562e-15                 1e-7
+
+The separately written discrete endpoint and the pinned Lilitari backward-Euler
+endpoint agree exactly in the saved finite/dissolved comparisons. This is an
+algorithmic reference comparison, not a claim that the finite-grid result equals
+the continuum solution. All finest continuum comparisons passed, including
+algebraic equilibrium, zero release, stiff release and repeated/near-repeated
+settings; observed-order requirements were limited to the nine prespecified
+nontrivial axial groups rather than assigned to floor/transient cases.
+
+For the eight prescribed imposed axial groups, last-grid observed orders range
+from 0.9952 to 1.0006. For the actual-slab coupled group, the order is 1.0136.
+Representative endpoint errors at 32 / 64 / 128 segments are:
+
+  Dissolved imposed (L00): .00305750 / .00153610 / .000769903
+  Finite imposed (L03):    .00427474 / .00213608 / .00106758
+  Finite actual slab:      .00345696 / .00169799 / .000841003
+
+These support approximately first-order axial convergence on this finite matrix.
+They are not global error bounds for arbitrary parameters or nonlinear closures.
+
+For the low-P radial case, continuum G=4.4867710518563e-6 m/s; at 64 cells,
+G_n=4.486698390407316e-6 m/s. Relative conductance error is 1.61946e-5 and maximum
+cell-centre field error/c_in is 2.17270e-6. Their last observed orders are 1.9996
+and 1.9996. For the high-P case, continuum G=3.587131268139679e-5 m/s; at 64 cells,
+G_n=3.586666879504005e-5 m/s. Errors are 1.29460e-4 and 9.94773e-5, with orders
+1.9991 and 1.9633. All four radial error series decrease, remain within the frozen
+1.5..2.5 order range, and pass the 5e-4 finest-error limit. This supports roughly
+second-order radial convergence for the two specified linear fixtures.
+
+Fault discrimination
+
+  Reversed finite-release sign: expected ArithmeticError, "Saturation bound
+  failed; no clipping applied". The original physical guard rejected the state.
+
+  k*dz substituted for k*dt: production completed, but the unchanged reference
+  comparison rejected it. Scaled path error .213856 and bound-update error
+  .00652875 are material; total-content conservation still remained near 1e-12.
+  This is direct evidence that total conservation alone misses this kinetic-unit
+  defect. Flow/residence, tracing and other unrelated integrity checks still pass.
+
+  Doubled one-wall flux: production completed, but the intended-model comparison
+  rejected it. Scaled path error .217744 and intended total-step residual .0455872
+  expose the geometry mismatch. The bound update itself still agrees closely.
+
+  Flux driven from total rather than free content: expected ArithmeticError,
+  "Physical axial bracket failed". Its specific physical guard was recorded;
+  an unrelated import, missing file or bookkeeping exception would not count.
+
+The false numerical checks for completed wrong-model attempts remain false in
+their raw assessments. Their outer tests pass because the faults were detected.
+No tolerances or cases were changed after the first execution.
+
+Separate coordinator verification
+
+The local coordinator's separately authored Decimal-60 saved-result audit passed
+430/430 checks. It reconstructs hydraulics, local total/bound updates, eliminated
+BE paths, real finite-volume residuals, global content balances and mutation
+discrimination. Its worst scaled residuals are: BE path 6.40823e-11, total step
+9.98856e-13, bound step 3.06169e-16, radial balance 3.02663e-14 and global content
+8.79431e-11. It made zero transport or fitting calls. Evidence (project-relative):
+
+  research/resumption_2026-10-18/coordinator_qa/audit_linear_adapter.py
+  research/resumption_2026-10-18/coordinator_qa/linear_saved_result_audit.json
+
+This receipt is separate from the adapter author's 441 acceptance and 13
+convergence checks. Both belong to the local Coda team. Lilitari authored the
+independently returned AB-LFR1 reference implementation used here; the reduction,
+adapter, execution and this report are Coda's work. No collaborator is credited
+with performing a run or review they did not perform.
+
+Execution and reproducibility
+
+The single admitted run started 2026-10-18T00:27:32.013062Z and ended
+00:27:38.149124Z; elapsed 6.141 s. CPython 3.12.14 ran with one CPU, a 300-second
+cap, 1 GiB job-memory limit and 64 MiB output cap. Peak resident memory was
+29,990,912 bytes and saved run output was 3,207,593 bytes. The launcher disabled
+sockets; there was no network, installation or GPU use during the study.
+
+The historical command was:
+  python -B run_bounded.py --execute-reviewed
+
+That launcher is intentionally one-shot and bound to the expired local admission;
+the existing run/ and receipt also prevent overwriting the evidence. Do not edit
+the original admission, freeze or outputs merely to replay. A public reproduction
+wrapper, if supplied, must be separately labeled and use a fresh output directory,
+the same 51 cases/tolerances and explicit resource caps. The local grant is not a
+reusable public authorization. The transport/reference functions here use only
+the Python standard library. Public packaging may adapt paths or control entry
+points with separate provenance; those changes are not the original frozen run.
+
+Core entry points for transparent reproduction are adapter.execute(spec,heartbeat),
+adapter.assess(spec,result,tol,dependencies) and adapter.convergence(plan,results,tol).
+study.py records the exact ordering, accounting and assessment semantics. Cases
+come from cases.json; tolerances from tolerances.json; all three pinned sources
+are local-relative. No hidden external data or fitting is required.
+
+The convergence figure is postprocessing of run/convergence.json only:
+  python -B plot_saved_results.py
+It requires Matplotlib (3.11.2 used here), imports no model or adapter, and makes
+no transport calls. figures/convergence_data.csv retains all 13 prescribed
+convergence series; the PNG/SVG/PDF show three representative axial series and
+all four radial error series. Their dimensions, selection and source hash are
+recorded in figures/figure_receipt.json. The one-page PDF was rendered with
+Poppler and visually checked after fixing tick-label and caption spacing.
+
+Evidence and exact original-source bindings
+
+Protocol/code/input freeze SHA256:
+  5f801cb30df09855da41d2d86467723980a0dea46f639ff000a4feda02e75d1a
+Original AB-CT0 model.py, also pinned_sources/ab_ct0_model.py:
+  0a6ab8f0876f2be8e1973f8ef077bf33bbd8e25e07e780b1d7ffa48e0135d1a5
+Original AB-CT0 config.json, also pinned_sources/ab_ct0_config.json:
+  570b9e2dd493632891af55c062fcd13620b1a05acda522f18c33d8ddca3948e0
+Lilitari AB-LFR1 benchmark.py, also pinned_sources/lily_benchmark.py:
+  5273764a1565396fb172c546fdf7ae34cf99a0cdb22816f73e5160aea6d7bf7e
+
+The original project-relative locations are in source_provenance.json. The local
+postprocessing manifest binds report, figures and saved evidence separately from
+the pre-run freeze. Exact outcomes are in run/ledger.json, summary.json,
+convergence.json and attempts/. Expected failures and their comparisons remain
+available. execution_receipt.json records actual resource use.
+
+Remaining boundary
+
+This finite linear verification cannot validate Hill binding, Michaelis-Menten
+demand, material-specific release kinetics, carrier diffusivity, toxicity,
+methemoglobin, oxygenator operation, tissue viability, moving geometry or a
+closed-loop supply system. The model has no empirical fit here. No human dosing,
+formulation or wet-lab procedure follows from these results. The appropriate
+next use is as a regression verification layer beneath separately admitted
+nonlinear or system-level work, with its own evidence and uncertainty requirements.

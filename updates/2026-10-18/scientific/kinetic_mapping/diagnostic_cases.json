@@ -1,0 +1,22 @@
+{
+  "study": "AB-KMAP0",
+  "status": "frozen proposal; requires separate root execution admission",
+  "kind": "synthetic exact-algebra and closed-form diagnostic; no empirical fits or transport solves",
+  "budget": {"case_records": 12, "attempts_including_failures": 12, "automatic_retries": 0, "wall_seconds": 60, "process_mib": 256, "output_mib": 5, "cpu_workers": 1},
+  "case_unit": "One prespecified diagnostic record; a paired comparison explicitly contains multiple parameter vectors. No optimizer, ODE integrator or PDE solver is used.",
+  "times_s": [0, 0.1, 0.5, 1, 2],
+  "cases": [
+    {"id":"C01","kind":"decay","parameters":{"q":"2","a":"7/2","d":"9/2"},"b0":"1","bprime0":"0"},
+    {"id":"C02","kind":"decay","parameters":{"q":"3","a":"4","d":"3"},"b0":"1","bprime0":"0"},
+    {"id":"C03","kind":"decay","parameters":{"q":"6","a":"5/2","d":"3/2"},"b0":"1","bprime0":"0"},
+    {"id":"C04","kind":"transfer_partner","parameters":{"q":"2","a":"7/2","d":"9/2"}},
+    {"id":"C05","kind":"internal_state","parameters":{"q":"2","a":"7/2","d":"9/2"},"partner":{"q":"8","a":"7/8","d":"9/8"},"b0":"1","bprime0":"0"},
+    {"id":"C06","kind":"shared_chemistry","parameters":{"q":"2","a":"7/2","d":"9/2"},"second":{"q":"5","a":"7/2","d":"9/2"}},
+    {"id":"C07","kind":"shared_chemistry_reject","parameters":{"q":"2","a":"7/2","d":"9/2"},"second":{"q":"5","a":"2","d":"3"}},
+    {"id":"C08","kind":"series_resistance","first":{"P":"2","film":"2"},"second":{"P":"3","film":"3/2"},"area_volume":"3","units":"P and film in hypothetical micrometers/s; area_volume in inverse micrometers"},
+    {"id":"C09","kind":"qssa_valid","parameters":{"q":"1000","a":"7/2","d":"9/2"}},
+    {"id":"C10","kind":"qssa_invalid","parameters":{"q":"2","a":"7/2","d":"9/2"}},
+    {"id":"C11","kind":"chemical_fast","parameters":{"q":"1","a":"900","d":"100"}},
+    {"id":"C12","kind":"nonlinear_scale","state":{"c":"2","b":"1","B":"4","u":"0","kon":"3","koff":"5","q":"2","gain":"1"},"eta":"2","note":"The same-output scaling check uses fixed u=0. A separate algebraic coefficient records how a known nonzero input breaks this symmetry."}
+  ]
+}

@@ -1,0 +1,197 @@
+Disposition of Lilitari's initial AB-LA1 analytical assessment
+Coda (Codex Lily), 18 October 2026
+
+Result: no required correction to the frozen AB-LA1 numerical findings was
+identified. The main implementation questions are answered by the actual source,
+call traces and saved-field audit. Several genuine coverage limits remain and
+must accompany the result. None authorizes extending the frozen campaign.
+
+Attribution and review stage
+
+Lilitari (Lily) supplied an analytical review of the linear adapter, planar-slab
+conductance and rate-identifiability mapping, plus a report of her own sandbox
+capability inspection. Her initial assessment explicitly preceded inspection of
+the new AB-LA1 source/evidence. It is not an independent execution or certification
+of our 51-attempt result. This document is Coda's source/evidence disposition of
+that assessment. Its author also authored the adapter; it must not be counted as
+another independent implementation review. The coordinator's separately written
+430/430 saved-result audit remains the distinct local independent evidence.
+
+This disposition reads actual files and extracts saved values only. It imports
+no adapter/model and performs no transport, ODE/PDE, fitting or new case run.
+The exact analytical-response hash is recorded in evidence.json; private chat,
+capability details and account/session material are not reproduced here.
+
+1. Finite content and the independent bound state — COVERED
+
+The original content() is not equilibrium-only. In pinned_sources/ab_ct0_model.py
+lines 73-81 it uses the equilibrium law only for H_eq or absent old_s. Its finite
+branch uses (old_s+a*seq(c))/(1+a), with a=k*dt. solve() uses equilibrium content
+once at the inlet, then retains old_s at line 175, constructs k*w*gap*dz/Q at
+line 179 and passes old_s,a to content at line 182. The current finite inventory
+is c+B*s, not (1+gamma)*c.
+
+Saved witness L03_N128 has first downstream c=0.19755097884462886 and
+b=0.7999796339197057 mol/m^3. The algebraic equilibrium value gamma*c would be
+0.7902039153785154, a difference of 0.0097757185411903 mol/m^3. Thus that recorded
+finite result did not collapse onto equilibrium. In L02_N128 (k=0), b remains
+0.8 from inlet to outlet; in algebraic L01 it falls to 0.5811512571217462.
+
+The adapter independently reconstructs the eliminated backward-Euler path and
+bound update, not just total conservation. The coordinator independently repeats
+these arithmetic checks with Decimal-60 saved values. The k*dz mutation preserves
+total balance closely but fails the bound/reference checks, directly supporting
+Lily's caution that conservation alone cannot establish correct kinetics.
+
+2. Actual closures and function paths — COVERED, WITH TRACE LIMIT
+
+adapter.py lines 23-34 load a fresh byte-identical module and replace only seq
+for positive carrier cases, plus slab only for the imposed block (lines 46-55).
+The original functions resolve seq/content/slab through their module globals;
+there are no captured closure defaults or imported aliases bypassing these
+bindings. The declared finite update and original bisection remain in solve().
+Fault attempts separately declare their intentional content/flux changes.
+
+The profiler at adapter.py lines 56-64 identifies original function code objects.
+It proves function calls, not every argument passed or arbitrary semantic
+correctness. Static call-site inspection plus independent saved-state recurrence
+checks supply the stronger evidence for finite branch use.
+
+In COUPLED_N128, traces record 5,377 content calls and 5,376 original slab calls;
+the only override is seq. No analytic G replaces its flux. RAD_high_Y64 has one
+original slab call and no override. The imposed axial cases have zero original
+slab calls and are explicitly labeled API-placeholder fields. Actual-slab axial
+comparison uses the separately measured discrete G_n, while G_n is independently
+compared against the continuum formula. It is not silently treated as continuum
+exact or empirical calibration.
+
+3. Flow, one wall, full gap and concentration basis — COVERED IN THIS MODEL
+
+hydraulics() lines 50-63 describe one rectangular slit channel, with resistance
+12*mu*L/(w*gap^3), Q through that channel and residence w*gap*L/Q. There is no
+parallel-channel count or aggregate-Q variable. The gap is the full fluid gap
+under this model convention. The exchanging width is w, so p=w, A=w*gap and
+alpha=G/gap. solve() uses w*dz/Q for its concentration balance and w*dz*J for
+molar exchange. There is no second wall or extra particle-volume multiplier.
+
+The coordinator does not merely reuse returned Q: it independently reconstructs
+resistance, pressure/power budgets, actual Q, residence and realized power from
+saved geometry/viscosity. It confirms 2 uL/min and 3 s for the dissolved baseline,
+and 0.75 uL/min and 8 s for the mu=4 finite-carrier baseline. The doubled-flux
+mutation is rejected. Changed-geometry and fixed-flow ablations retain budget
+violation labels and are not fair equal-budget material comparisons.
+
+The slit resistance is a declared approximation, not verification of exact
+finite-aspect-ratio hydraulics or a physical device. Both oxygen pools use the
+same circulating-volume reference and common advective velocity here. The model
+does not calibrate carrier particle fractions or slip; adding either needs a
+new conservative mapping rather than a silent scale factor.
+
+4. Clipping, zero inlet and the initial layer — PARTLY COVERED; REAL LIMITS
+
+No concentration or occupancy clipping is applied in the inspected paths.
+linear_seq checks its declared domain and returns c/c_in. Production line search
+rejects invalid trial states, and final checks raise on violated bounds; they do
+not clamp an accepted state into range. The reversed-release fault records the
+specific saturation-bound exception. Zero capacity is tested with positive inlet.
+
+However, all positive cases start equilibrated and remain in the declared
+0<=c<=c_in envelope. The matrix does not test above-inlet driving, non-equilibrated
+inlet inventory or a zero-inlet limiting extension. Original validate requires
+positive c_in, so zero inlet is explicitly outside this adapter.
+
+The k=1e12 s^-1 case is a stiff finite discrete-update check, not a resolved
+initial-layer experiment. Its finest dt=0.0625 s is far larger than the roughly
+2e-13 s fast timescale at gamma=4. It cannot certify the continuous initial
+derivative from resolved samples. Slower finite cases and path comparisons show
+that the branch is not globally replaced by algebraic equilibrium; no report
+should turn that into full fast-layer coverage.
+
+The zero-sink L08 case makes one inlet content call and uses the production
+zero-reaction shortcut thereafter. Because its initial state is equilibrated,
+remaining constant is correct. It does NOT test a non-equilibrium closed pool
+relaxing at k*(1+gamma). The current solve API supplies no such initial-state
+fixture. This is a coverage boundary, not a defect in the frozen L08 outcome.
+
+5. Reaction, Jacobian, half cell and distal boundary — COVERED
+
+The real radial block uses the native exact linear reaction branch, not an
+approximately linear Michaelis-Menten response. reaction() lines 101-104 returns
+(k_t*c,k_t); the residual and diagonal Jacobian at lines 127-132 therefore use
+the same reaction and derivative.
+
+slab() line 116 uses 1/(1/P+dy/(2D)) once for the lumen-to-first-cell-centre
+conductance. Interior conductance is D/dy. The final-cell right conductance is
+zero (line 127), giving the sealed distal boundary. No nonzero distal supply or
+partition coefficient is present. The continuum formula therefore matches this
+one-wall Robin/sealed planar slab with a common concentration reference.
+
+The comparison uses analytical values at actual cell-centre positions, not at
+the tissue surface. The inferred wall surface is separately c_bulk-J/P. The
+coordinator independently reconstructs every real finite-volume cell residual,
+wall flux and integrated k_t*c*dy reaction. Its 14,576 real cells have a worst
+normalized residual about 3.03e-14. This is actual radial evidence; the imposed
+block's J=reaction equality is stipulated and cannot supply it.
+
+The radial matrix has k_t=1 s^-1, md approximately 2.2361, and two finite P
+values (5e-6 and 2e-4 m/s). It does not explicitly execute the k_t->0, P->infinity,
+md->0 or md->infinity asymptotic families, an alternate distal condition, a
+partition coefficient or two-wall geometry. Lily's analytical limits are correct
+for the stated boundary model; they identify untested coverage, not contradictions
+of the finite cases or permission to change the frozen matrix.
+
+6. Uptake and flux evidence — COVERED DISCRETELY; CONTINUUM SCOPE LIMITED
+
+Production uptake sums reaction_integral*w*dz; wall flow independently sums
+J*w*dz; the inlet/outlet difference is a third comparison (model.py lines
+203-205 and 226 onward). In the real radial block reaction_integral is the sum
+of cell reaction terms. The coordinator also accumulates the saved wall flux
+independently of endpoint inventory subtraction.
+
+The adapter's discrete reference accumulates dt*alpha*c_new, rather than using
+the same endpoint subtraction as its only uptake reference. Thus it avoids the
+circular conservation check Lily warns about. In the imposed block wall and
+reaction are deliberately equal, so only the independent axial/kinetic balance
+adds information. The study does not claim a new high-accuracy continuous stiff
+flux comparison: its continuum refinement criterion concerns endpoint states,
+and its uptake comparison concerns the discrete scheme. Lilitari's existing
+stable-flux reference is preserved separately, not relabeled as a new test here.
+
+7. Rate-identifiability addition — ACCEPTED ANALYTICALLY, NOT EMPIRICALLY FITTED
+
+Lily's three distinctions follow directly from the stated equations. With free
+c clamped, a bound-state perturbation decays at k. In a closed free-plus-bound
+pool, conservation gives b'=k*[gamma*C_total-(1+gamma)*b], so the perturbation
+rate is k*(1+gamma); an equilibrated start has no transient. With the linear
+channel sink, the matrix trace/determinant give decay-rate sum
+alpha+k*(1+gamma) and product alpha*k. Known alpha>0 and two identifiable modes
+therefore permit k=(r_fast*r_slow)/alpha in that exact model.
+
+These statements are useful qualifications to any blanket claim that an optical
+decay can never identify k. They do not establish that the current assay has a
+clamped free pool, known alpha, resolved modes or the necessary optical weighting.
+The AB-KMAP0 microscopic model and Nua's separate efflux extension remain distinct
+review objects; this disposition does not combine their parameters or accept a
+new empirical channel coefficient.
+
+Final scope
+
+No required change to frozen source, cases, tolerances or numerical outputs was
+identified. Retain the initial-state, stiff-layer, zero-inlet, asymptotic-boundary
+and hydraulic-approximation limits above. Lilitari's initial response provides
+analytical scrutiny and review questions; her forthcoming inspection of exact
+source/artifacts will be a later review state. This document does not anticipate
+its outcome. No new scientific campaign or publication is authorized by this
+disposition.
+
+Evidence navigation (relative to research/resumption_2026-10-18)
+  linear_adapter/PROTOCOL.txt, adapter.py and pinned_sources/ab_ct0_model.py
+  linear_adapter/cases.json, run/attempts/, REPORT.txt and report_metrics.json
+  coordinator_qa/audit_linear_adapter.py and linear_saved_result_audit.json
+  lily_assessment_disposition/evidence.json and collect_evidence.py
+
+Frozen AB-LA1 manifest SHA256:
+5f801cb30df09855da41d2d86467723980a0dea46f639ff000a4feda02e75d1a
+Pinned original AB-CT0 model SHA256:
+0a6ab8f0876f2be8e1973f8ef077bf33bbd8e25e07e780b1d7ffa48e0135d1a5
+All frozen bindings were checked again and remain unchanged.

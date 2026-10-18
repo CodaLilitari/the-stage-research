@@ -1,0 +1,157 @@
+{
+  "schema": "stage.red_replay_comparison.v1",
+  "observed_utc": "2026-10-17T22:44:14.348902+00:00",
+  "outputs": [
+    {
+      "file": "al1_results.csv",
+      "source_sha256": "657d37a1de321228c1499ff4131aca39ee47cb81090cb5627ced00b5437e0e57",
+      "replay_sha256": "657d37a1de321228c1499ff4131aca39ee47cb81090cb5627ced00b5437e0e57",
+      "bytes_equal": true,
+      "rows": 17640,
+      "differing_numeric_cells": 0,
+      "max_absolute_numeric_difference": 0,
+      "material_cell_differences": [],
+      "material_cell_difference_count": 0
+    },
+    {
+      "file": "pf0_crosscheck_cases.csv",
+      "source_sha256": "e43d90c22fcea2aa90bae7541f55d74bbeed1699c9960850a5e45d10774f89b6",
+      "replay_sha256": "e43d90c22fcea2aa90bae7541f55d74bbeed1699c9960850a5e45d10774f89b6",
+      "bytes_equal": true,
+      "rows": 144,
+      "differing_numeric_cells": 0,
+      "max_absolute_numeric_difference": 0,
+      "material_cell_differences": [],
+      "material_cell_difference_count": 0
+    },
+    {
+      "file": "pf0_wall_optimum.csv",
+      "source_sha256": "523826d998f4f213b714ef24c74fc88ab900d99c5990d270f3fad9702a170476",
+      "replay_sha256": "523826d998f4f213b714ef24c74fc88ab900d99c5990d270f3fad9702a170476",
+      "bytes_equal": true,
+      "rows": 24,
+      "differing_numeric_cells": 0,
+      "max_absolute_numeric_difference": 0,
+      "material_cell_differences": [],
+      "material_cell_difference_count": 0
+    },
+    {
+      "file": "lumen_film_groups.csv",
+      "source_sha256": "95fba3525a45e0a17327c10a1f318b255932964925fe7bfce646c35df7889260",
+      "replay_sha256": "95fba3525a45e0a17327c10a1f318b255932964925fe7bfce646c35df7889260",
+      "bytes_equal": true,
+      "rows": 80,
+      "differing_numeric_cells": 0,
+      "max_absolute_numeric_difference": 0,
+      "material_cell_differences": [],
+      "material_cell_difference_count": 0
+    },
+    {
+      "file": "al1_figure.png",
+      "source_sha256": "b522a16e966ee9f7cdea6fe86c8ab32a5dbee26d4c2e0c2cac04e186b33d2df5",
+      "replay_sha256": "1ec7a804a3bb619ac00981418e15a7fbe1cac15723a436236d7fbb201bfad900",
+      "bytes_equal": false
+    }
+  ],
+  "summaries": [
+    {
+      "file": "al1_summary.json",
+      "source_checks": {
+        "C1_identical_modules_series_equals_uniform": true,
+        "C2_zero_order_closed_forms": true,
+        "C3_first_order_closed_forms": true,
+        "C4_maxmin_equalisation": true,
+        "C5_random_allocations_never_beat_maxmin": true,
+        "C6_monotone_in_flow_and_beta": true,
+        "C7_bounded_by_ceiling": true,
+        "C8_refinement": true
+      },
+      "replay_checks": {
+        "C1_identical_modules_series_equals_uniform": true,
+        "C2_zero_order_closed_forms": true,
+        "C3_first_order_closed_forms": true,
+        "C4_maxmin_equalisation": true,
+        "C5_random_allocations_never_beat_maxmin": true,
+        "C6_monotone_in_flow_and_beta": true,
+        "C7_bounded_by_ceiling": true,
+        "C8_refinement": true
+      },
+      "checks_identical": true,
+      "source_expectations": {
+        "E1_maxmin_dominates_parallel_heuristics": true,
+        "E2_no_arrangement_or_beta_passes_when_ceiling_below_reference": true,
+        "E3_holds": true,
+        "E3_max_rel_gain": 218.1113268080563,
+        "E3_median_rel_gain_flow_limited": 0.30657359992215244,
+        "E3_median_rel_gain_near_ceiling": 0.005101521131365614,
+        "E3_n_flow_limited": 668,
+        "E3_n_near_ceiling": 1642,
+        "E4_counterexamples": [],
+        "E4_n_counterexamples": 0,
+        "E4_series_limited_first_ge_maxmin_everywhere": true,
+        "E5_heuristic_order_is_best_everywhere": false,
+        "E6_configs": 119,
+        "E6_holds": false,
+        "E6_two_sided_beta1_beats_base_beta256": 102,
+        "E6_two_sided_beta1_reaches_reference": 67,
+        "E7_equal_power_maxmin_ge_series_first": 504,
+        "E7_total": 504
+      },
+      "replay_expectations": {
+        "E1_maxmin_dominates_parallel_heuristics": true,
+        "E2_no_arrangement_or_beta_passes_when_ceiling_below_reference": true,
+        "E3_holds": true,
+        "E3_max_rel_gain": 218.1113268080563,
+        "E3_median_rel_gain_flow_limited": 0.30657359992215244,
+        "E3_median_rel_gain_near_ceiling": 0.005101521131365614,
+        "E3_n_flow_limited": 668,
+        "E3_n_near_ceiling": 1642,
+        "E4_counterexamples": [],
+        "E4_n_counterexamples": 0,
+        "E4_series_limited_first_ge_maxmin_everywhere": true,
+        "E5_heuristic_order_is_best_everywhere": false,
+        "E6_configs": 119,
+        "E6_holds": false,
+        "E6_two_sided_beta1_beats_base_beta256": 102,
+        "E6_two_sided_beta1_reaches_reference": 67,
+        "E7_equal_power_maxmin_ge_series_first": 504,
+        "E7_total": 504
+      },
+      "expectations_identical": true
+    },
+    {
+      "file": "pf0_crosscheck_summary.json",
+      "source_checks": {
+        "V1_mimic_reproduces_pf0_minima_and_outlets_1e-9": true,
+        "V2_continuum_close_to_pf0_within_1pct_of_inlet": true,
+        "V2_no_threshold_classification_flips": true,
+        "continuum_refinement_below_1e-8_of_inlet": true,
+        "dilute_first_order_closed_form_1e-6": true,
+        "fixed_lumen_ceiling_matches_pf0_96cell_within_0.5pct": true,
+        "inputs_match_pf0_manifest": true,
+        "necessary_bounds_consistent": true,
+        "pf0_low_flow_wall_reversals_preserved_in_continuum": true,
+        "pf0_outputs_depend_only_on_Qbeta_1e-12": true,
+        "zero_order_closed_form_1e-5": true
+      },
+      "replay_checks": {
+        "V1_mimic_reproduces_pf0_minima_and_outlets_1e-9": true,
+        "V2_continuum_close_to_pf0_within_1pct_of_inlet": true,
+        "V2_no_threshold_classification_flips": true,
+        "continuum_refinement_below_1e-8_of_inlet": true,
+        "dilute_first_order_closed_form_1e-6": true,
+        "fixed_lumen_ceiling_matches_pf0_96cell_within_0.5pct": true,
+        "inputs_match_pf0_manifest": true,
+        "necessary_bounds_consistent": true,
+        "pf0_low_flow_wall_reversals_preserved_in_continuum": true,
+        "pf0_outputs_depend_only_on_Qbeta_1e-12": true,
+        "zero_order_closed_form_1e-5": true
+      },
+      "checks_identical": true,
+      "source_expectations": null,
+      "replay_expectations": null,
+      "expectations_identical": true
+    }
+  ],
+  "interpretation": "Same-source replay reproducibility; separate from independently implemented arithmetic and BVP checks. JSON timestamp/runtime/platform fields are expected to differ."
+}

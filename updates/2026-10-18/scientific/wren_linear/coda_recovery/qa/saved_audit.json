@@ -1,0 +1,584 @@
+{
+  "scope": "saved-data arithmetic/hash/ledger audit only; no additional model evaluation",
+  "passed": 106,
+  "total": 106,
+  "all_passed": true,
+  "checks": [
+    {
+      "name": "admitted_manifest_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "frozen_file:RECOVERY_PLAN.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "frozen_file:proposed_cases.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "frozen_file:recovery_candidate.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "frozen_file:wren_fixed_unexecuted.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "frozen_file:STATIC_REVIEW.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "frozen_file:original_integrity_receipt.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "original_unchanged:FROZEN_PLAN.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "original_unchanged:FROZEN_PLAN.sha256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "original_unchanged:bench.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "original_unchanged:bench_run2_as_executed.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "original_unchanged:results.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "original_unchanged:results_PARTIAL_run2_truncated.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "original_unchanged:results.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "original_unchanged:ledger.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "original_unchanged:ENV.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "original_unchanged:DEVIATIONS.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "original_unchanged:run_stdout.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "supervisor_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "supervised_limits",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ledger_32_events_for_16_evaluations",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "evaluation:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "persisted_result:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "evaluation:2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "persisted_result:2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "evaluation:3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "persisted_result:3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "evaluation:4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "persisted_result:4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "evaluation:5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "persisted_result:5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "evaluation:6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "persisted_result:6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "evaluation:7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "persisted_result:7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "evaluation:8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "persisted_result:8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "evaluation:9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "persisted_result:9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "evaluation:10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "persisted_result:10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "evaluation:11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "persisted_result:11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "evaluation:12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "persisted_result:12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "evaluation:13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "persisted_result:13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "evaluation:14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "persisted_result:14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "evaluation:15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "persisted_result:15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "evaluation:16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "persisted_result:16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "F1:rk4_c",
+      "passed": true,
+      "detail": 1.0408340855860843e-16
+    },
+    {
+      "name": "F1:rk4_b",
+      "passed": true,
+      "detail": 1.1102230246251565e-16
+    },
+    {
+      "name": "F1:rk4_U",
+      "passed": true,
+      "detail": 6.106226635438361e-16
+    },
+    {
+      "name": "F1:saved_total_balance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "F1:rk4_total_balance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "F1:quadrature_balance",
+      "passed": true,
+      "detail": 5.551115123125783e-17
+    },
+    {
+      "name": "F1:raw_positive",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "F1:internal_counters",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "F2:rk4_c",
+      "passed": true,
+      "detail": 2.914335439641036e-16
+    },
+    {
+      "name": "F2:rk4_b",
+      "passed": true,
+      "detail": 2.3314683517128287e-15
+    },
+    {
+      "name": "F2:rk4_U",
+      "passed": true,
+      "detail": 2.7755575615628914e-16
+    },
+    {
+      "name": "F2:saved_total_balance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "F2:rk4_total_balance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "F2:quadrature_balance",
+      "passed": true,
+      "detail": 8.326672684688674e-17
+    },
+    {
+      "name": "F2:raw_positive",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "F2:internal_counters",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "F3:rk4_c",
+      "passed": true,
+      "detail": 2.581268532253489e-15
+    },
+    {
+      "name": "F3:rk4_b",
+      "passed": true,
+      "detail": 9.880984919163893e-15
+    },
+    {
+      "name": "F3:rk4_U",
+      "passed": true,
+      "detail": 1.0436096431476471e-14
+    },
+    {
+      "name": "F3:saved_total_balance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "F3:rk4_total_balance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "F3:quadrature_balance",
+      "passed": true,
+      "detail": 1.2490009027033011e-14
+    },
+    {
+      "name": "F3:raw_positive",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "F3:internal_counters",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "F4:rk4_c",
+      "passed": true,
+      "detail": 9.020562075079397e-17
+    },
+    {
+      "name": "F4:rk4_b",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "F4:rk4_U",
+      "passed": true,
+      "detail": 4.718447854656915e-16
+    },
+    {
+      "name": "F4:saved_total_balance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "F4:rk4_total_balance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "F4:quadrature_balance",
+      "passed": true,
+      "detail": 5.551115123125783e-17
+    },
+    {
+      "name": "F4:raw_positive",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "F4:internal_counters",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "F5:rk4_c",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "F5:rk4_b",
+      "passed": true,
+      "detail": 1.1102230246251565e-16
+    },
+    {
+      "name": "F5:rk4_U",
+      "passed": true,
+      "detail": 1.1102230246251565e-16
+    },
+    {
+      "name": "F5:saved_total_balance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "F5:rk4_total_balance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "F5:quadrature_balance",
+      "passed": true,
+      "detail": 1.1102230246251565e-16
+    },
+    {
+      "name": "F5:raw_positive",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "F5:internal_counters",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "F6:rk4_c",
+      "passed": true,
+      "detail": 4.163336342344337e-17
+    },
+    {
+      "name": "F6:rk4_b",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "F6:rk4_U",
+      "passed": true,
+      "detail": 1.2212453270876722e-15
+    },
+    {
+      "name": "F6:saved_total_balance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "F6:rk4_total_balance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "F6:quadrature_balance",
+      "passed": true,
+      "detail": 9.992007221626409e-16
+    },
+    {
+      "name": "F6:raw_positive",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "F6:internal_counters",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "declared_checks_23",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no_extra_cases",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no_F6_pseudo_delivery",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "selected_outlet_rank",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "selected_delivery_rank",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "max_rk4_absolute_error": {
+    "c": 2.581268532253489e-15,
+    "b": 9.880984919163893e-15,
+    "U": 1.0436096431476471e-14
+  },
+  "max_quadrature_balance_residual": 1.2490009027033011e-14,
+  "internal_counts": {
+    "exact_endpoints": 6,
+    "quadrature_samples": 12288,
+    "rk4_steps": 152161,
+    "rk4_rhs": 608644
+  },
+  "selected_comparisons": {
+    "D": {
+      "c": 0.10976232721880529,
+      "U": 0.09023767278119471,
+      "Q": 3.3333333333333335e-11,
+      "QU": 3.007922426039824e-12
+    },
+    "E": {
+      "c": 0.1452298074147382,
+      "U": 0.27385096292630906,
+      "Q": 1.2500000000000004e-11,
+      "QU": 3.4231370365788643e-12
+    },
+    "F1": {
+      "c": 0.04037930359893109,
+      "U": 0.1596206964010688,
+      "Q": 1.2500000000000004e-11,
+      "QU": 1.9952587050133605e-12
+    },
+    "F2": {
+      "c": 0.0838973494149603,
+      "U": 0.192732991347907,
+      "Q": 1.2500000000000004e-11,
+      "QU": 2.4091623918488382e-12
+    },
+    "F3": {
+      "c": 0.1449137775371206,
+      "U": 0.2731106414232578,
+      "Q": 1.2500000000000004e-11,
+      "QU": 3.4138830177907236e-12
+    }
+  },
+  "source_results_sha256": "c3cff829c2da67de44159afa0747ded9b5bcdb66e2f7807ebf83ebba7b963145",
+  "ledger_sha256": "dd9b622822d10c9fcb432cff2173e4866b7d94533b1104ac824f273876720108"
+}

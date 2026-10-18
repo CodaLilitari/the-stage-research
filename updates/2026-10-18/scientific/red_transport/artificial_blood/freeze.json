@@ -1,0 +1,61 @@
+{
+  "code_sha256": "f3fe9e427f5ce6b636248a9832dba74d4549daf16d7988718c263ea7d1084aba",
+  "config": {
+    "analyst_selected_geometry": {
+      "channel_length_m": 0.001,
+      "slab_depths_m": [
+        5e-05,
+        0.0001,
+        0.0002,
+        0.0004
+      ],
+      "wall_width_m": 0.001
+    },
+    "capacity_law": "Hypothetical instantaneous equilibrium C_total=beta*C_free in lumen only. Same free inlet, diffusivity, consumption and wall law. No actual carrier, viscosity, affinity, kinetics or toxicity is modeled.",
+    "capacity_multipliers": [
+      1.0,
+      4.0,
+      16.0
+    ],
+    "flows_uL_min": [
+      0.5,
+      2.0,
+      8.0,
+      32.0
+    ],
+    "model": "steady one-sided planar slab at each axial station; finite-volume Michaelis-Menten reaction-diffusion, finite wall transfer, backward-Euler lumen depletion",
+    "name": "PF0 planar perfused-tissue transport screen",
+    "numerics": {
+      "axial_root_absolute_tolerance": 1e-12,
+      "axial_segments": 32,
+      "newton_relative_tolerance": 1e-10,
+      "tissue_cells": 24
+    },
+    "predeclared_checks": {
+      "bounded_concentrations_tolerance": 1e-10,
+      "mass_balance_relative_tolerance": 1e-06,
+      "monotonic_absolute_tolerance": 1e-09,
+      "refinement_absolute_tolerance_relative_to_inlet": 0.01
+    },
+    "scope": "144 main cases; synthetic computational feasibility screening only; no human or tissue experiment, injectable product, clinical efficacy or whole-body viability claim.",
+    "source_parameters": {
+      "D_m2_s": 2e-09,
+      "Km_mol_m3": 0.028,
+      "cell_density_per_m3": 200000000000000.0,
+      "free_inlet_mol_m3": 0.2,
+      "maximum_consumption_mol_per_cell_s": 1e-16,
+      "provenance": "Bonart et al. 2026 illustrative liver-like high-demand case; not measured skin physiology.",
+      "qmax_mol_m3_s": 0.02,
+      "threshold_mol_m3": 0.05
+    },
+    "source_url": "https://www.nature.com/articles/s41598-026-53301-0",
+    "wall_permeabilities_m_s": [
+      5e-06,
+      5e-05,
+      0.0002
+    ],
+    "wall_provenance": "0.05 and 0.2 mm/s span the paper's reference range; 0.005 mm/s is an analyst-selected low-transfer stress case."
+  },
+  "frozen_at_utc": "2026-10-15T13:49:30.647769+00:00",
+  "status": "local pre-run freeze, not externally witnessed preregistration"
+}

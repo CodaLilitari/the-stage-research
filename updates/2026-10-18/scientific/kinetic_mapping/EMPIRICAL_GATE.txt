@@ -1,0 +1,17 @@
+AB-KMAP0 next empirical gate — preparation, not execution authorization
+
+The immediate empirical target should be a conditional input/output kernel or a parameter-combination set, not a unique microscopic k. The current study does not admit any new fit, digitization, transport solve or biological experiment.
+
+Existing Banerjee workbook:
+The three preparation curves do not establish shared a,d. They have different first observations and unknown replicate-level uncertainty. A full-to-tail change in apparent rate is not a measured pair of poles. Therefore do not substitute the previous full/tail M1 estimates into T=lambda_s+lambda_f or D=lambda_s*lambda_f. This is a concrete exclusion rule, not a numerical estimate.
+
+Primary paired free-Hb/liposome route:
+Al-Samir et al. supplies a documented route to constrain chemistry separately before exchange, with public figures/constants but original data only on request. Its large oxygen-release excursion is not automatically a small perturbation around one equilibrium; the local identifiability theorem cannot be fitted unchanged over that entire excursion merely because the source writes two concentration equations. Free and encapsulated Hb also experience different concentration/crowding conditions. Any later use must label shared chemistry as a tested or externally supported hypothesis and distinguish the source's effective dissociation description from a uniquely established microscopic cooperative mechanism.
+
+For a future admitted figure-level calibration, first freeze the selected source figure/condition, concentration reference, geometry interpretation, optical normalization and digitization procedure. Resolve the source's radius/diameter and equation-display ambiguities without assuming its executed code was wrong. Retain graphical extraction uncertainty as graphical uncertainty; it is not donor/preparation variance. If those ambiguities cannot be resolved from public evidence, stop at a sensitivity set instead of choosing one interpretation silently.
+
+For a future admitted local-kernel fit, require a documented input waveform and an explicitly narrow operating range; alternatively use a specified nonlinear model and do not carry over the local theorem as a global proof. Prespecify observation gain/offset, initial-state treatment, windows and admissible coefficient combinations. Hold out a compatible forcing condition or observable for prediction. Do not declare independence from thousands of points on one averaged record.
+
+A successful calibrated local kernel can predict b responses under compatible forcing even if its microscopic branch remains ambiguous. To interpret q,a,d separately, require a second observable, compatible independent chemistry, or multiple genuinely shared-chemistry conditions. To interpret membrane permeability separately from external film, require one more independently supported resistance constraint. No primary source inspected in this pass closes all of those gates for Stage's current PEG-LEH preparation.
+
+The public single-cell study is useful as a counterexample to treating the forcing waveform and geometry as unknowable: it measures a solution-switch proxy and structural quantities. Its RBC/coverslip conditions do not authorize numerical transfer to a flowing PEG-LEH carrier. No wet-lab procedure or formulation is proposed here.

@@ -1,0 +1,2925 @@
+{
+  "accepted": 51,
+  "assessments": [
+    {
+      "attempt_id": "L00_N32",
+      "checks": [
+        {
+          "name": "actual_production_calls",
+          "passed": true
+        },
+        {
+          "name": "radial_closure_explicit",
+          "passed": true
+        },
+        {
+          "name": "flow_and_residence",
+          "passed": true
+        },
+        {
+          "name": "envelope_flags",
+          "passed": true
+        },
+        {
+          "max_scaled": 2.7097074584148118e-12,
+          "name": "discrete_BE_path",
+          "passed": true
+        },
+        {
+          "name": "discrete_BE_uptake",
+          "passed": true,
+          "scaled": 1.0263317973269181e-12
+        },
+        {
+          "max_scaled": 0.0,
+          "name": "independent_Lily_BE_endpoint",
+          "passed": true
+        },
+        {
+          "bound_scaled": 0.0,
+          "name": "separate_total_and_bound_updates",
+          "passed": true,
+          "total_scaled": 1.5362711103250604e-13
+        },
+        {
+          "name": "nonnegative_unclipped_states",
+          "passed": true
+        },
+        {
+          "max_relative": 0.0,
+          "name": "endpoint_coordinates",
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "alpha_reference": 0.2,
+        "continuum_endpoint_scaled_error": 0.0030574971167739162,
+        "discrete_path_scaled_error": 2.7097074584148118e-12,
+        "discrete_uptake_scaled_error": 1.0263317973269181e-12,
+        "endpoint_exact": [
+          0.10976232721880529,
+          0.0
+        ]
+      },
+      "passed": true
+    },
+    {
+      "attempt_id": "L00_N64",
+      "checks": [
+        {
+          "name": "actual_production_calls",
+          "passed": true
+        },
+        {
+          "name": "radial_closure_explicit",
+          "passed": true
+        },
+        {
+          "name": "flow_and_residence",
+          "passed": true
+        },
+        {
+          "name": "envelope_flags",
+          "passed": true
+        },
+        {
+          "max_scaled": 1.050722009399152e-11,
+          "name": "discrete_BE_path",
+          "passed": true
+        },
+        {
+          "name": "discrete_BE_uptake",
+          "passed": true,
+          "scaled": 3.935185510783867e-12
+        },
+        {
+          "max_scaled": 0.0,
+          "name": "independent_Lily_BE_endpoint",
+          "passed": true
+        },
+        {
+          "bound_scaled": 0.0,
+          "name": "separate_total_and_bound_updates",
+          "passed": true,
+          "total_scaled": 2.986499936241671e-13
+        },
+        {
+          "name": "nonnegative_unclipped_states",
+          "passed": true
+        },
+        {
+          "max_relative": 0.0,
+          "name": "endpoint_coordinates",
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "alpha_reference": 0.2,
+        "continuum_endpoint_scaled_error": 0.0015360987158453965,
+        "discrete_path_scaled_error": 1.050722009399152e-11,
+        "discrete_uptake_scaled_error": 3.935185510783867e-12,
+        "endpoint_exact": [
+          0.10976232721880529,
+          0.0
+        ]
+      },
+      "passed": true
+    },
+    {
+      "attempt_id": "L00_N128",
+      "checks": [
+        {
+          "name": "actual_production_calls",
+          "passed": true
+        },
+        {
+          "name": "radial_closure_explicit",
+          "passed": true
+        },
+        {
+          "name": "flow_and_residence",
+          "passed": true
+        },
+        {
+          "name": "envelope_flags",
+          "passed": true
+        },
+        {
+          "max_scaled": 6.408547303937695e-11,
+          "name": "discrete_BE_path",
+          "passed": true
+        },
+        {
+          "name": "discrete_BE_uptake",
+          "passed": true,
+          "scaled": 2.386209285720753e-11
+        },
+        {
+          "max_scaled": 0.0,
+          "name": "independent_Lily_BE_endpoint",
+          "passed": true
+        },
+        {
+          "max_scaled": 0.00076990250239585,
+          "name": "finest_continuum_endpoint",
+          "passed": true
+        },
+        {
+          "bound_scaled": 0.0,
+          "name": "separate_total_and_bound_updates",
+          "passed": true,
+          "total_scaled": 9.105216580707065e-13
+        },
+        {
+          "name": "nonnegative_unclipped_states",
+          "passed": true
+        },
+        {
+          "max_relative": 0.0,
+          "name": "endpoint_coordinates",
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "alpha_reference": 0.2,
+        "continuum_endpoint_scaled_error": 0.00076990250239585,
+        "discrete_path_scaled_error": 6.408547303937695e-11,
+        "discrete_uptake_scaled_error": 2.386209285720753e-11,
+        "endpoint_exact": [
+          0.10976232721880529,
+          0.0
+        ]
+      },
+      "passed": true
+    },
+    {
+      "attempt_id": "L01_N32",
+      "checks": [
+        {
+          "name": "actual_production_calls",
+          "passed": true
+        },
+        {
+          "name": "radial_closure_explicit",
+          "passed": true
+        },
+        {
+          "name": "flow_and_residence",
+          "passed": true
+        },
+        {
+          "name": "envelope_flags",
+          "passed": true
+        },
+        {
+          "max_scaled": 9.643674747650266e-13,
+          "name": "discrete_BE_path",
+          "passed": true
+        },
+        {
+          "name": "discrete_BE_uptake",
+          "passed": true,
+          "scaled": 1.1302070390684094e-13
+        },
+        {
+          "bound_scaled": 0.0,
+          "name": "separate_total_and_bound_updates",
+          "passed": true,
+          "total_scaled": 9.79216707719388e-13
+        },
+        {
+          "name": "nonnegative_unclipped_states",
+          "passed": true
+        },
+        {
+          "max_relative": 0.0,
+          "name": "endpoint_coordinates",
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "alpha_reference": 0.2,
+        "continuum_endpoint_scaled_error": 0.0011550681982781807,
+        "discrete_path_scaled_error": 9.643674747650266e-13,
+        "discrete_uptake_scaled_error": 1.1302070390684094e-13,
+        "endpoint_exact": [
+          0.1452298074147382,
+          0.5809192296589528
+        ]
+      },
+      "passed": true
+    },
+    {
+      "attempt_id": "L01_N64",
+      "checks": [
+        {
+          "name": "actual_production_calls",
+          "passed": true
+        },
+        {
+          "name": "radial_closure_explicit",
+          "passed": true
+        },
+        {
+          "name": "flow_and_residence",
+          "passed": true
+        },
+        {
+          "name": "envelope_flags",
+          "passed": true
+        },
+        {
+          "max_scaled": 9.113543253391754e-13,
+          "name": "discrete_BE_path",
+          "passed": true
+        },
+        {
+          "name": "discrete_BE_uptake",
+          "passed": true,
+          "scaled": 7.432943149865423e-14
+        },
+        {
+          "bound_scaled": 0.0,
+          "name": "separate_total_and_bound_updates",
+          "passed": true,
+          "total_scaled": 9.447997939560082e-13
+        },
+        {
+          "name": "nonnegative_unclipped_states",
+          "passed": true
+        },
+        {
+          "max_relative": 0.0,
+          "name": "endpoint_coordinates",
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "alpha_reference": 0.2,
+        "continuum_endpoint_scaled_error": 0.000579220952323517,
+        "discrete_path_scaled_error": 9.113543253391754e-13,
+        "discrete_uptake_scaled_error": 7.432943149865423e-14,
+        "endpoint_exact": [
+          0.1452298074147382,
+          0.5809192296589528
+        ]
+      },
+      "passed": true
+    },
+    {
+      "attempt_id": "L01_N128",
+      "checks": [
+        {
+          "name": "actual_production_calls",
+          "passed": true
+        },
+        {
+          "name": "radial_closure_explicit",
+          "passed": true
+        },
+        {
+          "name": "flow_and_residence",
+          "passed": true
+        },
+        {
+          "name": "envelope_flags",
+          "passed": true
+        },
+        {
+          "max_scaled": 1.6975310046518644e-12,
+          "name": "discrete_BE_path",
+          "passed": true
+        },
+        {
+          "name": "discrete_BE_uptake",
+          "passed": true,
+          "scaled": 1.5804024755539103e-13
+        },
+        {
+          "max_scaled": 0.0002900343284917284,
+          "name": "finest_continuum_endpoint",
+          "passed": true
+        },
+        {
+          "bound_scaled": 0.0,
+          "name": "separate_total_and_bound_updates",
+          "passed": true,
+          "total_scaled": 9.958700530887654e-13
+        },
+        {
+          "name": "nonnegative_unclipped_states",
+          "passed": true
+        },
+        {
+          "max_relative": 0.0,
+          "name": "endpoint_coordinates",
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "alpha_reference": 0.2,
+        "continuum_endpoint_scaled_error": 0.0002900343284917284,
+        "discrete_path_scaled_error": 1.6975310046518644e-12,
+        "discrete_uptake_scaled_error": 1.5804024755539103e-13,
+        "endpoint_exact": [
+          0.1452298074147382,
+          0.5809192296589528
+        ]
+      },
+      "passed": true
+    },
+    {
+      "attempt_id": "L02_N32",
+      "checks": [
+        {
+          "name": "actual_production_calls",
+          "passed": true
+        },
+        {
+          "name": "radial_closure_explicit",
+          "passed": true
+        },
+        {
+          "name": "flow_and_residence",
+          "passed": true
+        },
+        {
+          "name": "envelope_flags",
+          "passed": true
+        },
+        {
+          "max_scaled": 1.979250097150498e-12,
+          "name": "discrete_BE_path",
+          "passed": true
+        },
+        {
+          "name": "discrete_BE_uptake",
+          "passed": true,
+          "scaled": 2.892130979148533e-13
+        },
+        {
+          "max_scaled": 0.0,
+          "name": "independent_Lily_BE_endpoint",
+          "passed": true
+        },
+        {
+          "bound_scaled": 0.0,
+          "name": "separate_total_and_bound_updates",
+          "passed": true,
+          "total_scaled": 9.553469126899472e-13
+        },
+        {
+          "name": "nonnegative_unclipped_states",
+          "passed": true
+        },
+        {
+          "max_relative": 0.0,
+          "name": "endpoint_coordinates",
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "alpha_reference": 0.2,
+        "continuum_endpoint_scaled_error": 0.007969648586722555,
+        "discrete_path_scaled_error": 1.979250097150498e-12,
+        "discrete_uptake_scaled_error": 2.892130979148533e-13,
+        "endpoint_exact": [
+          0.04037930359893108,
+          0.8
+        ]
+      },
+      "passed": true
+    },
+    {
+      "attempt_id": "L02_N64",
+      "checks": [
+        {
+          "name": "actual_production_calls",
+          "passed": true
+        },
+        {
+          "name": "radial_closure_explicit",
+          "passed": true
+        },
+        {
+          "name": "flow_and_residence",
+          "passed": true
+        },
+        {
+          "name": "envelope_flags",
+          "passed": true
+        },
+        {
+          "max_scaled": 3.1992464233354667e-12,
+          "name": "discrete_BE_path",
+          "passed": true
+        },
+        {
+          "name": "discrete_BE_uptake",
+          "passed": true,
+          "scaled": 3.968492201522622e-13
+        },
+        {
+          "max_scaled": 0.0,
+          "name": "independent_Lily_BE_endpoint",
+          "passed": true
+        },
+        {
+          "bound_scaled": 0.0,
+          "name": "separate_total_and_bound_updates",
+          "passed": true,
+          "total_scaled": 9.32032229172819e-13
+        },
+        {
+          "name": "nonnegative_unclipped_states",
+          "passed": true
+        },
+        {
+          "max_relative": 0.0,
+          "name": "endpoint_coordinates",
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "alpha_reference": 0.2,
+        "continuum_endpoint_scaled_error": 0.004011194989643613,
+        "discrete_path_scaled_error": 3.1992464233354667e-12,
+        "discrete_uptake_scaled_error": 3.968492201522622e-13,
+        "endpoint_exact": [
+          0.04037930359893108,
+          0.8
+        ]
+      },
+      "passed": true
+    },
+    {
+      "attempt_id": "L02_N128",
+      "checks": [
+        {
+          "name": "actual_production_calls",
+          "passed": true
+        },
+        {
+          "name": "radial_closure_explicit",
+          "passed": true
+        },
+        {
+          "name": "flow_and_residence",
+          "passed": true
+        },
+        {
+          "name": "envelope_flags",
+          "passed": true
+        },
+        {
+          "max_scaled": 5.848169171152051e-12,
+          "name": "discrete_BE_path",
+          "passed": true
+        },
+        {
+          "name": "discrete_BE_uptake",
+          "passed": true,
+          "scaled": 1.1671219546371958e-13
+        },
+        {
+          "max_scaled": 0.0,
+          "name": "independent_Lily_BE_endpoint",
+          "passed": true
+        },
+        {
+          "max_scaled": 0.0020122583795365023,
+          "name": "finest_continuum_endpoint",
+          "passed": true
+        },
+        {
+          "bound_scaled": 0.0,
+          "name": "separate_total_and_bound_updates",
+          "passed": true,
+          "total_scaled": 8.987255384340642e-13
+        },
+        {
+          "name": "nonnegative_unclipped_states",
+          "passed": true
+        },
+        {
+          "max_relative": 0.0,
+          "name": "endpoint_coordinates",
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "alpha_reference": 0.2,
+        "continuum_endpoint_scaled_error": 0.0020122583795365023,
+        "discrete_path_scaled_error": 5.848169171152051e-12,
+        "discrete_uptake_scaled_error": 1.1671219546371958e-13,
+        "endpoint_exact": [
+          0.04037930359893108,
+          0.8
+        ]
+      },
+      "passed": true
+    },
+    {
+      "attempt_id": "L03_N32",
+      "checks": [
+        {
+          "name": "actual_production_calls",
+          "passed": true
+        },
+        {
+          "name": "radial_closure_explicit",
+          "passed": true
+        },
+        {
+          "name": "flow_and_residence",
+          "passed": true
+        },
+        {
+          "name": "envelope_flags",
+          "passed": true
+        },
+        {
+          "max_scaled": 4.2819220391621116e-12,
+          "name": "discrete_BE_path",
+          "passed": true
+        },
+        {
+          "name": "discrete_BE_uptake",
+          "passed": true,
+          "scaled": 8.634482018265999e-13
+        },
+        {
+          "max_scaled": 0.0,
+          "name": "independent_Lily_BE_endpoint",
+          "passed": true
+        },
+        {
+          "bound_scaled": 1.3877787807814457e-16,
+          "name": "separate_total_and_bound_updates",
+          "passed": true,
+          "total_scaled": 9.64783808399261e-13
+        },
+        {
+          "name": "nonnegative_unclipped_states",
+          "passed": true
+        },
+        {
+          "max_relative": 0.0,
+          "name": "endpoint_coordinates",
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "alpha_reference": 0.2,
+        "continuum_endpoint_scaled_error": 0.004274743698557196,
+        "discrete_path_scaled_error": 4.2819220391621116e-12,
+        "discrete_uptake_scaled_error": 8.634482018265999e-13,
+        "endpoint_exact": [
+          0.0838973494149603,
+          0.7233696592371328
+        ]
+      },
+      "passed": true
+    },
+    {
+      "attempt_id": "L03_N64",
+      "checks": [
+        {
+          "name": "actual_production_calls",
+          "passed": true
+        },
+        {
+          "name": "radial_closure_explicit",
+          "passed": true
+        },
+        {
+          "name": "flow_and_residence",
+          "passed": true
+        },
+        {
+          "name": "envelope_flags",
+          "passed": true
+        },
+        {
+          "max_scaled": 4.3989117903819874e-12,
+          "name": "discrete_BE_path",
+          "passed": true
+        },
+        {
+          "name": "discrete_BE_uptake",
+          "passed": true,
+          "scaled": 4.717615187388446e-13
+        },
+        {
+          "max_scaled": 0.0,
+          "name": "independent_Lily_BE_endpoint",
+          "passed": true
+        },
+        {
+          "bound_scaled": 2.7755575615628914e-16,
+          "name": "separate_total_and_bound_updates",
+          "passed": true,
+          "total_scaled": 9.364731212713195e-13
+        },
+        {
+          "name": "nonnegative_unclipped_states",
+          "passed": true
+        },
+        {
+          "max_relative": 0.0,
+          "name": "endpoint_coordinates",
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "alpha_reference": 0.2,
+        "continuum_endpoint_scaled_error": 0.002136083745723008,
+        "discrete_path_scaled_error": 4.3989117903819874e-12,
+        "discrete_uptake_scaled_error": 4.717615187388446e-13,
+        "endpoint_exact": [
+          0.0838973494149603,
+          0.7233696592371328
+        ]
+      },
+      "passed": true
+    },
+    {
+      "attempt_id": "L03_N128",
+      "checks": [
+        {
+          "name": "actual_production_calls",
+          "passed": true
+        },
+        {
+          "name": "radial_closure_explicit",
+          "passed": true
+        },
+        {
+          "name": "flow_and_residence",
+          "passed": true
+        },
+        {
+          "name": "envelope_flags",
+          "passed": true
+        },
+        {
+          "max_scaled": 6.513123373963481e-12,
+          "name": "discrete_BE_path",
+          "passed": true
+        },
+        {
+          "name": "discrete_BE_uptake",
+          "passed": true,
+          "scaled": 3.258227021518678e-13
+        },
+        {
+          "max_scaled": 0.0,
+          "name": "independent_Lily_BE_endpoint",
+          "passed": true
+        },
+        {
+          "max_scaled": 0.0010675821761886584,
+          "name": "finest_continuum_endpoint",
+          "passed": true
+        },
+        {
+          "bound_scaled": 2.7755575615628914e-16,
+          "name": "separate_total_and_bound_updates",
+          "passed": true,
+          "total_scaled": 9.264811140496931e-13
+        },
+        {
+          "name": "nonnegative_unclipped_states",
+          "passed": true
+        },
+        {
+          "max_relative": 0.0,
+          "name": "endpoint_coordinates",
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "alpha_reference": 0.2,
+        "continuum_endpoint_scaled_error": 0.0010675821761886584,
+        "discrete_path_scaled_error": 6.513123373963481e-12,
+        "discrete_uptake_scaled_error": 3.258227021518678e-13,
+        "endpoint_exact": [
+          0.0838973494149603,
+          0.7233696592371328
+        ]
+      },
+      "passed": true
+    },
+    {
+      "attempt_id": "L04_N32",
+      "checks": [
+        {
+          "name": "actual_production_calls",
+          "passed": true
+        },
+        {
+          "name": "radial_closure_explicit",
+          "passed": true
+        },
+        {
+          "name": "flow_and_residence",
+          "passed": true
+        },
+        {
+          "name": "envelope_flags",
+          "passed": true
+        },
+        {
+          "max_scaled": 1.2088940959387173e-12,
+          "name": "discrete_BE_path",
+          "passed": true
+        },
+        {
+          "name": "discrete_BE_uptake",
+          "passed": true,
+          "scaled": 1.0286216323152075e-13
+        },
+        {
+          "max_scaled": 0.0,
+          "name": "independent_Lily_BE_endpoint",
+          "passed": true
+        },
+        {
+          "bound_scaled": 2.7755575615628914e-16,
+          "name": "separate_total_and_bound_updates",
+          "passed": true,
+          "total_scaled": 9.992007221626409e-13
+        },
+        {
+          "name": "nonnegative_unclipped_states",
+          "passed": true
+        },
+        {
+          "max_relative": 0.0,
+          "name": "endpoint_coordinates",
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "alpha_reference": 0.2,
+        "continuum_endpoint_scaled_error": 0.000911495580196986,
+        "discrete_path_scaled_error": 1.2088940959387173e-12,
+        "discrete_uptake_scaled_error": 1.0286216323152075e-13,
+        "endpoint_exact": [
+          0.12973237877585866,
+          0.626388570113541
+        ]
+      },
+      "passed": true
+    },
+    {
+      "attempt_id": "L04_N64",
+      "checks": [
+        {
+          "name": "actual_production_calls",
+          "passed": true
+        },
+        {
+          "name": "radial_closure_explicit",
+          "passed": true
+        },
+        {
+          "name": "flow_and_residence",
+          "passed": true
+        },
+        {
+          "name": "envelope_flags",
+          "passed": true
+        },
+        {
+          "max_scaled": 2.886441086147329e-12,
+          "name": "discrete_BE_path",
+          "passed": true
+        },
+        {
+          "name": "discrete_BE_uptake",
+          "passed": true,
+          "scaled": 3.8008485248042234e-13
+        },
+        {
+          "max_scaled": 0.0,
+          "name": "independent_Lily_BE_endpoint",
+          "passed": true
+        },
+        {
+          "bound_scaled": 1.3877787807814457e-16,
+          "name": "separate_total_and_bound_updates",
+          "passed": true,
+          "total_scaled": 9.786615962070755e-13
+        },
+        {
+          "name": "nonnegative_unclipped_states",
+          "passed": true
+        },
+        {
+          "max_relative": 0.0,
+          "name": "endpoint_coordinates",
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "alpha_reference": 0.2,
+        "continuum_endpoint_scaled_error": 0.0004574803516479986,
+        "discrete_path_scaled_error": 2.886441086147329e-12,
+        "discrete_uptake_scaled_error": 3.8008485248042234e-13,
+        "endpoint_exact": [
+          0.12973237877585866,
+          0.626388570113541
+        ]
+      },
+      "passed": true
+    },
+    {
+      "attempt_id": "L04_N128",
+      "checks": [
+        {
+          "name": "actual_production_calls",
+          "passed": true
+        },
+        {
+          "name": "radial_closure_explicit",
+          "passed": true
+        },
+        {
+          "name": "flow_and_residence",
+          "passed": true
+        },
+        {
+          "name": "envelope_flags",
+          "passed": true
+        },
+        {
+          "max_scaled": 4.294065103493949e-12,
+          "name": "discrete_BE_path",
+          "passed": true
+        },
+        {
+          "name": "discrete_BE_uptake",
+          "passed": true,
+          "scaled": 2.8743674107545303e-13
+        },
+        {
+          "max_scaled": 0.0,
+          "name": "independent_Lily_BE_endpoint",
+          "passed": true
+        },
+        {
+          "max_scaled": 0.00022916051623467215,
+          "name": "finest_continuum_endpoint",
+          "passed": true
+        },
+        {
+          "bound_scaled": 2.7755575615628914e-16,
+          "name": "separate_total_and_bound_updates",
+          "passed": true,
+          "total_scaled": 9.43689570931383e-13
+        },
+        {
+          "name": "nonnegative_unclipped_states",
+          "passed": true
+        },
+        {
+          "max_relative": 0.0,
+          "name": "endpoint_coordinates",
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "alpha_reference": 0.2,
+        "continuum_endpoint_scaled_error": 0.00022916051623467215,
+        "discrete_path_scaled_error": 4.294065103493949e-12,
+        "discrete_uptake_scaled_error": 2.8743674107545303e-13,
+        "endpoint_exact": [
+          0.12973237877585866,
+          0.626388570113541
+        ]
+      },
+      "passed": true
+    },
+    {
+      "attempt_id": "L05_N32",
+      "checks": [
+        {
+          "name": "actual_production_calls",
+          "passed": true
+        },
+        {
+          "name": "radial_closure_explicit",
+          "passed": true
+        },
+        {
+          "name": "flow_and_residence",
+          "passed": true
+        },
+        {
+          "name": "envelope_flags",
+          "passed": true
+        },
+        {
+          "max_scaled": 8.798517470154366e-13,
+          "name": "discrete_BE_path",
+          "passed": true
+        },
+        {
+          "name": "discrete_BE_uptake",
+          "passed": true,
+          "scaled": 1.4238610290817633e-13
+        },
+        {
+          "max_scaled": 0.0,
+          "name": "independent_Lily_BE_endpoint",
+          "passed": true
+        },
+        {
+          "bound_scaled": 2.7755575615628914e-16,
+          "name": "separate_total_and_bound_updates",
+          "passed": true,
+          "total_scaled": 9.692247004977617e-13
+        },
+        {
+          "name": "nonnegative_unclipped_states",
+          "passed": true
+        },
+        {
+          "max_relative": 0.0,
+          "name": "endpoint_coordinates",
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "alpha_reference": 0.2,
+        "continuum_endpoint_scaled_error": 0.0011498107152020653,
+        "discrete_path_scaled_error": 8.798517470154366e-13,
+        "discrete_uptake_scaled_error": 1.4238610290817633e-13,
+        "endpoint_exact": [
+          0.14491377753712278,
+          0.5819755810396303
+        ]
+      },
+      "passed": true
+    },
+    {
+      "attempt_id": "L05_N64",
+      "checks": [
+        {
+          "name": "actual_production_calls",
+          "passed": true
+        },
+        {
+          "name": "radial_closure_explicit",
+          "passed": true
+        },
+        {
+          "name": "flow_and_residence",
+          "passed": true
+        },
+        {
+          "name": "envelope_flags",
+          "passed": true
+        },
+        {
+          "max_scaled": 9.031664305325648e-13,
+          "name": "discrete_BE_path",
+          "passed": true
+        },
+        {
+          "name": "discrete_BE_uptake",
+          "passed": true,
+          "scaled": 1.1851630787873546e-13
+        },
+        {
+          "max_scaled": 0.0,
+          "name": "independent_Lily_BE_endpoint",
+          "passed": true
+        },
+        {
+          "bound_scaled": 2.7755575615628914e-16,
+          "name": "separate_total_and_bound_updates",
+          "passed": true,
+          "total_scaled": 9.79216707719388e-13
+        },
+        {
+          "name": "nonnegative_unclipped_states",
+          "passed": true
+        },
+        {
+          "max_relative": 0.0,
+          "name": "endpoint_coordinates",
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "alpha_reference": 0.2,
+        "continuum_endpoint_scaled_error": 0.0005765799233049818,
+        "discrete_path_scaled_error": 9.031664305325648e-13,
+        "discrete_uptake_scaled_error": 1.1851630787873546e-13,
+        "endpoint_exact": [
+          0.14491377753712278,
+          0.5819755810396303
+        ]
+      },
+      "passed": true
+    },
+    {
+      "attempt_id": "L05_N128",
+      "checks": [
+        {
+          "name": "actual_production_calls",
+          "passed": true
+        },
+        {
+          "name": "radial_closure_explicit",
+          "passed": true
+        },
+        {
+          "name": "flow_and_residence",
+          "passed": true
+        },
+        {
+          "name": "envelope_flags",
+          "passed": true
+        },
+        {
+          "max_scaled": 1.5998313784848506e-12,
+          "name": "discrete_BE_path",
+          "passed": true
+        },
+        {
+          "name": "discrete_BE_uptake",
+          "passed": true,
+          "scaled": 1.9945156637390937e-13
+        },
+        {
+          "max_scaled": 0.0,
+          "name": "independent_Lily_BE_endpoint",
+          "passed": true
+        },
+        {
+          "max_scaled": 0.00028871071824754235,
+          "name": "finest_continuum_endpoint",
+          "passed": true
+        },
+        {
+          "bound_scaled": 2.7755575615628914e-16,
+          "name": "separate_total_and_bound_updates",
+          "passed": true,
+          "total_scaled": 9.908740494779522e-13
+        },
+        {
+          "name": "nonnegative_unclipped_states",
+          "passed": true
+        },
+        {
+          "max_relative": 0.0,
+          "name": "endpoint_coordinates",
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "alpha_reference": 0.2,
+        "continuum_endpoint_scaled_error": 0.00028871071824754235,
+        "discrete_path_scaled_error": 1.5998313784848506e-12,
+        "discrete_uptake_scaled_error": 1.9945156637390937e-13,
+        "endpoint_exact": [
+          0.14491377753712278,
+          0.5819755810396303
+        ]
+      },
+      "passed": true
+    },
+    {
+      "attempt_id": "L06_N32",
+      "checks": [
+        {
+          "name": "actual_production_calls",
+          "passed": true
+        },
+        {
+          "name": "radial_closure_explicit",
+          "passed": true
+        },
+        {
+          "name": "flow_and_residence",
+          "passed": true
+        },
+        {
+          "name": "envelope_flags",
+          "passed": true
+        },
+        {
+          "max_scaled": 9.818534874028728e-13,
+          "name": "discrete_BE_path",
+          "passed": true
+        },
+        {
+          "name": "discrete_BE_uptake",
+          "passed": true,
+          "scaled": 1.20570220474292e-13
+        },
+        {
+          "max_scaled": 0.0,
+          "name": "independent_Lily_BE_endpoint",
+          "passed": true
+        },
+        {
+          "bound_scaled": 2.7755575615628914e-16,
+          "name": "separate_total_and_bound_updates",
+          "passed": true,
+          "total_scaled": 9.78106484694763e-13
+        },
+        {
+          "name": "nonnegative_unclipped_states",
+          "passed": true
+        },
+        {
+          "max_relative": 0.0,
+          "name": "endpoint_coordinates",
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "alpha_reference": 0.2,
+        "continuum_endpoint_scaled_error": 0.001155068198294279,
+        "discrete_path_scaled_error": 9.818534874028728e-13,
+        "discrete_uptake_scaled_error": 1.20570220474292e-13,
+        "endpoint_exact": [
+          0.145229807414735,
+          0.5809192296589634
+        ]
+      },
+      "passed": true
+    },
+    {
+      "attempt_id": "L06_N64",
+      "checks": [
+        {
+          "name": "actual_production_calls",
+          "passed": true
+        },
+        {
+          "name": "radial_closure_explicit",
+          "passed": true
+        },
+        {
+          "name": "flow_and_residence",
+          "passed": true
+        },
+        {
+          "name": "envelope_flags",
+          "passed": true
+        },
+        {
+          "max_scaled": 8.92758089676704e-13,
+          "name": "discrete_BE_path",
+          "passed": true
+        },
+        {
+          "name": "discrete_BE_uptake",
+          "passed": true,
+          "scaled": 6.650235917504688e-14
+        },
+        {
+          "max_scaled": 0.0,
+          "name": "independent_Lily_BE_endpoint",
+          "passed": true
+        },
+        {
+          "bound_scaled": 2.7755575615628914e-16,
+          "name": "separate_total_and_bound_updates",
+          "passed": true,
+          "total_scaled": 9.447997939560082e-13
+        },
+        {
+          "name": "nonnegative_unclipped_states",
+          "passed": true
+        },
+        {
+          "max_relative": 0.0,
+          "name": "endpoint_coordinates",
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "alpha_reference": 0.2,
+        "continuum_endpoint_scaled_error": 0.0005792209523394765,
+        "discrete_path_scaled_error": 8.92758089676704e-13,
+        "discrete_uptake_scaled_error": 6.650235917504688e-14,
+        "endpoint_exact": [
+          0.145229807414735,
+          0.5809192296589634
+        ]
+      },
+      "passed": true
+    },
+    {
+      "attempt_id": "L06_N128",
+      "checks": [
+        {
+          "name": "actual_production_calls",
+          "passed": true
+        },
+        {
+          "name": "radial_closure_explicit",
+          "passed": true
+        },
+        {
+          "name": "flow_and_residence",
+          "passed": true
+        },
+        {
+          "name": "envelope_flags",
+          "passed": true
+        },
+        {
+          "max_scaled": 1.7150170172897106e-12,
+          "name": "discrete_BE_path",
+          "passed": true
+        },
+        {
+          "name": "discrete_BE_uptake",
+          "passed": true,
+          "scaled": 1.6525669721545455e-13
+        },
+        {
+          "max_scaled": 0.0,
+          "name": "independent_Lily_BE_endpoint",
+          "passed": true
+        },
+        {
+          "max_scaled": 0.00029003432850768784,
+          "name": "finest_continuum_endpoint",
+          "passed": true
+        },
+        {
+          "bound_scaled": 2.7755575615628914e-16,
+          "name": "separate_total_and_bound_updates",
+          "passed": true,
+          "total_scaled": 9.958700530887654e-13
+        },
+        {
+          "name": "nonnegative_unclipped_states",
+          "passed": true
+        },
+        {
+          "max_relative": 0.0,
+          "name": "endpoint_coordinates",
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "alpha_reference": 0.2,
+        "continuum_endpoint_scaled_error": 0.00029003432850768784,
+        "discrete_path_scaled_error": 1.7150170172897106e-12,
+        "discrete_uptake_scaled_error": 1.6525669721545455e-13,
+        "endpoint_exact": [
+          0.145229807414735,
+          0.5809192296589634
+        ]
+      },
+      "passed": true
+    },
+    {
+      "attempt_id": "L07_N32",
+      "checks": [
+        {
+          "name": "actual_production_calls",
+          "passed": true
+        },
+        {
+          "name": "radial_closure_explicit",
+          "passed": true
+        },
+        {
+          "name": "flow_and_residence",
+          "passed": true
+        },
+        {
+          "name": "envelope_flags",
+          "passed": true
+        },
+        {
+          "max_scaled": 7.338539498302765e-12,
+          "name": "discrete_BE_path",
+          "passed": true
+        },
+        {
+          "name": "discrete_BE_uptake",
+          "passed": true,
+          "scaled": 5.185990525902184e-12
+        },
+        {
+          "max_scaled": 0.0,
+          "name": "independent_Lily_BE_endpoint",
+          "passed": true
+        },
+        {
+          "bound_scaled": 0.0,
+          "name": "separate_total_and_bound_updates",
+          "passed": true,
+          "total_scaled": 8.282610708398863e-13
+        },
+        {
+          "name": "nonnegative_unclipped_states",
+          "passed": true
+        },
+        {
+          "max_relative": 0.0,
+          "name": "endpoint_coordinates",
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "alpha_reference": 0.2,
+        "continuum_endpoint_scaled_error": 0.00796964857928295,
+        "discrete_path_scaled_error": 7.338539498302765e-12,
+        "discrete_uptake_scaled_error": 5.185990525902184e-12,
+        "endpoint_exact": [
+          0.04037930359893108,
+          0.0
+        ]
+      },
+      "passed": true
+    },
+    {
+      "attempt_id": "L07_N64",
+      "checks": [
+        {
+          "name": "actual_production_calls",
+          "passed": true
+        },
+        {
+          "name": "radial_closure_explicit",
+          "passed": true
+        },
+        {
+          "name": "flow_and_residence",
+          "passed": true
+        },
+        {
+          "name": "envelope_flags",
+          "passed": true
+        },
+        {
+          "max_scaled": 1.2007721206241939e-11,
+          "name": "discrete_BE_path",
+          "passed": true
+        },
+        {
+          "name": "discrete_BE_uptake",
+          "passed": true,
+          "scaled": 6.388500839449307e-12
+        },
+        {
+          "max_scaled": 0.0,
+          "name": "independent_Lily_BE_endpoint",
+          "passed": true
+        },
+        {
+          "bound_scaled": 0.0,
+          "name": "separate_total_and_bound_updates",
+          "passed": true,
+          "total_scaled": 7.616476893623769e-13
+        },
+        {
+          "name": "nonnegative_unclipped_states",
+          "passed": true
+        },
+        {
+          "max_relative": 0.0,
+          "name": "endpoint_coordinates",
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "alpha_reference": 0.2,
+        "continuum_endpoint_scaled_error": 0.0040111950038083585,
+        "discrete_path_scaled_error": 1.2007721206241939e-11,
+        "discrete_uptake_scaled_error": 6.388500839449307e-12,
+        "endpoint_exact": [
+          0.04037930359893108,
+          0.0
+        ]
+      },
+      "passed": true
+    },
+    {
+      "attempt_id": "L07_N128",
+      "checks": [
+        {
+          "name": "actual_production_calls",
+          "passed": true
+        },
+        {
+          "name": "radial_closure_explicit",
+          "passed": true
+        },
+        {
+          "name": "flow_and_residence",
+          "passed": true
+        },
+        {
+          "name": "envelope_flags",
+          "passed": true
+        },
+        {
+          "max_scaled": 1.0338778444474173e-11,
+          "name": "discrete_BE_path",
+          "passed": true
+        },
+        {
+          "name": "discrete_BE_uptake",
+          "passed": true,
+          "scaled": 4.180961132860261e-12
+        },
+        {
+          "max_scaled": 0.0,
+          "name": "independent_Lily_BE_endpoint",
+          "passed": true
+        },
+        {
+          "max_scaled": 0.0020122583762429563,
+          "name": "finest_continuum_endpoint",
+          "passed": true
+        },
+        {
+          "bound_scaled": 0.0,
+          "name": "separate_total_and_bound_updates",
+          "passed": true,
+          "total_scaled": 4.3298697960381105e-13
+        },
+        {
+          "name": "nonnegative_unclipped_states",
+          "passed": true
+        },
+        {
+          "max_relative": 0.0,
+          "name": "endpoint_coordinates",
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "alpha_reference": 0.2,
+        "continuum_endpoint_scaled_error": 0.0020122583762429563,
+        "discrete_path_scaled_error": 1.0338778444474173e-11,
+        "discrete_uptake_scaled_error": 4.180961132860261e-12,
+        "endpoint_exact": [
+          0.04037930359893108,
+          0.0
+        ]
+      },
+      "passed": true
+    },
+    {
+      "attempt_id": "L08_N32",
+      "checks": [
+        {
+          "name": "actual_production_calls",
+          "passed": true
+        },
+        {
+          "name": "radial_closure_explicit",
+          "passed": true
+        },
+        {
+          "name": "flow_and_residence",
+          "passed": true
+        },
+        {
+          "name": "envelope_flags",
+          "passed": true
+        },
+        {
+          "max_scaled": 1.3877787807814457e-16,
+          "name": "discrete_BE_path",
+          "passed": true
+        },
+        {
+          "name": "discrete_BE_uptake",
+          "passed": true,
+          "scaled": 0.0
+        },
+        {
+          "max_scaled": 0.0,
+          "name": "independent_Lily_BE_endpoint",
+          "passed": true
+        },
+        {
+          "bound_scaled": 0.0,
+          "name": "separate_total_and_bound_updates",
+          "passed": true,
+          "total_scaled": 0.0
+        },
+        {
+          "name": "nonnegative_unclipped_states",
+          "passed": true
+        },
+        {
+          "max_relative": 0.0,
+          "name": "endpoint_coordinates",
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "alpha_reference": 0.0,
+        "continuum_endpoint_scaled_error": 0.0,
+        "discrete_path_scaled_error": 1.3877787807814457e-16,
+        "discrete_uptake_scaled_error": 0.0,
+        "endpoint_exact": [
+          0.2,
+          0.8
+        ]
+      },
+      "passed": true
+    },
+    {
+      "attempt_id": "L08_N64",
+      "checks": [
+        {
+          "name": "actual_production_calls",
+          "passed": true
+        },
+        {
+          "name": "radial_closure_explicit",
+          "passed": true
+        },
+        {
+          "name": "flow_and_residence",
+          "passed": true
+        },
+        {
+          "name": "envelope_flags",
+          "passed": true
+        },
+        {
+          "max_scaled": 1.5265566588595902e-15,
+          "name": "discrete_BE_path",
+          "passed": true
+        },
+        {
+          "name": "discrete_BE_uptake",
+          "passed": true,
+          "scaled": 0.0
+        },
+        {
+          "max_scaled": 0.0,
+          "name": "independent_Lily_BE_endpoint",
+          "passed": true
+        },
+        {
+          "bound_scaled": 1.3877787807814457e-16,
+          "name": "separate_total_and_bound_updates",
+          "passed": true,
+          "total_scaled": 0.0
+        },
+        {
+          "name": "nonnegative_unclipped_states",
+          "passed": true
+        },
+        {
+          "max_relative": 0.0,
+          "name": "endpoint_coordinates",
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "alpha_reference": 0.0,
+        "continuum_endpoint_scaled_error": 0.0,
+        "discrete_path_scaled_error": 1.5265566588595902e-15,
+        "discrete_uptake_scaled_error": 0.0,
+        "endpoint_exact": [
+          0.2,
+          0.8
+        ]
+      },
+      "passed": true
+    },
+    {
+      "attempt_id": "L08_N128",
+      "checks": [
+        {
+          "name": "actual_production_calls",
+          "passed": true
+        },
+        {
+          "name": "radial_closure_explicit",
+          "passed": true
+        },
+        {
+          "name": "flow_and_residence",
+          "passed": true
+        },
+        {
+          "name": "envelope_flags",
+          "passed": true
+        },
+        {
+          "max_scaled": 0.0,
+          "name": "discrete_BE_path",
+          "passed": true
+        },
+        {
+          "name": "discrete_BE_uptake",
+          "passed": true,
+          "scaled": 0.0
+        },
+        {
+          "max_scaled": 0.0,
+          "name": "independent_Lily_BE_endpoint",
+          "passed": true
+        },
+        {
+          "max_scaled": 0.0,
+          "name": "finest_continuum_endpoint",
+          "passed": true
+        },
+        {
+          "bound_scaled": 0.0,
+          "name": "separate_total_and_bound_updates",
+          "passed": true,
+          "total_scaled": 0.0
+        },
+        {
+          "name": "nonnegative_unclipped_states",
+          "passed": true
+        },
+        {
+          "max_relative": 0.0,
+          "name": "endpoint_coordinates",
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "alpha_reference": 0.0,
+        "continuum_endpoint_scaled_error": 0.0,
+        "discrete_path_scaled_error": 0.0,
+        "discrete_uptake_scaled_error": 0.0,
+        "endpoint_exact": [
+          0.2,
+          0.8
+        ]
+      },
+      "passed": true
+    },
+    {
+      "attempt_id": "L09_N32",
+      "checks": [
+        {
+          "name": "actual_production_calls",
+          "passed": true
+        },
+        {
+          "name": "radial_closure_explicit",
+          "passed": true
+        },
+        {
+          "name": "flow_and_residence",
+          "passed": true
+        },
+        {
+          "name": "envelope_flags",
+          "passed": true
+        },
+        {
+          "max_scaled": 2.8733959656079833e-12,
+          "name": "discrete_BE_path",
+          "passed": true
+        },
+        {
+          "name": "discrete_BE_uptake",
+          "passed": true,
+          "scaled": 2.880751193146125e-13
+        },
+        {
+          "max_scaled": 0.0,
+          "name": "independent_Lily_BE_endpoint",
+          "passed": true
+        },
+        {
+          "bound_scaled": 1.3877787807814457e-16,
+          "name": "separate_total_and_bound_updates",
+          "passed": true,
+          "total_scaled": 9.375833442959447e-13
+        },
+        {
+          "name": "nonnegative_unclipped_states",
+          "passed": true
+        },
+        {
+          "max_relative": 0.0,
+          "name": "endpoint_coordinates",
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "alpha_reference": 0.2,
+        "continuum_endpoint_scaled_error": 0.0046889002639217275,
+        "discrete_path_scaled_error": 2.8733959656079833e-12,
+        "discrete_uptake_scaled_error": 2.880751193146125e-13,
+        "endpoint_exact": [
+          0.09377143920598174,
+          0.7488678302351498
+        ]
+      },
+      "passed": true
+    },
+    {
+      "attempt_id": "L09_N64",
+      "checks": [
+        {
+          "name": "actual_production_calls",
+          "passed": true
+        },
+        {
+          "name": "radial_closure_explicit",
+          "passed": true
+        },
+        {
+          "name": "flow_and_residence",
+          "passed": true
+        },
+        {
+          "name": "envelope_flags",
+          "passed": true
+        },
+        {
+          "max_scaled": 4.395789288125229e-12,
+          "name": "discrete_BE_path",
+          "passed": true
+        },
+        {
+          "name": "discrete_BE_uptake",
+          "passed": true,
+          "scaled": 1.8726686867864828e-13
+        },
+        {
+          "max_scaled": 0.0,
+          "name": "independent_Lily_BE_endpoint",
+          "passed": true
+        },
+        {
+          "bound_scaled": 2.7755575615628914e-16,
+          "name": "separate_total_and_bound_updates",
+          "passed": true,
+          "total_scaled": 9.248157795127554e-13
+        },
+        {
+          "name": "nonnegative_unclipped_states",
+          "passed": true
+        },
+        {
+          "max_relative": 0.0,
+          "name": "endpoint_coordinates",
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "alpha_reference": 0.2,
+        "continuum_endpoint_scaled_error": 0.0023555971617169463,
+        "discrete_path_scaled_error": 4.395789288125229e-12,
+        "discrete_uptake_scaled_error": 1.8726686867864828e-13,
+        "endpoint_exact": [
+          0.09377143920598174,
+          0.7488678302351498
+        ]
+      },
+      "passed": true
+    },
+    {
+      "attempt_id": "L09_N128",
+      "checks": [
+        {
+          "name": "actual_production_calls",
+          "passed": true
+        },
+        {
+          "name": "radial_closure_explicit",
+          "passed": true
+        },
+        {
+          "name": "flow_and_residence",
+          "passed": true
+        },
+        {
+          "name": "envelope_flags",
+          "passed": true
+        },
+        {
+          "max_scaled": 6.42944031348236e-12,
+          "name": "discrete_BE_path",
+          "passed": true
+        },
+        {
+          "name": "discrete_BE_uptake",
+          "passed": true,
+          "scaled": 3.410605131648481e-13
+        },
+        {
+          "max_scaled": 0.0,
+          "name": "independent_Lily_BE_endpoint",
+          "passed": true
+        },
+        {
+          "max_scaled": 0.0011805762548319082,
+          "name": "finest_continuum_endpoint",
+          "passed": true
+        },
+        {
+          "bound_scaled": 2.7755575615628914e-16,
+          "name": "separate_total_and_bound_updates",
+          "passed": true,
+          "total_scaled": 9.175993298526919e-13
+        },
+        {
+          "name": "nonnegative_unclipped_states",
+          "passed": true
+        },
+        {
+          "max_relative": 0.0,
+          "name": "endpoint_coordinates",
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "alpha_reference": 0.2,
+        "continuum_endpoint_scaled_error": 0.0011805762548319082,
+        "discrete_path_scaled_error": 6.42944031348236e-12,
+        "discrete_uptake_scaled_error": 3.410605131648481e-13,
+        "endpoint_exact": [
+          0.09377143920598174,
+          0.7488678302351498
+        ]
+      },
+      "passed": true
+    },
+    {
+      "attempt_id": "L10_N32",
+      "checks": [
+        {
+          "name": "actual_production_calls",
+          "passed": true
+        },
+        {
+          "name": "radial_closure_explicit",
+          "passed": true
+        },
+        {
+          "name": "flow_and_residence",
+          "passed": true
+        },
+        {
+          "name": "envelope_flags",
+          "passed": true
+        },
+        {
+          "max_scaled": 1.8156309788963654e-12,
+          "name": "discrete_BE_path",
+          "passed": true
+        },
+        {
+          "name": "discrete_BE_uptake",
+          "passed": true,
+          "scaled": 2.525757381022231e-14
+        },
+        {
+          "max_scaled": 0.0,
+          "name": "independent_Lily_BE_endpoint",
+          "passed": true
+        },
+        {
+          "bound_scaled": 1.3877787807814457e-16,
+          "name": "separate_total_and_bound_updates",
+          "passed": true,
+          "total_scaled": 9.248157795127554e-13
+        },
+        {
+          "name": "nonnegative_unclipped_states",
+          "passed": true
+        },
+        {
+          "max_relative": 0.0,
+          "name": "endpoint_coordinates",
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "alpha_reference": 0.2,
+        "continuum_endpoint_scaled_error": 0.003276344104455528,
+        "discrete_path_scaled_error": 1.8156309788963654e-12,
+        "discrete_uptake_scaled_error": 2.525757381022231e-14,
+        "endpoint_exact": [
+          0.12366050008305243,
+          0.7829072348814659
+        ]
+      },
+      "passed": true
+    },
+    {
+      "attempt_id": "L10_N64",
+      "checks": [
+        {
+          "name": "actual_production_calls",
+          "passed": true
+        },
+        {
+          "name": "radial_closure_explicit",
+          "passed": true
+        },
+        {
+          "name": "flow_and_residence",
+          "passed": true
+        },
+        {
+          "name": "envelope_flags",
+          "passed": true
+        },
+        {
+          "max_scaled": 2.633171458654715e-12,
+          "name": "discrete_BE_path",
+          "passed": true
+        },
+        {
+          "name": "discrete_BE_uptake",
+          "passed": true,
+          "scaled": 4.1994185906446546e-14
+        },
+        {
+          "max_scaled": 0.0,
+          "name": "independent_Lily_BE_endpoint",
+          "passed": true
+        },
+        {
+          "bound_scaled": 1.3877787807814457e-16,
+          "name": "separate_total_and_bound_updates",
+          "passed": true,
+          "total_scaled": 9.175993298526919e-13
+        },
+        {
+          "name": "nonnegative_unclipped_states",
+          "passed": true
+        },
+        {
+          "max_relative": 0.0,
+          "name": "endpoint_coordinates",
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "alpha_reference": 0.2,
+        "continuum_endpoint_scaled_error": 0.0016488284122207625,
+        "discrete_path_scaled_error": 2.633171458654715e-12,
+        "discrete_uptake_scaled_error": 4.1994185906446546e-14,
+        "endpoint_exact": [
+          0.12366050008305243,
+          0.7829072348814659
+        ]
+      },
+      "passed": true
+    },
+    {
+      "attempt_id": "L10_N128",
+      "checks": [
+        {
+          "name": "actual_production_calls",
+          "passed": true
+        },
+        {
+          "name": "radial_closure_explicit",
+          "passed": true
+        },
+        {
+          "name": "flow_and_residence",
+          "passed": true
+        },
+        {
+          "name": "envelope_flags",
+          "passed": true
+        },
+        {
+          "max_scaled": 4.485023463729476e-12,
+          "name": "discrete_BE_path",
+          "passed": true
+        },
+        {
+          "name": "discrete_BE_uptake",
+          "passed": true,
+          "scaled": 2.1067869671043127e-13
+        },
+        {
+          "max_scaled": 0.0,
+          "name": "independent_Lily_BE_endpoint",
+          "passed": true
+        },
+        {
+          "max_scaled": 0.0008271097553409767,
+          "name": "finest_continuum_endpoint",
+          "passed": true
+        },
+        {
+          "bound_scaled": 2.7755575615628914e-16,
+          "name": "separate_total_and_bound_updates",
+          "passed": true,
+          "total_scaled": 9.114931032172535e-13
+        },
+        {
+          "name": "nonnegative_unclipped_states",
+          "passed": true
+        },
+        {
+          "max_relative": 0.0,
+          "name": "endpoint_coordinates",
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "alpha_reference": 0.2,
+        "continuum_endpoint_scaled_error": 0.0008271097553409767,
+        "discrete_path_scaled_error": 4.485023463729476e-12,
+        "discrete_uptake_scaled_error": 2.1067869671043127e-13,
+        "endpoint_exact": [
+          0.12366050008305243,
+          0.7829072348814659
+        ]
+      },
+      "passed": true
+    },
+    {
+      "attempt_id": "L11_N32",
+      "checks": [
+        {
+          "name": "actual_production_calls",
+          "passed": true
+        },
+        {
+          "name": "radial_closure_explicit",
+          "passed": true
+        },
+        {
+          "name": "flow_and_residence",
+          "passed": true
+        },
+        {
+          "name": "envelope_flags",
+          "passed": true
+        },
+        {
+          "max_scaled": 2.5886237597916306e-12,
+          "name": "discrete_BE_path",
+          "passed": true
+        },
+        {
+          "name": "discrete_BE_uptake",
+          "passed": true,
+          "scaled": 8.608391777178698e-13
+        },
+        {
+          "max_scaled": 0.0,
+          "name": "independent_Lily_BE_endpoint",
+          "passed": true
+        },
+        {
+          "bound_scaled": 1.262177448353619e-28,
+          "name": "separate_total_and_bound_updates",
+          "passed": true,
+          "total_scaled": 7.830076430144789e-13
+        },
+        {
+          "name": "nonnegative_unclipped_states",
+          "passed": true
+        },
+        {
+          "max_relative": 0.0,
+          "name": "endpoint_coordinates",
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "alpha_reference": 0.2,
+        "continuum_endpoint_scaled_error": 0.007969648587279957,
+        "discrete_path_scaled_error": 2.5886237597916306e-12,
+        "discrete_uptake_scaled_error": 8.608391777178698e-13,
+        "endpoint_exact": [
+          0.04037930359898277,
+          1.0498618935724838e-13
+        ]
+      },
+      "passed": true
+    },
+    {
+      "attempt_id": "L11_N64",
+      "checks": [
+        {
+          "name": "actual_production_calls",
+          "passed": true
+        },
+        {
+          "name": "radial_closure_explicit",
+          "passed": true
+        },
+        {
+          "name": "flow_and_residence",
+          "passed": true
+        },
+        {
+          "name": "envelope_flags",
+          "passed": true
+        },
+        {
+          "max_scaled": 1.2754346190302357e-11,
+          "name": "discrete_BE_path",
+          "passed": true
+        },
+        {
+          "name": "discrete_BE_uptake",
+          "passed": true,
+          "scaled": 1.3333778525734795e-11
+        },
+        {
+          "max_scaled": 0.0,
+          "name": "independent_Lily_BE_endpoint",
+          "passed": true
+        },
+        {
+          "bound_scaled": 1.262177448353619e-28,
+          "name": "separate_total_and_bound_updates",
+          "passed": true,
+          "total_scaled": 7.985935264233048e-13
+        },
+        {
+          "name": "nonnegative_unclipped_states",
+          "passed": true
+        },
+        {
+          "max_relative": 0.0,
+          "name": "endpoint_coordinates",
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "alpha_reference": 0.2,
+        "continuum_endpoint_scaled_error": 0.0040111949790421625,
+        "discrete_path_scaled_error": 1.2754346190302357e-11,
+        "discrete_uptake_scaled_error": 1.3333778525734795e-11,
+        "endpoint_exact": [
+          0.04037930359898277,
+          1.0498618935724838e-13
+        ]
+      },
+      "passed": true
+    },
+    {
+      "attempt_id": "L11_N128",
+      "checks": [
+        {
+          "name": "actual_production_calls",
+          "passed": true
+        },
+        {
+          "name": "radial_closure_explicit",
+          "passed": true
+        },
+        {
+          "name": "flow_and_residence",
+          "passed": true
+        },
+        {
+          "name": "envelope_flags",
+          "passed": true
+        },
+        {
+          "max_scaled": 2.2780319297588392e-11,
+          "name": "discrete_BE_path",
+          "passed": true
+        },
+        {
+          "name": "discrete_BE_uptake",
+          "passed": true,
+          "scaled": 2.4250185193228807e-11
+        },
+        {
+          "max_scaled": 0.0,
+          "name": "independent_Lily_BE_endpoint",
+          "passed": true
+        },
+        {
+          "max_scaled": 0.002012258364133754,
+          "name": "finest_continuum_endpoint",
+          "passed": true
+        },
+        {
+          "bound_scaled": 2.524354896707238e-28,
+          "name": "separate_total_and_bound_updates",
+          "passed": true,
+          "total_scaled": 8.780090899069452e-13
+        },
+        {
+          "name": "nonnegative_unclipped_states",
+          "passed": true
+        },
+        {
+          "max_relative": 0.0,
+          "name": "endpoint_coordinates",
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "alpha_reference": 0.2,
+        "continuum_endpoint_scaled_error": 0.002012258364133754,
+        "discrete_path_scaled_error": 2.2780319297588392e-11,
+        "discrete_uptake_scaled_error": 2.4250185193228807e-11,
+        "endpoint_exact": [
+          0.04037930359898277,
+          1.0498618935724838e-13
+        ]
+      },
+      "passed": true
+    },
+    {
+      "attempt_id": "RAD_low_Y8",
+      "checks": [
+        {
+          "name": "actual_production_calls",
+          "passed": true
+        },
+        {
+          "name": "actual_radial_calls",
+          "passed": true
+        },
+        {
+          "name": "flow_and_residence",
+          "passed": true
+        },
+        {
+          "name": "envelope_flags",
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "G_continuum": 4.4867710518563e-06,
+        "G_discrete": 4.482145560477401e-06,
+        "G_relative_error": 0.0010309176299478917,
+        "field_scaled_error": 0.00013821194597410033
+      },
+      "passed": true
+    },
+    {
+      "attempt_id": "RAD_low_Y16",
+      "checks": [
+        {
+          "name": "actual_production_calls",
+          "passed": true
+        },
+        {
+          "name": "actual_radial_calls",
+          "passed": true
+        },
+        {
+          "name": "flow_and_residence",
+          "passed": true
+        },
+        {
+          "name": "envelope_flags",
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "G_continuum": 4.4867710518563e-06,
+        "G_discrete": 4.485609958326731e-06,
+        "G_relative_error": 0.00025878154159175715,
+        "field_scaled_error": 3.4712977955665344e-05
+      },
+      "passed": true
+    },
+    {
+      "attempt_id": "RAD_low_Y32",
+      "checks": [
+        {
+          "name": "actual_production_calls",
+          "passed": true
+        },
+        {
+          "name": "actual_radial_calls",
+          "passed": true
+        },
+        {
+          "name": "flow_and_residence",
+          "passed": true
+        },
+        {
+          "name": "envelope_flags",
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "G_continuum": 4.4867710518563e-06,
+        "G_discrete": 4.4864804806808e-06,
+        "G_relative_error": 6.476175676040086e-05,
+        "field_scaled_error": 8.688275146238877e-06
+      },
+      "passed": true
+    },
+    {
+      "attempt_id": "RAD_low_Y64",
+      "checks": [
+        {
+          "name": "actual_production_calls",
+          "passed": true
+        },
+        {
+          "name": "actual_radial_calls",
+          "passed": true
+        },
+        {
+          "name": "flow_and_residence",
+          "passed": true
+        },
+        {
+          "name": "envelope_flags",
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "G_continuum": 4.4867710518563e-06,
+        "G_discrete": 4.486698390407316e-06,
+        "G_relative_error": 1.6194596992757937e-05,
+        "field_scaled_error": 2.172696089964253e-06
+      },
+      "passed": true
+    },
+    {
+      "attempt_id": "RAD_high_Y8",
+      "checks": [
+        {
+          "name": "actual_production_calls",
+          "passed": true
+        },
+        {
+          "name": "actual_radial_calls",
+          "passed": true
+        },
+        {
+          "name": "flow_and_residence",
+          "passed": true
+        },
+        {
+          "name": "envelope_flags",
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "G_continuum": 3.587131268139679e-05,
+        "G_discrete": 3.5577774862841685e-05,
+        "G_relative_error": 0.008183079921336045,
+        "field_scaled_error": 0.005276895178229629
+      },
+      "passed": true
+    },
+    {
+      "attempt_id": "RAD_high_Y16",
+      "checks": [
+        {
+          "name": "actual_production_calls",
+          "passed": true
+        },
+        {
+          "name": "actual_radial_calls",
+          "passed": true
+        },
+        {
+          "name": "flow_and_residence",
+          "passed": true
+        },
+        {
+          "name": "envelope_flags",
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "G_continuum": 3.587131268139679e-05,
+        "G_discrete": 3.579723139806882e-05,
+        "G_relative_error": 0.0020651957731779857,
+        "field_scaled_error": 0.0014725570919726927
+      },
+      "passed": true
+    },
+    {
+      "attempt_id": "RAD_high_Y32",
+      "checks": [
+        {
+          "name": "actual_production_calls",
+          "passed": true
+        },
+        {
+          "name": "actual_radial_calls",
+          "passed": true
+        },
+        {
+          "name": "flow_and_residence",
+          "passed": true
+        },
+        {
+          "name": "envelope_flags",
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "G_continuum": 3.587131268139679e-05,
+        "G_discrete": 3.585274821121918e-05,
+        "G_relative_error": 0.0005175297135763257,
+        "field_scaled_error": 0.00038790417528203336
+      },
+      "passed": true
+    },
+    {
+      "attempt_id": "RAD_high_Y64",
+      "checks": [
+        {
+          "name": "actual_production_calls",
+          "passed": true
+        },
+        {
+          "name": "actual_radial_calls",
+          "passed": true
+        },
+        {
+          "name": "flow_and_residence",
+          "passed": true
+        },
+        {
+          "name": "envelope_flags",
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "G_continuum": 3.587131268139679e-05,
+        "G_discrete": 3.586666879504005e-05,
+        "G_relative_error": 0.00012945961576549259,
+        "field_scaled_error": 9.947727577619414e-05
+      },
+      "passed": true
+    },
+    {
+      "attempt_id": "COUPLED_N32",
+      "checks": [
+        {
+          "name": "actual_production_calls",
+          "passed": true
+        },
+        {
+          "name": "actual_radial_calls",
+          "passed": true
+        },
+        {
+          "name": "flow_and_residence",
+          "passed": true
+        },
+        {
+          "name": "envelope_flags",
+          "passed": true
+        },
+        {
+          "max_scaled": 2.1978252551235755e-12,
+          "name": "discrete_BE_path",
+          "passed": true
+        },
+        {
+          "name": "discrete_BE_uptake",
+          "passed": true,
+          "scaled": 9.886536034287019e-14
+        },
+        {
+          "max_scaled": 0.0,
+          "name": "independent_Lily_BE_endpoint",
+          "passed": true
+        },
+        {
+          "bound_scaled": 2.7755575615628914e-16,
+          "name": "separate_total_and_bound_updates",
+          "passed": true,
+          "total_scaled": 9.958700530887654e-13
+        },
+        {
+          "name": "nonnegative_unclipped_states",
+          "passed": true
+        },
+        {
+          "max_relative": 0.0,
+          "name": "endpoint_coordinates",
+          "passed": true
+        },
+        {
+          "max_scaled": 8.673617379884035e-16,
+          "name": "real_radial_linear_scaling",
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "alpha_reference": 0.3586666879504005,
+        "continuum_endpoint_scaled_error": 0.003456959395772702,
+        "discrete_path_scaled_error": 2.1978252551235755e-12,
+        "discrete_uptake_scaled_error": 9.886536034287019e-14,
+        "endpoint_exact": [
+          0.051956782933229695,
+          0.6933644081031003
+        ]
+      },
+      "passed": true
+    },
+    {
+      "attempt_id": "COUPLED_N64",
+      "checks": [
+        {
+          "name": "actual_production_calls",
+          "passed": true
+        },
+        {
+          "name": "actual_radial_calls",
+          "passed": true
+        },
+        {
+          "name": "flow_and_residence",
+          "passed": true
+        },
+        {
+          "name": "envelope_flags",
+          "passed": true
+        },
+        {
+          "max_scaled": 3.317762731214202e-12,
+          "name": "discrete_BE_path",
+          "passed": true
+        },
+        {
+          "name": "discrete_BE_uptake",
+          "passed": true,
+          "scaled": 9.268141809570807e-13
+        },
+        {
+          "max_scaled": 0.0,
+          "name": "independent_Lily_BE_endpoint",
+          "passed": true
+        },
+        {
+          "bound_scaled": 2.7755575615628914e-16,
+          "name": "separate_total_and_bound_updates",
+          "passed": true,
+          "total_scaled": 9.653389199115736e-13
+        },
+        {
+          "name": "nonnegative_unclipped_states",
+          "passed": true
+        },
+        {
+          "max_relative": 0.0,
+          "name": "endpoint_coordinates",
+          "passed": true
+        },
+        {
+          "max_scaled": 1.1449174941446927e-15,
+          "name": "real_radial_linear_scaling",
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "alpha_reference": 0.3586666879504005,
+        "continuum_endpoint_scaled_error": 0.001697989319292617,
+        "discrete_path_scaled_error": 3.317762731214202e-12,
+        "discrete_uptake_scaled_error": 9.268141809570807e-13,
+        "endpoint_exact": [
+          0.051956782933229695,
+          0.6933644081031003
+        ]
+      },
+      "passed": true
+    },
+    {
+      "attempt_id": "COUPLED_N128",
+      "checks": [
+        {
+          "name": "actual_production_calls",
+          "passed": true
+        },
+        {
+          "name": "actual_radial_calls",
+          "passed": true
+        },
+        {
+          "name": "flow_and_residence",
+          "passed": true
+        },
+        {
+          "name": "envelope_flags",
+          "passed": true
+        },
+        {
+          "max_scaled": 3.102379464436922e-12,
+          "name": "discrete_BE_path",
+          "passed": true
+        },
+        {
+          "name": "discrete_BE_uptake",
+          "passed": true,
+          "scaled": 1.9101387138675818e-13
+        },
+        {
+          "max_scaled": 0.0,
+          "name": "independent_Lily_BE_endpoint",
+          "passed": true
+        },
+        {
+          "max_scaled": 0.0008410028844096917,
+          "name": "finest_continuum_endpoint",
+          "passed": true
+        },
+        {
+          "bound_scaled": 2.7755575615628914e-16,
+          "name": "separate_total_and_bound_updates",
+          "passed": true,
+          "total_scaled": 9.309220061481938e-13
+        },
+        {
+          "name": "nonnegative_unclipped_states",
+          "passed": true
+        },
+        {
+          "max_relative": 0.0,
+          "name": "endpoint_coordinates",
+          "passed": true
+        },
+        {
+          "max_scaled": 1.5612511283791264e-15,
+          "name": "real_radial_linear_scaling",
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "alpha_reference": 0.3586666879504005,
+        "continuum_endpoint_scaled_error": 0.0008410028844096917,
+        "discrete_path_scaled_error": 3.102379464436922e-12,
+        "discrete_uptake_scaled_error": 1.9101387138675818e-13,
+        "endpoint_exact": [
+          0.051956782933229695,
+          0.6933644081031003
+        ]
+      },
+      "passed": true
+    },
+    {
+      "attempt_id": "FAULT_reverse_release",
+      "checks": [
+        {
+          "failure": {
+            "call_trace": {
+              "calls": {
+                "content": 43,
+                "hydraulics": 1,
+                "slab": 0,
+                "solve": 1,
+                "validate": 1
+              },
+              "overrides": [
+                "seq: linear c/cin with B=gamma*cin",
+                "DELIBERATE WRONG content argument/recording: reverse_release",
+                "slab: IMPOSED J=G*c; c-array is API placeholder, NOT tissue"
+              ]
+            },
+            "message": "Saturation bound failed; no clipping applied",
+            "traceback": "Traceback (most recent call last):\n  File \"<PROJECT_ROOT>\\research\\resumption_2026-10-18\\linear_adapter\\study.py\", line 27, in attempt\n    result=adapter.execute(spec,heartbeat)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<PROJECT_ROOT>\\research\\resumption_2026-10-18\\linear_adapter\\adapter.py\", line 60, in execute\n    result=original['solve'](case,cfg,heartbeat)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<PROJECT_ROOT>\\research\\resumption_2026-10-18\\linear_adapter\\pinned_sources\\ab_ct0_model.py\", line 217, in solve\n    raise ArithmeticError('Saturation bound failed; no clipping applied')\nArithmeticError: Saturation bound failed; no clipping applied\n",
+            "type": "ArithmeticError"
+          },
+          "name": "expected_specific_physical_guard",
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "attempt_id": "FAULT_spatial_k",
+      "checks": [
+        {
+          "name": "wrong_model_detected",
+          "passed": true
+        },
+        {
+          "name": "other_integrity_controls",
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "wrong_model_assessment": {
+        "checks": [
+          {
+            "name": "actual_production_calls",
+            "passed": true
+          },
+          {
+            "name": "radial_closure_explicit",
+            "passed": true
+          },
+          {
+            "name": "flow_and_residence",
+            "passed": true
+          },
+          {
+            "name": "envelope_flags",
+            "passed": true
+          },
+          {
+            "max_scaled": 0.2138561314918124,
+            "name": "discrete_BE_path",
+            "passed": false
+          },
+          {
+            "name": "discrete_BE_uptake",
+            "passed": false,
+            "scaled": 0.033929948153335665
+          },
+          {
+            "max_scaled": 0.0,
+            "name": "independent_Lily_BE_endpoint",
+            "passed": true
+          },
+          {
+            "bound_scaled": 0.00652875214539092,
+            "name": "separate_total_and_bound_updates",
+            "passed": false,
+            "total_scaled": 9.053868765818152e-13
+          },
+          {
+            "name": "nonnegative_unclipped_states",
+            "passed": true
+          },
+          {
+            "max_relative": 0.0,
+            "name": "endpoint_coordinates",
+            "passed": true
+          }
+        ],
+        "metrics": {
+          "alpha_reference": 0.2,
+          "continuum_endpoint_scaled_error": 0.20958138778921623,
+          "discrete_path_scaled_error": 0.2138561314918124,
+          "discrete_uptake_scaled_error": 0.033929948153335665,
+          "endpoint_exact": [
+            0.0838973494149603,
+            0.7233696592371328
+          ]
+        },
+        "passed": false
+      }
+    },
+    {
+      "attempt_id": "FAULT_double_perimeter",
+      "checks": [
+        {
+          "name": "wrong_model_detected",
+          "passed": true
+        },
+        {
+          "name": "other_integrity_controls",
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "wrong_model_assessment": {
+        "checks": [
+          {
+            "name": "actual_production_calls",
+            "passed": true
+          },
+          {
+            "name": "radial_closure_explicit",
+            "passed": true
+          },
+          {
+            "name": "flow_and_residence",
+            "passed": true
+          },
+          {
+            "name": "envelope_flags",
+            "passed": true
+          },
+          {
+            "max_scaled": 0.21774437037594324,
+            "name": "discrete_BE_path",
+            "passed": false
+          },
+          {
+            "name": "discrete_BE_uptake",
+            "passed": false,
+            "scaled": 0.07232732004261438
+          },
+          {
+            "max_scaled": 0.0,
+            "name": "independent_Lily_BE_endpoint",
+            "passed": true
+          },
+          {
+            "bound_scaled": 1.3877787807814457e-16,
+            "name": "separate_total_and_bound_updates",
+            "passed": false,
+            "total_scaled": 0.04558716265567142
+          },
+          {
+            "name": "nonnegative_unclipped_states",
+            "passed": true
+          },
+          {
+            "max_relative": 0.0,
+            "name": "endpoint_coordinates",
+            "passed": true
+          }
+        ],
+        "metrics": {
+          "alpha_reference": 0.2,
+          "continuum_endpoint_scaled_error": 0.18141832705048203,
+          "discrete_path_scaled_error": 0.21774437037594324,
+          "discrete_uptake_scaled_error": 0.07232732004261438,
+          "endpoint_exact": [
+            0.0838973494149603,
+            0.7233696592371328
+          ]
+        },
+        "passed": false
+      }
+    },
+    {
+      "attempt_id": "FAULT_total_sink",
+      "checks": [
+        {
+          "failure": {
+            "call_trace": {
+              "calls": {
+                "content": 213,
+                "hydraulics": 1,
+                "slab": 0,
+                "solve": 1,
+                "validate": 1
+              },
+              "overrides": [
+                "seq: linear c/cin with B=gamma*cin",
+                "DELIBERATE WRONG content argument/recording: total_sink",
+                "slab: IMPOSED J=G*total_content (deliberate free/total error); c-array is API placeholder, NOT tissue"
+              ]
+            },
+            "message": "Physical axial bracket failed",
+            "traceback": "Traceback (most recent call last):\n  File \"<PROJECT_ROOT>\\research\\resumption_2026-10-18\\linear_adapter\\study.py\", line 27, in attempt\n    result=adapter.execute(spec,heartbeat)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<PROJECT_ROOT>\\research\\resumption_2026-10-18\\linear_adapter\\adapter.py\", line 60, in execute\n    result=original['solve'](case,cfg,heartbeat)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<PROJECT_ROOT>\\research\\resumption_2026-10-18\\linear_adapter\\pinned_sources\\ab_ct0_model.py\", line 189, in solve\n    raise ArithmeticError('Physical axial bracket failed')\nArithmeticError: Physical axial bracket failed\n",
+            "type": "ArithmeticError"
+          },
+          "name": "expected_specific_physical_guard",
+          "passed": true
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "attempted": 51,
+  "planned": 51,
+  "scientific_scope": "Linear verification of actual production stepping; radial block separately specified; no empirical claim",
+  "status": "completed",
+  "unattempted": []
+}

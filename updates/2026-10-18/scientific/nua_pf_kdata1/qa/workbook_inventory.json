@@ -1,0 +1,486 @@
+{
+  "workbook_sha256": "d08f76ad5fa957c9200edcffdeb49a7227e568f7933f63d2bd869528dae205bd",
+  "scope": "Data inventory only; no fitting or Nua code executed",
+  "sheets": [
+    {
+      "name": "LEH Diameter LCT Encapsulation ",
+      "rows_including_header": 13,
+      "columns": 5,
+      "header": [
+        "Batch",
+        "d (nm)",
+        "Encap",
+        "LCT%",
+        "Hb Conc Inside"
+      ],
+      "hidden": false,
+      "formula_cells": 12
+    },
+    {
+      "name": "CO Binding RBCs",
+      "rows_including_header": 1987,
+      "columns": 6,
+      "header": [
+        "Time",
+        "Value",
+        "Norm",
+        "Fit",
+        "NormTime",
+        "Group"
+      ],
+      "hidden": false,
+      "formula_cells": 0
+    },
+    {
+      "name": "CO Binding Hbs",
+      "rows_including_header": 1987,
+      "columns": 6,
+      "header": [
+        "Time",
+        "Value",
+        "Norm",
+        "Fit",
+        "NormTime",
+        "Group"
+      ],
+      "hidden": false,
+      "formula_cells": 0
+    },
+    {
+      "name": "CO Binding LEHs",
+      "rows_including_header": 1993,
+      "columns": 6,
+      "header": [
+        "Time",
+        "Value",
+        "Norm",
+        "Fit",
+        "NormTime",
+        "Group"
+      ],
+      "hidden": false,
+      "formula_cells": 0
+    },
+    {
+      "name": "CO Comparison",
+      "rows_including_header": 4,
+      "columns": 4,
+      "header": [
+        "CO",
+        "PEG-LEH",
+        "Human Hb",
+        "RBC"
+      ],
+      "hidden": false,
+      "formula_cells": 0
+    },
+    {
+      "name": "O2 Offloading RBCs",
+      "rows_including_header": 1997,
+      "columns": 5,
+      "header": [
+        "Time",
+        "Value",
+        "Group",
+        "Fit",
+        "Norm"
+      ],
+      "hidden": false,
+      "formula_cells": 0
+    },
+    {
+      "name": "O2 Offloading Hbs",
+      "rows_including_header": 1971,
+      "columns": 5,
+      "header": [
+        "Time",
+        "Value",
+        "Norm",
+        "Fit",
+        "Group"
+      ],
+      "hidden": false,
+      "formula_cells": 0
+    },
+    {
+      "name": "O2 Offloading LEHs",
+      "rows_including_header": 1971,
+      "columns": 5,
+      "header": [
+        "Time",
+        "Value",
+        "Fit",
+        "Group",
+        "Norm"
+      ],
+      "hidden": false,
+      "formula_cells": 0
+    },
+    {
+      "name": "NO Dioxygenation RBCs",
+      "rows_including_header": 1963,
+      "columns": 5,
+      "header": [
+        "Time",
+        "Value",
+        "Fit",
+        "Group",
+        "NormTime"
+      ],
+      "hidden": false,
+      "formula_cells": 0
+    },
+    {
+      "name": "NO Dioxygenation Hbs",
+      "rows_including_header": 1747,
+      "columns": 5,
+      "header": [
+        "Time",
+        "Value",
+        "Fit",
+        "Group",
+        "NormTime"
+      ],
+      "hidden": false,
+      "formula_cells": 0
+    },
+    {
+      "name": "NO Dioxygenation LEHs",
+      "rows_including_header": 1999,
+      "columns": 5,
+      "header": [
+        "Time",
+        "Value",
+        "Fit",
+        "Group",
+        "NormTime"
+      ],
+      "hidden": false,
+      "formula_cells": 0
+    },
+    {
+      "name": "NO Comparison",
+      "rows_including_header": 4,
+      "columns": 4,
+      "header": [
+        "NO",
+        "PEG-LEH",
+        "Human Hb",
+        "RBC"
+      ],
+      "hidden": false,
+      "formula_cells": 0
+    },
+    {
+      "name": "Size Distribution",
+      "rows_including_header": 14,
+      "columns": 3,
+      "header": [
+        "Text X",
+        "Value",
+        "Radius"
+      ],
+      "hidden": false,
+      "formula_cells": 0
+    },
+    {
+      "name": "O2 Equilibrium Data",
+      "rows_including_header": 4519,
+      "columns": 3,
+      "header": [
+        "pO2",
+        "Value",
+        "Group"
+      ],
+      "hidden": false,
+      "formula_cells": 0
+    },
+    {
+      "name": "7A - UV VIS Data of Soret Bands",
+      "rows_including_header": 203,
+      "columns": 3,
+      "header": [
+        "Wavelength",
+        "Value",
+        "Group"
+      ],
+      "hidden": false,
+      "formula_cells": 0
+    },
+    {
+      "name": "7B - UV VIS Data of Q Bands",
+      "rows_including_header": 253,
+      "columns": 3,
+      "header": [
+        "Wavelength",
+        "Value",
+        "Group"
+      ],
+      "hidden": false,
+      "formula_cells": 0
+    },
+    {
+      "name": "UV VIS Data of HBCO and Mixture",
+      "rows_including_header": 403,
+      "columns": 3,
+      "header": [
+        "Wavelength",
+        "Value",
+        "Group"
+      ],
+      "hidden": false,
+      "formula_cells": 0
+    }
+  ],
+  "oxygen_sheets": [
+    {
+      "sheet": "O2 Offloading RBCs",
+      "header": [
+        "Time",
+        "Value",
+        "Group",
+        "Fit",
+        "Norm"
+      ],
+      "groups": {
+        "Exp": {
+          "count": 998,
+          "first_excel_row": 2,
+          "last_excel_row": 999,
+          "time_min": 0.012,
+          "time_max": 4,
+          "value_min": 0.110427,
+          "value_max": 0.155202,
+          "first": {
+            "Time": 0.012,
+            "Value": 0.110427,
+            "Group": "RBC",
+            "Fit": "Exp",
+            "Norm": -0.26030536,
+            "excel_row": 2
+          },
+          "last": {
+            "Time": 4,
+            "Value": 0.154453,
+            "Group": "RBC",
+            "Fit": "Exp",
+            "Norm": 0.999550879,
+            "excel_row": 999
+          },
+          "strictly_increasing_time": true,
+          "time_step_counts": {
+            "0.004": 997
+          },
+          "negative_normalized_count": 3,
+          "above_one_normalized_count": 701,
+          "identical_value_adjacent_count": 9
+        },
+        "Fit": {
+          "count": 998,
+          "first_excel_row": 1000,
+          "last_excel_row": 1997,
+          "time_min": 0.012,
+          "time_max": 4,
+          "value_min": 0.119523438,
+          "value_max": 0.154468695,
+          "first": {
+            "Time": 0.012,
+            "Value": 0.119523438,
+            "Group": "RBC",
+            "Fit": "Fit",
+            "Norm": 0,
+            "excel_row": 1000
+          },
+          "last": {
+            "Time": 4,
+            "Value": 0.154468695,
+            "Group": "RBC",
+            "Fit": "Fit",
+            "Norm": 1,
+            "excel_row": 1997
+          },
+          "strictly_increasing_time": true,
+          "time_step_counts": {
+            "0.004": 997
+          },
+          "negative_normalized_count": 0,
+          "above_one_normalized_count": 0,
+          "identical_value_adjacent_count": 695
+        }
+      },
+      "published_normalization_identity": {
+        "formula": "Norm = (Value - first_published_Fit_Value)/(last_published_Fit_Value - first_published_Fit_Value)",
+        "max_abs_difference": 2.461618675564381e-08,
+        "note": "Checks stored data transformation, not a refit or independent calibration"
+      }
+    },
+    {
+      "sheet": "O2 Offloading Hbs",
+      "header": [
+        "Time",
+        "Value",
+        "Norm",
+        "Fit",
+        "Group"
+      ],
+      "groups": {
+        "Exp": {
+          "count": 985,
+          "first_excel_row": 2,
+          "last_excel_row": 986,
+          "time_min": 0.004,
+          "time_max": 0.25,
+          "value_min": 0.0759688,
+          "value_max": 0.229899,
+          "first": {
+            "Time": 0.004,
+            "Value": 0.0760077,
+            "Norm": 0.133722829,
+            "Fit": "Exp",
+            "Group": "hHb",
+            "excel_row": 2
+          },
+          "last": {
+            "Time": 0.25,
+            "Value": 0.229844,
+            "Norm": 1.001268867,
+            "Fit": "Exp",
+            "Group": "hHb",
+            "excel_row": 986
+          },
+          "strictly_increasing_time": true,
+          "time_step_counts": {
+            "0.00025": 984
+          },
+          "negative_normalized_count": 0,
+          "above_one_normalized_count": 75,
+          "identical_value_adjacent_count": 11
+        },
+        "Fit": {
+          "count": 985,
+          "first_excel_row": 987,
+          "last_excel_row": 1971,
+          "time_min": 0.004,
+          "time_max": 0.25,
+          "value_min": 0.0522955,
+          "value_max": 0.229619,
+          "first": {
+            "Time": 0.004,
+            "Value": 0.0522955,
+            "Norm": 0,
+            "Fit": "Fit",
+            "Group": "hHb",
+            "excel_row": 987
+          },
+          "last": {
+            "Time": 0.25,
+            "Value": 0.229619,
+            "Norm": 1,
+            "Fit": "Fit",
+            "Group": "hHb",
+            "excel_row": 1971
+          },
+          "strictly_increasing_time": true,
+          "time_step_counts": {
+            "0.00025": 984
+          },
+          "negative_normalized_count": 0,
+          "above_one_normalized_count": 0,
+          "identical_value_adjacent_count": 99
+        }
+      },
+      "published_normalization_identity": {
+        "formula": "Norm = (Value - first_published_Fit_Value)/(last_published_Fit_Value - first_published_Fit_Value)",
+        "max_abs_difference": 4.995870384050249e-10,
+        "note": "Checks stored data transformation, not a refit or independent calibration"
+      }
+    },
+    {
+      "sheet": "O2 Offloading LEHs",
+      "header": [
+        "Time",
+        "Value",
+        "Fit",
+        "Group",
+        "Norm"
+      ],
+      "groups": {
+        "Exp": {
+          "count": 985,
+          "first_excel_row": 2,
+          "last_excel_row": 986,
+          "time_min": 0.064,
+          "time_max": 4,
+          "value_min": 0.21112,
+          "value_max": 0.267665,
+          "first": {
+            "Time": 0.064,
+            "Value": 0.21112,
+            "Fit": "Exp",
+            "Group": "PEG-LEH",
+            "Norm": 0.130856295,
+            "excel_row": 2
+          },
+          "last": {
+            "Time": 4,
+            "Value": 0.267574,
+            "Fit": "Exp",
+            "Group": "PEG-LEH",
+            "Norm": 1.003757306,
+            "excel_row": 986
+          },
+          "strictly_increasing_time": true,
+          "time_step_counts": {
+            "0.004": 984
+          },
+          "negative_normalized_count": 0,
+          "above_one_normalized_count": 619,
+          "identical_value_adjacent_count": 23
+        },
+        "Fit": {
+          "count": 985,
+          "first_excel_row": 987,
+          "last_excel_row": 1971,
+          "time_min": 0.064,
+          "time_max": 4,
+          "value_min": 0.202657,
+          "value_max": 0.267331,
+          "first": {
+            "Time": 0.064,
+            "Value": 0.202657,
+            "Fit": "Fit",
+            "Group": "PEG-LEH",
+            "Norm": 0,
+            "excel_row": 987
+          },
+          "last": {
+            "Time": 4,
+            "Value": 0.267331,
+            "Fit": "Fit",
+            "Group": "PEG-LEH",
+            "Norm": 1,
+            "excel_row": 1971
+          },
+          "strictly_increasing_time": true,
+          "time_step_counts": {
+            "0.004": 984
+          },
+          "negative_normalized_count": 0,
+          "above_one_normalized_count": 0,
+          "identical_value_adjacent_count": 792
+        }
+      },
+      "published_normalization_identity": {
+        "formula": "Norm = (Value - first_published_Fit_Value)/(last_published_Fit_Value - first_published_Fit_Value)",
+        "max_abs_difference": 4.985929447087756e-10,
+        "note": "Checks stored data transformation, not a refit or independent calibration"
+      }
+    }
+  ],
+  "container": {
+    "entries": 27,
+    "uncompressed_bytes": 5259133,
+    "macro_members": [],
+    "external_link_members": []
+  }
+}

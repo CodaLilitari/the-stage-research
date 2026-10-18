@@ -1,0 +1,31 @@
+{
+  "benchmark": "AB-LFR1",
+  "case_count_completed": 22,
+  "state_evaluations": 198,
+  "be_runs": 176,
+  "checks": 1613,
+  "passed": 1612,
+  "failed": 1,
+  "failures": [
+    {
+      "name": "negative_control_explicit_euler_first_step_detected",
+      "passed": false,
+      "first_step": [
+        0.9375,
+        4.0
+      ],
+      "scope": "Frozen one-step negative-control expectation; not a correct-model accuracy assertion"
+    }
+  ],
+  "seconds": 1.156134245999965,
+  "source_hashes": {
+    "benchmark.py": "5273764a1565396fb172c546fdf7ae34cf99a0cdb22816f73e5160aea6d7bf7e",
+    "run_benchmark.py": "5857414782a7990bbc4cec1d8b3d1fd4a6c072ecd51f325cb3838db51252cbc7",
+    "FROZEN_CASES.json": "026f087fe1c95bc82f941ec122e050e32c742a436628b06eda4ef837173aadea"
+  },
+  "frozen_cases_sha256": "026f087fe1c95bc82f941ec122e050e32c742a436628b06eda4ef837173aadea",
+  "max_state_tolerance_ratio": 8.516321622102761e-05,
+  "max_matrix_tolerance_ratio": 8.699182046972377e-05,
+  "max_analytic_conservation_scaled": 1.6653345369377348e-16,
+  "max_be_conservation_scaled": 1.8042303762122459e-13
+}

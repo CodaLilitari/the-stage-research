@@ -1,0 +1,196 @@
+{
+  "byline": "Coda local recovery of Wren linear benchmark",
+  "evaluations": 16,
+  "cases": {
+    "F1": {
+      "c": 0.04037930359893109,
+      "b": 0.8000000000000002,
+      "U": 0.1596206964010688,
+      "a_int_c": 0.15962069640106885,
+      "info": {
+        "m": -0.1,
+        "d": 0.1,
+        "lam1": 0.0,
+        "lam2": -0.2,
+        "det": 0.0
+      },
+      "endpoint_evaluations": 1,
+      "quadrature_samples": 2048,
+      "independent_rk4": {
+        "c": 0.040379303598930986,
+        "b": 0.8,
+        "U_integrated": 0.1596206964010694,
+        "steps": 8000,
+        "rhs_evaluations": 32000
+      }
+    },
+    "F2": {
+      "c": 0.0838973494149603,
+      "b": 0.7233696592371327,
+      "U": 0.192732991347907,
+      "a_int_c": 0.19273299134790692,
+      "info": {
+        "m": -0.18333333333333335,
+        "d": 0.1641476300299351,
+        "lam1": -0.01918570330339825,
+        "lam2": -0.34748096336326845,
+        "det": 0.006666666666666667
+      },
+      "endpoint_evaluations": 1,
+      "quadrature_samples": 2048,
+      "independent_rk4": {
+        "c": 0.08389734941496,
+        "b": 0.7233696592371304,
+        "U_integrated": 0.19273299134790672,
+        "steps": 8000,
+        "rhs_evaluations": 32000
+      }
+    },
+    "F3": {
+      "c": 0.1449137775371206,
+      "b": 0.5819755810396217,
+      "U": 0.2731106414232578,
+      "a_int_c": 0.2731106414232453,
+      "info": {
+        "m": -25.1,
+        "d": 25.060127693210184,
+        "lam1": -0.03987230678981746,
+        "lam2": -50.160127693210185,
+        "det": 2.0
+      },
+      "endpoint_evaluations": 1,
+      "quadrature_samples": 2048,
+      "independent_rk4": {
+        "c": 0.14491377753712317,
+        "b": 0.5819755810396315,
+        "U_integrated": 0.27311064142324737,
+        "steps": 40161,
+        "rhs_evaluations": 160644
+      }
+    },
+    "F4": {
+      "c": 0.04037930359893108,
+      "b": 0.0,
+      "U": 0.15962069640106893,
+      "a_int_c": 0.15962069640106888,
+      "info": {
+        "m": -0.2,
+        "d": 0.0,
+        "lam1": -0.2,
+        "lam2": -0.2,
+        "det": 0.04000000000000001
+      },
+      "endpoint_evaluations": 1,
+      "quadrature_samples": 2048,
+      "independent_rk4": {
+        "c": 0.040379303598930986,
+        "b": 0.0,
+        "U_integrated": 0.1596206964010694,
+        "steps": 8000,
+        "rhs_evaluations": 32000
+      }
+    },
+    "F5": {
+      "c": 0.2,
+      "b": 0.7999999999999999,
+      "U": 1.1102230246251565e-16,
+      "a_int_c": 0.0,
+      "info": {
+        "m": -0.5,
+        "d": 0.5,
+        "lam1": 0.0,
+        "lam2": -1.0,
+        "det": 0.0
+      },
+      "endpoint_evaluations": 1,
+      "quadrature_samples": 2048,
+      "independent_rk4": {
+        "c": 0.2,
+        "b": 0.8,
+        "U_integrated": 0.0,
+        "steps": 8000,
+        "rhs_evaluations": 32000
+      }
+    },
+    "F6": {
+      "c": 0.019360730647943903,
+      "b": 0.1824638294600676,
+      "U": 0.7981754398919886,
+      "a_int_c": 0.7981754398919896,
+      "info": {
+        "m": -0.18333333333333335,
+        "d": 0.1641476300299351,
+        "lam1": -0.01918570330339825,
+        "lam2": -0.34748096336326845,
+        "det": 0.006666666666666667
+      },
+      "endpoint_evaluations": 1,
+      "quadrature_samples": 2048,
+      "independent_rk4": {
+        "c": 0.01936073064794386,
+        "b": 0.1824638294600676,
+        "U_integrated": 0.7981754398919898,
+        "steps": 80000,
+        "rhs_evaluations": 320000
+      }
+    },
+    "D": {
+      "c": 0.10976232721880529,
+      "b": 0.0,
+      "U": 0.09023767278119471
+    },
+    "E": {
+      "c": 0.1452298074147382,
+      "b": 0.5809192296589528,
+      "U": 0.27385096292630906
+    },
+    "dissolved": {
+      "R": 9359999999.999998,
+      "Q": 3.3333333333333335e-11,
+      "T": 3.0,
+      "pressure": 0.31199999999999994,
+      "fluid_power": 1.0399999999999998e-11,
+      "binding": "power"
+    },
+    "carrier": {
+      "R": 37439999999.99999,
+      "Q": 1.2500000000000004e-11,
+      "T": 7.999999999999998,
+      "pressure": 0.468,
+      "fluid_power": 5.850000000000002e-12,
+      "binding": "pressure"
+    }
+  },
+  "checks": {
+    "F1_rk4": true,
+    "F1_balance": true,
+    "F1_finite_nonnegative": true,
+    "F2_rk4": true,
+    "F2_balance": true,
+    "F2_finite_nonnegative": true,
+    "F3_rk4": true,
+    "F3_balance": true,
+    "F3_finite_nonnegative": true,
+    "F4_rk4": true,
+    "F4_balance": true,
+    "F4_finite_nonnegative": true,
+    "F5_rk4": true,
+    "F5_balance": true,
+    "F5_finite_nonnegative": true,
+    "F6_rk4": true,
+    "F6_balance": true,
+    "F6_finite_nonnegative": true,
+    "dissolved_hydraulics": true,
+    "carrier_hydraulics": true,
+    "F1_limit": true,
+    "F4_limit": true,
+    "F5_limit": true
+  },
+  "all_checks_pass": true,
+  "diagnostic": {
+    "F3_minus_E_c": -0.0003160298776176129,
+    "F2_minus_D_c": -0.025864977803844988,
+    "F6_flow_note": "T=80 diagnostic only; no QU at the T=8 hydraulic flow"
+  },
+  "seconds": 0.28200000000651926
+}

@@ -1,0 +1,24 @@
+17 October 2026 — attribution-only correction; no numerical work.
+
+The prior ACTUAL_RESULT_REPORT.txt attributed the model and eight-case design to
+Wren too broadly. Direct inspection of the complete wren_linear_request_v2.txt
+confirms that Coda supplied both. Wren independently derived and implemented the
+supplied model, selected algorithms/tolerances and returned the frozen plan.
+The corrected report preserves those independent contributions.
+
+Wren's exact saved disposition accepts the 18 planned evaluations, at least 25
+attempts, end-only persistence weakness and sufficient-not-necessary condition.
+It also explicitly requests separate credit for Coda's local recovery. This is
+testimony, distinct from the original artifact inspection and new local checks.
+
+Previous report SHA256:
+4c76665be5bc11fe149f507f5eddd31a368fca617e6f114806f324666771c842
+Previous manifest SHA256:
+7d131e5c50dead59d2220a8d6e65986c6380758553ba3f4ec5df707bf795ae1c
+Both are retained verbatim with _v1_superseded names. The current manifest binds
+the corrected report and this note. Original Wren and local numerical outputs,
+the 16-evaluation ledger, and the 23/23 and 106/106 checks are unchanged.
+
+Sources relative to workspace root:
+[private coordination reference omitted]
+[private coordination reference omitted]

@@ -1,0 +1,147 @@
+{
+  "above_threshold_by_beta_out_of_48": {
+    "1.0": 16,
+    "16.0": 20,
+    "4.0": 19
+  },
+  "check_count": 7,
+  "check_pass_count": 6,
+  "checks": {
+    "all_concentrations_bounded": true,
+    "all_mass_balances_pass": true,
+    "eight_refinement_cases_within_declared_limit": true,
+    "flow_times_capacity_degeneracy": true,
+    "flow_wall_capacity_monotonic": false,
+    "necessary_bounds_never_falsely_passed": true,
+    "zero_demand_uniform": true
+  },
+  "code_sha256": "f3fe9e427f5ce6b636248a9832dba74d4549daf16d7988718c263ea7d1084aba",
+  "elapsed_seconds": 27.16226040001493,
+  "finished_at_utc": "2026-10-15T13:50:04.741922+00:00",
+  "freeze_sha256": "c33ecda11c7d434e0fddaaec88ea9b2a657c18695115a2bd21830ffdaeea93bc",
+  "impossible_local_bound_main_cases": 72,
+  "limits": [
+    "Liver-like illustrative demand is not measured skin demand.",
+    "Planar one-wall geometry, steady state, no interstitial flow, fixed cell density and abundant other nutrients.",
+    "Carrier multiplier is hypothetical instantaneous linear equilibrium; it does not change free oxygen, D, wall permeability, viscosity or pump power.",
+    "Threshold classifies a model oxygen field; it does not certify survival or tissue function.",
+    "No glucose, CO2, lactate, pH, heat, immune, sterility or mechanical-deformation model.",
+    "Numerical mesh refinement and mass balance are verification, not biological validation or replication of the full 2026 network study."
+  ],
+  "main_cases": 144,
+  "main_cases_above_threshold": 55,
+  "maximum_refinement_error_relative_to_inlet": 0.0002512382421527605,
+  "maximum_relative_mass_balance_error": 1.8170886497060643e-08,
+  "monotonic_failures": [
+    {
+      "axis": 2,
+      "group": [
+        200.0,
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "axis": 2,
+      "group": [
+        400.0,
+        0.5,
+        1.0
+      ]
+    }
+  ],
+  "python_executable": "<PROJECT_ROOT>\\.venv-stage\\Scripts\\python.exe",
+  "python_version": "3.12.14",
+  "refinement": [
+    {
+      "absolute_error_relative_to_inlet": 0.0002512382421527605,
+      "case": [
+        5e-05,
+        0.5,
+        5e-06,
+        1.0
+      ],
+      "coarse_minimum": 0.02529423482641209,
+      "fine_minimum": 0.025243987177981538
+    },
+    {
+      "absolute_error_relative_to_inlet": 9.640502652737137e-06,
+      "case": [
+        5e-05,
+        0.5,
+        5e-06,
+        16.0
+      ],
+      "coarse_minimum": 0.05334624906546964,
+      "fine_minimum": 0.053344320964939095
+    },
+    {
+      "absolute_error_relative_to_inlet": 7.842064372008684e-06,
+      "case": [
+        5e-05,
+        32.0,
+        5e-06,
+        1.0
+      ],
+      "coarse_minimum": 0.05539898520293758,
+      "fine_minimum": 0.05539741679006318
+    },
+    {
+      "absolute_error_relative_to_inlet": 7.662254222634557e-06,
+      "case": [
+        5e-05,
+        32.0,
+        5e-06,
+        16.0
+      ],
+      "coarse_minimum": 0.056055320683067525,
+      "fine_minimum": 0.056053788232223
+    },
+    {
+      "absolute_error_relative_to_inlet": 3.107401512770093e-06,
+      "case": [
+        0.0004,
+        0.5,
+        5e-06,
+        1.0
+      ],
+      "coarse_minimum": 2.078727976863572e-05,
+      "fine_minimum": 2.0165799466081702e-05
+    },
+    {
+      "absolute_error_relative_to_inlet": 5.140901894389305e-06,
+      "case": [
+        0.0004,
+        0.5,
+        5e-06,
+        16.0
+      ],
+      "coarse_minimum": 4.080864774449084e-05,
+      "fine_minimum": 3.978046736561298e-05
+    },
+    {
+      "absolute_error_relative_to_inlet": 5.303824252852563e-06,
+      "case": [
+        0.0004,
+        32.0,
+        5e-06,
+        1.0
+      ],
+      "coarse_minimum": 4.232395200570964e-05,
+      "fine_minimum": 4.1263187155139125e-05
+    },
+    {
+      "absolute_error_relative_to_inlet": 5.356591550506314e-06,
+      "case": [
+        0.0004,
+        32.0,
+        5e-06,
+        16.0
+      ],
+      "coarse_minimum": 4.281157561037938e-05,
+      "fine_minimum": 4.174025730027812e-05
+    }
+  ],
+  "run_type": "PF0 computational transport screen",
+  "started_at_utc": "2026-10-15T13:49:37.579468+00:00"
+}

@@ -1,0 +1,148 @@
+{
+  "files": [
+    {
+      "bytes": 13462,
+      "path": "model.py",
+      "sha256": "0a6ab8f0876f2be8e1973f8ef077bf33bbd8e25e07e780b1d7ffa48e0135d1a5"
+    },
+    {
+      "bytes": 10763,
+      "path": "analysis.py",
+      "sha256": "a4f27b593582088a6ce1483576353ee3041636136d213332c7e297e47e2cf9fb"
+    },
+    {
+      "bytes": 13955,
+      "path": "run_study.py",
+      "sha256": "038630f3de218723354539d136e53d934adcfbb08eedaadf975c28b9bc1f7c5c"
+    },
+    {
+      "bytes": 6671,
+      "path": "freeze.py",
+      "sha256": "ab29113e5620de136807d38a0850f883796f1d95237e57f59c3de632166a9062"
+    },
+    {
+      "bytes": 5605,
+      "path": "check_structure.py",
+      "sha256": "68dcebfbeda18f916c0ad72432b38e04d45fb46acbeb1eafc3cd14310c85b124"
+    },
+    {
+      "bytes": 6071,
+      "path": "README.txt",
+      "sha256": "3b070ebf4b9ca9476b35f129bbaa9c2d7384532e3b462c9f057b4fa00f84ee50"
+    },
+    {
+      "bytes": 1592,
+      "path": "config.json",
+      "sha256": "570b9e2dd493632891af55c062fcd13620b1a05acda522f18c33d8ddca3948e0"
+    },
+    {
+      "bytes": 19901,
+      "path": "primary_cases.json",
+      "sha256": "2fafc3fc773a89c79403a9c247653cd21d7d4a502a51d819cbbc72887432cad4"
+    },
+    {
+      "bytes": 4855,
+      "path": "controls.json",
+      "sha256": "20af471f4d95c631cc9dd47ead5aeba67ab56b7dd5396e218e0302ddd04e66cc"
+    },
+    {
+      "bytes": 1100,
+      "path": "saved_reference.json",
+      "sha256": "f9a8f3fed0c06143c286fd515d3e2b4d05f186cffaddedee73f348349e166c48"
+    }
+  ],
+  "frozen_utc": "2026-10-17T22:43:49.473908+00:00",
+  "inputs": [
+    {
+      "path": "../PROTOCOL.txt",
+      "sha256": "6c2e607416f4a17739eda3550f8e9e57490a8f057951a75694873db3319ed91b"
+    },
+    {
+      "path": "../manifest.json",
+      "sha256": "55162dc04273f7a478c2b2e3649684c71cc5561d8586b329c5f3c5bd9ea31180"
+    },
+    {
+      "path": "../planned_cases.json",
+      "sha256": "5269dc7c66cab40932a8b82e12b06f910f20827a2340332f0b2747397e09bd71"
+    },
+    {
+      "path": "../planned_controls.json",
+      "sha256": "736b46b4c9a7c2ada28910798967ca9e53c7a0603be2701114a0304f899fac08"
+    },
+    {
+      "path": "../saved_pf0_reference.json",
+      "sha256": "71ae210ea97ceaf7b24e844bca42f15666ce61900c3f8196a2d4db4b5b6e31b3"
+    },
+    {
+      "path": "../starting_points.json",
+      "sha256": "66191819912798373eefaf29fd1d61872de51d50e313a67820c605fb3b9605d8"
+    },
+    {
+      "project_path": "research/artificial_blood/pf0.py",
+      "sha256": "f3fe9e427f5ce6b636248a9832dba74d4549daf16d7988718c263ea7d1084aba"
+    },
+    {
+      "project_path": "research/artificial_blood/freeze.json",
+      "sha256": "c33ecda11c7d434e0fddaaec88ea9b2a657c18695115a2bd21830ffdaeea93bc"
+    },
+    {
+      "project_path": "research/artificial_blood/cases.csv",
+      "sha256": "4d4a6566db533646e3689e0dd02d9f053ba4c2bdf20ab3feac3401fd35493810"
+    },
+    {
+      "project_path": "research/artificial_blood/report.txt",
+      "sha256": "cdedb0a92de7119f23ebc3e732a05fc599c10f318530ceaa4ade8916a86bd2b4"
+    },
+    {
+      "project_path": "research/oxygen_kinetics/kinetics.py",
+      "sha256": "af8bcce0bc8ab501c59f4b9408ad63fbe3b5cb81ee9bf50715f994606568e51e"
+    },
+    {
+      "project_path": "research/oxygen_kinetics/report.txt",
+      "sha256": "525f6c89861f5a91e016c2edde3611b0432d6327a6352e5184957e1c49aa620b"
+    },
+    {
+      "project_path": "research/grokbot_mechanics/coupled_screen.py",
+      "sha256": "c91cefc2b772b66fba451ad6da562d17b1999d9739d3bb1e3a0be96462c27282"
+    },
+    {
+      "project_path": "research/grokbot_mechanics/report.txt",
+      "sha256": "c21fa620a98e0b5048ae2e9161397e0036499703df7a66d36b3f53777f01b867"
+    },
+    {
+      "project_path": "research/grokbot_mechanics/source_audit.txt",
+      "sha256": "6e9418c87050dc03f33889ec875422a809e24bc13bafda9465efa96df9a6c337"
+    },
+    {
+      "project_path": "research/lily_px1_qa/received/blood_and_tissue/src/diagnostics.py",
+      "sha256": "0e6c7c399da88efca39613e557854cd3f971c92b98dba77c2addaf7d5a661a75"
+    },
+    {
+      "project_path": "research/lily_px1_qa/received/blood_and_tissue/inputs/protocol.json",
+      "sha256": "96d4b84ef19b9ecbd453c6b85d9133bfdfbabf2dbc6901b23b74c01da441716a"
+    },
+    {
+      "project_path": "research/lily_px1_qa/received/blood_and_tissue/results/RESULTS.md",
+      "sha256": "03631c2d70a451cdddba75a0100643d63c5696e76fc3c852c0571048187658d0"
+    },
+    {
+      "project_path": "research/lily_px1_qa/received/blood_and_tissue/proposed_ct1/CT1_SPEC.md",
+      "sha256": "f4e864dec4bec30fbe688a41c26857be651b81504833dd82899e5a13d7614bda"
+    },
+    {
+      "project_path": "research/cowork_cloud_qa/source_audit.txt",
+      "sha256": "b1846d29a74d6edc7141c02dc4a669c4c0e1cc8362c1854469a0b6699b8cca91"
+    },
+    {
+      "project_path": "research/cowork_cloud_qa/report.txt",
+      "sha256": "552d7dc6dcb5288e0ba1866e803e427e66e91116ee485219f6af85a38d7e8251"
+    },
+    {
+      "project_path": "research/human_oxygen_carrier/hc0.py",
+      "sha256": "8d45e5e8b4f2145a6da3ab56f44ecd1ffde056987f8551eeea25fefad57932c3"
+    }
+  ],
+  "publication_commit": "a9c9a037e827c6e35faaa2ca48a21e2dd67c5641",
+  "status": "implementation_frozen_pending_static_review_no_transport_solves",
+  "public_copy_note": "Historical scientific bindings; local authority metadata omitted. Not a new execution grant or refreeze."
+}

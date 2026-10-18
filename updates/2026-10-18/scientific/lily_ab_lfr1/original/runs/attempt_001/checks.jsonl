@@ -1,0 +1,1612 @@
+{"name": "C00@0:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C00@0:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C00@0:positivity", "passed": true}
+{"name": "C00@0:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C00@0:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C00@0:inlet_bounds", "passed": true}
+{"name": "C00@1e-12:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C00@1e-12:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C00@1e-12:positivity", "passed": true}
+{"name": "C00@1e-12:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C00@1e-12:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C00@1e-12:inlet_bounds", "passed": true}
+{"name": "C00@1e-9:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C00@1e-9:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C00@1e-9:positivity", "passed": true}
+{"name": "C00@1e-9:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C00@1e-9:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C00@1e-9:inlet_bounds", "passed": true}
+{"name": "C00@1e-6:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C00@1e-6:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C00@1e-6:positivity", "passed": true}
+{"name": "C00@1e-6:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C00@1e-6:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C00@1e-6:inlet_bounds", "passed": true}
+{"name": "C00@1e-3:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C00@1e-3:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C00@1e-3:positivity", "passed": true}
+{"name": "C00@1e-3:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C00@1e-3:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C00@1e-3:inlet_bounds", "passed": true}
+{"name": "C00@0.01:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C00@0.01:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C00@0.01:positivity", "passed": true}
+{"name": "C00@0.01:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C00@0.01:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C00@0.01:inlet_bounds", "passed": true}
+{"name": "C00@0.1:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C00@0.1:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C00@0.1:positivity", "passed": true}
+{"name": "C00@0.1:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C00@0.1:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C00@0.1:inlet_bounds", "passed": true}
+{"name": "C00@0.5:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C00@0.5:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C00@0.5:positivity", "passed": true}
+{"name": "C00@0.5:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C00@0.5:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C00@0.5:inlet_bounds", "passed": true}
+{"name": "C00@1:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C00@1:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C00@1:positivity", "passed": true}
+{"name": "C00@1:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C00@1:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C00@1:inlet_bounds", "passed": true}
+{"name": "C00:semigroup", "passed": true, "max_abs_error": 0.0}
+{"name": "C00:precision_recheck", "passed": true, "scaled": 0.0}
+{"name": "C00:dissolved_or_frozen_limit", "passed": true}
+{"name": "C00:accessible_inventory", "passed": true}
+{"name": "C00:zero_sink_limit", "passed": true}
+{"name": "C00:BE:32:conservation", "passed": true, "scaled": 0.0}
+{"name": "C00:BE:32:positivity", "passed": true}
+{"name": "C00:BE:64:conservation", "passed": true, "scaled": 0.0}
+{"name": "C00:BE:64:positivity", "passed": true}
+{"name": "C00:BE:128:conservation", "passed": true, "scaled": 0.0}
+{"name": "C00:BE:128:positivity", "passed": true}
+{"name": "C00:BE:256:conservation", "passed": true, "scaled": 0.0}
+{"name": "C00:BE:256:positivity", "passed": true}
+{"name": "C00:BE:512:conservation", "passed": true, "scaled": 0.0}
+{"name": "C00:BE:512:positivity", "passed": true}
+{"name": "C00:BE:1024:conservation", "passed": true, "scaled": 0.0}
+{"name": "C00:BE:1024:positivity", "passed": true}
+{"name": "C00:BE:2048:conservation", "passed": true, "scaled": 0.0}
+{"name": "C00:BE:2048:positivity", "passed": true}
+{"name": "C00:BE:4096:conservation", "passed": true, "scaled": 0.0}
+{"name": "C00:BE:4096:positivity", "passed": true}
+{"name": "C01@0:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C01@0:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C01@0:positivity", "passed": true}
+{"name": "C01@0:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C01@0:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C01@0:inlet_bounds", "passed": true}
+{"name": "C01@1e-12:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C01@1e-12:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C01@1e-12:positivity", "passed": true}
+{"name": "C01@1e-12:inventory", "passed": true, "total_scaled": 2.212171962145971e-17, "free_scaled": 2.212171962145971e-17, "bound_scaled": 0.0}
+{"name": "C01@1e-12:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C01@1e-12:inlet_bounds", "passed": true}
+{"name": "C01@1e-9:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C01@1e-9:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C01@1e-9:positivity", "passed": true}
+{"name": "C01@1e-9:inventory", "passed": true, "total_scaled": 2.778193145110123e-17, "free_scaled": 2.778193145110123e-17, "bound_scaled": 0.0}
+{"name": "C01@1e-9:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C01@1e-9:inlet_bounds", "passed": true}
+{"name": "C01@1e-6:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C01@1e-6:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C01@1e-6:positivity", "passed": true}
+{"name": "C01@1e-6:inventory", "passed": true, "total_scaled": 1.5861327212047215e-17, "free_scaled": 1.5861327212047215e-17, "bound_scaled": 0.0}
+{"name": "C01@1e-6:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C01@1e-6:inlet_bounds", "passed": true}
+{"name": "C01@1e-3:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C01@1e-3:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C01@1e-3:positivity", "passed": true}
+{"name": "C01@1e-3:inventory", "passed": true, "total_scaled": 3.0140820395097023e-17, "free_scaled": 3.0140820395097023e-17, "bound_scaled": 0.0}
+{"name": "C01@1e-3:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C01@1e-3:inlet_bounds", "passed": true}
+{"name": "C01@0.01:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C01@0.01:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C01@0.01:positivity", "passed": true}
+{"name": "C01@0.01:inventory", "passed": true, "total_scaled": 5.377642775528102e-17, "free_scaled": 5.377642775528102e-17, "bound_scaled": 0.0}
+{"name": "C01@0.01:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C01@0.01:inlet_bounds", "passed": true}
+{"name": "C01@0.1:propagator_reference", "passed": true, "max_tolerance_ratio": 3.8092926974671156e-05}
+{"name": "C01@0.1:state_reference", "passed": true, "max_tolerance_ratio": 3.8092926974671156e-05}
+{"name": "C01@0.1:positivity", "passed": true}
+{"name": "C01@0.1:inventory", "passed": true, "total_scaled": 5.551115123125783e-17, "free_scaled": 5.551115123125783e-17, "bound_scaled": 0.0}
+{"name": "C01@0.1:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C01@0.1:inlet_bounds", "passed": true}
+{"name": "C01@0.5:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C01@0.5:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C01@0.5:positivity", "passed": true}
+{"name": "C01@0.5:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C01@0.5:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C01@0.5:inlet_bounds", "passed": true}
+{"name": "C01@1:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C01@1:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C01@1:positivity", "passed": true}
+{"name": "C01@1:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C01@1:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C01@1:inlet_bounds", "passed": true}
+{"name": "C01:semigroup", "passed": true, "max_abs_error": 0.0}
+{"name": "C01:precision_recheck", "passed": true, "scaled": 1.6639993868300638e-92}
+{"name": "C01:dissolved_or_frozen_limit", "passed": true}
+{"name": "C01:accessible_inventory", "passed": true}
+{"name": "C01:BE:32:conservation", "passed": true, "scaled": 1.1102230246251565e-16}
+{"name": "C01:BE:32:positivity", "passed": true}
+{"name": "C01:BE:64:conservation", "passed": true, "scaled": 6.106226635438361e-16}
+{"name": "C01:BE:64:positivity", "passed": true}
+{"name": "C01:BE:128:conservation", "passed": true, "scaled": 1.1102230246251565e-16}
+{"name": "C01:BE:128:positivity", "passed": true}
+{"name": "C01:BE:256:conservation", "passed": true, "scaled": 2.7755575615628914e-16}
+{"name": "C01:BE:256:positivity", "passed": true}
+{"name": "C01:BE:512:conservation", "passed": true, "scaled": 1.1657341758564144e-15}
+{"name": "C01:BE:512:positivity", "passed": true}
+{"name": "C01:BE:1024:conservation", "passed": true, "scaled": 3.885780586188048e-16}
+{"name": "C01:BE:1024:positivity", "passed": true}
+{"name": "C01:BE:2048:conservation", "passed": true, "scaled": 1.1657341758564144e-15}
+{"name": "C01:BE:2048:positivity", "passed": true}
+{"name": "C01:BE:4096:conservation", "passed": true, "scaled": 2.4980018054066022e-15}
+{"name": "C01:BE:4096:positivity", "passed": true}
+{"name": "C01:BE:convergence", "passed": true, "last_order": 0.9998532728524717, "finest_error": 4.490259071038283e-05}
+{"name": "C02@0:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C02@0:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C02@0:positivity", "passed": true}
+{"name": "C02@0:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C02@0:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C02@0:inlet_bounds", "passed": true}
+{"name": "C02@1e-12:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C02@1e-12:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C02@1e-12:positivity", "passed": true}
+{"name": "C02@1e-12:inventory", "passed": true, "total_scaled": 2.212171962145971e-17, "free_scaled": 2.212171962145971e-17, "bound_scaled": 0.0}
+{"name": "C02@1e-12:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C02@1e-12:inlet_bounds", "passed": true}
+{"name": "C02@1e-9:propagator_reference", "passed": true, "max_tolerance_ratio": 1.0339757501816483e-12}
+{"name": "C02@1e-9:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C02@1e-9:positivity", "passed": true}
+{"name": "C02@1e-9:inventory", "passed": true, "total_scaled": 2.778193145110123e-17, "free_scaled": 2.778193145110123e-17, "bound_scaled": 0.0}
+{"name": "C02@1e-9:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C02@1e-9:inlet_bounds", "passed": true}
+{"name": "C02@1e-6:propagator_reference", "passed": true, "max_tolerance_ratio": 1.0587753024542202e-09}
+{"name": "C02@1e-6:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C02@1e-6:positivity", "passed": true}
+{"name": "C02@1e-6:inventory", "passed": true, "total_scaled": 1.5861327212047215e-17, "free_scaled": 1.5861327212047215e-17, "bound_scaled": 0.0}
+{"name": "C02@1e-6:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C02@1e-6:inlet_bounds", "passed": true}
+{"name": "C02@1e-3:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C02@1e-3:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C02@1e-3:positivity", "passed": true}
+{"name": "C02@1e-3:inventory", "passed": true, "total_scaled": 3.0140820395097023e-17, "free_scaled": 3.0140820395097023e-17, "bound_scaled": 0.0}
+{"name": "C02@1e-3:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C02@1e-3:inlet_bounds", "passed": true}
+{"name": "C02@0.01:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C02@0.01:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C02@0.01:positivity", "passed": true}
+{"name": "C02@0.01:inventory", "passed": true, "total_scaled": 5.377642775528102e-17, "free_scaled": 5.377642775528102e-17, "bound_scaled": 0.0}
+{"name": "C02@0.01:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C02@0.01:inlet_bounds", "passed": true}
+{"name": "C02@0.1:propagator_reference", "passed": true, "max_tolerance_ratio": 3.8092926974671156e-05}
+{"name": "C02@0.1:state_reference", "passed": true, "max_tolerance_ratio": 3.8092926974671156e-05}
+{"name": "C02@0.1:positivity", "passed": true}
+{"name": "C02@0.1:inventory", "passed": true, "total_scaled": 5.551115123125783e-17, "free_scaled": 5.551115123125783e-17, "bound_scaled": 0.0}
+{"name": "C02@0.1:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C02@0.1:inlet_bounds", "passed": true}
+{"name": "C02@0.5:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C02@0.5:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C02@0.5:positivity", "passed": true}
+{"name": "C02@0.5:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C02@0.5:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C02@0.5:inlet_bounds", "passed": true}
+{"name": "C02@1:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C02@1:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C02@1:positivity", "passed": true}
+{"name": "C02@1:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C02@1:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C02@1:inlet_bounds", "passed": true}
+{"name": "C02:semigroup", "passed": true, "max_abs_error": 0.0}
+{"name": "C02:precision_recheck", "passed": true, "scaled": 1.6639993868300638e-92}
+{"name": "C02:dissolved_or_frozen_limit", "passed": true}
+{"name": "C02:accessible_inventory", "passed": true}
+{"name": "C02:BE:32:conservation", "passed": true, "scaled": 1.1102230246251565e-16}
+{"name": "C02:BE:32:positivity", "passed": true}
+{"name": "C02:BE:64:conservation", "passed": true, "scaled": 6.106226635438361e-16}
+{"name": "C02:BE:64:positivity", "passed": true}
+{"name": "C02:BE:128:conservation", "passed": true, "scaled": 1.1102230246251565e-16}
+{"name": "C02:BE:128:positivity", "passed": true}
+{"name": "C02:BE:256:conservation", "passed": true, "scaled": 2.7755575615628914e-16}
+{"name": "C02:BE:256:positivity", "passed": true}
+{"name": "C02:BE:512:conservation", "passed": true, "scaled": 1.1657341758564144e-15}
+{"name": "C02:BE:512:positivity", "passed": true}
+{"name": "C02:BE:1024:conservation", "passed": true, "scaled": 3.885780586188048e-16}
+{"name": "C02:BE:1024:positivity", "passed": true}
+{"name": "C02:BE:2048:conservation", "passed": true, "scaled": 1.1657341758564144e-15}
+{"name": "C02:BE:2048:positivity", "passed": true}
+{"name": "C02:BE:4096:conservation", "passed": true, "scaled": 2.4980018054066022e-15}
+{"name": "C02:BE:4096:positivity", "passed": true}
+{"name": "C03@0:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C03@0:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C03@0:positivity", "passed": true}
+{"name": "C03@0:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C03@0:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C03@0:inlet_bounds", "passed": true}
+{"name": "C03@1e-12:propagator_reference", "passed": true, "max_tolerance_ratio": 5.295951729507437e-05}
+{"name": "C03@1e-12:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C03@1e-12:positivity", "passed": true}
+{"name": "C03@1e-12:inventory", "passed": true, "total_scaled": 2.212171962145971e-17, "free_scaled": 2.212171962145971e-17, "bound_scaled": 0.0}
+{"name": "C03@1e-12:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C03@1e-12:inlet_bounds", "passed": true}
+{"name": "C03@1e-9:propagator_reference", "passed": true, "max_tolerance_ratio": 3.469446955202968e-05}
+{"name": "C03@1e-9:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C03@1e-9:positivity", "passed": true}
+{"name": "C03@1e-9:inventory", "passed": true, "total_scaled": 2.778193145110123e-17, "free_scaled": 2.778193145110123e-17, "bound_scaled": 0.0}
+{"name": "C03@1e-9:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C03@1e-9:inlet_bounds", "passed": true}
+{"name": "C03@1e-6:propagator_reference", "passed": true, "max_tolerance_ratio": 3.469450204558302e-05}
+{"name": "C03@1e-6:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C03@1e-6:positivity", "passed": true}
+{"name": "C03@1e-6:inventory", "passed": true, "total_scaled": 1.5861327212047215e-17, "free_scaled": 1.5861327212047215e-17, "bound_scaled": 0.0}
+{"name": "C03@1e-6:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C03@1e-6:inlet_bounds", "passed": true}
+{"name": "C03@1e-3:propagator_reference", "passed": true, "max_tolerance_ratio": 3.472700981834721e-05}
+{"name": "C03@1e-3:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C03@1e-3:positivity", "passed": true}
+{"name": "C03@1e-3:inventory", "passed": true, "total_scaled": 3.0140820395097023e-17, "free_scaled": 3.0140820395097023e-17, "bound_scaled": 0.0}
+{"name": "C03@1e-3:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C03@1e-3:inlet_bounds", "passed": true}
+{"name": "C03@0.01:propagator_reference", "passed": true, "max_tolerance_ratio": 3.5021156705298154e-05}
+{"name": "C03@0.01:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C03@0.01:positivity", "passed": true}
+{"name": "C03@0.01:inventory", "passed": true, "total_scaled": 5.377642775528102e-17, "free_scaled": 5.377642775528102e-17, "bound_scaled": 0.0}
+{"name": "C03@0.01:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C03@0.01:inlet_bounds", "passed": true}
+{"name": "C03@0.1:propagator_reference", "passed": true, "max_tolerance_ratio": 3.8092926974671156e-05}
+{"name": "C03@0.1:state_reference", "passed": true, "max_tolerance_ratio": 3.8092926974671156e-05}
+{"name": "C03@0.1:positivity", "passed": true}
+{"name": "C03@0.1:inventory", "passed": true, "total_scaled": 5.551115123125783e-17, "free_scaled": 5.551115123125783e-17, "bound_scaled": 0.0}
+{"name": "C03@0.1:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C03@0.1:inlet_bounds", "passed": true}
+{"name": "C03@0.5:propagator_reference", "passed": true, "max_tolerance_ratio": 5.4972639824905393e-05}
+{"name": "C03@0.5:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C03@0.5:positivity", "passed": true}
+{"name": "C03@0.5:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C03@0.5:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C03@0.5:inlet_bounds", "passed": true}
+{"name": "C03@1:propagator_reference", "passed": true, "max_tolerance_ratio": 4.2581711683317785e-05}
+{"name": "C03@1:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C03@1:positivity", "passed": true}
+{"name": "C03@1:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C03@1:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C03@1:inlet_bounds", "passed": true}
+{"name": "C03:semigroup", "passed": true, "max_abs_error": 0.0}
+{"name": "C03:precision_recheck", "passed": true, "scaled": 1.6639993868300638e-92}
+{"name": "C03:dissolved_or_frozen_limit", "passed": true}
+{"name": "C03:accessible_inventory", "passed": true}
+{"name": "C03:BE:32:conservation", "passed": true, "scaled": 1.1102230246251565e-16}
+{"name": "C03:BE:32:positivity", "passed": true}
+{"name": "C03:BE:64:conservation", "passed": true, "scaled": 6.106226635438361e-16}
+{"name": "C03:BE:64:positivity", "passed": true}
+{"name": "C03:BE:128:conservation", "passed": true, "scaled": 1.1102230246251565e-16}
+{"name": "C03:BE:128:positivity", "passed": true}
+{"name": "C03:BE:256:conservation", "passed": true, "scaled": 2.7755575615628914e-16}
+{"name": "C03:BE:256:positivity", "passed": true}
+{"name": "C03:BE:512:conservation", "passed": true, "scaled": 1.1657341758564144e-15}
+{"name": "C03:BE:512:positivity", "passed": true}
+{"name": "C03:BE:1024:conservation", "passed": true, "scaled": 3.885780586188048e-16}
+{"name": "C03:BE:1024:positivity", "passed": true}
+{"name": "C03:BE:2048:conservation", "passed": true, "scaled": 1.1657341758564144e-15}
+{"name": "C03:BE:2048:positivity", "passed": true}
+{"name": "C03:BE:4096:conservation", "passed": true, "scaled": 2.4980018054066022e-15}
+{"name": "C03:BE:4096:positivity", "passed": true}
+{"name": "C04@0:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C04@0:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C04@0:positivity", "passed": true}
+{"name": "C04@0:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C04@0:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C04@0:inlet_bounds", "passed": true}
+{"name": "C04@1e-12:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C04@1e-12:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C04@1e-12:positivity", "passed": true}
+{"name": "C04@1e-12:inventory", "passed": true, "total_scaled": 4.424343924291942e-18, "free_scaled": 4.424343924291942e-18, "bound_scaled": 0.0}
+{"name": "C04@1e-12:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C04@1e-12:inlet_bounds", "passed": true}
+{"name": "C04@1e-9:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C04@1e-9:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C04@1e-9:positivity", "passed": true}
+{"name": "C04@1e-9:inventory", "passed": true, "total_scaled": 5.556386290220246e-18, "free_scaled": 5.556386290220246e-18, "bound_scaled": 0.0}
+{"name": "C04@1e-9:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C04@1e-9:inlet_bounds", "passed": true}
+{"name": "C04@1e-6:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C04@1e-6:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C04@1e-6:positivity", "passed": true}
+{"name": "C04@1e-6:inventory", "passed": true, "total_scaled": 3.172265442409443e-18, "free_scaled": 3.172265442409443e-18, "bound_scaled": 0.0}
+{"name": "C04@1e-6:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C04@1e-6:inlet_bounds", "passed": true}
+{"name": "C04@1e-3:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C04@1e-3:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C04@1e-3:positivity", "passed": true}
+{"name": "C04@1e-3:inventory", "passed": true, "total_scaled": 6.028164079019405e-18, "free_scaled": 6.028164079019405e-18, "bound_scaled": 0.0}
+{"name": "C04@1e-3:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C04@1e-3:inlet_bounds", "passed": true}
+{"name": "C04@0.01:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C04@0.01:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C04@0.01:positivity", "passed": true}
+{"name": "C04@0.01:inventory", "passed": true, "total_scaled": 1.0755285551056204e-17, "free_scaled": 1.0755285551056204e-17, "bound_scaled": 0.0}
+{"name": "C04@0.01:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C04@0.01:inlet_bounds", "passed": true}
+{"name": "C04@0.1:propagator_reference", "passed": true, "max_tolerance_ratio": 3.8092926974671156e-05}
+{"name": "C04@0.1:state_reference", "passed": true, "max_tolerance_ratio": 3.8092926974671156e-05}
+{"name": "C04@0.1:positivity", "passed": true}
+{"name": "C04@0.1:inventory", "passed": true, "total_scaled": 1.1102230246251566e-17, "free_scaled": 1.1102230246251566e-17, "bound_scaled": 0.0}
+{"name": "C04@0.1:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C04@0.1:inlet_bounds", "passed": true}
+{"name": "C04@0.5:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C04@0.5:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C04@0.5:positivity", "passed": true}
+{"name": "C04@0.5:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C04@0.5:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C04@0.5:inlet_bounds", "passed": true}
+{"name": "C04@1:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C04@1:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C04@1:positivity", "passed": true}
+{"name": "C04@1:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C04@1:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C04@1:inlet_bounds", "passed": true}
+{"name": "C04:semigroup", "passed": true, "max_abs_error": 0.0}
+{"name": "C04:precision_recheck", "passed": true, "scaled": 1.6639993868300638e-92}
+{"name": "C04:dissolved_or_frozen_limit", "passed": true}
+{"name": "C04:accessible_inventory", "passed": true}
+{"name": "C04:BE:32:conservation", "passed": true, "scaled": 2.2204460492503132e-17}
+{"name": "C04:BE:32:positivity", "passed": true}
+{"name": "C04:BE:64:conservation", "passed": true, "scaled": 1.2212453270876723e-16}
+{"name": "C04:BE:64:positivity", "passed": true}
+{"name": "C04:BE:128:conservation", "passed": true, "scaled": 2.2204460492503132e-17}
+{"name": "C04:BE:128:positivity", "passed": true}
+{"name": "C04:BE:256:conservation", "passed": true, "scaled": 5.551115123125783e-17}
+{"name": "C04:BE:256:positivity", "passed": true}
+{"name": "C04:BE:512:conservation", "passed": true, "scaled": 2.331468351712829e-16}
+{"name": "C04:BE:512:positivity", "passed": true}
+{"name": "C04:BE:1024:conservation", "passed": true, "scaled": 7.771561172376095e-17}
+{"name": "C04:BE:1024:positivity", "passed": true}
+{"name": "C04:BE:2048:conservation", "passed": true, "scaled": 2.331468351712829e-16}
+{"name": "C04:BE:2048:positivity", "passed": true}
+{"name": "C04:BE:4096:conservation", "passed": true, "scaled": 4.996003610813204e-16}
+{"name": "C04:BE:4096:positivity", "passed": true}
+{"name": "C05@0:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C05@0:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C05@0:positivity", "passed": true}
+{"name": "C05@0:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C05@0:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C05@0:inlet_bounds", "passed": true}
+{"name": "C05@1e-12:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C05@1e-12:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C05@1e-12:positivity", "passed": true}
+{"name": "C05@1e-12:inventory", "passed": true, "total_scaled": 5.556386290220246e-18, "free_scaled": 5.556386290220246e-18, "bound_scaled": 0.0}
+{"name": "C05@1e-12:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C05@1e-12:inlet_bounds", "passed": true}
+{"name": "C05@1e-9:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C05@1e-9:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C05@1e-9:positivity", "passed": true}
+{"name": "C05@1e-9:inventory", "passed": true, "total_scaled": 3.172265442409443e-18, "free_scaled": 3.172265442409443e-18, "bound_scaled": 0.0}
+{"name": "C05@1e-9:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C05@1e-9:inlet_bounds", "passed": true}
+{"name": "C05@1e-6:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C05@1e-6:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C05@1e-6:positivity", "passed": true}
+{"name": "C05@1e-6:inventory", "passed": true, "total_scaled": 6.028164079019405e-18, "free_scaled": 6.028164079019405e-18, "bound_scaled": 0.0}
+{"name": "C05@1e-6:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C05@1e-6:inlet_bounds", "passed": true}
+{"name": "C05@1e-3:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C05@1e-3:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C05@1e-3:positivity", "passed": true}
+{"name": "C05@1e-3:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C05@1e-3:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C05@1e-3:inlet_bounds", "passed": true}
+{"name": "C05@0.01:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C05@0.01:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C05@0.01:positivity", "passed": true}
+{"name": "C05@0.01:inventory", "passed": true, "total_scaled": 1.1777146098623793e-18, "free_scaled": 1.1777146098623793e-18, "bound_scaled": 0.0}
+{"name": "C05@0.01:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C05@0.01:inlet_bounds", "passed": true}
+{"name": "C05@0.1:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C05@0.1:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C05@0.1:positivity", "passed": true}
+{"name": "C05@0.1:inventory", "passed": true, "total_scaled": 7.440151952041672e-45, "free_scaled": 7.440151952041672e-45, "bound_scaled": 0.0}
+{"name": "C05@0.1:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C05@0.1:inlet_bounds", "passed": true}
+{"name": "C05@0.5:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C05@0.5:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C05@0.5:positivity", "passed": true}
+{"name": "C05@0.5:inventory", "passed": true, "total_scaled": 1.4249152813482572e-218, "free_scaled": 1.4249152813482572e-218, "bound_scaled": 0.0}
+{"name": "C05@0.5:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C05@0.5:inlet_bounds", "passed": true}
+{"name": "C05@1:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C05@1:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C05@1:positivity", "passed": true}
+{"name": "C05@1:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C05@1:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C05@1:inlet_bounds", "passed": true}
+{"name": "C05:semigroup", "passed": true, "max_abs_error": 0.0}
+{"name": "C05:precision_recheck", "passed": true, "scaled": 0.0}
+{"name": "C05:dissolved_or_frozen_limit", "passed": true}
+{"name": "C05:accessible_inventory", "passed": true}
+{"name": "C05:BE:32:conservation", "passed": true, "scaled": 1.1102230246251566e-17}
+{"name": "C05:BE:32:positivity", "passed": true}
+{"name": "C05:BE:64:conservation", "passed": true, "scaled": 2.6020852139652105e-19}
+{"name": "C05:BE:64:positivity", "passed": true}
+{"name": "C05:BE:128:conservation", "passed": true, "scaled": 1.1102230246251566e-17}
+{"name": "C05:BE:128:positivity", "passed": true}
+{"name": "C05:BE:256:conservation", "passed": true, "scaled": 1.1102230246251566e-17}
+{"name": "C05:BE:256:positivity", "passed": true}
+{"name": "C05:BE:512:conservation", "passed": true, "scaled": 1.3877787807814458e-18}
+{"name": "C05:BE:512:positivity", "passed": true}
+{"name": "C05:BE:1024:conservation", "passed": true, "scaled": 1.1102230246251566e-17}
+{"name": "C05:BE:1024:positivity", "passed": true}
+{"name": "C05:BE:2048:conservation", "passed": true, "scaled": 5.551115123125783e-18}
+{"name": "C05:BE:2048:positivity", "passed": true}
+{"name": "C05:BE:4096:conservation", "passed": true, "scaled": 4.4408920985006264e-17}
+{"name": "C05:BE:4096:positivity", "passed": true}
+{"name": "C06@0:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C06@0:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C06@0:positivity", "passed": true}
+{"name": "C06@0:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C06@0:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C06@0:inlet_bounds", "passed": true}
+{"name": "C06@1e-12:propagator_reference", "passed": true, "max_tolerance_ratio": 3.4694469519666246e-05}
+{"name": "C06@1e-12:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C06@1e-12:positivity", "passed": true}
+{"name": "C06@1e-12:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C06@1e-12:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C06@1e-12:inlet_bounds", "passed": true}
+{"name": "C06@1e-9:propagator_reference", "passed": true, "max_tolerance_ratio": 3.46944696496404e-05}
+{"name": "C06@1e-9:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C06@1e-9:positivity", "passed": true}
+{"name": "C06@1e-9:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C06@1e-9:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C06@1e-9:inlet_bounds", "passed": true}
+{"name": "C06@1e-6:propagator_reference", "passed": true, "max_tolerance_ratio": 3.4694599623959464e-05}
+{"name": "C06@1e-6:state_reference", "passed": true, "max_tolerance_ratio": 6.938893903907228e-05}
+{"name": "C06@1e-6:positivity", "passed": true}
+{"name": "C06@1e-6:inventory", "passed": true, "total_scaled": 4.4408920985006264e-17, "free_scaled": 4.4408920985006264e-17, "bound_scaled": 0.0}
+{"name": "C06@1e-6:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C06@1e-6:inlet_bounds", "passed": true}
+{"name": "C06@1e-3:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C06@1e-3:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C06@1e-3:positivity", "passed": true}
+{"name": "C06@1e-3:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C06@1e-3:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C06@1e-3:inlet_bounds", "passed": true}
+{"name": "C06@0.01:propagator_reference", "passed": true, "max_tolerance_ratio": 3.501466048379365e-05}
+{"name": "C06@0.01:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C06@0.01:positivity", "passed": true}
+{"name": "C06@0.01:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C06@0.01:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C06@0.01:inlet_bounds", "passed": true}
+{"name": "C06@0.1:propagator_reference", "passed": true, "max_tolerance_ratio": 3.7457948443791824e-05}
+{"name": "C06@0.1:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C06@0.1:positivity", "passed": true}
+{"name": "C06@0.1:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C06@0.1:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C06@0.1:inlet_bounds", "passed": true}
+{"name": "C06@0.5:propagator_reference", "passed": true, "max_tolerance_ratio": 5.567796259106508e-05}
+{"name": "C06@0.5:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C06@0.5:positivity", "passed": true}
+{"name": "C06@0.5:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C06@0.5:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C06@0.5:inlet_bounds", "passed": true}
+{"name": "C06@1:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C06@1:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C06@1:positivity", "passed": true}
+{"name": "C06@1:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C06@1:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C06@1:inlet_bounds", "passed": true}
+{"name": "C06:semigroup", "passed": true, "max_abs_error": 2.220446049250313e-16}
+{"name": "C06:precision_recheck", "passed": true, "scaled": 0.0}
+{"name": "C06:zero_sink_limit", "passed": true}
+{"name": "C06:BE:32:conservation", "passed": true, "scaled": 0.0}
+{"name": "C06:BE:32:positivity", "passed": true}
+{"name": "C06:BE:64:conservation", "passed": true, "scaled": 0.0}
+{"name": "C06:BE:64:positivity", "passed": true}
+{"name": "C06:BE:128:conservation", "passed": true, "scaled": 0.0}
+{"name": "C06:BE:128:positivity", "passed": true}
+{"name": "C06:BE:256:conservation", "passed": true, "scaled": 0.0}
+{"name": "C06:BE:256:positivity", "passed": true}
+{"name": "C06:BE:512:conservation", "passed": true, "scaled": 0.0}
+{"name": "C06:BE:512:positivity", "passed": true}
+{"name": "C06:BE:1024:conservation", "passed": true, "scaled": 0.0}
+{"name": "C06:BE:1024:positivity", "passed": true}
+{"name": "C06:BE:2048:conservation", "passed": true, "scaled": 0.0}
+{"name": "C06:BE:2048:positivity", "passed": true}
+{"name": "C06:BE:4096:conservation", "passed": true, "scaled": 0.0}
+{"name": "C06:BE:4096:positivity", "passed": true}
+{"name": "C07@0:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C07@0:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C07@0:positivity", "passed": true}
+{"name": "C07@0:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C07@0:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C07@0:inlet_bounds", "passed": true}
+{"name": "C07@1e-12:propagator_reference", "passed": true, "max_tolerance_ratio": 5.295953732128992e-05}
+{"name": "C07@1e-12:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C07@1e-12:positivity", "passed": true}
+{"name": "C07@1e-12:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 4.415003654525276e-98, "bound_scaled": 4.415003654525276e-98}
+{"name": "C07@1e-12:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C07@1e-12:inlet_bounds", "passed": true}
+{"name": "C07@1e-9:propagator_reference", "passed": true, "max_tolerance_ratio": 3.4694502045599284e-05}
+{"name": "C07@1e-9:state_reference", "passed": true, "max_tolerance_ratio": 3.637978807091713e-05}
+{"name": "C07@1e-9:positivity", "passed": true}
+{"name": "C07@1e-9:inventory", "passed": true, "total_scaled": 1.164152054117294e-16, "free_scaled": 5.947595693405275e-98, "bound_scaled": 1.164152054117294e-16}
+{"name": "C07@1e-9:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C07@1e-9:inlet_bounds", "passed": true}
+{"name": "C07@1e-6:propagator_reference", "passed": true, "max_tolerance_ratio": 3.4694502045599284e-05}
+{"name": "C07@1e-6:state_reference", "passed": true, "max_tolerance_ratio": 3.637978807091713e-05}
+{"name": "C07@1e-6:positivity", "passed": true}
+{"name": "C07@1e-6:inventory", "passed": true, "total_scaled": 1.164152054117294e-16, "free_scaled": 5.947595693405275e-98, "bound_scaled": 1.164152054117294e-16}
+{"name": "C07@1e-6:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C07@1e-6:inlet_bounds", "passed": true}
+{"name": "C07@1e-3:propagator_reference", "passed": true, "max_tolerance_ratio": 3.4694502045599284e-05}
+{"name": "C07@1e-3:state_reference", "passed": true, "max_tolerance_ratio": 3.637978807091713e-05}
+{"name": "C07@1e-3:positivity", "passed": true}
+{"name": "C07@1e-3:inventory", "passed": true, "total_scaled": 1.164152054117294e-16, "free_scaled": 5.947595693405275e-98, "bound_scaled": 1.164152054117294e-16}
+{"name": "C07@1e-3:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C07@1e-3:inlet_bounds", "passed": true}
+{"name": "C07@0.01:propagator_reference", "passed": true, "max_tolerance_ratio": 3.4694502045599284e-05}
+{"name": "C07@0.01:state_reference", "passed": true, "max_tolerance_ratio": 3.637978807091713e-05}
+{"name": "C07@0.01:positivity", "passed": true}
+{"name": "C07@0.01:inventory", "passed": true, "total_scaled": 1.164152054117294e-16, "free_scaled": 5.947595693405275e-98, "bound_scaled": 1.164152054117294e-16}
+{"name": "C07@0.01:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C07@0.01:inlet_bounds", "passed": true}
+{"name": "C07@0.1:propagator_reference", "passed": true, "max_tolerance_ratio": 3.4694502045599284e-05}
+{"name": "C07@0.1:state_reference", "passed": true, "max_tolerance_ratio": 3.637978807091713e-05}
+{"name": "C07@0.1:positivity", "passed": true}
+{"name": "C07@0.1:inventory", "passed": true, "total_scaled": 1.164152054117294e-16, "free_scaled": 5.947595693405275e-98, "bound_scaled": 1.164152054117294e-16}
+{"name": "C07@0.1:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C07@0.1:inlet_bounds", "passed": true}
+{"name": "C07@0.5:propagator_reference", "passed": true, "max_tolerance_ratio": 3.4694502045599284e-05}
+{"name": "C07@0.5:state_reference", "passed": true, "max_tolerance_ratio": 3.637978807091713e-05}
+{"name": "C07@0.5:positivity", "passed": true}
+{"name": "C07@0.5:inventory", "passed": true, "total_scaled": 1.164152054117294e-16, "free_scaled": 5.947595693405275e-98, "bound_scaled": 1.164152054117294e-16}
+{"name": "C07@0.5:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C07@0.5:inlet_bounds", "passed": true}
+{"name": "C07@1:propagator_reference", "passed": true, "max_tolerance_ratio": 3.4694502045599284e-05}
+{"name": "C07@1:state_reference", "passed": true, "max_tolerance_ratio": 3.637978807091713e-05}
+{"name": "C07@1:positivity", "passed": true}
+{"name": "C07@1:inventory", "passed": true, "total_scaled": 1.164152054117294e-16, "free_scaled": 5.947595693405275e-98, "bound_scaled": 1.164152054117294e-16}
+{"name": "C07@1:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C07@1:inlet_bounds", "passed": true}
+{"name": "C07:semigroup", "passed": true, "max_abs_error": 1.1102230246251565e-16}
+{"name": "C07:precision_recheck", "passed": true, "scaled": 5.947601641000969e-92}
+{"name": "C07:zero_sink_limit", "passed": true}
+{"name": "C07:BE:32:conservation", "passed": true, "scaled": 3.725290236907658e-15}
+{"name": "C07:BE:32:positivity", "passed": true}
+{"name": "C07:BE:64:conservation", "passed": true, "scaled": 7.450185741340991e-15}
+{"name": "C07:BE:64:positivity", "passed": true}
+{"name": "C07:BE:128:conservation", "passed": true, "scaled": 1.4899417980955313e-14}
+{"name": "C07:BE:128:positivity", "passed": true}
+{"name": "C07:BE:256:conservation", "passed": true, "scaled": 0.0}
+{"name": "C07:BE:256:positivity", "passed": true}
+{"name": "C07:BE:512:conservation", "passed": true, "scaled": 0.0}
+{"name": "C07:BE:512:positivity", "passed": true}
+{"name": "C07:BE:1024:conservation", "passed": true, "scaled": 0.0}
+{"name": "C07:BE:1024:positivity", "passed": true}
+{"name": "C07:BE:2048:conservation", "passed": true, "scaled": 2.037268126411368e-14}
+{"name": "C07:BE:2048:positivity", "passed": true}
+{"name": "C07:BE:4096:conservation", "passed": true, "scaled": 0.0}
+{"name": "C07:BE:4096:positivity", "passed": true}
+{"name": "C08@0:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C08@0:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C08@0:positivity", "passed": true}
+{"name": "C08@0:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C08@0:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C08@0:inlet_bounds", "passed": true}
+{"name": "C08@1e-12:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C08@1e-12:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C08@1e-12:positivity", "passed": true}
+{"name": "C08@1e-12:inventory", "passed": true, "total_scaled": 4.424343924291942e-18, "free_scaled": 4.424343924291938e-18, "bound_scaled": 3.999999999998667e-33}
+{"name": "C08@1e-12:reference_inventory", "passed": true, "scaled": 2.4545467326488634e-92}
+{"name": "C08@1e-12:inlet_bounds", "passed": true}
+{"name": "C08@1e-9:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C08@1e-9:state_reference", "passed": true, "max_tolerance_ratio": 3.469446955206221e-05}
+{"name": "C08@1e-9:positivity", "passed": true}
+{"name": "C08@1e-9:inventory", "passed": true, "total_scaled": 1.6648074202282885e-17, "free_scaled": 1.6648074206282884e-17, "bound_scaled": 3.9999999986666664e-27}
+{"name": "C08@1e-9:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C08@1e-9:inlet_bounds", "passed": true}
+{"name": "C08@1e-6:propagator_reference", "passed": true, "max_tolerance_ratio": 3.155443620882154e-17}
+{"name": "C08@1e-6:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C08@1e-6:positivity", "passed": true}
+{"name": "C08@1e-6:inventory", "passed": true, "total_scaled": 3.172265442409443e-18, "free_scaled": 3.168265443742776e-18, "bound_scaled": 3.999998666666933e-21}
+{"name": "C08@1e-6:reference_inventory", "passed": true, "scaled": 1.9636373861190907e-91}
+{"name": "C08@1e-6:inlet_bounds", "passed": true}
+{"name": "C08@1e-3:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C08@1e-3:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C08@1e-3:positivity", "passed": true}
+{"name": "C08@1e-3:inventory", "passed": true, "total_scaled": 7.37257477290143e-18, "free_scaled": 5.508463556757049e-18, "bound_scaled": 1.8641112161443817e-18}
+{"name": "C08@1e-3:reference_inventory", "passed": true, "scaled": 1.9636373861190907e-91}
+{"name": "C08@1e-3:inlet_bounds", "passed": true}
+{"name": "C08@0.01:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C08@0.01:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C08@0.01:positivity", "passed": true}
+{"name": "C08@0.01:inventory", "passed": true, "total_scaled": 3.920475055707584e-17, "free_scaled": 5.905425231920064e-18, "bound_scaled": 3.3299325325155774e-17}
+{"name": "C08@0.01:reference_inventory", "passed": true, "scaled": 2.4545467326488634e-92}
+{"name": "C08@0.01:inlet_bounds", "passed": true}
+{"name": "C08@0.1:propagator_reference", "passed": true, "max_tolerance_ratio": 3.469446955206221e-05}
+{"name": "C08@0.1:state_reference", "passed": true, "max_tolerance_ratio": 3.469446952110956e-05}
+{"name": "C08@0.1:positivity", "passed": true}
+{"name": "C08@0.1:inventory", "passed": true, "total_scaled": 1.0547118733938987e-16, "free_scaled": 6.045464499492405e-18, "bound_scaled": 9.942572283989746e-17}
+{"name": "C08@0.1:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C08@0.1:inlet_bounds", "passed": true}
+{"name": "C08@0.5:propagator_reference", "passed": true, "max_tolerance_ratio": 5.497264081552901e-05}
+{"name": "C08@0.5:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C08@0.5:positivity", "passed": true}
+{"name": "C08@0.5:inventory", "passed": true, "total_scaled": 1.1102230246251566e-17, "free_scaled": 1.4455252685041198e-17, "bound_scaled": 2.5557482931292764e-17}
+{"name": "C08@0.5:reference_inventory", "passed": true, "scaled": 2.4545467326488634e-92}
+{"name": "C08@0.5:inlet_bounds", "passed": true}
+{"name": "C08@1:propagator_reference", "passed": true, "max_tolerance_ratio": 4.258171312531234e-05}
+{"name": "C08@1:state_reference", "passed": true, "max_tolerance_ratio": 4.258171064762129e-05}
+{"name": "C08@1:positivity", "passed": true}
+{"name": "C08@1:inventory", "passed": true, "total_scaled": 2.2204460492503132e-17, "free_scaled": 3.6539174929758e-18, "bound_scaled": 1.855054299952733e-17}
+{"name": "C08@1:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C08@1:inlet_bounds", "passed": true}
+{"name": "C08:semigroup", "passed": true, "max_abs_error": 1.1102230246251565e-16}
+{"name": "C08:precision_recheck", "passed": true, "scaled": 5.598279016355828e-92}
+{"name": "C08:BE:32:conservation", "passed": true, "scaled": 9.992007221626409e-16}
+{"name": "C08:BE:32:positivity", "passed": true}
+{"name": "C08:BE:64:conservation", "passed": true, "scaled": 5.184741524999481e-15}
+{"name": "C08:BE:64:positivity", "passed": true}
+{"name": "C08:BE:128:conservation", "passed": true, "scaled": 5.937254054420018e-15}
+{"name": "C08:BE:128:positivity", "passed": true}
+{"name": "C08:BE:256:conservation", "passed": true, "scaled": 7.221504524721754e-15}
+{"name": "C08:BE:256:positivity", "passed": true}
+{"name": "C08:BE:512:conservation", "passed": true, "scaled": 1.3289369604763124e-14}
+{"name": "C08:BE:512:positivity", "passed": true}
+{"name": "C08:BE:1024:conservation", "passed": true, "scaled": 8.4707254569386e-14}
+{"name": "C08:BE:1024:positivity", "passed": true}
+{"name": "C08:BE:2048:conservation", "passed": true, "scaled": 8.824052599720744e-14}
+{"name": "C08:BE:2048:positivity", "passed": true}
+{"name": "C08:BE:4096:conservation", "passed": true, "scaled": 1.4249712521063884e-13}
+{"name": "C08:BE:4096:positivity", "passed": true}
+{"name": "C08:BE:convergence", "passed": true, "last_order": 0.9998532672878332, "finest_error": 4.490259088751891e-05}
+{"name": "C09@0:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C09@0:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C09@0:positivity", "passed": true}
+{"name": "C09@0:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C09@0:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C09@0:inlet_bounds", "passed": true}
+{"name": "C09@1e-12:propagator_reference", "passed": true, "max_tolerance_ratio": 3.469446951953647e-05}
+{"name": "C09@1e-12:state_reference", "passed": true, "max_tolerance_ratio": 3.469446951953614e-05}
+{"name": "C09@1e-12:positivity", "passed": true}
+{"name": "C09@1e-12:inventory", "passed": true, "total_scaled": 8.439349804572058e-17, "free_scaled": 4.4243439202919416e-18, "bound_scaled": 8.881784196601252e-17}
+{"name": "C09@1e-12:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C09@1e-12:inlet_bounds", "passed": true}
+{"name": "C09@1e-9:propagator_reference", "passed": true, "max_tolerance_ratio": 3.469446955336325e-05}
+{"name": "C09@1e-9:state_reference", "passed": true, "max_tolerance_ratio": 3.469446955206221e-05}
+{"name": "C09@1e-9:positivity", "passed": true}
+{"name": "C09@1e-9:inventory", "passed": true, "total_scaled": 1.6648074202282885e-17, "free_scaled": 1.6652074202281483e-17, "bound_scaled": 3.9999999986e-21}
+{"name": "C09@1e-9:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C09@1e-9:inlet_bounds", "passed": true}
+{"name": "C09@1e-6:propagator_reference", "passed": true, "max_tolerance_ratio": 3.469446984479679e-05}
+{"name": "C09@1e-6:state_reference", "passed": true, "max_tolerance_ratio": 3.4694469519536305e-05}
+{"name": "C09@1e-6:positivity", "passed": true}
+{"name": "C09@1e-6:inventory", "passed": true, "total_scaled": 8.564426362653483e-17, "free_scaled": 2.2133006323152925e-20, "bound_scaled": 8.562213062021169e-17}
+{"name": "C09@1e-6:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C09@1e-6:inlet_bounds", "passed": true}
+{"name": "C09@1e-3:propagator_reference", "passed": true, "max_tolerance_ratio": 3.4694794775107865e-05}
+{"name": "C09@1e-3:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C09@1e-3:positivity", "passed": true}
+{"name": "C09@1e-3:inventory", "passed": true, "total_scaled": 1.1058862159352145e-17, "free_scaled": 8.986585465982658e-18, "bound_scaled": 2.0045447625334803e-17}
+{"name": "C09@1e-3:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C09@1e-3:inlet_bounds", "passed": true}
+{"name": "C09@0.01:propagator_reference", "passed": true, "max_tolerance_ratio": 5.388846942249273e-07}
+{"name": "C09@0.01:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C09@0.01:positivity", "passed": true}
+{"name": "C09@0.01:inventory", "passed": true, "total_scaled": 2.0816681711721684e-18, "free_scaled": 4.6535143089204e-18, "bound_scaled": 2.5718461377482323e-18}
+{"name": "C09@0.01:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C09@0.01:inlet_bounds", "passed": true}
+{"name": "C09@0.1:propagator_reference", "passed": true, "max_tolerance_ratio": 3.823501401207879e-05}
+{"name": "C09@0.1:state_reference", "passed": true, "max_tolerance_ratio": 3.808560221631706e-05}
+{"name": "C09@0.1:positivity", "passed": true}
+{"name": "C09@0.1:inventory", "passed": true, "total_scaled": 2.4980018054066023e-17, "free_scaled": 2.4199392489876458e-17, "bound_scaled": 7.806255641895632e-19}
+{"name": "C09@0.1:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C09@0.1:inlet_bounds", "passed": true}
+{"name": "C09@0.5:propagator_reference", "passed": true, "max_tolerance_ratio": 7.032852008794047e-06}
+{"name": "C09@0.5:state_reference", "passed": true, "max_tolerance_ratio": 3.472888299764469e-05}
+{"name": "C09@0.5:positivity", "passed": true}
+{"name": "C09@0.5:inventory", "passed": true, "total_scaled": 4.4408920985006264e-17, "free_scaled": 3.816391647148976e-18, "bound_scaled": 4.822531263215524e-17}
+{"name": "C09@0.5:reference_inventory", "passed": true, "scaled": 4.909093465297727e-92}
+{"name": "C09@0.5:inlet_bounds", "passed": true}
+{"name": "C09@1:propagator_reference", "passed": true, "max_tolerance_ratio": 3.501636944089366e-05}
+{"name": "C09@1:state_reference", "passed": true, "max_tolerance_ratio": 4.158625829424924e-05}
+{"name": "C09@1:positivity", "passed": true}
+{"name": "C09@1:inventory", "passed": true, "total_scaled": 8.881784197001253e-17, "free_scaled": 1.700029006457271e-17, "bound_scaled": 7.181755190543981e-17}
+{"name": "C09@1:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C09@1:inlet_bounds", "passed": true}
+{"name": "C09:semigroup", "passed": true, "max_abs_error": 1.1102230246251565e-16}
+{"name": "C09:precision_recheck", "passed": true, "scaled": 1.4153248220907272e-92}
+{"name": "C09:BE:32:conservation", "passed": true, "scaled": 1.7104373473131318e-15}
+{"name": "C09:BE:32:positivity", "passed": true}
+{"name": "C09:BE:64:conservation", "passed": true, "scaled": 3.951006188884776e-15}
+{"name": "C09:BE:64:positivity", "passed": true}
+{"name": "C09:BE:128:conservation", "passed": true, "scaled": 7.124856260531942e-15}
+{"name": "C09:BE:128:positivity", "passed": true}
+{"name": "C09:BE:256:conservation", "passed": true, "scaled": 7.867317908250015e-15}
+{"name": "C09:BE:256:positivity", "passed": true}
+{"name": "C09:BE:512:conservation", "passed": true, "scaled": 8.540390616929016e-15}
+{"name": "C09:BE:512:positivity", "passed": true}
+{"name": "C09:BE:1024:conservation", "passed": true, "scaled": 9.5812247025151e-15}
+{"name": "C09:BE:1024:positivity", "passed": true}
+{"name": "C09:BE:2048:conservation", "passed": true, "scaled": 1.7521886719329416e-13}
+{"name": "C09:BE:2048:positivity", "passed": true}
+{"name": "C09:BE:4096:conservation", "passed": true, "scaled": 1.8042303762122459e-13}
+{"name": "C09:BE:4096:positivity", "passed": true}
+{"name": "C09:BE:convergence", "passed": true, "last_order": 0.9998510477843123, "finest_error": 4.485041032836756e-05}
+{"name": "C10@0:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C10@0:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C10@0:positivity", "passed": true}
+{"name": "C10@0:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C10@0:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C10@0:inlet_bounds", "passed": true}
+{"name": "C10@1e-12:propagator_reference", "passed": true, "max_tolerance_ratio": 3.469446951956866e-05}
+{"name": "C10@1e-12:state_reference", "passed": true, "max_tolerance_ratio": 3.469446951953614e-05}
+{"name": "C10@1e-12:positivity", "passed": true}
+{"name": "C10@1e-12:inventory", "passed": true, "total_scaled": 8.439349804572058e-17, "free_scaled": 4.424343524291942e-18, "bound_scaled": 8.881784157001252e-17}
+{"name": "C10@1e-12:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C10@1e-12:inlet_bounds", "passed": true}
+{"name": "C10@1e-9:propagator_reference", "passed": true, "max_tolerance_ratio": 3.469446955206221e-05}
+{"name": "C10@1e-9:state_reference", "passed": true, "max_tolerance_ratio": 3.469446951953614e-05}
+{"name": "C10@1e-9:positivity", "passed": true}
+{"name": "C10@1e-9:inventory", "passed": true, "total_scaled": 8.326145567979227e-17, "free_scaled": 5.156386291020246e-18, "bound_scaled": 8.841784197081252e-17}
+{"name": "C10@1e-9:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C10@1e-9:inlet_bounds", "passed": true}
+{"name": "C10@1e-6:propagator_reference", "passed": true, "max_tolerance_ratio": 4.234910642395241e-09}
+{"name": "C10@1e-6:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C10@1e-6:positivity", "passed": true}
+{"name": "C10@1e-6:inventory", "passed": true, "total_scaled": 4.110333255669899e-17, "free_scaled": 4.7431007869246344e-18, "bound_scaled": 3.636023176977436e-17}
+{"name": "C10@1e-6:reference_inventory", "passed": true, "scaled": 2.4545467326488634e-92}
+{"name": "C10@1e-6:inlet_bounds", "passed": true}
+{"name": "C10@1e-3:propagator_reference", "passed": true, "max_tolerance_ratio": 3.472694479613313e-05}
+{"name": "C10@1e-3:state_reference", "passed": true, "max_tolerance_ratio": 6.938897150019527e-05}
+{"name": "C10@1e-3:positivity", "passed": true}
+{"name": "C10@1e-3:inventory", "passed": true, "total_scaled": 1.3379054808471125e-16, "free_scaled": 1.5664010886984325e-17, "bound_scaled": 1.4945455897169556e-16}
+{"name": "C10@1e-3:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C10@1e-3:inlet_bounds", "passed": true}
+{"name": "C10@0.01:propagator_reference", "passed": true, "max_tolerance_ratio": 3.634990416628224e-05}
+{"name": "C10@0.01:state_reference", "passed": true, "max_tolerance_ratio": 3.5014681972386874e-05}
+{"name": "C10@0.01:positivity", "passed": true}
+{"name": "C10@0.01:inventory", "passed": true, "total_scaled": 1.0581813203458523e-16, "free_scaled": 1.7287603640281367e-17, "bound_scaled": 8.853052839430386e-17}
+{"name": "C10@0.01:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C10@0.01:inlet_bounds", "passed": true}
+{"name": "C10@0.1:propagator_reference", "passed": true, "max_tolerance_ratio": 3.7477295561724625e-05}
+{"name": "C10@0.1:state_reference", "passed": true, "max_tolerance_ratio": 3.4829335999623335e-05}
+{"name": "C10@0.1:positivity", "passed": true}
+{"name": "C10@0.1:inventory", "passed": true, "total_scaled": 7.494005416219807e-17, "free_scaled": 2.0816681711721684e-18, "bound_scaled": 7.28583859910259e-17}
+{"name": "C10@0.1:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C10@0.1:inlet_bounds", "passed": true}
+{"name": "C10@0.5:propagator_reference", "passed": true, "max_tolerance_ratio": 5.4640926754735865e-05}
+{"name": "C10@0.5:state_reference", "passed": true, "max_tolerance_ratio": 4.3132516356733514e-05}
+{"name": "C10@0.5:positivity", "passed": true}
+{"name": "C10@0.5:inventory", "passed": true, "total_scaled": 5.551115123125783e-17, "free_scaled": 2.2204460492503132e-17, "bound_scaled": 3.3306690738754695e-17}
+{"name": "C10@0.5:reference_inventory", "passed": true, "scaled": 2.4545467326488634e-92}
+{"name": "C10@0.5:inlet_bounds", "passed": true}
+{"name": "C10@1:propagator_reference", "passed": true, "max_tolerance_ratio": 4.707852837830243e-05}
+{"name": "C10@1:state_reference", "passed": true, "max_tolerance_ratio": 3.9602824887649355e-05}
+{"name": "C10@1:positivity", "passed": true}
+{"name": "C10@1:inventory", "passed": true, "total_scaled": 6.661338147750939e-17, "free_scaled": 0.0, "bound_scaled": 6.661338147750939e-17}
+{"name": "C10@1:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C10@1:inlet_bounds", "passed": true}
+{"name": "C10:semigroup", "passed": true, "max_abs_error": 1.1102230246251565e-16}
+{"name": "C10:precision_recheck", "passed": true, "scaled": 4.311706104717459e-92}
+{"name": "C10:BE:32:conservation", "passed": true, "scaled": 8.881784197001252e-16}
+{"name": "C10:BE:32:positivity", "passed": true}
+{"name": "C10:BE:64:conservation", "passed": true, "scaled": 4.662936703425658e-16}
+{"name": "C10:BE:64:positivity", "passed": true}
+{"name": "C10:BE:128:conservation", "passed": true, "scaled": 2.0872192862952944e-15}
+{"name": "C10:BE:128:positivity", "passed": true}
+{"name": "C10:BE:256:conservation", "passed": true, "scaled": 3.6193270602780105e-15}
+{"name": "C10:BE:256:positivity", "passed": true}
+{"name": "C10:BE:512:conservation", "passed": true, "scaled": 4.884981308350689e-16}
+{"name": "C10:BE:512:positivity", "passed": true}
+{"name": "C10:BE:1024:conservation", "passed": true, "scaled": 1.3544720900426909e-15}
+{"name": "C10:BE:1024:positivity", "passed": true}
+{"name": "C10:BE:2048:conservation", "passed": true, "scaled": 3.634870182622762e-14}
+{"name": "C10:BE:2048:positivity", "passed": true}
+{"name": "C10:BE:4096:conservation", "passed": true, "scaled": 2.531308496145357e-15}
+{"name": "C10:BE:4096:positivity", "passed": true}
+{"name": "C10:BE:convergence", "passed": true, "last_order": 1.0006406783833475, "finest_error": 4.372596801194284e-06}
+{"name": "C11@0:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C11@0:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C11@0:positivity", "passed": true}
+{"name": "C11@0:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C11@0:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C11@0:inlet_bounds", "passed": true}
+{"name": "C11@1e-12:propagator_reference", "passed": true, "max_tolerance_ratio": 3.4694469532579094e-05}
+{"name": "C11@1e-12:state_reference", "passed": true, "max_tolerance_ratio": 3.469446951956866e-05}
+{"name": "C11@1e-12:positivity", "passed": true}
+{"name": "C11@1e-12:inventory", "passed": true, "total_scaled": 2.662880441679507e-17, "free_scaled": 2.662876441679508e-17, "bound_scaled": 3.999999999332e-23}
+{"name": "C11@1e-12:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C11@1e-12:inlet_bounds", "passed": true}
+{"name": "C11@1e-9:propagator_reference", "passed": true, "max_tolerance_ratio": 5.293924156802393e-10}
+{"name": "C11@1e-9:state_reference", "passed": true, "max_tolerance_ratio": 3.4694469552062194e-05}
+{"name": "C11@1e-9:positivity", "passed": true}
+{"name": "C11@1e-9:inventory", "passed": true, "total_scaled": 2.776084678272338e-17, "free_scaled": 1.2239146537277458e-17, "bound_scaled": 3.9999993320000836e-17}
+{"name": "C11@1e-9:reference_inventory", "passed": true, "scaled": 2.4545467326488634e-92}
+{"name": "C11@1e-9:inlet_bounds", "passed": true}
+{"name": "C11@1e-6:propagator_reference", "passed": true, "max_tolerance_ratio": 2.694343419618282e-07}
+{"name": "C11@1e-6:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C11@1e-6:positivity", "passed": true}
+{"name": "C11@1e-6:inventory", "passed": true, "total_scaled": 2.7904992227524573e-17, "free_scaled": 6.7697780425922866e-18, "bound_scaled": 2.1135214184932287e-17}
+{"name": "C11@1e-6:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C11@1e-6:inlet_bounds", "passed": true}
+{"name": "C11@1e-3:propagator_reference", "passed": true, "max_tolerance_ratio": 3.745814647928018e-05}
+{"name": "C11@1e-3:state_reference", "passed": true, "max_tolerance_ratio": 3.469585514826648e-05}
+{"name": "C11@1e-3:positivity", "passed": true}
+{"name": "C11@1e-3:inventory", "passed": true, "total_scaled": 1.1232334506949826e-16, "free_scaled": 1.0001765041178778e-17, "bound_scaled": 1.0232158002831948e-16}
+{"name": "C11@1e-3:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C11@1e-3:inlet_bounds", "passed": true}
+{"name": "C11@0.01:propagator_reference", "passed": true, "max_tolerance_ratio": 4.309343917375841e-05}
+{"name": "C11@0.01:state_reference", "passed": true, "max_tolerance_ratio": 3.4746569563911784e-05}
+{"name": "C11@0.01:positivity", "passed": true}
+{"name": "C11@0.01:inventory", "passed": true, "total_scaled": 4.822531263215524e-17, "free_scaled": 7.112366251504908e-18, "bound_scaled": 5.5337678883660144e-17}
+{"name": "C11@0.01:reference_inventory", "passed": true, "scaled": 2.4545467326488634e-92}
+{"name": "C11@0.01:inlet_bounds", "passed": true}
+{"name": "C11@0.1:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C11@0.1:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C11@0.1:positivity", "passed": true}
+{"name": "C11@0.1:inventory", "passed": true, "total_scaled": 4.718447854656915e-17, "free_scaled": 5.551115123125783e-18, "bound_scaled": 4.163336342344337e-17}
+{"name": "C11@0.1:reference_inventory", "passed": true, "scaled": 9.818186930595453e-91}
+{"name": "C11@0.1:inlet_bounds", "passed": true}
+{"name": "C11@0.5:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C11@0.5:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C11@0.5:positivity", "passed": true}
+{"name": "C11@0.5:inventory", "passed": true, "total_scaled": 4.4408920985006264e-17, "free_scaled": 1.1102230246251566e-17, "bound_scaled": 3.3306690738754695e-17}
+{"name": "C11@0.5:reference_inventory", "passed": true, "scaled": 1.9636373861190907e-91}
+{"name": "C11@0.5:inlet_bounds", "passed": true}
+{"name": "C11@1:propagator_reference", "passed": true, "max_tolerance_ratio": 4.023562719800558e-05}
+{"name": "C11@1:state_reference", "passed": true, "max_tolerance_ratio": 4.184705423637521e-05}
+{"name": "C11@1:positivity", "passed": true}
+{"name": "C11@1:inventory", "passed": true, "total_scaled": 6.661338147750939e-17, "free_scaled": 0.0, "bound_scaled": 6.661338147750939e-17}
+{"name": "C11@1:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C11@1:inlet_bounds", "passed": true}
+{"name": "C11:semigroup", "passed": true, "max_abs_error": 1.1102230246251565e-16}
+{"name": "C11:precision_recheck", "passed": true, "scaled": 6.897499214444132e-92}
+{"name": "C11:BE:32:conservation", "passed": true, "scaled": 3.108624468950438e-16}
+{"name": "C11:BE:32:positivity", "passed": true}
+{"name": "C11:BE:64:conservation", "passed": true, "scaled": 1.2878587085651815e-15}
+{"name": "C11:BE:64:positivity", "passed": true}
+{"name": "C11:BE:128:conservation", "passed": true, "scaled": 7.904787935331115e-15}
+{"name": "C11:BE:128:positivity", "passed": true}
+{"name": "C11:BE:256:conservation", "passed": true, "scaled": 3.2862601528904635e-15}
+{"name": "C11:BE:256:positivity", "passed": true}
+{"name": "C11:BE:512:conservation", "passed": true, "scaled": 1.2612133559741778e-14}
+{"name": "C11:BE:512:positivity", "passed": true}
+{"name": "C11:BE:1024:conservation", "passed": true, "scaled": 1.5853984791647237e-14}
+{"name": "C11:BE:1024:positivity", "passed": true}
+{"name": "C11:BE:2048:conservation", "passed": true, "scaled": 1.050270981295398e-14}
+{"name": "C11:BE:2048:positivity", "passed": true}
+{"name": "C11:BE:4096:conservation", "passed": true, "scaled": 7.285283487590278e-14}
+{"name": "C11:BE:4096:positivity", "passed": true}
+{"name": "C11:BE:convergence", "passed": true, "last_order": 0.9999566021492629, "finest_error": 3.987685687101283e-06}
+{"name": "C12@0:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C12@0:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C12@0:positivity", "passed": true}
+{"name": "C12@0:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C12@0:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C12@0:inlet_bounds", "passed": true}
+{"name": "C12@1e-12:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C12@1e-12:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C12@1e-12:positivity", "passed": true}
+{"name": "C12@1e-12:inventory", "passed": true, "total_scaled": 4.424343924291942e-18, "free_scaled": 4.4239439242926084e-18, "bound_scaled": 3.999999993332e-22}
+{"name": "C12@1e-12:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C12@1e-12:inlet_bounds", "passed": true}
+{"name": "C12@1e-9:propagator_reference", "passed": true, "max_tolerance_ratio": 3.4694502045550494e-05}
+{"name": "C12@1e-9:state_reference", "passed": true, "max_tolerance_ratio": 3.4694469519536155e-05}
+{"name": "C12@1e-9:positivity", "passed": true}
+{"name": "C12@1e-9:inventory", "passed": true, "total_scaled": 4.99653073993036e-17, "free_scaled": 5.237342078520047e-18, "bound_scaled": 4.4727965320783555e-17}
+{"name": "C12@1e-9:reference_inventory", "passed": true, "scaled": 2.4545467326488634e-92}
+{"name": "C12@1e-9:inlet_bounds", "passed": true}
+{"name": "C12@1e-6:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C12@1e-6:state_reference", "passed": true, "max_tolerance_ratio": 3.4694469535772097e-05}
+{"name": "C12@1e-6:positivity", "passed": true}
+{"name": "C12@1e-6:inventory", "passed": true, "total_scaled": 4.7521174143102736e-17, "free_scaled": 2.820095116412339e-18, "bound_scaled": 4.47010790266904e-17}
+{"name": "C12@1e-6:reference_inventory", "passed": true, "scaled": 1.9636373861190907e-91}
+{"name": "C12@1e-6:inlet_bounds", "passed": true}
+{"name": "C12@1e-3:propagator_reference", "passed": true, "max_tolerance_ratio": 3.40205422604676e-05}
+{"name": "C12@1e-3:state_reference", "passed": true, "max_tolerance_ratio": 3.470614464809245e-05}
+{"name": "C12@1e-3:positivity", "passed": true}
+{"name": "C12@1e-3:inventory", "passed": true, "total_scaled": 1.509209424099822e-17, "free_scaled": 1.769417945496343e-17, "bound_scaled": 2.6020852139652106e-18}
+{"name": "C12@1e-3:reference_inventory", "passed": true, "scaled": 4.909093465297727e-92}
+{"name": "C12@1e-3:inlet_bounds", "passed": true}
+{"name": "C12@0.01:propagator_reference", "passed": true, "max_tolerance_ratio": 3.4754864401253185e-05}
+{"name": "C12@0.01:state_reference", "passed": true, "max_tolerance_ratio": 3.4764781821110504e-05}
+{"name": "C12@0.01:positivity", "passed": true}
+{"name": "C12@0.01:inventory", "passed": true, "total_scaled": 5.0306980803327406e-17, "free_scaled": 1.734723475976807e-17, "bound_scaled": 3.2959746043559335e-17}
+{"name": "C12@0.01:reference_inventory", "passed": true, "scaled": 9.818186930595453e-91}
+{"name": "C12@0.01:inlet_bounds", "passed": true}
+{"name": "C12@0.1:propagator_reference", "passed": true, "max_tolerance_ratio": 4.350059295757188e-05}
+{"name": "C12@0.1:state_reference", "passed": true, "max_tolerance_ratio": 3.5355901431397466e-05}
+{"name": "C12@0.1:positivity", "passed": true}
+{"name": "C12@0.1:inventory", "passed": true, "total_scaled": 4.718447854656915e-17, "free_scaled": 3.053113317719181e-17, "bound_scaled": 1.6653345369377347e-17}
+{"name": "C12@0.1:reference_inventory", "passed": true, "scaled": 2.552728601954818e-90}
+{"name": "C12@0.1:inlet_bounds", "passed": true}
+{"name": "C12@0.5:propagator_reference", "passed": true, "max_tolerance_ratio": 7.473859339946115e-05}
+{"name": "C12@0.5:state_reference", "passed": true, "max_tolerance_ratio": 3.8098036323092564e-05}
+{"name": "C12@0.5:positivity", "passed": true}
+{"name": "C12@0.5:inventory", "passed": true, "total_scaled": 4.4408920985006264e-17, "free_scaled": 2.2204460492503132e-17, "bound_scaled": 2.2204460492503132e-17}
+{"name": "C12@0.5:reference_inventory", "passed": true, "scaled": 4.909093465297727e-92}
+{"name": "C12@0.5:inlet_bounds", "passed": true}
+{"name": "C12@1:propagator_reference", "passed": true, "max_tolerance_ratio": 5.128569984226147e-05}
+{"name": "C12@1:state_reference", "passed": true, "max_tolerance_ratio": 4.180248776142904e-05}
+{"name": "C12@1:positivity", "passed": true}
+{"name": "C12@1:inventory", "passed": true, "total_scaled": 1.1102230246251565e-16, "free_scaled": 4.4408920985006264e-17, "bound_scaled": 6.661338147750939e-17}
+{"name": "C12@1:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C12@1:inlet_bounds", "passed": true}
+{"name": "C12:semigroup", "passed": true, "max_abs_error": 1.1102230246251565e-16}
+{"name": "C12:precision_recheck", "passed": true, "scaled": 3.385388002697601e-92}
+{"name": "C12:BE:32:conservation", "passed": true, "scaled": 1.5987211554602255e-15}
+{"name": "C12:BE:32:positivity", "passed": true}
+{"name": "C12:BE:64:conservation", "passed": true, "scaled": 8.881784197001252e-16}
+{"name": "C12:BE:64:positivity", "passed": true}
+{"name": "C12:BE:128:conservation", "passed": true, "scaled": 1.050270981295398e-14}
+{"name": "C12:BE:128:positivity", "passed": true}
+{"name": "C12:BE:256:conservation", "passed": true, "scaled": 9.059419880941277e-15}
+{"name": "C12:BE:256:positivity", "passed": true}
+{"name": "C12:BE:512:conservation", "passed": true, "scaled": 4.75175454539567e-15}
+{"name": "C12:BE:512:positivity", "passed": true}
+{"name": "C12:BE:1024:conservation", "passed": true, "scaled": 5.582201367815287e-14}
+{"name": "C12:BE:1024:positivity", "passed": true}
+{"name": "C12:BE:2048:conservation", "passed": true, "scaled": 1.3011813848606835e-14}
+{"name": "C12:BE:2048:positivity", "passed": true}
+{"name": "C12:BE:4096:conservation", "passed": true, "scaled": 2.2115642650533117e-14}
+{"name": "C12:BE:4096:positivity", "passed": true}
+{"name": "C13@0:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C13@0:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C13@0:positivity", "passed": true}
+{"name": "C13@0:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C13@0:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C13@0:inlet_bounds", "passed": true}
+{"name": "C13@1e-12:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C13@1e-12:state_reference", "passed": true, "max_tolerance_ratio": 3.469446951954136e-05}
+{"name": "C13@1e-12:positivity", "passed": true}
+{"name": "C13@1e-12:inventory", "passed": true, "total_scaled": 4.883326496366271e-17, "free_scaled": 2.635076252528416e-18, "bound_scaled": 5.1468341216191127e-17}
+{"name": "C13@1e-12:reference_inventory", "passed": true, "scaled": 9.818186930595454e-92}
+{"name": "C13@1e-12:inlet_bounds", "passed": true}
+{"name": "C13@1e-9:propagator_reference", "passed": true, "max_tolerance_ratio": 4.270088557039399e-05}
+{"name": "C13@1e-9:state_reference", "passed": true, "max_tolerance_ratio": 3.469446952604656e-05}
+{"name": "C13@1e-9:positivity", "passed": true}
+{"name": "C13@1e-9:inventory", "passed": true, "total_scaled": 1.6568106185692077e-17, "free_scaled": 2.2263263169926847e-17, "bound_scaled": 3.883136935561892e-17}
+{"name": "C13@1e-9:reference_inventory", "passed": true, "scaled": 5.066184456187254e-89}
+{"name": "C13@1e-9:inlet_bounds", "passed": true}
+{"name": "C13@1e-6:propagator_reference", "passed": true, "max_tolerance_ratio": 4.270089344575183e-05}
+{"name": "C13@1e-6:state_reference", "passed": true, "max_tolerance_ratio": 3.469447602475495e-05}
+{"name": "C13@1e-6:positivity", "passed": true}
+{"name": "C13@1e-6:inventory", "passed": true, "total_scaled": 2.1767349140072548e-17, "free_scaled": 2.121703183424143e-17, "bound_scaled": 4.298438097431398e-17}
+{"name": "C13@1e-6:reference_inventory", "passed": true, "scaled": 5.166334871972793e-86}
+{"name": "C13@1e-6:inlet_bounds", "passed": true}
+{"name": "C13@1e-3:propagator_reference", "passed": true, "max_tolerance_ratio": 4.270876946999587e-05}
+{"name": "C13@1e-3:state_reference", "passed": true, "max_tolerance_ratio": 6.940195060362104e-05}
+{"name": "C13@1e-3:positivity", "passed": true}
+{"name": "C13@1e-3:inventory", "passed": true, "total_scaled": 1.5612511283791264e-18, "free_scaled": 3.7253186646601935e-17, "bound_scaled": 3.5691935518222805e-17}
+{"name": "C13@1e-3:reference_inventory", "passed": true, "scaled": 4.469444970914462e-83}
+{"name": "C13@1e-3:inlet_bounds", "passed": true}
+{"name": "C13@0.01:propagator_reference", "passed": true, "max_tolerance_ratio": 4.277978470113604e-05}
+{"name": "C13@0.01:state_reference", "passed": true, "max_tolerance_ratio": 6.951915719726331e-05}
+{"name": "C13@0.01:positivity", "passed": true}
+{"name": "C13@0.01:inventory", "passed": true, "total_scaled": 9.26342336171615e-17, "free_scaled": 3.3653635433950055e-17, "bound_scaled": 5.898059818321144e-17}
+{"name": "C13@0.01:reference_inventory", "passed": true, "scaled": 6.06623775699626e-82}
+{"name": "C13@0.01:inlet_bounds", "passed": true}
+{"name": "C13@0.1:propagator_reference", "passed": true, "max_tolerance_ratio": 8.699182046972377e-05}
+{"name": "C13@0.1:state_reference", "passed": true, "max_tolerance_ratio": 7.070142212391304e-05}
+{"name": "C13@0.1:positivity", "passed": true}
+{"name": "C13@0.1:inventory", "passed": true, "total_scaled": 5.551115123125783e-17, "free_scaled": 4.163336342344337e-17, "bound_scaled": 1.3877787807814457e-17}
+{"name": "C13@0.1:reference_inventory", "passed": true, "scaled": 2.671993671017156e-81}
+{"name": "C13@0.1:inlet_bounds", "passed": true}
+{"name": "C13@0.5:propagator_reference", "passed": true, "max_tolerance_ratio": 4.6813055970962986e-05}
+{"name": "C13@0.5:state_reference", "passed": true, "max_tolerance_ratio": 3.8092926974676266e-05}
+{"name": "C13@0.5:positivity", "passed": true}
+{"name": "C13@0.5:inventory", "passed": true, "total_scaled": 1.2212453270876723e-16, "free_scaled": 2.2204460492503132e-17, "bound_scaled": 9.992007221626409e-17}
+{"name": "C13@0.5:reference_inventory", "passed": true, "scaled": 2.4545467326488634e-92}
+{"name": "C13@0.5:inlet_bounds", "passed": true}
+{"name": "C13@1:propagator_reference", "passed": true, "max_tolerance_ratio": 5.128160336894916e-05}
+{"name": "C13@1:state_reference", "passed": true, "max_tolerance_ratio": 4.1797540097699095e-05}
+{"name": "C13@1:positivity", "passed": true}
+{"name": "C13@1:inventory", "passed": true, "total_scaled": 2.2204460492503132e-17, "free_scaled": 0.0, "bound_scaled": 2.2204460492503132e-17}
+{"name": "C13@1:reference_inventory", "passed": true, "scaled": 4.909093465297727e-92}
+{"name": "C13@1:inlet_bounds", "passed": true}
+{"name": "C13:semigroup", "passed": true, "max_abs_error": 1.1102230246251565e-16}
+{"name": "C13:precision_recheck", "passed": true, "scaled": 4.296323152538938e-92}
+{"name": "C13:BE:32:conservation", "passed": true, "scaled": 5.995204332975846e-16}
+{"name": "C13:BE:32:positivity", "passed": true}
+{"name": "C13:BE:64:conservation", "passed": true, "scaled": 6.5059069243034175e-15}
+{"name": "C13:BE:64:positivity", "passed": true}
+{"name": "C13:BE:128:conservation", "passed": true, "scaled": 4.973799150320701e-15}
+{"name": "C13:BE:128:positivity", "passed": true}
+{"name": "C13:BE:256:conservation", "passed": true, "scaled": 1.991740106177531e-14}
+{"name": "C13:BE:256:positivity", "passed": true}
+{"name": "C13:BE:512:conservation", "passed": true, "scaled": 9.992007221626409e-16}
+{"name": "C13:BE:512:positivity", "passed": true}
+{"name": "C13:BE:1024:conservation", "passed": true, "scaled": 5.684341886080802e-15}
+{"name": "C13:BE:1024:positivity", "passed": true}
+{"name": "C13:BE:2048:conservation", "passed": true, "scaled": 6.59472476627343e-15}
+{"name": "C13:BE:2048:positivity", "passed": true}
+{"name": "C13:BE:4096:conservation", "passed": true, "scaled": 1.0880185641326535e-15}
+{"name": "C13:BE:4096:positivity", "passed": true}
+{"name": "C14@0:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C14@0:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C14@0:positivity", "passed": true}
+{"name": "C14@0:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C14@0:reference_inventory", "passed": true, "scaled": 5.827105561330693e-92}
+{"name": "C14@0:inlet_bounds", "passed": true}
+{"name": "C14@1e-12:propagator_reference", "passed": true, "max_tolerance_ratio": 8.352389719038111e-40}
+{"name": "C14@1e-12:state_reference", "passed": true, "max_tolerance_ratio": 9.183549615799121e-28}
+{"name": "C14@1e-12:positivity", "passed": true}
+{"name": "C14@1e-12:inventory", "passed": true, "total_scaled": 2.212171962145971e-17, "free_scaled": 2.212171962145971e-17, "bound_scaled": 1.836709928159824e-40}
+{"name": "C14@1e-12:reference_inventory", "passed": true, "scaled": 5.827105561330693e-92}
+{"name": "C14@1e-12:inlet_bounds", "passed": true}
+{"name": "C14@1e-9:propagator_reference", "passed": true, "max_tolerance_ratio": 1.0339757501816483e-12}
+{"name": "C14@1e-9:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C14@1e-9:positivity", "passed": true}
+{"name": "C14@1e-9:inventory", "passed": true, "total_scaled": 2.778193145110123e-17, "free_scaled": 2.778193145110123e-17, "bound_scaled": 4.9999999966666664e-43}
+{"name": "C14@1e-9:reference_inventory", "passed": true, "scaled": 5.827105561330693e-92}
+{"name": "C14@1e-9:inlet_bounds", "passed": true}
+{"name": "C14@1e-6:propagator_reference", "passed": true, "max_tolerance_ratio": 1.0587753024542202e-09}
+{"name": "C14@1e-6:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C14@1e-6:positivity", "passed": true}
+{"name": "C14@1e-6:inventory", "passed": true, "total_scaled": 1.5861327212047215e-17, "free_scaled": 1.5861327212047215e-17, "bound_scaled": 4.722558268754498e-41}
+{"name": "C14@1e-6:reference_inventory", "passed": true, "scaled": 5.827105561330693e-92}
+{"name": "C14@1e-6:inlet_bounds", "passed": true}
+{"name": "C14@1e-3:propagator_reference", "passed": true, "max_tolerance_ratio": 8.96831017167883e-31}
+{"name": "C14@1e-3:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C14@1e-3:positivity", "passed": true}
+{"name": "C14@1e-3:inventory", "passed": true, "total_scaled": 3.0140820395096524e-17, "free_scaled": 3.0140820395096524e-17, "bound_scaled": 8.458973212358366e-41}
+{"name": "C14@1e-3:reference_inventory", "passed": true, "scaled": 5.827105561330693e-92}
+{"name": "C14@1e-3:inlet_bounds", "passed": true}
+{"name": "C14@0.01:propagator_reference", "passed": true, "max_tolerance_ratio": 7.552077429372389e-06}
+{"name": "C14@0.01:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C14@0.01:positivity", "passed": true}
+{"name": "C14@0.01:inventory", "passed": true, "total_scaled": 5.377642775523135e-17, "free_scaled": 5.377642775523135e-17, "bound_scaled": 3.594610820686021e-41}
+{"name": "C14@0.01:reference_inventory", "passed": true, "scaled": 5.827105561330693e-92}
+{"name": "C14@0.01:inlet_bounds", "passed": true}
+{"name": "C14@0.1:propagator_reference", "passed": true, "max_tolerance_ratio": 3.8092926974671156e-05}
+{"name": "C14@0.1:state_reference", "passed": true, "max_tolerance_ratio": 3.8092926974671156e-05}
+{"name": "C14@0.1:positivity", "passed": true}
+{"name": "C14@0.1:inventory", "passed": true, "total_scaled": 5.551115123593667e-17, "free_scaled": 5.551115123593667e-17, "bound_scaled": 7.318141100089925e-41}
+{"name": "C14@0.1:reference_inventory", "passed": true, "scaled": 1.871836176515794e-91}
+{"name": "C14@0.1:inlet_bounds", "passed": true}
+{"name": "C14@0.5:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C14@0.5:state_reference", "passed": true, "max_tolerance_ratio": 9.183549615799121e-28}
+{"name": "C14@0.5:positivity", "passed": true}
+{"name": "C14@0.5:inventory", "passed": true, "total_scaled": 9.020401043104991e-26, "free_scaled": 9.020401043104987e-26, "bound_scaled": 4.591774807899561e-41}
+{"name": "C14@0.5:reference_inventory", "passed": true, "scaled": 1.871836176515794e-91}
+{"name": "C14@0.5:inlet_bounds", "passed": true}
+{"name": "C14@1:propagator_reference", "passed": true, "max_tolerance_ratio": 4.2581711683353835e-05}
+{"name": "C14@1:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C14@1:positivity", "passed": true}
+{"name": "C14@1:inventory", "passed": true, "total_scaled": 2.642411176571153e-25, "free_scaled": 2.642411176571154e-25, "bound_scaled": 9.183549615799121e-41}
+{"name": "C14@1:reference_inventory", "passed": true, "scaled": 5.827105561330693e-92}
+{"name": "C14@1:inlet_bounds", "passed": true}
+{"name": "C14:semigroup", "passed": true, "max_abs_error": 5.551115123125783e-17}
+{"name": "C14:precision_recheck", "passed": true, "scaled": 2.060642615723914e-92}
+{"name": "C14:BE:32:conservation", "passed": true, "scaled": 1.1102230219830357e-16}
+{"name": "C14:BE:32:positivity", "passed": true}
+{"name": "C14:BE:64:conservation", "passed": true, "scaled": 6.106226632796023e-16}
+{"name": "C14:BE:64:positivity", "passed": true}
+{"name": "C14:BE:128:conservation", "passed": true, "scaled": 1.1102230219827639e-16}
+{"name": "C14:BE:128:positivity", "passed": true}
+{"name": "C14:BE:256:conservation", "passed": true, "scaled": 2.775557558920485e-16}
+{"name": "C14:BE:256:positivity", "passed": true}
+{"name": "C14:BE:512:conservation", "passed": true, "scaled": 1.1657341755921734e-15}
+{"name": "C14:BE:512:positivity", "passed": true}
+{"name": "C14:BE:1024:conservation", "passed": true, "scaled": 3.885780588830459e-16}
+{"name": "C14:BE:1024:positivity", "passed": true}
+{"name": "C14:BE:2048:conservation", "passed": true, "scaled": 1.1657341755921732e-15}
+{"name": "C14:BE:2048:positivity", "passed": true}
+{"name": "C14:BE:4096:conservation", "passed": true, "scaled": 2.4980018056708434e-15}
+{"name": "C14:BE:4096:positivity", "passed": true}
+{"name": "C15@0:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C15@0:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C15@0:positivity", "passed": true}
+{"name": "C15@0:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C15@0:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C15@0:inlet_bounds", "passed": true}
+{"name": "C15@1e-12:propagator_reference", "passed": true, "max_tolerance_ratio": 3.469450204564807e-05}
+{"name": "C15@1e-12:state_reference", "passed": true, "max_tolerance_ratio": 3.469446951956866e-05}
+{"name": "C15@1e-12:positivity", "passed": true}
+{"name": "C15@1e-12:inventory", "passed": true, "total_scaled": 8.890049394056201e-23, "free_scaled": 8.940049327389571e-23, "bound_scaled": 4.9999933333370835e-25}
+{"name": "C15@1e-12:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C15@1e-12:inlet_bounds", "passed": true}
+{"name": "C15@1e-9:propagator_reference", "passed": true, "max_tolerance_ratio": 1.068187370676843e-06}
+{"name": "C15@1e-9:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C15@1e-9:positivity", "passed": true}
+{"name": "C15@1e-9:inventory", "passed": true, "total_scaled": 4.998496879346855e-19, "free_scaled": 1.6813109058996987e-23, "bound_scaled": 4.998328748256266e-19}
+{"name": "C15@1e-9:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C15@1e-9:inlet_bounds", "passed": true}
+{"name": "C15@1e-6:propagator_reference", "passed": true, "max_tolerance_ratio": 5.295955734754416e-05}
+{"name": "C15@1e-6:state_reference", "passed": true, "max_tolerance_ratio": 3.637978807092967e-05}
+{"name": "C15@1e-6:positivity", "passed": true}
+{"name": "C15@1e-6:inventory", "passed": true, "total_scaled": 1.2323209877693243e-16, "free_scaled": 2.156400790498809e-23, "bound_scaled": 1.2323212034094033e-16}
+{"name": "C15@1e-6:reference_inventory", "passed": true, "scaled": 1.2272721390522927e-97}
+{"name": "C15@1e-6:inlet_bounds", "passed": true}
+{"name": "C15@1e-3:propagator_reference", "passed": true, "max_tolerance_ratio": 6.938906920823873e-05}
+{"name": "C15@1e-3:state_reference", "passed": true, "max_tolerance_ratio": 3.6379788104989e-05}
+{"name": "C15@1e-3:positivity", "passed": true}
+{"name": "C15@1e-3:inventory", "passed": true, "total_scaled": 5.909892507106398e-17, "free_scaled": 1.6219648280734866e-22, "bound_scaled": 5.909876287458116e-17}
+{"name": "C15@1e-3:reference_inventory", "passed": true, "scaled": 1.3131811887859531e-95}
+{"name": "C15@1e-3:inlet_bounds", "passed": true}
+{"name": "C15@0.01:propagator_reference", "passed": true, "max_tolerance_ratio": 1.0587753024861417e-09}
+{"name": "C15@0.01:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C15@0.01:positivity", "passed": true}
+{"name": "C15@0.01:inventory", "passed": true, "total_scaled": 2.420315692279107e-17, "free_scaled": 1.214305218878546e-23, "bound_scaled": 2.4203169065843257e-17}
+{"name": "C15@0.01:reference_inventory", "passed": true, "scaled": 8.84863212256703e-94}
+{"name": "C15@0.01:inlet_bounds", "passed": true}
+{"name": "C15@0.1:propagator_reference", "passed": true, "max_tolerance_ratio": 3.469450529813723e-05}
+{"name": "C15@0.1:state_reference", "passed": true, "max_tolerance_ratio": 3.469450529813723e-05}
+{"name": "C15@0.1:positivity", "passed": true}
+{"name": "C15@0.1:inventory", "passed": true, "total_scaled": 4.2899460494628825e-17, "free_scaled": 5.551109572016211e-23, "bound_scaled": 4.289940498353311e-17}
+{"name": "C15@0.1:reference_inventory", "passed": true, "scaled": 1.2868881104788968e-91}
+{"name": "C15@0.1:inlet_bounds", "passed": true}
+{"name": "C15@0.5:propagator_reference", "passed": true, "max_tolerance_ratio": 6.938910166925077e-05}
+{"name": "C15@0.5:state_reference", "passed": true, "max_tolerance_ratio": 6.938903661710416e-05}
+{"name": "C15@0.5:positivity", "passed": true}
+{"name": "C15@0.5:inventory", "passed": true, "total_scaled": 5.2805595936952844e-17, "free_scaled": 2.2204438288064844e-22, "bound_scaled": 5.2805373892569965e-17}
+{"name": "C15@0.5:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C15@0.5:inlet_bounds", "passed": true}
+{"name": "C15@1:propagator_reference", "passed": true, "max_tolerance_ratio": 3.469456709766458e-05}
+{"name": "C15@1:state_reference", "passed": true, "max_tolerance_ratio": 3.6379822176881046e-05}
+{"name": "C15@1:positivity", "passed": true}
+{"name": "C15@1:inventory", "passed": true, "total_scaled": 7.75978504853002e-17, "free_scaled": 0.0, "bound_scaled": 7.75978504853002e-17}
+{"name": "C15@1:reference_inventory", "passed": true, "scaled": 1.2868881104788968e-91}
+{"name": "C15@1:inlet_bounds", "passed": true}
+{"name": "C15:semigroup", "passed": true, "max_abs_error": 2.220446049250313e-16}
+{"name": "C15:precision_recheck", "passed": true, "scaled": 9.11088640090442e-92}
+{"name": "C15:BE:32:conservation", "passed": true, "scaled": 1.02866501257118e-16}
+{"name": "C15:BE:32:positivity", "passed": true}
+{"name": "C15:BE:64:conservation", "passed": true, "scaled": 3.779015540678503e-16}
+{"name": "C15:BE:64:positivity", "passed": true}
+{"name": "C15:BE:128:conservation", "passed": true, "scaled": 2.5853826538461453e-16}
+{"name": "C15:BE:128:positivity", "passed": true}
+{"name": "C15:BE:256:conservation", "passed": true, "scaled": 7.632546955807923e-16}
+{"name": "C15:BE:256:positivity", "passed": true}
+{"name": "C15:BE:512:conservation", "passed": true, "scaled": 8.159956988067652e-15}
+{"name": "C15:BE:512:positivity", "passed": true}
+{"name": "C15:BE:1024:conservation", "passed": true, "scaled": 2.0792777801238146e-15}
+{"name": "C15:BE:1024:positivity", "passed": true}
+{"name": "C15:BE:2048:conservation", "passed": true, "scaled": 4.708310140801021e-16}
+{"name": "C15:BE:2048:positivity", "passed": true}
+{"name": "C15:BE:4096:conservation", "passed": true, "scaled": 6.653293479759173e-16}
+{"name": "C15:BE:4096:positivity", "passed": true}
+{"name": "C16@0:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C16@0:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C16@0:positivity", "passed": true}
+{"name": "C16@0:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C16@0:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C16@0:inlet_bounds", "passed": true}
+{"name": "C16@1e-12:propagator_reference", "passed": true, "max_tolerance_ratio": 4.038967834489242e-15}
+{"name": "C16@1e-12:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C16@1e-12:positivity", "passed": true}
+{"name": "C16@1e-12:inventory", "passed": true, "total_scaled": 3.172265442409443e-18, "free_scaled": 2.7722655757434094e-18, "bound_scaled": 3.9999986666603333e-19}
+{"name": "C16@1e-12:reference_inventory", "passed": true, "scaled": 9.818186930595454e-92}
+{"name": "C16@1e-12:inlet_bounds", "passed": true}
+{"name": "C16@1e-9:propagator_reference", "passed": true, "max_tolerance_ratio": 4.135902814735006e-12}
+{"name": "C16@1e-9:state_reference", "passed": true, "max_tolerance_ratio": 3.4727009818314627e-05}
+{"name": "C16@1e-9:positivity", "passed": true}
+{"name": "C16@1e-9:inventory", "passed": true, "total_scaled": 2.8275992658421957e-17, "free_scaled": 1.9501214687131337e-17, "bound_scaled": 8.77477797129062e-18}
+{"name": "C16@1e-9:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C16@1e-9:inlet_bounds", "passed": true}
+{"name": "C16@1e-6:propagator_reference", "passed": true, "max_tolerance_ratio": 4.2581855879299736e-05}
+{"name": "C16@1e-6:state_reference", "passed": true, "max_tolerance_ratio": 8.516321622102761e-05}
+{"name": "C16@1e-6:positivity", "passed": true}
+{"name": "C16@1e-6:inventory", "passed": true, "total_scaled": 1.1102230246251566e-17, "free_scaled": 2.0814860590885087e-17, "bound_scaled": 3.1917090837136656e-17}
+{"name": "C16@1e-6:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C16@1e-6:inlet_bounds", "passed": true}
+{"name": "C16@1e-3:propagator_reference", "passed": true, "max_tolerance_ratio": 4.038967834489486e-15}
+{"name": "C16@1e-3:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C16@1e-3:positivity", "passed": true}
+{"name": "C16@1e-3:inventory", "passed": true, "total_scaled": 3.2013949054655184e-17, "free_scaled": 1.0486776106776591e-17, "bound_scaled": 4.2500725161431774e-17}
+{"name": "C16@1e-3:reference_inventory", "passed": true, "scaled": 4.909093465297727e-92}
+{"name": "C16@1e-3:inlet_bounds", "passed": true}
+{"name": "C16@0.01:propagator_reference", "passed": true, "max_tolerance_ratio": 4.038967834491655e-15}
+{"name": "C16@0.01:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C16@0.01:positivity", "passed": true}
+{"name": "C16@0.01:inventory", "passed": true, "total_scaled": 2.607861978665485e-17, "free_scaled": 1.4976389540403284e-17, "bound_scaled": 1.1102230246251566e-17}
+{"name": "C16@0.01:reference_inventory", "passed": true, "scaled": 4.909093465297727e-92}
+{"name": "C16@0.01:inlet_bounds", "passed": true}
+{"name": "C16@0.1:propagator_reference", "passed": true, "max_tolerance_ratio": 4.038967834512305e-15}
+{"name": "C16@0.1:state_reference", "passed": true, "max_tolerance_ratio": 3.809287730453625e-05}
+{"name": "C16@0.1:positivity", "passed": true}
+{"name": "C16@0.1:inventory", "passed": true, "total_scaled": 6.595676153679786e-17, "free_scaled": 1.0445610305540032e-17, "bound_scaled": 5.551115123125783e-17}
+{"name": "C16@0.1:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C16@0.1:inlet_bounds", "passed": true}
+{"name": "C16@0.5:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C16@0.5:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C16@0.5:positivity", "passed": true}
+{"name": "C16@0.5:inventory", "passed": true, "total_scaled": 6.2326378324865926e-18, "free_scaled": 6.2326378324865926e-18, "bound_scaled": 0.0}
+{"name": "C16@0.5:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C16@0.5:inlet_bounds", "passed": true}
+{"name": "C16@1:propagator_reference", "passed": true, "max_tolerance_ratio": 4.2581567488280954e-05}
+{"name": "C16@1:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C16@1:positivity", "passed": true}
+{"name": "C16@1:inventory", "passed": true, "total_scaled": 6.708035074133069e-18, "free_scaled": 3.770088591087319e-17, "bound_scaled": 4.4408920985006264e-17}
+{"name": "C16@1:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C16@1:inlet_bounds", "passed": true}
+{"name": "C16:semigroup", "passed": true, "max_abs_error": 4.0389678347315804e-28}
+{"name": "C16:precision_recheck", "passed": true, "scaled": 1.657793026280585e-92}
+{"name": "C16:BE:32:conservation", "passed": true, "scaled": 2.4231533155060024e-16}
+{"name": "C16:BE:32:positivity", "passed": true}
+{"name": "C16:BE:64:conservation", "passed": true, "scaled": 2.9739801116548945e-16}
+{"name": "C16:BE:64:positivity", "passed": true}
+{"name": "C16:BE:128:conservation", "passed": true, "scaled": 1.3322676295501878e-16}
+{"name": "C16:BE:128:positivity", "passed": true}
+{"name": "C16:BE:256:conservation", "passed": true, "scaled": 8.430756093247283e-17}
+{"name": "C16:BE:256:positivity", "passed": true}
+{"name": "C16:BE:512:conservation", "passed": true, "scaled": 1.2878425725875363e-15}
+{"name": "C16:BE:512:positivity", "passed": true}
+{"name": "C16:BE:1024:conservation", "passed": true, "scaled": 8.379620714221541e-17}
+{"name": "C16:BE:1024:positivity", "passed": true}
+{"name": "C16:BE:2048:conservation", "passed": true, "scaled": 8.462616390525306e-16}
+{"name": "C16:BE:2048:positivity", "passed": true}
+{"name": "C16:BE:4096:conservation", "passed": true, "scaled": 5.258509709079153e-16}
+{"name": "C16:BE:4096:positivity", "passed": true}
+{"name": "C17@0:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C17@0:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C17@0:positivity", "passed": true}
+{"name": "C17@0:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C17@0:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C17@0:inlet_bounds", "passed": true}
+{"name": "C17@1e-12:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C17@1e-12:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C17@1e-12:positivity", "passed": true}
+{"name": "C17@1e-12:inventory", "passed": true, "total_scaled": 1.9999999999999998e-25, "free_scaled": 1.9999999999999998e-25, "bound_scaled": 4e-49}
+{"name": "C17@1e-12:reference_inventory", "passed": true, "scaled": 2.4545467326488634e-92}
+{"name": "C17@1e-12:inlet_bounds", "passed": true}
+{"name": "C17@1e-9:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C17@1e-9:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C17@1e-9:positivity", "passed": true}
+{"name": "C17@1e-9:inventory", "passed": true, "total_scaled": 1.9999999999999999e-22, "free_scaled": 1.9999999999999999e-22, "bound_scaled": 4e-43}
+{"name": "C17@1e-9:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C17@1e-9:inlet_bounds", "passed": true}
+{"name": "C17@1e-6:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C17@1e-6:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C17@1e-6:positivity", "passed": true}
+{"name": "C17@1e-6:inventory", "passed": true, "total_scaled": 2.0000000000000002e-19, "free_scaled": 2.0000000000000002e-19, "bound_scaled": 3.9999999999999994e-37}
+{"name": "C17@1e-6:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C17@1e-6:inlet_bounds", "passed": true}
+{"name": "C17@1e-3:propagator_reference", "passed": true, "max_tolerance_ratio": 3.4694469519536305e-05}
+{"name": "C17@1e-3:state_reference", "passed": true, "max_tolerance_ratio": 3.469446951953617e-05}
+{"name": "C17@1e-3:positivity", "passed": true}
+{"name": "C17@1e-3:inventory", "passed": true, "total_scaled": 6.645352591003767e-17, "free_scaled": 2.2364316059974453e-17, "bound_scaled": 8.881784197001212e-17}
+{"name": "C17@1e-3:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C17@1e-3:inlet_bounds", "passed": true}
+{"name": "C17@0.01:propagator_reference", "passed": true, "max_tolerance_ratio": 3.155443620882154e-17}
+{"name": "C17@0.01:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C17@0.01:positivity", "passed": true}
+{"name": "C17@0.01:inventory", "passed": true, "total_scaled": 1.5985556747081275e-18, "free_scaled": 1.5985556746681276e-18, "bound_scaled": 3.99999999999992e-29}
+{"name": "C17@0.01:reference_inventory", "passed": true, "scaled": 1.9636373861190907e-91}
+{"name": "C17@0.01:inlet_bounds", "passed": true}
+{"name": "C17@0.1:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C17@0.1:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C17@0.1:positivity", "passed": true}
+{"name": "C17@0.1:inventory", "passed": true, "total_scaled": 6.2189037463198955e-18, "free_scaled": 6.218903750319896e-18, "bound_scaled": 3.9999999999992e-27}
+{"name": "C17@0.1:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C17@0.1:inlet_bounds", "passed": true}
+{"name": "C17@0.5:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C17@0.5:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C17@0.5:positivity", "passed": true}
+{"name": "C17@0.5:inventory", "passed": true, "total_scaled": 8.890058259104383e-18, "free_scaled": 8.890058359104384e-18, "bound_scaled": 9.999999999990001e-26}
+{"name": "C17@0.5:reference_inventory", "passed": true, "scaled": 2.4545467326488634e-92}
+{"name": "C17@0.5:inlet_bounds", "passed": true}
+{"name": "C17@1:propagator_reference", "passed": true, "max_tolerance_ratio": 3.469446951956866e-05}
+{"name": "C17@1:state_reference", "passed": true, "max_tolerance_ratio": 3.469446951953614e-05}
+{"name": "C17@1:positivity", "passed": true}
+{"name": "C17@1:inventory", "passed": true, "total_scaled": 8.439349804572058e-17, "free_scaled": 4.424343524291942e-18, "bound_scaled": 8.881784157001252e-17}
+{"name": "C17@1:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C17@1:inlet_bounds", "passed": true}
+{"name": "C17:semigroup", "passed": true, "max_abs_error": 0.0}
+{"name": "C17:precision_recheck", "passed": true, "scaled": 3.7996847672283106e-92}
+{"name": "C17:BE:32:conservation", "passed": true, "scaled": 3.215222427491974e-15}
+{"name": "C17:BE:32:positivity", "passed": true}
+{"name": "C17:BE:64:conservation", "passed": true, "scaled": 2.35809715612922e-15}
+{"name": "C17:BE:64:positivity", "passed": true}
+{"name": "C17:BE:128:conservation", "passed": true, "scaled": 1.6831146539138253e-15}
+{"name": "C17:BE:128:positivity", "passed": true}
+{"name": "C17:BE:256:conservation", "passed": true, "scaled": 2.273736754393472e-14}
+{"name": "C17:BE:256:positivity", "passed": true}
+{"name": "C17:BE:512:conservation", "passed": true, "scaled": 4.6363078994214385e-15}
+{"name": "C17:BE:512:positivity", "passed": true}
+{"name": "C17:BE:1024:conservation", "passed": true, "scaled": 4.525285596957878e-15}
+{"name": "C17:BE:1024:positivity", "passed": true}
+{"name": "C17:BE:2048:conservation", "passed": true, "scaled": 1.8101059645323352e-14}
+{"name": "C17:BE:2048:positivity", "passed": true}
+{"name": "C17:BE:4096:conservation", "passed": true, "scaled": 1.0893950752019906e-13}
+{"name": "C17:BE:4096:positivity", "passed": true}
+{"name": "C18@0:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C18@0:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C18@0:positivity", "passed": true}
+{"name": "C18@0:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C18@0:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C18@0:inlet_bounds", "passed": true}
+{"name": "C18@1e-12:propagator_reference", "passed": true, "max_tolerance_ratio": 3.469446951956866e-05}
+{"name": "C18@1e-12:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C18@1e-12:positivity", "passed": true}
+{"name": "C18@1e-12:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C18@1e-12:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C18@1e-12:inlet_bounds", "passed": true}
+{"name": "C18@1e-9:propagator_reference", "passed": true, "max_tolerance_ratio": 3.469446955206221e-05}
+{"name": "C18@1e-9:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C18@1e-9:positivity", "passed": true}
+{"name": "C18@1e-9:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C18@1e-9:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C18@1e-9:inlet_bounds", "passed": true}
+{"name": "C18@1e-6:propagator_reference", "passed": true, "max_tolerance_ratio": 4.234910642395241e-09}
+{"name": "C18@1e-6:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C18@1e-6:positivity", "passed": true}
+{"name": "C18@1e-6:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C18@1e-6:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C18@1e-6:inlet_bounds", "passed": true}
+{"name": "C18@1e-3:propagator_reference", "passed": true, "max_tolerance_ratio": 3.472694479613313e-05}
+{"name": "C18@1e-3:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C18@1e-3:positivity", "passed": true}
+{"name": "C18@1e-3:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C18@1e-3:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C18@1e-3:inlet_bounds", "passed": true}
+{"name": "C18@0.01:propagator_reference", "passed": true, "max_tolerance_ratio": 3.634990416628224e-05}
+{"name": "C18@0.01:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C18@0.01:positivity", "passed": true}
+{"name": "C18@0.01:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C18@0.01:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C18@0.01:inlet_bounds", "passed": true}
+{"name": "C18@0.1:propagator_reference", "passed": true, "max_tolerance_ratio": 3.7477295561724625e-05}
+{"name": "C18@0.1:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C18@0.1:positivity", "passed": true}
+{"name": "C18@0.1:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C18@0.1:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C18@0.1:inlet_bounds", "passed": true}
+{"name": "C18@0.5:propagator_reference", "passed": true, "max_tolerance_ratio": 5.4640926754735865e-05}
+{"name": "C18@0.5:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C18@0.5:positivity", "passed": true}
+{"name": "C18@0.5:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C18@0.5:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C18@0.5:inlet_bounds", "passed": true}
+{"name": "C18@1:propagator_reference", "passed": true, "max_tolerance_ratio": 4.707852837830243e-05}
+{"name": "C18@1:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C18@1:positivity", "passed": true}
+{"name": "C18@1:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C18@1:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C18@1:inlet_bounds", "passed": true}
+{"name": "C18:semigroup", "passed": true, "max_abs_error": 1.1102230246251565e-16}
+{"name": "C18:precision_recheck", "passed": true, "scaled": 0.0}
+{"name": "C18:BE:32:conservation", "passed": true, "scaled": 0.0}
+{"name": "C18:BE:32:positivity", "passed": true}
+{"name": "C18:BE:64:conservation", "passed": true, "scaled": 0.0}
+{"name": "C18:BE:64:positivity", "passed": true}
+{"name": "C18:BE:128:conservation", "passed": true, "scaled": 0.0}
+{"name": "C18:BE:128:positivity", "passed": true}
+{"name": "C18:BE:256:conservation", "passed": true, "scaled": 0.0}
+{"name": "C18:BE:256:positivity", "passed": true}
+{"name": "C18:BE:512:conservation", "passed": true, "scaled": 0.0}
+{"name": "C18:BE:512:positivity", "passed": true}
+{"name": "C18:BE:1024:conservation", "passed": true, "scaled": 0.0}
+{"name": "C18:BE:1024:positivity", "passed": true}
+{"name": "C18:BE:2048:conservation", "passed": true, "scaled": 0.0}
+{"name": "C18:BE:2048:positivity", "passed": true}
+{"name": "C18:BE:4096:conservation", "passed": true, "scaled": 0.0}
+{"name": "C18:BE:4096:positivity", "passed": true}
+{"name": "C19@0:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C19@0:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C19@0:positivity", "passed": true}
+{"name": "C19@0:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C19@0:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C19@0:inlet_bounds", "passed": true}
+{"name": "C19@1e-12:propagator_reference", "passed": true, "max_tolerance_ratio": 3.46944695197313e-05}
+{"name": "C19@1e-12:state_reference", "passed": true, "max_tolerance_ratio": 4.336808689942017e-05}
+{"name": "C19@1e-12:positivity", "passed": true}
+{"name": "C19@1e-12:inventory", "passed": true, "total_scaled": 1.0100547290460288e-16, "free_scaled": 1.0016833157912775e-17, "bound_scaled": 1.1102230606251565e-16}
+{"name": "C19@1e-12:reference_inventory", "passed": true, "scaled": 3.068183415811079e-92}
+{"name": "C19@1e-12:inlet_bounds", "passed": true}
+{"name": "C19@1e-9:propagator_reference", "passed": true, "max_tolerance_ratio": 3.469447034895081e-05}
+{"name": "C19@1e-9:state_reference", "passed": true, "max_tolerance_ratio": 4.336808689942017e-05}
+{"name": "C19@1e-9:positivity", "passed": true}
+{"name": "C19@1e-9:inventory", "passed": true, "total_scaled": 1.1373076677386915e-16, "free_scaled": 8.915356508465021e-19, "bound_scaled": 1.1462230242471566e-16}
+{"name": "C19@1e-9:reference_inventory", "passed": true, "scaled": 1.2272733663244316e-91}
+{"name": "C19@1e-9:inlet_bounds", "passed": true}
+{"name": "C19@1e-6:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C19@1e-6:state_reference", "passed": true, "max_tolerance_ratio": 4.336808689960313e-05}
+{"name": "C19@1e-6:positivity", "passed": true}
+{"name": "C19@1e-6:inventory", "passed": true, "total_scaled": 6.324842662751144e-17, "free_scaled": 7.945212754955245e-19, "bound_scaled": 6.404294790300696e-17}
+{"name": "C19@1e-6:reference_inventory", "passed": true, "scaled": 3.068183415811079e-92}
+{"name": "C19@1e-6:inlet_bounds", "passed": true}
+{"name": "C19@1e-3:propagator_reference", "passed": true, "max_tolerance_ratio": 3.553078564134774e-05}
+{"name": "C19@1e-3:state_reference", "passed": true, "max_tolerance_ratio": 4.3428387433441135e-05}
+{"name": "C19@1e-3:positivity", "passed": true}
+{"name": "C19@1e-3:inventory", "passed": true, "total_scaled": 4.109126233720062e-17, "free_scaled": 1.6407028188315798e-17, "bound_scaled": 5.749829052551642e-17}
+{"name": "C19@1e-3:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C19@1e-3:inlet_bounds", "passed": true}
+{"name": "C19@0.01:propagator_reference", "passed": true, "max_tolerance_ratio": 3.646773467150713e-05}
+{"name": "C19@0.01:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C19@0.01:positivity", "passed": true}
+{"name": "C19@0.01:inventory", "passed": true, "total_scaled": 2.8189256484623115e-17, "free_scaled": 5.421010862427522e-20, "bound_scaled": 2.813504637599884e-17}
+{"name": "C19@0.01:reference_inventory", "passed": true, "scaled": 1.2272733663244316e-91}
+{"name": "C19@0.01:inlet_bounds", "passed": true}
+{"name": "C19@0.1:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C19@0.1:state_reference", "passed": true, "max_tolerance_ratio": 4.418728301522308e-05}
+{"name": "C19@0.1:positivity", "passed": true}
+{"name": "C19@0.1:inventory", "passed": true, "total_scaled": 3.122502256758253e-17, "free_scaled": 1.0408340855860843e-17, "bound_scaled": 4.163336342344337e-17}
+{"name": "C19@0.1:reference_inventory", "passed": true, "scaled": 3.068183415811079e-92}
+{"name": "C19@0.1:inlet_bounds", "passed": true}
+{"name": "C19@0.5:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C19@0.5:state_reference", "passed": true, "max_tolerance_ratio": 4.918720962164416e-05}
+{"name": "C19@0.5:positivity", "passed": true}
+{"name": "C19@0.5:inventory", "passed": true, "total_scaled": 2.7755575615628914e-17, "free_scaled": 0.0, "bound_scaled": 2.7755575615628914e-17}
+{"name": "C19@0.5:reference_inventory", "passed": true, "scaled": 1.2272733663244316e-91}
+{"name": "C19@0.5:inlet_bounds", "passed": true}
+{"name": "C19@1:propagator_reference", "passed": true, "max_tolerance_ratio": 5.4605123951052753e-05}
+{"name": "C19@1:state_reference", "passed": true, "max_tolerance_ratio": 5.6197761447397564e-05}
+{"name": "C19@1:positivity", "passed": true}
+{"name": "C19@1:inventory", "passed": true, "total_scaled": 1.6653345369377348e-16, "free_scaled": 2.7755575615628914e-17, "bound_scaled": 1.3877787807814457e-16}
+{"name": "C19@1:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C19@1:inlet_bounds", "passed": true}
+{"name": "C19:semigroup", "passed": true, "max_abs_error": 1.1102230246251565e-16}
+{"name": "C19:precision_recheck", "passed": true, "scaled": 3.250729068860949e-92}
+{"name": "C19:BE:32:conservation", "passed": true, "scaled": 2.7755575615628914e-16}
+{"name": "C19:BE:32:positivity", "passed": true}
+{"name": "C19:BE:64:conservation", "passed": true, "scaled": 1.582067810090848e-15}
+{"name": "C19:BE:64:positivity", "passed": true}
+{"name": "C19:BE:128:conservation", "passed": true, "scaled": 3.247402347028583e-15}
+{"name": "C19:BE:128:positivity", "passed": true}
+{"name": "C19:BE:256:conservation", "passed": true, "scaled": 3.0253577421035516e-15}
+{"name": "C19:BE:256:positivity", "passed": true}
+{"name": "C19:BE:512:conservation", "passed": true, "scaled": 8.465450562766819e-15}
+{"name": "C19:BE:512:positivity", "passed": true}
+{"name": "C19:BE:1024:conservation", "passed": true, "scaled": 1.0158540675320182e-14}
+{"name": "C19:BE:1024:positivity", "passed": true}
+{"name": "C19:BE:2048:conservation", "passed": true, "scaled": 2.969846590872294e-14}
+{"name": "C19:BE:2048:positivity", "passed": true}
+{"name": "C19:BE:4096:conservation", "passed": true, "scaled": 5.007105841059456e-14}
+{"name": "C19:BE:4096:positivity", "passed": true}
+{"name": "C19:BE:convergence", "passed": true, "last_order": 0.999939607506112, "finest_error": 7.677927238852744e-06}
+{"name": "C20@0:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C20@0:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C20@0:positivity", "passed": true}
+{"name": "C20@0:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C20@0:reference_inventory", "passed": true, "scaled": 1.0121735687114135e-91}
+{"name": "C20@0:inlet_bounds", "passed": true}
+{"name": "C20@1e-12:propagator_reference", "passed": true, "max_tolerance_ratio": 3.469446951956866e-05}
+{"name": "C20@1e-12:state_reference", "passed": true, "max_tolerance_ratio": 3.469446951956866e-05}
+{"name": "C20@1e-12:positivity", "passed": true}
+{"name": "C20@1e-12:inventory", "passed": true, "total_scaled": 8.890058284096704e-17, "free_scaled": 8.890058284096704e-17, "bound_scaled": 4.999999999991666e-37}
+{"name": "C20@1e-12:reference_inventory", "passed": true, "scaled": 1.0121735687114135e-91}
+{"name": "C20@1e-12:inlet_bounds", "passed": true}
+{"name": "C20@1e-9:propagator_reference", "passed": true, "max_tolerance_ratio": 1.0339757501816483e-12}
+{"name": "C20@1e-9:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C20@1e-9:positivity", "passed": true}
+{"name": "C20@1e-9:inventory", "passed": true, "total_scaled": 2.778193145107345e-17, "free_scaled": 2.778193145107295e-17, "bound_scaled": 4.999999996661667e-31}
+{"name": "C20@1e-9:reference_inventory", "passed": true, "scaled": 2.4545467326464088e-91}
+{"name": "C20@1e-9:inlet_bounds", "passed": true}
+{"name": "C20@1e-6:propagator_reference", "passed": true, "max_tolerance_ratio": 3.4694502045615547e-05}
+{"name": "C20@1e-6:state_reference", "passed": true, "max_tolerance_ratio": 3.4694502045615547e-05}
+{"name": "C20@1e-6:positivity", "passed": true}
+{"name": "C20@1e-6:inventory", "passed": true, "total_scaled": 9.516097575059944e-17, "free_scaled": 9.516097575037294e-17, "bound_scaled": 2.264996647143498e-28}
+{"name": "C20@1e-6:reference_inventory", "passed": true, "scaled": 1.0121735687114135e-91}
+{"name": "C20@1e-6:inlet_bounds", "passed": true}
+{"name": "C20@1e-3:propagator_reference", "passed": true, "max_tolerance_ratio": 3.472700981837979e-05}
+{"name": "C20@1e-3:state_reference", "passed": true, "max_tolerance_ratio": 3.472700981837976e-05}
+{"name": "C20@1e-3:positivity", "passed": true}
+{"name": "C20@1e-3:inventory", "passed": true, "total_scaled": 8.138114885903991e-17, "free_scaled": 8.138114885897059e-17, "bound_scaled": 6.932731502204912e-29}
+{"name": "C20@1e-3:reference_inventory", "passed": true, "scaled": 1.4423731639349951e-91}
+{"name": "C20@1e-3:inlet_bounds", "passed": true}
+{"name": "C20@0.01:propagator_reference", "passed": true, "max_tolerance_ratio": 3.50211567053313e-05}
+{"name": "C20@0.01:state_reference", "passed": true, "max_tolerance_ratio": 3.5021156705330965e-05}
+{"name": "C20@0.01:positivity", "passed": true}
+{"name": "C20@0.01:inventory", "passed": true, "total_scaled": 1.0691378804745691e-16, "free_scaled": 1.0691378804739343e-16, "bound_scaled": 6.347865096693981e-29}
+{"name": "C20@0.01:reference_inventory", "passed": true, "scaled": 1.2272733663232044e-91}
+{"name": "C20@0.01:inlet_bounds", "passed": true}
+{"name": "C20@0.1:propagator_reference", "passed": true, "max_tolerance_ratio": 3.809292697467098e-05}
+{"name": "C20@0.1:state_reference", "passed": true, "max_tolerance_ratio": 1.0097419586678198e-15}
+{"name": "C20@0.1:positivity", "passed": true}
+{"name": "C20@0.1:inventory", "passed": true, "total_scaled": 2.978124482668433e-17, "free_scaled": 2.9781244826446094e-17, "bound_scaled": 2.382359933765073e-28}
+{"name": "C20@0.1:reference_inventory", "passed": true, "scaled": 2.4545467326464088e-91}
+{"name": "C20@0.1:inlet_bounds", "passed": true}
+{"name": "C20@0.5:propagator_reference", "passed": true, "max_tolerance_ratio": 5.497263982494872e-05}
+{"name": "C20@0.5:state_reference", "passed": true, "max_tolerance_ratio": 1.0097419586691153e-15}
+{"name": "C20@0.5:positivity", "passed": true}
+{"name": "C20@0.5:inventory", "passed": true, "total_scaled": 1.6103197566004672e-18, "free_scaled": 1.6103197567393067e-18, "bound_scaled": 1.3883951931875923e-28}
+{"name": "C20@0.5:reference_inventory", "passed": true, "scaled": 1.4423731639349951e-91}
+{"name": "C20@0.5:inlet_bounds", "passed": true}
+{"name": "C20@1:propagator_reference", "passed": true, "max_tolerance_ratio": 8.516342336673171e-05}
+{"name": "C20@1:state_reference", "passed": true, "max_tolerance_ratio": 1.0097419586717513e-15}
+{"name": "C20@1:positivity", "passed": true}
+{"name": "C20@1:inventory", "passed": true, "total_scaled": 6.354894749816369e-17, "free_scaled": 6.354894749796174e-17, "bound_scaled": 2.0194839173637706e-28}
+{"name": "C20@1:reference_inventory", "passed": true, "scaled": 1.4423731639349951e-91}
+{"name": "C20@1:inlet_bounds", "passed": true}
+{"name": "C20:semigroup", "passed": true, "max_abs_error": 5.551115123125783e-17}
+{"name": "C20:precision_recheck", "passed": true, "scaled": 5.202221975506783e-93}
+{"name": "C20:BE:32:conservation", "passed": true, "scaled": 2.0193903007494177e-15}
+{"name": "C20:BE:32:positivity", "passed": true}
+{"name": "C20:BE:64:conservation", "passed": true, "scaled": 2.7193777208020748e-15}
+{"name": "C20:BE:64:positivity", "passed": true}
+{"name": "C20:BE:128:conservation", "passed": true, "scaled": 1.4494711189110995e-15}
+{"name": "C20:BE:128:positivity", "passed": true}
+{"name": "C20:BE:256:conservation", "passed": true, "scaled": 1.6771939506454493e-14}
+{"name": "C20:BE:256:positivity", "passed": true}
+{"name": "C20:BE:512:conservation", "passed": true, "scaled": 1.616166608685895e-14}
+{"name": "C20:BE:512:positivity", "passed": true}
+{"name": "C20:BE:1024:conservation", "passed": true, "scaled": 6.338572611768895e-14}
+{"name": "C20:BE:1024:positivity", "passed": true}
+{"name": "C20:BE:2048:conservation", "passed": true, "scaled": 3.435337212139739e-14}
+{"name": "C20:BE:2048:positivity", "passed": true}
+{"name": "C20:BE:4096:conservation", "passed": true, "scaled": 3.185536483728175e-14}
+{"name": "C20:BE:4096:positivity", "passed": true}
+{"name": "C21@0:propagator_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C21@0:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C21@0:positivity", "passed": true}
+{"name": "C21@0:inventory", "passed": true, "total_scaled": 0.0, "free_scaled": 0.0, "bound_scaled": 0.0}
+{"name": "C21@0:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C21@0:inlet_bounds", "passed": true}
+{"name": "C21@1e-12:propagator_reference", "passed": true, "max_tolerance_ratio": 3.469446955206221e-05}
+{"name": "C21@1e-12:state_reference", "passed": true, "max_tolerance_ratio": 3.469446951953614e-05}
+{"name": "C21@1e-12:positivity", "passed": true}
+{"name": "C21@1e-12:inventory", "passed": true, "total_scaled": 8.326145567979227e-17, "free_scaled": 5.156386291020246e-18, "bound_scaled": 8.841784197081252e-17}
+{"name": "C21@1e-12:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C21@1e-12:inlet_bounds", "passed": true}
+{"name": "C21@1e-9:propagator_reference", "passed": true, "max_tolerance_ratio": 4.234910642395241e-09}
+{"name": "C21@1e-9:state_reference", "passed": true, "max_tolerance_ratio": 0.0}
+{"name": "C21@1e-9:positivity", "passed": true}
+{"name": "C21@1e-9:inventory", "passed": true, "total_scaled": 4.110333255669899e-17, "free_scaled": 4.7431007869246344e-18, "bound_scaled": 3.636023176977436e-17}
+{"name": "C21@1e-9:reference_inventory", "passed": true, "scaled": 2.4545467326488634e-92}
+{"name": "C21@1e-9:inlet_bounds", "passed": true}
+{"name": "C21@1e-6:propagator_reference", "passed": true, "max_tolerance_ratio": 3.472694479613313e-05}
+{"name": "C21@1e-6:state_reference", "passed": true, "max_tolerance_ratio": 6.938897150019527e-05}
+{"name": "C21@1e-6:positivity", "passed": true}
+{"name": "C21@1e-6:inventory", "passed": true, "total_scaled": 1.3379054808471125e-16, "free_scaled": 1.5664010886984325e-17, "bound_scaled": 1.4945455897169556e-16}
+{"name": "C21@1e-6:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C21@1e-6:inlet_bounds", "passed": true}
+{"name": "C21@1e-3:propagator_reference", "passed": true, "max_tolerance_ratio": 4.707852837830243e-05}
+{"name": "C21@1e-3:state_reference", "passed": true, "max_tolerance_ratio": 3.9602824887649355e-05}
+{"name": "C21@1e-3:positivity", "passed": true}
+{"name": "C21@1e-3:inventory", "passed": true, "total_scaled": 6.661338147750939e-17, "free_scaled": 0.0, "bound_scaled": 6.661338147750939e-17}
+{"name": "C21@1e-3:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C21@1e-3:inlet_bounds", "passed": true}
+{"name": "C21@0.01:propagator_reference", "passed": true, "max_tolerance_ratio": 4.7732427240876795e-05}
+{"name": "C21@0.01:state_reference", "passed": true, "max_tolerance_ratio": 3.672048195791648e-05}
+{"name": "C21@0.01:positivity", "passed": true}
+{"name": "C21@0.01:inventory", "passed": true, "total_scaled": 8.881784197001253e-17, "free_scaled": 4.4408920985006264e-17, "bound_scaled": 4.4408920985006264e-17}
+{"name": "C21@0.01:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C21@0.01:inlet_bounds", "passed": true}
+{"name": "C21@0.1:propagator_reference", "passed": true, "max_tolerance_ratio": 3.308721208785245e-11}
+{"name": "C21@0.1:state_reference", "passed": true, "max_tolerance_ratio": 3.308720951677439e-11}
+{"name": "C21@0.1:positivity", "passed": true}
+{"name": "C21@0.1:inventory", "passed": true, "total_scaled": 5.209906561519007e-17, "free_scaled": 1.8210992637263703e-17, "bound_scaled": 3.3888072977926365e-17}
+{"name": "C21@0.1:reference_inventory", "passed": true, "scaled": 9.818186930595454e-92}
+{"name": "C21@0.1:inlet_bounds", "passed": true}
+{"name": "C21@0.5:propagator_reference", "passed": true, "max_tolerance_ratio": 1.044048714879764e-39}
+{"name": "C21@0.5:state_reference", "passed": true, "max_tolerance_ratio": 1.2528584578557167e-39}
+{"name": "C21@0.5:positivity", "passed": true}
+{"name": "C21@0.5:inventory", "passed": true, "total_scaled": 5.511065524814421e-38, "free_scaled": 9.455493578045571e-39, "bound_scaled": 4.5655161670098647e-38}
+{"name": "C21@0.5:reference_inventory", "passed": true, "scaled": 0.0}
+{"name": "C21@0.5:inlet_bounds", "passed": true}
+{"name": "C21@1:propagator_reference", "passed": true, "max_tolerance_ratio": 1.202727898997943e-76}
+{"name": "C21@1:state_reference", "passed": true, "max_tolerance_ratio": 1.4481825722628293e-76}
+{"name": "C21@1:positivity", "passed": true}
+{"name": "C21@1:inventory", "passed": true, "total_scaled": 3.05252402792586e-75, "free_scaled": 5.2373032425258097e-76, "bound_scaled": 2.528793703673279e-75}
+{"name": "C21@1:reference_inventory", "passed": true, "scaled": 9.818186930595454e-92}
+{"name": "C21@1:inlet_bounds", "passed": true}
+{"name": "C21:semigroup", "passed": true, "max_abs_error": 4.909093465297727e-91}
+{"name": "C21:precision_recheck", "passed": true, "scaled": 5.578738321099677e-92}
+{"name": "C21:small_positive_relative_accuracy", "passed": true, "relative_error": 9.2148511043888e-15}
+{"name": "C21:BE:32:conservation", "passed": true, "scaled": 4.9960036108132046e-17}
+{"name": "C21:BE:32:positivity", "passed": true}
+{"name": "C21:BE:64:conservation", "passed": true, "scaled": 1.7763568394002506e-16}
+{"name": "C21:BE:64:positivity", "passed": true}
+{"name": "C21:BE:128:conservation", "passed": true, "scaled": 7.771561172376095e-17}
+{"name": "C21:BE:128:positivity", "passed": true}
+{"name": "C21:BE:256:conservation", "passed": true, "scaled": 1.7763568394002506e-16}
+{"name": "C21:BE:256:positivity", "passed": true}
+{"name": "C21:BE:512:conservation", "passed": true, "scaled": 1.7763568394002506e-16}
+{"name": "C21:BE:512:positivity", "passed": true}
+{"name": "C21:BE:1024:conservation", "passed": true, "scaled": 5.329070518200751e-16}
+{"name": "C21:BE:1024:positivity", "passed": true}
+{"name": "C21:BE:2048:conservation", "passed": true, "scaled": 1.7763568394002506e-16}
+{"name": "C21:BE:2048:positivity", "passed": true}
+{"name": "C21:BE:4096:conservation", "passed": true, "scaled": 7.105427357601002e-16}
+{"name": "C21:BE:4096:positivity", "passed": true}
+{"name": "finite_to_algebraic_limit", "passed": true, "errors": {"C11": 0.0010476171245282773, "C12": 0.00010479397134532942, "C13": 1.0469403122215226e-13}}
+{"name": "weak_finite_limit", "passed": true, "scaled_error": 1.0569644492974817e-08}
+{"name": "dimensional_conversion", "passed": true, "alpha": 0.5000000000000001, "T": 3.0, "Da": 1.5000000000000004, "R": 6.0}
+{"name": "negative_control_total_content_sink_detected", "passed": true, "wrong_c": -2.1606027941427883, "correct_c": 0.36787944117144233, "gap": 2.5284822353142307}
+{"name": "negative_control_equilibrium_at_k0_detected", "passed": true, "gap": 0.4508513119065395}
+{"name": "negative_control_explicit_euler_detected", "passed": true, "first_two_steps": [[0.9375, 4.0], [15625000000.878906, -15624999996.0]]}

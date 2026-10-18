@@ -1,0 +1,63 @@
+{
+  "prepared_utc": "2026-10-18T00:36:02.599068+00:00",
+  "selected_primary_research_works": 3,
+  "sources": [
+    {
+      "id": "Banerjee2022",
+      "doi": "10.1371/journal.pone.0269939",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0269939",
+      "dataset_url": "https://journals.plos.org/plosone/article/file?type=supplementary&id=10.1371/journal.pone.0269939.s001",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "read_depth": "Previous primary methods, Table 1/Figure 4 visual inspection, complete workbook schema/Exp rows; current task reread prior source and replay reports. No new fit.",
+      "raw_access": "Official S1 workbook verified previously; retained mean traces, not individual shots.",
+      "input_bindings": [
+        {
+          "path": "research/resumption_2026-10-17/pf_kdata1_independent/raw/journal.pone.0269939.s001.xlsx",
+          "sha256": "d08f76ad5fa957c9200edcffdeb49a7227e568f7933f63d2bd869528dae205bd"
+        },
+        {
+          "path": "research/resumption_2026-10-17/pf_kdata1_independent/REPLAY_REVIEW.txt",
+          "sha256": "a6ebcbb9950d250ff5510698872377697498c9ce639b8e0f2498c0ec1b6927ee"
+        },
+        {
+          "path": "research/resumption_2026-10-17/pf_kdata1_independent/replay_metrics.csv",
+          "sha256": "cc49680288135aa3f58fa223ed64c91eacf88cc2ab342edc15e12bc3a8669e1b"
+        },
+        {
+          "path": "research/resumption_2026-10-17/pf_kdata1_independent/replay_audit.json",
+          "sha256": "989b08e0eec7c57c98fd17404d9014289f46deae1f9791af704029ae3660bd46"
+        }
+      ]
+    },
+    {
+      "id": "AlSamir2021",
+      "doi": "10.1007/s00018-021-03974-9",
+      "url": "https://link.springer.com/article/10.1007/s00018-021-03974-9",
+      "archive_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8629883/fullTextXML",
+      "license": "CC BY 4.0, except separately credited third-party material",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "read_depth": "Relevant results, paired-measurement methods, equations/constants, geometry/diffusion assumptions, data and permissions; official correction text read.",
+      "raw_access": "Data availability says original data available upon request. No raw numerical trace dataset recovered. Public figure-level route only.",
+      "local_path": "raw_local/al_samir_2021.xml",
+      "sha256": "bb22ec6ed1a7e80011ebbf80f1b9f52382c44688a3a0dfd1f98fb1b7f1d1b4c0",
+      "correction_doi": "10.1007/s00018-021-04050-y",
+      "correction_scope": "Incorrect processing of reference 25 citation; original updated.",
+      "correction_sha256": "e7e2278d69df61f27ad24ef9ee7ffd782bf42d4fbefb284e744ce5fdfeb55a54"
+    },
+    {
+      "id": "Richardson2020",
+      "doi": "10.1073/pnas.1916641117",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7211990/",
+      "archive_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7211990/fullTextXML",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "read_depth": "Forcing proxy, optical observation, geometry/crowding and diffusion sections, relevant methods, data and permissions. Supplementary PDF not read.",
+      "raw_access": "Article says relevant data in article/SI. Inspected article links SI PDF, not a numeric replicate attachment. No raw-cell dataset recovered.",
+      "local_path": "raw_local/richardson_2020.xml",
+      "sha256": "13ad98ec61ac3db463208f467676d6c24645511d573380964ba826ef89daa321"
+    }
+  ],
+  "publication_boundary": "raw_local source files excluded by default; authored summaries cite sources. No author contact, publication or biological experiment.",
+  "retrieval_note": "Official Europe PMC fullTextXML route used after PMC browser views showed a browser check; no challenge bypass. Downloaded correction HTML contains its text. Read-only terminal Unicode encoding error was corrected without changing sources."
+}

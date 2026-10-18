@@ -1,0 +1,67 @@
+{
+  "scope": "Saved-artifact reconciliation only; no transport or model imports",
+  "planned": 51,
+  "attempted": 51,
+  "accepted": 51,
+  "positive_attempts": 47,
+  "fault_attempts": 4,
+  "production_completed": 49,
+  "expected_production_exceptions": 2,
+  "top_level_acceptance_checks": {
+    "total": 441,
+    "passed": 441
+  },
+  "convergence_checks": {
+    "total": 13,
+    "passed": 13
+  },
+  "actual_function_calls": {
+    "solve": 51,
+    "validate": 51,
+    "hydraulics": 51,
+    "content": 116233,
+    "slab": 9416
+  },
+  "original_source_bindings": [
+    {
+      "pinned_path": "pinned_sources/ab_ct0_model.py",
+      "project_path": "research/resumption_2026-10-15/ab_ct0_v1/model.py",
+      "sha256": "0a6ab8f0876f2be8e1973f8ef077bf33bbd8e25e07e780b1d7ffa48e0135d1a5",
+      "original_and_pinned_hashes_match": true
+    },
+    {
+      "pinned_path": "pinned_sources/ab_ct0_config.json",
+      "project_path": "research/resumption_2026-10-15/ab_ct0_v1/config.json",
+      "sha256": "570b9e2dd493632891af55c062fcd13620b1a05acda522f18c33d8ddca3948e0",
+      "original_and_pinned_hashes_match": true
+    },
+    {
+      "pinned_path": "pinned_sources/lily_benchmark.py",
+      "project_path": "research/resumption_2026-10-17/lily_ab_lfr1_received/original/AB-LFR1/benchmark.py",
+      "sha256": "5273764a1565396fb172c546fdf7ae34cf99a0cdb22816f73e5160aea6d7bf7e",
+      "original_and_pinned_hashes_match": true
+    }
+  ],
+  "separate_coordinator_qa": {
+    "path": "research/resumption_2026-10-18/coordinator_qa/linear_saved_result_audit.json",
+    "sha256": "db646f0e5ca2bcab15b6a593554d1bdfaf6b941d461035e48e72a97efd191515",
+    "passed": 430,
+    "total": 430,
+    "stations_audited": 2920,
+    "real_radial_cells_audited": 14576,
+    "worst_scaled_residuals": {
+      "step_total": 9.9885625e-13,
+      "step_bound": 3.0616883835925616e-16,
+      "BE_path": 6.408225610776112e-11,
+      "radial_balance": 3.026628125e-14,
+      "global_content": 8.794306244279807e-11
+    }
+  },
+  "visual_qa": {
+    "pdf_pages": 1,
+    "method": "Poppler PNG render inspected by author after spacing repair",
+    "figure_sha256": "63f819435d39503b151bbf2a2c1c748cea5531986ac0104e228acf8e4946a46f",
+    "pdf_sha256": "e241eb46803bc6ff11a1cad82f3dc93d258f894af968c0ccc06b0a57fb7d4be6",
+    "plot_uses_saved_results_only": true
+  }
+}

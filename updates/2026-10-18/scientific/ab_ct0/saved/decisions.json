@@ -1,0 +1,221 @@
+{
+  "convergence": {
+    "ABCT0-A-001": {
+      "distal_tissue": {
+        "base": 0.011663963614481845,
+        "converged": true,
+        "fine": 0.011653686081216075,
+        "last_change": 2.505751343542806e-06,
+        "middle": 0.011656191832559618,
+        "previous_change": 7.771781922226786e-06
+      },
+      "minimum_tissue": {
+        "base": 0.011663963614481845,
+        "converged": true,
+        "fine": 0.011653686081216075,
+        "last_change": 2.505751343542806e-06,
+        "middle": 0.011656191832559618,
+        "previous_change": 7.771781922226786e-06
+      },
+      "uptake_mol_s": {
+        "base": 7.843429778097013e-13,
+        "converged": true,
+        "fine": 7.853982264359993e-13,
+        "last_change": 3.466191595631125e-16,
+        "middle": 7.850516072764362e-13,
+        "previous_change": 7.086294667349362e-16
+      }
+    },
+    "ABCT0-A-031": {
+      "distal_tissue": {
+        "base": 0.011720152165683895,
+        "converged": true,
+        "fine": 0.011710347359284015,
+        "last_change": 2.3482349245131096e-06,
+        "middle": 0.011712695594208528,
+        "previous_change": 7.456571475366464e-06
+      },
+      "minimum_tissue": {
+        "base": 0.011720152165683895,
+        "converged": true,
+        "fine": 0.011710347359284015,
+        "last_change": 2.3482349245131096e-06,
+        "middle": 0.011712695594208528,
+        "previous_change": 7.456571475366464e-06
+      },
+      "uptake_mol_s": {
+        "base": 7.837510665384428e-13,
+        "converged": true,
+        "fine": 7.847843947498797e-13,
+        "last_change": 3.3943828784162624e-16,
+        "middle": 7.844449564620381e-13,
+        "previous_change": 6.938899235952635e-16
+      }
+    },
+    "ABCT0-B-001": {
+      "distal_tissue": {
+        "base": 0.011663963614338406,
+        "converged": true,
+        "fine": 0.011653686081337319,
+        "last_change": 2.5057513081579164e-06,
+        "middle": 0.011656191832645477,
+        "previous_change": 7.771781692929303e-06
+      },
+      "minimum_tissue": {
+        "base": 0.011663963614338406,
+        "converged": true,
+        "fine": 0.011653686081337319,
+        "last_change": 2.5057513081579164e-06,
+        "middle": 0.011656191832645477,
+        "previous_change": 7.771781692929303e-06
+      },
+      "uptake_mol_s": {
+        "base": 7.843429778058556e-13,
+        "converged": true,
+        "fine": 7.85398226436507e-13,
+        "last_change": 3.4661915951727023e-16,
+        "middle": 7.850516072769898e-13,
+        "previous_change": 7.0862947113418e-16
+      }
+    },
+    "ABCT0-B-011": {
+      "distal_tissue": {
+        "base": 0.009355274018187547,
+        "converged": true,
+        "fine": 0.009325714676076988,
+        "last_change": 9.071897720081684e-06,
+        "middle": 0.00933478657379707,
+        "previous_change": 2.048744439047713e-05
+      },
+      "minimum_tissue": {
+        "base": 0.009355274018187547,
+        "converged": true,
+        "fine": 0.009325714676076988,
+        "last_change": 9.071897720081684e-06,
+        "middle": 0.00933478657379707,
+        "previous_change": 2.048744439047713e-05
+      },
+      "uptake_mol_s": {
+        "base": 7.274994455824414e-13,
+        "converged": true,
+        "fine": 7.289796799224063e-13,
+        "last_change": 4.90872987540485e-16,
+        "middle": 7.284888069348658e-13,
+        "previous_change": 9.893613524244414e-16
+      }
+    },
+    "ABCT0-B-013": {
+      "distal_tissue": {
+        "base": 0.03177302114960674,
+        "converged": true,
+        "fine": 0.03153152507332194,
+        "last_change": 7.955628040851731e-05,
+        "middle": 0.031611081353730454,
+        "previous_change": 0.00016193979587628832
+      },
+      "minimum_tissue": {
+        "base": 0.03177302114960674,
+        "converged": true,
+        "fine": 0.03153152507332194,
+        "last_change": 7.955628040851731e-05,
+        "middle": 0.031611081353730454,
+        "previous_change": 0.00016193979587628832
+      },
+      "uptake_mol_s": {
+        "base": 1.4576454498464636e-12,
+        "converged": true,
+        "fine": 1.4624996742189293e-12,
+        "last_change": 1.6117079496826908e-15,
+        "middle": 1.4608879662692467e-12,
+        "previous_change": 3.242516422783018e-15
+      }
+    },
+    "ABCT0-B-016": {
+      "distal_tissue": {
+        "base": 0.04028641999947244,
+        "converged": true,
+        "fine": 0.0400176344079046,
+        "last_change": 8.878114820145416e-05,
+        "middle": 0.040106415556106056,
+        "previous_change": 0.00018000444336638277
+      },
+      "minimum_tissue": {
+        "base": 0.04028641999947244,
+        "converged": true,
+        "fine": 0.0400176344079046,
+        "last_change": 8.878114820145416e-05,
+        "middle": 0.040106415556106056,
+        "previous_change": 0.00018000444336638277
+      },
+      "uptake_mol_s": {
+        "base": 1.5318860885381678e-12,
+        "converged": true,
+        "fine": 1.5363075610117988e-12,
+        "last_change": 1.4667426363270496e-15,
+        "middle": 1.5348408183754718e-12,
+        "previous_change": 2.9547298373039604e-15
+      }
+    }
+  },
+  "decisions": {
+    "H1": {
+      "both_cases_pass_all_convergence_metrics": true,
+      "diagnostics": {
+        "distal_tissue": {
+          "fine_delta_right_minus_left": 5.666127806793972e-05,
+          "resolved": true,
+          "two_last_change_guard": 5.011502687085612e-06
+        }
+      },
+      "pair": {
+        "distal_delta": 5.61885512020497e-05,
+        "left": "ABCT0-A-001",
+        "right": "ABCT0-A-031"
+      },
+      "scope": "Only selected pairs are refined. Coarse remaining rows do not support a uniform numerical-error or universal absence claim.",
+      "status": "resolved_selected_witness_does_not_support"
+    },
+    "H2": {
+      "both_cases_pass_all_convergence_metrics": true,
+      "diagnostics": {
+        "uptake_mol_s": {
+          "fine_delta_right_minus_left": 5.580471482747341e-14,
+          "resolved": true,
+          "two_last_change_guard": 9.8174597508097e-16
+        }
+      },
+      "pair": {
+        "fraction": 0.071772305464853,
+        "left": "ABCT0-B-011",
+        "right": "ABCT0-A-031",
+        "uptake_delta": 5.6251620956001446e-14
+      },
+      "scope": "Only selected pairs are refined. Coarse remaining rows do not support a uniform numerical-error or universal absence claim.",
+      "status": "resolved_selected_witness_supports"
+    },
+    "H3": {
+      "both_cases_pass_all_convergence_metrics": true,
+      "diagnostics": {
+        "distal_tissue": {
+          "fine_delta_right_minus_left": 0.008486109334582666,
+          "resolved": true,
+          "two_last_change_guard": 0.00017756229640290833
+        },
+        "uptake_mol_s": {
+          "fine_delta_right_minus_left": 7.380788679286948e-14,
+          "resolved": true,
+          "two_last_change_guard": 3.2234158993653817e-15
+        }
+      },
+      "pair": {
+        "distal_delta": 0.008513398849865697,
+        "left": "ABCT0-B-013",
+        "right": "ABCT0-B-016",
+        "uptake_delta": 7.424063869170418e-14
+      },
+      "scope": "Only selected pairs are refined. Coarse remaining rows do not support a uniform numerical-error or universal absence claim.",
+      "status": "resolved_selected_witness_does_not_support"
+    }
+  },
+  "secondary_three_way_rank_reversal": "Not evaluated: no extra reserve solves are automatically used; all three refined members would be required."
+}

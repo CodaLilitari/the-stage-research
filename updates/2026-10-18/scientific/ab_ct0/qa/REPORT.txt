@@ -1,0 +1,145 @@
+AB-CT0 SAVED-RESULT INDEPENDENT REVIEW — 17 OCTOBER 2026
+Coda (Codex Lily), separate local architecture-review agent
+
+The completed run is internally consistent on the checks performed. All 78
+planned attempts completed: 54 primary cases, 12 controls and 12 selected
+refinements. No failure, unstarted planned case or reserve use was found.
+Independent review performed no transport solve and changed no frozen source or
+run output. The separate reconciliation CSV lists every planned/attempted case.
+
+The most informative result is that finite release can change the sign of a
+hypothetical carrier's distal-oxygen comparison with dissolved-only fluid under
+the same pump envelope. The runner did not evaluate its prespecified secondary
+three-way comparison, but its selected refinement union already contained all
+three needed cases. Root authorized this saved-field calculation during QA. It
+is recorded separately in secondary_rank_reversal.json, with nine profile hashes,
+8/8 comparison/convergence checks, and no additional or reserve solves.
+
+Primary questions: what the saved results actually establish
+
+H1 — Viscosity can erase the equilibrium carrier's distal advantage.
+Not supported by the selected refined witness in this matrix. All six coarse
+prespecified H1 contrasts were positive; the smallest was selected and refined.
+At P=5e-6 m/s, dissolved-only viscosity 1 at Q=2 uL/min (ABCT0-A-001) has fine-grid
+distal tissue oxygen 0.011653686081216075 mol/m3. Hill equilibrium viscosity 4 at
+Q=0.75 uL/min (ABCT0-A-031) has 0.011710347359284015 mol/m3. The carrier-minus-
+dissolved difference is +5.666127806793972e-5 mol/m3, greater than its numerical
+guard 5.011502687085612e-6. It is a small positive difference, approximately
+0.4862% of the dissolved value, not the prespecified zero/negative counterexample.
+This does not prove equilibrium carrier storage always wins outside the matrix,
+nor certify the same numerical resolution for its unrefined cases. Both profiles
+obey the same pressure/power limits; their actual flows differ by viscosity.
+
+H2 — Equilibrium binding overstates uptake in at least one NONZERO finite-rate case.
+Supported by a resolved selected witness. The equilibrium case ABCT0-A-031 and
+finite case ABCT0-B-011 share viscosity 4, Q=0.75 uL/min, P=5e-6 m/s, inlet free
+oxygen and bound inventory. The finite relaxation rate is k=0.03333333333333333
+s^-1, with actual residence 8 s and k*T=0.2666666666666667; it is not k=0 and is
+not a measured molecular off-rate.
+Fine-grid equilibrium uptake: 7.847843947498797e-13 mol/s.
+Fine-grid finite-rate uptake: 7.289796799224063e-13 mol/s.
+Difference: 5.580471482747341e-14 mol/s. Finite-rate uptake is
+7.110833905567025% lower than equilibrium uptake: this percentage divides the
+gap by EQUILIBRIUM uptake, not finite uptake. The numerical guard is
+9.8174597508097e-16 mol/s. All twelve coarse H2
+contrasts were positive, but only the selected witness receives this refinement
+decision. The rate-limited carrier has bound inlet oxygen that cannot fully
+participate on the chosen transit timescale; this is the intended controlled
+constitutive comparison, not evidence about any specific real carrier.
+
+H3 — Increasing wall transfer raises total uptake while lowering distal oxygen.
+Not supported by the selected refined witness in this matrix. None of the 36
+coarse adjacent-P comparisons had that sign combination. The prescribed fallback
+selected the smallest positive distal change among uptake-increasing pairs:
+ABCT0-B-013 -> ABCT0-B-016, P=5e-5 -> 2e-4 m/s, viscosity 4, Q=0.75 uL/min,
+k=0 inaccessible bound oxygen. Fine distal oxygen rises from
+0.03153152507332194 to 0.0400176344079046 mol/m3, difference
++0.008486109334582666, against guard 0.00017756229640290833 mol/m3.
+Fine uptake also rises by 7.380788679286948e-14 mol/s, against guard
+3.2234158993653817e-15 mol/s. Both signs are resolved and positive, so there is
+no reversal in this selected pair. This neither invalidates PF0/PX1 reversal
+examples at other settings nor proves the phenomenon absent generally.
+
+Prespecified secondary question, evaluated separately during QA
+
+All three necessary members are refined at 24x32, 48x64 and 96x128. Each passes
+distal oxygen, global minimum and uptake convergence. At the same P=5e-6 m/s
+and identical pump limits:
+
+  Dissolved baseline: ABCT0-A-001, viscosity 1, Q=2 uL/min
+    fine distal =0.011653686081216075 mol/m3.
+  Hill equilibrium: ABCT0-A-031, viscosity 4, Q=0.75 uL/min
+    fine distal =0.011710347359284015 mol/m3.
+  Hill finite: ABCT0-B-011, viscosity 4, Q=0.75 uL/min, k=0.03333333333333333 s^-1
+    fine distal =0.009325714676076988 mol/m3.
+
+Equilibrium-minus-dissolved is +5.666127806793972e-5 mol/m3, exceeding its
+two-last-change guard by 11.306 times. Finite-minus-dissolved is
+-0.002327971405139087 mol/m3, exceeding its guard 1.814379544016337e-5 in absolute
+magnitude by 128.307 times. The finite carrier's distal value is about 19.9763%
+below the dissolved reference while equilibrium is about 0.4862% above it.
+Thus the selected secondary rank reversal is resolved under the protocol's
+numerical rule. Holding the carrier's other assumptions fixed, replacing its
+equilibrium assumption with this finite nonzero relaxation changes that ranking.
+
+This comparison deliberately includes viscosity 1 versus viscosity 4, with flows
+set by the same budget. It is not a matched-viscosity material efficacy ranking.
+It is one prespecified secondary comparison drawn from the diagnostic refinement
+union; no statistical success rate, universal carrier conclusion or clinical
+claim follows. The original runner's “not evaluated” record remains accurate
+for that runner and remains untouched; this QA artifact supplies the later
+evaluation with explicit provenance.
+
+Independent verification actually performed
+
+check_saved_results.py imports no producer module. It reads saved fields and
+recomputes wall conductance/flux, reaction integrals, every tissue-cell residual,
+free+bound inventory, finite-rate updates, segment/global balances, hydraulic
+quantities, continuum analytic controls, control matches and minima. It rebuilds
+all 6/12/36 H1/H2/H3 contrast candidates, pair selection, six-case union/fill,
+18 convergence metrics, guards and decision signs independently. It also verifies
+all 88 run payload hashes, source/input bindings, profile ledger hashes, CSV
+summary consistency and plan/attempt reconciliation.
+
+514/514 assertions passed across 78 profiles, 3235 axial/control stations and
+145272 saved tissue-cell values. This is a count of bounded integrity/arithmetic
+assertions, not independent scientific experiments.
+Maximum reconstructed segment relative conservation error: 3.3051677207790725e-8.
+Maximum reconstructed global relative conservation error: 4.010726546182396e-9.
+Declared relative conservation limit: 1e-6, with the separate zero-flux floor.
+Maximum absolute balance discrepancy: 3.3561948625544118e-21 mol/s.
+Maximum tissue normalized residual: 9.930925210801675e-11 (limit 1e-10).
+Maximum finite-saturation update residual: 6.6058269965196814e-15.
+Maximum axial content residual: 1.999511667349907e-13 mol/m3 (limit 2e-13).
+
+The saved 14 complete-control checks and 48 primary checks pass. Independent
+continuum errors shrink from base to doubled grids:
+  Linear sink beta 1: 6.841136968743916e-4 -> 3.3586557913357906e-4 mol/m3.
+  Linear sink beta 5: 5.401450415709608e-5 -> 2.4412625715980463e-5 mol/m3.
+  Positive clamped zero order: 2.170138888972495e-5 -> 5.425347223211863e-6 mol/m3.
+The high-k field distance to equilibrium shrinks from 1.1908484802916619e-4
+to 1.1966000238311514e-5 mol/m3. Q*beta field equivalence error is 7.8215e-13;
+maximum k=0 versus same-Q dissolved field difference is 1.6324e-12 mol/m3.
+These controls test the implementation and numerical approximation, not the
+physiological suitability of its chosen parameters.
+
+Accounting/resource evidence
+
+The run's manifest was completed 38.637544 s after its recorded start, within
+the authorized 30-minute interval and the user's hard stop. Saved samples show
+peak process working set 34.3867 MiB and approximately 7.0125 MiB of final outputs;
+the affinity mask selected one logical CPU. This verifies recorded samples and
+timestamps, not an unsampled continuous memory guarantee. All 78 attempts completed
+once; two reserve slots remain unused. Reconciliation explicitly distinguishes
+these unused discretionary slots from missing planned cases.
+
+Limits retained
+
+The oxygen inlet is clamped. Finite axial inventory is not a finite reservoir,
+closed loop or implemented oxygenator. All tissue/constitutive values are model
+fixtures; none identifies a real artificial-blood product or measured skin.
+Last-grid changes are diagnostics, not rigorous error bounds. The selected
+pair conclusions do not imply uniform accuracy across all unrefined rows.
+This is independently implemented QA within the local Coda team, not external
+laboratory replication. No source, frozen artifact, published release or original
+run output was changed, and no transport rerun was performed.

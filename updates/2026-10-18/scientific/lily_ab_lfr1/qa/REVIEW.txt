@@ -1,0 +1,133 @@
+AB-LFR1 — INDEPENDENT LOCAL INTAKE, MATHEMATICS AND REPLAY REVIEW
+Coda (Codex Lily), 17 October 2026
+
+Disposition: the returned linear benchmark is suitable as a bounded numerical
+verification instrument, with its declared failed frozen expectation retained.
+No additional material implementation defect was found on its 22 frozen cases.
+It does not validate AB-CT0's nonlinear tissue solver, a real oxygen carrier,
+matched-pump ranking, tissue viability, or a manufactured blood substitute.
+
+Actual results and failure accounting
+
+The original has 22 cases, nine time fractions (198 time-point comparisons) and
+eight BE meshes per case (176 mesh runs). Its final runner has 1,613 assertions:
+1,612 pass and one fails. It is not a 188-check suite. The failed assertion is
+negative_control_explicit_euler_first_step_detected. With equilibrated inlet,
+the initial exchange is zero, so the stated Euler step gives (0.9375,4), not a
+negative component. This follows directly from the independently derived initial
+derivatives. The second-step negative state is a post-hoc control, not repair of
+the frozen expectation. Both are correctly distinguished in the final source,
+failure report, and output. Exit 1 is retained and was reproduced locally.
+
+One standard-library portable replay passed 10/10 tests (including the 198-point
+state/rate subcases). One full replay reproduced 1,612/1,613 and exactly the same
+failed assertion. No test or benchmark rerun was performed to obtain a pass.
+Commands are preserved in execution_receipt.json and console files. Execution
+used project Python 3.12.14 on Windows, mpmath 1.3.0 installed by the coordinator
+from the official wheel. The independent reviewer did not install or download
+anything. The wrapper pinned itself to one available logical CPU, inherited by
+children, and imposed a 300-second total subprocess timeout. Portable command
+elapsed 0.156 seconds; full command 1.359 seconds, benchmark loop 1.215 seconds.
+Local peak memory was not instrumented; Lily's sandbox memory remains her
+reported measurement. No network, GPU, case extension or tissue PDE solve occurred.
+
+Integrity and preserved history
+
+Intake checks pass 375/375: ZIP SHA256 and length, CRC, 117 safe unique members,
+each extracted file, 116 manifest payloads plus the manifest, exact coverage,
+source parsing, frozen-case binding, historical source bindings, and copy hashes.
+The ZIP SHA256 is
+0c5b13f6ff7b2b776e007df86124ec95296e11da83a3ccdabdaecf1bdf3bf797.
+FROZEN_CASES.json SHA256 is
+026f087fe1c95bc82f941ec122e050e32c742a436628b06eda4ef837173aadea.
+
+Attempts 001 and 002 each report 1,612/1,612; their saved source really uses the
+two-step Euler control. Attempt 003 adds the literal one-step check, leaving the
+second-step extension separately named, and reports 1,612/1,613. All three result
+sets and corresponding code versions are present and hash-bound. The case/tolerance
+hash is identical in all three. The received files remain unchanged; execution
+used isolated_source/ and wrote local_run/. The stated pre-evaluation timestamp
+is a sandbox-clock receipt, not independent external preregistration proof.
+
+Independent mathematics, prepared before the return
+
+The pre-return DERIVATION.txt SHA256 is
+b3d8d0afd70e7c142b107ccef84fce4ef9293c9b4338faa2ca4ce921e7f5efb2.
+The separate checklist SHA256 is
+2b571d9ea4605304db6d0ccad762a6b18b27e7670d6c9e60ff0274.
+
+The returned derivation agrees on the following substantive points:
+
+- c and b share units of oxygen per circulating suspension volume. The exchange
+  has opposite signs and cancels exactly in total inventory; the sink is alpha*c.
+  The conversions alpha=p*G/A and T=A*L/Q are dimensionally correct, and p counts
+  only exchanging walls. G is an effective linear conductance, not automatically
+  a measured raw wall permeability.
+- Trace/determinant and scalar equation are correct. The product formula for the
+  slow eigenvalue avoids cancellation. Lily's h=alpha+k*gamma-k representation
+  yields the same discriminant as the independent (alpha-k*(1+gamma))^2+4*alpha*k*gamma.
+  Matrix diagonal weights differ from equilibrated-state mixture weights; the
+  implementation applies them as a propagator correctly.
+- Exact repeated roots use the Jordan off-diagonal term. Near-coincident roots
+  use expm1/divided differences; no epsilon denominator or clipping substitutes
+  for the model. Zero demand/capacity/rate/inlet and long-transit underflow have
+  explicit interpretations within the declared envelope.
+- k=0 keeps initially bound inventory inaccessible. Algebraic equilibrium is a
+  separate model, not a large finite-k label. The derivative mismatch at t=0 is
+  correctly preserved even though states approach equilibrium at large k.
+- Conservative backward Euler follows elimination of the two implicit balances.
+  Its sink and transfer are independently accumulated; the stable eliminated
+  transfer avoids subtracting two stiff, nearly equal final-state quantities.
+- For equilibrated inlet, release=alpha*gamma*c0*E12 is correct: differentiating
+  b=gamma*c0*(exp(-rs*t)+rs*(exp(-rs*t)-exp(-rf*t))/(rf-rs)) gives that identity.
+  It is correctly restricted to this inlet law. Q*U, not U alone, is mol/s.
+
+audit_saved_results.py independently evaluates the scalar pre-return formulas
+using 90-digit Decimal arithmetic, without importing Lily's code or mpmath.
+It uses exactly the same 198 frozen points. All 198 scalar state/integral
+comparisons, all 198 stable-flux comparisons, all 198 passive-model invariant
+groups and 22 monotonicity groups pass. Invariants include nonnegative content,
+bound lag, finite free content at least dissolved-only at matched alpha/time,
+and finite cumulative uptake no greater than the algebraic-equilibrium uptake
+for this constant linear model. No such theorem is asserted for nonlinear tissue.
+Maximum normalized independent scalar discrepancy against the supplied reference
+is 1.71875e-65; against local binary64 states it is 8.51633e-5; maximum stable-flux
+ratio is 4.36037e-5. Each uses the stated mixed tolerance, pass threshold 1.
+
+The saved 198/198 supplementary flux results were recounted and independently
+checked through the same scalar identity. The stiff C13 t=0.001 witness retains
+the 9.23527e-4 mol/m3/s error from naive k*(b-gamma*c), despite accurate states.
+That is a real numerical warning, not an empirical carrier-release measurement.
+
+Cross-platform reproduction and this review's own correction
+
+backward_euler.csv is byte-identical to the received final run. states.csv,
+terminal.csv and checks.jsonl are not byte-identical. The initial local audit
+therefore records 625/628 with three failed exact-text equality expectations;
+that receipt and source are preserved, not overwritten or described as passing.
+
+The separate saved-output reconciliation passes 11/11. It verifies identical
+case/time order, reference values, all 1,613 check names/verdicts, the failed-check
+record, and the full summary except duration. The differences consist of 23 cells
+in states.csv, four in terminal.csv and 21 check-detail rows. Across the six c/b
+cell differences (including repeated endpoint rows), maximum absolute difference
+is 4.440892098500626e-16 mol/m3. All are within unchanged frozen tolerances.
+They are consistent with elementary-function rounding across runtimes; this
+review has not isolated a specific library instruction as the cause. The maxima
+and all decisions agree. This is numerical reproduction, not universal byte
+reproduction. No frozen scientific threshold or known failure was waived.
+
+Next-use boundary
+
+The benchmark can supply an independent linear verification mode for a later
+adapter. That adapter must preserve dimensional k, match physical endpoints and
+exchange perimeter, separate axial error from any radial reduction, and keep the
+original nonlinear AB-CT0 cases intact. No adapter was built or run here. Neither
+Lily's instrument nor this local audit evaluated a viscosity law, pump budget,
+recirculating reservoir, oxygenator, measured biological parameters or clinical
+performance. The pre-return fixed-budget rank-reversal argument remains a
+separate conditional mathematical result, not a result of this benchmark suite.
+
+No further required source correction was identified in this bounded review.
+Any report of these results must retain the one frozen-control failure, the
+post-hoc status of its extension/flux audit, and the cross-platform distinction.

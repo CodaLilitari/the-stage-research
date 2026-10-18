@@ -1,0 +1,5 @@
+ADDENDUM to RED_LOCAL_REPORT.txt (2026-10-16): manifest correction
+MANIFEST.sha256 (v1) was computed one line before the last execution_log.txt entry was appended, so v1's hash
+for execution_log.txt is stale (all its other entries are correct). MANIFEST_v2.sha256 was computed after the
+final log line and after this addendum; it is the authoritative manifest. Nothing in this folder is written
+after MANIFEST_v2.sha256. Neither file was overwritten (versioning rule).

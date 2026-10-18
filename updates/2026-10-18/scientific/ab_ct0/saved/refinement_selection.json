@@ -1,0 +1,356 @@
+{
+  "coarse_contrasts": {
+    "H1": [
+      {
+        "distal_delta": 0.0012198997397599512,
+        "left": "ABCT0-A-001",
+        "right": "ABCT0-A-019"
+      },
+      {
+        "distal_delta": 0.019048706414924302,
+        "left": "ABCT0-A-003",
+        "right": "ABCT0-A-021"
+      },
+      {
+        "distal_delta": 0.021196864858063047,
+        "left": "ABCT0-A-005",
+        "right": "ABCT0-A-023"
+      },
+      {
+        "distal_delta": 5.61885512020497e-05,
+        "left": "ABCT0-A-001",
+        "right": "ABCT0-A-031"
+      },
+      {
+        "distal_delta": 0.004817686623557985,
+        "left": "ABCT0-A-003",
+        "right": "ABCT0-A-033"
+      },
+      {
+        "distal_delta": 0.005656491220605672,
+        "left": "ABCT0-A-005",
+        "right": "ABCT0-A-035"
+      }
+    ],
+    "H2": [
+      {
+        "fraction": 0.03211052566495329,
+        "left": "ABCT0-B-002",
+        "right": "ABCT0-A-025",
+        "uptake_delta": 2.6103408326469823e-14
+      },
+      {
+        "fraction": 0.002588623676503828,
+        "left": "ABCT0-B-003",
+        "right": "ABCT0-A-025",
+        "uptake_delta": 2.1043536171411118e-15
+      },
+      {
+        "fraction": 0.020268194841814375,
+        "left": "ABCT0-B-005",
+        "right": "ABCT0-A-027",
+        "uptake_delta": 3.330773305803334e-14
+      },
+      {
+        "fraction": 0.0013995644001530898,
+        "left": "ABCT0-B-006",
+        "right": "ABCT0-A-027",
+        "uptake_delta": 2.299973816200627e-15
+      },
+      {
+        "fraction": 0.016091932858900752,
+        "left": "ABCT0-B-008",
+        "right": "ABCT0-A-029",
+        "uptake_delta": 2.718943909295547e-14
+      },
+      {
+        "fraction": 0.001108997066832803,
+        "left": "ABCT0-B-009",
+        "right": "ABCT0-A-029",
+        "uptake_delta": 1.87379654559263e-15
+      },
+      {
+        "fraction": 0.071772305464853,
+        "left": "ABCT0-B-011",
+        "right": "ABCT0-A-031",
+        "uptake_delta": 5.6251620956001446e-14
+      },
+      {
+        "fraction": 0.002509286744996391,
+        "left": "ABCT0-B-012",
+        "right": "ABCT0-A-031",
+        "uptake_delta": 1.966656162641699e-15
+      },
+      {
+        "fraction": 0.060707969500581375,
+        "left": "ABCT0-B-014",
+        "right": "ABCT0-A-033",
+        "uptake_delta": 9.775844135022837e-14
+      },
+      {
+        "fraction": 0.001532393369895914,
+        "left": "ABCT0-B-015",
+        "right": "ABCT0-A-033",
+        "uptake_delta": 2.467623091479182e-15
+      },
+      {
+        "fraction": 0.04897125090198119,
+        "left": "ABCT0-B-017",
+        "right": "ABCT0-A-035",
+        "uptake_delta": 8.143251058916939e-14
+      },
+      {
+        "fraction": 0.0012136683073714558,
+        "left": "ABCT0-B-018",
+        "right": "ABCT0-A-035",
+        "uptake_delta": 2.0181648512426906e-15
+      }
+    ],
+    "H3": [
+      {
+        "distal_delta": 0.07128449466127974,
+        "left": "ABCT0-A-001",
+        "right": "ABCT0-A-003",
+        "uptake_delta": 8.216709075856616e-13
+      },
+      {
+        "distal_delta": 0.019489559917856863,
+        "left": "ABCT0-A-003",
+        "right": "ABCT0-A-005",
+        "uptake_delta": 5.31163713956966e-14
+      },
+      {
+        "distal_delta": 0.07128449466127974,
+        "left": "ABCT0-A-002",
+        "right": "ABCT0-A-004",
+        "uptake_delta": 8.216709075856616e-13
+      },
+      {
+        "distal_delta": 0.019489559917856863,
+        "left": "ABCT0-A-004",
+        "right": "ABCT0-A-006",
+        "uptake_delta": 5.31163713956966e-14
+      },
+      {
+        "distal_delta": 0.023426794364348576,
+        "left": "ABCT0-A-007",
+        "right": "ABCT0-A-009",
+        "uptake_delta": 7.464899504615497e-13
+      },
+      {
+        "distal_delta": 0.008513398849946396,
+        "left": "ABCT0-A-009",
+        "right": "ABCT0-A-011",
+        "uptake_delta": 7.424063869270302e-14
+      },
+      {
+        "distal_delta": 0.07128449466127974,
+        "left": "ABCT0-A-008",
+        "right": "ABCT0-A-010",
+        "uptake_delta": 8.216709075856616e-13
+      },
+      {
+        "distal_delta": 0.019489559917856863,
+        "left": "ABCT0-A-010",
+        "right": "ABCT0-A-012",
+        "uptake_delta": 5.31163713956966e-14
+      },
+      {
+        "distal_delta": 0.10263492487118364,
+        "left": "ABCT0-A-013",
+        "right": "ABCT0-A-015",
+        "uptake_delta": 8.30686444813964e-13
+      },
+      {
+        "distal_delta": 0.02291991594996047,
+        "left": "ABCT0-A-015",
+        "right": "ABCT0-A-017",
+        "uptake_delta": 4.4412409169151265e-14
+      },
+      {
+        "distal_delta": 0.10263492487118364,
+        "left": "ABCT0-A-014",
+        "right": "ABCT0-A-016",
+        "uptake_delta": 8.30686444813964e-13
+      },
+      {
+        "distal_delta": 0.02291991594996047,
+        "left": "ABCT0-A-016",
+        "right": "ABCT0-A-018",
+        "uptake_delta": 4.4412409169151265e-14
+      },
+      {
+        "distal_delta": 0.08911330133644409,
+        "left": "ABCT0-A-019",
+        "right": "ABCT0-A-021",
+        "uptake_delta": 8.286709104830975e-13
+      },
+      {
+        "distal_delta": 0.02163771836099561,
+        "left": "ABCT0-A-021",
+        "right": "ABCT0-A-023",
+        "uptake_delta": 4.779364466547813e-14
+      },
+      {
+        "distal_delta": 0.10263492487118364,
+        "left": "ABCT0-A-020",
+        "right": "ABCT0-A-022",
+        "uptake_delta": 8.30686444813964e-13
+      },
+      {
+        "distal_delta": 0.02291991594996047,
+        "left": "ABCT0-A-022",
+        "right": "ABCT0-A-024",
+        "uptake_delta": 4.4412409169151265e-14
+      },
+      {
+        "distal_delta": 0.09549039149788284,
+        "left": "ABCT0-A-025",
+        "right": "ABCT0-A-027",
+        "uptake_delta": 8.304260255474484e-13
+      },
+      {
+        "distal_delta": 0.022309892494531247,
+        "left": "ABCT0-A-027",
+        "right": "ABCT0-A-029",
+        "uptake_delta": 4.6281895044098586e-14
+      },
+      {
+        "distal_delta": 0.09549039149788284,
+        "left": "ABCT0-A-026",
+        "right": "ABCT0-A-028",
+        "uptake_delta": 8.304260255474484e-13
+      },
+      {
+        "distal_delta": 0.022309892494531247,
+        "left": "ABCT0-A-028",
+        "right": "ABCT0-A-030",
+        "uptake_delta": 4.6281895044098586e-14
+      },
+      {
+        "distal_delta": 0.07604599273363567,
+        "left": "ABCT0-A-031",
+        "right": "ABCT0-A-033",
+        "uptake_delta": 8.265554904827432e-13
+      },
+      {
+        "distal_delta": 0.02032836451490455,
+        "left": "ABCT0-A-033",
+        "right": "ABCT0-A-035",
+        "uptake_delta": 5.255704334224544e-14
+      },
+      {
+        "distal_delta": 0.09549039149788284,
+        "left": "ABCT0-A-032",
+        "right": "ABCT0-A-034",
+        "uptake_delta": 8.304260255474484e-13
+      },
+      {
+        "distal_delta": 0.022309892494531247,
+        "left": "ABCT0-A-034",
+        "right": "ABCT0-A-036",
+        "uptake_delta": 4.6281895044098586e-14
+      },
+      {
+        "distal_delta": 0.07128449466221012,
+        "left": "ABCT0-B-001",
+        "right": "ABCT0-B-004",
+        "uptake_delta": 8.216709075904561e-13
+      },
+      {
+        "distal_delta": 0.01948955991595433,
+        "left": "ABCT0-B-004",
+        "right": "ABCT0-B-007",
+        "uptake_delta": 5.311637139266455e-14
+      },
+      {
+        "distal_delta": 0.07457583575120427,
+        "left": "ABCT0-B-002",
+        "right": "ABCT0-B-005",
+        "uptake_delta": 8.232217008158849e-13
+      },
+      {
+        "distal_delta": 0.01994429641430978,
+        "left": "ABCT0-B-005",
+        "right": "ABCT0-B-008",
+        "uptake_delta": 5.240018900917645e-14
+      },
+      {
+        "distal_delta": 0.09460078695223402,
+        "left": "ABCT0-B-003",
+        "right": "ABCT0-B-006",
+        "uptake_delta": 8.302304053483889e-13
+      },
+      {
+        "distal_delta": 0.022222361820205747,
+        "left": "ABCT0-B-006",
+        "right": "ABCT0-B-009",
+        "uptake_delta": 4.670807231470658e-14
+      },
+      {
+        "distal_delta": 0.023426794364439774,
+        "left": "ABCT0-B-010",
+        "right": "ABCT0-B-013",
+        "uptake_delta": 7.464899504612391e-13
+      },
+      {
+        "distal_delta": 0.008513398849865697,
+        "left": "ABCT0-B-013",
+        "right": "ABCT0-B-016",
+        "uptake_delta": 7.424063869170418e-14
+      },
+      {
+        "distal_delta": 0.04159698142690041,
+        "left": "ABCT0-B-011",
+        "right": "ABCT0-B-014",
+        "uptake_delta": 7.850486700885163e-13
+      },
+      {
+        "distal_delta": 0.014112812008146097,
+        "left": "ABCT0-B-014",
+        "right": "ABCT0-B-017",
+        "uptake_delta": 6.888297410330442e-14
+      },
+      {
+        "distal_delta": 0.07536357652654846,
+        "left": "ABCT0-B-012",
+        "right": "ABCT0-B-015",
+        "uptake_delta": 8.260545235539057e-13
+      },
+      {
+        "distal_delta": 0.020235635200114344,
+        "left": "ABCT0-B-015",
+        "right": "ABCT0-B-018",
+        "uptake_delta": 5.300650158248193e-14
+      }
+    ]
+  },
+  "pairs": {
+    "H1": {
+      "distal_delta": 5.61885512020497e-05,
+      "left": "ABCT0-A-001",
+      "right": "ABCT0-A-031"
+    },
+    "H2": {
+      "fraction": 0.071772305464853,
+      "left": "ABCT0-B-011",
+      "right": "ABCT0-A-031",
+      "uptake_delta": 5.6251620956001446e-14
+    },
+    "H3": {
+      "distal_delta": 0.008513398849865697,
+      "left": "ABCT0-B-013",
+      "right": "ABCT0-B-016",
+      "uptake_delta": 7.424063869170418e-14
+    }
+  },
+  "selected_case_ids": [
+    "ABCT0-A-001",
+    "ABCT0-A-031",
+    "ABCT0-B-001",
+    "ABCT0-B-011",
+    "ABCT0-B-013",
+    "ABCT0-B-016"
+  ],
+  "selection": "Prespecified paired selection; diagnostic witnesses, not a random sample"
+}

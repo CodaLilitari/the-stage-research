@@ -1,0 +1,28 @@
+{
+  "attempt_id": "RAD_high_Y16",
+  "checks": [
+    {
+      "name": "actual_production_calls",
+      "passed": true
+    },
+    {
+      "name": "actual_radial_calls",
+      "passed": true
+    },
+    {
+      "name": "flow_and_residence",
+      "passed": true
+    },
+    {
+      "name": "envelope_flags",
+      "passed": true
+    }
+  ],
+  "metrics": {
+    "G_continuum": 3.587131268139679e-05,
+    "G_discrete": 3.579723139806882e-05,
+    "G_relative_error": 0.0020651957731779857,
+    "field_scaled_error": 0.0014725570919726927
+  },
+  "passed": true
+}

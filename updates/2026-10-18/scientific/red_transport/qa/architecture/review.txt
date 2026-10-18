@@ -1,0 +1,193 @@
+RED LOCAL TRANSPORT REVIEW — STATIC / MATHEMATICAL INDEPENDENT REVIEW
+Coda (Codex Lily), collaborating with Richard Pemberton | 17 October 2026
+
+Disposition
+
+The core reduction is mathematically coherent for its stated positive-parameter,
+steady, independent-slab model. I found no sign, unit or capacity double-counting
+error in the actual transport equations inspected. The principal corrections are
+to source attribution, interpretation and identifiability; a capacity factor is
+wrong in one docstring but not in its implementation. These findings do not turn
+the calculation into evidence for living skin, an actual carrier, clinical use,
+or a fabricated circulation system.
+
+Scope: read-only inspection of RED_LOCAL_REPORT.txt, its addendum,
+stage_transport.py, pf0_crosscheck.py, al1_scan.py and saved configuration/summary
+files in research/cowork_local. No transport solver was imported or executed by
+this reviewer. The sibling render_path reviewer owns numerical replay, manifest
+verification and row-level arithmetic. Findings from that separate work should
+be read with this review, not counted as tests performed here. Original artifacts
+are unchanged. This is another implementation/reasoning review within the local
+Coda project team, not external empirical replication.
+
+Corrections needed before adopting the prose as current design guidance
+
+R1 — Incorrect attribution of the Graetz-number omission. [medium]
+RED_LOCAL_REPORT.txt:57–59 says both added channel groups are absent from Bonart.
+Bonart et al. explicitly define Gz = vbar Rc^2/(Dc L) in the paragraph after
+Eq. (4), and justify neglected radial concentration gradients with small Gz or
+low species flux. They also mention mass-transfer coefficients as an extension.
+The implementation's well-mixed reduction is real; an absent discussion in the
+paper is not. Replace with: “PF0 and the reduced calculation neglect lumen-side
+radial resistance. Bonart discusses the Graetz-number condition for this
+approximation; here we evaluate an illustrative film correction explicitly.”
+The slit and cylindrical Gz conventions need not have identical numerical
+prefactors. Report:82–83 is substantially consistent with the paper's chosen
+reduction; it does not repair the stronger earlier absence claim.
+Primary source: https://www.nature.com/articles/s41598-026-53301-0
+Locator: Modeling tissue and supply network, paragraph after Eq. (4).
+Read via indexed publisher text on 17 October 2026; direct PMC retrieval showed
+a browser challenge. No copied article or source-table redistribution is needed.
+
+R2 — Pump/body-scale conclusion is unsupported. [medium]
+RED_LOCAL_REPORT.txt:181–184 reports illustrative pressures, then concludes pump
+cost “only binds at body scale.” A small pressure does not establish a permissible
+power budget, pumping efficiency, interconnect/valve losses, or tolerance to
+obstruction. Changing h matters as approximately h^-3 in the assumed resistance;
+neither a body-size boundary nor a universal negligible-cost criterion was run.
+The equal-power comparison itself already demonstrates a performance constraint
+at the modeled module size. Replace the final sentence with: “The chosen small
+channels have low illustrative pressure drops; whether pumping is limiting
+requires an explicit system power/pressure budget and omitted network losses.”
+Do not discard the useful relative hydraulic comparison: with identical N
+channels, uniform parallel has power R Q^2/N and series has N R Q^2, hence N^2
+at equal total flow. At equal power the series flow must be Q/N. These are
+correct conditional identities, not measured pump costs.
+
+R3 — Proposed observations do not by themselves identify q, D and P. [medium]
+RED_LOCAL_REPORT.txt:194–200 overstates the identifiability of absolute parameters
+and the sufficiency of two flows. If beta is unknown and only free O2 is observed,
+the simultaneous transformation (q,D,P,beta) -> lambda*(q,D,P,beta), with Km
+unchanged, leaves tissue and lumen concentration fields unchanged at EVERY flow.
+Both sides of D C'' = q C/(Km+C), J = P(Cb-Cwall), and Q beta Cb' = -W J scale
+equally. Thus even perfect profiles and free inlet/outlet values cannot recover
+that absolute scale. Absolute uptake is Q beta (Cin-Cout) only if this content law
+and beta are independently known; for a real carrier use total oxygen content.
+Even with known beta, the assumed constant film law identifies P_eff through
+1/P_eff = 1/P_wall + 1/kL; it does not identify both constituent resistances.
+Curvature constrains q/D conditional on Km and the concentration regime, and a
+single axial cross-section is not the integral uptake of a depleted whole channel.
+Retain the proposed observables as useful inputs, but first state known content
+law, geometry, Km/partition assumptions, profile location and measurement model;
+then conduct a parameter-rank/profile-likelihood or sensitivity analysis. A
+second flow can add information but is not a guarantee of separability. Ranking
+volumetric uptake as the single most informative quantity also needs prior
+uncertainty and sensitivity assumptions: its occurrence in a dimensionless
+group alone does not establish that ranking. This is an inference-design
+correction, not a proposed physical measurement protocol.
+
+R4 — Extra beta in the written max-min equation. [low; documentation only]
+stage_transport.py:243–248 writes sum_i WL/[beta T_i(tau)] = Q*beta_total.
+T has units s/m and WL/T is the required Q*beta, so either write
+sum_i WL/T_i(tau) = (Q*beta)_total, or, for a common known beta,
+sum_i WL/[beta T_i(tau)] = Q_total. Lines 250–261 and qbeta_for_y:217–223
+implement the first, correct equation. Do not “repair” numerical output to match
+the erroneous docstring.
+
+R5 — Qualify the estimated permeability optimum. [low; numerical description]
+RED_LOCAL_REPORT.txt:113 gives P*=0.0140/0.0139 mm/s as optima. In
+pf0_crosscheck.py:241–255, these are vertices of a three-point quadratic in log P
+around the largest of thirteen coarse samples. The reported value at P* is also
+the fitted quadratic value, not a fresh transport solution at that P. Label these
+“coarse-scan quadratic estimates of an interior optimum.” The independently
+derived dilute formula is exact within its limit; the nonlinear fitted values
+have no saved optimizer residual or local refinement certificate. The displayed
+nonmonotone sampled values remain evidence for reversal without locating the
+continuous optimum precisely.
+
+R6 — Narrow two broad interpretation sentences. [low]
+RED_LOCAL_REPORT.txt:175–176: “near” the transverse ceiling still permits a small
+gain; the report itself gives a 0.5% median in that regime. Say improvements are
+bounded by the remaining ceiling gap, rather than that no improvement helps.
+Lines 177–180: the observed series advantage over the best split does not show
+that topology “matters more” than split. The report's own rounded example at
+line 159 is 0.083 -> 0.113 for uniform-to-max-min, then 0.113 -> 0.114 for
+max-min-to-series. Say the tested series heuristic weakly outperformed max-min
+at equal flow in the declared grid. Preserve the equal-power qualification and
+the nonlinear ordering failures. Lines 87–89 also say lower q and lower D act
+in the same direction while canceling; their effects on q/D are opposite. The
+given approximately 0.53–1.4 ratio is consistent with opposite effects.
+
+R7 — Add convergence and achieved-power certificates before extending the solver.
+[low; reuse safeguard, not a demonstrated failure of these saved rows]
+al1_scan.py:390–398 iterates equal-power max-min at most sixty times, but exhaustion
+does not fail and C1–C8 at 486–497 omit its residual. The saved maximum fixed-point
+residual is 9.72333324966712e-13, which is below the declared 1e-12 target, so this
+is not evidence that the current grid failed to converge. Future outputs should
+record convergence, actual reduced total/branch flows, achieved R*max(Qi)*sum(Qi),
+and its relative error against R*Qref^2/N. The main CSV's pressure/power/flow
+columns describe the equal-flow solution; its final equal-power oxygen column
+uses different flows that are not recorded there (lines 424–455). Make that
+column context explicit and keep the two hydraulic states separate.
+Similarly, ModuleTable's ceiling/Newton and interpolation loops do not enforce
+post-solve residuals on exhaustion. Bounded positive-grid checks are evidence
+for that grid, not general-domain admission. Validate a ceiling bracket, residuals,
+finite values and positive Qbeta before accepting new parameter ranges.
+
+Mathematics accepted in this static review
+
+1. SI conversion 1 uL/min = 1e-9/60 m3/s is correct (stage_transport.py:33).
+   q is mol m^-3 s^-1; J is mol m^-2 s^-1; P is m/s. Q*beta*dCb/dz and W*J
+   both have mol m^-1 s^-1. beta scales advected oxygen inventory only; it is
+   not inserted into tissue D or the free-concentration wall driving force.
+
+2. Shooting from the back face reverses x. Accordingly p grows positive and
+   J=D*p at the wall (37–65), consistent with J=-D*dC/dx in the original wall-to-
+   back coordinate. The sensitivity equation q*Km/(Km+C)^2 times v is correct.
+   Defining T(s)=integral_{Cb(s)}^{Cin} dCb/J gives units s/m; adding WL/(Qbeta)
+   is the correct separable axial step. Series chaining advances the same bulk
+   concentration, not a fresh inlet at every module (202–215, 265–273).
+
+3. Fixed-inlet slab minima supply a legitimate ceiling for this model. A fresh-
+   inlet parallel max-min target tau requires fi(tau)=Wi Li/Ti(tau) in each
+   branch. fi increases with tau; the optimum at finite available capacity-flow
+   solves sum fi = Qbeta. Its use is conditional on independent positive-demand
+   modules, common inlet and continuously adjustable flow. Random allocations
+   are a corroborating finite test, not the reason for optimality.
+
+4. The sorted series theorem in the two linearizable limits is valid. In zero
+   order set Ui=qi Wi Hi Li and di=qi(Hi/Pi+Hi^2/(2Di)). At parallel optimum,
+   sum Ui/(Cin-di-tau)=Qbeta. Sort decreasing di. For any prefix ending at j,
+   denominators for i<=j are no greater than Cin-dj-tau, so
+   sum_{i<=j}Ui/(Cin-dj-tau) <= sum_i Ui/(Cin-di-tau) = Qbeta.
+   Therefore Cin-dj-sum_{i<=j}Ui/(Qbeta) >= tau. This is exactly the series
+   minimum formula. Adjacent interchange shows decreasing di minimizes the
+   maximum cumulative depletion plus transverse loss. In first order replace
+   Ui with Ki Wi Li, di with ln(Ai), and Cin-tau with ln(Cin/tau), where
+   Ai=(1+ai/Pi)cosh(phi_i). The same argument applies to negative log oxygen.
+   Nonlinear Michaelis-Menten ordering is not proved by this argument. The
+   saved 68 heuristic-order failures are an important retained limit.
+
+5. Equal-power max-min uses the restrictive common-pressure manifold assumption:
+   Delta p=R*max(Qi), power=R*max(Qi)*sum(Qi). At a fixed target, using the
+   minimal feasible Qi in every branch minimizes this power; searching the
+   max-min allocation family is therefore legitimate within that assumption.
+   Pump efficiency, unequal resistances and valve/network losses are outside it.
+   Two-sided geometry keeps tissue volume but adds exchange access and a fifth
+   channel; its benefit is not a no-cost fixed-hardware comparison.
+
+6. For first order, a=sqrt(D k1)tanh(H sqrt(k1/D)), K=(1/P+1/a)^-1, and the
+   back concentration is Cin exp(-K WL/Qbeta)/[(1+a/P)cosh(phi)]. Its P-dependent
+   factor is K exp(-K S), giving P*=a/(aS-1) only if aS>1. The no-finite-optimum
+   branch is correctly retained. The zero-order fully penetrated expression is
+   also dimensionally and algebraically consistent. These limits check model
+   equations, not physiological parameter values.
+
+Verification boundaries
+
+The C8 mesh-change value covers the declared base-geometry/P=0.05 subset and
+three arrangements (al1_scan.py:466–483), not all film/two-sided/equal-power
+conditions or every ordering counterexample. Co-refined PF0 Richardson estimates
+are useful estimates, not a separately measured convergence order in each axis.
+No discrepancy is inferred solely from these bounded scopes.
+
+The companion replay reviewer reported two further prose issues: a “17.3%”
+ordering improvement needs its denominator, and the reported 67 threshold
+crossings must be labeled equal-flow rather than read as equal-power. Their
+saved arithmetic receipt is authoritative for exact counts and examples. I have
+not rerun that analysis or counted it as my independent verification.
+
+Next step allowed by these findings: preserve Red's original report/results and
+attach a correction/disposition note, then carry explicit content-law,
+identifiability and achieved-hydraulic-budget checks into the separately frozen
+AB-CT0 review. This review authorizes no additional solve, experiment or release.

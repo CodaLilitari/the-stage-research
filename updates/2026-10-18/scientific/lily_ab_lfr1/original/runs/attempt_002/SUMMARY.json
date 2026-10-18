@@ -1,0 +1,21 @@
+{
+  "benchmark": "AB-LFR1",
+  "case_count_completed": 22,
+  "state_evaluations": 198,
+  "be_runs": 176,
+  "checks": 1612,
+  "passed": 1612,
+  "failed": 0,
+  "failures": [],
+  "seconds": 1.4139825030001703,
+  "source_hashes": {
+    "benchmark.py": "5273764a1565396fb172c546fdf7ae34cf99a0cdb22816f73e5160aea6d7bf7e",
+    "run_benchmark.py": "63db9048590da8bf397a775ea37a926a2404bb0edfb2b7bc131e1752a55558a3",
+    "FROZEN_CASES.json": "026f087fe1c95bc82f941ec122e050e32c742a436628b06eda4ef837173aadea"
+  },
+  "frozen_cases_sha256": "026f087fe1c95bc82f941ec122e050e32c742a436628b06eda4ef837173aadea",
+  "max_state_tolerance_ratio": 8.516321622102761e-05,
+  "max_matrix_tolerance_ratio": 8.699182046972377e-05,
+  "max_analytic_conservation_scaled": 1.6653345369377348e-16,
+  "max_be_conservation_scaled": 1.8042303762122459e-13
+}

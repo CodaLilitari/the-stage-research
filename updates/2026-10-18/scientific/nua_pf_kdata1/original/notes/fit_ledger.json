@@ -1,0 +1,91 @@
+{
+  "budget_max_calls": 30,
+  "calls_used": 12,
+  "calls": [
+    {
+      "n": 1,
+      "desc": "M1 PEG-LEH full",
+      "ok": true,
+      "ss": 0.0005250418965969474,
+      "aicc": -14221.979559804919
+    },
+    {
+      "n": 2,
+      "desc": "M2 PEG-LEH full",
+      "ok": true,
+      "ss": 0.0005250418965969797,
+      "aicc": -14219.963208310131
+    },
+    {
+      "n": 3,
+      "desc": "M1 PEG-LEH drop_first10pct",
+      "ok": true,
+      "ss": 1.955156972416543e-06,
+      "aicc": -17653.50951376104
+    },
+    {
+      "n": 4,
+      "desc": "M1 PEG-LEH drop_last20pct",
+      "ok": true,
+      "ss": 0.0005068967658363545,
+      "aicc": -11228.249998478288
+    },
+    {
+      "n": 5,
+      "desc": "M1 RBC full",
+      "ok": true,
+      "ss": 0.0013041372431809642,
+      "aicc": -13514.846770920947
+    },
+    {
+      "n": 6,
+      "desc": "M2 RBC full",
+      "ok": true,
+      "ss": 0.0013041386814746808,
+      "aicc": -13512.82953315279
+    },
+    {
+      "n": 7,
+      "desc": "M1 RBC drop_first10pct",
+      "ok": true,
+      "ss": 5.3967892977060426e-05,
+      "aicc": -14925.28076962789
+    },
+    {
+      "n": 8,
+      "desc": "M1 RBC drop_last20pct",
+      "ok": true,
+      "ss": 0.0013033806478618083,
+      "aicc": -10627.24195956519
+    },
+    {
+      "n": 9,
+      "desc": "M1 hHb full",
+      "ok": true,
+      "ss": 0.007024975072447319,
+      "aicc": -11667.136909714782
+    },
+    {
+      "n": 10,
+      "desc": "M2 hHb full",
+      "ok": true,
+      "ss": 0.007024975072447257,
+      "aicc": -11665.120558220064
+    },
+    {
+      "n": 11,
+      "desc": "M1 hHb drop_first10pct",
+      "ok": true,
+      "ss": 0.00027432531665961776,
+      "aicc": -13273.263547077731
+    },
+    {
+      "n": 12,
+      "desc": "M1 hHb drop_last20pct",
+      "ok": true,
+      "ss": 0.007020681307414511,
+      "aicc": -9157.143153055678
+    }
+  ],
+  "note": "frozen before fitting; each optimizer invocation = 1 call; failures recorded"
+}

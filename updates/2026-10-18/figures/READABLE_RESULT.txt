@@ -1,0 +1,23 @@
+AB-CT0: FINITE RELEASE CHANGES THE DISTAL RANKING IN ONE HYPOTHETICAL COMPARISON
+
+A hypothetical viscous Hill carrier is slightly above dissolved-only fluid in distal tissue oxygen when binding is assumed instantaneous. The same carrier, with a finite nonzero relaxation rate, is below the dissolved baseline. Both carrier cases share the same viscosity, flow, inlet storage, wall law and geometry; their binding kinetics differ.
+
+The fine-grid distal values are 11.65368608, 11.71034736 and 9.32571468 micromol/L for dissolved, equilibrium carrier and finite-release carrier, respectively. Relative to dissolved, the equilibrium value is +0.486209% and the finite-release value is -19.976267%.
+
+The prespecified secondary comparison was recovered during separate local saved-result QA because the already-refined union contains all three required cases. The original runner said this comparison was not evaluated; that historical output remains unchanged. The separate QA receipt records 8/8 checks, and the broader saved-field audit records 514/514. These are within-project mathematical/numerical reviews, not external empirical replication.
+
+Integrated tissue uptake is 0.785398226, 0.784784395 and 0.728979680 pmol/s, respectively. Finite uptake is 7.1108339% below the equilibrium value, consistent with the resolved H2 contrast. The tiny equilibrium-minus-dissolved uptake difference is smaller than the declared two-last-change guard and remains unresolved. Do not turn the distal ranking into an unsupported uptake ranking.
+
+Dissolved has baseline viscosity and flow 2 microlitres/min (residence 3 seconds). Both carriers have fourfold viscosity and flow 0.75 microlitres/min (residence 8 seconds). All satisfy the same pressure limit of 0.468 Pa and hydraulic-power limit of 10.4 pW. Dissolved is power-limited and uses 0.312 Pa / 10.4 pW; the carriers are pressure-limited and use 0.468 Pa / 5.85 pW. These are modeled fluid-power values, not electrical pump specifications.
+
+The finite effective rate is 1/30 per second, with k*Tref = 0.1 and actual k*residence = 0.2666667. Free inlet oxygen is 0.2 mol/m3; each carrier has 0.8 mol/m3 bound inlet oxygen. Binding is hypothetical Hill equilibrium (n = 2.7, c50 = 0.1 mol/m3) with an independently advected saturation in the finite-rate case. Neither rate nor viscosity is measured for an actual artificial-blood material.
+
+Whiskers and numeric ± terms are absolute last-grid changes from 48 x 64 to 96 x 128. They are numerical diagnostics, not statistical confidence intervals or rigorous error bounds. Both distal contrasts exceed twice the larger last-grid change of their pair; all three cases pass the declared distal/global-minimum/uptake convergence checks. The distal value is at the final tissue cell center, y = 99.4791667 micrometres, at the 1 mm channel outlet, not an exact outer-boundary sample.
+
+Interpretation: additional stored oxygen is not by itself an accessible oxygen supply. In this modeled comparison, assuming instantaneous binding would change the sign of the distal carrier-versus-dissolved conclusion. This result concerns one selected and refined parameter setting. It does not prove universal carrier failure, tissue survival, a useful real formulation, human-blood performance or clinical efficacy.
+
+The inlet remains clamped; finite axial oxygen flux is not a finite oxygenator reservoir or a demonstrated closed loop. No physical, biological or clinical experiment occurred. These files use saved fields only; no additional transport solve or unused-reserve attempt was consumed.
+
+Caption: Three already-refined AB-CT0 cases at Pwall = 5e-6 m/s, a 1 mm channel and 100 micrometre one-sided tissue slab, under identical pressure/power limits. Fine-grid cell-center distal oxygen and integrated uptake are shown with last-grid-change diagnostics. The dissolved reference has viscosity multiplier 1 and flow 2 microlitres/min; both hypothetical Hill carriers have multiplier 4 and flow 0.75 microlitres/min. Finite release reverses the resolved distal comparison, while the equilibrium-versus-dissolved uptake difference remains unresolved. Clamped inlet; no biological validation.
+
+Figure data and source hashes: comparison_data.json and comparison_values.csv. Original run, frozen implementation and independent QA artifacts are unchanged.

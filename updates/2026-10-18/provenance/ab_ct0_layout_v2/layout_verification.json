@@ -1,0 +1,131 @@
+{
+  "scope": "Saved-data layout correction only; no solver import or execution",
+  "originals_preserved": [
+    {
+      "path": "research/resumption_2026-10-17/figures/AB_CT0_finite_release_comparison.pdf",
+      "matches": true
+    },
+    {
+      "path": "research/resumption_2026-10-17/figures/AB_CT0_finite_release_comparison.png",
+      "matches": true
+    },
+    {
+      "path": "research/resumption_2026-10-17/figures/AB_CT0_finite_release_comparison.svg",
+      "matches": true
+    },
+    {
+      "path": "research/resumption_2026-10-17/figures/comparison_data.json",
+      "matches": true
+    },
+    {
+      "path": "research/resumption_2026-10-17/figures/comparison_values.csv",
+      "matches": true
+    },
+    {
+      "path": "research/resumption_2026-10-17/figures/figure_alt_text.txt",
+      "matches": true
+    },
+    {
+      "path": "research/resumption_2026-10-17/figures/manifest.json",
+      "matches": true
+    },
+    {
+      "path": "research/resumption_2026-10-17/figures/plot_saved_comparison.py",
+      "matches": true
+    },
+    {
+      "path": "research/resumption_2026-10-17/figures/READABLE_RESULT.txt",
+      "matches": true
+    }
+  ],
+  "exact_data_and_prose_equality": [
+    {
+      "path": "comparison_data.json",
+      "sha256": "bd616fd18758e36ae708bf76a16d62fad4f2ddfde5f1fc18b6945e37d6214755",
+      "original_sha256": "bd616fd18758e36ae708bf76a16d62fad4f2ddfde5f1fc18b6945e37d6214755",
+      "byte_equal": true
+    },
+    {
+      "path": "comparison_values.csv",
+      "sha256": "19a154833ec7d20a77b430121ede3790ffcbf28624b47ba11856614d949af52a",
+      "original_sha256": "19a154833ec7d20a77b430121ede3790ffcbf28624b47ba11856614d949af52a",
+      "byte_equal": true
+    },
+    {
+      "path": "READABLE_RESULT.txt",
+      "sha256": "848d96e8621a54d8ec6079a5fd108b2fedeb508e8078229d0ad3fec5f159d356",
+      "original_sha256": "848d96e8621a54d8ec6079a5fd108b2fedeb508e8078229d0ad3fec5f159d356",
+      "byte_equal": true
+    },
+    {
+      "path": "figure_alt_text.txt",
+      "sha256": "a1431e0bcdf7f7be2ca5a0607fa2b8b24a580943fbe1a1bfbf81d35d51b14d7a",
+      "original_sha256": "a1431e0bcdf7f7be2ca5a0607fa2b8b24a580943fbe1a1bfbf81d35d51b14d7a",
+      "byte_equal": true
+    }
+  ],
+  "script_delta": "Only heading y=.258 to .278 plus renderer-level audit; removing audit restores otherwise byte-identical original script",
+  "png_pixels": {
+    "dimensions": [
+      2448,
+      1548
+    ],
+    "changed_region_bbox": [
+      112,
+      1095,
+      607,
+      1155
+    ],
+    "all_pixels_outside_heading_region_identical": true
+  },
+  "svg_text_count": 41,
+  "svg_text_coordinate_changes": [
+    {
+      "index": 35,
+      "old": {
+        "style": "font-weight: 700; font-size: 11.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #25313d",
+        "x": "44.064",
+        "y": "459.4464",
+        "transform": "rotate(-0 44.064 459.4464)",
+        "text": "Flow and viscosity are explicit"
+      },
+      "new": {
+        "style": "font-weight: 700; font-size: 11.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #25313d",
+        "x": "44.064",
+        "y": "447.0624",
+        "transform": "rotate(-0 44.064 447.0624)",
+        "text": "Flow and viscosity are explicit"
+      }
+    }
+  ],
+  "renderer_receipt_sha256": "59534a834a3f5d1513b8e7eca0ced167386856564fe696cf6e6f6f488d3cf2df",
+  "visual_inspection": {
+    "png": "pass; heading separated from body and interpretation; axes, values, labels and qualifiers legible",
+    "pdf_render": "pass; single-page Poppler render inspected",
+    "original_png": "inspected before correction"
+  },
+  "transport_solves": 0,
+  "files": [
+    {
+      "path": "plot_saved_comparison_layout_v2.py",
+      "sha256": "79ed5aaed32fa27c941b8ca104e82d27630ffd3a4eedf1e73a5f762254afe079",
+      "bytes": 15838
+    },
+    {
+      "path": "AB_CT0_finite_release_comparison.png",
+      "sha256": "c2444e3c400c8e7be1652feafa618338302fda3a0bd317e8dc26ce91fa36c131",
+      "bytes": 272471
+    },
+    {
+      "path": "AB_CT0_finite_release_comparison.svg",
+      "sha256": "56ae0f48d605fb6335d5f616b3a796ace6d252226da28a0129d8ea0fe8bc6ee3",
+      "bytes": 23969
+    },
+    {
+      "path": "AB_CT0_finite_release_comparison.pdf",
+      "sha256": "6a1f93952e85b18cd840f67c4ff661321cd98a530708fdc0fb270d6ee7cfa221",
+      "bytes": 40180
+    }
+  ],
+  "svg_exactly_one_text_coordinate_changed": true
+}

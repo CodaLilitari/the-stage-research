@@ -1,0 +1,35 @@
+{
+  "received_archive": {
+    "path": "research/resumption_2026-10-18/nua_mapping_received/pf-kdata1_analytical_note.zip",
+    "bytes": 5462,
+    "sha256": "9b53c0cca9ecf373c94a6a21c412b80ce215e6642b36624a03a4f68f35505841"
+  },
+  "originals": [
+    {
+      "path": "research/resumption_2026-10-18/nua_mapping_received/analytical_note_k_identifiability.md",
+      "bytes": 6337,
+      "sha256": "e327d3cad6031ee916c7cf32c772885c5dec23f74f63c4b8c8792a725457a660"
+    },
+    {
+      "path": "research/resumption_2026-10-18/nua_mapping_received/analytical_note_k_identifiability_CORRECTION.md",
+      "bytes": 3363,
+      "sha256": "907bca51cafd9fdc8403404d0460893e1e97dd52ebe89391d3b1a630e704087d"
+    }
+  ],
+  "verbatim_copies": [
+    {
+      "path": "external_supplement/nua_analytical_note.md",
+      "bytes": 6337,
+      "sha256": "e327d3cad6031ee916c7cf32c772885c5dec23f74f63c4b8c8792a725457a660"
+    },
+    {
+      "path": "external_supplement/nua_CORRECTION.md",
+      "bytes": 3363,
+      "sha256": "907bca51cafd9fdc8403404d0460893e1e97dd52ebe89391d3b1a630e704087d"
+    }
+  ],
+  "author_provenance": "Nua external analytical contribution; original plus additive correction preserved. Coda disposition is separate.",
+  "inspection": "Both exact Markdown files read in full; hashes and byte identity independently checked. No code executed.",
+  "numerical_scope": "No new diagnostic case, fitting or integration for this supplement; outside producer 89 and local audit 272 checks.",
+  "publication_gate": "Parent coordinates exact-package contributor review/consent; inclusion here is not publication."
+}

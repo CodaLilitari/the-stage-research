@@ -1,0 +1,326 @@
+AB-CT0 — FINITE CARRIER BUDGET, AXIAL DEPLETION AND TISSUE TRANSFER
+Prepared 2026-10-15 by Coda. Status: PREPARED_NOT_EXECUTED.
+This is a bounded post-publication computational protocol, not a new result,
+clinical proposal, formulation, wet-lab protocol or authorization to execute.
+
+EXECUTION GATE
+Do not implement/run this study, install/download tools, or dispatch it externally
+until root explicitly confirms publication of the reviewed Stage snapshot and
+directs resumption. Record the actual repository commit/tag, release and portfolio
+URLs in an execution authorization record before implementation. No autorun or
+scheduled execution is created. Preparation reads existing authorized files only.
+
+WHY THIS IS THE NEXT LIMITATION
+PF0 already couples finite axial supply to a transverse tissue slab, but its
+C_total=beta*C_free law makes Q*beta equivalent and ignores viscosity and finite
+release. PX1 proves that distal oxygen need not increase with wall transfer in a
+finite-supply model. OK0 adds finite release only between clamped baths. MECH1
+couples hydraulics to a zero-order territory bound without dynamic carrier
+release. The Cowork rectangle supplies the full wall at a clamped concentration
+and has no finite axial inventory. AB-CT0 connects these particular missing
+pieces while preserving a tractable one-channel, one-wall geometry.
+
+This is a small bridge study, not execution of Lily's 486-case CT1 plan. It fixes
+geometry and demand and adds a finite-binding comparison. It does not adopt
+CT1's proposed 20% spacing threshold, claim a biological optimum, or select a
+material. The future full CT1 plan remains separately preserved.
+
+FALSIFIABLE QUESTIONS AND DECISION RULES
+H1: In at least one prespecified Phase A equilibrium case, adding carrier storage
+while raising viscosity from its baseline to the fourfold scenario does not
+improve distal tissue concentration over the dissolved-only baseline at the
+same pressure/power envelope. If no such case occurs, report H1 unsupported on
+this matrix; do not broaden it to a universal capacity benefit or invent a new
+range after inspecting outcomes. The fixed-flow and matched-viscosity comparisons
+separate binding-shape effects from the viscosity/flow change.
+
+H2: In at least one NONZERO finite-rate case, equilibrium binding overstates
+integrated tissue uptake. A carrier-versus-dissolved distal rank reversal is a
+secondary question and requires all three relevant cases to be refined.
+The k=0 negative control cannot by itself satisfy H2. Compare to the
+matched equilibrium case. A negative result is useful:
+it bounds the consequence within these selected rates. Do not assume equilibrium
+is a universal upper bound on distal oxygen; delayed release may redistribute
+oxygen along the channel.
+
+H3: At least one matched case increases total uptake but lowers distal tissue
+oxygen when wall permeability increases. PX1 supplies a valid reduced-model
+counterexample; AB-CT0 may or may not reproduce one in this particular slab and
+parameter matrix. Absence does not invalidate PX1, and a reversal is not itself
+a numerical failure. Interpret it only after conservation/refinement checks.
+H3 searches both Phase A and Phase B. Its matching key is profile, viscosity,
+flow mode, dimensional k plus equilibrium/finite flag, geometry, inlet, binding
+constitutive settings and demand; ONLY wall permeability varies. In particular,
+the shared Phase B profile label must not merge different finite binding rates.
+
+Report continuous matched differences, their numerical refinement uncertainty,
+and which assumption changes their sign. Last-grid changes are numerical
+diagnostics, not certified mathematical error bounds. No p-values, stochastic confidence
+intervals, grid success probabilities, carrier ranking or clinical threshold
+are appropriate. Do not call a difference resolved unless its magnitude exceeds
+twice the larger last-refinement change for the compared cases. An unresolved
+small difference remains unresolved; do not equate it to physical equivalence.
+
+FIXED GEOMETRY AND UNITS
+One idealized wide, straight rectangular channel, length L=1e-3 m, wall width
+w=1e-3 m, channel gap h_c=1e-4 m. It supplies one planar tissue slab of depth
+d=1e-4 m. Exchange area=w*L; tissue volume=w*L*d; channel area A=w*h_c.
+Only that wall exchanges oxygen; opposite tissue surface is no-flux. No second
+wall, atmospheric source, interstitial convection or hidden multiplicity.
+The channel gap is a NEW analyst-selected hydraulic coordinate. PF0 did not
+specify it. The wide-slit hydraulic model neglects finite-width edge and entry
+losses; this study does not claim a dimensioned manufactured channel network.
+
+Reference values are PF0's illustrative high-demand fixture:
+  c_in=0.2 mol/m3; D_t=2e-9 m2/s; Rmax=0.02 mol/m3/s; Km=0.028 mol/m3.
+  R(c_t)=Rmax*c_t/(Km+c_t), with c_t in mol/m3.
+These are inherited model coordinates, not measured skin or carrier data.
+Reference viscosity mu0=7.8e-4 Pa*s is the MECH1 model value. Multipliers and
+binding rates below are hypothetical controls, not a measured formulation.
+No heme distance, fold confidence or structure is converted into a binding rate.
+
+Hydraulics uses the fully developed Newtonian wide-slit approximation:
+  R_h(mu)=12*mu*L/(w*h_c^3); deltaP=R_h*Q; hydraulic_power=R_h*Q^2.
+Define the fixed budgets from baseline R0=R_h(mu0):
+  deltaP_max=R0*(3 microlitres/min)
+  power_max=R0*(2 microlitres/min)^2.
+All flows are converted to m3/s BEFORE using these equations. These small
+budgets are selected to expose pressure/power tradeoffs at existing PF0-scale
+flows; they are not a pump specification or motor/electrical power budget.
+  Envelope mode: Q=min(deltaP_max/R_h, sqrt(power_max/R_h)).
+  Fixed-flow ablation: Q=2 microlitres/min; report pressure/power violations.
+The same module budgets apply to every profile. Do not give a viscous carrier
+a larger budget. At multiplier 1 the power cap is active; at multiplier 4 the
+pressure cap is active. Verify this algebra before solving.
+
+CARRIER PROFILES — FREE OXYGEN DRIVES THE WALL
+Use dissolved free oxygen c in both lumen and tissue, with an explicitly assumed
+unit partition coefficient. Bound carrier stays in the lumen. Total luminal
+content C_T has units mol oxygen per m3 fluid. Do not diffuse C_T into tissue.
+
+D: dissolved only, C_T=c.
+L: hypothetical instantaneous linear storage, C_T=5*c.
+H: hypothetical Hill equilibrium, s_eq(c)=c^n/(c^n+c50^n), n=2.7,
+   c50=0.5*c_in; C_T=c+B*s_eq(c).
+   Choose B=(4*c_in)/s_eq(c_in), in mol/m3 fluid.
+
+L and H have the SAME bound-oxygen inlet inventory, 4*c_in, and total inlet
+content 5*c_in. This matches inlet stored oxygen rather than maximum binding
+capacity. It differs deliberately from CT1's kappa=B/(alpha*P_in) convention;
+do not silently report it as the same CT1 parameter. Always save B, s_in and
+actual C_T,in. None of these profiles is identified as HbV, PFC or a product.
+
+Finite-rate H carries saturation s as an independent state:
+  ds/dt=k*(s_eq(c)-s), s(0)=s_eq(c_in).
+The rate k is an assumed effective relaxation, not a molecular off-rate. Set
+k through k*T_ref in {0,0.1,10}, with T_ref=A*L/Q_ref and Q_ref=2 uL/min.
+Hold each dimensional k FIXED across viscosity cases; report actual k*A*L/Q.
+Do not renormalize k to cancel the residence-time change caused by viscosity.
+The k=0 condition carries permanently inaccessible bound oxygen and is a
+negative control. The equilibrium model is solved algebraically, not simulated
+by an arbitrarily huge k.
+
+COUPLED EQUATIONS
+At each axial z, the steady tissue profile satisfies
+  D_t*d2c_t/dy2 - R(c_t)=0, 0<y<d;
+  -D_t*dc_t/dy at y=0 = J=Pwall*(c-c_t(0)); dc_t/dy at y=d=0.
+With y increasing from the wall into tissue, wall influx J is positive.
+Across the channel:
+  d[Q*(c+B*s)]/dz = -w*J,
+  ds/dz = (A/Q)*k*(s_eq(c)-s).
+For D/L/equilibrium H, substitute the corresponding C_T(c) in the first equation.
+Q is constant along this incompressible one-channel model. Do not import Rhee's
+unequal inlet/outlet pump settings or a hidden water leakage term.
+
+A conservative implicit segment for finite H can use a=k*A*dz/Q and
+  s_j=(s_previous+a*s_eq(c_j))/(1+a),
+  c_j+B*s_j + (w*dz/Q)*J(c_j) = c_previous+B*s_previous.
+The scalar residual is monotone for the specified constitutive/tissue laws.
+Bracket physical nonnegative free content without silently clipping a negative
+state. An implementation can use [0,C_T,previous], then check the stronger
+model-specific bounds. Use safeguarded bisection/Newton with bounded iterations;
+record every nonlinear or bracketing failure as a result, not a zero field.
+For equilibrated inlet and these fixed passive laws, the invariant bounds are
+0<=c<=c_in and 0<=s<=s_in. At c=c_in, the implicit residual is nonnegative
+when the previous state satisfies those bounds; at c=0 it is nonpositive.
+Thus [0,min(c_in,C_T,previous)] is also a valid bracket. Verify these bounds
+without clipping. No externally supersaturated carrier is supplied.
+
+PRIMARY MATRIX — 54 PLANNED CASES
+Phase A: 3 profiles D/L/H x 2 viscosities {1,4} x 3 wall permeabilities
+{5e-6,5e-5,2e-4} m/s x 2 flow modes {envelope,fixed_flow} = 36 cases.
+Phase B: H finite binding only x 2 viscosities x 3 wall permeabilities x
+3 fixed rates {k*T_ref=0,0.1,10}, envelope mode only = 18 cases.
+Keep matched duplicate mathematical controls visible; do not count duplicate
+settings as independent observations. Lexicographic case IDs, dimensions, solver
+source and all configuration fields must be frozen before the first solve.
+
+REQUIRED ANALYTIC AND CONSERVATION CHECKS
+1. B=0 and linear storage recover PF0's beta=1 and beta=5 equations at matched
+   Q/geometry. Q*beta degeneracy should hold only for that linear law, not be
+   imposed on Hill or finite kinetics or on unmatched hydraulic budgets.
+2. k=0 holds s constant; free-oxygen/tissue results equal dissolved-only at the
+   SAME Q, even though total inlet content is higher. Bound outlet inventory
+   must show the inaccessible storage remaining in the fluid.
+3. Zero demand gives uniform free concentration and zero uptake for equilibrated
+   inlet carrier. Pwall=0 gives zero wall supply and zero lumen depletion. The
+   isolated, zero-demand tissue state is nonunique and must not be invented as
+   a uniqueness check. Zero Q is an unsupplied/no-steady-throughflow condition,
+   not an epsilon-flow fallback.
+4. Large finite k approaches the algebraic equilibrium solution under refinement.
+   This is a numerical limit check, not an asserted biological upper bound.
+5. For the verification-only linear tissue sink R=k_t*c_t, let gamma=sqrt(k_t/D).
+   Define G=[1/Pwall+1/(D*gamma*tanh(gamma*d))]^-1. Then J=G*c and, with
+   linear luminal storage beta, c(z)=c_in*exp[-w*G*z/(Q*beta)]. Tissue distal
+   minimum is c(z)/[cosh(gamma*d)+(D*gamma/Pwall)*sinh(gamma*d)]. This exact
+   coupled slab/axial solution checks both solver pieces together. PX1's exact
+   reduced solution is a second independent simple diagnostic, not the same PDE.
+6. With positive constant zero-order demand and clamped local lumen supply,
+   c_min=c_in-q*(d/Pwall+d^2/(2D)) when the expression stays positive. Do not
+   report its negative extrapolation as a physical concentration. At fixed
+   local supply, increasing Pwall must not lower the minimum. Do not impose
+   this monotonicity on globally coupled finite-flow cases.
+7. Independently compare three quantities: Q*(C_T,in-C_T,out), integrated wall
+   flux and integrated tissue reaction. Do not define uptake by inlet-minus-
+   outlet and then call the equality an independent conservation test. Check
+   each axial segment, the full domain, and bound/free inventory separately.
+   Integrated uptake cannot exceed Q*C_T,in; with k=0 it cannot exceed Q*c_in.
+   Check these available-inventory bounds explicitly, without defining uptake
+   from them or hiding a residual through clipping.
+8. Nonnegative finite concentrations, 0<=s<=1, bounded input units, consistent
+   one-wall exchange area/volume and pressure/power inequalities are required.
+   Reject NaN/Inf, negative dimensions/rates/capacity, invalid viscosity and
+   unsupported zero-flow states. Units are seconds/metres/moles/Pascals internally.
+
+NUMERICAL PLAN AND TOLERANCES
+Use a NEW solver/run directory after the gate; keep every original source and
+run unchanged. Copy/adapt PF0's tissue residual/Jacobian and conservative axial
+strategy with attribution. Do not invoke its frozen main_run(), overwrite its
+outputs or describe a modified solver as its original frozen bytes.
+Base grid: 24 tissue cells x 32 axial segments. Maximum Newton iterations 50,
+backtracking 40, axial bracket iterations 80. Proposed normalized nonlinear
+residual <=1e-10. Require whole-domain and segment conservation error <=1e-6
+against a declared nonzero input/uptake scale; record both absolute mol/s and
+relative errors. In zero-flux controls use the explicitly scaled absolute
+tolerance below, not an arbitrary universal concentration or a relative 0/0.
+
+Refine complete matched pairs, not isolated favorable cases. Freeze these three
+pair-selection rules before any results exist:
+  (a) H1: most negative (or least positive) distal carrier-minus-dissolved
+      contrast for L/H at viscosity4 versus D at viscosity1, envelope mode,
+      matched wall permeability.
+  (b) H2: largest fractional equilibrium-minus-finite uptake difference among
+      NONZERO finite-H rates, matched viscosity, wall and envelope mode.
+  (c) H3: most negative distal change with increased uptake among adjacent
+      permeability pairs using the full H3 matching key above. If none reverses,
+      choose the least positive distal change among increased-uptake pairs;
+      if that set is empty, choose the first adjacent pair by case IDs.
+Ties use case IDs. The union has at most six cases. Fill unused slots first by
+largest conservation residual, then lowest distal concentration, then case ID.
+Solve all six at 48x64 and 96x128 (12 additional solves). This covers both ends
+of all three primary decision comparisons. A secondary three-way rank reversal
+needs the additional dissolved reference refined too; use the two reserve slots
+or leave that secondary claim unresolved.
+
+Require final minimum changes <0.005*c_in and uptake changes <1%, with shrinking
+coarse-to-fine changes unless already at the declared numerical floor. Zero-uptake
+controls use the absolute tolerance below, not division by zero. These are
+numerical acceptance choices, not tissue thresholds. Retain all three grid
+values; a small final difference alone does not prove convergence.
+
+Reserve 12 control solves explicitly: one zero-demand case; one no-wall case;
+linear-sink exact-solution checks for beta1 and beta5 at base and doubled grids
+(four); positive clamped zero-order slab at base and doubled grids (two);
+finite-H k*T_ref=100 and 1000 at one matched base-grid point (two); one extra
+Q*beta-equivalent dissolved case using an existing main linear case (one); and
+one larger-Pwall clamped-supply comparison (one). The matched original PF0
+beta1 check uses its SAVED matching CSV row rather than rerunning frozen code.
+Negative-input and hydraulic algebra checks do not require transport solves.
+Two further reserve solves may refine the third member of a secondary comparison
+or resolve a specific control discrepancy. Thus 54+12+12+2=80 is a hard ceiling.
+
+Fix the control basepoint now: viscosity multiplier1, Q=Q_ref=2 uL/min,
+Pwall=5e-5 m/s, otherwise the declared geometry/inlet/demand. Zero-demand uses
+finite H with k*T_ref=0.1 and Rmax=0; no-wall uses the same finite H with
+Pwall=0 and the ordinary positive Michaelis-Menten demand (isolated steady tissue
+then has c_t=0). Linear-sink checks use k_t=Rmax/Km and beta in {1,5}, replacing
+only the verification reaction law. Positive clamped zero-order checks use
+q=Rmax with a spatially constant local lumen c_in, not axial depletion. The
+larger-Pwall clamped comparison uses Pwall=2e-4 at the doubled tissue grid.
+The selected zero-order basepoint has the positive continuum minimum0.11 mol/m3;
+do not substitute the lowest permeability5e-6, whose formal value is negative.
+High-k controls use finite H at the basepoint, compared to the existing main
+equilibrium H case at that same grid. The Q*beta extra case is dissolved-only
+at Q=10 uL/min, compared to the main beta5 case at Q=2 uL/min; it is an algebraic
+control, explicitly over the pump envelope. The saved PF0 row is beta1,
+depth100 um, flow2 uL/min, Pwall0.05 mm/s on its original 24x32 grid.
+Its source CSV SHA256 is
+4d4a6566db533646e3689e0dd02d9f053ba4c2bdf20ab3feac3401fd35493810.
+Exact control IDs/inputs and the selected original row are saved in
+planned_controls.json and saved_pf0_reference.json. These are planned controls,
+not executed results. Failed solves and retries also count against the80 ceiling.
+
+Compare analytic profiles at the numerical scheme's reported coordinates, not
+cell centers versus continuum boundary values without accounting for the offset.
+The continuous linear/zero-order solutions should show decreasing spatial error
+from base to doubled grids; require maximum free-concentration error <=0.01*c_in
+on the doubled grid. Do NOT demand a 1e-10 continuum error from the coarse mesh:
+that number is a nonlinear residual tolerance, not a discretization tolerance.
+For exact uniform/zero-flux controls use concentration error <=1e-12*c_in and
+absolute mol/s error <=1e-12*(Q_ref*c_in). For the two large-k controls, require
+distance to the matched algebraic-equilibrium field to shrink as k increases,
+or already be below the concentration floor; do not call finite k exactly
+equilibrated. Require the saved PF0 comparison within 1e-8*c_in, and diagnose
+rather than silently adjust any mismatch. This regression tolerance assumes the
+same original cell coordinates, finite-volume wall treatment and backward-Euler
+axial scheme; it is not a continuum-equivalence tolerance for a changed scheme.
+Keep physical binding approximation,
+axial discretization and nonlinear convergence errors separate.
+Small pure arithmetic assertions do not expand the matrix.
+If the bound cannot establish a comparison, stop and report unresolved rather
+than expanding the run or relaxing thresholds.
+
+OUTPUTS AND FINITE SUPPLY ACCOUNTING
+Save one row for every planned case, including failures: case ID, profile, B,
+k, inlet free/bound/total content, s_in/out, dimensional rate and residence time,
+Q, active cap, deltaP, hydraulic power, budget-violation flags, global/distal
+minimum and locations, uptake, wall exchange, incoming/outgoing free and bound
+oxygen fluxes, absolute/relative inventory residuals, iteration counts, runtime
+and grid. Retain selected full profiles for review. Report comparisons at matched
+constraints; an over-budget fixed-flow ablation cannot be called feasible.
+
+This model has a FINITE AXIAL OXYGEN BUDGET but a CLAMPED INLET. Record the required
+oxygenator replenishment Q*(C_T,in-C_T,out) and inlet stored oxygen, including
+inaccessible k=0 storage. It does not simulate finite reservoir volume, oxygenator
+transfer/energy, repeated-loop depletion or continuous real-world operation.
+Do not relabel this a closed-loop blood system. Those are a later distinct model.
+No pass/fail survival threshold is needed for the primary comparison. PF0's .05
+mol/m3 line may appear only as a clearly assumed reference, never as clinical or
+tissue viability. No new empirical qmax or carrier parameter is inferred here.
+
+RESOURCE / STOP CONTRACT AFTER AUTHORIZATION
+Offline, one CPU worker, existing Python standard library preferred; installed
+scientific libraries may be used without installing anything. No GPU, API, paid
+service or external upload. Proposed limits: 30 minutes wall time including
+verification, <=1 GiB process working set, <=250 MiB new outputs, >=2 GiB host
+free memory before starting, and no more than 80 transport solves. Refresh host
+free memory immediately before execution; do not run concurrent science jobs.
+Stop if host free memory falls below 1 GiB or the process exceeds 1 GiB. Checkpoint
+after each case. Stop cleanly on memory pressure, time/output cap, unexpected
+filesystem destination, source/config drift or repeated solver failure. Preserve
+failure outputs; do not stop other apps or change machine settings. A failed
+analytic/conservation check blocks interpretation of the scientific matrix.
+
+Before any later run: finish implementation review, freeze hashes/config/case
+list, verify the execution-gate record, then run controls before the matrix.
+Afterward request one separate bounded numerical reviewer of saved equations,
+profiles and conservation arithmetic. That future review has not been requested
+or performed by this preparation and is not permission to contact external AIs.
+
+SOURCE STATUS
+Exact existing code/checkpoint paths and hashes are in starting_points.json.
+This preparation read the existing sources and audits; it did not reopen new
+primary literature or download anything. PF0/MECH1 parameter provenance remains
+the qualified source context of those checkpoints. Cowork's corrected primary
+unit findings rule out silently importing its original millimole demand branch.
+No prepared protocol setting is promoted into a measured biological property.

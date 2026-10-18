@@ -1,0 +1,96 @@
+THE STAGE — THREE DISCRIMINATING NEXT DECISIONS
+Coda (Codex Lily), collaborating with Richard Pemberton | 17 October 2026
+Preparation only: no new search, download, computation, experiment or publication.
+
+Artificial-blood modeling is the near-term priority. Human oxygen carriers and
+circulation for tissue on a robot remain separate applications. These questions
+select model assumptions and missing measurements, not a clinical product or
+material. Admission criteria below are proposals to freeze before further work.
+
+What the completed result actually establishes
+
+In one refined hypothetical AB-CT0 comparison under the same pressure/power caps,
+equilibrium carrier distal oxygen is 0.4862% above dissolved-only, whereas the
+same carrier with finite release is 19.9763% below. These distal contrasts pass
+the declared grid-change guard. The tiny equilibrium-minus-dissolved integrated
+uptake difference remains unresolved. The comparison uses different flows and
+actual powers: dissolved 2 uL/min and 10.4 pW; carriers 0.75 uL/min and 5.85 pW.
+Equal permitted caps are not equal actual power. All inputs are hypothetical and
+the inlet is clamped; finite axial supply is not a finite recirculating reservoir.
+
+1. Can measured carrier kinetics distinguish equilibrium from finite release?
+   NEAR TERM — artificial-blood mathematical/empirical track.
+
+Decision: retain equilibrium, admit a constant effective relaxation rate, or
+require a more explicit kinetic/transport model. The selected fixture's 30 s
+relaxation and 8 s carrier residence show why kinetics can matter; they do not
+estimate a real carrier's rate.
+
+Data needed beyond Nua's completed stopped-flow reanalysis: time-resolved loading/unloading
+traces, their measured observable, oxygen boundary change, mixing/dead time,
+instrument response, medium, temperature and pH, plus matched equilibrium and
+capacity information where available. Preserve source units and uncertainty.
+An equilibrium curve alone cannot identify a rate. A molecular off-rate alone
+cannot identify effective release through a carrier, fluid and channel boundary.
+
+Admission/stop: first establish whether the observable and apparatus permit
+identifying kinetics at all. Admit a constant-rate model only if one parameter
+set predicts held-out conditions within a predeclared uncertainty criterion;
+separate loading/unloading behavior or systematic multi-timescale residuals
+require revising the model. If instrument or external transport dominates,
+retain a bounded effective description and stop claiming intrinsic kinetics.
+The independent linear benchmark addresses numerical correctness in its linear
+limit only; it cannot validate the nonlinear Hill law, empirical rates or biology.
+Nua's received traces establish preparation-associated, window-sensitive assay
+rates, not the effective channel k. The lag model is structurally confounded and
+the residuals strongly correlated. Lily's independent benchmark and the separate
+Coda recovery of Wren's supplied-model cases are complete within their stated
+envelopes; neither closes the empirical calibration gap.
+
+2. Does the distal ranking survive measured hydraulic losses and uncertainty?
+   NEAR TERM — artificial-blood transport decision, after usable kinetics.
+
+Decision: determine whether a carrier advantage/disadvantage is robust under a
+specified delivery budget, or remains an assumption-sensitive numerical example.
+
+Data needed: viscosity versus relevant shear/temperature, pressure-flow behavior
+for the same fluid and geometry, and additional tubing/connector losses. A claim
+about electrical power additionally needs pump efficiency and operating limits;
+modeled fluid power is insufficient. Preserve the measured kinetic conditions.
+Any finite-reservoir extension needs separate storage/oxygenator boundary data.
+
+Admission/stop: predeclare the comparison constraint and separate distal oxygen
+from integrated uptake. Admit a signed ranking only if it survives the supported
+parameter/measurement range and the numerical-resolution criterion. If a sign
+crosses, or the effect is below either uncertainty scale, report the ranking as
+unresolved. Do not select a real material from hypothetical viscosity/rate pairs
+or extrapolate the present clamped inlet to a closed-loop device.
+
+3. Does deformation primarily change hydraulic patency, oxygen geometry, or both?
+   SEPARATE LATER TRACK — perfused tissue on robotics.
+
+Decision: choose a measured deformation-dependent resistance approximation or
+require transient, coupled deformation/flow/transport before interpreting motion.
+
+Data needed: synchronized curvature/strain, channel cross-section, actual flow
+and pressure, and registered local free-oxygen observations in the same construct.
+State the controller (fixed flow, pressure or power), observed region, resolution,
+and sensor/motion artifacts. Grigoryan's located compression/flow-redirection and
+RBC-saturation package is a benchmark candidate, not a consuming-tissue minimum;
+its raw archive remains uninspected. Mori's stretched perfused skin morphology
+and Golub's local physiological oxygen transients answer different questions.
+
+Admission/stop: admit a quasi-static resistance approximation only if it predicts
+held-out deformation states and local oxygen within declared uncertainty without
+unexplained hysteresis or collapse. Otherwise require an explicitly transient
+model or leave the mechanism unresolved. Outlet saturation, dye flow or histology
+alone cannot admit a worst-region tissue-oxygen claim. Stop at the observable
+actually measured; the bounded prior-art search establishes no novelty priority.
+
+Evidence read for this note (paths relative to its parent directory)
+  CODA_INTERPRETATION.txt
+  figures/READABLE_RESULT.txt
+  motion_perfusion_source_check/REPORT.txt
+
+No new execution or contact is authorized by this note. Original source reports,
+failed expectations, frozen outputs and prior manifests remain unchanged.

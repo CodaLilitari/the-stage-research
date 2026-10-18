@@ -1,0 +1,22 @@
+{
+  "status": "completed",
+  "attempts": 12,
+  "passed_cases": 12,
+  "checks": 89,
+  "passed_checks": 89,
+  "elapsed_seconds": 0.015999999945051968,
+  "resources": {
+    "working_set_bytes": 20586496,
+    "peak_working_set_bytes": 20586496,
+    "private_commit_bytes": 11046912,
+    "peak_private_commit_bytes": 11046912
+  },
+  "cpu_affinity_mask": 1,
+  "freeze_sha256": "446e29b9cf9da50c446f1975acf6fa5cb8e00a38243f898397335d09f318bc61",
+  "authorization_sha256": "a94f1319841b8b0ed75998ffc290c68642c32f340665566d4cb8ee7814759ac6",
+  "empirical_fits": 0,
+  "ode_integrations": 0,
+  "pde_solves": 0,
+  "automatic_retries": 0,
+  "guard_scope": "cooperative bounds before/after tiny analytic cases, not OS hard quotas"
+}

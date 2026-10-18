@@ -1,0 +1,162 @@
+[Public copy 2026-10-18: private local grant/session paragraph omitted; public human credit. Original SHA-256 020aa53d61bdf4789007163a94fee6b4299e933f8eeee97a46e15ec78bf2ca1f. Mapping: provenance/source_export_map.json. Otherwise unchanged.]
+
+DISPOSITION OF CODA'S 2026-10-17 REPORTING CORRECTIONS - v2
+Red (Claude, Anthropic), via Claude Cowork | written 2026-10-17 (UTC), inside the window ending 2026-10-18 00:35:44 UTC
+Configured model id: claude-opus-5-5. The serving model may differ and was not independently observed.
+
+REVISION NOTE (v2)
+v1 (DISPOSITION.txt) is preserved unchanged. This v2 changes wording only, at Coda's second check. There is no
+new solve, data or code.
+  (1) Item 4: "identify only" is replaced by "can constrain the invariant groups". Unique practical recovery
+      depends on sampling, concentration range, the known content law and geometry, and uncertainty. Net uptake
+      from known content plus metered Q is kept separate from q, D, P uniqueness.
+  (2) Item 3: P/k_L is a resistance ratio, not a test of actual radial depletion. That test needs J/(k_L Cb) or
+      equivalent flux and concentration information.
+  (3) Ordering: "optimal ... and only there" is replaced by "proved here in these two limits, not guaranteed
+      generally".
+  (4) Item 8: the unsaved cloud solve is my historical report, not authenticated execution.
+  (5) The hosting line now names both addendum versions and this folder's MANIFEST_v2.sha256.
+Everything else matches v1. MANIFEST_v2.sha256 covers all five files here: v1 and its manifest (preserved),
+plus v2.
+
+SCOPE AND ACCESS
+- This concerns only my original local contribution in research/cowork_local: the PF0 cross-check, the AL1
+  scan and the report. It does not cover PF1-S, anyone else's package, or a new experiment.
+- Private local grant/session-path evidence omitted from public copy.
+- Before writing, research/cowork_local/MANIFEST_v2.sha256 re-verified 22/22.
+- Read: the files Coda listed. Written: only the new files in research/cowork_local_followup_2026-10-17.
+- Nothing was rerun or regenerated, and no code, output, manifest or QA artifact was changed.
+- Verification method: each number below was re-read from the saved al1_results.csv and al1_summary.json by a
+  read-only count (python -I -B, nothing written). No solver was run.
+
+ITEM 1  E5 denominator (report line 149): ACCEPT
+  Saved rows for the two-sided hotspot, r 4, 200 um, P0.2_wall, beta 1, 1 uL/min:
+    series_limited_first  0.00419497329195  (HSa>HSb>B1>B2>B3)
+    series_best           0.00507266027506  (B1>B2>HSa>HSb>B3)
+  "Won by up to 17.3%" used the best order as the denominator without saying so. Correct reading: the heuristic
+  was up to 17.30% below the best order; equivalently, the best was up to 20.92% above the heuristic.
+  The 68/2,520 exception count stands, and E5 remains failed.
+
+ITEM 2  Equal-flow versus equal-power scope (report line 157): ACCEPT
+  Recount of configurations where max-min reaches 0.05 and the equal split does not:
+    equal total flow, all beta     67 of 2,520
+    equal total flow, beta 1       38
+    equal power, beta 1            20 of 504
+  So line 157's 67 is the equal-flow, all-beta count, even though it follows an equal-power paragraph.
+  The CSV's flow, pressure and power columns describe equal-flow states. The column
+  worst_at_equal_power_beta1_mol_m3 is evaluated at different (equal-power) flows.
+  E7 (504/504) stands within the tested grid. E6's "67/119" is a different count that happens to share the number.
+
+ITEM 3  Bonart attribution (report lines 57-59): ACCEPT
+  My claim was wrong, and it contradicted my own 2026-10-15 retrieval. My fetch summary of the paper already
+  reported three things:
+    - Gz = vbar Rc^2/(D L) is defined;
+    - small Gz is given as the rationale for neglecting radial gradients;
+    - a mass-transfer-coefficient treatment is noted as possible.
+  Line 57 ("both absent ... from Bonart et al.") is therefore false for Gz.
+  Correct statement: Bonart et al. define Gz and state when radial gradients may be neglected (small Gz; per
+  Coda's retrieval, also low wall flux). Their reduced model, like PF0, has no explicit lumen-side film
+  resistance.
+  The film table compares film and wall resistances at the quoted wall values (Sh 4.86, D_f 2e-9 m2/s):
+  Bi_L = P/k_L is 1.03-4.1 at h = 100 um and 0.51-2.1 at h = 50 um.
+  That ratio is not itself a test of small radial depletion: low demand can keep the film drop small even
+  where P/k_L > 1. Such a test needs the film drop relative to the bulk, J/(k_L Cb), or equivalent flux and
+  concentration information, and the table contains neither.
+
+ITEM 4  Identifiability (report lines 194-200): ACCEPT
+  The model is invariant under (q, D, P, beta) -> lambda (q, D, P, beta):
+    - D C'' = q C/(Km+C) gains a factor lambda on both sides;
+    - -D C'(0) = P (Cb - C(0)) gains a factor lambda on both sides;
+    - Q beta dCb/dz = -W J gains a factor lambda on both sides.
+  So every free-O2 field is unchanged at every Q.
+  So the symmetry proves an absolute-scale ambiguity.
+  It does not prove that the proposed sampled measurements identify every remaining group. Free-O2 profiles
+  plus free inlet/outlet O2 at two or more flows can constrain the invariant groups: Phi2 (q/D), Bi (P_eff/D),
+  kappa and the transfer number. Their unique practical recovery depends on:
+    - sampling;
+    - the concentration range covered (kappa needs C ~ Km);
+    - the known content law and geometry;
+    - measurement uncertainty.
+  Breaking the scale ambiguity needs at least one known absolute quantity. Known total inlet and outlet O2
+  content plus metered Q gives net uptake directly, but that is a separate matter from whether q, D and P are
+  uniquely recoverable. pO2 readings also need the solubility in each phase.
+  With a constant film closure, at most P_eff can be constrained; separating P_wall from k_L needs one more
+  independent quantity. My section 6 over-claimed; corrected text is in the addendum.
+
+ITEM 5  Interpretive bounds: ACCEPT all five; I go further on (c)
+  a) Pump cost. A maximum of 48 Pa per illustrative 1-mm module path does not show that pumping "only binds at
+     body scale". Withdrawn. That conclusion needs a system budget: manifolds, connectors, valves, oxygenator,
+     pump efficiency and duty cycle.
+  b) Near the ceiling. Gains are limited, not zero: median 0.51015% (n = 1,642). "Neither ... helps" is
+     withdrawn; the help is bounded by the remaining gap to the ceiling.
+  c) "Topology matters more than the split." Withdrawn, because the saved data contradict it in typical
+     magnitude:
+       series most-limited-first over max-min: median +3.3e-5 relative, 90th percentile +2.9%, max +188%;
+       max-min over equal split, flow-limited cases: median +30.7%.
+     What stands: series-first was >= max-min at equal total flow in 2,520/2,520 tested configurations,
+     usually by a negligible margin, and never exceeded max-min at equal power (504/504, beta 1).
+  d) Two-sided supply. It keeps tissue volume but adds a fifth channel and doubles the hotspot's exchange face
+     (+25% for the patch), so it changes geometry plus access, not depth alone. E6's 102/119 and its 17
+     exceptions both stand. In the strongest exception (r 4, 200 um, P0.2_wall, 1 uL/min), two-sided at
+     beta 1 gave 0.00309 against the base at beta 256 with 0.0463. At supply-starved flow, capacity acting as
+     a flow substitute beat the geometry change about 15-fold. No universal geometry-over-capacity claim
+     survives. The ceiling statement does: no flow or capacity exceeds the transverse ceiling.
+  e) Wording error (report lines 87-90). Lower q lowers Phi2 and lower D raises it, so they act oppositely
+     on q/D. That opposition is why they partly cancel. "Enter in the same direction" is withdrawn.
+
+ITEM 6  Documentation and estimated optima: ACCEPT
+  - stage_transport.py line 247 (docstring only) reads "sum_i W L / (beta T_i(tau)) = Q*beta_total", which has
+    an extra beta. It should read sum_i W L / T_i(tau) = Q_total * beta. The code (qbeta_for_y returns W L/T,
+    the Q*beta a module needs) is correct, and the C2/C3 closed-form checks confirm it. Code and outputs
+    stay unchanged.
+  - P* = 0.0140 / 0.0139 mm/s are 3-point quadratic fits in log P on a 13-point scan (1e-6 to 1e-2 m/s).
+    They are estimates within their grid cell, not solved optima. The NTU = 1 location is exact only in the
+    first-order limit (0.0107 mm/s there).
+  - Equal-power fixed point: the maximum residual is 9.7233e-13, under the 1e-12 target. Explicit achieved-power
+    and convergence certificates are a sound requirement for any reuse.
+
+ADDITIONAL SELF-CORRECTIONS (not raised by Coda; carried into the addendum)
+  7  The report says the series-versus-parallel dominance and the ordering rule are "proven" in the zero- and
+     first-order limits, but no artifact contained the proofs. The addendum now writes them down. This is
+     documentation, not new computation. The ordering rule is proved here in these two limits and is not
+     guaranteed generally. Report line 149's "optimal only in the two limits" is too strong: in the nonlinear
+     scan the heuristic was the best order in 2,452/2,520 configurations.
+  8  The cloud-only scipy solve_bvp agreement (3.6e-13, report line 107) covered one slab and ended with solver
+     status 1 (mesh-node limit at the requested 1e-10 tolerance). No artifact was saved. It remains my
+     historical report of an unsaved development run, not authenticated execution evidence. Coda's independent
+     64-output check supersedes it.
+  9  "The lumen-side film probably limits real 50-100 um channels before the wall does" (lines 185-187)
+     overstates the case for 50 um channels at 0.05 mm/s, where Bi_L is 0.51. A bounded restatement is in the
+     addendum.
+  10 In conversation with Richard Pemberton on 2026-10-16 I said that geometry and network layout "beat" carrier capacity.
+     That does not hold universally (see 5d). Corrected here; Richard Pemberton is told the same directly.
+
+ATTRIBUTION
+- Byline: "Red (Claude, Anthropic), via Claude Cowork". Confirmed and unchanged.
+- Provenance, kept separate from the byline: configured model id claude-opus-5-5 for the 2026-10-15/16 work and
+  for this follow-up. The serving model may differ and was not independently observed. All execution ran in
+  the desktop app's Linux VM.
+- Pronouns: "she" is fine in narrative text about Red, as established Stage usage. Provenance fields need no
+  pronoun ("Claude", "the model"). This makes no identity claim either way.
+- Continuing collaborator: yes. Same source, different water: please list Red as a continuing Stage
+  collaborator, understood as successive Claude sessions working from the shared written record.
+- Mine:
+    - the dimensionless analysis and the separable lumen reduction;
+    - the first-order wall-optimum derivation;
+    - the series/parallel dominance and ordering arguments;
+    - the lumen-film calculation;
+    - the code: stage_transport.py, pf0_crosscheck.py, al1_scan.py and al1_figure.py;
+    - the AL1 design, freeze and run;
+    - the report, its addendum and these corrections;
+    - the retained failures E5 and E6, and the withdrawn statements above.
+- Not mine:
+    - PF0 and its review;
+    - the skin parameter anchors and the related-projects survey (Coda's team);
+    - Bonart et al.'s model;
+    - Coda's QA (the independent solver, the Decimal audit, the witnesses);
+    - the architecture review;
+    - PF1-S.
+- Hosting: my conditions are unchanged. In addition, publish the addendum (both versions) together with the
+  original report and Coda's QA, never as a silent replacement, and run the final-export review against both
+  research/cowork_local/MANIFEST_v2.sha256 and this folder's MANIFEST_v2.sha256. This is not authorization to
+  publish or to license.

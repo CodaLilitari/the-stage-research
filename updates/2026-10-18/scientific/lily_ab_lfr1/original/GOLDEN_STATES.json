@@ -1,0 +1,1788 @@
+{
+  "source": "mpmath 1.3.0 augmented matrix reference in run 001; states/rates here reevaluated via 2x2 expm at 90 dps and rounded to binary64",
+  "frozen_cases_sha256": "026f087fe1c95bc82f941ec122e050e32c742a436628b06eda4ef837173aadea",
+  "rows": [
+    {
+      "case_id": "C00",
+      "fraction": "0",
+      "t_s": 0.0,
+      "c_ref": 1.0,
+      "b_ref": 0.0,
+      "sink_ref": 0.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C00",
+      "fraction": "1e-12",
+      "t_s": 1e-12,
+      "c_ref": 1.0,
+      "b_ref": 0.0,
+      "sink_ref": 0.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C00",
+      "fraction": "1e-9",
+      "t_s": 1e-09,
+      "c_ref": 1.0,
+      "b_ref": 0.0,
+      "sink_ref": 0.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C00",
+      "fraction": "1e-6",
+      "t_s": 1e-06,
+      "c_ref": 1.0,
+      "b_ref": 0.0,
+      "sink_ref": 0.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C00",
+      "fraction": "1e-3",
+      "t_s": 0.001,
+      "c_ref": 1.0,
+      "b_ref": 0.0,
+      "sink_ref": 0.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C00",
+      "fraction": "0.01",
+      "t_s": 0.01,
+      "c_ref": 1.0,
+      "b_ref": 0.0,
+      "sink_ref": 0.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C00",
+      "fraction": "0.1",
+      "t_s": 0.1,
+      "c_ref": 1.0,
+      "b_ref": 0.0,
+      "sink_ref": 0.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C00",
+      "fraction": "0.5",
+      "t_s": 0.5,
+      "c_ref": 1.0,
+      "b_ref": 0.0,
+      "sink_ref": 0.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C00",
+      "fraction": "1",
+      "t_s": 1.0,
+      "c_ref": 1.0,
+      "b_ref": 0.0,
+      "sink_ref": 0.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C01",
+      "fraction": "0",
+      "t_s": 0.0,
+      "c_ref": 1.0,
+      "b_ref": 0.0,
+      "sink_ref": 1.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C01",
+      "fraction": "1e-12",
+      "t_s": 1e-12,
+      "c_ref": 0.999999999999,
+      "b_ref": 0.0,
+      "sink_ref": 0.999999999999,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C01",
+      "fraction": "1e-9",
+      "t_s": 1e-09,
+      "c_ref": 0.999999999,
+      "b_ref": 0.0,
+      "sink_ref": 0.999999999,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C01",
+      "fraction": "1e-6",
+      "t_s": 1e-06,
+      "c_ref": 0.9999990000005,
+      "b_ref": 0.0,
+      "sink_ref": 0.9999990000005,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C01",
+      "fraction": "1e-3",
+      "t_s": 0.001,
+      "c_ref": 0.999000499833375,
+      "b_ref": 0.0,
+      "sink_ref": 0.999000499833375,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C01",
+      "fraction": "0.01",
+      "t_s": 0.01,
+      "c_ref": 0.9900498337491681,
+      "b_ref": 0.0,
+      "sink_ref": 0.9900498337491681,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C01",
+      "fraction": "0.1",
+      "t_s": 0.1,
+      "c_ref": 0.9048374180359596,
+      "b_ref": 0.0,
+      "sink_ref": 0.9048374180359596,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C01",
+      "fraction": "0.5",
+      "t_s": 0.5,
+      "c_ref": 0.6065306597126334,
+      "b_ref": 0.0,
+      "sink_ref": 0.6065306597126334,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C01",
+      "fraction": "1",
+      "t_s": 1.0,
+      "c_ref": 0.36787944117144233,
+      "b_ref": 0.0,
+      "sink_ref": 0.36787944117144233,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C02",
+      "fraction": "0",
+      "t_s": 0.0,
+      "c_ref": 1.0,
+      "b_ref": 0.0,
+      "sink_ref": 1.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C02",
+      "fraction": "1e-12",
+      "t_s": 1e-12,
+      "c_ref": 0.999999999999,
+      "b_ref": 0.0,
+      "sink_ref": 0.999999999999,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C02",
+      "fraction": "1e-9",
+      "t_s": 1e-09,
+      "c_ref": 0.999999999,
+      "b_ref": 0.0,
+      "sink_ref": 0.999999999,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C02",
+      "fraction": "1e-6",
+      "t_s": 1e-06,
+      "c_ref": 0.9999990000005,
+      "b_ref": 0.0,
+      "sink_ref": 0.9999990000005,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C02",
+      "fraction": "1e-3",
+      "t_s": 0.001,
+      "c_ref": 0.999000499833375,
+      "b_ref": 0.0,
+      "sink_ref": 0.999000499833375,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C02",
+      "fraction": "0.01",
+      "t_s": 0.01,
+      "c_ref": 0.9900498337491681,
+      "b_ref": 0.0,
+      "sink_ref": 0.9900498337491681,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C02",
+      "fraction": "0.1",
+      "t_s": 0.1,
+      "c_ref": 0.9048374180359596,
+      "b_ref": 0.0,
+      "sink_ref": 0.9048374180359596,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C02",
+      "fraction": "0.5",
+      "t_s": 0.5,
+      "c_ref": 0.6065306597126334,
+      "b_ref": 0.0,
+      "sink_ref": 0.6065306597126334,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C02",
+      "fraction": "1",
+      "t_s": 1.0,
+      "c_ref": 0.36787944117144233,
+      "b_ref": 0.0,
+      "sink_ref": 0.36787944117144233,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C03",
+      "fraction": "0",
+      "t_s": 0.0,
+      "c_ref": 1.0,
+      "b_ref": 0.0,
+      "sink_ref": 1.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C03",
+      "fraction": "1e-12",
+      "t_s": 1e-12,
+      "c_ref": 0.999999999999,
+      "b_ref": 0.0,
+      "sink_ref": 0.999999999999,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C03",
+      "fraction": "1e-9",
+      "t_s": 1e-09,
+      "c_ref": 0.999999999,
+      "b_ref": 0.0,
+      "sink_ref": 0.999999999,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C03",
+      "fraction": "1e-6",
+      "t_s": 1e-06,
+      "c_ref": 0.9999990000005,
+      "b_ref": 0.0,
+      "sink_ref": 0.9999990000005,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C03",
+      "fraction": "1e-3",
+      "t_s": 0.001,
+      "c_ref": 0.999000499833375,
+      "b_ref": 0.0,
+      "sink_ref": 0.999000499833375,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C03",
+      "fraction": "0.01",
+      "t_s": 0.01,
+      "c_ref": 0.9900498337491681,
+      "b_ref": 0.0,
+      "sink_ref": 0.9900498337491681,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C03",
+      "fraction": "0.1",
+      "t_s": 0.1,
+      "c_ref": 0.9048374180359596,
+      "b_ref": 0.0,
+      "sink_ref": 0.9048374180359596,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C03",
+      "fraction": "0.5",
+      "t_s": 0.5,
+      "c_ref": 0.6065306597126334,
+      "b_ref": 0.0,
+      "sink_ref": 0.6065306597126334,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C03",
+      "fraction": "1",
+      "t_s": 1.0,
+      "c_ref": 0.36787944117144233,
+      "b_ref": 0.0,
+      "sink_ref": 0.36787944117144233,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C04",
+      "fraction": "0",
+      "t_s": 0.0,
+      "c_ref": 1.0,
+      "b_ref": 4.0,
+      "sink_ref": 1.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C04",
+      "fraction": "1e-12",
+      "t_s": 1e-12,
+      "c_ref": 0.999999999999,
+      "b_ref": 4.0,
+      "sink_ref": 0.999999999999,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C04",
+      "fraction": "1e-9",
+      "t_s": 1e-09,
+      "c_ref": 0.999999999,
+      "b_ref": 4.0,
+      "sink_ref": 0.999999999,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C04",
+      "fraction": "1e-6",
+      "t_s": 1e-06,
+      "c_ref": 0.9999990000005,
+      "b_ref": 4.0,
+      "sink_ref": 0.9999990000005,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C04",
+      "fraction": "1e-3",
+      "t_s": 0.001,
+      "c_ref": 0.999000499833375,
+      "b_ref": 4.0,
+      "sink_ref": 0.999000499833375,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C04",
+      "fraction": "0.01",
+      "t_s": 0.01,
+      "c_ref": 0.9900498337491681,
+      "b_ref": 4.0,
+      "sink_ref": 0.9900498337491681,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C04",
+      "fraction": "0.1",
+      "t_s": 0.1,
+      "c_ref": 0.9048374180359596,
+      "b_ref": 4.0,
+      "sink_ref": 0.9048374180359596,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C04",
+      "fraction": "0.5",
+      "t_s": 0.5,
+      "c_ref": 0.6065306597126334,
+      "b_ref": 4.0,
+      "sink_ref": 0.6065306597126334,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C04",
+      "fraction": "1",
+      "t_s": 1.0,
+      "c_ref": 0.36787944117144233,
+      "b_ref": 4.0,
+      "sink_ref": 0.36787944117144233,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C05",
+      "fraction": "0",
+      "t_s": 0.0,
+      "c_ref": 1.0,
+      "b_ref": 4.0,
+      "sink_ref": 1000.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C05",
+      "fraction": "1e-12",
+      "t_s": 1e-12,
+      "c_ref": 0.999999999,
+      "b_ref": 4.0,
+      "sink_ref": 999.999999,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C05",
+      "fraction": "1e-9",
+      "t_s": 1e-09,
+      "c_ref": 0.9999990000005,
+      "b_ref": 4.0,
+      "sink_ref": 999.9990000005,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C05",
+      "fraction": "1e-6",
+      "t_s": 1e-06,
+      "c_ref": 0.999000499833375,
+      "b_ref": 4.0,
+      "sink_ref": 999.000499833375,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C05",
+      "fraction": "1e-3",
+      "t_s": 0.001,
+      "c_ref": 0.36787944117144233,
+      "b_ref": 4.0,
+      "sink_ref": 367.8794411714423,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C05",
+      "fraction": "0.01",
+      "t_s": 0.01,
+      "c_ref": 4.5399929762484854e-05,
+      "b_ref": 4.0,
+      "sink_ref": 0.04539992976248485,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C05",
+      "fraction": "0.1",
+      "t_s": 0.1,
+      "c_ref": 3.720075976020836e-44,
+      "b_ref": 4.0,
+      "sink_ref": 3.720075976020836e-41,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C05",
+      "fraction": "0.5",
+      "t_s": 0.5,
+      "c_ref": 7.124576406741286e-218,
+      "b_ref": 4.0,
+      "sink_ref": 7.124576406741286e-215,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C05",
+      "fraction": "1",
+      "t_s": 1.0,
+      "c_ref": 0.0,
+      "b_ref": 4.0,
+      "sink_ref": 0.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C06",
+      "fraction": "0",
+      "t_s": 0.0,
+      "c_ref": 1.0,
+      "b_ref": 4.0,
+      "sink_ref": 0.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C06",
+      "fraction": "1e-12",
+      "t_s": 1e-12,
+      "c_ref": 1.0,
+      "b_ref": 4.0,
+      "sink_ref": 0.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C06",
+      "fraction": "1e-9",
+      "t_s": 1e-09,
+      "c_ref": 1.0,
+      "b_ref": 4.0,
+      "sink_ref": 0.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C06",
+      "fraction": "1e-6",
+      "t_s": 1e-06,
+      "c_ref": 1.0,
+      "b_ref": 4.0,
+      "sink_ref": 0.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C06",
+      "fraction": "1e-3",
+      "t_s": 0.001,
+      "c_ref": 1.0,
+      "b_ref": 4.0,
+      "sink_ref": 0.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C06",
+      "fraction": "0.01",
+      "t_s": 0.01,
+      "c_ref": 1.0,
+      "b_ref": 4.0,
+      "sink_ref": 0.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C06",
+      "fraction": "0.1",
+      "t_s": 0.1,
+      "c_ref": 1.0,
+      "b_ref": 4.0,
+      "sink_ref": 0.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C06",
+      "fraction": "0.5",
+      "t_s": 0.5,
+      "c_ref": 1.0,
+      "b_ref": 4.0,
+      "sink_ref": 0.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C06",
+      "fraction": "1",
+      "t_s": 1.0,
+      "c_ref": 1.0,
+      "b_ref": 4.0,
+      "sink_ref": 0.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C07",
+      "fraction": "0",
+      "t_s": 0.0,
+      "c_ref": 1.0,
+      "b_ref": 1000000.0,
+      "sink_ref": 0.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C07",
+      "fraction": "1e-12",
+      "t_s": 1e-12,
+      "c_ref": 1.0,
+      "b_ref": 1000000.0,
+      "sink_ref": 0.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C07",
+      "fraction": "1e-9",
+      "t_s": 1e-09,
+      "c_ref": 1.0,
+      "b_ref": 1000000.0,
+      "sink_ref": 0.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C07",
+      "fraction": "1e-6",
+      "t_s": 1e-06,
+      "c_ref": 1.0,
+      "b_ref": 1000000.0,
+      "sink_ref": 0.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C07",
+      "fraction": "1e-3",
+      "t_s": 0.001,
+      "c_ref": 1.0,
+      "b_ref": 1000000.0,
+      "sink_ref": 0.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C07",
+      "fraction": "0.01",
+      "t_s": 0.01,
+      "c_ref": 1.0,
+      "b_ref": 1000000.0,
+      "sink_ref": 0.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C07",
+      "fraction": "0.1",
+      "t_s": 0.1,
+      "c_ref": 1.0,
+      "b_ref": 1000000.0,
+      "sink_ref": 0.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C07",
+      "fraction": "0.5",
+      "t_s": 0.5,
+      "c_ref": 1.0,
+      "b_ref": 1000000.0,
+      "sink_ref": 0.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C07",
+      "fraction": "1",
+      "t_s": 1.0,
+      "c_ref": 1.0,
+      "b_ref": 1000000.0,
+      "sink_ref": 0.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C08",
+      "fraction": "0",
+      "t_s": 0.0,
+      "c_ref": 1.0,
+      "b_ref": 4.0,
+      "sink_ref": 1.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C08",
+      "fraction": "1e-12",
+      "t_s": 1e-12,
+      "c_ref": 0.999999999999,
+      "b_ref": 4.0,
+      "sink_ref": 0.999999999999,
+      "release_ref": 3.999999999998e-20
+    },
+    {
+      "case_id": "C08",
+      "fraction": "1e-9",
+      "t_s": 1e-09,
+      "c_ref": 0.999999999,
+      "b_ref": 4.0,
+      "sink_ref": 0.999999999,
+      "release_ref": 3.999999998e-17
+    },
+    {
+      "case_id": "C08",
+      "fraction": "1e-6",
+      "t_s": 1e-06,
+      "c_ref": 0.9999990000005,
+      "b_ref": 4.0,
+      "sink_ref": 0.9999990000005,
+      "release_ref": 3.9999980000005664e-14
+    },
+    {
+      "case_id": "C08",
+      "fraction": "1e-3",
+      "t_s": 0.001,
+      "c_ref": 0.999000499833395,
+      "b_ref": 3.99999999999998,
+      "sink_ref": 0.999000499833395,
+      "release_ref": 3.998000666400093e-11
+    },
+    {
+      "case_id": "C08",
+      "fraction": "0.01",
+      "t_s": 0.01,
+      "c_ref": 0.9900498337511547,
+      "b_ref": 3.9999999999980065,
+      "sink_ref": 0.9900498337511547,
+      "release_ref": 3.980066499338757e-10
+    },
+    {
+      "case_id": "C08",
+      "fraction": "0.1",
+      "t_s": 0.1,
+      "c_ref": 0.9048374182231131,
+      "b_ref": 3.9999999998065032,
+      "sink_ref": 0.9048374182231131,
+      "release_ref": 3.8065032691405055e-09
+    },
+    {
+      "case_id": "C08",
+      "fraction": "0.5",
+      "t_s": 0.5,
+      "c_ref": 0.6065306633207939,
+      "b_ref": 3.9999999957387735,
+      "sink_ref": 0.6065306633207939,
+      "release_ref": 1.5738773424555985e-08
+    },
+    {
+      "case_id": "C08",
+      "fraction": "1",
+      "t_s": 1.0,
+      "c_ref": 0.3678794517410869,
+      "b_ref": 3.9999999852848225,
+      "sink_ref": 0.3678794517410869,
+      "release_ref": 2.528482178320475e-08
+    },
+    {
+      "case_id": "C09",
+      "fraction": "0",
+      "t_s": 0.0,
+      "c_ref": 1.0,
+      "b_ref": 4.0,
+      "sink_ref": 1.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C09",
+      "fraction": "1e-12",
+      "t_s": 1e-12,
+      "c_ref": 0.999999999999,
+      "b_ref": 4.0,
+      "sink_ref": 0.999999999999,
+      "release_ref": 3.9999999999979e-14
+    },
+    {
+      "case_id": "C09",
+      "fraction": "1e-9",
+      "t_s": 1e-09,
+      "c_ref": 0.999999999,
+      "b_ref": 4.0,
+      "sink_ref": 0.999999999,
+      "release_ref": 3.9999999979e-11
+    },
+    {
+      "case_id": "C09",
+      "fraction": "1e-6",
+      "t_s": 1e-06,
+      "c_ref": 0.99999900000052,
+      "b_ref": 3.99999999999998,
+      "sink_ref": 0.99999900000052,
+      "release_ref": 3.999997900000728e-08
+    },
+    {
+      "case_id": "C09",
+      "fraction": "1e-3",
+      "t_s": 0.001,
+      "c_ref": 0.9990005198197136,
+      "b_ref": 3.999999980006998,
+      "sink_ref": 0.9990005198197136,
+      "release_ref": 3.997900728143935e-05
+    },
+    {
+      "case_id": "C09",
+      "fraction": "0.01",
+      "t_s": 0.01,
+      "c_ref": 0.990051820134734,
+      "b_ref": 3.9999980069818295,
+      "sink_ref": 0.990051820134734,
+      "release_ref": 0.00039790726442893277
+    },
+    {
+      "case_id": "C09",
+      "fraction": "0.1",
+      "t_s": 0.1,
+      "c_ref": 0.9050242611537352,
+      "b_ref": 3.9998068216406844,
+      "sink_ref": 0.9050242611537352,
+      "release_ref": 0.003797097770257433
+    },
+    {
+      "case_id": "C09",
+      "fraction": "0.5",
+      "t_s": 0.5,
+      "c_ref": 0.6101094510038879,
+      "b_ref": 3.9957720828527723,
+      "sink_ref": 0.6101094510038879,
+      "release_ref": 0.015553342788372204
+    },
+    {
+      "case_id": "C09",
+      "fraction": "1",
+      "t_s": 1.0,
+      "c_ref": 0.3782812040015808,
+      "b_ref": 3.98550097272908,
+      "sink_ref": 0.3782812040015808,
+      "release_ref": 0.02472376156722757
+    },
+    {
+      "case_id": "C10",
+      "fraction": "0",
+      "t_s": 0.0,
+      "c_ref": 1.0,
+      "b_ref": 4.0,
+      "sink_ref": 1.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C10",
+      "fraction": "1e-12",
+      "t_s": 1e-12,
+      "c_ref": 0.999999999999,
+      "b_ref": 4.0,
+      "sink_ref": 0.999999999999,
+      "release_ref": 3.999999999988e-12
+    },
+    {
+      "case_id": "C10",
+      "fraction": "1e-9",
+      "t_s": 1e-09,
+      "c_ref": 0.999999999,
+      "b_ref": 4.0,
+      "sink_ref": 0.999999999,
+      "release_ref": 3.999999988e-09
+    },
+    {
+      "case_id": "C10",
+      "fraction": "1e-6",
+      "t_s": 1e-06,
+      "c_ref": 0.9999990000025,
+      "b_ref": 3.999999999998,
+      "sink_ref": 0.9999990000025,
+      "release_ref": 3.9999880000233336e-06
+    },
+    {
+      "case_id": "C10",
+      "fraction": "1e-3",
+      "t_s": 0.001,
+      "c_ref": 0.9990024951737001,
+      "b_ref": 3.9999980039941736,
+      "sink_ref": 0.9990024951737001,
+      "release_ref": 0.003988023299372929
+    },
+    {
+      "case_id": "C10",
+      "fraction": "0.01",
+      "t_s": 0.01,
+      "c_ref": 0.9902452362704077,
+      "b_ref": 3.9998039423401157,
+      "sink_ref": 0.9902452362704077,
+      "release_ref": 0.03882299725848491
+    },
+    {
+      "case_id": "C10",
+      "fraction": "0.1",
+      "t_s": 0.1,
+      "c_ref": 0.9207961051126127,
+      "b_ref": 3.9834785734920435,
+      "sink_ref": 0.9207961051126127,
+      "release_ref": 0.3002941530415927
+    },
+    {
+      "case_id": "C10",
+      "fraction": "0.5",
+      "t_s": 0.5,
+      "c_ref": 0.7913271922609396,
+      "b_ref": 3.7759262619281437,
+      "sink_ref": 0.7913271922609396,
+      "release_ref": 0.6106174928843855
+    },
+    {
+      "case_id": "C10",
+      "fraction": "1",
+      "t_s": 1.0,
+      "c_ref": 0.7194121558656852,
+      "b_ref": 3.4711913532255583,
+      "sink_ref": 0.7194121558656852,
+      "release_ref": 0.5935427297628175
+    },
+    {
+      "case_id": "C11",
+      "fraction": "0",
+      "t_s": 0.0,
+      "c_ref": 1.0,
+      "b_ref": 4.0,
+      "sink_ref": 1.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C11",
+      "fraction": "1e-12",
+      "t_s": 1e-12,
+      "c_ref": 0.999999999999,
+      "b_ref": 4.0,
+      "sink_ref": 0.999999999999,
+      "release_ref": 3.999999998998e-10
+    },
+    {
+      "case_id": "C11",
+      "fraction": "1e-9",
+      "t_s": 1e-09,
+      "c_ref": 0.9999999990000003,
+      "b_ref": 4.0,
+      "sink_ref": 0.9999999990000003,
+      "release_ref": 3.9999989980001673e-07
+    },
+    {
+      "case_id": "C11",
+      "fraction": "1e-6",
+      "t_s": 1e-06,
+      "c_ref": 0.9999990002004665,
+      "b_ref": 3.9999999998000333,
+      "sink_ref": 0.9999990002004665,
+      "release_ref": 0.00039989981672463936
+    },
+    {
+      "case_id": "C11",
+      "fraction": "1e-3",
+      "t_s": 0.001,
+      "c_ref": 0.9991708362124766,
+      "b_ref": 3.9998296045481267,
+      "sink_ref": 0.9991708362124766,
+      "release_ref": 0.3146259698220223
+    },
+    {
+      "case_id": "C11",
+      "fraction": "0.01",
+      "t_s": 0.01,
+      "c_ref": 0.996420345080523,
+      "b_ref": 3.9936024325434336,
+      "sink_ref": 0.996420345080523,
+      "release_ref": 0.7921052221341562
+    },
+    {
+      "case_id": "C11",
+      "fraction": "0.1",
+      "t_s": 0.1,
+      "c_ref": 0.9786628904894504,
+      "b_ref": 3.9224839930474085,
+      "sink_ref": 0.9786628904894504,
+      "release_ref": 0.7832431089606843
+    },
+    {
+      "case_id": "C11",
+      "fraction": "0.5",
+      "t_s": 0.5,
+      "c_ref": 0.903535218246616,
+      "b_ref": 3.6213720425778746,
+      "sink_ref": 0.903535218246616,
+      "release_ref": 0.7231169591410787
+    },
+    {
+      "case_id": "C11",
+      "fraction": "1",
+      "t_s": 1.0,
+      "c_ref": 0.8176831359534537,
+      "b_ref": 3.2772766223496688,
+      "sink_ref": 0.8176831359534537,
+      "release_ref": 0.6544078535854206
+    },
+    {
+      "case_id": "C12",
+      "fraction": "0",
+      "t_s": 0.0,
+      "c_ref": 1.0,
+      "b_ref": 4.0,
+      "sink_ref": 1.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C12",
+      "fraction": "1e-12",
+      "t_s": 1e-12,
+      "c_ref": 0.999999999999,
+      "b_ref": 4.0,
+      "sink_ref": 0.999999999999,
+      "release_ref": 3.999999989998e-09
+    },
+    {
+      "case_id": "C12",
+      "fraction": "1e-9",
+      "t_s": 1e-09,
+      "c_ref": 0.999999999000002,
+      "b_ref": 3.999999999999998,
+      "sink_ref": 0.999999999000002,
+      "release_ref": 3.999989998016672e-06
+    },
+    {
+      "case_id": "C12",
+      "fraction": "1e-6",
+      "t_s": 1e-06,
+      "c_ref": 0.9999990019971695,
+      "b_ref": 3.9999999980033296,
+      "sink_ref": 0.9999990019971695,
+      "release_ref": 0.003990014651843995
+    },
+    {
+      "case_id": "C12",
+      "fraction": "1e-3",
+      "t_s": 0.001,
+      "c_ref": 0.9996411739020182,
+      "b_ref": 3.9993590542695925,
+      "sink_ref": 0.9996411739020182,
+      "release_ref": 0.7943586615194793
+    },
+    {
+      "case_id": "C12",
+      "fraction": "0.01",
+      "t_s": 0.01,
+      "c_ref": 0.9978426503945311,
+      "b_ref": 3.9921689076255737,
+      "sink_ref": 0.9978426503945311,
+      "release_ref": 0.7983060474489773
+    },
+    {
+      "case_id": "C12",
+      "fraction": "0.1",
+      "t_s": 0.1,
+      "c_ref": 0.980044989829462,
+      "b_ref": 3.920964026667388,
+      "sink_ref": 0.980044989829462,
+      "release_ref": 0.7840673495401222
+    },
+    {
+      "case_id": "C12",
+      "fraction": "0.5",
+      "t_s": 0.5,
+      "c_ref": 0.9047071290935199,
+      "b_ref": 3.619552311024509,
+      "sink_ref": 0.9047071290935199,
+      "release_ref": 0.7237946504291032
+    },
+    {
+      "case_id": "C12",
+      "fraction": "1",
+      "t_s": 1.0,
+      "c_ref": 0.8186259591066364,
+      "b_ref": 3.275158763386718,
+      "sink_ref": 0.8186259591066364,
+      "release_ref": 0.6549269601726864
+    },
+    {
+      "case_id": "C13",
+      "fraction": "0",
+      "t_s": 0.0,
+      "c_ref": 1.0,
+      "b_ref": 4.0,
+      "sink_ref": 1.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C13",
+      "fraction": "1e-12",
+      "t_s": 1e-12,
+      "c_ref": 0.9999999999996411,
+      "b_ref": 3.9999999999993587,
+      "sink_ref": 0.9999999999996411,
+      "release_ref": 0.7946096424004806
+    },
+    {
+      "case_id": "C13",
+      "fraction": "1e-9",
+      "t_s": 1e-09,
+      "c_ref": 0.99999999979984,
+      "b_ref": 3.99999999920016,
+      "sink_ref": 0.99999999979984,
+      "release_ref": 0.799999999839904
+    },
+    {
+      "case_id": "C13",
+      "fraction": "1e-6",
+      "t_s": 1e-06,
+      "c_ref": 0.99999979999986,
+      "b_ref": 3.99999920000024,
+      "sink_ref": 0.99999979999986,
+      "release_ref": 0.79999983999992
+    },
+    {
+      "case_id": "C13",
+      "fraction": "1e-3",
+      "t_s": 0.001,
+      "c_ref": 0.9998000199985068,
+      "b_ref": 3.999200079994827,
+      "sink_ref": 0.9998000199985068,
+      "release_ref": 0.7998400159988375
+    },
+    {
+      "case_id": "C13",
+      "fraction": "0.01",
+      "t_s": 0.01,
+      "c_ref": 0.9980019986671737,
+      "b_ref": 3.992007994669493,
+      "sink_ref": 0.9980019986671737,
+      "release_ref": 0.7984015989337709
+    },
+    {
+      "case_id": "C13",
+      "fraction": "0.1",
+      "t_s": 0.1,
+      "c_ref": 0.9801986733066016,
+      "b_ref": 3.9207946932271907,
+      "sink_ref": 0.9801986733066016,
+      "release_ref": 0.7841589386453126
+    },
+    {
+      "case_id": "C13",
+      "fraction": "0.5",
+      "t_s": 0.5,
+      "c_ref": 0.9048374180358293,
+      "b_ref": 3.619349672144041,
+      "sink_ref": 0.9048374180358293,
+      "release_ref": 0.7238699344286924
+    },
+    {
+      "case_id": "C13",
+      "fraction": "1",
+      "t_s": 1.0,
+      "c_ref": 0.818730753077877,
+      "b_ref": 3.274923012312163,
+      "sink_ref": 0.818730753077877,
+      "release_ref": 0.6549846024623278
+    },
+    {
+      "case_id": "C14",
+      "fraction": "0",
+      "t_s": 0.0,
+      "c_ref": 1.0,
+      "b_ref": 1e-24,
+      "sink_ref": 1.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C14",
+      "fraction": "1e-12",
+      "t_s": 1e-12,
+      "c_ref": 0.999999999999,
+      "b_ref": 1e-24,
+      "sink_ref": 0.999999999999,
+      "release_ref": 9.99999999999e-37
+    },
+    {
+      "case_id": "C14",
+      "fraction": "1e-9",
+      "t_s": 1e-09,
+      "c_ref": 0.999999999,
+      "b_ref": 1e-24,
+      "sink_ref": 0.999999999,
+      "release_ref": 9.99999999e-34
+    },
+    {
+      "case_id": "C14",
+      "fraction": "1e-6",
+      "t_s": 1e-06,
+      "c_ref": 0.9999990000005,
+      "b_ref": 9.999999999995e-25,
+      "sink_ref": 0.9999990000005,
+      "release_ref": 9.999990000005e-31
+    },
+    {
+      "case_id": "C14",
+      "fraction": "1e-3",
+      "t_s": 0.001,
+      "c_ref": 0.999000499833375,
+      "b_ref": 9.999995003332084e-25,
+      "sink_ref": 0.999000499833375,
+      "release_ref": 9.990004998333749e-28
+    },
+    {
+      "case_id": "C14",
+      "fraction": "0.01",
+      "t_s": 0.01,
+      "c_ref": 0.9900498337491681,
+      "b_ref": 9.999503320866597e-25,
+      "sink_ref": 0.9900498337491681,
+      "release_ref": 9.900498337491681e-27
+    },
+    {
+      "case_id": "C14",
+      "fraction": "0.1",
+      "t_s": 0.1,
+      "c_ref": 0.9048374180359596,
+      "b_ref": 9.953211598395556e-25,
+      "sink_ref": 0.9048374180359596,
+      "release_ref": 9.048374180359596e-26
+    },
+    {
+      "case_id": "C14",
+      "fraction": "0.5",
+      "t_s": 0.5,
+      "c_ref": 0.6065306597126334,
+      "b_ref": 9.097959895689502e-25,
+      "sink_ref": 0.6065306597126334,
+      "release_ref": 3.032653298563167e-25
+    },
+    {
+      "case_id": "C14",
+      "fraction": "1",
+      "t_s": 1.0,
+      "c_ref": 0.36787944117144233,
+      "b_ref": 7.357588823428846e-25,
+      "sink_ref": 0.36787944117144233,
+      "release_ref": 3.678794411714423e-25
+    },
+    {
+      "case_id": "C15",
+      "fraction": "0",
+      "t_s": 0.0,
+      "c_ref": 1.0,
+      "b_ref": 1000000.0,
+      "sink_ref": 1.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C15",
+      "fraction": "1e-12",
+      "t_s": 1e-12,
+      "c_ref": 0.999999999999,
+      "b_ref": 1000000.0,
+      "sink_ref": 0.999999999999,
+      "release_ref": 9.999994999991666e-07
+    },
+    {
+      "case_id": "C15",
+      "fraction": "1e-9",
+      "t_s": 1e-09,
+      "c_ref": 0.9999999990004999,
+      "b_ref": 1000000.0,
+      "sink_ref": 0.9999999990004999,
+      "release_ref": 0.0009995001656256748
+    },
+    {
+      "case_id": "C15",
+      "fraction": "1e-6",
+      "t_s": 1e-06,
+      "c_ref": 0.9999993678796018,
+      "b_ref": 999999.9999996321,
+      "sink_ref": 0.9999993678796018,
+      "release_ref": 0.63212003034654
+    },
+    {
+      "case_id": "C15",
+      "fraction": "1e-3",
+      "t_s": 0.001,
+      "c_ref": 0.999998999003003,
+      "b_ref": 999999.9990010019,
+      "sink_ref": 0.999998999003003,
+      "release_ref": 0.999997999006004
+    },
+    {
+      "case_id": "C15",
+      "fraction": "0.01",
+      "t_s": 0.01,
+      "c_ref": 0.99999899000303,
+      "b_ref": 999999.99000102,
+      "sink_ref": 0.99999899000303,
+      "release_ref": 0.9999979900060401
+    },
+    {
+      "case_id": "C15",
+      "fraction": "0.1",
+      "t_s": 0.1,
+      "c_ref": 0.9999989000033049,
+      "b_ref": 999999.900001205,
+      "sink_ref": 0.9999989000033049,
+      "release_ref": 0.999997900006405
+    },
+    {
+      "case_id": "C15",
+      "fraction": "0.5",
+      "t_s": 0.5,
+      "c_ref": 0.999998500004625,
+      "b_ref": 999999.500002125,
+      "sink_ref": 0.999998500004625,
+      "release_ref": 0.9999975000081249
+    },
+    {
+      "case_id": "C15",
+      "fraction": "1",
+      "t_s": 1.0,
+      "c_ref": 0.9999980000065,
+      "b_ref": 999999.0000035,
+      "sink_ref": 0.9999980000065,
+      "release_ref": 0.9999970000105
+    },
+    {
+      "case_id": "C16",
+      "fraction": "0",
+      "t_s": 0.0,
+      "c_ref": 1.0,
+      "b_ref": 4.0,
+      "sink_ref": 1000000.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C16",
+      "fraction": "1e-12",
+      "t_s": 1e-12,
+      "c_ref": 0.9999990000005,
+      "b_ref": 4.0,
+      "sink_ref": 999999.0000005,
+      "release_ref": 3.999997999990667e-06
+    },
+    {
+      "case_id": "C16",
+      "fraction": "1e-9",
+      "t_s": 1e-09,
+      "c_ref": 0.9990004998353736,
+      "b_ref": 3.9999999999980007,
+      "sink_ref": 999000.4998353736,
+      "release_ref": 0.003998000656506031
+    },
+    {
+      "case_id": "C16",
+      "fraction": "1e-6",
+      "t_s": 1e-06,
+      "c_ref": 0.3678804981342136,
+      "b_ref": 3.999998528484422,
+      "sink_ref": 367880.49813421356,
+      "release_ref": 2.5284765359475676
+    },
+    {
+      "case_id": "C16",
+      "fraction": "1e-3",
+      "t_s": 0.001,
+      "c_ref": 3.99599402329345e-06,
+      "b_ref": 3.9960060112915032,
+      "sink_ref": 3.9959940232934494,
+      "release_ref": 3.9959900273154103
+    },
+    {
+      "case_id": "C16",
+      "fraction": "0.01",
+      "t_s": 0.01,
+      "c_ref": 3.960191572985386e-06,
+      "b_ref": 3.9602034535759456,
+      "sink_ref": 3.960191572985386,
+      "release_ref": 3.9601876128096536
+    },
+    {
+      "case_id": "C16",
+      "fraction": "0.1",
+      "t_s": 0.1,
+      "c_ref": 3.6193438811593172e-06,
+      "b_ref": 3.619354739205438,
+      "sink_ref": 3.6193438811593173,
+      "release_ref": 3.6193402618299135
+    },
+    {
+      "case_id": "C16",
+      "fraction": "0.5",
+      "t_s": 0.5,
+      "c_ref": 2.426122638818994e-06,
+      "b_ref": 2.426129917196615,
+      "sink_ref": 2.426122638818994,
+      "release_ref": 2.42612021270606
+    },
+    {
+      "case_id": "C16",
+      "fraction": "1",
+      "t_s": 1.0,
+      "c_ref": 1.471520707696283e-06,
+      "b_ref": 1.471525122264292,
+      "sink_ref": 1.4715207076962828,
+      "release_ref": 1.4715192361814613
+    },
+    {
+      "case_id": "C17",
+      "fraction": "0",
+      "t_s": 0.0,
+      "c_ref": 1.0,
+      "b_ref": 4.0,
+      "sink_ref": 1.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C17",
+      "fraction": "1e-12",
+      "t_s": 1e-24,
+      "c_ref": 1.0,
+      "b_ref": 4.0,
+      "sink_ref": 1.0,
+      "release_ref": 4e-24
+    },
+    {
+      "case_id": "C17",
+      "fraction": "1e-9",
+      "t_s": 1e-21,
+      "c_ref": 1.0,
+      "b_ref": 4.0,
+      "sink_ref": 1.0,
+      "release_ref": 4e-21
+    },
+    {
+      "case_id": "C17",
+      "fraction": "1e-6",
+      "t_s": 1e-18,
+      "c_ref": 1.0,
+      "b_ref": 4.0,
+      "sink_ref": 1.0,
+      "release_ref": 4e-18
+    },
+    {
+      "case_id": "C17",
+      "fraction": "1e-3",
+      "t_s": 1e-15,
+      "c_ref": 0.999999999999999,
+      "b_ref": 4.0,
+      "sink_ref": 0.999999999999999,
+      "release_ref": 3.999999999999988e-15
+    },
+    {
+      "case_id": "C17",
+      "fraction": "0.01",
+      "t_s": 1e-14,
+      "c_ref": 0.99999999999999,
+      "b_ref": 4.0,
+      "sink_ref": 0.99999999999999,
+      "release_ref": 3.99999999999988e-14
+    },
+    {
+      "case_id": "C17",
+      "fraction": "0.1",
+      "t_s": 1e-13,
+      "c_ref": 0.9999999999999,
+      "b_ref": 4.0,
+      "sink_ref": 0.9999999999999,
+      "release_ref": 3.9999999999988e-13
+    },
+    {
+      "case_id": "C17",
+      "fraction": "0.5",
+      "t_s": 5e-13,
+      "c_ref": 0.9999999999995,
+      "b_ref": 4.0,
+      "sink_ref": 0.9999999999995,
+      "release_ref": 1.999999999997e-12
+    },
+    {
+      "case_id": "C17",
+      "fraction": "1",
+      "t_s": 1e-12,
+      "c_ref": 0.999999999999,
+      "b_ref": 4.0,
+      "sink_ref": 0.999999999999,
+      "release_ref": 3.999999999988e-12
+    },
+    {
+      "case_id": "C18",
+      "fraction": "0",
+      "t_s": 0.0,
+      "c_ref": 0.0,
+      "b_ref": 0.0,
+      "sink_ref": 0.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C18",
+      "fraction": "1e-12",
+      "t_s": 1e-12,
+      "c_ref": 0.0,
+      "b_ref": 0.0,
+      "sink_ref": 0.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C18",
+      "fraction": "1e-9",
+      "t_s": 1e-09,
+      "c_ref": 0.0,
+      "b_ref": 0.0,
+      "sink_ref": 0.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C18",
+      "fraction": "1e-6",
+      "t_s": 1e-06,
+      "c_ref": 0.0,
+      "b_ref": 0.0,
+      "sink_ref": 0.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C18",
+      "fraction": "1e-3",
+      "t_s": 0.001,
+      "c_ref": 0.0,
+      "b_ref": 0.0,
+      "sink_ref": 0.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C18",
+      "fraction": "0.01",
+      "t_s": 0.01,
+      "c_ref": 0.0,
+      "b_ref": 0.0,
+      "sink_ref": 0.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C18",
+      "fraction": "0.1",
+      "t_s": 0.1,
+      "c_ref": 0.0,
+      "b_ref": 0.0,
+      "sink_ref": 0.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C18",
+      "fraction": "0.5",
+      "t_s": 0.5,
+      "c_ref": 0.0,
+      "b_ref": 0.0,
+      "sink_ref": 0.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C18",
+      "fraction": "1",
+      "t_s": 1.0,
+      "c_ref": 0.0,
+      "b_ref": 0.0,
+      "sink_ref": 0.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C19",
+      "fraction": "0",
+      "t_s": 0.0,
+      "c_ref": 0.2,
+      "b_ref": 0.8,
+      "sink_ref": 0.1,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C19",
+      "fraction": "1e-12",
+      "t_s": 3e-12,
+      "c_ref": 0.1999999999997,
+      "b_ref": 0.8,
+      "sink_ref": 0.09999999999985,
+      "release_ref": 2.3999999999622e-12
+    },
+    {
+      "case_id": "C19",
+      "fraction": "1e-9",
+      "t_s": 3e-09,
+      "c_ref": 0.19999999970000001,
+      "b_ref": 0.8,
+      "sink_ref": 0.09999999985000001,
+      "release_ref": 2.3999999622000004e-09
+    },
+    {
+      "case_id": "C19",
+      "fraction": "1e-6",
+      "t_s": 3e-06,
+      "c_ref": 0.19999970000382497,
+      "b_ref": 0.7999999999964,
+      "sink_ref": 0.09999985000191249,
+      "release_ref": 2.399962200393297e-06
+    },
+    {
+      "case_id": "C19",
+      "fraction": "1e-3",
+      "t_s": 0.003,
+      "c_ref": 0.1997037855954429,
+      "b_ref": 0.7999964375068568,
+      "sink_ref": 0.09985189279772146,
+      "release_ref": 0.0023625902501702954
+    },
+    {
+      "case_id": "C19",
+      "fraction": "0.01",
+      "t_s": 0.03,
+      "c_ref": 0.19734570237295238,
+      "b_ref": 0.7996750252157315,
+      "sink_ref": 0.09867285118647619,
+      "release_ref": 0.02058443144784411
+    },
+    {
+      "case_id": "C19",
+      "fraction": "0.1",
+      "t_s": 0.3,
+      "c_ref": 0.187047187782735,
+      "b_ref": 0.7841798973720338,
+      "sink_ref": 0.0935235938913675,
+      "release_ref": 0.07198229248218763
+    },
+    {
+      "case_id": "C19",
+      "fraction": "0.5",
+      "t_s": 1.5,
+      "c_ref": 0.16636261326875942,
+      "b_ref": 0.6990458814836679,
+      "sink_ref": 0.08318130663437971,
+      "release_ref": 0.06719085681726049
+    },
+    {
+      "case_id": "C19",
+      "fraction": "1",
+      "t_s": 3.0,
+      "c_ref": 0.14402585951785102,
+      "b_ref": 0.6051881664743008,
+      "sink_ref": 0.07201292975892551,
+      "release_ref": 0.05816945680579343
+    },
+    {
+      "case_id": "C20",
+      "fraction": "0",
+      "t_s": 0.0,
+      "c_ref": 1.0,
+      "b_ref": 1e-12,
+      "sink_ref": 1.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C20",
+      "fraction": "1e-12",
+      "t_s": 1e-12,
+      "c_ref": 0.999999999999,
+      "b_ref": 1e-12,
+      "sink_ref": 0.999999999999,
+      "release_ref": 9.99999999999e-25
+    },
+    {
+      "case_id": "C20",
+      "fraction": "1e-9",
+      "t_s": 1e-09,
+      "c_ref": 0.999999999,
+      "b_ref": 1e-12,
+      "sink_ref": 0.999999999,
+      "release_ref": 9.99999999e-22
+    },
+    {
+      "case_id": "C20",
+      "fraction": "1e-6",
+      "t_s": 1e-06,
+      "c_ref": 0.9999990000005,
+      "b_ref": 9.999999999995e-13,
+      "sink_ref": 0.9999990000005,
+      "release_ref": 9.999990000005e-19
+    },
+    {
+      "case_id": "C20",
+      "fraction": "1e-3",
+      "t_s": 0.001,
+      "c_ref": 0.999000499833375,
+      "b_ref": 9.999995003332083e-13,
+      "sink_ref": 0.999000499833375,
+      "release_ref": 9.990004998333744e-16
+    },
+    {
+      "case_id": "C20",
+      "fraction": "0.01",
+      "t_s": 0.01,
+      "c_ref": 0.9900498337491681,
+      "b_ref": 9.999503320866597e-13,
+      "sink_ref": 0.9900498337491681,
+      "release_ref": 9.900498337491632e-15
+    },
+    {
+      "case_id": "C20",
+      "fraction": "0.1",
+      "t_s": 0.1,
+      "c_ref": 0.9048374180359641,
+      "b_ref": 9.953211598395556e-13,
+      "sink_ref": 0.9048374180359641,
+      "release_ref": 9.048374180359159e-14
+    },
+    {
+      "case_id": "C20",
+      "fraction": "0.5",
+      "t_s": 0.5,
+      "c_ref": 0.6065306597127093,
+      "b_ref": 9.097959895689628e-13,
+      "sink_ref": 0.6065306597127093,
+      "release_ref": 3.0326532985625354e-13
+    },
+    {
+      "case_id": "C20",
+      "fraction": "1",
+      "t_s": 1.0,
+      "c_ref": 0.36787944117162624,
+      "b_ref": 7.35758882342946e-13,
+      "sink_ref": 0.36787944117162624,
+      "release_ref": 3.678794411713197e-13
+    },
+    {
+      "case_id": "C21",
+      "fraction": "0",
+      "t_s": 0.0,
+      "c_ref": 1.0,
+      "b_ref": 4.0,
+      "sink_ref": 1.0,
+      "release_ref": 0.0
+    },
+    {
+      "case_id": "C21",
+      "fraction": "1e-12",
+      "t_s": 1e-09,
+      "c_ref": 0.999999999,
+      "b_ref": 4.0,
+      "sink_ref": 0.999999999,
+      "release_ref": 3.999999988e-09
+    },
+    {
+      "case_id": "C21",
+      "fraction": "1e-9",
+      "t_s": 1e-06,
+      "c_ref": 0.9999990000025,
+      "b_ref": 3.999999999998,
+      "sink_ref": 0.9999990000025,
+      "release_ref": 3.9999880000233336e-06
+    },
+    {
+      "case_id": "C21",
+      "fraction": "1e-6",
+      "t_s": 0.001,
+      "c_ref": 0.9990024951737001,
+      "b_ref": 3.9999980039941736,
+      "sink_ref": 0.9990024951737001,
+      "release_ref": 0.003988023299372929
+    },
+    {
+      "case_id": "C21",
+      "fraction": "1e-3",
+      "t_s": 1.0,
+      "c_ref": 0.7194121558656852,
+      "b_ref": 3.4711913532255583,
+      "sink_ref": 0.7194121558656852,
+      "release_ref": 0.5935427297628175
+    },
+    {
+      "case_id": "C21",
+      "fraction": "0.01",
+      "t_s": 10.0,
+      "c_ref": 0.15349674208862285,
+      "b_ref": 0.7411478330608768,
+      "sink_ref": 0.15349674208862285,
+      "release_ref": 0.12716086470638535
+    },
+    {
+      "case_id": "C21",
+      "fraction": "0.1",
+      "t_s": 100.0,
+      "c_ref": 3.019363461252421e-08,
+      "b_ref": 1.457877643577873e-07,
+      "sink_ref": 3.019363461252421e-08,
+      "release_ref": 2.5013225907690475e-08
+    },
+    {
+      "case_id": "C21",
+      "fraction": "0.5",
+      "t_s": 500.0,
+      "c_ref": 4.727746789022807e-38,
+      "b_ref": 2.2827580835049423e-37,
+      "sink_ref": 4.727746789022807e-38,
+      "release_ref": 3.916593678958197e-38
+    },
+    {
+      "case_id": "C21",
+      "fraction": "1",
+      "t_s": 1000.0,
+      "c_ref": 2.618651621262929e-75,
+      "b_ref": 1.2643968518366511e-74,
+      "sink_ref": 2.618651621262929e-75,
+      "release_ref": 2.169362033314797e-75
+    }
+  ]
+}

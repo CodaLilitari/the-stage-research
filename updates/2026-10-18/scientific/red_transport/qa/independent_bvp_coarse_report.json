@@ -1,0 +1,1301 @@
+{
+  "schema": "stage.red_independent_bvp.v1",
+  "status": "failed_checks",
+  "method": "Independent SciPy solve_bvp collocation on normalized depth with Robin/no-flux boundaries; log-bulk PCHIP tables, adaptive quadrature and DOP853 lumen ODE. Direct target-oxygen root for equal power; no Red code imported.",
+  "scope": "Seven selected saved configurations including strongest E5/E6 witnesses, reported panel/capacity comparison, and identical-module control. Not full-grid independent solution.",
+  "numpy_version": "2.5.4",
+  "scipy_version": "1.18.1",
+  "checks": [
+    {
+      "name": "equal_flow_maxmin",
+      "configuration": [
+        "base",
+        "4",
+        "100.0",
+        "P0.05_wall",
+        "1",
+        "8"
+      ],
+      "actual": 0.11253266088971611,
+      "saved": 0.112532657038,
+      "absolute_error": 3.851716112723835e-09,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_flow_parallel_uniform",
+      "configuration": [
+        "base",
+        "4",
+        "100.0",
+        "P0.05_wall",
+        "1",
+        "8"
+      ],
+      "actual": 0.08289870586297153,
+      "saved": 0.0828987088935,
+      "absolute_error": 3.030528467062865e-09,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_flow_parallel_demand_prop",
+      "configuration": [
+        "base",
+        "4",
+        "100.0",
+        "P0.05_wall",
+        "1",
+        "8"
+      ],
+      "actual": 0.1060848234522331,
+      "saved": 0.106084829065,
+      "absolute_error": 5.612766890150667e-09,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_flow_series_limited_first",
+      "configuration": [
+        "base",
+        "4",
+        "100.0",
+        "P0.05_wall",
+        "1",
+        "8"
+      ],
+      "actual": 0.1142712524767205,
+      "saved": 0.114271258493,
+      "absolute_error": 6.016279502363275e-09,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_flow_series_limited_last",
+      "configuration": [
+        "base",
+        "4",
+        "100.0",
+        "P0.05_wall",
+        "1",
+        "8"
+      ],
+      "actual": 0.1057139560262851,
+      "saved": 0.105713967023,
+      "absolute_error": 1.0996714899791371e-08,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_flow_series_best",
+      "configuration": [
+        "base",
+        "4",
+        "100.0",
+        "P0.05_wall",
+        "1",
+        "8"
+      ],
+      "actual": 0.1142712524767205,
+      "saved": 0.114271258493,
+      "absolute_error": 6.016279502363275e-09,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_flow_series_worst",
+      "configuration": [
+        "base",
+        "4",
+        "100.0",
+        "P0.05_wall",
+        "1",
+        "8"
+      ],
+      "actual": 0.1057139560262851,
+      "saved": 0.105713967023,
+      "absolute_error": 1.0996714899791371e-08,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_power_direct_optimum",
+      "configuration": [
+        "base",
+        "4",
+        "100.0",
+        "P0.05_wall",
+        "1",
+        "8"
+      ],
+      "actual": 0.10081574535549628,
+      "saved": 0.100815753393,
+      "absolute_error": 8.03750371813905e-09,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_power_series_limited_first",
+      "configuration": [
+        "base",
+        "4",
+        "100.0",
+        "P0.05_wall",
+        "1",
+        "8"
+      ],
+      "actual": 0.08289870586297153,
+      "saved": 0.0828987088935,
+      "absolute_error": 3.030528467062865e-09,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_power_series_best",
+      "configuration": [
+        "base",
+        "4",
+        "100.0",
+        "P0.05_wall",
+        "1",
+        "8"
+      ],
+      "actual": 0.08289870586297153,
+      "saved": 0.0828987088935,
+      "absolute_error": 3.030528467062865e-09,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_flow_maxmin",
+      "configuration": [
+        "base",
+        "4",
+        "200.0",
+        "P0.05_wall",
+        "1",
+        "8"
+      ],
+      "actual": 0.021593549318178196,
+      "saved": 0.0215935343522,
+      "absolute_error": 1.4965978196307406e-08,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_flow_parallel_uniform",
+      "configuration": [
+        "base",
+        "4",
+        "200.0",
+        "P0.05_wall",
+        "1",
+        "8"
+      ],
+      "actual": 0.010642574497717374,
+      "saved": 0.010642573897,
+      "absolute_error": 6.007173751487738e-10,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_flow_parallel_demand_prop",
+      "configuration": [
+        "base",
+        "4",
+        "200.0",
+        "P0.05_wall",
+        "1",
+        "8"
+      ],
+      "actual": 0.019947820113054335,
+      "saved": 0.0199478050916,
+      "absolute_error": 1.5021454333880024e-08,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_flow_series_limited_first",
+      "configuration": [
+        "base",
+        "4",
+        "200.0",
+        "P0.05_wall",
+        "1",
+        "8"
+      ],
+      "actual": 0.02186729686231429,
+      "saved": 0.0218672809262,
+      "absolute_error": 1.5936114289294423e-08,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_flow_series_limited_last",
+      "configuration": [
+        "base",
+        "4",
+        "200.0",
+        "P0.05_wall",
+        "1",
+        "8"
+      ],
+      "actual": 0.019354398364001563,
+      "saved": 0.0193544050115,
+      "absolute_error": 6.6474984371234225e-09,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_flow_series_best",
+      "configuration": [
+        "base",
+        "4",
+        "200.0",
+        "P0.05_wall",
+        "1",
+        "8"
+      ],
+      "actual": 0.02186729686231429,
+      "saved": 0.0218672809262,
+      "absolute_error": 1.5936114289294423e-08,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_flow_series_worst",
+      "configuration": [
+        "base",
+        "4",
+        "200.0",
+        "P0.05_wall",
+        "1",
+        "8"
+      ],
+      "actual": 0.019354398364001563,
+      "saved": 0.0193544050115,
+      "absolute_error": 6.6474984371234225e-09,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_power_direct_optimum",
+      "configuration": [
+        "base",
+        "4",
+        "200.0",
+        "P0.05_wall",
+        "1",
+        "8"
+      ],
+      "actual": 0.016745787428528936,
+      "saved": 0.0167457847116,
+      "absolute_error": 2.7169289353035087e-09,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_power_series_limited_first",
+      "configuration": [
+        "base",
+        "4",
+        "200.0",
+        "P0.05_wall",
+        "1",
+        "8"
+      ],
+      "actual": 0.010642574497717374,
+      "saved": 0.010642573897,
+      "absolute_error": 6.007173751487738e-10,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_power_series_best",
+      "configuration": [
+        "base",
+        "4",
+        "200.0",
+        "P0.05_wall",
+        "1",
+        "8"
+      ],
+      "actual": 0.010642574497717374,
+      "saved": 0.010642573897,
+      "absolute_error": 6.007173751487738e-10,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_flow_maxmin",
+      "configuration": [
+        "base",
+        "4",
+        "200.0",
+        "P0.05_wall",
+        "256",
+        "8"
+      ],
+      "actual": 0.027939432063134192,
+      "saved": 0.0279394424628,
+      "absolute_error": 1.0399665809068814e-08,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_flow_parallel_uniform",
+      "configuration": [
+        "base",
+        "4",
+        "200.0",
+        "P0.05_wall",
+        "256",
+        "8"
+      ],
+      "actual": 0.027858948691452053,
+      "saved": 0.0278589722496,
+      "absolute_error": 2.3558147946300956e-08,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_flow_parallel_demand_prop",
+      "configuration": [
+        "base",
+        "4",
+        "200.0",
+        "P0.05_wall",
+        "256",
+        "8"
+      ],
+      "actual": 0.02792936746123043,
+      "saved": 0.027929375956,
+      "absolute_error": 8.49476957179296e-09,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_flow_series_limited_first",
+      "configuration": [
+        "base",
+        "4",
+        "200.0",
+        "P0.05_wall",
+        "256",
+        "8"
+      ],
+      "actual": 0.027939441749514682,
+      "saved": 0.0279394479693,
+      "absolute_error": 6.219785318728466e-09,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_flow_series_limited_last",
+      "configuration": [
+        "base",
+        "4",
+        "200.0",
+        "P0.05_wall",
+        "256",
+        "8"
+      ],
+      "actual": 0.02792620313216145,
+      "saved": 0.0279262123357,
+      "absolute_error": 9.203538552798873e-09,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_flow_series_best",
+      "configuration": [
+        "base",
+        "4",
+        "200.0",
+        "P0.05_wall",
+        "256",
+        "8"
+      ],
+      "actual": 0.027939441749514682,
+      "saved": 0.0279394479693,
+      "absolute_error": 6.219785318728466e-09,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_flow_series_worst",
+      "configuration": [
+        "base",
+        "4",
+        "200.0",
+        "P0.05_wall",
+        "256",
+        "8"
+      ],
+      "actual": 0.02792620313216145,
+      "saved": 0.0279262123357,
+      "absolute_error": 9.203538552798873e-09,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_flow_maxmin",
+      "configuration": [
+        "two_sided_hotspot",
+        "4",
+        "200.0",
+        "P0.05_wall",
+        "1",
+        "8"
+      ],
+      "actual": 0.10064587726722113,
+      "saved": 0.100645887392,
+      "absolute_error": 1.0124778876408058e-08,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_flow_parallel_uniform",
+      "configuration": [
+        "two_sided_hotspot",
+        "4",
+        "200.0",
+        "P0.05_wall",
+        "1",
+        "8"
+      ],
+      "actual": 0.0733713588263735,
+      "saved": 0.0733713794666,
+      "absolute_error": 2.064022650016817e-08,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_flow_parallel_demand_prop",
+      "configuration": [
+        "two_sided_hotspot",
+        "4",
+        "200.0",
+        "P0.05_wall",
+        "1",
+        "8"
+      ],
+      "actual": 0.09550689289869349,
+      "saved": 0.0955069133799,
+      "absolute_error": 2.048120650854912e-08,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_flow_series_limited_first",
+      "configuration": [
+        "two_sided_hotspot",
+        "4",
+        "200.0",
+        "P0.05_wall",
+        "1",
+        "8"
+      ],
+      "actual": 0.10340268978702319,
+      "saved": 0.103402686398,
+      "absolute_error": 3.389023187083673e-09,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_flow_series_limited_last",
+      "configuration": [
+        "two_sided_hotspot",
+        "4",
+        "200.0",
+        "P0.05_wall",
+        "1",
+        "8"
+      ],
+      "actual": 0.09515004176761105,
+      "saved": 0.095150063497,
+      "absolute_error": 2.172938895483867e-08,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_flow_series_best",
+      "configuration": [
+        "two_sided_hotspot",
+        "4",
+        "200.0",
+        "P0.05_wall",
+        "1",
+        "8"
+      ],
+      "actual": 0.10340268978702319,
+      "saved": 0.103402686398,
+      "absolute_error": 3.389023187083673e-09,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_flow_series_worst",
+      "configuration": [
+        "two_sided_hotspot",
+        "4",
+        "200.0",
+        "P0.05_wall",
+        "1",
+        "8"
+      ],
+      "actual": 0.09509981458416103,
+      "saved": 0.0950998370637,
+      "absolute_error": 2.247953896639121e-08,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_power_direct_optimum",
+      "configuration": [
+        "two_sided_hotspot",
+        "4",
+        "200.0",
+        "P0.05_wall",
+        "1",
+        "8"
+      ],
+      "actual": 0.08867295067098142,
+      "saved": 0.08867293621,
+      "absolute_error": 1.4460981426211994e-08,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_power_series_limited_first",
+      "configuration": [
+        "two_sided_hotspot",
+        "4",
+        "200.0",
+        "P0.05_wall",
+        "1",
+        "8"
+      ],
+      "actual": 0.03519019995868879,
+      "saved": 0.0351902090628,
+      "absolute_error": 9.104111207969279e-09,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_power_series_best",
+      "configuration": [
+        "two_sided_hotspot",
+        "4",
+        "200.0",
+        "P0.05_wall",
+        "1",
+        "8"
+      ],
+      "actual": 0.03519019995868879,
+      "saved": 0.0351902090628,
+      "absolute_error": 9.104111207969279e-09,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_flow_maxmin",
+      "configuration": [
+        "two_sided_hotspot",
+        "4",
+        "200.0",
+        "P0.2_wall",
+        "1",
+        "1"
+      ],
+      "actual": 0.0030908097621386993,
+      "saved": 0.00309080937127,
+      "absolute_error": 3.9086869938614877e-10,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_flow_parallel_uniform",
+      "configuration": [
+        "two_sided_hotspot",
+        "4",
+        "200.0",
+        "P0.2_wall",
+        "1",
+        "1"
+      ],
+      "actual": 5.0980571061062915e-05,
+      "saved": 5.09805771615e-05,
+      "absolute_error": 6.100437083928715e-12,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_flow_parallel_demand_prop",
+      "configuration": [
+        "two_sided_hotspot",
+        "4",
+        "200.0",
+        "P0.2_wall",
+        "1",
+        "1"
+      ],
+      "actual": 0.0024820731527651304,
+      "saved": 0.00248207531424,
+      "absolute_error": 2.1614748697482145e-09,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_flow_series_limited_first",
+      "configuration": [
+        "two_sided_hotspot",
+        "4",
+        "200.0",
+        "P0.2_wall",
+        "1",
+        "1"
+      ],
+      "actual": 0.00419497328665798,
+      "saved": 0.00419497329195,
+      "absolute_error": 5.292020294200839e-12,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_flow_series_limited_last",
+      "configuration": [
+        "two_sided_hotspot",
+        "4",
+        "200.0",
+        "P0.2_wall",
+        "1",
+        "1"
+      ],
+      "actual": 0.003104655184686958,
+      "saved": 0.00310465507288,
+      "absolute_error": 1.1180695778933991e-10,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_flow_series_best",
+      "configuration": [
+        "two_sided_hotspot",
+        "4",
+        "200.0",
+        "P0.2_wall",
+        "1",
+        "1"
+      ],
+      "actual": 0.005072660372699731,
+      "saved": 0.00507266027506,
+      "absolute_error": 9.763973136955872e-11,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_flow_series_worst",
+      "configuration": [
+        "two_sided_hotspot",
+        "4",
+        "200.0",
+        "P0.2_wall",
+        "1",
+        "1"
+      ],
+      "actual": 0.0026676955230538237,
+      "saved": 0.00266769551545,
+      "absolute_error": 7.603823820589994e-12,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_power_direct_optimum",
+      "configuration": [
+        "two_sided_hotspot",
+        "4",
+        "200.0",
+        "P0.2_wall",
+        "1",
+        "1"
+      ],
+      "actual": 0.00047758479454223276,
+      "saved": 0.0004775847908,
+      "absolute_error": 3.742232760652053e-12,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_power_series_limited_first",
+      "configuration": [
+        "two_sided_hotspot",
+        "4",
+        "200.0",
+        "P0.2_wall",
+        "1",
+        "1"
+      ],
+      "actual": 1.0748531207362602e-13,
+      "saved": 1.07485325293e-13,
+      "absolute_error": 1.3219373979693577e-20,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_power_series_best",
+      "configuration": [
+        "two_sided_hotspot",
+        "4",
+        "200.0",
+        "P0.2_wall",
+        "1",
+        "1"
+      ],
+      "actual": 1.1224428706248877e-12,
+      "saved": 1.12244266577e-12,
+      "absolute_error": 2.0485488771846603e-19,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_flow_maxmin",
+      "configuration": [
+        "base",
+        "4",
+        "200.0",
+        "P0.2_wall",
+        "256",
+        "1"
+      ],
+      "actual": 0.04626965073756482,
+      "saved": 0.0462698160593,
+      "absolute_error": 1.6532173518352122e-07,
+      "tolerance_mol_m3": 1e-07,
+      "pass": false
+    },
+    {
+      "name": "equal_flow_parallel_uniform",
+      "configuration": [
+        "base",
+        "4",
+        "200.0",
+        "P0.2_wall",
+        "256",
+        "1"
+      ],
+      "actual": 0.04515107397656559,
+      "saved": 0.0451514133711,
+      "absolute_error": 3.3939453440712253e-07,
+      "tolerance_mol_m3": 1e-07,
+      "pass": false
+    },
+    {
+      "name": "equal_flow_parallel_demand_prop",
+      "configuration": [
+        "base",
+        "4",
+        "200.0",
+        "P0.2_wall",
+        "256",
+        "1"
+      ],
+      "actual": 0.04612927005059095,
+      "saved": 0.0461294801861,
+      "absolute_error": 2.1013550904891432e-07,
+      "tolerance_mol_m3": 1e-07,
+      "pass": false
+    },
+    {
+      "name": "equal_flow_series_limited_first",
+      "configuration": [
+        "base",
+        "4",
+        "200.0",
+        "P0.2_wall",
+        "256",
+        "1"
+      ],
+      "actual": 0.046270375855021285,
+      "saved": 0.0462705398521,
+      "absolute_error": 1.6399707871567193e-07,
+      "tolerance_mol_m3": 1e-07,
+      "pass": false
+    },
+    {
+      "name": "equal_flow_series_limited_last",
+      "configuration": [
+        "base",
+        "4",
+        "200.0",
+        "P0.2_wall",
+        "256",
+        "1"
+      ],
+      "actual": 0.046103867961704036,
+      "saved": 0.0461040856054,
+      "absolute_error": 2.1764369596138922e-07,
+      "tolerance_mol_m3": 1e-07,
+      "pass": false
+    },
+    {
+      "name": "equal_flow_series_best",
+      "configuration": [
+        "base",
+        "4",
+        "200.0",
+        "P0.2_wall",
+        "256",
+        "1"
+      ],
+      "actual": 0.046270375855021285,
+      "saved": 0.0462705398521,
+      "absolute_error": 1.6399707871567193e-07,
+      "tolerance_mol_m3": 1e-07,
+      "pass": false
+    },
+    {
+      "name": "equal_flow_series_worst",
+      "configuration": [
+        "base",
+        "4",
+        "200.0",
+        "P0.2_wall",
+        "256",
+        "1"
+      ],
+      "actual": 0.046103867961704036,
+      "saved": 0.0461040856054,
+      "absolute_error": 2.1764369596138922e-07,
+      "tolerance_mol_m3": 1e-07,
+      "pass": false
+    },
+    {
+      "name": "equal_flow_maxmin",
+      "configuration": [
+        "two_sided_hotspot",
+        "1",
+        "200.0",
+        "P0.05_wall",
+        "1",
+        "1"
+      ],
+      "actual": 0.0635976799829445,
+      "saved": 0.0635976827597,
+      "absolute_error": 2.7767555060842497e-09,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_flow_parallel_uniform",
+      "configuration": [
+        "two_sided_hotspot",
+        "1",
+        "200.0",
+        "P0.05_wall",
+        "1",
+        "1"
+      ],
+      "actual": 0.06359768460485865,
+      "saved": 0.0635976827597,
+      "absolute_error": 1.8451586508705375e-09,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_flow_parallel_demand_prop",
+      "configuration": [
+        "two_sided_hotspot",
+        "1",
+        "200.0",
+        "P0.05_wall",
+        "1",
+        "1"
+      ],
+      "actual": 0.06359768460485865,
+      "saved": 0.0635976827597,
+      "absolute_error": 1.8451586508705375e-09,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_flow_series_limited_first",
+      "configuration": [
+        "two_sided_hotspot",
+        "1",
+        "200.0",
+        "P0.05_wall",
+        "1",
+        "1"
+      ],
+      "actual": 0.06359768366694196,
+      "saved": 0.0635976827597,
+      "absolute_error": 9.072419621114491e-10,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_flow_series_limited_last",
+      "configuration": [
+        "two_sided_hotspot",
+        "1",
+        "200.0",
+        "P0.05_wall",
+        "1",
+        "1"
+      ],
+      "actual": 0.06359768366694281,
+      "saved": 0.0635976827597,
+      "absolute_error": 9.072428086565054e-10,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_flow_series_best",
+      "configuration": [
+        "two_sided_hotspot",
+        "1",
+        "200.0",
+        "P0.05_wall",
+        "1",
+        "1"
+      ],
+      "actual": 0.06359768366694196,
+      "saved": 0.0635976827597,
+      "absolute_error": 9.072419621114491e-10,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_flow_series_worst",
+      "configuration": [
+        "two_sided_hotspot",
+        "1",
+        "200.0",
+        "P0.05_wall",
+        "1",
+        "1"
+      ],
+      "actual": 0.06359768366694196,
+      "saved": 0.0635976827597,
+      "absolute_error": 9.072419621114491e-10,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_power_direct_optimum",
+      "configuration": [
+        "two_sided_hotspot",
+        "1",
+        "200.0",
+        "P0.05_wall",
+        "1",
+        "1"
+      ],
+      "actual": 0.06359767998294438,
+      "saved": 0.0635976827597,
+      "absolute_error": 2.776755617106552e-09,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_power_series_limited_first",
+      "configuration": [
+        "two_sided_hotspot",
+        "1",
+        "200.0",
+        "P0.05_wall",
+        "1",
+        "1"
+      ],
+      "actual": 3.269149787807227e-07,
+      "saved": 3.26914969587e-07,
+      "absolute_error": 9.193722714552488e-15,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    },
+    {
+      "name": "equal_power_series_best",
+      "configuration": [
+        "two_sided_hotspot",
+        "1",
+        "200.0",
+        "P0.05_wall",
+        "1",
+        "1"
+      ],
+      "actual": 3.269150082148155e-07,
+      "saved": 3.26914969587e-07,
+      "absolute_error": 3.862781550557505e-14,
+      "tolerance_mol_m3": 1e-07,
+      "pass": true
+    }
+  ],
+  "passed": 57,
+  "total": 64,
+  "cases": [
+    {
+      "configuration": [
+        "base",
+        "4",
+        "100.0",
+        "P0.05_wall",
+        "1",
+        "8"
+      ],
+      "independent_maxmin": 0.11253266088971611,
+      "independent_Qbeta_allocations": [
+        6.0554855307632415e-12,
+        6.0554855307632415e-12,
+        6.0554855307632415e-12,
+        1.1516687674293672e-10
+      ],
+      "equal_flow_sum_relative_error": 1.4198198172721277e-11,
+      "equal_power_direct_optimum": 0.10081574535549628,
+      "equal_power_allocations": [
+        5.1139817705788176e-12,
+        5.1139817705788176e-12,
+        5.1139817705788176e-12,
+        5.943557148021566e-11
+      ],
+      "equal_power_ratio": 0.9999999999902468
+    },
+    {
+      "configuration": [
+        "base",
+        "4",
+        "200.0",
+        "P0.05_wall",
+        "1",
+        "8"
+      ],
+      "independent_maxmin": 0.021593549318178196,
+      "independent_Qbeta_allocations": [
+        2.170412807750399e-12,
+        2.170412807750399e-12,
+        2.170412807750399e-12,
+        1.2682209491004324e-10
+      ],
+      "equal_flow_sum_relative_error": 2.9176661087149114e-13,
+      "equal_power_direct_optimum": 0.016745787428528936,
+      "equal_power_allocations": [
+        2.041135703760476e-12,
+        2.041135703760476e-12,
+        2.041135703760476e-12,
+        6.367523129385886e-11
+      ],
+      "equal_power_ratio": 0.9999999999998387
+    },
+    {
+      "configuration": [
+        "base",
+        "4",
+        "200.0",
+        "P0.05_wall",
+        "256",
+        "8"
+      ],
+      "independent_maxmin": 0.027939432063134192,
+      "independent_Qbeta_allocations": [
+        2.3317523128654965e-12,
+        2.3317523128654965e-12,
+        2.3317523128654965e-12,
+        3.412633806668527e-08
+      ],
+      "equal_flow_sum_relative_error": 2.844572355442665e-10
+    },
+    {
+      "configuration": [
+        "two_sided_hotspot",
+        "4",
+        "200.0",
+        "P0.05_wall",
+        "1",
+        "8"
+      ],
+      "independent_maxmin": 0.10064587726722113,
+      "independent_Qbeta_allocations": [
+        5.102313785952086e-12,
+        5.102313785952086e-12,
+        5.102313785952086e-12,
+        5.901319598712002e-11,
+        5.901319598712002e-11
+      ],
+      "equal_flow_sum_relative_error": 9.277911772187508e-12,
+      "equal_power_direct_optimum": 0.08867295067098142,
+      "equal_power_allocations": [
+        4.38495178975327e-12,
+        4.38495178975327e-12,
+        4.38495178975327e-12,
+        3.9003051508807633e-11,
+        3.9003051508807633e-11
+      ],
+      "equal_power_ratio": 1.0000000000000009
+    },
+    {
+      "configuration": [
+        "two_sided_hotspot",
+        "4",
+        "200.0",
+        "P0.2_wall",
+        "1",
+        "1"
+      ],
+      "independent_maxmin": 0.0030908097621386993,
+      "independent_Qbeta_allocations": [
+        1.5567244205401442e-12,
+        1.5567244205401442e-12,
+        1.5567244205401442e-12,
+        5.99824670252309e-12,
+        5.99824670252309e-12
+      ],
+      "equal_flow_sum_relative_error": 3.3306690738754696e-15,
+      "equal_power_direct_optimum": 0.00047758479454223276,
+      "equal_power_allocations": [
+        1.267382831770176e-12,
+        1.267382831770176e-12,
+        1.267382831770176e-12,
+        4.4049552533074776e-12,
+        4.4049552533074776e-12
+      ],
+      "equal_power_ratio": 0.9999999999999993
+    },
+    {
+      "configuration": [
+        "base",
+        "4",
+        "200.0",
+        "P0.2_wall",
+        "256",
+        "1"
+      ],
+      "independent_maxmin": 0.04626965073756482,
+      "independent_Qbeta_allocations": [
+        2.728123742290232e-12,
+        2.728123742290232e-12,
+        2.728123742290232e-12,
+        4.258482295439488e-09
+      ],
+      "equal_flow_sum_relative_error": 7.227551890309769e-14
+    },
+    {
+      "configuration": [
+        "two_sided_hotspot",
+        "1",
+        "200.0",
+        "P0.05_wall",
+        "1",
+        "1"
+      ],
+      "independent_maxmin": 0.0635976799829445,
+      "independent_Qbeta_allocations": [
+        3.3333333333327144e-12,
+        3.3333333333327144e-12,
+        3.3333333333327144e-12,
+        3.333333333332726e-12,
+        3.333333333332726e-12
+      ],
+      "equal_flow_sum_relative_error": 1.844080443902385e-13,
+      "equal_power_direct_optimum": 0.06359767998294438,
+      "equal_power_allocations": [
+        3.3333333333327103e-12,
+        3.3333333333327103e-12,
+        3.3333333333327103e-12,
+        3.3333333333327212e-12,
+        3.3333333333327212e-12
+      ],
+      "equal_power_ratio": 0.9999999999996307
+    }
+  ],
+  "tables": [
+    {
+      "H_m": 0.0001,
+      "q_mol_m3_s": 0.005,
+      "P_m_s": 5e-05,
+      "grid_points": 881,
+      "minimum_bulk_grid_mol_m3": 1e-60,
+      "ceiling": 0.18048500810059478,
+      "collocation_max_residual": 1.9999883832551816e-09,
+      "max_nodes": 161,
+      "seconds": 1.4060000000754371
+    },
+    {
+      "H_m": 9.999999999999999e-05,
+      "q_mol_m3_s": 0.02,
+      "P_m_s": 5e-05,
+      "grid_points": 881,
+      "minimum_bulk_grid_mol_m3": 1e-60,
+      "ceiling": 0.1254869269445758,
+      "collocation_max_residual": 1.999968661017433e-09,
+      "max_nodes": 321,
+      "seconds": 2.218999999924563
+    },
+    {
+      "H_m": 0.00019999999999999998,
+      "q_mol_m3_s": 0.02,
+      "P_m_s": 5e-05,
+      "grid_points": 881,
+      "minimum_bulk_grid_mol_m3": 1e-60,
+      "ceiling": 0.02796632421619582,
+      "collocation_max_residual": 1.9999989239634813e-09,
+      "max_nodes": 672,
+      "seconds": 3.73499999998603
+    },
+    {
+      "H_m": 0.0001,
+      "q_mol_m3_s": 0.005,
+      "P_m_s": 0.0002,
+      "grid_points": 881,
+      "minimum_bulk_grid_mol_m3": 1e-60,
+      "ceiling": 0.18693527891542405,
+      "collocation_max_residual": 1.9998449891278668e-09,
+      "max_nodes": 161,
+      "seconds": 1.4689999999245629
+    },
+    {
+      "H_m": 9.999999999999999e-05,
+      "q_mol_m3_s": 0.02,
+      "P_m_s": 0.0002,
+      "grid_points": 881,
+      "minimum_bulk_grid_mol_m3": 1e-60,
+      "ceiling": 0.14908896339968766,
+      "collocation_max_residual": 1.999991469332478e-09,
+      "max_nodes": 330,
+      "seconds": 2.125
+    },
+    {
+      "H_m": 0.00019999999999999998,
+      "q_mol_m3_s": 0.02,
+      "P_m_s": 0.0002,
+      "grid_points": 881,
+      "minimum_bulk_grid_mol_m3": 1e-60,
+      "ceiling": 0.046648333193304976,
+      "collocation_max_residual": 1.9999623151173764e-09,
+      "max_nodes": 715,
+      "seconds": 3.6570000000065193
+    },
+    {
+      "H_m": 9.999999999999999e-05,
+      "q_mol_m3_s": 0.005,
+      "P_m_s": 5e-05,
+      "grid_points": 881,
+      "minimum_bulk_grid_mol_m3": 1e-60,
+      "ceiling": 0.18048500810059442,
+      "collocation_max_residual": 1.999988386035541e-09,
+      "max_nodes": 161,
+      "seconds": 1.4059999999590218
+    }
+  ],
+  "elapsed_seconds": 16.905999999959022,
+  "absolute_error_limit_mol_m3": 1e-07,
+  "source_inputs": "cowork_local/al1_results.csv and explicitly disclosed mathematical constants",
+  "resource_limits": {
+    "cpu_core_mask": 1,
+    "process_memory_bytes": 1073741824,
+    "timeout_seconds": 360
+  },
+  "quadrature_warnings": {
+    "count": 0,
+    "unique": []
+  }
+}

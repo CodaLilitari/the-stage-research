@@ -1,0 +1,74 @@
+WREN PARTIAL ARCHIVE — CODA READ-ONLY STATIC REVIEW
+17 October 2026. No collaborator code imported or executed; no network or solve.
+Input: ../wren_linear_received/original/stage-wren-linear-2026-10-17/
+
+Integrity and evidence
+All 11 SHA256SUMS payload entries match their delivered bytes. The separate
+FROZEN_PLAN.sha256 matches FROZEN_PLAN.md, and results.json carries that hash.
+This establishes internal integrity of the received package, not an independently
+witnessed pre-run freeze time. Run 1 source and machine-generated traceback are
+absent. ENV.txt and ledger.csv explicitly identify reconstructed history.
+
+The 847-byte truncated JSON terminates at F1.balance_ok, consistent with sorted
+JSON attempting to serialize numpy.bool_. D and E are complete before that point;
+F1 contains Q, QU, T, U, a, a_int_c and b, but not c. The curated results.json
+faithfully distinguishes captured fields from hand-derived F1 c/hydraulics.
+No F2–F6 endpoints, RK4 results or completed validation are recoverable from that
+fragment. Empty run_stdout.txt supplies no additional evidence. Their reported
+execution/loss is collaborator testimony consistent with code order, not saved
+numeric evidence. The fixed bench.py adds the documented casts and remains
+unexecuted. No successful recovery may be attributed to Wren's original run.
+
+Concrete defects and limitations
+1. FROZEN_PLAN planned arithmetic is 18, not 17: 6 exact/balance + 6 RK4 + D + E
+   + F6 equilibrium diagnostic + 2 hydraulics + crossover. Its 24 cap therefore
+   has six reserve evaluations, not seven under its declared grouping.
+2. Run 1 reportedly failed at D's log call, AFTER computing D. That failed
+   algebraic attempt is absent from the reconstructed 12 run-1 entries. Under
+   the rule counting failed evaluations, reported history entails at least
+   13 + 12 = 25 attempts, not 24. Missing run-1 bytes prevent a full independent
+   reconstruction. Do not invent an exact count of scalar internal function
+   calls; the original plan bundles quadrature and bisection into evaluations.
+3. log() checks the cap only after arithmetic and appending. Ledger/results are
+   written only after every calculation. A computation or serialization failure
+   can consume work without a durable ledger; json.dump also truncates its output.
+   The fixed code still has this persistence defect. It prepends 12 old entries,
+   so simply rerunning it also conflates historical and new evaluation budgets.
+4. The original exact and quadrature routines share exact(); their agreement is
+   not independent implementation validation. Original RK4 shares amat() and
+   derives its step size from exact(). It is a useful independent integrator,
+   but a shared matrix-sign error would not necessarily be caught. Recovery
+   writes direct reaction/removal fluxes and an integrated uptake state separately.
+5. results.md's universal wording about ranking reversal ('can exist only if')
+   is stronger than the endpoint argument shown. T_D < T_E < (1+gamma)T_D is a
+   sufficient strict endpoint condition at positive a,gamma; continuity then
+   guarantees a crossing at some finite positive k. This does not establish
+   monotonicity, uniqueness or necessity for all parameters. Bisection itself
+   needs continuity and a sign-changing bracket, not monotonicity. No recovery
+   root search is proposed. Both inequalities and assumptions must remain clear.
+6. The exp(m*t)*cosh(d*t) form can overflow/underflow separately outside these
+   cases despite a finite physical exponential. The chosen F3 has d*T about
+   200, below the ordinary double cosh overflow scale; no generic stability
+   claim is warranted. The repeated-root series addresses a different issue.
+7. Uptake as total-in minus total-out can cancel near zero; retain raw difference
+   and independent integrated uptake. F6's T=80 is not the T=8 hydraulic envelope;
+   recovery omits its illustrative QU rather than treating it as delivered rate.
+
+Proposed disposition
+Retain Wren's partial archive intact. Freeze the separate proposed 16-evaluation
+plan and candidate; request parent admission before execution. There are eight
+unchanged physical cases, six independently integrated finite cases, two algebraic
+limits and two hydraulic evaluations. The extra T=80 equilibrium diagnostic and
+all k-star search are omitted. No retries are silently available. Started,
+completed and failed events are durable and distinct; their two records per
+successful evaluation do not double its count. Report scientific correctness,
+same-source recovery and original partial provenance separately.
+
+Remaining review boundary
+The candidate has been written and statically inspected only; it has not been
+parsed/imported/tested. The parent should review the frozen candidate and admit
+the local command/resource wrapper before execution. The external 120-second
+process deadline/resource cap remains the coordinator's responsibility; the
+candidate also stops before reserving another evaluation if elapsed exceeds 120s.
+All conclusions remain hypothetical linear-model statements, not empirical
+carrier kinetics, nonlinear Hill validation, material choice or clinical claims.

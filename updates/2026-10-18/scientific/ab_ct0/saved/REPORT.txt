@@ -1,0 +1,19 @@
+AB-CT0 — HYPOTHETICAL COMPUTATIONAL TRANSPORT STUDY
+Completed transport attempts: 78; hard cap: 80.
+Primary inputs and 12 verification controls were frozen before execution.
+The selected six-case union was refined at two finer grids; unrefined rows are coarse diagnostic values.
+No biological material was measured, selected, manufactured or validated.
+The inlet is clamped: finite axial oxygen flux is not a finite reservoir or closed loop.
+Distal and global values are cell-center samples; analytic controls compare at those coordinates.
+No threshold pass fraction is interpreted as survival probability.
+
+H1: resolved_selected_witness_does_not_support
+{"distal_tissue": {"fine_delta_right_minus_left": 5.666127806793972e-05, "resolved": true, "two_last_change_guard": 5.011502687085612e-06}}
+H2: resolved_selected_witness_supports
+{"uptake_mol_s": {"fine_delta_right_minus_left": 5.580471482747341e-14, "resolved": true, "two_last_change_guard": 9.8174597508097e-16}}
+H3: resolved_selected_witness_does_not_support
+{"distal_tissue": {"fine_delta_right_minus_left": 0.008486109334582666, "resolved": true, "two_last_change_guard": 0.00017756229640290833}, "uptake_mol_s": {"fine_delta_right_minus_left": 7.380788679286948e-14, "resolved": true, "two_last_change_guard": 3.2234158993653817e-15}}
+
+Numerical last-grid changes are diagnostics, not rigorous mathematical error bounds.
+Independent saved-result review is still required. Local arithmetic/control success is not empirical validation.
+Not evaluated: no extra reserve solves are automatically used; all three refined members would be required.

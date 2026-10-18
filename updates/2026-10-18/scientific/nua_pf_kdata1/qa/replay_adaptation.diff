@@ -1,0 +1,12 @@
+--- original/scripts/fit_k.py
++++ replay/scripts/fit_k.py
+@@ -7,7 +7,8 @@
+ import numpy as np
+ from scipy.optimize import curve_fit
+ 
+-BASE = "<HISTORICAL_SANDBOX_PATH_OMITTED>"
++from pathlib import Path
++BASE = str(Path(__file__).resolve().parents[1])
+ LEDGER = f"{BASE}/notes/fit_ledger.json"
+ 
+ def ledger_call(desc, ok, extra=None):

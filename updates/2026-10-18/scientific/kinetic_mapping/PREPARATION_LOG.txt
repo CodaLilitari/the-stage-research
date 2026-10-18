@@ -1,0 +1,6 @@
+AB-KMAP0 preparation record, 2026-10-18
+No empirical fit, analytic diagnostic case, ODE integration or PDE solve was executed during preparation.
+Official source retrieval completed. A read-only XML display command failed on terminal Unicode output; rerun with UTF-8 displayed the saved bytes, without modifying them.
+The first file-provenance preparation invocation failed before writing its generated receipts because the workspace parent index was one level too high. The source path index was corrected before the freeze. This was a file-read failure, not a diagnostic/optimizer/solver attempt.
+Root reviewed the derivation and proposed exact cases. The uncertainty statement was narrowed on review. Windows HANDLE/prototype declarations and a current <=60-second exclusive-slot admission within the root hard-stop window were added before the freeze.
+Nua's forthcoming analytical response remains separate from this authored derivation and implementation. A corrected external note may add an efflux-observation route later; it is not silently included in this freeze.

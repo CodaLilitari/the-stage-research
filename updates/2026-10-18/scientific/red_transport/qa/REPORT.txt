@@ -1,0 +1,148 @@
+RED LOCAL RESEARCH: INDEPENDENT REPRODUCTION AND NUMERICAL QA
+Coda (Codex Lily), collaborating with Richard Pemberton | 17 October 2026
+
+Disposition
+
+The saved numerical work is reproducible. All four numerical CSVs reproduced
+byte-for-byte in an isolated staged tree, and the 11 PF0 plus 8 AL1 implementation
+checks reproduced as passed. The two failed scientific expectations E5 and E6
+remain false and are not being relabeled as successful predictions. Independently
+written arithmetic found no saved-row bookkeeping defect; a separate collocation
+and adaptive-integration implementation agrees with 64 selected outputs from seven
+configurations at 1e-7 mol/m3 absolute tolerance (maximum error 5.64884e-9).
+
+This supports the conditional numerical model, not the strongest prose claims.
+Several reported interpretations and two denominator labels need correction.
+No collaborator source, original result or original report was changed.
+
+Scope, provenance and resource boundaries
+
+Original input: research/cowork_local, including final report and addendum.
+QA output: research/red_independent_qa_2026-10-17 only; the sibling static reviewer
+owns its architecture_review subfolder. The v2 manifest verifies 22/22 files;
+al1_freeze.json binds 4/4 source/input files; PF0 manifest verifies 11/11 payloads.
+The older manifest's sole mismatch is execution_log.txt, as disclosed by the
+addendum. Local freeze timestamps are author records, not independently witnessed
+preregistration. Exact before/after hashes and staged-copy bindings are saved.
+
+All four collaborator scripts were read before execution. They use local Python,
+NumPy and Matplotlib and write beside their own staged files; no network, shell,
+subprocess or installation behavior was found. PF0 source was copied for its hash
+binding, not imported. Expected sibling-folder bindings were preserved in staged/.
+
+The replay used the existing .venv-stage Python 3.12.14 and took 63.797 seconds,
+22:37:39–22:38:43 UTC. Windows Job Objects capped the process at 1 GiB and one active
+process; one-core affinity and single-thread BLAS settings were applied. Replay
+peak allocation was 138,252,288 bytes. Independent solves ran sequentially under
+the same limits, with a 360-second watchdog each. All science computation stopped
+before 22:46:46 UTC and the compute slot was released to root then, within the
+20-minute allotment. No downloads, paid usage, GPU, provider contact or publication
+occurred. Final output size and commands are in final_receipt.json.
+
+Reproducibility, separate from independent correctness
+
+Identical numerical CSVs:
+  al1_results.csv             17,640 rows / 2,520 configurations / 7 arrangements
+  pf0_crosscheck_cases.csv       144 rows
+  pf0_wall_optimum.csv            24 rows
+  lumen_film_groups.csv           80 rows
+
+Summary check and expectation objects match exactly. Runtime/platform/timestamp
+fields naturally differ. The figure regenerated with the same visible curves,
+labels and layout but is neither byte-identical nor pixel-identical. The PNGs
+identify Matplotlib 3.10.9 originally and 3.11.2 on replay. Both were viewed; the
+receipt preserves this rendering difference without claiming exact image identity.
+
+Independent correctness checks
+
+audit_saved_arithmetic.py uses separate standard-library CSV parsing and Decimal
+hydraulics, without importing Red's solver. It checks all 17,640 AL1 rows against
+2,520 input configurations, flow fractions, minima, ceilings, reference flags,
+equal-flow pressure/power identities, equal-power column scope, supply ratios,
+wall/film combination, and reported group counts. It also checks 144 PF0 rows and
+80 film rows. No arithmetic issue exceeded the explicit printed-precision
+tolerances. Recounting saved outcomes is not an independent transport solve.
+
+independent_bvp_check.py instead solves the normalized transverse boundary-value
+problem by SciPy collocation, uses separate PCHIP tables and adaptive quadrature,
+and integrates axial depletion with DOP853. Equal-power max-min is found directly
+from the target-oxygen power equation, rather than copying Red's fixed-point
+iteration. This checks 64 outputs in seven selected configurations, including the
+largest E5 ordering witness, an E6 counterexample comparison, the figure's capacity
+comparison and an identical-module control. It does not cover the entire design
+grid, the film condition or arbitrary out-of-domain parameters independently.
+
+The first completed independent pass was 57/64: seven discrepancies in one high-
+capacity/high-permeability case reached 3.393945344e-7 mol/m3. That receipt and
+source are preserved as independent_bvp_coarse_report.json and
+independent_bvp_check_coarse.py. Increasing only the high-range interpolation
+grid from 801 to 3201 points, while retaining the 1e-7 acceptance tolerance, produced
+64/64 with maximum 5.648835157e-9 and no quadrature warnings. This is observed
+convergence of the QA implementation, not license to erase the first result.
+Earlier QA-helper syntax/range issues are documented in qa_development_events.txt.
+
+Scientific expectations and denominator corrections
+
+E5: The nonlinear 'most limited first' series heuristic is not always optimal:
+68/2,520 configurations favor another order. The strongest saved example is the
+two-sided hotspot, demand ratio 4, original depth 200 um, wall P 0.2 mm/s, beta 1,
+total Q 1 uL/min. Heuristic HSa>HSb>B1>B2>B3 yields 0.00419497329195 mol/m3;
+best B1>B2>HSa>HSb>B3 yields 0.00507266027506. The best value is 20.9223% greater
+than the heuristic; the heuristic is 17.3023% below the best. Report line 149's
+'won by up to 17.3%' needs its denominator made explicit. No data cell is wrong.
+
+E6: Two-sided beta 1 beats base beta 256 in 102/119 declared geometry comparisons,
+and reaches the reference in 67/119; 17 exceptions remain. For demand ratio 4,
+original depth 200 um, P 0.2 mm/s, Q 1 uL/min, two-sided beta 1 max-min is
+0.00309080937127, versus base beta 256 at 0.0462698160593 mol/m3. This directly defeats
+an unconditional claim that halving depth always beats increasing capacity.
+Two-sided supply retains tissue volume but adds a fifth channel and exchange
+access: it is not a fixed-hardware comparison.
+
+Equal-flow/equal-power distinction: max-min crosses the reference when uniform
+split fails in 67 configurations across all beta at equal total flow; 38 of these
+are beta 1. Under equal pump power, beta 1 only, there are 20 crossings. Report
+line 157 follows an equal-power paragraph, so its 67 must be labeled as equal-flow
+across all beta. The independently recounted E7 comparison remains 504/504:
+equal-power max-min is at least the heuristic series result in that tested grid.
+The main flow/pressure/power CSV columns describe the equal-flow state; the final
+equal-power oxygen column is evaluated at different flows.
+
+Median max-min-over-uniform gain is 30.6574% in the declared flow-limited bin
+(668 configurations) and 0.51015% near the transverse ceiling (1,642). Thus
+'no improvement helps near the ceiling' is too absolute. The PF0 pass count is
+55/144, split 16/48, 19/48, 20/48 for beta 1, 4, 16; no classification flips occurred.
+
+Static and mathematical review, separately attributed
+
+architecture_review/review.txt contains 13/13 static/rational evidence checks by
+the sibling project reviewer, including primary-source attribution. That reviewer
+did not run transport solves; these are not additional numerical test cases.
+The core model equations and the zero-order/first-order sorting arguments were
+accepted. The actionable corrections are:
+
+1. Bonart's paper explicitly discusses Graetz number after Eq 4. The reduction
+   omits explicit radial resistance; the paper does not omit the condition.
+2. Small illustrative channel pressure does not establish that pump cost matters
+   only at body scale. A power/pressure budget, efficiency and omitted network
+   losses are required before that conclusion.
+3. Two flows and free-O2 profiles do not automatically identify q, D, P. If beta is
+   unknown, scaling (q, D, P, beta) together leaves every free-O2 field unchanged.
+   A constant film closure identifies effective conductance, not its two
+   component resistances separately. This is a substantive inference limitation.
+4. stage_transport.py's max-min docstring has an extra beta; the implementation
+   is correct. Do not change numerical outputs to match the docstring error.
+5. The nonlinear P*=0.0140/0.0139 mm/s values are three-point quadratic estimates
+   around a 13-point scan, not directly solved continuous optima.
+6. 'Topology matters more than split' is not supported by the displayed example.
+   Retain the scoped equal-flow ordering result, its equal-power qualification,
+   and the nonlinear failures.
+7. Equal-power convergence/achieved-power certificates should become explicit
+   before extending the solver. Saved maximum fixed-point residual 9.7233e-13
+   meets its 1e-12 target, so this is not an observed failure of the current grid.
+
+The substantive boundary is a steady independent-slab mathematical screen with
+liver-like illustrative constants and hypothetical linear Ctotal=beta*Cfree.
+It neither validates living skin nor a carrier, actual pump, circulation system
+or clinical use. Retain Red's work as a useful reproduced mathematical baseline,
+attach the corrections above, and keep empirical validity distinct from code QA.

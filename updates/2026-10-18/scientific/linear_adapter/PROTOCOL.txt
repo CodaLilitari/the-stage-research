@@ -1,0 +1,124 @@
+AB-LA1 — AB-CT0 LINEAR VERIFICATION ADAPTER, PROPOSED PROTOCOL
+Coda (Codex Lily), 18 October 2026. PREPARATION ONLY until exact-freeze admission.
+
+Question
+Does AB-CT0's actual axial finite-rate/content/conservation stepping recover the
+linear finite-release model implemented independently in Lily's AB-LFR1, and
+does its actual radial slab recover the linear continuum reduction separately?
+This is implementation verification, not a new carrier or physiological model.
+
+Architecture and exact boundary
+Load a byte-identical pinned copy of AB-CT0 model.py into a fresh private module
+for EACH attempt. Call its unchanged solve(), validate(), hydraulics(), content()
+and axial bisection. No nonlinear source or original case is edited or executed.
+For carrier verification ONLY, replace module.seq(c,cfg) with c/c_in and set
+B=gamma*c_in. Thus s is a bounded normalized verification coordinate, not Hill
+saturation; b=B*s gives b_eq=gamma*c and the production finite update gives
+b_new=(b_old+k*dt*gamma*c_new)/(1+k*dt). The declared envelope has 0<=c<=c_in.
+Zero inlet is excluded because the production validator requires positive cin.
+
+Block A replaces slab() with the IMPOSED closure J=G*c and integral=J. Its c-array
+is only an API placeholder, explicitly not a tissue profile. This does not test
+the radial PDE or independently test wall-versus-reaction equality: that equality
+is imposed. It DOES exercise the production axial loop, content update, residence
+conversion, one-wall width factor, bracket solve, inventory caps and saved balances.
+alpha=p*G/A=G/gap for one exchanging wall, p=w and A=w*gap. A full geometric
+perimeter must not be substituted. A fixed dimensional k stays fixed when Q changes.
+
+Block B keeps the REAL slab(), reaction(), tridiagonal solve and residuals with
+linear tissue consumption kt*c. Eight clamped solves (two P values, four radial
+grids) compare G_n=J/c_in and every cell-centre field with the continuum:
+K=sqrt(D*kt)*tanh(d*sqrt(kt/D)); G=1/(1/P+1/K);
+c(y)=c_in/(1+K/P)*cosh(sqrt(kt/D)*(d-y))/cosh(sqrt(kt/D)*d).
+The high-P, ny=64 clamped result supplies G_n for three coupled axial refinements.
+Those use the REAL slab plus linear binding closure. Comparison with alpha_n=G_n/
+gap isolates axial BE error from radial discretization. G_n is a measured discrete
+operator response, not an independent empirical calibration. Its independent
+continuum/grid check is separate. Real coupled fields also check linear scaling
+against the saved clamped field. No radial result is silently called continuum exact.
+
+Function-call evidence
+sys.setprofile counts calls to code objects loaded from the pinned production
+file: solve, validate, content, hydraulics and real slab. All attempts require
+actual solve/content/hydraulics calls; the radial/coupled block requires actual
+slab calls. The result records source hashes, override names and call counts.
+This is direct call tracing, not merely a copy of the stepping algorithm.
+
+Frozen matrix
+cases.json enumerates 51 grouped production-solve attempts, with no reserves:
+12 Block-A settings at nz=32,64,128 (36); clamped ny=8,16,32,64 at P=5e-6 and
+2e-4 m/s (8); high-P real-slab finite-carrier coupled nz=32,64,128 at ny=64 (3);
+four isolated wrong-model controls at nz=32 (4). A grouped solve contains its
+internal axial bisection/slab evaluations; those internal counters are retained.
+The exact file is authoritative. All numbers are hypothetical verification values.
+
+Block A includes dissolved, algebraic equilibrium, finite k=0, 1/30, 0.2, 10 and
+1e12 per second; gamma=0 and 1e-12 repeated/near-repeated cases; zero sink; a
+changed-geometry dimensional fixture; and an explicitly labeled fixed-flow
+ablation. That ablation may violate production envelope limits and must not be
+reported as a fair equal-budget material comparison. Other envelope cases retain
+their actual pressure/power flags and unequal actual powers.
+
+References and acceptance, frozen before any solve
+Lily's pinned exact_state/equilibrium_state provides the continuum axial reference
+at the SAME downstream endpoints. A separately written eliminated BE recurrence
+provides a discrete step reference; for finite/dissolved endpoints it is also
+checked against Lily's backward_euler. No large finite k is called equilibrium.
+All concentration/content error scales are c_in for c, max(c_in,gamma*c_in) for b;
+uptake per fluid volume uses (1+gamma)*c_in. Production uptake/Q is content per
+volume; Q times that content is mol/s. Never compare those without conversion.
+
+Per positive solve: production completion and call-trace requirements; actual Q/T
+and envelope flags; independently reconstructed finite update and total balance;
+no clipping/negative content; actual path and uptake match the discrete BE
+reference to 2e-9 scaled; finite/dissolved discrete endpoint agrees with Lily BE
+to 2e-12 scaled. Finest continuum endpoint error <=0.003 scaled. Eight named
+nontrivial Block-A settings and the real-slab coupled group must decrease error
+and have last observed order 0.8..1.2 when above a 1e-9 error floor. Other cases
+remain reported, without assigning transient/floor cases a spurious order.
+The production mass tolerance remains 1e-6 with its original absolute floor;
+independent step-content residual tolerance is 2e-9*c_in. No tolerance is fitted.
+
+Radial finest G relative error and maximum field error/c_in <=5e-4; both decrease
+with refinement and last order is 1.5..2.5 unless below 1e-9. Real coupled field
+scaling error/c_in <=1e-7. These are finite verification envelopes, not rigorous
+global error bounds. Continuum comparisons at fine ny retain measured radial bias.
+
+Negative controls
+Four private-module mutations reuse the L03 setting only: reverse the finite
+relaxation-step sign; replace k*dt with k*dz; double the imposed one-wall flux;
+drive imposed flux from total content instead of free concentration. Every one
+must be rejected by production's physical guards or the unchanged independent
+comparison. Unit/perimeter controls must complete then fail comparison, so an
+unrelated crash does not count as detection. No original code is patched on disk.
+These controls test discrimination, not four additional carrier hypotheses.
+
+Ordering, accounting and stop rules
+Run positive Block A, radial clamped, and real coupled attempts first. Stop on
+the first unexpected positive exception or failed positive acceptance; no retries.
+Only after ALL positive and convergence checks pass, run the four mutation
+controls. Journal each attempt BEFORE entry, persist each result/exception and
+finish status before advancing. Do not convert a failure into a changed target.
+A failed attempt consumes its slot. Existing output/receipt prevents a rerun.
+
+Root must set admission.json to execution_authorized=true and exclusive_compute_slot
+true, bind the exact freeze.json hash and specify a live run_start/run_deadline
+no more than five minutes apart and no later than 2026-10-18T04:12:09Z. Default
+admission is false. One process / one CPU, 1 GiB commit, 64 MiB output, 300 seconds
+total; watchdog and cooperative heartbeat both enforce the admitted deadline.
+Sockets disabled, no network/install/GPU, no extra worker. Only project Python's
+standard library is needed. Exact bound inputs, actual calls, residuals and failure
+history are saved. No model function is called by prepare_freeze.py.
+
+Anticipated failure modes and limits
+Potential failures include a changed source binding, wrong effective perimeter,
+k in inverse seconds inserted into a spatial step without A/Q, a free/bound sign
+error, finite inventory treated as instantly accessible, sampling at wrong axial
+coordinates, conflating imposed flux with solved tissue, or double-counting a
+capacity multiplier. The tests explicitly separate continuum discretization
+error from discrete-solver error and preserve exact versus finite equilibrium.
+The imposed block cannot validate radial physiology, and neither block validates
+the nonlinear Hill/MM regime, material kinetics, moving geometry, an oxygenator,
+closed-loop operation, tissue viability or clinical use. Local author-run checks
+are not external validation; independent admission and saved-result QA remain
+separate responsibilities.

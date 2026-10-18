@@ -1,0 +1,53 @@
+CASE C00 all_zero
+CASE C01 dissolved_only
+CASE C02 zero_capacity_repeated_eigenvalue
+CASE C03 zero_capacity_stiff
+CASE C04 inaccessible_bound_inventory
+CASE C05 inaccessible_inventory_fast_sink
+CASE C06 zero_sink
+CASE C07 zero_sink_large_capacity_stiff
+CASE C08 weak_finite
+CASE C09 slow_finite
+CASE C10 intermediate_finite
+CASE C11 fast_finite
+CASE C12 faster_finite
+CASE C13 very_stiff_finite
+CASE C14 near_repeated_eigenvalues
+CASE C15 large_capacity
+CASE C16 fast_sink
+CASE C17 short_transit
+CASE C18 zero_inlet
+CASE C19 dimensional_one_wall_fixture
+CASE C20 near_repeated_resolved_gap
+CASE C21 long_transit
+{
+  "benchmark": "AB-LFR1",
+  "case_count_completed": 22,
+  "state_evaluations": 198,
+  "be_runs": 176,
+  "checks": 1613,
+  "passed": 1612,
+  "failed": 1,
+  "failures": [
+    {
+      "name": "negative_control_explicit_euler_first_step_detected",
+      "passed": false,
+      "first_step": [
+        0.9375,
+        4.0
+      ],
+      "scope": "Frozen one-step negative-control expectation; not a correct-model accuracy assertion"
+    }
+  ],
+  "seconds": 1.214890200062655,
+  "source_hashes": {
+    "benchmark.py": "5273764a1565396fb172c546fdf7ae34cf99a0cdb22816f73e5160aea6d7bf7e",
+    "run_benchmark.py": "5857414782a7990bbc4cec1d8b3d1fd4a6c072ecd51f325cb3838db51252cbc7",
+    "FROZEN_CASES.json": "026f087fe1c95bc82f941ec122e050e32c742a436628b06eda4ef837173aadea"
+  },
+  "frozen_cases_sha256": "026f087fe1c95bc82f941ec122e050e32c742a436628b06eda4ef837173aadea",
+  "max_state_tolerance_ratio": 8.516321622102761e-05,
+  "max_matrix_tolerance_ratio": 8.699182046972377e-05,
+  "max_analytic_conservation_scaled": 1.6653345369377348e-16,
+  "max_be_conservation_scaled": 1.8042303762122459e-13
+}

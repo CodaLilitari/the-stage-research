@@ -1,0 +1,48 @@
+{
+  "source_path": "run/convergence.json",
+  "source_sha256": "90d9c1f2300376ac8036e6c95860dfe28a1aaf72ea87d62ba75c899b3994e1ef",
+  "all_series_in_csv": [
+    "L00:axial_convergence",
+    "L02:axial_convergence",
+    "L03:axial_convergence",
+    "L04:axial_convergence",
+    "L07:axial_convergence",
+    "L09:axial_convergence",
+    "L10:axial_convergence",
+    "L11:axial_convergence",
+    "COUPLED:axial_convergence",
+    "RAD_low:G_relative_error",
+    "RAD_low:field_scaled_error",
+    "RAD_high:G_relative_error",
+    "RAD_high:field_scaled_error"
+  ],
+  "displayed_axial_series": [
+    "L00",
+    "L03",
+    "COUPLED"
+  ],
+  "selection": "Representative dissolved/imposed-finite/real-slab finite traces for display; all prespecified convergence groups remain in CSV and run/convergence.json.",
+  "normalization": "Dimensionless errors, no confidence intervals; mesh widths are 1/nz and 1/ny.",
+  "outputs": [
+    {
+      "path": "AB_LA1_convergence.pdf",
+      "bytes": 36966,
+      "sha256": "e241eb46803bc6ff11a1cad82f3dc93d258f894af968c0ccc06b0a57fb7d4be6"
+    },
+    {
+      "path": "AB_LA1_convergence.png",
+      "bytes": 250413,
+      "sha256": "63f819435d39503b151bbf2a2c1c748cea5531986ac0104e228acf8e4946a46f"
+    },
+    {
+      "path": "AB_LA1_convergence.svg",
+      "bytes": 48265,
+      "sha256": "d20c64efc49e34cbc8f01a83a54d67b31b9388d9bc48be1aa7274917c5e5a290"
+    },
+    {
+      "path": "convergence_data.csv",
+      "bytes": 3400,
+      "sha256": "00ee87a8ef5750eb959e97830c47b28dbc238287ac53ca5bcfae7b4e0a366d18"
+    }
+  ]
+}

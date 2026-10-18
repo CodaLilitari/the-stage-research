@@ -1,0 +1,21 @@
+{
+  "elapsed_seconds": 6.140999999945052,
+  "finished_utc": "2026-10-18T00:27:38.149124+00:00",
+  "freeze_sha256": "5f801cb30df09855da41d2d86467723980a0dea46f639ff000a4feda02e75d1a",
+  "interpreter": "<PROJECT_ROOT>\\.venv-stage\\Scripts\\python.exe",
+  "job_memory_limit_enforced": true,
+  "limits": {
+    "memory_bytes": 1073741824,
+    "output_bytes": 67108864,
+    "wall_seconds": 300,
+    "workers": 1
+  },
+  "network_disabled": true,
+  "one_cpu_affinity_mask": 1,
+  "output_bytes": 3207593,
+  "peak_rss_bytes": 29990912,
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "started_utc": "2026-10-18T00:27:32.013062+00:00",
+  "status": "completed",
+  "public_copy_note": "Historical execution/resource receipt. Private local authorization omitted; no new execution grant."
+}

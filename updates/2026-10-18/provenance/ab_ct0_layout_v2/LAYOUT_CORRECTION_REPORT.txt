@@ -1,0 +1,48 @@
+AB-CT0 FIGURE LAYOUT CORRECTION, VERSION 2
+
+Scope: spacing only, using already-saved comparison fields. No transport model
+was imported, no transport calculation or optimization was run, and no scientific
+values, axes, units, numerical labels, claims, or qualifications were changed.
+No candidate package or Site checkout was modified.
+
+The heading "Flow and viscosity are explicit" moves from figure y=0.258 to
+0.278, a vertical change of 30.96 pixels in the 2448 x 1548 PNG. All other
+plotting instructions remain identical after excluding added renderer audit code.
+The modified source is plot_saved_comparison_layout_v2.py. Its relative Stage
+source bindings are preserved at this new directory depth; it is saved-data
+postprocessing, not a standalone replacement for the underlying archive.
+
+Renderer evidence at 180 DPI:
+- Original heading/body bounding-box gap: -10.03649 px (bounding-box overlap).
+- Revised heading/body gap: +20.92351 px.
+- Revised gap to preceding interpretation paragraphs: +47.66900 px.
+- Every figure-level text box remains inside the canvas.
+- Artist text, axes positions, axes limits and plotted line data are identical.
+
+Independent artifact comparisons within this layout task:
+- All PNG pixels outside rectangle x=[112,607), y=[1095,1155) are identical.
+  That rectangle covers only the old/new heading locations.
+- The SVG has exactly one changed text-node position: that heading. Every text
+  string and all other text-node attributes/positions are identical.
+- comparison_data.json, comparison_values.csv, READABLE_RESULT.txt and
+  figure_alt_text.txt are byte-identical to the original four files.
+- All nine files in the original figures directory retain their recorded hashes.
+
+Visual inspection: corrected PNG and Poppler-rendered single-page PDF were
+inspected. Heading/body separation is clear, the charts and labels remain
+legible, and no new overlap or clipping is visible. The SVG preserves live text.
+
+The first renderer instrumentation check failed because its initial signature
+was captured before Matplotlib materialized automatic tick labels. The audit
+was corrected to draw before both comparisons; no plotting/data/claim change
+was made to address that instrumentation failure. initial_audit_failure.json
+preserves this distinction. This was a local visual/layout check, not external
+scientific validation or an additional transport run.
+
+Preferred release replacement: AB_CT0_finite_release_comparison.png.
+SVG and PDF are matching optional exports. Original scientific files and the
+previous figure remain preserved in research/resumption_2026-10-17/figures/.
+
+Evidence: layout_verification.json, renderer_layout_receipt.json,
+original_input_snapshot.json and source_delta.patch. The manifest excludes
+Matplotlib cache files, and excludes itself to avoid self-reference.
