@@ -1,0 +1,14 @@
+Request thermal-candidate3-review-001 (wave11-followups-b; model Claude Fable 5.1; header HEADER_a12f72162d0b.txt)
+
+TASK thermal-candidate3-review-001
+Candidate 3 of the thermal_contract.py repair (patch, tests, tools and report appended, written by a Claude instance in wave 9) was executed by Red in an isolated sandbox. Receipts appended: the patch applied cleanly (11 hunks; base had CRLF line endings, normalised); test_tools 4/4; candidate tests against the unpatched file: 7 failures + 4 errors + 3 ok (the author predicted 8 failures + 3 errors + 3 ok); against candidate 3: 14/14 pass; Coda's 8 earlier regressions also pass on candidate 3; the 108-case results file is byte-identical between candidates 2 and 3 in the same environment, and `validate` output is identical. The absolute sha256 differs from Coda's Windows run (a81199c6... vs 913bfd2c...) for both candidates equally. Review candidate 3 independently and adversarially: explain the 8F+3E vs 7F+4E discrepancy from the test code; check the cancellation-guard threshold and the h*A boundary for new false rejections inside the declared domain; explain the absolute-hash difference (line endings or environment fields?) and how Coda should confirm byte identity on Windows; give an admit / admit-with-conditions / reject verdict with reasons. Minimal diffs only if you find a defect.
+
+SOURCE BUNDLE (labels and sha256 of the verbatim sources appended to the request; contents not repeated here)
+- candidate 3 author answer (wave 9) | Documents--CodexScratch/stage-red-20261102/batches/wave9-followups-a/thermal-repair-candidate3-001.answer.md | sha256=0b73fe07ad06035ca324bc71d00edf364158e99a07bdebf602797dc23a869c65
+- candidate3.diff | red-sandbox/work/c3/fable_thermal/candidate3/candidate3.diff | sha256=b2f8cdb9133ed72dc7bb324761a803241e4b4b9bf015962b1a7ce8d06ccf0f5c
+- test_candidate3.py | red-sandbox/work/c3/fable_thermal/candidate3/test_candidate3.py | sha256=72e10638a5ab902cb2f1f337e586f9722f961f0d4f15e801c59ee32f822be56b
+- Red receipt: apply_patch | red-sandbox/work/c3/fable_thermal/ap.txt | sha256=27ee7511489875df3f990ec23da2b9c97c276dadbdda524adcadbd5ac94e1516
+- Red receipt: tests vs unpatched (before) | red-sandbox/work/c3/fable_thermal/before.txt | sha256=e39828d15aa70eff639f6b6e8040205d74a210220dca69226958ad1c5d465f21
+- Red receipt: tests vs candidate 3 (after) | red-sandbox/work/c3/fable_thermal/after.txt | sha256=355f68fc3ebb1bdebc8f71620f85e137c85158345a9159053ef80239eeb78fd2
+- repaired file (candidate 2) thermal_contract.py | validation/fable_thermal_review2/fable_thermal/fixed/thermal_contract.py | sha256=160410e5cecb4e2408f3b13e42ae5213f12d43216d725859afbfa1e6e4b3a06a
+- wave-6 audit of candidate 2 | Documents--CodexScratch/stage-red-20261102/batches/wave6-engineering/thermal-correction-audit-002.answer.md | sha256=73c06a64db83ca88828b0e41f348b646f8c99e4fb423340bea39e5e8c16f77cb

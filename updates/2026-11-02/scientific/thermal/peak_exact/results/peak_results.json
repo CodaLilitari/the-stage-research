@@ -1,0 +1,725 @@
+{
+ "manufactured": {
+  "C_S": 16.2239,
+  "H0": 60.0,
+  "H_at_peak": 59.09030558091727,
+  "H_inf": 26.27176851851852,
+  "S0": 58.0,
+  "S_inf": 26.27176851851852,
+  "a_K_per_W": 0.21768518518518518,
+  "amplitudes": {
+   "a_fast": 0.7529649302894095,
+   "a_slow": 32.97526655119207
+  },
+  "b_K_per_W": 12.717685185185186,
+  "dH0": -0.4593789876648237,
+  "dS0": 0.41252522025148264,
+  "energy_identity_residuals": [
+   1.3877787807814457e-17,
+   3.011479954295737e-15
+  ],
+  "exported_after_shutoff_J": 1189.320284362037,
+  "extremum": {
+   "fast_velocity": 0.48306158825996426,
+   "initial_slope": 0.41252522025148264,
+   "ratio": 6.848404615926334,
+   "slow_velocity": -0.07053636800848163,
+   "status": "post_shutoff_maximum",
+   "t_star": 3.747837564118076
+  },
+  "initial_energy_above_ambient_J": 1235.3887,
+  "modes": {
+   "lam_fast": -0.5155262618071397,
+   "lam_slow": -0.0021593697133670863,
+   "r_fast": -1.2444485953862694,
+   "r_slow": 0.9905987440812482,
+   "x_inf": 1.2717685185185188,
+   "y_inf": 1.2717685185185186
+  },
+  "peak_S": 58.53801298214489,
+  "peak_kind": "interior_maximum",
+  "peak_surface": 57.96395186485399,
+  "peak_time": 3.747837564118076,
+  "rising_criterion_met": true,
+  "shutoff_time": 0.0,
+  "surface0": 57.435147905730574,
+  "surface_inf": 26.25
+ },
+ "scenarios": [
+  {
+   "analytic_900s": {
+    "H": 33.831193992966966,
+    "S": 33.70397852000221,
+    "final_H": 25.17030291006931,
+    "peak_surface": 33.5549948686235,
+    "peak_time": 900.0000013604185
+   },
+   "case": "intact",
+   "dt": 1.0,
+   "executed": {
+    "H900": 33.83119330506519,
+    "S900": 33.70397780447876,
+    "discrete_energy_residual_J": 3.985860530519858e-10,
+    "discrete_peak_surface": 33.554994165347416,
+    "discrete_peak_time": 900.0,
+    "exact": {
+     "H0": 33.83119330506519,
+     "H_at_peak": 33.83119292509167,
+     "H_inf": 25.17030291006931,
+     "S0": 33.70397780447876,
+     "S_inf": 25.18883912032732,
+     "amplitudes": {
+      "a_fast": 0.2217741413365562,
+      "a_slow": 8.439116253659323
+     },
+     "dH0": -0.24999989656396365,
+     "dS0": 1.0758935178878382e-07,
+     "extremum": {
+      "fast_velocity": 0.13849158145255464,
+      "initial_slope": 1.0758935178878382e-07,
+      "ratio": 1.0000007768662489,
+      "slow_velocity": -0.13849147386320285,
+      "status": "post_shutoff_maximum",
+      "t_star": 1.519894997029694e-06
+     },
+     "modes": {
+      "lam_fast": -0.5269084793896008,
+      "lam_slow": -0.01577715213090597,
+      "r_fast": -1.185160805638799,
+      "r_slow": 1.0401535469263705,
+      "x_inf": 0.17030291006931103,
+      "y_inf": 0.18883912032731795
+     },
+     "peak_S": 33.703977804478846,
+     "peak_kind": "interior_maximum",
+     "peak_surface": 33.554994165347495,
+     "peak_time": 900.000001519895,
+     "rising_criterion_met": true,
+     "shutoff_time": 900.0,
+     "surface0": 33.554994165347416,
+     "surface_inf": 25.18560681206681
+    },
+    "final_H_exact": 25.17030291006931,
+    "final_H_executed": 25.170302910069754,
+    "final_time": 3600.0,
+    "max_abs_dev_H": 0.024330736251400253,
+    "max_abs_dev_S": 0.025307701610376654,
+    "max_abs_dev_surface": 0.024874516511715683,
+    "mode_energy_identity_residuals": [
+     2.7755575615628914e-17,
+     9.71445146547012e-16
+    ],
+    "peak_surface_difference_K": -7.815970093361102e-14,
+    "peak_time_difference_s": -1.5198950222838903e-06,
+    "surface900": 33.554994165347416,
+    "surface900_reconstruction_error": 0.0,
+    "temp_tol_k": 0.1,
+    "time_tol_s": 2.0,
+    "within_tolerance": true
+   },
+   "max_energy_residual_program_J": 3.8835423765704036e-10,
+   "sensor_w": 0.1,
+   "stack": "H1"
+  },
+  {
+   "analytic_900s": {
+    "H": 61.164316948080014,
+    "S": 60.35590088098881,
+    "final_H": 26.373623645882677,
+    "peak_surface": 59.7846256135188,
+    "peak_time": 901.207674753799
+   },
+   "case": "rear_loss",
+   "dt": 1.0,
+   "executed": {
+    "H900": 61.143480163981884,
+    "S900": 60.3352599888305,
+    "discrete_energy_residual_J": -3.70391717297025e-10,
+    "discrete_peak_surface": 59.74715511251906,
+    "discrete_peak_time": 901.0,
+    "exact": {
+     "H0": 61.143480163981884,
+     "H_at_peak": 60.95345322933492,
+     "H_inf": 26.27176851851852,
+     "S0": 60.3352599888305,
+     "S_inf": 26.27176851851852,
+     "amplitudes": {
+      "a_fast": 0.21493159503364836,
+      "a_slow": 34.65678005042972
+     },
+     "dH0": -0.1856396829356653,
+     "dS0": 0.06375524925260144,
+     "extremum": {
+      "fast_velocity": 0.13788849053606705,
+      "initial_slope": 0.06375524925260144,
+      "ratio": 1.8600089264789932,
+      "slow_velocity": -0.07413324128346561,
+      "status": "post_shutoff_maximum",
+      "t_star": 1.2088455575403403
+     },
+     "modes": {
+      "lam_fast": -0.5155262618071397,
+      "lam_slow": -0.0021593697133670863,
+      "r_fast": -1.2444485953862694,
+      "r_slow": 0.9905987440812482,
+      "x_inf": 1.2717685185185188,
+      "y_inf": 1.2717685185185186
+     },
+     "peak_S": 60.36980631837353,
+     "peak_kind": "interior_maximum",
+     "peak_surface": 59.76439088889361,
+     "peak_time": 901.2088455575404,
+     "rising_criterion_met": true,
+     "shutoff_time": 900.0,
+     "surface0": 59.730435879550335,
+     "surface_inf": 26.25
+    },
+    "final_H_exact": 26.37356244406168,
+    "final_H_executed": 26.374204319369554,
+    "final_time": 3600.0,
+    "max_abs_dev_H": 0.017087224694485315,
+    "max_abs_dev_S": 0.020905060938154918,
+    "max_abs_dev_surface": 0.0205472346517368,
+    "mode_energy_identity_residuals": [
+     1.3877787807814457e-17,
+     3.011479954295737e-15
+    ],
+    "peak_surface_difference_K": -0.017235776374548095,
+    "peak_time_difference_s": -0.20884555754037137,
+    "surface900": 59.73043587955033,
+    "surface900_reconstruction_error": 7.105427357601002e-15,
+    "temp_tol_k": 0.1,
+    "time_tol_s": 2.0,
+    "within_tolerance": true
+   },
+   "max_energy_residual_program_J": 1.325588527834043e-09,
+   "sensor_w": 0.1,
+   "stack": "H1"
+  },
+  {
+   "analytic_900s": {
+    "H": 60.46691624771304,
+    "S": 59.65310040177188,
+    "final_H": 25.103542161036362,
+    "peak_surface": 59.09241763723982,
+    "peak_time": 901.1756754190027
+   },
+   "case": "rear_loss",
+   "dt": 1.0,
+   "executed": {
+    "H900": 60.446481315246224,
+    "S900": 59.63285758333488,
+    "discrete_energy_residual_J": -4.113189788768068e-10,
+    "discrete_peak_surface": 59.05556971585859,
+    "discrete_peak_time": 901.0,
+    "exact": {
+     "H0": 60.446481315246224,
+     "H_at_peak": 60.25930683662306,
+     "H_inf": 25.0,
+     "S0": 59.63285758333488,
+     "S_inf": 25.0,
+     "amplitudes": {
+      "a_fast": 0.21493159503364517,
+      "a_slow": 35.23154972021258
+     },
+     "dH0": -0.18688082315275478,
+     "dS0": 0.0625257773123202,
+     "extremum": {
+      "fast_velocity": 0.137888490536065,
+      "initial_slope": 0.0625257773123202,
+      "ratio": 1.8296646264139542,
+      "slow_velocity": -0.0753627132237448,
+      "status": "post_shutoff_maximum",
+      "t_star": 1.1768049227712218
+     },
+     "modes": {
+      "lam_fast": -0.5155262618071397,
+      "lam_slow": -0.0021593697133670863,
+      "r_fast": -1.2444485953862694,
+      "r_slow": 0.9905987440812482,
+      "x_inf": 0.0,
+      "y_inf": 0.0
+     },
+     "peak_S": 59.6659393087931,
+     "peak_kind": "interior_maximum",
+     "peak_surface": 59.072571780963145,
+     "peak_time": 901.1768049227712,
+     "rising_criterion_met": true,
+     "shutoff_time": 900.0,
+     "surface0": 59.0400563064718,
+     "surface_inf": 25.0
+    },
+    "final_H_exact": 25.103482139534336,
+    "final_H_executed": 25.104134660102797,
+    "final_time": 3600.0,
+    "max_abs_dev_H": 0.017089889396324054,
+    "max_abs_dev_S": 0.02090242128785036,
+    "max_abs_dev_surface": 0.02054464018361557,
+    "mode_energy_identity_residuals": [
+     1.3877787807814457e-17,
+     3.011479954295737e-15
+    ],
+    "peak_surface_difference_K": -0.017002065104556152,
+    "peak_time_difference_s": -0.1768049227712254,
+    "surface900": 59.040056306471804,
+    "surface900_reconstruction_error": 0.0,
+    "temp_tol_k": 0.1,
+    "time_tol_s": 2.0,
+    "within_tolerance": true
+   },
+   "max_energy_residual_program_J": 4.192770575173199e-10,
+   "sensor_w": 0.0,
+   "stack": "H1"
+  },
+  {
+   "analytic_900s": {
+    "H": 33.861316904257286,
+    "S": 33.6319960571442,
+    "final_H": 25.16860171081108,
+    "peak_surface": 33.36247653680046,
+    "peak_time": 900.0003534635218
+   },
+   "case": "intact",
+   "dt": 1.0,
+   "executed": {
+    "H900": 33.86128677681859,
+    "S900": 33.63196243318924,
+    "discrete_energy_residual_J": -2.2453150450019166e-10,
+    "discrete_peak_surface": 33.3624439615112,
+    "discrete_peak_time": 900.0,
+    "exact": {
+     "H0": 33.86128677681859,
+     "H_at_peak": 33.86119386922546,
+     "H_inf": 25.168601710808097,
+     "S0": 33.63196243318924,
+     "S_inf": 25.202564027647266,
+     "amplitudes": {
+      "a_fast": 0.7564011777411043,
+      "a_slow": 7.936283888269387
+     },
+     "dH0": -0.24999347614532086,
+     "dS0": 7.280997168956915e-06,
+     "extremum": {
+      "fast_velocity": 0.09386125287349624,
+      "initial_slope": 7.280997168956915e-06,
+      "ratio": 1.000077577933287,
+      "slow_velocity": -0.09385397187632728,
+      "status": "post_shutoff_maximum",
+      "t_star": 0.00037165036840009337
+     },
+     "modes": {
+      "lam_fast": -0.21932709163567482,
+      "lam_slow": -0.010596169051596663,
+      "r_fast": -0.5657725476052244,
+      "r_slow": 1.1160575341787091,
+      "x_inf": 0.16860171080809674,
+      "y_inf": 0.20256402764726472
+     },
+     "peak_S": 33.63196243454222,
+     "peak_kind": "interior_maximum",
+     "peak_surface": 33.362443962821935,
+     "peak_time": 900.0003716503684,
+     "rising_criterion_met": true,
+     "shutoff_time": 900.0,
+     "surface0": 33.362443961511204,
+     "surface_inf": 25.196239307449396
+    },
+    "final_H_exact": 25.16860171081108,
+    "final_H_executed": 25.16860171081143,
+    "final_time": 3600.0,
+    "max_abs_dev_H": 0.030106553643122425,
+    "max_abs_dev_S": 0.01718757641393509,
+    "max_abs_dev_surface": 0.01665092332226692,
+    "mode_energy_identity_residuals": [
+     1.3877787807814457e-16,
+     1.8041124150158794e-15
+    ],
+    "peak_surface_difference_K": -1.3107381846566568e-09,
+    "peak_time_difference_s": -0.00037165036837905063,
+    "surface900": 33.3624439615112,
+    "surface900_reconstruction_error": 0.0,
+    "temp_tol_k": 0.1,
+    "time_tol_s": 2.0,
+    "within_tolerance": true
+   },
+   "max_energy_residual_program_J": 1.469743438065052e-09,
+   "sensor_w": 0.1,
+   "stack": "H2"
+  },
+  {
+   "analytic_900s": {
+    "H": 55.55783757723383,
+    "S": 53.99166567911472,
+    "final_H": 26.796954925578287,
+    "peak_surface": 53.181262084204135,
+    "peak_time": 904.1384105961034
+   },
+   "case": "rear_loss",
+   "dt": 1.0,
+   "executed": {
+    "H900": 55.54506286357738,
+    "S900": 53.979044620675275,
+    "discrete_energy_residual_J": 2.480646799085662e-10,
+    "discrete_peak_surface": 53.15363839028292,
+    "discrete_peak_time": 904.0,
+    "exact": {
+     "H0": 55.54506286357738,
+     "H_at_peak": 54.94458337493252,
+     "H_inf": 26.290287037037036,
+     "S0": 53.979044620675275,
+     "S_inf": 26.290287037037036,
+     "amplitudes": {
+      "a_fast": 0.7462012411392865,
+      "a_slow": 28.508574585401053
+     },
+     "dH0": -0.1943575847315871,
+     "dS0": 0.054973144111101165,
+     "extremum": {
+      "fast_velocity": 0.09701877944768422,
+      "initial_slope": 0.054973144111101165,
+      "ratio": 2.30746375149361,
+      "slow_velocity": -0.04204563533658306,
+      "status": "post_shutoff_maximum",
+      "t_star": 4.140629104374788
+     },
+     "modes": {
+      "lam_fast": -0.20343046348457836,
+      "lam_slow": -0.0014927972026931038,
+      "r_fast": -0.6391221233729638,
+      "r_slow": 0.9879719247612635,
+      "x_inf": 1.2902870370370372,
+      "y_inf": 1.2902870370370372
+     },
+     "peak_S": 54.076990416127614,
+     "peak_kind": "interior_maximum",
+     "peak_surface": 53.16911042028567,
+     "peak_time": 904.1406291043747,
+     "rising_criterion_met": true,
+     "shutoff_time": 900.0,
+     "surface0": 53.07422281713919,
+     "surface_inf": 26.25
+    },
+    "final_H_exact": 26.79672798900782,
+    "final_H_executed": 26.798252340252493,
+    "final_time": 3600.0,
+    "max_abs_dev_H": 0.025945432702442872,
+    "max_abs_dev_S": 0.016326053805158836,
+    "max_abs_dev_surface": 0.015816300304244635,
+    "mode_energy_identity_residuals": [
+     1.3877787807814457e-17,
+     2.5673907444456745e-16
+    ],
+    "peak_surface_difference_K": -0.015472030002747772,
+    "peak_time_difference_s": -0.14062910437473874,
+    "surface900": 53.07422281713919,
+    "surface900_reconstruction_error": 0.0,
+    "temp_tol_k": 0.1,
+    "time_tol_s": 2.0,
+    "within_tolerance": true
+   },
+   "max_energy_residual_program_J": 8.817551133688539e-10,
+   "sensor_w": 0.1,
+   "stack": "H2"
+  },
+  {
+   "analytic_900s": {
+    "H": 54.976488093618194,
+    "S": 53.401789041266966,
+    "final_H": 25.51926181912754,
+    "peak_surface": 52.60568582682855,
+    "peak_time": 904.0168261086401
+   },
+   "case": "rear_loss",
+   "dt": 1.0,
+   "executed": {
+    "H900": 54.963957360136135,
+    "S900": 53.38940902839004,
+    "discrete_energy_residual_J": 3.0240698833949864e-10,
+    "discrete_peak_surface": 52.5783751637871,
+    "discrete_peak_time": 904.0,
+    "exact": {
+     "H0": 54.963957360136135,
+     "H_at_peak": 54.3724376719173,
+     "H_inf": 25.0,
+     "S0": 53.38940902839004,
+     "S_inf": 25.0,
+     "amplitudes": {
+      "a_fast": 0.7462012411392734,
+      "a_slow": 29.21775611899686
+     },
+     "dH0": -0.19541624894113785,
+     "dS0": 0.0539272135943111,
+     "extremum": {
+      "fast_velocity": 0.09701877944768252,
+      "initial_slope": 0.0539272135943111,
+      "ratio": 2.251456347114662,
+      "slow_velocity": -0.043091565853371414,
+      "status": "post_shutoff_maximum",
+      "t_star": 4.018949446914221
+     },
+     "modes": {
+      "lam_fast": -0.20343046348457836,
+      "lam_slow": -0.0014927972026931038,
+      "r_fast": -0.6391221233729638,
+      "r_slow": 0.9879719247612635,
+      "x_inf": 0.0,
+      "y_inf": 0.0
+     },
+     "peak_S": 53.48310087555738,
+     "peak_kind": "interior_maximum",
+     "peak_surface": 52.59376407919747,
+     "peak_time": 904.0189494469142,
+     "rising_criterion_met": true,
+     "shutoff_time": 900.0,
+     "surface0": 52.50299760197383,
+     "surface_inf": 25.0
+    },
+    "final_H_exact": 25.519039216746123,
+    "final_H_executed": 25.52060148787153,
+    "final_time": 3600.0,
+    "max_abs_dev_H": 0.025949350362544976,
+    "max_abs_dev_S": 0.016322183266964885,
+    "max_abs_dev_surface": 0.015812550617084753,
+    "mode_energy_identity_residuals": [
+     1.3877787807814457e-17,
+     2.5673907444456745e-16
+    ],
+    "peak_surface_difference_K": -0.015388915410369464,
+    "peak_time_difference_s": -0.018949446914234613,
+    "surface900": 52.50299760197383,
+    "surface900_reconstruction_error": 0.0,
+    "temp_tol_k": 0.1,
+    "time_tol_s": 2.0,
+    "within_tolerance": true
+   },
+   "max_energy_residual_program_J": 2.0872903405688703e-10,
+   "sensor_w": 0.0,
+   "stack": "H2"
+  },
+  {
+   "analytic_900s": {
+    "H": 33.88518680230182,
+    "S": 33.457274965175124,
+    "final_H": 25.165435687725008,
+    "peak_surface": 32.964597393094294,
+    "peak_time": 900.050334881804
+   },
+   "case": "intact",
+   "dt": 1.0,
+   "executed": {
+    "H900": 33.88465163705606,
+    "S900": 33.45658184035857,
+    "discrete_energy_residual_J": 2.94903657049872e-10,
+    "discrete_peak_surface": 32.96393850373145,
+    "discrete_peak_time": 900.0,
+    "exact": {
+     "H0": 33.88465163705606,
+     "H_at_peak": 33.87190822591316,
+     "H_inf": 25.165434905540618,
+     "S0": 33.45658184035857,
+     "S_inf": 25.229395409992918,
+     "amplitudes": {
+      "a_fast": 1.988140328588672,
+      "a_slow": 6.731076402926771
+     },
+     "dH0": -0.24979653164208188,
+     "dS0": 0.0002635241532826585,
+     "extremum": {
+      "fast_velocity": 0.05182134486012521,
+      "initial_slope": 0.0002635241532826585,
+      "ratio": 1.005111235301838,
+      "slow_velocity": -0.051557820706842554,
+      "status": "post_shutoff_maximum",
+      "t_star": 0.05113225703458047
+     },
+     "modes": {
+      "lam_fast": -0.10562054867889648,
+      "lam_slow": -0.005914070336298022,
+      "r_fast": -0.24678185558789711,
+      "r_slow": 1.295160367817732,
+      "x_inf": 0.16543490554061696,
+      "y_inf": 0.22939540999291755
+     },
+     "peak_S": 33.45658857124804,
+     "peak_kind": "interior_maximum",
+     "peak_surface": 32.963944842508845,
+     "peak_time": 900.0511322570346,
+     "rising_criterion_met": true,
+     "shutoff_time": 900.0,
+     "surface0": 32.96393850373145,
+     "surface_inf": 25.216031840371144
+    },
+    "final_H_exact": 25.16543568766282,
+    "final_H_executed": 25.16543572532699,
+    "final_time": 3600.0,
+    "max_abs_dev_H": 0.03811084656116037,
+    "max_abs_dev_S": 0.009460209888985105,
+    "max_abs_dev_surface": 0.008909099587814495,
+    "mode_energy_identity_residuals": [
+     1.1102230246251565e-16,
+     7.355227538141662e-16
+    ],
+    "peak_surface_difference_K": -6.338777396308615e-06,
+    "peak_time_difference_s": -0.05113225703462376,
+    "surface900": 32.96393850373145,
+    "surface900_reconstruction_error": 0.0,
+    "temp_tol_k": 0.1,
+    "time_tol_s": 2.0,
+    "within_tolerance": true
+   },
+   "max_energy_residual_program_J": 5.120455170981586e-10,
+   "sensor_w": 0.1,
+   "stack": "H3"
+  },
+  {
+   "analytic_900s": {
+    "H": 50.17759819646454,
+    "S": 46.96359038761098,
+    "final_H": 28.18657690257829,
+    "peak_surface": 45.89847418316718,
+    "peak_time": 913.5142991483599
+   },
+   "case": "rear_loss",
+   "dt": 1.0,
+   "executed": {
+    "H900": 50.169875190232176,
+    "S900": 46.955975977385066,
+    "discrete_energy_residual_J": -4.197318048682064e-10,
+    "discrete_peak_surface": 45.88126327311291,
+    "discrete_peak_time": 914.0,
+    "exact": {
+     "H0": 50.169875190232176,
+     "H_at_peak": 48.398718806819275,
+     "H_inf": 26.327324074074074,
+     "S0": 46.955975977385066,
+     "S_inf": 26.327324074074074,
+     "amplitudes": {
+      "a_fast": 2.197235675454959,
+      "a_slow": 21.645315440703143
+     },
+     "dH0": -0.20782009040084304,
+     "dS0": 0.04158680268204861,
+     "extremum": {
+      "fast_velocity": 0.06099103313698232,
+      "initial_slope": 0.04158680268204861,
+      "ratio": 3.143182270414376,
+      "slow_velocity": -0.01940423045493371,
+      "status": "post_shutoff_maximum",
+      "t_star": 13.518510087050117
+     },
+     "modes": {
+      "lam_fast": -0.08562537046458166,
+      "lam_slow": -0.0009092485506128307,
+      "r_fast": -0.32418049768466917,
+      "r_slow": 0.9859386395441339,
+      "x_inf": 1.3273240740740742,
+      "y_inf": 1.3273240740740742
+     },
+     "peak_S": 47.18371691222886,
+     "peak_kind": "interior_maximum",
+     "peak_surface": 45.891390943564375,
+     "peak_time": 913.5185100870501,
+     "rising_criterion_met": true,
+     "shutoff_time": 900.0,
+     "surface0": 45.67691719588272,
+     "surface_inf": 26.25
+    },
+    "final_H_exact": 28.185913761413516,
+    "final_H_executed": 28.187988013820817,
+    "final_time": 3600.0,
+    "max_abs_dev_H": 0.03353451951133479,
+    "max_abs_dev_S": 0.010732180967202964,
+    "max_abs_dev_surface": 0.010106971214518978,
+    "mode_energy_identity_residuals": [
+     1.3877787807814457e-17,
+     -7.389922007661198e-16
+    ],
+    "peak_surface_difference_K": -0.010127670451467452,
+    "peak_time_difference_s": 0.48148991294988264,
+    "surface900": 45.67691719588272,
+    "surface900_reconstruction_error": 0.0,
+    "temp_tol_k": 0.1,
+    "time_tol_s": 2.0,
+    "within_tolerance": true
+   },
+   "max_energy_residual_program_J": 1.3324097380973399e-09,
+   "sensor_w": 0.1,
+   "stack": "H3"
+  },
+  {
+   "analytic_900s": {
+    "H": 49.71185106170682,
+    "S": 46.485728308948744,
+    "final_H": 26.93323271660745,
+    "peak_surface": 45.438846970935955,
+    "peak_time": 913.0537152406042
+   },
+   "case": "rear_loss",
+   "dt": 1.0,
+   "executed": {
+    "H900": 49.7042846906304,
+    "S900": 46.47826833137482,
+    "discrete_energy_residual_J": -1.8167156667914242e-10,
+    "discrete_peak_surface": 45.42184629228389,
+    "discrete_peak_time": 913.0,
+    "exact": {
+     "H0": 49.7042846906304,
+     "H_at_peak": 47.95970943660807,
+     "H_inf": 25.0,
+     "S0": 46.47826833137482,
+     "S_inf": 25.0,
+     "amplitudes": {
+      "a_fast": 2.1972356754556426,
+      "a_slow": 22.507049015174758
+     },
+     "dH0": -0.20860362040450428,
+     "dS0": 0.0408142901762735,
+     "extremum": {
+      "fast_velocity": 0.0609910331370013,
+      "initial_slope": 0.0408142901762735,
+      "ratio": 3.0228383865381456,
+      "slow_velocity": -0.020176742960727797,
+      "status": "post_shutoff_maximum",
+      "t_star": 13.057682860028423
+     },
+     "modes": {
+      "lam_fast": -0.08562537046458166,
+      "lam_slow": -0.0009092485506128307,
+      "r_fast": -0.32418049768466917,
+      "r_slow": 0.9859386395441339,
+      "x_inf": 0.0,
+      "y_inf": 0.0
+     },
+     "peak_S": 46.69580696000847,
+     "peak_kind": "interior_maximum",
+     "peak_surface": 45.43190448340886,
+     "peak_time": 913.0576828600284,
+     "rising_criterion_met": true,
+     "shutoff_time": 900.0,
+     "surface0": 45.22703870036206,
+     "surface_inf": 25.0
+    },
+    "final_H_exact": 26.93258302502651,
+    "final_H_executed": 26.93473985663998,
+    "final_time": 3600.0,
+    "max_abs_dev_H": 0.03353874511579846,
+    "max_abs_dev_S": 0.010728014780482908,
+    "max_abs_dev_surface": 0.010103047731547576,
+    "mode_energy_identity_residuals": [
+     1.3877787807814457e-17,
+     -7.389922007661198e-16
+    ],
+    "peak_surface_difference_K": -0.010058191124969085,
+    "peak_time_difference_s": -0.0576828600284216,
+    "surface900": 45.22703870036206,
+    "surface900_reconstruction_error": 0.0,
+    "temp_tol_k": 0.1,
+    "time_tol_s": 2.0,
+    "within_tolerance": true
+   },
+   "max_energy_residual_program_J": 1.3596945791505277e-10,
+   "sensor_w": 0.0,
+   "stack": "H3"
+  }
+ ]
+}

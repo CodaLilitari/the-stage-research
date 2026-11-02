@@ -1,0 +1,177 @@
+FFEFFFFFFFFFFF...........................................F................
+======================================================================
+ERROR: test_info_equal_or_tag_colliding_loads_build_a_plan (tests.test_thermal_contract_metamorphic.InformationalNotPromised.test_info_equal_or_tag_colliding_loads_build_a_plan)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w12/metamorphic/tests/test_thermal_contract_metamorphic.py", line 1969, in test_info_equal_or_tag_colliding_loads_build_a_plan
+    conds = tc.build_shared_conditions(cfg)
+  File "red-sandbox/work/w12/metamorphic/thermal_contract_c3.py", line 660, in build_shared_conditions
+    raise ConfigError("duplicate condition_id in scenario plan")
+thermal_contract_under_test.ConfigError: duplicate condition_id in scenario plan
+
+======================================================================
+FAIL: test_info_T_H_monotone_in_silicone_thickness_with_sensor_on (tests.test_thermal_contract_metamorphic.InformationalNotPromised.test_info_T_H_monotone_in_silicone_thickness_with_sensor_on)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w12/metamorphic/tests/test_thermal_contract_metamorphic.py", line 1943, in test_info_T_H_monotone_in_silicone_thickness_with_sensor_on
+    self.assertLE(r0["T_H_C"], r1["T_H_C"], msg=(stack, p))
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "red-sandbox/work/w12/metamorphic/tests/test_thermal_contract_metamorphic.py", line 399, in assertLE
+    self.fail("%r <= %r failed (tol %g)%s" % (a, b, tol, "" if msg is None else ": %s" % (msg,)))
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 20.50294270289668 <= 20.501441656442452 failed (tol 1e-09): ({'stack_id': 'S', 't_outer_silicone_m': 0.0004105, 't_film_m': 0.0, 't_inner_silicone_m': 0.0003281}, {'area_m2': 0.00332516, 'k_sil': 0.3854, 'k_film': 0.2438, 'r_c_inner': 0.001716, 'r_c_outer': 0.00281, 'h': 1.618, 'R_rej': 11.389, 'T_amb': -29.272, 'T_res': -29.272, 'P_body': 3.8293, 'P_sensor': 0.8095, 't_scale_inner': 1.0, 't_scale_outer': 1.0, 't_scale_film': 1.0})
+
+======================================================================
+FAIL: test_info_T_S_monotone_in_contact_resistance_with_sensor_off (tests.test_thermal_contract_metamorphic.InformationalNotPromised.test_info_T_S_monotone_in_contact_resistance_with_sensor_off)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w12/metamorphic/tests/test_thermal_contract_metamorphic.py", line 1933, in test_info_T_S_monotone_in_contact_resistance_with_sensor_off
+    self.assertLE(r0["T_S_C"], r1["T_S_C"], msg=(stack, p))
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "red-sandbox/work/w12/metamorphic/tests/test_thermal_contract_metamorphic.py", line 399, in assertLE
+    self.fail("%r <= %r failed (tol %g)%s" % (a, b, tol, "" if msg is None else ": %s" % (msg,)))
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 11.677357585439909 <= 11.25325258162723 failed (tol 1e-09): ({'stack_id': 'S', 't_outer_silicone_m': 0.0004105, 't_film_m': 0.0, 't_inner_silicone_m': 0.0003281}, {'area_m2': 0.00332516, 'k_sil': 0.3854, 'k_film': 0.2438, 'r_c_inner': 0.001716, 'r_c_outer': 0.00281, 'h': 1.618, 'R_rej': 11.389, 'T_amb': -29.272, 'T_res': -29.272, 'P_body': 3.8293, 'P_sensor': 0.0, 't_scale_inner': 1.0, 't_scale_outer': 1.0, 't_scale_film': 1.0})
+
+======================================================================
+FAIL: test_info_gauss_cross_check_agrees_under_extreme_conditioning (tests.test_thermal_contract_metamorphic.InformationalNotPromised.test_info_gauss_cross_check_agrees_under_extreme_conditioning)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w12/metamorphic/tests/test_thermal_contract_metamorphic.py", line 1952, in test_info_gauss_cross_check_agrees_under_extreme_conditioning
+    self.assertClose(sol["T_H_gauss"], sol["T_H"], msg=G_rej)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "red-sandbox/work/w12/metamorphic/tests/test_thermal_contract_metamorphic.py", line 394, in assertClose
+    self.fail("%r !~ %r (tol %g)%s" % (a, b, tol, "" if msg is None else ": %s" % (msg,)))
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 5099546647353.274 !~ 5100000000024.999 (tol 1e-09): 1e-12
+
+======================================================================
+FAIL: test_info_h_zero_nominal_study_is_fully_solvable (tests.test_thermal_contract_metamorphic.InformationalNotPromised.test_info_h_zero_nominal_study_is_fully_solvable)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w12/metamorphic/tests/test_thermal_contract_metamorphic.py", line 1993, in test_info_h_zero_nominal_study_is_fully_solvable
+    self.assertEqual(tc.summarize(run_all_cases(cfg))["n_not_solved"], 0)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 12 != 0
+
+======================================================================
+FAIL: test_info_large_h_drives_T_S_to_T_amb (tests.test_thermal_contract_metamorphic.InformationalNotPromised.test_info_large_h_drives_T_S_to_T_amb)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w12/metamorphic/tests/test_thermal_contract_metamorphic.py", line 1998, in test_info_large_h_drives_T_S_to_T_amb
+    self.assertClose(res["T_S_C"], 25.0, 1e-6)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "red-sandbox/work/w12/metamorphic/tests/test_thermal_contract_metamorphic.py", line 394, in assertClose
+    self.fail("%r !~ %r (tol %g)%s" % (a, b, tol, "" if msg is None else ": %s" % (msg,)))
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 25.913671119574058 !~ 25.0 (tol 1e-06)
+
+======================================================================
+FAIL: test_info_tiny_positive_conductances_do_not_underflow_the_determinant (tests.test_thermal_contract_metamorphic.InformationalNotPromised.test_info_tiny_positive_conductances_do_not_underflow_the_determinant)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w12/metamorphic/tests/test_thermal_contract_metamorphic.py", line 1959, in test_info_tiny_positive_conductances_do_not_underflow_the_determinant
+    self.assertEqual(sol["status"], "solved")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'singular_unclassified' != 'solved'
+- singular_unclassified
++ solved
+
+
+======================================================================
+FAIL: test_info_validator_rejects_negative_or_unordered_physical_choices (tests.test_thermal_contract_metamorphic.InformationalNotPromised.test_info_validator_rejects_negative_or_unordered_physical_choices) (path=('sources', 'sensor', 'P_W'), value=-0.1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w12/metamorphic/tests/test_thermal_contract_metamorphic.py", line 1985, in test_info_validator_rejects_negative_or_unordered_physical_choices
+    self.assertEqual(validation_outcome(cfg), "rejected", (path, value))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'admitted' != 'rejected'
+- admitted
++ rejected
+ : (('sources', 'sensor', 'P_W'), -0.1)
+
+======================================================================
+FAIL: test_info_validator_rejects_negative_or_unordered_physical_choices (tests.test_thermal_contract_metamorphic.InformationalNotPromised.test_info_validator_rejects_negative_or_unordered_physical_choices) (path=('sources', 'body', 'P_W_list'), value=[-5.0, 0.0, 5.0])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w12/metamorphic/tests/test_thermal_contract_metamorphic.py", line 1985, in test_info_validator_rejects_negative_or_unordered_physical_choices
+    self.assertEqual(validation_outcome(cfg), "rejected", (path, value))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'admitted' != 'rejected'
+- admitted
++ rejected
+ : (('sources', 'body', 'P_W_list'), [-5.0, 0.0, 5.0])
+
+======================================================================
+FAIL: test_info_validator_rejects_negative_or_unordered_physical_choices (tests.test_thermal_contract_metamorphic.InformationalNotPromised.test_info_validator_rejects_negative_or_unordered_physical_choices) (path=('contacts', 'r_c_m2K_W'), value=0.01)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w12/metamorphic/tests/test_thermal_contract_metamorphic.py", line 1985, in test_info_validator_rejects_negative_or_unordered_physical_choices
+    self.assertEqual(validation_outcome(cfg), "rejected", (path, value))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'admitted' != 'rejected'
+- admitted
++ rejected
+ : (('contacts', 'r_c_m2K_W'), 0.01)
+
+======================================================================
+FAIL: test_info_validator_rejects_negative_or_unordered_physical_choices (tests.test_thermal_contract_metamorphic.InformationalNotPromised.test_info_validator_rejects_negative_or_unordered_physical_choices) (path=('boundaries', 'h_W_m2K'), value=100.0)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w12/metamorphic/tests/test_thermal_contract_metamorphic.py", line 1985, in test_info_validator_rejects_negative_or_unordered_physical_choices
+    self.assertEqual(validation_outcome(cfg), "rejected", (path, value))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'admitted' != 'rejected'
+- admitted
++ rejected
+ : (('boundaries', 'h_W_m2K'), 100.0)
+
+======================================================================
+FAIL: test_info_validator_rejects_negative_or_unordered_physical_choices (tests.test_thermal_contract_metamorphic.InformationalNotPromised.test_info_validator_rejects_negative_or_unordered_physical_choices) (path=('boundaries', 'R_rej_K_W'), value=100.0)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w12/metamorphic/tests/test_thermal_contract_metamorphic.py", line 1985, in test_info_validator_rejects_negative_or_unordered_physical_choices
+    self.assertEqual(validation_outcome(cfg), "rejected", (path, value))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'admitted' != 'rejected'
+- admitted
++ rejected
+ : (('boundaries', 'R_rej_K_W'), 100.0)
+
+======================================================================
+FAIL: test_info_validator_rejects_negative_or_unordered_physical_choices (tests.test_thermal_contract_metamorphic.InformationalNotPromised.test_info_validator_rejects_negative_or_unordered_physical_choices) (path=('stacks', 0, 'stack_id'), value='')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w12/metamorphic/tests/test_thermal_contract_metamorphic.py", line 1985, in test_info_validator_rejects_negative_or_unordered_physical_choices
+    self.assertEqual(validation_outcome(cfg), "rejected", (path, value))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'admitted' != 'rejected'
+- admitted
++ rejected
+ : (('stacks', 0, 'stack_id'), '')
+
+======================================================================
+FAIL: test_info_validator_rejects_negative_or_unordered_physical_choices (tests.test_thermal_contract_metamorphic.InformationalNotPromised.test_info_validator_rejects_negative_or_unordered_physical_choices) (path=('study_id',), value=' ')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w12/metamorphic/tests/test_thermal_contract_metamorphic.py", line 1985, in test_info_validator_rejects_negative_or_unordered_physical_choices
+    self.assertEqual(validation_outcome(cfg), "rejected", (path, value))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'admitted' != 'rejected'
+- admitted
++ rejected
+ : (('study_id',), ' ')
+
+======================================================================
+FAIL: test_sanitize_is_a_strict_json_projection (tests.test_thermal_contract_metamorphic.TestRunCaseAndPlan.test_sanitize_is_a_strict_json_projection)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w12/metamorphic/tests/test_thermal_contract_metamorphic.py", line 1646, in test_sanitize_is_a_strict_json_projection
+    self.assertIs(type(out), type(obj))
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: <class 'NoneType'> is not <class 'float'>
+
+----------------------------------------------------------------------
+Ran 68 tests in 0.673s
+
+FAILED (failures=14, errors=1)

@@ -1,0 +1,105 @@
+F...F.F.FFFF.F.s...F.....
+======================================================================
+FAIL: test_bias_step_and_dropout (test_supervisor.ClosedLoop.test_bias_step_and_dropout) (stack='H3', fault='dropout')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w10/thermal-supervisor-002/thermal_supervisor/test_supervisor.py", line 265, in test_bias_step_and_dropout
+    self.assertEqual(r["trip_time"], 602)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 481 != 602
+
+======================================================================
+FAIL: test_freeze_detected_with_bounded_latency_by_probe_scheme (test_supervisor.ClosedLoop.test_freeze_detected_with_bounded_latency_by_probe_scheme) (stack='H3')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w10/thermal-supervisor-002/thermal_supervisor/test_supervisor.py", line 240, in test_freeze_detected_with_bounded_latency_by_probe_scheme
+    self.assertGreater(st["true_S"] - st["reported_y1"], 1.0)   # observability gap at trip
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: -0.3474723386800811 not greater than 1.0
+
+======================================================================
+FAIL: test_intact_ideal_zero_residual_and_probe_cost (test_supervisor.ClosedLoop.test_intact_ideal_zero_residual_and_probe_cost)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w10/thermal-supervisor-002/thermal_supervisor/test_supervisor.py", line 182, in test_intact_ideal_zero_residual_and_probe_cost
+    self.assertEqual(r["probes_ok"], 6)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+AssertionError: 5 != 6
+
+======================================================================
+FAIL: test_no_false_alarm_inside_design_box (test_supervisor.ClosedLoop.test_no_false_alarm_inside_design_box) (run='H3_sup1_intact_noise')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w10/thermal-supervisor-002/thermal_supervisor/test_supervisor.py", line 192, in test_no_false_alarm_inside_design_box
+    self.assertEqual(r["final_state"], RUN, r["trip_cause"])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'TRIP_SENSOR' != 'RUN'
+- TRIP_SENSOR
++ RUN
+ : liveness watchdog: no informative probe within 360 powered s
+
+======================================================================
+FAIL: test_no_false_alarm_inside_design_box (test_supervisor.ClosedLoop.test_no_false_alarm_inside_design_box) (run='H3_sup1_hotcorner_noise')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w10/thermal-supervisor-002/thermal_supervisor/test_supervisor.py", line 192, in test_no_false_alarm_inside_design_box
+    self.assertEqual(r["final_state"], RUN, r["trip_cause"])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'TRIP_SENSOR' != 'RUN'
+- TRIP_SENSOR
++ RUN
+ : liveness watchdog: no informative probe within 360 powered s
+
+======================================================================
+FAIL: test_no_false_alarm_inside_design_box (test_supervisor.ClosedLoop.test_no_false_alarm_inside_design_box) (run='H3_sup1_coldcorner_noise')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w10/thermal-supervisor-002/thermal_supervisor/test_supervisor.py", line 192, in test_no_false_alarm_inside_design_box
+    self.assertEqual(r["final_state"], RUN, r["trip_cause"])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'TRIP_SENSOR' != 'RUN'
+- TRIP_SENSOR
++ RUN
+ : liveness watchdog: no informative probe within 360 powered s
+
+======================================================================
+FAIL: test_rear_loss_with_live_sensor_detected (test_supervisor.ClosedLoop.test_rear_loss_with_live_sensor_detected) (stack='H3')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w10/thermal-supervisor-002/thermal_supervisor/test_supervisor.py", line 222, in test_rear_loss_with_live_sensor_detected
+    self.assertEqual(r["final_state"], TRIP_MODEL)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'TRIP_SENSOR' != 'TRIP_MODEL'
+- TRIP_SENSOR
++ TRIP_MODEL
+
+
+======================================================================
+FAIL: test_stuck_on_actuator_detected_but_not_protected (test_supervisor.ClosedLoop.test_stuck_on_actuator_detected_but_not_protected) (stack='H3')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w10/thermal-supervisor-002/thermal_supervisor/test_supervisor.py", line 272, in test_stuck_on_actuator_detected_but_not_protected
+    self.assertGreater(r["final_H"], 60.0)   # study comparator only
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+AssertionError: 26.45504822915795 not greater than 60.0
+
+======================================================================
+FAIL: test_rear_loss_unobservable_without_rear_flux (test_supervisor.PlantFidelity.test_rear_loss_unobservable_without_rear_flux)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w10/thermal-supervisor-002/thermal_supervisor/test_supervisor.py", line 95, in test_rear_loss_unobservable_without_rear_flux
+    self.assertEqual((Hi, Si), (Hb, Sb))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+AssertionError: Tuples differ: (25.000000000000004, 25.000000000000004) != (24.999999999999993, 25.0)
+
+First differing element 0:
+25.000000000000004
+24.999999999999993
+
+- (25.000000000000004, 25.000000000000004)
++ (24.999999999999993, 25.0)
+
+----------------------------------------------------------------------
+Ran 23 tests in 0.753s
+
+FAILED (failures=9, skipped=1)

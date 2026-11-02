@@ -1,0 +1,23 @@
+run 2026-11-02T13:22:39Z
+reproduce_check from repro2; python 3.13.18; temp outputs in a private temp dir
+thermal fv1d tests                           exit=0    1.2s | ran=28 OK | recorded: OK (28 tests)
+thermal radiation tests                      exit=0    0.9s | ran=26 OK | recorded: OK (26 tests)
+thermal sensitivity tests                    exit=0    4.8s | ran=28 OK | recorded: OK
+thermal peak-exact tests                     exit=0    0.2s | ran=17 OK | recorded: OK (17 tests)
+thermal layered oracle tests                 exit=0    1.2s | ran=21 OK | recorded: OK (21 tests)
+thermal layered oracle cases                 exit=0    0.1s | {"written": "<temp>/oracle.json", "cases": 9} | recorded: 9 cases written
+thermal N-version cross-check tests          exit=0    0.1s | ran=10 OK | recorded: OK (10 tests)
+thermal N-version cross-check (F2 fixed)     exit=0    0.1s | OVERALL (judged tiers): PASS | recorded: OVERALL (judged tiers): PASS
+thermal hotspot 2-D tests                    exit=0    0.2s | ran=19 OK | recorded: OK (19 tests)
+thermal hotspot fix-003 convergence          exit=1    0.3s | ran=10 FAILED(failures=2) | recorded: FAILED (failures=2) - open issue
+thermal supervisor tests                     exit=0    1.5s | ran=30 OK (skipped=1) | recorded: OK (30 tests, 1 skipped)
+thermal metamorphic suite, candidate 3       exit=1    0.6s | ran=68 FAILED(failures=1, skipped=8) | recorded: FAILED (failures=1, skipped=8) - open issue
+gateway integrated: 7 suites                 exit=0    3.8s | ran=128 OK (expected failures=4) | recorded: OK (128 tests, expected failures=4)
+gateway model checker tests                  exit=0    0.8s | ran=17 OK | recorded: OK
+First Leaf oracle tests                      exit=0    8.3s | ran=32 OK (skipped=2) | recorded: OK (32 tests, 2 skipped)
+SITE0 audit vs revised_v1                    exit=1    0.2s | ran=17 FAILED(failures=2, errors=1) | recorded: FAILED (failures=2, errors=1) - extreme scales, open issue
+SITE0 mutant blindness                       exit=0    0.2s | frozen-suite blindness: BLIND (no failure or error under mutant) | recorded: frozen suites BLIND; audit module catches the mutant
+WEXACT0 audit                                exit=0    0.3s | ran=25 OK | recorded: OK (25 tests)
+pump audit (patched pump)                    exit=0    0.9s | ran=22 OK (skipped=2) | recorded: OK (22 tests, 2 skipped)
+release-observability study tests            exit=0    0.1s | ran=18 OK | recorded: OK
+First Leaf harness, 8 seeds, local           exit=0    7.4s | public_oracle all 0.139; random all 1.038 | recorded: public_oracle all 0.139; random 1.038

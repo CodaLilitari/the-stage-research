@@ -1,0 +1,49 @@
+...........EFF.....
+======================================================================
+ERROR: test_rational_root_witnesses_match_exact_equilibria (test_site0_repair_audit.RepairAudit.test_rational_root_witnesses_match_exact_equilibria) (m=1e-300, y=0.2, koff=5e-302)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 434, in test_rational_root_witnesses_match_exact_equilibria
+    late = Vessel(1, m, m, 1, koff).at(0, 1000 * relaxation_time(1, m, m, 1, koff))
+                                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 213, in relaxation_time
+    return 1 / (a * delta)
+           ~~^~~~~~~~~~~~~
+ZeroDivisionError: float division by zero
+
+======================================================================
+FAIL: test_rational_root_witnesses_match_exact_equilibria (test_site0_repair_audit.RepairAudit.test_rational_root_witnesses_match_exact_equilibria) (m=1e+300, y=0.8, koff=3.2e+300)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 435, in test_rational_root_witnesses_match_exact_equilibria
+    self.assert_rel(late.free_umol, complement, 1e-13)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 316, in assert_rel
+    self.assertTrue(math.isclose(actual, expected, rel_tol=rel, abs_tol=0),
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    (note, actual, expected,
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+                     actual / expected if expected else None))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : (None, 1e+300, 8e+299, 1.25)
+
+======================================================================
+FAIL: test_rational_root_witnesses_match_exact_equilibria (test_site0_repair_audit.RepairAudit.test_rational_root_witnesses_match_exact_equilibria) (m=1e+300, y=0.998, koff=4.98002e+302)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 435, in test_rational_root_witnesses_match_exact_equilibria
+    self.assert_rel(late.free_umol, complement, 1e-13)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 316, in assert_rel
+    self.assertTrue(math.isclose(actual, expected, rel_tol=rel, abs_tol=0),
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    (note, actual, expected,
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+                     actual / expected if expected else None))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : (None, 1e+300, 9.98e+299, 1.0020040080160322)
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.073s
+
+FAILED (failures=2, errors=1)

@@ -1,0 +1,20 @@
+Request firstleaf-sim-audit-001 (wave7-red-broad; model Claude Fable 5.1; header HEADER_04f46f5820f2.txt)
+
+TASK firstleaf-sim-audit-001
+Independently audit the First Leaf simulator and relay for (1) correctness against its own brief (dynamics: 0.1 step, 0.75 velocity retention, actuator effects, delayed noisy samples with source episode/tick, mapping changes); (2) evaluator separation: can anything in the public packet, receipts, file names, timing, error messages or exception paths leak evaluator-only information from private_state.json (answers, mapping, target, seeds)?; (3) receipt truthfulness and idempotency (same request ID and content never advances twice; changed content needs a new ID; stop latches); (4) crash/atomicity behaviour around the writer lock and private_state replacement.
+
+Deliver: a findings list ranked by severity, each with an exact reproducing input or call sequence and the expected vs actual behaviour derived from the code; a standard-library unittest module that demonstrates each finding against the ORIGINAL code (tests may be expected to fail - mark them); and minimal patches as unified diffs, kept separate from the tests. Distinguish definite defects from design questions. Do not claim to have executed anything.
+
+SOURCE BUNDLE (labels and sha256 of the verbatim sources appended to the request; contents not repeated here)
+- original src/first_leaf.py (MIT) | validation/gateway_repair/original/src/first_leaf.py | sha256=2306148b46490fae74dc49fc31e1161f76e64bf902d836276c2dfd9565645515
+- protocol.json | validation/gateway_repair/original/inputs/protocol.json | sha256=d3224dbb752eba3368c0a1569eb733d7a59fb9a3bf1929fdbb1810f9ae9cf382
+- README.md | validation/gateway_repair/original/README.md | sha256=91b40cde51426aec499e8c703c08297928501dded8255ce7862da833526cd22f
+- MODEL_BRIEF.md | validation/gateway_repair/original/docs/MODEL_BRIEF.md | sha256=9a93b21224ea6f134bbe429947906abfdfd9f1bf92792ac2bd79458edbad04b0
+- COVERAGE_AND_ATTRIBUTION.md | validation/gateway_repair/original/docs/COVERAGE_AND_ATTRIBUTION.md | sha256=cd03ce62d44c62c2bb33a274d9b8ec9a9e1cc978c683c0332f5fbf7dec90c8b3
+- tests/test_stage.py | validation/gateway_repair/original/tests/test_stage.py | sha256=fdf06906ce3b1058ecc23f2f00eb321988c9f487553ade59aa8c6df82c961c59
+- tests/test_relay.py | validation/gateway_repair/original/tests/test_relay.py | sha256=b4ea09e1d72925b92a5d9251e7259b2b8338ecc43683b09ad76ffa81e7b27b71
+- MIT LICENSE | validation/gateway_repair/LICENSE | sha256=bec5a38ecd3eb15627abb7e6888ec1cea25c4993b3de8fc80cab8f69828eb778
+- original src/interface.py (MIT) | validation/gateway_repair/original/src/interface.py | sha256=4ca89c83f1996a3ba67f231f081ff55b93e583338ded48a99eca162e7d06caa9
+- original src/relay.py (MIT) | validation/gateway_repair/original/src/relay.py | sha256=c0910ef2c16376b57bf098e374f7e7e95d521493b0d4685f8def00834742c145
+- candidate README | validation/gateway_repair/candidate/README.md | sha256=91b40cde51426aec499e8c703c08297928501dded8255ce7862da833526cd22f
+- scope gap | validation/gateway_repair/SCOPE_GAP.md | sha256=79dcf85ddd7f68432c802465e0776c58530df75437eed14057eb0f2fbe0319e2

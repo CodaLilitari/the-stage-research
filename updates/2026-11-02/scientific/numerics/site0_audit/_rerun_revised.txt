@@ -1,0 +1,65 @@
+test_cancelling_complement_mutant_is_detected_by_unequal_witness (test_site0_repair_audit.RepairAudit.test_cancelling_complement_mutant_is_detected_by_unequal_witness) ... ok
+test_empty_start_tiny_time_large_koff_matches_series (test_site0_repair_audit.RepairAudit.test_empty_start_tiny_time_large_koff_matches_series) ... ok
+test_equal_inventory_saturated_tiny_release_across_scales (test_site0_repair_audit.RepairAudit.test_equal_inventory_saturated_tiny_release_across_scales) ... ok
+test_equilibrium_tiny_components_are_relatively_accurate (test_site0_repair_audit.RepairAudit.test_equilibrium_tiny_components_are_relatively_accurate) ... 
+  test_equilibrium_tiny_components_are_relatively_accurate (test_site0_repair_audit.RepairAudit.test_equilibrium_tiny_components_are_relatively_accurate) (params=(1, 1, 1, 1, 1e-200)) ... FAIL
+test_extreme_scales_conserve_and_stay_in_interval (test_site0_repair_audit.RepairAudit.test_extreme_scales_conserve_and_stay_in_interval) ... 
+  test_extreme_scales_conserve_and_stay_in_interval (test_site0_repair_audit.RepairAudit.test_extreme_scales_conserve_and_stay_in_interval) (params=(1e+300, 1e-300, 1e-300, 1e-300, 1e+300), b0=1e-300, t=1e+300) ... FAIL
+  test_extreme_scales_conserve_and_stay_in_interval (test_site0_repair_audit.RepairAudit.test_extreme_scales_conserve_and_stay_in_interval) (params=(1, 1, 1, 1e-300, 1), b0=0, t=1e+300) ... FAIL
+test_float_bound_reentry_cannot_carry_saturated_information (test_site0_repair_audit.RepairAudit.test_float_bound_reentry_cannot_carry_saturated_information) ... ok
+test_frozen_witnesses_are_predicted_blind_to_complement_mutant (test_site0_repair_audit.RepairAudit.test_frozen_witnesses_are_predicted_blind_to_complement_mutant)
+Documents coverage gap F-4; a failure here means the frozen suite is ... ok
+test_large_rate_limits_are_relatively_accurate (test_site0_repair_audit.RepairAudit.test_large_rate_limits_are_relatively_accurate) ... ok
+test_original_kernel_shows_defect (test_site0_repair_audit.RepairAudit.test_original_kernel_shows_defect) ... ok
+test_reference_matches_kernel_and_closed_forms_in_ordinary_regime (test_site0_repair_audit.RepairAudit.test_reference_matches_kernel_and_closed_forms_in_ordinary_regime) ... ok
+test_saturated_bound_returns_exact_inventory_float (test_site0_repair_audit.RepairAudit.test_saturated_bound_returns_exact_inventory_float) ... ok
+test_saturated_tiny_time_matches_second_order_series (test_site0_repair_audit.RepairAudit.test_saturated_tiny_time_matches_second_order_series) ... ok
+test_unequal_inventory_saturated_tiny_release (test_site0_repair_audit.RepairAudit.test_unequal_inventory_saturated_tiny_release) ... ok
+
+======================================================================
+FAIL: test_equilibrium_tiny_components_are_relatively_accurate (test_site0_repair_audit.RepairAudit.test_equilibrium_tiny_components_are_relatively_accurate) (params=(1, 1, 1, 1, 1e-200))
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 233, in test_equilibrium_tiny_components_are_relatively_accurate
+    self.assert_state_close(eq, reference_state(*params, 0, 1e9), REL)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 160, in assert_state_close
+    self.assert_rel(actual, want, rel, (note, field))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 149, in assert_rel
+    self.assertTrue(math.isclose(actual, expected, rel_tol=rel, abs_tol=0),
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    (note, actual, expected,
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+                     actual / expected if expected else None))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : ((None, 'free'), 1e-100, 9.99999999e-10, 1.0000000010000001e-91)
+
+======================================================================
+FAIL: test_extreme_scales_conserve_and_stay_in_interval (test_site0_repair_audit.RepairAudit.test_extreme_scales_conserve_and_stay_in_interval) (params=(1e+300, 1e-300, 1e-300, 1e-300, 1e+300), b0=1e-300, t=1e+300)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 253, in test_extreme_scales_conserve_and_stay_in_interval
+    self.assert_state_close(r, reference_state(*params, b0, t), 1e-12)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 158, in assert_state_close
+    self.assertEqual(actual, 0.0, (note, field, actual))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1e-300 != 0.0 : (None, 'free', 1e-300)
+
+======================================================================
+FAIL: test_extreme_scales_conserve_and_stay_in_interval (test_site0_repair_audit.RepairAudit.test_extreme_scales_conserve_and_stay_in_interval) (params=(1, 1, 1, 1e-300, 1), b0=0, t=1e+300)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 253, in test_extreme_scales_conserve_and_stay_in_interval
+    self.assert_state_close(r, reference_state(*params, b0, t), 1e-12)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 158, in assert_state_close
+    self.assertEqual(actual, 0.0, (note, field, actual))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1e-300 != 0.0 : (None, 'bound', 1e-300)
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.035s
+
+FAILED (failures=3)

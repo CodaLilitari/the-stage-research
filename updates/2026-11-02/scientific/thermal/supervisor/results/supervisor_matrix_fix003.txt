@@ -1,0 +1,301 @@
+scenario                                           final         trip  delay    peakH peakSurf E_app/dem cause
+H1_ol_intact                                       OPEN_LOOP     None   None   33.831   33.555 4500/4500 
+H1_ol_rearloss600                                  OPEN_LOOP     None   None   61.143   59.747 4500/4500 
+H1_naive45_truthful_rearloss600                    TRIP_LIMIT     707    107   45.753   44.814 3535/4500 naive: reported >= 45.0 C
+H1_naive45_frozen600_rearloss600                   RUN           None   None   61.143   59.747 4500/4500 
+H1_sup1_intact_ideal                               RUN           None   None   32.998   32.703 3420/4500 
+H1_sup1_intact_noise                               RUN           None   None   32.998   32.703 3420/4500 
+H1_sup1_hotcorner_noise                            RUN           None   None   35.104   34.738 3420/4500 
+H1_sup1_coldcorner_noise                           RUN           None   None   31.413   31.176 3420/4500 
+H1_sup1_rearloss600_noise                          TRIP_MODEL     611     11   33.226   32.710 2335/4500 increment residual dy=1.056 dyhat=0.327
+H1_sup1_rearloss100_noise                          TRIP_MODEL     111     11   30.464   30.147  402/4500 increment residual dy=0.340 dyhat=-0.140
+H1_sup1_freeze600_rearloss600_noise                TRIP_SENSOR    720    120   40.497   39.917 2700/4500 probe no-response: dy=0.000 dyhat=-2.425
+H1_sup1_freeze600_only_noise                       TRIP_SENSOR    720    120   32.998   32.703 2700/4500 probe no-response: dy=0.000 dyhat=-2.425
+H1_sup1_biasstep600_rearloss600_noise              TRIP_MODEL     602      2   32.996   32.701 2290/4500 level residual -4.968 K
+H1_sup1_dropout600_noise                           TRIP_SENSOR    602      2   32.996   32.701 2290/4500 primary sensor dropout
+H1_sup1_actdelay5_intact_noise                     TRIP_MODEL      71     71   30.469   30.152  322/4500 increment residual dy=0.410 dyhat=-0.021
+H1_sup1_stuckon600_rearloss600_noise               TRIP_MODEL     611     11   90.857   88.661 17280/4500 increment residual dy=1.071 dyhat=0.327
+H1_sup2_freeze600_rearloss600_noise                TRIP_SENSOR    613     13   35.594   34.992 3065/4500 sensor disagreement > 0.80 K
+H1_sup2_intact_noise                               RUN           None   None   33.831   33.555 4500/4500 
+H1_sup1_idle_rearloss1500_redemand2400_noise       TRIP_MODEL    1838    338   32.998   32.703 3420/9000 level residual 0.896 K
+H2_ol_intact                                       OPEN_LOOP     None   None   33.861   33.362 4500/4500 
+H2_ol_rearloss600                                  OPEN_LOOP     None   None   55.545   53.154 4500/4500 
+H2_naive45_truthful_rearloss600                    TRIP_LIMIT     754    154   46.476   44.538 3770/4500 naive: reported >= 45.0 C
+H2_naive45_frozen600_rearloss600                   RUN           None   None   55.545   53.154 4500/4500 
+H2_sup1_intact_ideal                               RUN           None   None   32.772   32.188 3420/4500 
+H2_sup1_intact_noise                               RUN           None   None   32.772   32.188 3420/4500 
+H2_sup1_hotcorner_noise                            RUN           None   None   34.806   34.092 3420/4500 
+H2_sup1_coldcorner_noise                           RUN           None   None   31.235   30.756 3420/4500 
+H2_sup1_rearloss600_noise                          TRIP_MODEL     614     14   33.515   32.328 2350/4500 increment residual dy=0.740 dyhat=0.225
+H2_sup1_rearloss100_noise                          TRIP_MODEL     115     15   29.742   29.214  410/4500 increment residual dy=0.379 dyhat=-0.040
+H2_sup1_freeze600_rearloss600_noise                TRIP_SENSOR    720    120   38.393   37.393 2700/4500 probe no-response: dy=0.000 dyhat=-1.576
+H2_sup1_freeze600_only_noise                       TRIP_SENSOR    720    120   32.768   32.183 2700/4500 probe no-response: dy=0.000 dyhat=-1.576
+H2_sup1_biasstep600_rearloss600_noise              TRIP_MODEL     602      2   32.746   32.159 2290/4500 level residual -4.746 K
+H2_sup1_dropout600_noise                           TRIP_SENSOR    602      2   32.746   32.159 2290/4500 primary sensor dropout
+H2_sup1_actdelay5_intact_noise                     RUN           None   None   32.772   32.188 3420/4500 
+H2_sup1_stuckon600_rearloss600_noise               TRIP_MODEL     615     15   92.130   88.090 17280/4500 increment residual dy=0.708 dyhat=0.222
+H2_sup2_freeze600_rearloss600_noise                TRIP_SENSOR    620     20   36.205   34.840 3100/4500 sensor disagreement > 0.80 K
+H2_sup2_intact_noise                               RUN           None   None   33.861   33.362 4500/4500 
+H2_sup1_idle_rearloss1500_redemand2400_noise       TRIP_MODEL    2050    550   32.772   32.188 3420/9000 level residual 0.975 K
+H3_ol_intact                                       OPEN_LOOP     None   None   33.885   32.964 4500/4500 
+H3_ol_rearloss600                                  OPEN_LOOP     None   None   50.170   45.881 4500/4500 
+H3_naive45_truthful_rearloss600                    TRIP_LIMIT     854    254   48.189   44.066 4270/4500 naive: reported >= 45.0 C
+H3_naive45_frozen600_rearloss600                   RUN           None   None   50.170   45.881 4500/4500 
+H3_sup1_intact_ideal                               RUN           None   None   32.367   31.134 3150/4500 
+H3_sup1_intact_noise                               RUN           None   None   32.367   31.134 3150/4500 
+H3_sup1_hotcorner_noise                            RUN           None   None   34.280   32.779 3150/4500 
+H3_sup1_coldcorner_noise                           RUN           None   None   30.922   29.905 3150/4500 
+H3_sup1_rearloss600_noise                          TRIP_MODEL     623     23   32.944   31.468 2236/4500 increment residual dy=0.325 dyhat=-0.106
+H3_sup1_rearloss100_noise                          TRIP_SENSOR    150     50   29.813   28.592  480/4500 probe no-response: dy=1.585 dyhat=0.804
+H3_sup1_freeze600_rearloss600_noise                TRIP_SENSOR    690     90   34.249   32.623 2370/4500 probe no-response: dy=0.126 dyhat=-0.939
+H3_sup1_freeze600_only_noise                       TRIP_SENSOR    690     90   32.276   31.026 2370/4500 probe no-response: dy=0.073 dyhat=-0.937
+H3_sup1_biasstep600_rearloss600_noise              TRIP_MODEL     602      2   32.354   31.104 2194/4500 level residual -4.843 K
+H3_sup1_dropout600_noise                           TRIP_SENSOR    602      2   32.276   31.021 2194/4500 primary sensor dropout
+H3_sup1_actdelay5_intact_noise                     RUN           None   None   32.367   31.134 3150/4500 
+H3_sup1_stuckon600_rearloss600_noise               TRIP_MODEL     619     19   92.455   84.939 17190/4500 increment residual dy=0.391 dyhat=-0.079
+H3_sup2_freeze600_rearloss600_noise                TRIP_SENSOR    632     32   37.238   34.204 3160/4500 sensor disagreement > 0.80 K
+H3_sup2_intact_noise                               RUN           None   None   33.885   32.964 4500/4500 
+H3_sup1_idle_rearloss1500_redemand2400_noise       TRIP_MODEL    2322    822   32.367   31.134 3150/9000 level residual 0.908 K
+H1_sup1_freeze600_rearloss600_period240_noise      TRIP_MODEL     795    195   50.147   49.247 3390/4500 increment residual dy=0.000 dyhat=-0.649
+H1_sup1_outofbox_rrej10_intact_noise               TRIP_MODEL      67   None   32.534   32.219  314/4500 increment residual dy=0.781 dyhat=0.281
+H1_sup1_noprobe_freeze600_rearloss600_ideal        TRIP_MODEL     911    311   61.143   59.747 4500/4500 increment residual dy=0.000 dyhat=-0.887
+false alarms inside design box: none
+{
+ "assumptions": "iid Gaussian sigma=0.1 K, |bias|<=0.2 K, deterministic residual assumed zero",
+ "level_test_union_bound_3600s": 2.7656645648960926e-23,
+ "increment_test_union_bound_3600s_approx": 3.340803848909239e-14,
+ "probe_test_per_probe": 0.0015654022580025523,
+ "label": "noise-only bounds; overlapping-window persistence power is approximate"
+}
+{
+ "candidates": [
+  {
+   "duration": 60,
+   "period": 150,
+   "signature_K": -2.4251122566969237
+  }
+ ],
+ "config": {
+  "actuator_delay_model": 0,
+  "dual_sensor": false,
+  "inc_mean_n": 5,
+  "inc_window": 10,
+  "j_assumed": 0.1,
+  "m_inc": 3,
+  "m_level": 3,
+  "m_pair": 3,
+  "n_dropout": 3,
+  "p_max": 10.0,
+  "probe_depth": 3.0,
+  "probe_duration": 60,
+  "probe_enabled": true,
+  "probe_first": 60,
+  "probe_mean_n": 5,
+  "probe_min_predicted": 0.6,
+  "probe_period": 150,
+  "rate_max": 8.0,
+  "sample_dt": 1.0,
+  "t_hi": 150.0,
+  "t_lo": -20.0,
+  "t_trip": 45.0,
+  "tau_abs_inc": 0.3,
+  "tau_abs_level": 0.8,
+  "tau_abs_probe": 0.2,
+  "tau_pair": 0.8,
+  "tau_rel_inc": 0.5,
+  "tau_rel_level": 0.4,
+  "tau_rel_probe": 0.6,
+  "watchdog_enabled": true,
+  "watchdog_powered_s": 360
+ },
+ "derivation_ok": true,
+ "label": "model derivation for the study plant; not a hardware design recommendation",
+ "overrides": {},
+ "period_rule": "duration + base recovery (90 s), extended in 30 s steps until |periodic signature| >= target",
+ "periodic_signature_K": -2.4251122566969237,
+ "probe_duration_rule": "max(base, ceil10(0.5*tau_slow)) capped at 120 s",
+ "signature_target_K": 1.0,
+ "stack": "H1",
+ "tau_fast_s": 1.8978627961319845,
+ "tau_slow_blocked_s": 463.09809469390194,
+ "tau_slow_s": 63.38279505089472,
+ "watchdog_rule": "2*probe_period + probe_duration (tolerates one uninformative probe)"
+}
+{
+ "candidates": [
+  {
+   "duration": 60,
+   "period": 150,
+   "signature_K": -1.5791717201123774
+  }
+ ],
+ "config": {
+  "actuator_delay_model": 0,
+  "dual_sensor": false,
+  "inc_mean_n": 5,
+  "inc_window": 10,
+  "j_assumed": 0.1,
+  "m_inc": 3,
+  "m_level": 3,
+  "m_pair": 3,
+  "n_dropout": 3,
+  "p_max": 10.0,
+  "probe_depth": 3.0,
+  "probe_duration": 60,
+  "probe_enabled": true,
+  "probe_first": 60,
+  "probe_mean_n": 5,
+  "probe_min_predicted": 0.6,
+  "probe_period": 150,
+  "rate_max": 8.0,
+  "sample_dt": 1.0,
+  "t_hi": 150.0,
+  "t_lo": -20.0,
+  "t_trip": 45.0,
+  "tau_abs_inc": 0.3,
+  "tau_abs_level": 0.8,
+  "tau_abs_probe": 0.2,
+  "tau_pair": 0.8,
+  "tau_rel_inc": 0.5,
+  "tau_rel_level": 0.4,
+  "tau_rel_probe": 0.6,
+  "watchdog_enabled": true,
+  "watchdog_powered_s": 360
+ },
+ "derivation_ok": true,
+ "label": "model derivation for the study plant; not a hardware design recommendation",
+ "overrides": {},
+ "period_rule": "duration + base recovery (90 s), extended in 30 s steps until |periodic signature| >= target",
+ "periodic_signature_K": -1.5791717201123774,
+ "probe_duration_rule": "max(base, ceil10(0.5*tau_slow)) capped at 120 s",
+ "signature_target_K": 1.0,
+ "stack": "H2",
+ "tau_fast_s": 4.559400266252125,
+ "tau_slow_blocked_s": 669.8833560217867,
+ "tau_slow_s": 94.37373027276456,
+ "watchdog_rule": "2*probe_period + probe_duration (tolerates one uninformative probe)"
+}
+{
+ "candidates": [
+  {
+   "duration": 90,
+   "period": 180,
+   "signature_K": -1.0109385956633794
+  }
+ ],
+ "config": {
+  "actuator_delay_model": 0,
+  "dual_sensor": false,
+  "inc_mean_n": 5,
+  "inc_window": 10,
+  "j_assumed": 0.1,
+  "m_inc": 3,
+  "m_level": 3,
+  "m_pair": 3,
+  "n_dropout": 3,
+  "p_max": 10.0,
+  "probe_depth": 3.0,
+  "probe_duration": 90,
+  "probe_enabled": true,
+  "probe_first": 60,
+  "probe_mean_n": 5,
+  "probe_min_predicted": 0.6,
+  "probe_period": 180,
+  "rate_max": 8.0,
+  "sample_dt": 1.0,
+  "t_hi": 150.0,
+  "t_lo": -20.0,
+  "t_trip": 45.0,
+  "tau_abs_inc": 0.3,
+  "tau_abs_level": 0.8,
+  "tau_abs_probe": 0.2,
+  "tau_pair": 0.8,
+  "tau_rel_inc": 0.5,
+  "tau_rel_level": 0.4,
+  "tau_rel_probe": 0.6,
+  "watchdog_enabled": true,
+  "watchdog_powered_s": 450
+ },
+ "derivation_ok": true,
+ "label": "model derivation for the study plant; not a hardware design recommendation",
+ "overrides": {},
+ "period_rule": "duration + base recovery (90 s), extended in 30 s steps until |periodic signature| >= target",
+ "periodic_signature_K": -1.0109385956633794,
+ "probe_duration_rule": "max(base, ceil10(0.5*tau_slow)) capped at 120 s",
+ "signature_target_K": 1.0,
+ "stack": "H3",
+ "tau_fast_s": 9.467854622116777,
+ "tau_slow_blocked_s": 1099.8092868292247,
+ "tau_slow_s": 169.08828321882297,
+ "watchdog_rule": "2*probe_period + probe_duration (tolerates one uninformative probe)"
+}
+{
+ "stack": "H1",
+ "steady_H_5W": 33.83119986113007,
+ "steady_S_5W": 33.70398462379288,
+ "rear_flux_W": 4.415599930565033,
+ "tau_slow_s": 63.38279505089472,
+ "tau_fast_s": 1.8978627961319845,
+ "tau_slow_blocked_s": 463.09809469390194,
+ "probe_duration_s": 60,
+ "probe_period_s": 150,
+ "watchdog_powered_s": 360,
+ "increment_detection_time_estimate_s": 10,
+ "level_detection_time_estimate_s": 39,
+ "level_threshold_K": 4.281593849517151,
+ "probe_predicted_dS_K": -2.9841657194703366,
+ "periodic_probe_signature_K": -2.4251122566969237,
+ "probe_informative": true,
+ "frozen_channel_detected_by_probe": true,
+ "idle_rear_flux_W": 0.08515145503466037,
+ "idle_S_intact": 25.188839120327327,
+ "idle_S_blocked": 26.271768518518655,
+ "label": "noise-free model estimate, not a measurement"
+}
+{
+ "stack": "H2",
+ "steady_H_5W": 33.86190245732055,
+ "steady_S_5W": 33.632649568052095,
+ "rear_flux_W": 4.430951228660273,
+ "tau_slow_s": 94.37373027276456,
+ "tau_fast_s": 4.559400266252125,
+ "tau_slow_blocked_s": 669.8833560217867,
+ "probe_duration_s": 60,
+ "probe_period_s": 150,
+ "watchdog_powered_s": 360,
+ "increment_detection_time_estimate_s": 10,
+ "level_detection_time_estimate_s": 57,
+ "level_threshold_K": 4.253059827220838,
+ "probe_predicted_dS_K": -2.173800661061737,
+ "periodic_probe_signature_K": -1.5791717201123774,
+ "probe_informative": true,
+ "frozen_channel_detected_by_probe": true,
+ "idle_rear_flux_W": 0.08430085540404875,
+ "idle_S_intact": 25.202564027647266,
+ "idle_S_blocked": 26.29028703703707,
+ "label": "noise-free model estimate, not a measurement"
+}
+{
+ "stack": "H3",
+ "steady_H_5W": 33.91905575238601,
+ "steady_S_5W": 33.50114068702377,
+ "rear_flux_W": 4.459527876193004,
+ "tau_slow_s": 169.08828321882297,
+ "tau_fast_s": 9.467854622116777,
+ "tau_slow_blocked_s": 1099.8092868292247,
+ "probe_duration_s": 90,
+ "probe_period_s": 180,
+ "watchdog_powered_s": 450,
+ "increment_detection_time_estimate_s": 15,
+ "level_detection_time_estimate_s": 93,
+ "level_threshold_K": 4.2004562748095085,
+ "probe_predicted_dS_K": -1.8339082421422752,
+ "periodic_probe_signature_K": -1.0109385956633794,
+ "probe_informative": true,
+ "frozen_channel_detected_by_probe": true,
+ "idle_rear_flux_W": 0.08271745277030895,
+ "idle_S_intact": 25.22939540999292,
+ "idle_S_blocked": 26.327324074074085,
+ "label": "noise-free model estimate, not a measurement"
+}
+wrote red-sandbox/work/w12/supervisor_results_fix003.json

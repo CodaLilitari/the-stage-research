@@ -1,0 +1,7 @@
+.applied 2 hunk(s): 9 -> 10 lines; sha256(out) = 7d57a24e302b322b16a3e2818f58ec9de9e55ec869ce28271884ce57bef3c83f
+error: refusing to overwrite existing '/tmp/tmpm22umhik/out.txt' (use --force)
+...
+----------------------------------------------------------------------
+Ran 4 tests in 0.007s
+
+OK

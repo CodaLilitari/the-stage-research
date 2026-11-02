@@ -1,0 +1,38 @@
+{
+ "steady_rows": 35,
+ "hypotheses": {
+  "HYP1": true,
+  "HYP2": true,
+  "HYP3": true,
+  "HYP4": true,
+  "HYP6": false
+ },
+ "spreading": [
+  {
+   "stack": "H1",
+   "ell_modal_unfaulted_m": 0.0006822787753691979,
+   "fit_over_modal": 1.0224927130535388,
+   "HYP5_pass": true
+  },
+  {
+   "stack": "H2",
+   "ell_modal_unfaulted_m": 0.0012952501592242442,
+   "fit_over_modal": 1.0152668736692732,
+   "HYP5_pass": true
+  },
+  {
+   "stack": "H3",
+   "ell_modal_unfaulted_m": 0.00248221224643576,
+   "fit_over_modal": 1.0107512085143107,
+   "HYP5_pass": true
+  }
+ ],
+ "refinement_orders": {
+  "T_H": 0.27015975749952653,
+  "T_mid_centre": 2.5631528461192166,
+  "T_mid_min": 2.5631528457923025,
+  "T_surf_min": 2.569412700795067
+ },
+ "transient_rows": 6,
+ "out": "red-sandbox/work/w10/_hotspot2d_results.json"
+}

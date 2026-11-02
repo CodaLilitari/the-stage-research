@@ -1,0 +1,17 @@
+{
+  "study": "WEXACT0",
+  "license": "Apache-2.0",
+  "units": {"volumes":"mL","amounts":"umol","conductance":"mL/s","time":"s"},
+  "cases": [
+    {"id":"forward_unequal","v1":"2","v2":"0.5","k":"0.2","a10":"3","a20":"0.25","t":"4","dt":"0.002"},
+    {"id":"reverse_unequal","v1":"2","v2":"0.5","k":"0.2","a10":"0.5","a20":"2","t":"4","dt":"0.002"},
+    {"id":"zero_conductance","v1":"3","v2":"0.5","k":"0","a10":"0.7","a20":"0.2","t":"6","dt":"0.1"},
+    {"id":"equal_concentrations","v1":"2","v2":"0.5","k":"0.2","a10":"3","a20":"0.75","t":"8","dt":"0.04"},
+    {"id":"long_time","v1":"3","v2":"0.5","k":"0.3","a10":"0","a20":"2","t":"80","dt":"0.02"},
+    {"id":"zero_time","v1":"2","v2":"0.5","k":"0.2","a10":"3","a20":"0.25","t":"0","dt":"0.1"}
+  ],
+  "refinement":{"case":"forward_unequal","t":"2","steps":["0.4","0.2","0.1"],"ratio_lower":3.7,"ratio_upper":4.8},
+  "tolerances":{"amount_error_umol":0.000001,"balance_error_umol":0.000000000002,"slope_error_umol_per_s":0.00000000000001,"stationary_error_umol":0.000000000002,"equilibrium_error_umol":0.000000000002,"minimum_amount_umol":-0.0000000000001,"mutant_error_floor_umol":0.0001},
+  "mutations":["wrong_volume","sign_reversal","unbooked_clamp"],
+  "inherited_regression":{"path":"../finite_inventory/revised_v1/test_later_regressions.py","test":"test_unequal_volume_dynamic_wall_exchange","test_file_sha256":"f0c61a90d6663c021976a725fca6e3748d702d8de6262291680632319e83c572","receipt":"../finite_inventory/revised_v1/green-tests-process.json","status":"Existing passed regression; read its frozen evidence without rerunning it."}
+}

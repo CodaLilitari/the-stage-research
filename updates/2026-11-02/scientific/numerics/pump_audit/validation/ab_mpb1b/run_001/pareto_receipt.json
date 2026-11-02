@@ -1,0 +1,113 @@
+{
+  "created_utc": "2026-11-01T23:09:51.583162+00:00",
+  "input_receipt_sha256": "a55d17325a7fa16b0ba107b79664ab9107a0fa6f4c321a7ef126b49afe5e46b8",
+  "scope": "Saved 27-row synthetic grid, grouped by identical initialization and time; no continuous optimization or clinical inference",
+  "objectives": [
+    "maximize distal concentration",
+    "maximize consumed amount",
+    "minimize realized pressure",
+    "minimize hydraulic energy power*time"
+  ],
+  "comparison_tolerance_each_native_unit": 1e-12,
+  "groups": [
+    {
+      "condition": "no_sites",
+      "time_s": 2,
+      "nondominated_R_over_R0": [
+        1,
+        4
+      ],
+      "dominated_R_over_R0": [
+        2
+      ]
+    },
+    {
+      "condition": "no_sites",
+      "time_s": 10,
+      "nondominated_R_over_R0": [
+        1,
+        4
+      ],
+      "dominated_R_over_R0": [
+        2
+      ]
+    },
+    {
+      "condition": "no_sites",
+      "time_s": 30,
+      "nondominated_R_over_R0": [
+        1,
+        4
+      ],
+      "dominated_R_over_R0": [
+        2
+      ]
+    },
+    {
+      "condition": "sites_equal_initial_oxygen",
+      "time_s": 2,
+      "nondominated_R_over_R0": [
+        1,
+        4
+      ],
+      "dominated_R_over_R0": [
+        2
+      ]
+    },
+    {
+      "condition": "sites_equal_initial_oxygen",
+      "time_s": 10,
+      "nondominated_R_over_R0": [
+        1,
+        4
+      ],
+      "dominated_R_over_R0": [
+        2
+      ]
+    },
+    {
+      "condition": "sites_equal_initial_oxygen",
+      "time_s": 30,
+      "nondominated_R_over_R0": [
+        1,
+        4
+      ],
+      "dominated_R_over_R0": [
+        2
+      ]
+    },
+    {
+      "condition": "sites_same_initial_free",
+      "time_s": 2,
+      "nondominated_R_over_R0": [
+        1,
+        4
+      ],
+      "dominated_R_over_R0": [
+        2
+      ]
+    },
+    {
+      "condition": "sites_same_initial_free",
+      "time_s": 10,
+      "nondominated_R_over_R0": [
+        1,
+        4
+      ],
+      "dominated_R_over_R0": [
+        2
+      ]
+    },
+    {
+      "condition": "sites_same_initial_free",
+      "time_s": 30,
+      "nondominated_R_over_R0": [
+        1,
+        4
+      ],
+      "dominated_R_over_R0": [
+        2
+      ]
+    }
+  ]
+}

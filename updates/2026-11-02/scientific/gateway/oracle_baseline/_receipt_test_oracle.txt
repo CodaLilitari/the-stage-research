@@ -1,0 +1,14 @@
+............F...........
+======================================================================
+FAIL: test_duplicate_samples_and_receipts_are_single_evidence (test_oracle.EvidenceTests.test_duplicate_samples_and_receipts_are_single_evidence)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w10/firstleaf-oracle-cont-002/tests/test_oracle.py", line 50, in test_duplicate_samples_and_receipts_are_single_evidence
+    self.assertEqual(log.duplicate_samples, 4)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 3 != 4
+
+----------------------------------------------------------------------
+Ran 24 tests in 5.986s
+
+FAILED (failures=1)

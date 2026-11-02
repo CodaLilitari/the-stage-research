@@ -1,0 +1,93 @@
+{
+  "schema": "stage.thermal_contract.steady",
+  "schema_version": "T0-HYP-1.0",
+  "study_id": "T0-HYP-1_steady_reference_first_study",
+  "claim_status": "hypothetical_reference_model; nothing measured or validated",
+  "geometry": {
+    "side_m": 0.1,
+    "area_m2": 0.01,
+    "model": "1D_through_thickness_full_area_adiabatic_edges_no_spreading_no_curvature_no_seams_no_radiation_no_contacting_body",
+    "geometry_status": "model_proxy_not_adopted_body_region_not_hardware_dimension"
+  },
+  "materials": {
+    "silicone_ref": {
+      "label": "firm reference silicone elastomer (nominal); not selected for biological contact; not a skin-compliance analogue",
+      "k_W_mK": 0.27,
+      "k_assumed_range_W_mK": [0.18, 0.35],
+      "density_kg_m3": 1030,
+      "density_note": "from specific gravity 1.03 at 25 C; used only for modeled-mass reporting",
+      "source_id": "W1",
+      "source_kind": "manufacturer_product_page_typical_value_directly_opened_2026-11-01",
+      "source_url": "https://www.dow.com/en-us/pdp.sylgard-184-silicone-elastomer-kit.01064291z.html",
+      "uncertainty_category": "k nominal = manufacturer typical value, test conditions not stated on page; range = assumed sensitivity domain, not a tolerance or distribution"
+    },
+    "polyimide_film_ref": {
+      "label": "bare nominal polyimide film; traces, components and wiring unmodeled",
+      "k_W_mK": 0.2,
+      "k_assumed_range_W_mK": [0.12, 0.25],
+      "density_kg_m3": 1420,
+      "cp_J_kgK": 1090,
+      "cp_note": "provenance only; unused in the steady model",
+      "source_id": ["W2", "W3"],
+      "source_kind": "manufacturer_indexed_text_only_direct_fetch_HTTP403_2026-11-01",
+      "source_url": [
+        "https://www.qnityelectronics.com/products/kapton-hn-polyimide-film.html",
+        "https://www.qnityelectronics.com/content/dam/electronics/amer/us/en/electronics/public/documents/en/EI-10206-Kapton-HN-Data-Sheet.pdf"
+      ],
+      "uncertainty_category": "k nominal = indexed datasheet value (0.20 at 23 C, ASTM D5470 per index); range = assumed sensitivity domain"
+    }
+  },
+  "layer_order_outside_to_inside": [
+    "ambient_convection_h", "outer_silicone", "contact_outer_silicone_film", "film_outer_half",
+    "sensor_sheet_node_S", "film_inner_half", "contact_inner_film_silicone", "inner_silicone",
+    "internal_node_H", "rear_rejection_R_rej", "reservoir_T_res"
+  ],
+  "contacts": {
+    "r_c_m2K_W": 0.0002,
+    "r_c_assumed_range_m2K_W": [0.0, 0.002],
+    "locations": ["outer_silicone/film", "film/inner_silicone"],
+    "same_value_both_interfaces": true,
+    "H_to_inner_silicone_attachment": "ideal in reference; omitted uncertainty, not folded into r_c",
+    "uncertainty_category": "assumed_study_value_and_assumed_sensitivity_domain"
+  },
+  "stacks": [
+    {"stack_id": "H1", "t_outer_silicone_m": 0.0005, "t_film_m": 0.00005, "t_inner_silicone_m": 0.0005},
+    {"stack_id": "H2", "t_outer_silicone_m": 0.001,  "t_film_m": 0.00005, "t_inner_silicone_m": 0.001},
+    {"stack_id": "H3", "t_outer_silicone_m": 0.002,  "t_film_m": 0.00005, "t_inner_silicone_m": 0.002}
+  ],
+  "stacks_status": "computational references; not products, devices, fabrication recipes or selected assemblies; no tactile, barrier or mechanical equivalence implied",
+  "thickness_perturbation": {
+    "fraction": 0.1,
+    "applies_to": "two silicone layers (common bias or independent per-layer deviations); film held nominal in first study (clarification C4)"
+  },
+  "boundaries": {
+    "T_amb_C": 25.0,
+    "T_res_C": 25.0,
+    "h_W_m2K": 8.0,
+    "h_assumed_range_W_m2K": [3.0, 15.0],
+    "h_status": "assumed convection coefficient; not measured; not derived from a specified airflow",
+    "R_rej_K_W": 2.0,
+    "R_rej_assumed_range_K_W": [1.0, 10.0],
+    "R_rej_blocked_token": "blocked",
+    "rear_reservoir_status": "ideal isothermal boundary; energy, mass, environmental coupling and capacity unmodeled; heat demand reported, not guaranteed achievable",
+    "radiation": "omitted in baseline; any extension is a separate case in kelvin",
+    "offsets_T_amb_T_res": "not part of this study; later separate extension only"
+  },
+  "sources": {
+    "body":   {"node": "H", "P_W_list": [1.0, 5.0, 10.0], "status": "comparison values held identical across stacks; not a validated load"},
+    "sensor": {"node": "S", "P_W": 0.1, "status": "idealised uniform sheet at film midplane; zero added thickness/mass; counted once"}
+  },
+  "comparators": {
+    "outer_surface_C": 40.0,
+    "internal_node_C": 60.0,
+    "label": "study_comparator_only",
+    "status": "arbitrary study comparators; no standard applied; not safe-contact or component limits"
+  },
+  "numerics": {"energy_abs_tol_W": 1e-10, "energy_rel_tol": 1e-10, "agreement_tol_K": 1e-9},
+  "scenario_plan": "deterministic_builtin_v1",
+  "local_source_refs": {
+    "L1": "architecture assessment (Coda)", "L2": "response synthesis (Coda)",
+    "L3": "PF0 report: 144 cases, 6/7 checks, flow_wall_capacity_monotonic=false retained",
+    "L4": "October 18 research summary", "L5_L6": "KMAP1 contract and intake review; not used here"
+  }
+}

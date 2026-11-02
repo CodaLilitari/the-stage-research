@@ -1,0 +1,64 @@
+{
+ "acceptance": {
+  "AC1": true,
+  "AC10-steady": true,
+  "AC10-transient": true,
+  "AC2": true,
+  "AC3": true,
+  "AC4": true,
+  "AC4b": true,
+  "AC5": true,
+  "AC6": true,
+  "AC7": true,
+  "AC8": true,
+  "AC9": true
+ },
+ "deviations": [
+  "hash mismatch for thermal/thermal_reference.py"
+ ],
+ "flipped_counts": {
+  "common_bias|P10|blocked": 0,
+  "common_bias|P10|finite": 0,
+  "common_bias|P1|blocked": 0,
+  "common_bias|P1|finite": 972,
+  "common_bias|P5|blocked": 0,
+  "common_bias|P5|finite": 0,
+  "independent_layers|P10|blocked": 0,
+  "independent_layers|P10|finite": 0,
+  "independent_layers|P1|blocked": 0,
+  "independent_layers|P1|finite": 1584,
+  "independent_layers|P5|blocked": 0,
+  "independent_layers|P5|finite": 0
+ },
+ "predictions": {
+  "P1": true,
+  "P2": true,
+  "P3": true,
+  "P4": true
+ },
+ "steady_top_factor_by_mu_star": {
+  "T_H_H1": "R_rej",
+  "T_H_H2": "R_rej",
+  "T_H_H3": "R_rej",
+  "T_surface_H1": "R_rej",
+  "T_surface_H2": "R_rej",
+  "T_surface_H3": "R_rej",
+  "gap_H_H1_H3": "h",
+  "gap_surface_H1_H3": "R_rej"
+ },
+ "timing_s": 24.29307116399997,
+ "transient_top_factor_by_mu_star": {
+  "gap_peak_H_H1_H3": "h",
+  "gap_peak_surface_H1_H3": "h",
+  "peak_H_H1": "h",
+  "peak_H_H2": "h",
+  "peak_H_H3": "R_rej",
+  "peak_surface_H1": "h",
+  "peak_surface_H2": "h",
+  "peak_surface_H3": "h"
+ }
+}
+
+real	0m24.375s
+user	0m23.934s
+sys	0m0.083s

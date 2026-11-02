@@ -1,0 +1,31 @@
+case_id                              T_outer_C     T_H_C Q_front_W  Q_rear_W  m_out_K    m_H_K  E_ok
+H1__A_nominal_P1                        26.859    26.902    0.1488    0.9512    13.14    33.10  True
+H2__A_nominal_P1                        26.830    26.907    0.1464    0.9536    13.17    33.09  True
+H3__A_nominal_P1                        26.774    26.916    0.1419    0.9581    13.23    33.08  True
+H1__A_nominal_P5                        33.555    33.831    0.6844    4.4156     6.44    26.17  True
+H2__A_nominal_P5                        33.363    33.862    0.6690    4.4310     6.64    26.14  True
+H3__A_nominal_P5                        33.006    33.919    0.6405    4.4595     6.99    26.08  True
+H1__A_nominal_P10                       41.924    42.492    1.3540    8.7460    -1.92    17.51  True
+H2__A_nominal_P10                       41.530    42.555    1.3224    8.7776    -1.53    17.44  True
+H3__A_nominal_P10                       40.796    42.673    1.2637    8.8363    -0.80    17.33  True
+H1__B_rear_blocked_P1                   38.750    39.207    1.1000    0.0000     1.25    20.79  True
+H2__B_rear_blocked_P1                   38.750    39.596    1.1000    0.0000     1.25    20.40  True
+H3__B_rear_blocked_P1                   38.750    40.374    1.1000    0.0000     1.25    19.63  True
+H1__B_rear_blocked_P5                   88.750    90.949    5.1000    0.0000   -48.75   -30.95  True
+H2__B_rear_blocked_P5                   88.750    92.819    5.1000    0.0000   -48.75   -32.82  True
+H3__B_rear_blocked_P5                   88.750    96.560    5.1000    0.0000   -48.75   -36.56  True
+H1__B_rear_blocked_P10                 151.250   155.625   10.1000    0.0000  -111.25   -95.63  True
+H2__B_rear_blocked_P10                 151.250   159.348   10.1000    0.0000  -111.25   -99.35  True
+H3__B_rear_blocked_P10                 151.250   166.792   10.1000    0.0000  -111.25  -106.79  True
+(display rounded; file holds full floats; margins are study comparators only)
+{
+ "n_cases": 108,
+ "n_solved": 108,
+ "n_not_solved": 0,
+ "n_energy_pass": 108,
+ "n_all_semantic_checks_pass": 108,
+ "n_outer_comparator_exceeded_study_comparator_only": 27,
+ "n_internal_comparator_exceeded_study_comparator_only": 18,
+ "note": "bookkeeping counts only; a comparator crossing is a model event, not an observed injury, limit or safety finding"
+}
+wrote execution/c2_results.json  --  conditional_model_result; hypothetical reference T0-HYP-1; not a measurement, not a safety envelope, not validated

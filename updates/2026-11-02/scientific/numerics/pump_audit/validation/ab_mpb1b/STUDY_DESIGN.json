@@ -1,0 +1,24 @@
+{
+  "study": "AB-MPB1B",
+  "row_count": 27,
+  "resistance_reference_kpa_s_per_ml": 20.0,
+  "resistance_ratios": [1, 2, 4],
+  "pressure_cap_kpa": 12.0,
+  "hydraulic_power_cap_mw": 3.2,
+  "times_s": [2, 10, 30],
+  "dt_s": 0.01,
+  "configuration": {"reservoir_volume": 2.0, "channel_volume": 1.0, "wall_volume": 0.5, "channel_cells": 3, "return_volume": 0.0, "return_cells": 0, "flow": 0.4, "exchange": 0.3, "kon": 0.5, "koff": 0.2, "sink": 0.15},
+  "conditions": [
+    {"name": "no_sites", "free_concentration": 0.8, "site_concentration": 0, "bound_fraction": 0, "expected_oxygen_umol": 2.4, "expected_sites_umol": 0},
+    {"name": "sites_same_initial_free", "free_concentration": 0.8, "site_concentration": 1, "bound_fraction": 0.6666666666666666, "expected_oxygen_umol": 4.4, "expected_sites_umol": 3},
+    {"name": "sites_equal_initial_oxygen", "free_concentration": 0.3403124237432849, "site_concentration": 1, "bound_fraction": 0.45968757625671514, "expected_oxygen_umol": 2.4, "expected_sites_umol": 3}
+  ],
+  "initial_wall_concentration": 0,
+  "initial_consumed_umol": 0,
+  "inventory_tolerance_umol": 1e-11,
+  "minimum_amount_tolerance_umol": -1e-14,
+  "matched_A_full_state_tolerance_umol": 2e-14,
+  "pump_relative_tolerance": 3e-14,
+  "whole_python_deadline_seconds": 60,
+  "comparisons": ["resistance_only_no_sites", "within_resistance_inventory_binding", "assigned_resistance_penalty_vs_no_sites_R0", "prescribed_flow_A_ablation"]
+}

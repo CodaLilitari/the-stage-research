@@ -1,0 +1,35 @@
+--- a/src/interface.py
++++ b/src/interface.py
+@@ -12,10 +12,32 @@
+ ACTIONS = ("k0", "k1", "k2", "k3", "coast", "stop")
+ FIELDS = {"schema", "request_id", "session_id", "body_revision", "sequence",
+           "observation_id", "expires_tick", "action"}
++MAX_NESTING = 16  # a valid request is one flat object; deep nesting is never legitimate
++
++def _check_nesting(raw: bytes) -> None:
++    """Reject deeply nested JSON before the decoder can recurse (ValueError, never RecursionError)."""
++    depth, in_string, escaped = 0, False, False
++    for byte in raw:
++        if in_string:
++            if escaped:
++                escaped = False
++            elif byte == 0x5C:  # backslash
++                escaped = True
++            elif byte == 0x22:  # double quote
++                in_string = False
++        elif byte == 0x22:
++            in_string = True
++        elif byte in (0x5B, 0x7B):  # [ or {
++            depth += 1
++            if depth > MAX_NESTING:
++                raise ValueError("Request nesting too deep")
++        elif byte in (0x5D, 0x7D):  # ] or }
++            depth = max(0, depth - 1)
+ 
+ def parse_request(raw: bytes) -> dict[str, Any]:
+     if len(raw) > 16384:
+         raise ValueError("Request exceeds 16 KiB")
++    _check_nesting(raw)
+     def pairs(items):
+         obj = {}
+         for k, v in items:

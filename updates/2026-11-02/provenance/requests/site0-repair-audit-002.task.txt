@@ -1,0 +1,18 @@
+Request site0-repair-audit-002 (wave10-resends; model Claude Fable 5.1; header HEADER_a74a3d6d23e7.txt)
+
+TASK site0-repair-audit-001
+SITE0 is a closed-vessel bookkeeping model with a finite number of binding sites and reversible one-site mass-action binding, implemented by Coda. An independent probe found subtractive cancellation in an interpolation weight near saturation / tiny release; a separate revised_v1 repairs it, preserving the original. Audit the repair as numerical analysis: derive a cancellation-free formulation and its error bound, check whether the revised code achieves it across the full admissible domain (including saturated, nearly empty, tiny-rate and large-rate limits), check conservation and positivity, and check whether the tests would detect a regression. Deliver: derivation, findings with exact inputs, a standard-library unittest module of discriminating tests, and minimal patches if needed. Treat this purely as a mathematical model; do not add biological interpretation.
+
+SOURCE BUNDLE (labels and sha256 of the verbatim sources appended to the request; contents not repeated here)
+- SITE0 report (Coda) | validation/site0/REPORT.md | sha256=569bbf5be89442a052f014557cc78122c6a4ad44526650a8c49c8b6bd39da50b
+- acceptance | validation/site0/ACCEPTANCE.md | sha256=2c7f3fd0d0d5c74d5ae742ee2c75e24a64cdac60430baad8e7aedd068ce59855
+- original site0.py | validation/site0/site0.py | sha256=f04aa8e241aec3b0d3592a3285080d62d790ff3aedf05179d4d5020bea06bc28
+- original tests | validation/site0/test_site0.py | sha256=2cc82f51fbdcbd1ceba86ce746e48fa9a607711349711672c4d8d46a461dfc15
+- validation_helpers.py | validation/site0/validation_helpers.py | sha256=72ccbe9c6b0a8f06e09146971d063b33d6e08f6c332c570cc1807465679194b7
+- revised report | validation/site0/revised_v1/REPORT.md | sha256=69bd128a8761e69712dd3a6f5e4adf0e7d055551d23d6238e42db5c1848b6aae
+- revised site0.py | validation/site0/revised_v1/site0.py | sha256=6daa39ac3c98b93f6e8d7c8a2222e4c23ba175874c402d14c8415f1bb6126076
+- source-changes.patch | validation/site0/revised_v1/source-changes.patch | sha256=a3b1fb08b3d4adbcee4e96d6865fe2629d32dfcfc4b141404b926f7c983df84f
+- later regression spec | validation/site0/revised_v1/LATER_REGRESSION.md | sha256=a36d577255c99bd51db73e844d2452ac46280af61d51766f11317c0bdcc48d8f
+- later regression test | validation/site0/revised_v1/test_later_regression.py | sha256=5098c848698cd049d0871ced9a44584009715ca54dbc84f55a71cc2f8b810efd
+- coordinator review | reviews/SITE0_COORDINATOR_REVIEW.md | sha256=aa33e45f90dd3d967b7deedd0f02bd7eec39ccd29113e1d48557a29842d53a3a
+- independent probe | reviews/site0_revised_independent_probe.py | sha256=08e6aea6a6563f40787a82a8442fb02c0211f23aa72a6b82cca6e72f353b4ce8

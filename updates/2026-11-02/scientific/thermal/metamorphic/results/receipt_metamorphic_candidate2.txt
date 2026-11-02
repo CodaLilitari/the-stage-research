@@ -1,0 +1,14 @@
+ssssssss...........................................F................
+======================================================================
+FAIL: test_sanitize_is_a_strict_json_projection (tests.test_thermal_contract_metamorphic.TestRunCaseAndPlan.test_sanitize_is_a_strict_json_projection)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w12/metamorphic/tests/test_thermal_contract_metamorphic.py", line 1646, in test_sanitize_is_a_strict_json_projection
+    self.assertIs(type(out), type(obj))
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: <class 'NoneType'> is not <class 'float'>
+
+----------------------------------------------------------------------
+Ran 68 tests in 0.556s
+
+FAILED (failures=1, skipped=8)

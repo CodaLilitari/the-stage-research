@@ -1,0 +1,15 @@
+........F...........
+======================================================================
+FAIL: test_mesh_refinement_observed_order (test_hotspot2d.TestSteadyLimits.test_mesh_refinement_observed_order)
+Factor-2 refinement in z and y; predeclared: order >= 1.0 for the
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w10/thermal-hotspot-2d-002/tests/test_hotspot2d.py", line 147, in test_mesh_refinement_observed_order
+    self.assertGreaterEqual(order, 1.0, msg=f"{k}: observed order {order}")
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 0.27015975749952653 not greater than or equal to 1.0 : T_H: observed order 0.27015975749952653
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.113s
+
+FAILED (failures=1)

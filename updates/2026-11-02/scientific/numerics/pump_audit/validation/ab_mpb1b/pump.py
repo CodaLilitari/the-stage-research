@@ -1,0 +1,42 @@
+# SPDX-License-Identifier: Apache-2.0
+"""Synthetic constant-resistance pump bounds around unchanged AB-MPB1A.
+
+R: kPa*s/mL; pressure: kPa; hydraulic power: mW; flow: mL/s.
+No empirical rheology, electrical-power, efficiency or biological model.
+Initial zero-flow stub is retained in preimplementation_stub.txt.
+"""
+from dataclasses import dataclass,replace,asdict
+import math
+from admitted import A
+@dataclass(frozen=True)
+class PumpCaps:
+    pressure_kpa: float=12.0
+    hydraulic_power_mw: float=3.2
+    def __post_init__(self):
+        A.number(self.pressure_kpa,'pressure cap')
+        A.number(self.hydraulic_power_mw,'hydraulic power cap')
+def operating_point(resistance,caps=PumpCaps()):
+    r=A.number(resistance,'loop resistance',True)
+    if not isinstance(caps,PumpCaps):raise ValueError('caps must be PumpCaps')
+    pressure=A.number(caps.pressure_kpa,'pressure cap')
+    power=A.number(caps.hydraulic_power_mw,'hydraulic power cap')
+    if pressure==0 or power==0:
+        q=actual_pressure=actual_power=0.0;active='zero'
+    else:
+        pressure_flow=pressure/r
+        # Separate square roots avoid overflow of P/R before its square root.
+        power_flow=math.sqrt(power)/math.sqrt(r)
+        q=min(pressure_flow,power_flow)
+        if not math.isfinite(q) or q<=0:raise ValueError('Positive admissible flow is not representable')
+        actual_pressure=r*q
+        # This order avoids forming Q**2 as an unnecessarily large intermediate.
+        actual_power=actual_pressure*q
+        if not math.isfinite(actual_pressure) or not math.isfinite(actual_power):raise ValueError('Operating point exceeds finite arithmetic')
+        # Audit pump-matched-audit-001: subnormal or zero realized quantities cannot carry rounding-level residuals.
+        if min(q,actual_pressure,actual_power)<2.2250738585072014e-308:raise ValueError('Operating point is below the normal float range')
+        if math.isclose(pressure_flow,power_flow,rel_tol=4e-15,abs_tol=0):active='both'
+        else:active='pressure' if pressure_flow<power_flow else 'power'
+    return {'resistance_kpa_s_per_ml':r,'pressure_cap_kpa':pressure,'hydraulic_power_cap_mw':power,'flow_ml_s':q,'actual_pressure_kpa':actual_pressure,'actual_hydraulic_power_mw':actual_power,'active_constraint':active}
+def solve_pumped(config,values,duration,dt,resistance,caps=PumpCaps()):
+    point=operating_point(resistance,caps);chosen=replace(config,flow=point['flow_ml_s']);model=A.build(chosen)
+    return {'pump':point,'configuration':asdict(chosen),'result':A.solve(model,values,duration,dt)}

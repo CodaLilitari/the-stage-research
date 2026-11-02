@@ -1,0 +1,24 @@
+...F.F....
+======================================================================
+FAIL: test_precondition_and_predeclared_criterion (tests.test_convergence_fix003.TestResolvedRefinement.test_precondition_and_predeclared_criterion)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w10/thermal-hotspot-2d-002/tests/test_convergence_fix003.py", line 98, in test_precondition_and_predeclared_criterion
+    self.assertGreaterEqual(rep["order"], C.ORDER_FLOOR_PREDECLARED, msg=f"{k}: {rep}")
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 0.8786791806899945 not greater than or equal to 1.0 : T_mid_centre: {'values': [32.79623100269318, 32.79728391397141, 32.797856555694295], 'e1_K': 0.0010529112782293737, 'e2_K': 0.0005726417228828495, 'order': 0.8786791806899945, 'noise_floor_K': 1e-09, 'ratio': 2.0, 'status': 'order_defined'}
+
+======================================================================
+FAIL: test_tightened_second_order_floor_fix003 (tests.test_convergence_fix003.TestResolvedRefinement.test_tightened_second_order_floor_fix003)
+Tightened in fix-003 (scheme is second order; discrete-fin expansion).
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w10/thermal-hotspot-2d-002/tests/test_convergence_fix003.py", line 123, in test_tightened_second_order_floor_fix003
+    self.assertGreaterEqual(rep["order"], C.ORDER_FLOOR_TIGHTENED, msg=f"{k}: {rep}")
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1.0990237087081487 not greater than or equal to 1.5 : T_H: {'values': [33.841831120009914, 33.84173691814403, 33.84169294167025], 'e1_K': 9.420186588471324e-05, 'e2_K': 4.39764737762971e-05, 'order': 1.0990237087081487, 'noise_floor_K': 1e-09, 'ratio': 2.0, 'status': 'order_defined'}
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.252s
+
+FAILED (failures=2)

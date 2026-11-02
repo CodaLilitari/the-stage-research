@@ -1,0 +1,19 @@
+Request gateway-lifecycle-builder-002 (wave9-followups-a; model Claude Fable 5.1; header HEADER_a12f72162d0b.txt)
+
+TASK gateway-lifecycle-builder-002 (continuation)
+A Claude Fable 5.1 instance began implementing the GW-ASYNC0 lifecycle (its partial answer is appended). It delivered the acceptance invariants, the intentional old-test semantic updates, and a complete src/interface.py, then reached the output limit just after starting src/relay.py. Red installed that interface.py into the original tree with the ORIGINAL relay.py and ran the original tests plus Coda's v2 regressions (receipt appended): 57 tests, 3 failures and 10 errors - expected while relay.py and the tests still use the old API, but use the receipt to check your assumptions.
+
+Task: deliver ONLY what is missing. (1) Complete src/relay.py consistent with the delivered interface.py and the design. (2) Focused unittest files implementing the acceptance invariants, plus the intentional updates to old tests, as complete files. (3) A short migration/design note. Treat interface.py as fixed; if you find a blocking defect in it, give a minimal unified diff rather than a rewrite. Start writing code immediately - do not re-derive the invariants. Preserve MIT headers and credit. No hardware actuation, no new dependencies.
+
+SOURCE BUNDLE (labels and sha256 of the verbatim sources appended to the request; contents not repeated here)
+- partial answer (Claude Fable 5.1, wave 6; truncated at output limit) | Documents--CodexScratch/stage-red-20261102/batches/wave6-engineering/gateway-lifecycle-builder-001.answer.md | sha256=9822bf1c3eca8e79553b4b008d5f9ccc589d8337c06bc48889db973e1a3ae93b
+- Red receipt: original tests with new interface.py + original relay.py | red-sandbox/work/wave6/gateway/run_new_interface.txt | sha256=fe4bf42620640fe677f065347a79f96d596137b83924336276fb19d6b1046a41
+- lifecycle design | design/gateway_lifecycle_v1/DESIGN.md | sha256=4ca50710b8b9127127416f6d96ce2fbf8deee38a76d131b5744433b24b9680f5
+- lifecycle plan | design/gateway_lifecycle_v1/PLAN.md | sha256=d241b39c34a29bf50222fb18b8236d348e51226767bbc9e068b829656b426bce
+- original src/relay.py | validation/gateway_repair/original/src/relay.py | sha256=c0910ef2c16376b57bf098e374f7e7e95d521493b0d4685f8def00834742c145
+- original src/first_leaf.py | validation/gateway_repair/original/src/first_leaf.py | sha256=2306148b46490fae74dc49fc31e1161f76e64bf902d836276c2dfd9565645515
+- inputs/protocol.json | validation/gateway_repair/original/inputs/protocol.json | sha256=d3224dbb752eba3368c0a1569eb733d7a59fb9a3bf1929fdbb1810f9ae9cf382
+- tests/test_stage.py | validation/gateway_repair/original/tests/test_stage.py | sha256=fdf06906ce3b1058ecc23f2f00eb321988c9f487553ade59aa8c6df82c961c59
+- tests/test_relay.py | validation/gateway_repair/original/tests/test_relay.py | sha256=b4ea09e1d72925b92a5d9251e7259b2b8338ecc43683b09ad76ffa81e7b27b71
+- Coda regressions v2 | validation/gateway_repair/candidate/tests/test_gateway_regressions_v2.py | sha256=5fa9249f986a34059675f120f6436b6e295ba0831ff46d63120df9fb98a4d7fa
+- MIT LICENSE | validation/gateway_repair/LICENSE | sha256=bec5a38ecd3eb15627abb7e6888ec1cea25c4993b3de8fc80cab8f69828eb778

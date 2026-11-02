@@ -1,0 +1,12 @@
+--- a/validation/ab_mpb1b/pump.py
++++ b/validation/ab_mpb1b/pump.py
+@@ -31,7 +31,9 @@
+         actual_pressure=r*q
+         # This order avoids forming Q**2 as an unnecessarily large intermediate.
+         actual_power=actual_pressure*q
+         if not math.isfinite(actual_pressure) or not math.isfinite(actual_power):raise ValueError('Operating point exceeds finite arithmetic')
++        # Audit pump-matched-audit-001: subnormal or zero realized quantities cannot carry rounding-level residuals.
++        if min(q,actual_pressure,actual_power)<2.2250738585072014e-308:raise ValueError('Operating point is below the normal float range')
+         if math.isclose(pressure_flow,power_flow,rel_tol=4e-15,abs_tol=0):active='both'
+         else:active='pressure' if pressure_flow<power_flow else 'power'
+     return {'resistance_kpa_s_per_ml':r,'pressure_cap_kpa':pressure,'hydraulic_power_cap_mw':power,'flow_ml_s':q,'actual_pressure_kpa':actual_pressure,'actual_hydraulic_power_mw':actual_power,'active_constraint':active}

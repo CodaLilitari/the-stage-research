@@ -1,0 +1,49 @@
+test_existing_unrepresentable_guard_still_rejects (__main__.ContractGapProbes.test_existing_unrepresentable_guard_still_rejects) ... ok
+test_subnormal_operating_point_is_rejected_or_contract_consistent (__main__.ContractGapProbes.test_subnormal_operating_point_is_rejected_or_contract_consistent) ... FAIL
+test_grid_nondominance_of_R4_is_a_throttling_artifact (__main__.ContrastAndParetoTests.test_grid_nondominance_of_R4_is_a_throttling_artifact)
+R=R0 under caps (3 kPa, 3.2 mW) yields Q=0.15 exactly as R=4*R0 does under (12, 3.2). The kernel ... ok
+test_pareto_receipt_pattern_reproduced (__main__.ContrastAndParetoTests.test_pareto_receipt_pattern_reproduced)
+pareto_receipt.json: {1,4} nondominated, 2 dominated by 1, tolerance 1e-12, all nine groups. ... ok
+test_penalty_contrast_sign_change_same_free_R80 (__main__.ContrastAndParetoTests.test_penalty_contrast_sign_change_same_free_R80)
+REPORT.md: same-free R=80 minus no-sites R=20 distal is negative at 10 s and positive at 30 s. ... ok
+test_transport_endpoints_strictly_decrease_with_resistance (__main__.ContrastAndParetoTests.test_transport_endpoints_strictly_decrease_with_resistance)
+Characterization: distal, consumed and net fall as R rises in every (condition, time) group. ... ok
+test_within_resistance_contrast_signs_do_not_flip (__main__.ContrastAndParetoTests.test_within_resistance_contrast_signs_do_not_flip)
+Characterization (not asserted by REPORT.md): at equal R and time, same-free > no-sites and ... ok
+test_audited_pump_file_is_the_frozen_one (__main__.ProvenanceTests.test_audited_pump_file_is_the_frozen_one) ... ok
+test_kernel_is_the_pinned_A_model (__main__.ProvenanceTests.test_kernel_is_the_pinned_A_model) ... ok
+test_both_label_survives_consistent_scaling (__main__.PumpAlgebraTests.test_both_label_survives_consistent_scaling)
+Scaling (R, D, P) by k keeps R = D^2/P; the 'both' label must not depend on k. ... ok
+test_contract_table_row_r40_power_limited (__main__.PumpAlgebraTests.test_contract_table_row_r40_power_limited)
+PUMP_CONTRACT.md table row R = 40 is not value-checked by the frozen tests. ... ok
+test_equal_caps_do_not_imply_equal_realized_power_or_pressure (__main__.PumpAlgebraTests.test_equal_caps_do_not_imply_equal_realized_power_or_pressure)
+Only the two power-limited rows share realized power; no two rows share realized pressure. ... ok
+test_exact_rational_feasibility_binding_and_maximality (__main__.PumpAlgebraTests.test_exact_rational_feasibility_binding_and_maximality)
+Exact Fraction arithmetic on the returned float: both caps respected to 3e-14 relative, at ... ok
+test_realized_quantities_equal_their_caps_only_in_their_own_regime (__main__.PumpAlgebraTests.test_realized_quantities_equal_their_caps_only_in_their_own_regime)
+Power equals its cap iff R <= D^2/P; pressure equals its cap iff R >= D^2/P. ... ok
+test_solve_pumped_replaces_only_flow (__main__.PumpAlgebraTests.test_solve_pumped_replaces_only_flow) ... ok
+test_initial_inventories_and_partition_match_design (__main__.ReportNumbersTests.test_initial_inventories_and_partition_match_design) ... ok
+test_pump_quantities_identical_across_conditions (__main__.ReportNumbersTests.test_pump_quantities_identical_across_conditions) ... ok
+test_r20_rows_match_A_report_six_decimals (__main__.ReportNumbersTests.test_r20_rows_match_A_report_six_decimals) ... ok
+test_r20_rows_reproduce_saved_A_rows_when_available (__main__.ReportNumbersTests.test_r20_rows_reproduce_saved_A_rows_when_available) ... skipped 'shim loader in use; saved A rows unavailable'
+test_report_10s_direction_example_reproduced (__main__.ReportNumbersTests.test_report_10s_direction_example_reproduced) ... ok
+test_report_30s_table_reproduced (__main__.ReportNumbersTests.test_report_30s_table_reproduced) ... ok
+test_steps_and_timestep_match_design (__main__.ReportNumbersTests.test_steps_and_timestep_match_design)
+Exit bound <= 7.8/s gives 0.9/rate >= 0.115 s > 0.01 s: no automatic restriction, h = 0.01. ... ok
+
+======================================================================
+FAIL: test_subnormal_operating_point_is_rejected_or_contract_consistent (__main__.ContractGapProbes.test_subnormal_operating_point_is_rejected_or_contract_consistent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/pump/reviews/audit_ab_mpb1b/audit_test_pump_matched.py", line 486, in test_subnormal_operating_point_is_rejected_or_contract_consistent
+    self.assertGreater(got['actual_hydraulic_power_mw'], 0,
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                       'positive flow with silently zero realized power: %r' % (got,))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 0.0 not greater than 0 : positive flow with silently zero realized power: {'resistance_kpa_s_per_ml': 1e+308, 'pressure_cap_kpa': 1e-10, 'hydraulic_power_cap_mw': 1e-300, 'flow_ml_s': 1e-318, 'actual_pressure_kpa': 9.999987484955998e-11, 'actual_hydraulic_power_mw': 0.0, 'active_constraint': 'pressure'}
+
+----------------------------------------------------------------------
+Ran 22 tests in 1.155s
+
+FAILED (failures=1, skipped=1)

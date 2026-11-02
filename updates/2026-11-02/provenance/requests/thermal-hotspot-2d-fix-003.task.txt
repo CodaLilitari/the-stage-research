@@ -1,0 +1,10 @@
+Request thermal-hotspot-2d-fix-003 (wave12b-followups-c; model Claude Fable 5.1; header HEADER_a12f72162d0b.txt)
+
+TASK thermal-hotspot-2d-fix-003
+Your colleague's 2-D localized-delamination model (answer appended) was executed by Red. Red executed this in an isolated sandbox (Linux, Python 3.13, stdlib only); receipts are appended verbatim or as size-limited JSON copies (lists shortened, marked). Result: 20 tests, 1 failure - test_mesh_refinement_observed_order: observed order for T_H is 0.270 (test requires >= 1.0), while T_mid_centre, T_mid_min and T_surf_min show ~2.56. The study ran in 13.5 s (stdout and compact results appended). Diagnose: is T_H's low observed order a real discretisation defect at the lumped-node coupling, or an artefact of computing an order from differences already near round-off/solver tolerance (T_H is dominated by the rear path)? Give the corrected criterion or code fix as a minimal diff with a test that would fail on a genuine defect, and summarise what the executed study says about local peak temperature over a patch vs the uniform-impairment bound and sensor detectability.
+
+SOURCE BUNDLE (labels and sha256 of the verbatim sources appended to the request; contents not repeated here)
+- 2-D model answer (wave 10) | e/StageRed/stage-red-20261102/batches/wave10-resends/thermal-hotspot-2d-002.answer.md | sha256=fbf38c9ab8c0c43d296c05755b1ab8bd5d8e1cb0ac0163c6952e4864ee7dd6e0
+- test receipt | red-sandbox/work/w10/thermal-hotspot-2d-002/_receipt_test_hotspot2d.txt | sha256=ab66db0b36853abb7dd38ef6a9172d853895c5df4f046127eca7338290c2cfa7
+- study stdout | red-sandbox/work/w10/_study_hotspot.out | sha256=afe808b6c87af5a2241c01c0e55c2ee895b98b86b912d2a76f5f8be19083b160
+- study results (compact) | red-sandbox/work/w10/_hotspot2d_results.compact.json | sha256=f00ce120eae065ba14aed5067bb0008c0d1dc61ccc6d8df5f0acea37105a4022

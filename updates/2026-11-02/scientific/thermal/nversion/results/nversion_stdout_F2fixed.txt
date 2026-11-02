@@ -1,0 +1,649 @@
+N-VERSION CROSS-CHECK T0-HYP-1 (thermal-nversion-crosscheck-004) -- model-vs-model only; validates nothing physical
+Declared tolerances (fixed before comparison):
+{
+ "T1_steady_K": 1e-09,
+ "T1_steady_W": 1e-09,
+ "T2_lump2_reproduction_K": 2e-06,
+ "T2_lump2_reproduction_time_s": 1e-09,
+ "T2b_transcription_K": 1e-09,
+ "T3_energy_3600_J": 8.0,
+ "T3_fallback_mesh_pair_K": 0.1,
+ "T3_fallback_time_pair_K": 0.05,
+ "T3_oracle_defect_multiplier": 20.0,
+ "T3_oracle_floor_K": 0.001,
+ "T3_richardson_safety": 1.5,
+ "T3_space_factor": 1.3333333333333333,
+ "T3_time_factor": 2.0,
+ "T4_peak_H_time_s": 1.0,
+ "T4_peak_surface_time_factor": 1.0,
+ "T4_peak_surface_time_floor_s": 1.5,
+ "T4_value_K": {
+  "H_at_3600": 1.0,
+  "peak_H": 2.0,
+  "peak_sensor": 2.0,
+  "peak_surface": 2.0,
+  "trajectory": 2.0
+ },
+ "flux_excluded_at_event_times_s": [
+  600.0,
+  900.0
+ ],
+ "fv_steady_match_assumed_body_power_W": 5.0,
+ "policy": "tolerances fixed in this file before any comparison; failures are reported, never loosened"
+}
+oracle allowance used in T3: 0.00161 K
+Inventory (a):
+T1 steady: REF rows vs analytic; RAD eps=0 steady/blocked rows vs analytic (all h, P) and vs REF (h=8);
+   FV steady_match details (P=5 assumed) vs REF; FV long_time_target (sensor-only) vs analytic.
+T2 reproduction: RAD eps=0 transient peaks/H(3600) vs Coda LUMP2 table; FV-embedded lump2 rows vs the table.
+T3 same continuum model: FV samples/checkpoints vs oracle rows at common times (temps + fluxes,
+   fluxes skipped at 600/900 s); energy split at 3600 s; oracle row-maxima vs FV peaks (info only).
+T4 structure: Coda table and RAD eps=0 peaks/times/H(3600) vs FV; RAD eps=0 traces vs FV and vs oracle.
+Single-version (not cross-checkable): FV F3/F4T/F4F/F5 and perturbation runs; LUMP2 sensor-off rows;
+   RAD eps>0 rows; RAD blocked rows at h!=8 (analytic only); oracle 1 s / 10 s rows; oracle mode diagnostics.
+
+tier check                                pair                         stk case                   quantity                      n    t@max          a@max          b@max   max|diff|        tol res 
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H1  F0                     H                             1        -     25.1703029     25.1703029   2.771e-13  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H1  F0                     S                             1        -     25.1888391     25.1888391   2.736e-13  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H1  F0                     front                         1        -      0.0148485      0.0148485   2.142e-14  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H1  F0                     rear                          1        -      0.0851515      0.0851515   1.386e-13  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H1  F0                     surface                       1        -     25.1856068     25.1856068   2.700e-13  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H1  F1                     H                             1        -     26.2717685     26.2717685   2.132e-12  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H1  F1                     S                             1        -     26.2717685     26.2717685   2.100e-12  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H1  F1                     front                         1        -      0.1000000      0.1000000   1.648e-13  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H1  F1                     rear                          1        -      0.0000000      0.0000000   0.000e+00  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H1  F1                     surface                       1        -     26.2500000     26.2500000   2.061e-12  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H1  F2                     H                             1        -     25.1503684     25.1503684   1.492e-13  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H1  F2                     S                             1        -     25.3155996     25.3155996   1.172e-13  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H1  F2                     front                         1        -      0.0248158      0.0248158   8.899e-15  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H1  F2                     rear                          1        -      0.0751842      0.0751842   7.461e-14  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H1  F2                     surface                       1        -     25.3101976     25.3101976   1.137e-13  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H1  F3                     H                             1        -     26.2717685     26.2717685   2.132e-12  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H1  F3                     S                             1        -     26.2717685     26.2717685   2.100e-12  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H1  F3                     front                         1        -      0.1000000      0.1000000   1.648e-13  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H1  F3                     rear                          1        -      0.0000000      0.0000000   0.000e+00  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H1  F3                     surface                       1        -     26.2500000     26.2500000   2.061e-12  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H1  F4F                    H                             1        -     26.2717685     26.2717685   2.132e-12  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H1  F4F                    S                             1        -     26.2717685     26.2717685   2.100e-12  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H1  F4F                    front                         1        -      0.1000000      0.1000000   1.648e-13  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H1  F4F                    rear                          1        -      0.0000000      0.0000000   0.000e+00  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H1  F4F                    surface                       1        -     26.2500000     26.2500000   2.061e-12  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H1  F4T                    H                             1        -     26.2717685     26.2717685   2.132e-12  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H1  F4T                    S                             1        -     26.2717685     26.2717685   2.100e-12  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H1  F4T                    front                         1        -      0.1000000      0.1000000   1.648e-13  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H1  F4T                    rear                          1        -      0.0000000      0.0000000   0.000e+00  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H1  F4T                    surface                       1        -     26.2500000     26.2500000   2.061e-12  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H2  F0                     H                             1        -     25.1686017     25.1686017   4.619e-14  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H2  F0                     S                             1        -     25.2025640     25.2025640   4.974e-14  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H2  F0                     front                         1        -      0.0156991      0.0156991   3.785e-15  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H2  F0                     rear                          1        -      0.0843009      0.0843009   2.309e-14  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H2  F0                     surface                       1        -     25.1962393     25.1962393   4.619e-14  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H2  F1                     H                             1        -     26.2902870     26.2902870   3.553e-13  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H2  F1                     S                             1        -     26.2902870     26.2902870   3.482e-13  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H2  F1                     front                         1        -      0.1000000      0.1000000   2.708e-14  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H2  F1                     rear                          1        -      0.0000000      0.0000000   0.000e+00  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H2  F1                     surface                       1        -     26.2500000     26.2500000   3.375e-13  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H2  F2                     H                             1        -     25.1492892     25.1492892   1.883e-13  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H2  F2                     S                             1        -     25.3271576     25.3271576   2.238e-13  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H2  F2                     front                         1        -      0.0253554      0.0253554   1.732e-14  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H2  F2                     rear                          1        -      0.0746446      0.0746446   9.415e-14  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H2  F2                     surface                       1        -     25.3169426     25.3169426   2.167e-13  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H2  F3                     H                             1        -     26.2902870     26.2902870   3.553e-13  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H2  F3                     S                             1        -     26.2902870     26.2902870   3.482e-13  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H2  F3                     front                         1        -      0.1000000      0.1000000   2.708e-14  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H2  F3                     rear                          1        -      0.0000000      0.0000000   0.000e+00  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H2  F3                     surface                       1        -     26.2500000     26.2500000   3.375e-13  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H2  F4F                    H                             1        -     26.2902870     26.2902870   3.553e-13  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H2  F4F                    S                             1        -     26.2902870     26.2902870   3.482e-13  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H2  F4F                    front                         1        -      0.1000000      0.1000000   2.708e-14  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H2  F4F                    rear                          1        -      0.0000000      0.0000000   0.000e+00  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H2  F4F                    surface                       1        -     26.2500000     26.2500000   3.375e-13  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H2  F4T                    H                             1        -     26.2902870     26.2902870   3.553e-13  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H2  F4T                    S                             1        -     26.2902870     26.2902870   3.482e-13  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H2  F4T                    front                         1        -      0.1000000      0.1000000   2.708e-14  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H2  F4T                    rear                          1        -      0.0000000      0.0000000   0.000e+00  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H2  F4T                    surface                       1        -     26.2500000     26.2500000   3.375e-13  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H3  F0                     H                             1        -     25.1654349     25.1654349   7.461e-14  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H3  F0                     S                             1        -     25.2293954     25.2293954   7.816e-14  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H3  F0                     front                         1        -      0.0172825      0.0172825   5.280e-15  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H3  F0                     rear                          1        -      0.0827175      0.0827175   3.730e-14  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H3  F0                     surface                       1        -     25.2160318     25.2160318   6.750e-14  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H3  F1                     H                             1        -     26.3273241     26.3273241   6.537e-13  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H3  F1                     S                             1        -     26.3273241     26.3273241   6.217e-13  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H3  F1                     front                         1        -      0.1000000      0.1000000   4.646e-14  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H3  F1                     rear                          1        -      0.0000000      0.0000000   0.000e+00  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H3  F1                     surface                       1        -     26.2500000     26.2500000   5.791e-13  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H3  F2                     H                             1        -     25.1472638     25.1472638   6.040e-14  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H3  F2                     S                             1        -     25.3499901     25.3499901   4.263e-14  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H3  F2                     front                         1        -      0.0263681      0.0263681   2.689e-15  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H3  F2                     rear                          1        -      0.0736319      0.0736319   3.020e-14  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H3  F2                     surface                       1        -     25.3296013     25.3296013   3.553e-14  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H3  F3                     H                             1        -     26.3273241     26.3273241   6.537e-13  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H3  F3                     S                             1        -     26.3273241     26.3273241   6.217e-13  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H3  F3                     front                         1        -      0.1000000      0.1000000   4.646e-14  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H3  F3                     rear                          1        -      0.0000000      0.0000000   0.000e+00  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H3  F3                     surface                       1        -     26.2500000     26.2500000   5.791e-13  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H3  F4F                    H                             1        -     26.3273241     26.3273241   6.537e-13  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H3  F4F                    S                             1        -     26.3273241     26.3273241   6.217e-13  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H3  F4F                    front                         1        -      0.1000000      0.1000000   4.646e-14  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H3  F4F                    rear                          1        -      0.0000000      0.0000000   0.000e+00  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H3  F4F                    surface                       1        -     26.2500000     26.2500000   5.791e-13  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H3  F4T                    H                             1        -     26.3273241     26.3273241   6.537e-13  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H3  F4T                    S                             1        -     26.3273241     26.3273241   6.217e-13  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H3  F4T                    front                         1        -      0.1000000      0.1000000   4.646e-14  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H3  F4T                    rear                          1        -      0.0000000      0.0000000   0.000e+00  1.000e-09 PASS
+T1   fv_long_time_target_vs_analytic      fv_target|analytic           H3  F4T                    surface                       1        -     26.2500000     26.2500000   5.791e-13  1.000e-09 PASS
+T1   fv_steady_match_vs_reference         fv_steady|coda_reference     *   *                      H                            18        -     92.8189907     92.8189907   1.670e-11  1.000e-09 PASS
+T1   fv_steady_match_vs_reference         fv_steady|coda_reference     *   *                      S                            18        -     90.8046389     90.8046389   1.661e-11  1.000e-09 PASS
+T1   fv_steady_match_vs_reference         fv_steady|coda_reference     *   *                      front                        18        -      5.1000000      5.1000000   1.285e-12  1.000e-09 PASS
+T1   fv_steady_match_vs_reference         fv_steady|coda_reference     *   *                      rear                         18        -      4.4309512      4.4309512   4.023e-13  1.000e-09 PASS
+T1   fv_steady_match_vs_reference         fv_steady|coda_reference     *   *                      surface                      18        -     88.7500000     88.7500000   1.607e-11  1.000e-09 PASS
+T1   rad_eps0_steady_vs_analytic          rad_eps0|analytic            *   *                      H                            36        -     96.5597315     96.5597315   3.256e-11  1.000e-09 PASS
+T1   rad_eps0_steady_vs_analytic          rad_eps0|analytic            *   *                      S                            36        -     92.6935278     92.6935278   3.075e-11  1.000e-09 PASS
+T1   rad_eps0_steady_vs_analytic          rad_eps0|analytic            *   *                      front                        36        -      5.1000000      5.1000000   2.319e-12  1.000e-09 PASS
+T1   rad_eps0_steady_vs_analytic          rad_eps0|analytic            *   *                      rear                         36        -      8.7460484      8.7460484   1.776e-14  1.000e-09 PASS
+T1   rad_eps0_steady_vs_analytic          rad_eps0|analytic            *   *                      surface                      36        -     88.7500000     88.7500000   2.899e-11  1.000e-09 PASS
+T1   rad_eps0_steady_vs_reference         rad_eps0|coda_reference      *   *                      H                            12        -     96.5597315     96.5597315   3.256e-11  1.000e-09 PASS
+T1   rad_eps0_steady_vs_reference         rad_eps0|coda_reference      *   *                      S                            12        -     92.6935278     92.6935278   3.075e-11  1.000e-09 PASS
+T1   rad_eps0_steady_vs_reference         rad_eps0|coda_reference      *   *                      front                        12        -      5.1000000      5.1000000   2.319e-12  1.000e-09 PASS
+T1   rad_eps0_steady_vs_reference         rad_eps0|coda_reference      *   *                      rear                         12        -      0.9580795      0.9580795   1.665e-14  1.000e-09 PASS
+T1   rad_eps0_steady_vs_reference         rad_eps0|coda_reference      *   *                      surface                      12        -     88.7500000     88.7500000   2.899e-11  1.000e-09 PASS
+T1   reference_vs_analytic                coda_reference|analytic      *   *                      H                            12        -     90.9486204     90.9486204   1.421e-14  1.000e-09 PASS
+T1   reference_vs_analytic                coda_reference|analytic      *   *                      S                            12        -     33.7039846     33.7039846   7.105e-15  1.000e-09 PASS
+T1   reference_vs_analytic                coda_reference|analytic      *   *                      front                        12        -      0.6690488      0.6690488   4.441e-16  1.000e-09 PASS
+T1   reference_vs_analytic                coda_reference|analytic      *   *                      rear                         12        -      4.4309512      4.4309512   2.665e-15  1.000e-09 PASS
+T1   reference_vs_analytic                coda_reference|analytic      *   *                      surface                      12        -     33.5550009     33.5550009   7.105e-15  1.000e-09 PASS
+T2   fv_embedded_lump2_transcription      fv_embedded|coda_report      H1  F0                     H_3600_C                      1        -     25.1703030     25.1703030   0.000e+00  1.000e-09 PASS
+T2   fv_embedded_lump2_transcription      fv_embedded|coda_report      H1  F0                     peak_H_C                      1        -     33.8311930     33.8311930   0.000e+00  1.000e-09 PASS
+T2   fv_embedded_lump2_transcription      fv_embedded|coda_report      H1  F0                     peak_H_time_s                 1        -    900.0000000    900.0000000   0.000e+00  1.000e-09 PASS
+T2   fv_embedded_lump2_transcription      fv_embedded|coda_report      H1  F0                     peak_surface_C                1        -     33.5549940     33.5549940   0.000e+00  1.000e-09 PASS
+T2   fv_embedded_lump2_transcription      fv_embedded|coda_report      H1  F0                     peak_surface_time_s           1        -    900.0000000    900.0000000   0.000e+00  1.000e-09 PASS
+T2   fv_embedded_lump2_transcription      fv_embedded|coda_report      H1  F1                     H_3600_C                      1        -     26.3742040     26.3742040   0.000e+00  1.000e-09 PASS
+T2   fv_embedded_lump2_transcription      fv_embedded|coda_report      H1  F1                     peak_H_C                      1        -     61.1434800     61.1434800   0.000e+00  1.000e-09 PASS
+T2   fv_embedded_lump2_transcription      fv_embedded|coda_report      H1  F1                     peak_H_time_s                 1        -    900.0000000    900.0000000   0.000e+00  1.000e-09 PASS
+T2   fv_embedded_lump2_transcription      fv_embedded|coda_report      H1  F1                     peak_surface_C                1        -     59.7471550     59.7471550   0.000e+00  1.000e-09 PASS
+T2   fv_embedded_lump2_transcription      fv_embedded|coda_report      H1  F1                     peak_surface_time_s           1        -    901.0000000    901.0000000   0.000e+00  1.000e-09 PASS
+T2   fv_embedded_lump2_transcription      fv_embedded|coda_report      H2  F0                     H_3600_C                      1        -     25.1686020     25.1686020   0.000e+00  1.000e-09 PASS
+T2   fv_embedded_lump2_transcription      fv_embedded|coda_report      H2  F0                     peak_H_C                      1        -     33.8612870     33.8612870   0.000e+00  1.000e-09 PASS
+T2   fv_embedded_lump2_transcription      fv_embedded|coda_report      H2  F0                     peak_H_time_s                 1        -    900.0000000    900.0000000   0.000e+00  1.000e-09 PASS
+T2   fv_embedded_lump2_transcription      fv_embedded|coda_report      H2  F0                     peak_surface_C                1        -     33.3624440     33.3624440   0.000e+00  1.000e-09 PASS
+T2   fv_embedded_lump2_transcription      fv_embedded|coda_report      H2  F0                     peak_surface_time_s           1        -    900.0000000    900.0000000   0.000e+00  1.000e-09 PASS
+T2   fv_embedded_lump2_transcription      fv_embedded|coda_report      H2  F1                     H_3600_C                      1        -     26.7982520     26.7982520   0.000e+00  1.000e-09 PASS
+T2   fv_embedded_lump2_transcription      fv_embedded|coda_report      H2  F1                     peak_H_C                      1        -     55.5450630     55.5450630   0.000e+00  1.000e-09 PASS
+T2   fv_embedded_lump2_transcription      fv_embedded|coda_report      H2  F1                     peak_H_time_s                 1        -    900.0000000    900.0000000   0.000e+00  1.000e-09 PASS
+T2   fv_embedded_lump2_transcription      fv_embedded|coda_report      H2  F1                     peak_surface_C                1        -     53.1536380     53.1536380   0.000e+00  1.000e-09 PASS
+T2   fv_embedded_lump2_transcription      fv_embedded|coda_report      H2  F1                     peak_surface_time_s           1        -    904.0000000    904.0000000   0.000e+00  1.000e-09 PASS
+T2   fv_embedded_lump2_transcription      fv_embedded|coda_report      H3  F0                     H_3600_C                      1        -     25.1654360     25.1654360   0.000e+00  1.000e-09 PASS
+T2   fv_embedded_lump2_transcription      fv_embedded|coda_report      H3  F0                     peak_H_C                      1        -     33.8846520     33.8846520   0.000e+00  1.000e-09 PASS
+T2   fv_embedded_lump2_transcription      fv_embedded|coda_report      H3  F0                     peak_H_time_s                 1        -    900.0000000    900.0000000   0.000e+00  1.000e-09 PASS
+T2   fv_embedded_lump2_transcription      fv_embedded|coda_report      H3  F0                     peak_surface_C                1        -     32.9639390     32.9639390   0.000e+00  1.000e-09 PASS
+T2   fv_embedded_lump2_transcription      fv_embedded|coda_report      H3  F0                     peak_surface_time_s           1        -    900.0000000    900.0000000   0.000e+00  1.000e-09 PASS
+T2   fv_embedded_lump2_transcription      fv_embedded|coda_report      H3  F1                     H_3600_C                      1        -     28.1879880     28.1879880   0.000e+00  1.000e-09 PASS
+T2   fv_embedded_lump2_transcription      fv_embedded|coda_report      H3  F1                     peak_H_C                      1        -     50.1698750     50.1698750   0.000e+00  1.000e-09 PASS
+T2   fv_embedded_lump2_transcription      fv_embedded|coda_report      H3  F1                     peak_H_time_s                 1        -    900.0000000    900.0000000   0.000e+00  1.000e-09 PASS
+T2   fv_embedded_lump2_transcription      fv_embedded|coda_report      H3  F1                     peak_surface_C                1        -     45.8812630     45.8812630   0.000e+00  1.000e-09 PASS
+T2   fv_embedded_lump2_transcription      fv_embedded|coda_report      H3  F1                     peak_surface_time_s           1        -    914.0000000    914.0000000   0.000e+00  1.000e-09 PASS
+T2   rad_eps0_reproduces_lump2            rad_eps0|coda_report         H1  F0                     H_at_3600_C                   1   3600.0     25.1703029     25.1703030   8.993e-08  2.000e-06 PASS
+T2   rad_eps0_reproduces_lump2            rad_eps0|coda_report         H1  F0                     peak_H_C                      1        -     33.8311933     33.8311930   3.051e-07  2.000e-06 PASS
+T2   rad_eps0_reproduces_lump2            rad_eps0|coda_report         H1  F0                     peak_H_time_s                 1        -    900.0000000    900.0000000   0.000e+00  1.000e-09 PASS
+T2   rad_eps0_reproduces_lump2            rad_eps0|coda_report         H1  F0                     peak_surface_C                1        -     33.5549942     33.5549940   1.653e-07  2.000e-06 PASS
+T2   rad_eps0_reproduces_lump2            rad_eps0|coda_report         H1  F0                     peak_surface_time_s           1        -    900.0000000    900.0000000   0.000e+00  1.000e-09 PASS
+T2   rad_eps0_reproduces_lump2            rad_eps0|coda_report         H1  F1                     H_at_3600_C                   1   3600.0     26.3742043     26.3742040   3.194e-07  2.000e-06 PASS
+T2   rad_eps0_reproduces_lump2            rad_eps0|coda_report         H1  F1                     peak_H_C                      1        -     61.1434802     61.1434800   1.640e-07  2.000e-06 PASS
+T2   rad_eps0_reproduces_lump2            rad_eps0|coda_report         H1  F1                     peak_H_time_s                 1        -    900.0000000    900.0000000   0.000e+00  1.000e-09 PASS
+T2   rad_eps0_reproduces_lump2            rad_eps0|coda_report         H1  F1                     peak_surface_C                1        -     59.7471551     59.7471550   1.125e-07  2.000e-06 PASS
+T2   rad_eps0_reproduces_lump2            rad_eps0|coda_report         H1  F1                     peak_surface_time_s           1        -    901.0000000    901.0000000   0.000e+00  1.000e-09 PASS
+T2   rad_eps0_reproduces_lump2            rad_eps0|coda_report         H2  F0                     H_at_3600_C                   1   3600.0     25.1686017     25.1686020   2.892e-07  2.000e-06 PASS
+T2   rad_eps0_reproduces_lump2            rad_eps0|coda_report         H2  F0                     peak_H_C                      1        -     33.8612868     33.8612870   2.232e-07  2.000e-06 PASS
+T2   rad_eps0_reproduces_lump2            rad_eps0|coda_report         H2  F0                     peak_H_time_s                 1        -    900.0000000    900.0000000   0.000e+00  1.000e-09 PASS
+T2   rad_eps0_reproduces_lump2            rad_eps0|coda_report         H2  F0                     peak_surface_C                1        -     33.3624440     33.3624440   3.849e-08  2.000e-06 PASS
+T2   rad_eps0_reproduces_lump2            rad_eps0|coda_report         H2  F0                     peak_surface_time_s           1        -    900.0000000    900.0000000   0.000e+00  1.000e-09 PASS
+T2   rad_eps0_reproduces_lump2            rad_eps0|coda_report         H2  F1                     H_at_3600_C                   1   3600.0     26.7982523     26.7982520   3.403e-07  2.000e-06 PASS
+T2   rad_eps0_reproduces_lump2            rad_eps0|coda_report         H2  F1                     peak_H_C                      1        -     55.5450629     55.5450630   1.364e-07  2.000e-06 PASS
+T2   rad_eps0_reproduces_lump2            rad_eps0|coda_report         H2  F1                     peak_H_time_s                 1        -    900.0000000    900.0000000   0.000e+00  1.000e-09 PASS
+T2   rad_eps0_reproduces_lump2            rad_eps0|coda_report         H2  F1                     peak_surface_C                1        -     53.1536384     53.1536380   3.903e-07  2.000e-06 PASS
+T2   rad_eps0_reproduces_lump2            rad_eps0|coda_report         H2  F1                     peak_surface_time_s           1        -    904.0000000    904.0000000   0.000e+00  1.000e-09 PASS
+T2   rad_eps0_reproduces_lump2            rad_eps0|coda_report         H3  F0                     H_at_3600_C                   1   3600.0     25.1654357     25.1654360   2.747e-07  2.000e-06 PASS
+T2   rad_eps0_reproduces_lump2            rad_eps0|coda_report         H3  F0                     peak_H_C                      1        -     33.8846516     33.8846520   3.629e-07  2.000e-06 PASS
+T2   rad_eps0_reproduces_lump2            rad_eps0|coda_report         H3  F0                     peak_H_time_s                 1        -    900.0000000    900.0000000   0.000e+00  1.000e-09 PASS
+T2   rad_eps0_reproduces_lump2            rad_eps0|coda_report         H3  F0                     peak_surface_C                1        -     32.9639385     32.9639390   4.963e-07  2.000e-06 PASS
+T2   rad_eps0_reproduces_lump2            rad_eps0|coda_report         H3  F0                     peak_surface_time_s           1        -    900.0000000    900.0000000   0.000e+00  1.000e-09 PASS
+T2   rad_eps0_reproduces_lump2            rad_eps0|coda_report         H3  F1                     H_at_3600_C                   1   3600.0     28.1879880     28.1879880   1.378e-08  2.000e-06 PASS
+T2   rad_eps0_reproduces_lump2            rad_eps0|coda_report         H3  F1                     peak_H_C                      1        -     50.1698752     50.1698750   1.902e-07  2.000e-06 PASS
+T2   rad_eps0_reproduces_lump2            rad_eps0|coda_report         H3  F1                     peak_H_time_s                 1        -    900.0000000    900.0000000   0.000e+00  1.000e-09 PASS
+T2   rad_eps0_reproduces_lump2            rad_eps0|coda_report         H3  F1                     peak_surface_C                1        -     45.8812633     45.8812630   2.731e-07  2.000e-06 PASS
+T2   rad_eps0_reproduces_lump2            rad_eps0|coda_report         H3  F1                     peak_surface_time_s           1        -    914.0000000    914.0000000   0.000e+00  1.000e-09 PASS
+T3   fv_vs_oracle_energy_3600             fv|oracle                    H1  F0                     front_export_J                1   3600.0    655.1538135    655.1538232   9.716e-06  8.000e+00 PASS
+T3   fv_vs_oracle_energy_3600             fv|oracle                    H1  F0                     rear_export_J                 1   3600.0   4198.4730553   4198.4732874   2.321e-04  8.000e+00 PASS
+T3   fv_vs_oracle_energy_3600             fv|oracle                    H1  F0                     stored_J                      1   3600.0      6.3731312      6.3728893   2.418e-04  8.000e+00 PASS
+T3   fv_vs_oracle_energy_3600             fv|oracle                    H1  F1                     front_export_J                1   3600.0   2434.1310319   2434.1438196   1.279e-02  8.000e+00 PASS
+T3   fv_vs_oracle_energy_3600             fv|oracle                    H1  F1                     rear_export_J                 1   3600.0   2376.2339992   2376.2329088   1.090e-03  8.000e+00 PASS
+T3   fv_vs_oracle_energy_3600             fv|oracle                    H1  F1                     stored_J                      1   3600.0     49.6349689     49.6232715   1.170e-02  8.000e+00 PASS
+T3   fv_vs_oracle_energy_3600             fv|oracle                    H1  F2                     front_export_J                1   3600.0    664.6188459    664.6189298   8.391e-05  8.000e+00 PASS
+T3   fv_vs_oracle_energy_3600             fv|oracle                    H1  F2                     rear_export_J                 1   3600.0   4188.5001441   4188.5003005   1.565e-04  8.000e+00 PASS
+T3   fv_vs_oracle_energy_3600             fv|oracle                    H1  F2                     stored_J                      1   3600.0      6.8810100      6.8807682   2.418e-04  8.000e+00 PASS
+T3   fv_vs_oracle_energy_3600             fv|oracle                    H2  F0                     front_export_J                1   3600.0    643.1326300    643.1324701   1.598e-04  8.000e+00 PASS
+T3   fv_vs_oracle_energy_3600             fv|oracle                    H2  F0                     rear_export_J                 1   3600.0   4207.4156667   4207.4160686   4.019e-04  8.000e+00 PASS
+T3   fv_vs_oracle_energy_3600             fv|oracle                    H2  F0                     stored_J                      1   3600.0      9.4517034      9.4514615   2.418e-04  8.000e+00 PASS
+T3   fv_vs_oracle_energy_3600             fv|oracle                    H2  F1                     front_export_J                1   3600.0   2493.1998787   2493.2703627   7.048e-02  8.000e+00 PASS
+T3   fv_vs_oracle_energy_3600             fv|oracle                    H2  F1                     rear_export_J                 1   3600.0   2274.7640910   2274.7451135   1.898e-02  8.000e+00 PASS
+T3   fv_vs_oracle_energy_3600             fv|oracle                    H2  F1                     stored_J                      1   3600.0     92.0360303     91.9845246   5.151e-02  8.000e+00 PASS
+T3   fv_vs_oracle_energy_3600             fv|oracle                    H2  F2                     front_export_J                1   3600.0    657.2132899    657.2140102   7.203e-04  8.000e+00 PASS
+T3   fv_vs_oracle_energy_3600             fv|oracle                    H2  F2                     rear_export_J                 1   3600.0   4192.0583468   4192.0578673   4.794e-04  8.000e+00 PASS
+T3   fv_vs_oracle_energy_3600             fv|oracle                    H2  F2                     stored_J                      1   3600.0     10.7283633     10.7281214   2.418e-04  8.000e+00 PASS
+T3   fv_vs_oracle_energy_3600             fv|oracle                    H3  F0                     front_export_J                1   3600.0    620.3850033    620.3836050   1.398e-03  8.000e+00 PASS
+T3   fv_vs_oracle_energy_3600             fv|oracle                    H3  F0                     rear_export_J                 1   3600.0   4223.1969794   4223.1986219   1.643e-03  8.000e+00 PASS
+T3   fv_vs_oracle_energy_3600             fv|oracle                    H3  F0                     stored_J                      1   3600.0     16.4180173     16.4177731   2.442e-04  8.000e+00 PASS
+T3   fv_vs_oracle_energy_3600             fv|oracle                    H3  F1                     front_export_J                1   3600.0   2509.2595177   2509.8063946   5.469e-01  8.000e+00 PASS
+T3   fv_vs_oracle_energy_3600             fv|oracle                    H3  F1                     rear_export_J                 1   3600.0   2092.9879991   2092.6591434   3.289e-01  8.000e+00 PASS
+T3   fv_vs_oracle_energy_3600             fv|oracle                    H3  F1                     stored_J                      1   3600.0    257.7524832    257.5344622   2.180e-01  8.000e+00 PASS
+T3   fv_vs_oracle_energy_3600             fv|oracle                    H3  F2                     front_export_J                1   3600.0    641.5034449    641.5163535   1.291e-02  8.000e+00 PASS
+T3   fv_vs_oracle_energy_3600             fv|oracle                    H3  F2                     rear_export_J                 1   3600.0   4199.4007781   4199.3881171   1.266e-02  8.000e+00 PASS
+T3   fv_vs_oracle_energy_3600             fv|oracle                    H3  F2                     stored_J                      1   3600.0     19.0957770     19.0955288   2.482e-04  8.000e+00 PASS
+T3   fv_vs_oracle_trajectory              fv|oracle                    H1  F0                     H                            10     60.0     30.4740656     30.4866296   1.256e-02  2.505e-02 PASS
+T3   fv_vs_oracle_trajectory              fv|oracle                    H1  F0                     front                         8     60.0      0.4099259      0.4109584   1.032e-03  3.464e-03 PASS
+T3   fv_vs_oracle_trajectory              fv|oracle                    H1  F0                     rear                          8     60.0      2.7370328      2.7433148   6.282e-03  1.253e-02 PASS
+T3   fv_vs_oracle_trajectory              fv|oracle                    H1  F0                     sensor                       10     60.0     30.2662944     30.2793240   1.303e-02  3.538e-02 PASS
+T3   fv_vs_oracle_trajectory              fv|oracle                    H1  F0                     surface                      10     60.0     30.1240735     30.1369794   1.291e-02  4.330e-02 PASS
+T3   fv_vs_oracle_trajectory              fv|oracle                    H1  F1                     H                            10     60.0     30.4740656     30.4866296   1.256e-02  2.505e-02 PASS
+T3   fv_vs_oracle_trajectory              fv|oracle                    H1  F1                     front                         8     60.0      0.4099259      0.4109584   1.032e-03  3.462e-03 PASS
+T3   fv_vs_oracle_trajectory              fv|oracle                    H1  F1                     rear                          8     60.0      2.7370328      2.7433148   6.282e-03  1.253e-02 PASS
+T3   fv_vs_oracle_trajectory              fv|oracle                    H1  F1                     sensor                       10     60.0     30.2662944     30.2793240   1.303e-02  3.538e-02 PASS
+T3   fv_vs_oracle_trajectory              fv|oracle                    H1  F1                     surface                      10     60.0     30.1240735     30.1369794   1.291e-02  4.328e-02 PASS
+T3   fv_vs_oracle_trajectory              fv|oracle                    H1  F2                     H                            10     60.0     30.4740656     30.4866296   1.256e-02  2.478e-02 PASS
+T3   fv_vs_oracle_trajectory              fv|oracle                    H1  F2                     front                         8     60.0      0.4099259      0.4109584   1.032e-03  2.110e-03 PASS
+T3   fv_vs_oracle_trajectory              fv|oracle                    H1  F2                     rear                          8     60.0      2.7370328      2.7433148   6.282e-03  1.239e-02 PASS
+T3   fv_vs_oracle_trajectory              fv|oracle                    H1  F2                     sensor                       10     60.0     30.2662944     30.2793240   1.303e-02  2.623e-02 PASS
+T3   fv_vs_oracle_trajectory              fv|oracle                    H1  F2                     surface                      10     60.0     30.1240735     30.1369794   1.291e-02  2.637e-02 PASS
+T3   fv_vs_oracle_trajectory              fv|oracle                    H2  F0                     H                            10     60.0     29.5099173     29.5150212   5.104e-03  3.420e-02 PASS
+T3   fv_vs_oracle_trajectory              fv|oracle                    H2  F0                     front                         8     60.0      0.2928153      0.2932718   4.565e-04  3.594e-03 PASS
+T3   fv_vs_oracle_trajectory              fv|oracle                    H2  F0                     rear                          8     60.0      2.2549586      2.2575106   2.552e-03  1.710e-02 PASS
+T3   fv_vs_oracle_trajectory              fv|oracle                    H2  F0                     sensor                       10     60.0     28.9518726     28.9575167   5.644e-03  3.947e-02 PASS
+T3   fv_vs_oracle_trajectory              fv|oracle                    H2  F0                     surface                      10     60.0     28.6601910     28.6658973   5.706e-03  4.493e-02 PASS
+T3   fv_vs_oracle_trajectory              fv|oracle                    H2  F1                     H                            10    960.0     52.5134438     52.5268482   1.340e-02  3.285e-02 PASS
+T3   fv_vs_oracle_trajectory              fv|oracle                    H2  F1                     front                         8    960.0      2.1075322      2.1085398   1.008e-03  3.594e-03 PASS
+T3   fv_vs_oracle_trajectory              fv|oracle                    H2  F1                     rear                          8     60.0      2.2549586      2.2575106   2.552e-03  1.642e-02 PASS
+T3   fv_vs_oracle_trajectory              fv|oracle                    H2  F1                     sensor                       10    960.0     52.0653780     52.0783503   1.297e-02  3.947e-02 PASS
+T3   fv_vs_oracle_trajectory              fv|oracle                    H2  F1                     surface                      10    960.0     51.3441525     51.3567481   1.260e-02  4.493e-02 PASS
+T3   fv_vs_oracle_trajectory              fv|oracle                    H2  F2                     H                            10    960.0     29.1204712     29.1130114   7.460e-03  3.403e-02 PASS
+T3   fv_vs_oracle_trajectory              fv|oracle                    H2  F2                     front                         8    601.0      0.6669001      0.6675036   6.036e-04  2.676e-03 PASS
+T3   fv_vs_oracle_trajectory              fv|oracle                    H2  F2                     rear                          8    960.0      2.0602356      2.0565057   3.730e-03  1.702e-02 PASS
+T3   fv_vs_oracle_trajectory              fv|oracle                    H2  F2                     sensor                       10     60.0     28.9518726     28.9575167   5.644e-03  3.116e-02 PASS
+T3   fv_vs_oracle_trajectory              fv|oracle                    H2  F2                     surface                      10    601.0     33.3362506     33.3437952   7.545e-03  3.345e-02 PASS
+T3   fv_vs_oracle_trajectory              fv|oracle                    H3  F0                     H                            10    960.0     30.1577405     30.1675373   9.797e-03  8.448e-02 PASS
+T3   fv_vs_oracle_trajectory              fv|oracle                    H3  F0                     front                         8    960.0      0.5027022      0.5040797   1.378e-03  5.136e-03 PASS
+T3   fv_vs_oracle_trajectory              fv|oracle                    H3  F0                     rear                          8    960.0      2.5788703      2.5837686   4.898e-03  4.224e-02 PASS
+T3   fv_vs_oracle_trajectory              fv|oracle                    H3  F0                     sensor                       10    960.0     31.1989550     31.2144866   1.553e-02  6.412e-02 PASS
+T3   fv_vs_oracle_trajectory              fv|oracle                    H3  F0                     surface                      10    960.0     31.2837777     31.3009967   1.722e-02  6.420e-02 PASS
+T3   fv_vs_oracle_trajectory              fv|oracle                    H3  F1                     H                            10    660.0     38.2851685     38.2551303   3.004e-02  8.344e-02 PASS
+T3   fv_vs_oracle_trajectory              fv|oracle                    H3  F1                     front                         8    660.0      0.7785851      0.7761854   2.400e-03  5.136e-03 PASS
+T3   fv_vs_oracle_trajectory              fv|oracle                    H3  F1                     rear                          8     60.0      1.8952027      1.8904287   4.774e-03  4.172e-02 PASS
+T3   fv_vs_oracle_trajectory              fv|oracle                    H3  F1                     sensor                       10    660.0     35.9429180     35.9122384   3.068e-02  6.412e-02 PASS
+T3   fv_vs_oracle_trajectory              fv|oracle                    H3  F1                     surface                      10    660.0     34.7323132     34.7023172   3.000e-02  6.420e-02 PASS
+T3   fv_vs_oracle_trajectory              fv|oracle                    H3  F2                     H                            10     60.0     28.7904054     28.7808573   9.548e-03  8.448e-02 PASS
+T3   fv_vs_oracle_trajectory              fv|oracle                    H3  F2                     front                         8    960.0      0.5141921      0.5161920   2.000e-03  4.204e-03 PASS
+T3   fv_vs_oracle_trajectory              fv|oracle                    H3  F2                     rear                          8     60.0      1.8952027      1.8904287   4.774e-03  4.224e-02 PASS
+T3   fv_vs_oracle_trajectory              fv|oracle                    H3  F2                     sensor                       10    601.0     33.1955426     33.2190117   2.347e-02  5.136e-02 PASS
+T3   fv_vs_oracle_trajectory              fv|oracle                    H3  F2                     surface                      10    960.0     31.4274013     31.4524005   2.500e-02  5.255e-02 PASS
+T3   oracle_rowmax_vs_fv_peak_INFO        oracle_rowmax|fv             H1  F0                     H_peak_lower_bound_C          1    900.0     33.8311947     33.8311943   3.338e-07          - INFO
+T3   oracle_rowmax_vs_fv_peak_INFO        oracle_rowmax|fv             H1  F0                     surface_peak_lower_bound_C    1    900.0     33.5549955     33.5549952   3.412e-07          - INFO
+T3   oracle_rowmax_vs_fv_peak_INFO        oracle_rowmax|fv             H1  F1                     H_peak_lower_bound_C          1    900.0     61.1506297     61.1407956   9.834e-03          - INFO
+T3   oracle_rowmax_vs_fv_peak_INFO        oracle_rowmax|fv             H1  F1                     surface_peak_lower_bound_C    1    901.0     59.7942331     59.7803341   1.390e-02          - INFO
+T3   oracle_rowmax_vs_fv_peak_INFO        oracle_rowmax|fv             H1  F2                     H_peak_lower_bound_C          1    660.0     34.0110979     34.0190064   7.908e-03          - INFO
+T3   oracle_rowmax_vs_fv_peak_INFO        oracle_rowmax|fv             H1  F2                     surface_peak_lower_bound_C    1    600.0     33.5543698     33.5543432   2.662e-05          - INFO
+T3   oracle_rowmax_vs_fv_peak_INFO        oracle_rowmax|fv             H2  F0                     H_peak_lower_bound_C          1    900.0     33.8614521     33.8614334   1.871e-05          - INFO
+T3   oracle_rowmax_vs_fv_peak_INFO        oracle_rowmax|fv             H2  F0                     surface_peak_lower_bound_C    1    900.0     33.3626230     33.3626028   2.024e-05          - INFO
+T3   oracle_rowmax_vs_fv_peak_INFO        oracle_rowmax|fv             H2  F1                     H_peak_lower_bound_C          1    900.0     55.4713606     55.4694753   1.885e-03          - INFO
+T3   oracle_rowmax_vs_fv_peak_INFO        oracle_rowmax|fv             H2  F1                     surface_peak_lower_bound_C    1    901.0     53.0641324     53.2012717   1.371e-01          - INFO
+T3   oracle_rowmax_vs_fv_peak_INFO        oracle_rowmax|fv             H2  F2                     H_peak_lower_bound_C          1    660.0     34.0701378     34.0691523   9.855e-04          - INFO
+T3   oracle_rowmax_vs_fv_peak_INFO        oracle_rowmax|fv             H2  F2                     surface_peak_lower_bound_C    1    600.0     33.3502189     33.3498710   3.478e-04          - INFO
+T3   oracle_rowmax_vs_fv_peak_INFO        oracle_rowmax|fv             H3  F0                     H_peak_lower_bound_C          1    900.0     33.8955383     33.8947939   7.444e-04          - INFO
+T3   oracle_rowmax_vs_fv_peak_INFO        oracle_rowmax|fv             H3  F0                     surface_peak_lower_bound_C    1    901.0     32.9773035     32.9764079   8.956e-04          - INFO
+T3   oracle_rowmax_vs_fv_peak_INFO        oracle_rowmax|fv             H3  F1                     H_peak_lower_bound_C          1    900.0     49.8152029     49.8322471   1.704e-02          - INFO
+T3   oracle_rowmax_vs_fv_peak_INFO        oracle_rowmax|fv             H3  F1                     surface_peak_lower_bound_C    1    960.0     45.6206722     45.9468126   3.261e-01          - INFO
+T3   oracle_rowmax_vs_fv_peak_INFO        oracle_rowmax|fv             H3  F2                     H_peak_lower_bound_C          1    900.0     34.0518925     34.0627703   1.088e-02          - INFO
+T3   oracle_rowmax_vs_fv_peak_INFO        oracle_rowmax|fv             H3  F2                     surface_peak_lower_bound_C    1    601.0     32.8102692     32.8052457   5.023e-03          - INFO
+T4   lump2_table_vs_fv_peaks              coda_report|fv               H1  F0                     H_at_3600_C                   1   3600.0     25.1703030     25.1703029   8.993e-08  1.000e+00 PASS
+T4   lump2_table_vs_fv_peaks              coda_report|fv               H1  F0                     peak_H_C                      1        -     33.8311930     33.8311943   1.323e-06  2.000e+00 PASS
+T4   lump2_table_vs_fv_peaks              coda_report|fv               H1  F0                     peak_H_time_s                 1        -    900.0000000    900.0000000   0.000e+00  1.000e+00 PASS
+T4   lump2_table_vs_fv_peaks              coda_report|fv               H1  F0                     peak_surface_C                1        -     33.5549940     33.5549952   1.208e-06  2.000e+00 PASS
+T4   lump2_table_vs_fv_peaks              coda_report|fv               H1  F0                     peak_surface_time_s           1        -    900.0000000    900.0000000   0.000e+00  1.500e+00 PASS
+T4   lump2_table_vs_fv_peaks              coda_report|fv               H1  F1                     H_at_3600_C                   1   3600.0     26.3742040     26.3734392   7.648e-04  1.000e+00 PASS
+T4   lump2_table_vs_fv_peaks              coda_report|fv               H1  F1                     peak_H_C                      1        -     61.1434800     61.1407956   2.684e-03  2.000e+00 PASS
+T4   lump2_table_vs_fv_peaks              coda_report|fv               H1  F1                     peak_H_time_s                 1        -    900.0000000    900.0000000   0.000e+00  1.000e+00 PASS
+T4   lump2_table_vs_fv_peaks              coda_report|fv               H1  F1                     peak_surface_C                1        -     59.7471550     59.7803341   3.318e-02  2.000e+00 PASS
+T4   lump2_table_vs_fv_peaks              coda_report|fv               H1  F1                     peak_surface_time_s           1        -    901.0000000    901.5000000   5.000e-01  1.500e+00 PASS
+T4   lump2_table_vs_fv_peaks              coda_report|fv               H2  F0                     H_at_3600_C                   1   3600.0     25.1686020     25.1686017   2.892e-07  1.000e+00 PASS
+T4   lump2_table_vs_fv_peaks              coda_report|fv               H2  F0                     peak_H_C                      1        -     33.8612870     33.8614334   1.464e-04  2.000e+00 PASS
+T4   lump2_table_vs_fv_peaks              coda_report|fv               H2  F0                     peak_H_time_s                 1        -    900.0000000    900.0000000   0.000e+00  1.000e+00 PASS
+T4   lump2_table_vs_fv_peaks              coda_report|fv               H2  F0                     peak_surface_C                1        -     33.3624440     33.3626028   1.588e-04  2.000e+00 PASS
+T4   lump2_table_vs_fv_peaks              coda_report|fv               H2  F0                     peak_surface_time_s           1        -    900.0000000    900.0000000   0.000e+00  5.722e+00 PASS
+T4   lump2_table_vs_fv_peaks              coda_report|fv               H2  F1                     H_at_3600_C                   1   3600.0     26.7982520     26.7932231   5.029e-03  1.000e+00 PASS
+T4   lump2_table_vs_fv_peaks              coda_report|fv               H2  F1                     peak_H_C                      1        -     55.5450630     55.4694753   7.559e-02  2.000e+00 PASS
+T4   lump2_table_vs_fv_peaks              coda_report|fv               H2  F1                     peak_H_time_s                 1        -    900.0000000    900.0000000   0.000e+00  1.000e+00 PASS
+T4   lump2_table_vs_fv_peaks              coda_report|fv               H2  F1                     peak_surface_C                1        -     53.1536380     53.2012717   4.763e-02  2.000e+00 PASS
+T4   lump2_table_vs_fv_peaks              coda_report|fv               H2  F1                     peak_surface_time_s           1        -    904.0000000    906.5000000   2.500e+00  5.722e+00 PASS
+T4   lump2_table_vs_fv_peaks              coda_report|fv               H3  F0                     H_at_3600_C                   1   3600.0     25.1654360     25.1654352   8.467e-07  1.000e+00 PASS
+T4   lump2_table_vs_fv_peaks              coda_report|fv               H3  F0                     peak_H_C                      1        -     33.8846520     33.8947939   1.014e-02  2.000e+00 PASS
+T4   lump2_table_vs_fv_peaks              coda_report|fv               H3  F0                     peak_H_time_s                 1        -    900.0000000    900.0000000   0.000e+00  1.000e+00 PASS
+T4   lump2_table_vs_fv_peaks              coda_report|fv               H3  F0                     peak_surface_C                1        -     32.9639390     32.9764079   1.247e-02  2.000e+00 PASS
+T4   lump2_table_vs_fv_peaks              coda_report|fv               H3  F0                     peak_surface_time_s           1        -    900.0000000    901.5000000   1.500e+00  2.289e+01 PASS
+T4   lump2_table_vs_fv_peaks              coda_report|fv               H3  F1                     H_at_3600_C                   1   3600.0     28.1879880     28.1761056   1.188e-02  1.000e+00 PASS
+T4   lump2_table_vs_fv_peaks              coda_report|fv               H3  F1                     peak_H_C                      1        -     50.1698750     49.8322471   3.376e-01  2.000e+00 PASS
+T4   lump2_table_vs_fv_peaks              coda_report|fv               H3  F1                     peak_H_time_s                 1        -    900.0000000    900.0000000   0.000e+00  1.000e+00 PASS
+T4   lump2_table_vs_fv_peaks              coda_report|fv               H3  F1                     peak_surface_C                1        -     45.8812630     45.9468126   6.555e-02  2.000e+00 PASS
+T4   lump2_table_vs_fv_peaks              coda_report|fv               H3  F1                     peak_surface_time_s           1        -    914.0000000    926.0000000   1.200e+01  2.289e+01 PASS
+T4   rad_eps0_vs_fv_peaks                 rad_eps0|fv                  H1  F0                     H_at_3600_C                   1   3600.0     25.1703029     25.1703029   2.647e-12  1.000e+00 PASS
+T4   rad_eps0_vs_fv_peaks                 rad_eps0|fv                  H1  F0                     peak_H_C                      1        -     33.8311933     33.8311943   1.018e-06  2.000e+00 PASS
+T4   rad_eps0_vs_fv_peaks                 rad_eps0|fv                  H1  F0                     peak_H_time_s                 1        -    900.0000000    900.0000000   0.000e+00  1.000e+00 PASS
+T4   rad_eps0_vs_fv_peaks                 rad_eps0|fv                  H1  F0                     peak_sensor_C                 1        -     33.7039778     33.7039790   1.149e-06  2.000e+00 PASS
+T4   rad_eps0_vs_fv_peaks                 rad_eps0|fv                  H1  F0                     peak_sensor_time_s            1        -    900.0000000    900.0000000   0.000e+00  1.500e+00 PASS
+T4   rad_eps0_vs_fv_peaks                 rad_eps0|fv                  H1  F0                     peak_surface_C                1        -     33.5549942     33.5549952   1.043e-06  2.000e+00 PASS
+T4   rad_eps0_vs_fv_peaks                 rad_eps0|fv                  H1  F0                     peak_surface_time_s           1        -    900.0000000    900.0000000   0.000e+00  1.500e+00 PASS
+T4   rad_eps0_vs_fv_peaks                 rad_eps0|fv                  H1  F1                     H_at_3600_C                   1   3600.0     26.3742043     26.3734392   7.651e-04  1.000e+00 PASS
+T4   rad_eps0_vs_fv_peaks                 rad_eps0|fv                  H1  F1                     peak_H_C                      1        -     61.1434802     61.1407956   2.685e-03  2.000e+00 PASS
+T4   rad_eps0_vs_fv_peaks                 rad_eps0|fv                  H1  F1                     peak_H_time_s                 1        -    900.0000000    900.0000000   0.000e+00  1.000e+00 PASS
+T4   rad_eps0_vs_fv_peaks                 rad_eps0|fv                  H1  F1                     peak_sensor_C                 1        -     60.3522704     60.4085310   5.626e-02  2.000e+00 PASS
+T4   rad_eps0_vs_fv_peaks                 rad_eps0|fv                  H1  F1                     peak_sensor_time_s            1        -    901.0000000    900.5000000   5.000e-01  1.500e+00 PASS
+T4   rad_eps0_vs_fv_peaks                 rad_eps0|fv                  H1  F1                     peak_surface_C                1        -     59.7471551     59.7803341   3.318e-02  2.000e+00 PASS
+T4   rad_eps0_vs_fv_peaks                 rad_eps0|fv                  H1  F1                     peak_surface_time_s           1        -    901.0000000    901.5000000   5.000e-01  1.500e+00 PASS
+T4   rad_eps0_vs_fv_peaks                 rad_eps0|fv                  H2  F0                     H_at_3600_C                   1   3600.0     25.1686017     25.1686017   3.212e-12  1.000e+00 PASS
+T4   rad_eps0_vs_fv_peaks                 rad_eps0|fv                  H2  F0                     peak_H_C                      1        -     33.8612868     33.8614334   1.466e-04  2.000e+00 PASS
+T4   rad_eps0_vs_fv_peaks                 rad_eps0|fv                  H2  F0                     peak_H_time_s                 1        -    900.0000000    900.0000000   0.000e+00  1.000e+00 PASS
+T4   rad_eps0_vs_fv_peaks                 rad_eps0|fv                  H2  F0                     peak_sensor_C                 1        -     33.6319624     33.6321451   1.827e-04  2.000e+00 PASS
+T4   rad_eps0_vs_fv_peaks                 rad_eps0|fv                  H2  F0                     peak_sensor_time_s            1        -    900.0000000    900.0000000   0.000e+00  5.722e+00 PASS
+T4   rad_eps0_vs_fv_peaks                 rad_eps0|fv                  H2  F0                     peak_surface_C                1        -     33.3624440     33.3626028   1.588e-04  2.000e+00 PASS
+T4   rad_eps0_vs_fv_peaks                 rad_eps0|fv                  H2  F0                     peak_surface_time_s           1        -    900.0000000    900.0000000   0.000e+00  5.722e+00 PASS
+T4   rad_eps0_vs_fv_peaks                 rad_eps0|fv                  H2  F1                     H_at_3600_C                   1   3600.0     26.7982523     26.7932231   5.029e-03  1.000e+00 PASS
+T4   rad_eps0_vs_fv_peaks                 rad_eps0|fv                  H2  F1                     peak_H_C                      1        -     55.5450629     55.4694753   7.559e-02  2.000e+00 PASS
+T4   rad_eps0_vs_fv_peaks                 rad_eps0|fv                  H2  F1                     peak_H_time_s                 1        -    900.0000000    900.0000000   0.000e+00  1.000e+00 PASS
+T4   rad_eps0_vs_fv_peaks                 rad_eps0|fv                  H2  F1                     peak_sensor_C                 1        -     54.0610197     54.1584197   9.740e-02  2.000e+00 PASS
+T4   rad_eps0_vs_fv_peaks                 rad_eps0|fv                  H2  F1                     peak_sensor_time_s            1        -    904.0000000    903.0000000   1.000e+00  5.722e+00 PASS
+T4   rad_eps0_vs_fv_peaks                 rad_eps0|fv                  H2  F1                     peak_surface_C                1        -     53.1536384     53.2012717   4.763e-02  2.000e+00 PASS
+T4   rad_eps0_vs_fv_peaks                 rad_eps0|fv                  H2  F1                     peak_surface_time_s           1        -    904.0000000    906.5000000   2.500e+00  5.722e+00 PASS
+T4   rad_eps0_vs_fv_peaks                 rad_eps0|fv                  H3  F0                     H_at_3600_C                   1   3600.0     25.1654357     25.1654352   5.720e-07  1.000e+00 PASS
+T4   rad_eps0_vs_fv_peaks                 rad_eps0|fv                  H3  F0                     peak_H_C                      1        -     33.8846516     33.8947939   1.014e-02  2.000e+00 PASS
+T4   rad_eps0_vs_fv_peaks                 rad_eps0|fv                  H3  F0                     peak_H_time_s                 1        -    900.0000000    900.0000000   0.000e+00  1.000e+00 PASS
+T4   rad_eps0_vs_fv_peaks                 rad_eps0|fv                  H3  F0                     peak_sensor_C                 1        -     33.4565818     33.4720035   1.542e-02  2.000e+00 PASS
+T4   rad_eps0_vs_fv_peaks                 rad_eps0|fv                  H3  F0                     peak_sensor_time_s            1        -    900.0000000    900.0000000   0.000e+00  2.289e+01 PASS
+T4   rad_eps0_vs_fv_peaks                 rad_eps0|fv                  H3  F0                     peak_surface_C                1        -     32.9639385     32.9764079   1.247e-02  2.000e+00 PASS
+T4   rad_eps0_vs_fv_peaks                 rad_eps0|fv                  H3  F0                     peak_surface_time_s           1        -    900.0000000    901.5000000   1.500e+00  2.289e+01 PASS
+T4   rad_eps0_vs_fv_peaks                 rad_eps0|fv                  H3  F1                     H_at_3600_C                   1   3600.0     28.1879880     28.1761056   1.188e-02  1.000e+00 PASS
+T4   rad_eps0_vs_fv_peaks                 rad_eps0|fv                  H3  F1                     peak_H_C                      1        -     50.1698752     49.8322471   3.376e-01  2.000e+00 PASS
+T4   rad_eps0_vs_fv_peaks                 rad_eps0|fv                  H3  F1                     peak_H_time_s                 1        -    900.0000000    900.0000000   0.000e+00  1.000e+00 PASS
+T4   rad_eps0_vs_fv_peaks                 rad_eps0|fv                  H3  F1                     peak_sensor_C                 1        -     47.1729628     47.3499056   1.769e-01  2.000e+00 PASS
+T4   rad_eps0_vs_fv_peaks                 rad_eps0|fv                  H3  F1                     peak_sensor_time_s            1        -    914.0000000    910.5000000   3.500e+00  2.289e+01 PASS
+T4   rad_eps0_vs_fv_peaks                 rad_eps0|fv                  H3  F1                     peak_surface_C                1        -     45.8812633     45.9468126   6.555e-02  2.000e+00 PASS
+T4   rad_eps0_vs_fv_peaks                 rad_eps0|fv                  H3  F1                     peak_surface_time_s           1        -    914.0000000    926.0000000   1.200e+01  2.289e+01 PASS
+T4   rad_eps0_vs_fv_trajectory            rad_eps0|fv                  H1  F0                     H                            61    120.0     32.5146829     32.5342482   1.957e-02  2.000e+00 PASS
+T4   rad_eps0_vs_fv_trajectory            rad_eps0|fv                  H1  F0                     front                        59    120.0      0.5767248      0.5783633   1.638e-03  1.600e-01 PASS
+T4   rad_eps0_vs_fv_trajectory            rad_eps0|fv                  H1  F0                     rear                         59    120.0      3.7573414      3.7671241   9.783e-03  1.000e+00 PASS
+T4   rad_eps0_vs_fv_trajectory            rad_eps0|fv                  H1  F0                     sensor                       61     60.0     30.2010637     30.2662944   6.523e-02  2.000e+00 PASS
+T4   rad_eps0_vs_fv_trajectory            rad_eps0|fv                  H1  F0                     surface                      61    120.0     32.2090603     32.2295410   2.048e-02  2.000e+00 PASS
+T4   rad_eps0_vs_fv_trajectory            rad_eps0|fv                  H1  F1                     H                            61    960.0     56.7213083     56.7778843   5.658e-02  2.000e+00 PASS
+T4   rad_eps0_vs_fv_trajectory            rad_eps0|fv                  H1  F1                     front                        59    960.0      2.4717583      2.4760538   4.295e-03  1.600e-01 PASS
+T4   rad_eps0_vs_fv_trajectory            rad_eps0|fv                  H1  F1                     rear                         59    120.0      3.7573414      3.7671241   9.783e-03  1.000e+00 PASS
+T4   rad_eps0_vs_fv_trajectory            rad_eps0|fv                  H1  F1                     sensor                       61     60.0     30.2010637     30.2662944   6.523e-02  2.000e+00 PASS
+T4   rad_eps0_vs_fv_trajectory            rad_eps0|fv                  H1  F1                     surface                      61    960.0     55.8969793     55.9506721   5.369e-02  2.000e+00 PASS
+T4   rad_eps0_vs_fv_trajectory            rad_eps0|fv                  H2  F0                     H                            61    960.0     29.3851674     29.4286985   4.353e-02  2.000e+00 PASS
+T4   rad_eps0_vs_fv_trajectory            rad_eps0|fv                  H2  F0                     front                        59    960.0      0.3804181      0.3839887   3.571e-03  1.600e-01 PASS
+T4   rad_eps0_vs_fv_trajectory            rad_eps0|fv                  H2  F0                     rear                         59    960.0      2.1925837      2.2143492   2.177e-02  1.000e+00 PASS
+T4   rad_eps0_vs_fv_trajectory            rad_eps0|fv                  H2  F0                     sensor                       61     60.0     28.8213134     28.9518726   1.306e-01  2.000e+00 PASS
+T4   rad_eps0_vs_fv_trajectory            rad_eps0|fv                  H2  F0                     surface                      61    960.0     29.7552261     29.7998593   4.463e-02  2.000e+00 PASS
+T4   rad_eps0_vs_fv_trajectory            rad_eps0|fv                  H2  F1                     H                            61    660.0     39.4996856     39.3143331   1.854e-01  2.000e+00 PASS
+T4   rad_eps0_vs_fv_trajectory            rad_eps0|fv                  H2  F1                     front                        59    660.0      1.0173456      1.0039110   1.343e-02  1.600e-01 PASS
+T4   rad_eps0_vs_fv_trajectory            rad_eps0|fv                  H2  F1                     rear                         59     60.0      2.2754420      2.2549586   2.048e-02  1.000e+00 PASS
+T4   rad_eps0_vs_fv_trajectory            rad_eps0|fv                  H2  F1                     sensor                       61     60.0     28.8213134     28.9518726   1.306e-01  2.000e+00 PASS
+T4   rad_eps0_vs_fv_trajectory            rad_eps0|fv                  H2  F1                     surface                      61    660.0     37.7168200     37.5488875   1.679e-01  2.000e+00 PASS
+T4   rad_eps0_vs_fv_trajectory            rad_eps0|fv                  H3  F0                     H                            61    960.0     29.8955677     30.1577405   2.622e-01  2.000e+00 PASS
+T4   rad_eps0_vs_fv_trajectory            rad_eps0|fv                  H3  F0                     front                        59    960.0      0.4782751      0.5027022   2.443e-02  1.600e-01 PASS
+T4   rad_eps0_vs_fv_trajectory            rad_eps0|fv                  H3  F0                     rear                         59    960.0      2.4477838      2.5788703   1.311e-01  1.000e+00 PASS
+T4   rad_eps0_vs_fv_trajectory            rad_eps0|fv                  H3  F0                     sensor                       61    180.0     30.3910743     30.6427969   2.517e-01  2.000e+00 PASS
+T4   rad_eps0_vs_fv_trajectory            rad_eps0|fv                  H3  F0                     surface                      61    960.0     30.9784385     31.2837777   3.053e-01  2.000e+00 PASS
+T4   rad_eps0_vs_fv_trajectory            rad_eps0|fv                  H3  F1                     H                            61    660.0     38.8491273     38.2851685   5.640e-01  2.000e+00 PASS
+T4   rad_eps0_vs_fv_trajectory            rad_eps0|fv                  H3  F1                     front                        59    660.0      0.8146110      0.7785851   3.603e-02  1.600e-01 PASS
+T4   rad_eps0_vs_fv_trajectory            rad_eps0|fv                  H3  F1                     rear                         59     60.0      2.0208839      1.8952027   1.257e-01  1.000e+00 PASS
+T4   rad_eps0_vs_fv_trajectory            rad_eps0|fv                  H3  F1                     sensor                       61    180.0     30.3910743     30.6427969   2.517e-01  2.000e+00 PASS
+T4   rad_eps0_vs_fv_trajectory            rad_eps0|fv                  H3  F1                     surface                      61    660.0     35.1826372     34.7323132   4.503e-01  2.000e+00 PASS
+T4   rad_eps0_vs_oracle_trajectory        rad_eps0|oracle              H1  F0                     H                             9     60.0     30.4635039     30.4866296   2.313e-02  2.000e+00 PASS
+T4   rad_eps0_vs_oracle_trajectory        rad_eps0|oracle              H1  F0                     front                         7     60.0      0.4089631      0.4109584   1.995e-03  1.600e-01 PASS
+T4   rad_eps0_vs_oracle_trajectory        rad_eps0|oracle              H1  F0                     rear                          7     60.0      2.7317520      2.7433148   1.156e-02  1.000e+00 PASS
+T4   rad_eps0_vs_oracle_trajectory        rad_eps0|oracle              H1  F0                     sensor                        9     60.0     30.2010637     30.2793240   7.826e-02  2.000e+00 PASS
+T4   rad_eps0_vs_oracle_trajectory        rad_eps0|oracle              H1  F0                     surface                       9     60.0     30.1120385     30.1369794   2.494e-02  2.000e+00 PASS
+T4   rad_eps0_vs_oracle_trajectory        rad_eps0|oracle              H1  F1                     H                             9    960.0     56.7213083     56.7873061   6.600e-02  2.000e+00 PASS
+T4   rad_eps0_vs_oracle_trajectory        rad_eps0|oracle              H1  F1                     front                         7    960.0      2.4717583      2.4767829   5.025e-03  1.600e-01 PASS
+T4   rad_eps0_vs_oracle_trajectory        rad_eps0|oracle              H1  F1                     rear                          7     60.0      2.7317520      2.7433148   1.156e-02  1.000e+00 PASS
+T4   rad_eps0_vs_oracle_trajectory        rad_eps0|oracle              H1  F1                     sensor                        9     60.0     30.2010637     30.2793240   7.826e-02  2.000e+00 PASS
+T4   rad_eps0_vs_oracle_trajectory        rad_eps0|oracle              H1  F1                     surface                       9    960.0     55.8969793     55.9597865   6.281e-02  2.000e+00 PASS
+T4   rad_eps0_vs_oracle_trajectory        rad_eps0|oracle              H2  F0                     H                             9    960.0     29.3851674     29.4237154   3.855e-02  2.000e+00 PASS
+T4   rad_eps0_vs_oracle_trajectory        rad_eps0|oracle              H2  F0                     front                         7    960.0      0.3804181      0.3835430   3.125e-03  1.600e-01 PASS
+T4   rad_eps0_vs_oracle_trajectory        rad_eps0|oracle              H2  F0                     rear                          7    960.0      2.1925837      2.2118577   1.927e-02  1.000e+00 PASS
+T4   rad_eps0_vs_oracle_trajectory        rad_eps0|oracle              H2  F0                     sensor                        9     60.0     28.8213134     28.9575167   1.362e-01  2.000e+00 PASS
+T4   rad_eps0_vs_oracle_trajectory        rad_eps0|oracle              H2  F0                     surface                       9    960.0     29.7552261     29.7942879   3.906e-02  2.000e+00 PASS
+T4   rad_eps0_vs_oracle_trajectory        rad_eps0|oracle              H2  F1                     H                             9    660.0     39.4996856     39.3058835   1.938e-01  2.000e+00 PASS
+T4   rad_eps0_vs_oracle_trajectory        rad_eps0|oracle              H2  F1                     front                         7    660.0      1.0173456      1.0033030   1.404e-02  1.600e-01 PASS
+T4   rad_eps0_vs_oracle_trajectory        rad_eps0|oracle              H2  F1                     rear                          7     60.0      2.2754420      2.2575106   1.793e-02  1.000e+00 PASS
+T4   rad_eps0_vs_oracle_trajectory        rad_eps0|oracle              H2  F1                     sensor                        9     60.0     28.8213134     28.9575167   1.362e-01  2.000e+00 PASS
+T4   rad_eps0_vs_oracle_trajectory        rad_eps0|oracle              H2  F1                     surface                       9    660.0     37.7168200     37.5412874   1.755e-01  2.000e+00 PASS
+T4   rad_eps0_vs_oracle_trajectory        rad_eps0|oracle              H3  F0                     H                             9    960.0     29.8955677     30.1675373   2.720e-01  2.000e+00 PASS
+T4   rad_eps0_vs_oracle_trajectory        rad_eps0|oracle              H3  F0                     front                         7    960.0      0.4782751      0.5040797   2.580e-02  1.600e-01 PASS
+T4   rad_eps0_vs_oracle_trajectory        rad_eps0|oracle              H3  F0                     rear                          7    960.0      2.4477838      2.5837686   1.360e-01  1.000e+00 PASS
+T4   rad_eps0_vs_oracle_trajectory        rad_eps0|oracle              H3  F0                     sensor                        9    300.0     31.9684176     32.1795794   2.112e-01  2.000e+00 PASS
+T4   rad_eps0_vs_oracle_trajectory        rad_eps0|oracle              H3  F0                     surface                       9    960.0     30.9784385     31.3009967   3.226e-01  2.000e+00 PASS
+T4   rad_eps0_vs_oracle_trajectory        rad_eps0|oracle              H3  F1                     H                             9    660.0     38.8491273     38.2551303   5.940e-01  2.000e+00 PASS
+T4   rad_eps0_vs_oracle_trajectory        rad_eps0|oracle              H3  F1                     front                         7    660.0      0.8146110      0.7761854   3.843e-02  1.600e-01 PASS
+T4   rad_eps0_vs_oracle_trajectory        rad_eps0|oracle              H3  F1                     rear                          7     60.0      2.0208839      1.8904287   1.305e-01  1.000e+00 PASS
+T4   rad_eps0_vs_oracle_trajectory        rad_eps0|oracle              H3  F1                     sensor                        9    300.0     31.9684176     32.1795794   2.112e-01  2.000e+00 PASS
+T4   rad_eps0_vs_oracle_trajectory        rad_eps0|oracle              H3  F1                     surface                       9    660.0     35.1826372     34.7023172   4.803e-01  2.000e+00 PASS
+
+Notes per group (first three distinct):
+  T1 fv_steady_match_vs_reference * * H: P_body=5 assumed
+  T1 fv_steady_match_vs_reference * * S: P_body=5 assumed
+  T1 fv_steady_match_vs_reference * * front: P_body=5 assumed
+  T1 fv_steady_match_vs_reference * * rear: P_body=5 assumed
+  T1 fv_steady_match_vs_reference * * surface: P_body=5 assumed
+  T3 fv_vs_oracle_energy_3600 H1 F0 front_export_J: right-endpoint quadrature bound
+  T3 fv_vs_oracle_energy_3600 H1 F0 rear_export_J: right-endpoint quadrature bound
+  T3 fv_vs_oracle_energy_3600 H1 F0 stored_J: right-endpoint quadrature bound
+  T3 fv_vs_oracle_energy_3600 H1 F1 front_export_J: right-endpoint quadrature bound
+  T3 fv_vs_oracle_energy_3600 H1 F1 rear_export_J: right-endpoint quadrature bound
+  T3 fv_vs_oracle_energy_3600 H1 F1 stored_J: right-endpoint quadrature bound
+  T3 fv_vs_oracle_energy_3600 H1 F2 front_export_J: right-endpoint quadrature bound
+  T3 fv_vs_oracle_energy_3600 H1 F2 rear_export_J: right-endpoint quadrature bound
+  T3 fv_vs_oracle_energy_3600 H1 F2 stored_J: right-endpoint quadrature bound
+  T3 fv_vs_oracle_energy_3600 H2 F0 front_export_J: right-endpoint quadrature bound
+  T3 fv_vs_oracle_energy_3600 H2 F0 rear_export_J: right-endpoint quadrature bound
+  T3 fv_vs_oracle_energy_3600 H2 F0 stored_J: right-endpoint quadrature bound
+  T3 fv_vs_oracle_energy_3600 H2 F1 front_export_J: right-endpoint quadrature bound
+  T3 fv_vs_oracle_energy_3600 H2 F1 rear_export_J: right-endpoint quadrature bound
+  T3 fv_vs_oracle_energy_3600 H2 F1 stored_J: right-endpoint quadrature bound
+  T3 fv_vs_oracle_energy_3600 H2 F2 front_export_J: right-endpoint quadrature bound
+  T3 fv_vs_oracle_energy_3600 H2 F2 rear_export_J: right-endpoint quadrature bound
+  T3 fv_vs_oracle_energy_3600 H2 F2 stored_J: right-endpoint quadrature bound
+  T3 fv_vs_oracle_energy_3600 H3 F0 front_export_J: right-endpoint quadrature bound
+  T3 fv_vs_oracle_energy_3600 H3 F0 rear_export_J: right-endpoint quadrature bound
+  T3 fv_vs_oracle_energy_3600 H3 F0 stored_J: right-endpoint quadrature bound
+  T3 fv_vs_oracle_energy_3600 H3 F1 front_export_J: right-endpoint quadrature bound
+  T3 fv_vs_oracle_energy_3600 H3 F1 rear_export_J: right-endpoint quadrature bound
+  T3 fv_vs_oracle_energy_3600 H3 F1 stored_J: right-endpoint quadrature bound
+  T3 fv_vs_oracle_energy_3600 H3 F2 front_export_J: right-endpoint quadrature bound
+  T3 fv_vs_oracle_energy_3600 H3 F2 rear_export_J: right-endpoint quadrature bound
+  T3 fv_vs_oracle_energy_3600 H3 F2 stored_J: right-endpoint quadrature bound
+  T3 fv_vs_oracle_trajectory H1 F0 H: dt:richardson,dx:richardson;Dt=0.00633;Dx=0.00223;orc=0.00161
+  T3 fv_vs_oracle_trajectory H1 F0 front: surface budget / R_conv
+  T3 fv_vs_oracle_trajectory H1 F0 rear: H budget / R_rej
+  T3 fv_vs_oracle_trajectory H1 F0 sensor: dt:richardson,dx:richardson;Dt=0.00953;Dx=0.00259;orc=0.00161
+  T3 fv_vs_oracle_trajectory H1 F0 surface: dt:richardson,dx:richardson;Dt=0.0122;Dx=0.00255;orc=0.00161
+  T3 fv_vs_oracle_trajectory H1 F1 H: dt:richardson,dx:richardson;Dt=0.00633;Dx=0.00223;orc=0.00161
+  T3 fv_vs_oracle_trajectory H1 F1 front: surface budget / R_conv
+  T3 fv_vs_oracle_trajectory H1 F1 rear: H budget / R_rej
+  T3 fv_vs_oracle_trajectory H1 F1 sensor: dt:richardson,dx:richardson;Dt=0.00953;Dx=0.00259;orc=0.00161
+  T3 fv_vs_oracle_trajectory H1 F1 surface: dt:richardson,dx:richardson;Dt=0.0122;Dx=0.00254;orc=0.00161
+  T3 fv_vs_oracle_trajectory H1 F2 H: dt:richardson,dx:richardson;Dt=0.00633;Dx=0.00209;orc=0.00161
+  T3 fv_vs_oracle_trajectory H1 F2 front: surface budget / R_conv
+  T3 fv_vs_oracle_trajectory H1 F2 rear: H budget / R_rej
+  T3 fv_vs_oracle_trajectory H1 F2 sensor: dt:richardson,dx:richardson;Dt=0.00648;Dx=0.00259;orc=0.00161
+  T3 fv_vs_oracle_trajectory H1 F2 surface: dt:richardson,dx:richardson;Dt=0.00656;Dx=0.00255;orc=0.00161
+  T3 fv_vs_oracle_trajectory H2 F0 H: dt:richardson,dx:richardson;Dt=0.00514;Dx=0.00859;orc=0.00161
+  T3 fv_vs_oracle_trajectory H2 F0 front: surface budget / R_conv
+  T3 fv_vs_oracle_trajectory H2 F0 rear: H budget / R_rej
+  T3 fv_vs_oracle_trajectory H2 F0 sensor: dt:richardson,dx:richardson;Dt=0.00686;Dx=0.00864;orc=0.00161
+  T3 fv_vs_oracle_trajectory H2 F0 surface: dt:richardson,dx:richardson;Dt=0.00889;Dx=0.00833;orc=0.00161
+  T3 fv_vs_oracle_trajectory H2 F1 H: dt:richardson,dx:richardson;Dt=0.00469;Dx=0.00859;orc=0.00161
+  T3 fv_vs_oracle_trajectory H2 F1 front: surface budget / R_conv
+  T3 fv_vs_oracle_trajectory H2 F1 rear: H budget / R_rej
+  T3 fv_vs_oracle_trajectory H2 F1 sensor: dt:richardson,dx:richardson;Dt=0.00686;Dx=0.00864;orc=0.00161
+  T3 fv_vs_oracle_trajectory H2 F1 surface: dt:richardson,dx:richardson;Dt=0.00889;Dx=0.00833;orc=0.00161
+  T3 fv_vs_oracle_trajectory H2 F2 H: dt:richardson,dx:richardson;Dt=0.00514;Dx=0.0085;orc=0.00161
+  T3 fv_vs_oracle_trajectory H2 F2 front: surface budget / R_conv
+  T3 fv_vs_oracle_trajectory H2 F2 rear: H budget / R_rej
+  T3 fv_vs_oracle_trajectory H2 F2 sensor: dt:richardson,dx:richardson;Dt=0.00449;Dx=0.00804;orc=0.00161
+  T3 fv_vs_oracle_trajectory H2 F2 surface: dt:richardson,dx:richardson;Dt=0.00513;Dx=0.00822;orc=0.00161
+  T3 fv_vs_oracle_trajectory H3 F0 H: dt:richardson,dx:richardson;Dt=0.00579;Dx=0.0328;orc=0.00161
+  T3 fv_vs_oracle_trajectory H3 F0 front: surface budget / R_conv
+  T3 fv_vs_oracle_trajectory H3 F0 rear: H budget / R_rej
+  T3 fv_vs_oracle_trajectory H3 F0 sensor: dt:richardson,dx:richardson;Dt=0.00469;Dx=0.0242;orc=0.00161
+  T3 fv_vs_oracle_trajectory H3 F0 surface: dt:richardson,dx:richardson;Dt=0.00569;Dx=0.0228;orc=0.00161
+  T3 fv_vs_oracle_trajectory H3 F1 H: dt:richardson,dx:richardson;Dt=0.00579;Dx=0.0322;orc=0.00161
+  T3 fv_vs_oracle_trajectory H3 F1 front: surface budget / R_conv
+  T3 fv_vs_oracle_trajectory H3 F1 rear: H budget / R_rej
+  T3 fv_vs_oracle_trajectory H3 F1 sensor: dt:richardson,dx:richardson;Dt=0.00469;Dx=0.0242;orc=0.00161
+  T3 fv_vs_oracle_trajectory H3 F1 surface: dt:richardson,dx:richardson;Dt=0.00569;Dx=0.0228;orc=0.00161
+  T3 fv_vs_oracle_trajectory H3 F2 H: dt:richardson,dx:richardson;Dt=0.00579;Dx=0.0328;orc=0.00161
+  T3 fv_vs_oracle_trajectory H3 F2 front: surface budget / R_conv
+  T3 fv_vs_oracle_trajectory H3 F2 rear: H budget / R_rej
+  T3 fv_vs_oracle_trajectory H3 F2 sensor: dt:richardson,dx:richardson;Dt=0.00288;Dx=0.0206;orc=0.00161
+  T3 fv_vs_oracle_trajectory H3 F2 surface: dt:richardson,dx:richardson;Dt=0.00312;Dx=0.0208;orc=0.00161
+  T3 oracle_rowmax_vs_fv_peak_INFO H1 F0 H_peak_lower_bound_C: info: sparse rows, not judged
+  T3 oracle_rowmax_vs_fv_peak_INFO H1 F0 surface_peak_lower_bound_C: info: sparse rows, not judged
+  T3 oracle_rowmax_vs_fv_peak_INFO H1 F1 H_peak_lower_bound_C: info: sparse rows, not judged
+  T3 oracle_rowmax_vs_fv_peak_INFO H1 F1 surface_peak_lower_bound_C: info: sparse rows, not judged
+  T3 oracle_rowmax_vs_fv_peak_INFO H1 F2 H_peak_lower_bound_C: info: sparse rows, not judged
+  T3 oracle_rowmax_vs_fv_peak_INFO H1 F2 surface_peak_lower_bound_C: info: sparse rows, not judged
+  T3 oracle_rowmax_vs_fv_peak_INFO H2 F0 H_peak_lower_bound_C: info: sparse rows, not judged
+  T3 oracle_rowmax_vs_fv_peak_INFO H2 F0 surface_peak_lower_bound_C: info: sparse rows, not judged
+  T3 oracle_rowmax_vs_fv_peak_INFO H2 F1 H_peak_lower_bound_C: info: sparse rows, not judged
+  T3 oracle_rowmax_vs_fv_peak_INFO H2 F1 surface_peak_lower_bound_C: info: sparse rows, not judged
+  T3 oracle_rowmax_vs_fv_peak_INFO H2 F2 H_peak_lower_bound_C: info: sparse rows, not judged
+  T3 oracle_rowmax_vs_fv_peak_INFO H2 F2 surface_peak_lower_bound_C: info: sparse rows, not judged
+  T3 oracle_rowmax_vs_fv_peak_INFO H3 F0 H_peak_lower_bound_C: info: sparse rows, not judged
+  T3 oracle_rowmax_vs_fv_peak_INFO H3 F0 surface_peak_lower_bound_C: info: sparse rows, not judged
+  T3 oracle_rowmax_vs_fv_peak_INFO H3 F1 H_peak_lower_bound_C: info: sparse rows, not judged
+  T3 oracle_rowmax_vs_fv_peak_INFO H3 F1 surface_peak_lower_bound_C: info: sparse rows, not judged
+  T3 oracle_rowmax_vs_fv_peak_INFO H3 F2 H_peak_lower_bound_C: info: sparse rows, not judged
+  T3 oracle_rowmax_vs_fv_peak_INFO H3 F2 surface_peak_lower_bound_C: info: sparse rows, not judged
+  T4 lump2_table_vs_fv_peaks H1 F0 peak_H_C: structural scale q_front_peak*R_cover=0.30K
+  T4 lump2_table_vs_fv_peaks H1 F0 peak_surface_C: structural scale q_front_peak*R_cover=0.30K
+  T4 lump2_table_vs_fv_peaks H1 F0 peak_surface_time_s: L_outer^2/alpha=1.43s
+  T4 lump2_table_vs_fv_peaks H1 F1 peak_H_C: structural scale q_front_peak*R_cover=1.21K
+  T4 lump2_table_vs_fv_peaks H1 F1 peak_surface_C: structural scale q_front_peak*R_cover=1.21K
+  T4 lump2_table_vs_fv_peaks H1 F1 peak_surface_time_s: L_outer^2/alpha=1.43s
+  T4 lump2_table_vs_fv_peaks H2 F0 peak_H_C: structural scale q_front_peak*R_cover=0.54K
+  T4 lump2_table_vs_fv_peaks H2 F0 peak_surface_C: structural scale q_front_peak*R_cover=0.54K
+  T4 lump2_table_vs_fv_peaks H2 F0 peak_surface_time_s: L_outer^2/alpha=5.72s
+  T4 lump2_table_vs_fv_peaks H2 F1 peak_H_C: structural scale q_front_peak*R_cover=1.82K
+  T4 lump2_table_vs_fv_peaks H2 F1 peak_surface_C: structural scale q_front_peak*R_cover=1.82K
+  T4 lump2_table_vs_fv_peaks H2 F1 peak_surface_time_s: L_outer^2/alpha=5.72s
+  T4 lump2_table_vs_fv_peaks H3 F0 peak_H_C: structural scale q_front_peak*R_cover=0.99K
+  T4 lump2_table_vs_fv_peaks H3 F0 peak_surface_C: structural scale q_front_peak*R_cover=0.99K
+  T4 lump2_table_vs_fv_peaks H3 F0 peak_surface_time_s: L_outer^2/alpha=22.89s
+  T4 lump2_table_vs_fv_peaks H3 F1 peak_H_C: structural scale q_front_peak*R_cover=2.59K
+  T4 lump2_table_vs_fv_peaks H3 F1 peak_surface_C: structural scale q_front_peak*R_cover=2.59K
+  T4 lump2_table_vs_fv_peaks H3 F1 peak_surface_time_s: L_outer^2/alpha=22.89s
+  T4 rad_eps0_vs_fv_peaks H1 F0 peak_H_C: structural scale q_front_peak*R_cover=0.30K
+  T4 rad_eps0_vs_fv_peaks H1 F0 peak_sensor_time_s: L_outer^2/alpha=1.43s
+  T4 rad_eps0_vs_fv_peaks H1 F0 peak_surface_C: structural scale q_front_peak*R_cover=0.30K
+  T4 rad_eps0_vs_fv_peaks H1 F0 peak_surface_time_s: L_outer^2/alpha=1.43s
+  T4 rad_eps0_vs_fv_peaks H1 F1 peak_H_C: structural scale q_front_peak*R_cover=1.21K
+  T4 rad_eps0_vs_fv_peaks H1 F1 peak_sensor_time_s: L_outer^2/alpha=1.43s
+  T4 rad_eps0_vs_fv_peaks H1 F1 peak_surface_C: structural scale q_front_peak*R_cover=1.21K
+  T4 rad_eps0_vs_fv_peaks H1 F1 peak_surface_time_s: L_outer^2/alpha=1.43s
+  T4 rad_eps0_vs_fv_peaks H2 F0 peak_H_C: structural scale q_front_peak*R_cover=0.54K
+  T4 rad_eps0_vs_fv_peaks H2 F0 peak_sensor_time_s: L_outer^2/alpha=5.72s
+  T4 rad_eps0_vs_fv_peaks H2 F0 peak_surface_C: structural scale q_front_peak*R_cover=0.54K
+  T4 rad_eps0_vs_fv_peaks H2 F0 peak_surface_time_s: L_outer^2/alpha=5.72s
+  T4 rad_eps0_vs_fv_peaks H2 F1 peak_H_C: structural scale q_front_peak*R_cover=1.82K
+  T4 rad_eps0_vs_fv_peaks H2 F1 peak_sensor_time_s: L_outer^2/alpha=5.72s
+  T4 rad_eps0_vs_fv_peaks H2 F1 peak_surface_C: structural scale q_front_peak*R_cover=1.82K
+  T4 rad_eps0_vs_fv_peaks H2 F1 peak_surface_time_s: L_outer^2/alpha=5.72s
+  T4 rad_eps0_vs_fv_peaks H3 F0 peak_H_C: structural scale q_front_peak*R_cover=0.99K
+  T4 rad_eps0_vs_fv_peaks H3 F0 peak_sensor_time_s: L_outer^2/alpha=22.89s
+  T4 rad_eps0_vs_fv_peaks H3 F0 peak_surface_C: structural scale q_front_peak*R_cover=0.99K
+  T4 rad_eps0_vs_fv_peaks H3 F0 peak_surface_time_s: L_outer^2/alpha=22.89s
+  T4 rad_eps0_vs_fv_peaks H3 F1 peak_H_C: structural scale q_front_peak*R_cover=2.59K
+  T4 rad_eps0_vs_fv_peaks H3 F1 peak_sensor_time_s: L_outer^2/alpha=22.89s
+  T4 rad_eps0_vs_fv_peaks H3 F1 peak_surface_C: structural scale q_front_peak*R_cover=2.59K
+  T4 rad_eps0_vs_fv_peaks H3 F1 peak_surface_time_s: L_outer^2/alpha=22.89s
+  T4 rad_eps0_vs_fv_trajectory H1 F0 H: predeclared structural expectation
+  T4 rad_eps0_vs_fv_trajectory H1 F0 front: 2K / R_conv
+  T4 rad_eps0_vs_fv_trajectory H1 F0 rear: 2K / R_rej
+  T4 rad_eps0_vs_fv_trajectory H1 F0 sensor: predeclared structural expectation
+  T4 rad_eps0_vs_fv_trajectory H1 F0 surface: predeclared structural expectation
+  T4 rad_eps0_vs_fv_trajectory H1 F1 H: predeclared structural expectation
+  T4 rad_eps0_vs_fv_trajectory H1 F1 front: 2K / R_conv
+  T4 rad_eps0_vs_fv_trajectory H1 F1 rear: 2K / R_rej
+  T4 rad_eps0_vs_fv_trajectory H1 F1 sensor: predeclared structural expectation
+  T4 rad_eps0_vs_fv_trajectory H1 F1 surface: predeclared structural expectation
+  T4 rad_eps0_vs_fv_trajectory H2 F0 H: predeclared structural expectation
+  T4 rad_eps0_vs_fv_trajectory H2 F0 front: 2K / R_conv
+  T4 rad_eps0_vs_fv_trajectory H2 F0 rear: 2K / R_rej
+  T4 rad_eps0_vs_fv_trajectory H2 F0 sensor: predeclared structural expectation
+  T4 rad_eps0_vs_fv_trajectory H2 F0 surface: predeclared structural expectation
+  T4 rad_eps0_vs_fv_trajectory H2 F1 H: predeclared structural expectation
+  T4 rad_eps0_vs_fv_trajectory H2 F1 front: 2K / R_conv
+  T4 rad_eps0_vs_fv_trajectory H2 F1 rear: 2K / R_rej
+  T4 rad_eps0_vs_fv_trajectory H2 F1 sensor: predeclared structural expectation
+  T4 rad_eps0_vs_fv_trajectory H2 F1 surface: predeclared structural expectation
+  T4 rad_eps0_vs_fv_trajectory H3 F0 H: predeclared structural expectation
+  T4 rad_eps0_vs_fv_trajectory H3 F0 front: 2K / R_conv
+  T4 rad_eps0_vs_fv_trajectory H3 F0 rear: 2K / R_rej
+  T4 rad_eps0_vs_fv_trajectory H3 F0 sensor: predeclared structural expectation
+  T4 rad_eps0_vs_fv_trajectory H3 F0 surface: predeclared structural expectation
+  T4 rad_eps0_vs_fv_trajectory H3 F1 H: predeclared structural expectation
+  T4 rad_eps0_vs_fv_trajectory H3 F1 front: 2K / R_conv
+  T4 rad_eps0_vs_fv_trajectory H3 F1 rear: 2K / R_rej
+  T4 rad_eps0_vs_fv_trajectory H3 F1 sensor: predeclared structural expectation
+  T4 rad_eps0_vs_fv_trajectory H3 F1 surface: predeclared structural expectation
+  T4 rad_eps0_vs_oracle_trajectory H1 F0 H: predeclared structural expectation
+  T4 rad_eps0_vs_oracle_trajectory H1 F0 front: 2K / R_conv
+  T4 rad_eps0_vs_oracle_trajectory H1 F0 rear: 2K / R_rej
+  T4 rad_eps0_vs_oracle_trajectory H1 F0 sensor: predeclared structural expectation
+  T4 rad_eps0_vs_oracle_trajectory H1 F0 surface: predeclared structural expectation
+  T4 rad_eps0_vs_oracle_trajectory H1 F1 H: predeclared structural expectation
+  T4 rad_eps0_vs_oracle_trajectory H1 F1 front: 2K / R_conv
+  T4 rad_eps0_vs_oracle_trajectory H1 F1 rear: 2K / R_rej
+  T4 rad_eps0_vs_oracle_trajectory H1 F1 sensor: predeclared structural expectation
+  T4 rad_eps0_vs_oracle_trajectory H1 F1 surface: predeclared structural expectation
+  T4 rad_eps0_vs_oracle_trajectory H2 F0 H: predeclared structural expectation
+  T4 rad_eps0_vs_oracle_trajectory H2 F0 front: 2K / R_conv
+  T4 rad_eps0_vs_oracle_trajectory H2 F0 rear: 2K / R_rej
+  T4 rad_eps0_vs_oracle_trajectory H2 F0 sensor: predeclared structural expectation
+  T4 rad_eps0_vs_oracle_trajectory H2 F0 surface: predeclared structural expectation
+  T4 rad_eps0_vs_oracle_trajectory H2 F1 H: predeclared structural expectation
+  T4 rad_eps0_vs_oracle_trajectory H2 F1 front: 2K / R_conv
+  T4 rad_eps0_vs_oracle_trajectory H2 F1 rear: 2K / R_rej
+  T4 rad_eps0_vs_oracle_trajectory H2 F1 sensor: predeclared structural expectation
+  T4 rad_eps0_vs_oracle_trajectory H2 F1 surface: predeclared structural expectation
+  T4 rad_eps0_vs_oracle_trajectory H3 F0 H: predeclared structural expectation
+  T4 rad_eps0_vs_oracle_trajectory H3 F0 front: 2K / R_conv
+  T4 rad_eps0_vs_oracle_trajectory H3 F0 rear: 2K / R_rej
+  T4 rad_eps0_vs_oracle_trajectory H3 F0 sensor: predeclared structural expectation
+  T4 rad_eps0_vs_oracle_trajectory H3 F0 surface: predeclared structural expectation
+  T4 rad_eps0_vs_oracle_trajectory H3 F1 H: predeclared structural expectation
+  T4 rad_eps0_vs_oracle_trajectory H3 F1 front: 2K / R_conv
+  T4 rad_eps0_vs_oracle_trajectory H3 F1 rear: 2K / R_rej
+  T4 rad_eps0_vs_oracle_trajectory H3 F1 sensor: predeclared structural expectation
+  T4 rad_eps0_vs_oracle_trajectory H3 F1 surface: predeclared structural expectation
+
+Tier summary:
+  T1: groups=110 judged=480 failed=0 -> PASS
+  T2: groups=60 judged=60 failed=0 -> PASS
+  T3: groups=90 judged=441 failed=0 -> PASS
+  T4: groups=132 judged=2124 failed=0 -> PASS
+Failures (0; first 60 shown):
+OVERALL (judged tiers): PASS
+
+--lump2 file loaded; top-level keys: ['api_calls', 'case_count', 'contract_relation', 'coupled_exact_H', 'coupled_exact_S', 'coupled_refinement', 'elapsed_seconds', 'fable_response_read', 'model', 'one_node_exact_H_C', 'one_node_refinement', 'physical_validation', 'rear_loss_temporal_difference_K', 'rows', 'trace_convention', 'trace_retention']
+No values compared from it (schema not available to the author); Coda's REPORT.md table is the LUMP2 source used above.
+
+wrote ../../w13/nversion_crosscheck_f2fix.json

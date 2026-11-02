@@ -1,0 +1,23 @@
+....FF............
+======================================================================
+FAIL: test_structure_all_stacks (test_layered_oracle.TestModes.test_structure_all_stacks)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w10/thermal-layered-oracle-002/oracle/test_layered_oracle.py", line 95, in test_structure_all_stacks
+    self.assertLess(ms.diagnostics["max_energy_identity_residual_rel"], 1e-8, stack)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 2.8540838148452035e-08 not less than 1e-08 : H1
+
+======================================================================
+FAIL: test_weyl_count (test_layered_oracle.TestModes.test_weyl_count)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w10/thermal-layered-oracle-002/oracle/test_layered_oracle.py", line 116, in test_weyl_count
+    self.assertLessEqual(abs(60 - ms.diagnostics["weyl_estimate_at_lam_max"]), 2.0, stack)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 2.745937320825483 not less than or equal to 2.0 : H1
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.783s
+
+FAILED (failures=2)

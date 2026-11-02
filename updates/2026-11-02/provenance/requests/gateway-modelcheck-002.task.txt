@@ -1,0 +1,17 @@
+Request gateway-modelcheck-002 (wave10-resends; model Claude Fable 5.1; header HEADER_a74a3d6d23e7.txt)
+
+TASK gateway-modelcheck-001
+The Stage's embodiment-interface work uses a file-relayed action gateway (First Leaf) between a model and a simulated point body. Coda wrote a lifecycle design (GW-ASYNC0) for admission, dispatch, stop, failure and unknown outcomes; a separate contributor is implementing it. Your task is independent verification of the DESIGN itself, before code exists.
+
+Deliver: (a) an abstract state model of the gateway + relay + crash/restart points (admission, mark_dispatched, transition commit, export, record_failure, mark_unknown, resolve_unknown, stop, duplicate request replay, serialize/restore, crash between any two durable writes); (b) a standard-library explicit-state model checker (breadth-first, with state hashing and a configurable depth bound) that enumerates interleavings and checks the design's invariants: at most one unresolved action; duplicates never authorise redispatch; stop latches and never claims cancellation of dispatched/unknown work; only a verified transition advances sequence/tick/observation; known failure releases the slot without advancing; restored inconsistent state is rejected; post-commit export failure never replays a transition; (c) minimal counterexample traces for any invariant the design as written fails to guarantee, plus the smallest clarification to the design that removes each; (d) unittests for the checker itself (it must find seeded bugs in deliberately broken model variants); (e) a mapping from abstract actions to the original interface.py/relay.py functions, noting where the current code differs from the design. No hardware actuation.
+
+SOURCE BUNDLE (labels and sha256 of the verbatim sources appended to the request; contents not repeated here)
+- lifecycle design (Coda, implementing Lily review) | design/gateway_lifecycle_v1/DESIGN.md | sha256=4ca50710b8b9127127416f6d96ce2fbf8deee38a76d131b5744433b24b9680f5
+- lifecycle plan | design/gateway_lifecycle_v1/PLAN.md | sha256=d241b39c34a29bf50222fb18b8236d348e51226767bbc9e068b829656b426bce
+- scope gap | validation/gateway_repair/SCOPE_GAP.md | sha256=79dcf85ddd7f68432c802465e0776c58530df75437eed14057eb0f2fbe0319e2
+- original src/interface.py (MIT) | validation/gateway_repair/original/src/interface.py | sha256=4ca89c83f1996a3ba67f231f081ff55b93e583338ded48a99eca162e7d06caa9
+- original src/relay.py (MIT) | validation/gateway_repair/original/src/relay.py | sha256=c0910ef2c16376b57bf098e374f7e7e95d521493b0d4685f8def00834742c145
+- regressions v2 (Coda) | validation/gateway_repair/candidate/tests/test_gateway_regressions_v2.py | sha256=5fa9249f986a34059675f120f6436b6e295ba0831ff46d63120df9fb98a4d7fa
+- red core receipt | validation/gateway_repair/execution/regressions-v2-core-red.json | sha256=098407fe43cddd2d53a2467e6b6819883b98354ff05378ea431ca8573c164df7
+- MODEL_BRIEF.md | validation/gateway_repair/original/docs/MODEL_BRIEF.md | sha256=9a93b21224ea6f134bbe429947906abfdfd9f1bf92792ac2bd79458edbad04b0
+- MIT LICENSE | validation/gateway_repair/LICENSE | sha256=bec5a38ecd3eb15627abb7e6888ec1cea25c4993b3de8fc80cab8f69828eb778

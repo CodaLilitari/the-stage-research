@@ -1,0 +1,13 @@
+Request thermal-hotspot-2d-002 (wave10-resends; model Claude Fable 5.1; header HEADER_a74a3d6d23e7.txt)
+
+TASK thermal-hotspot-2d-001
+Fault case F2 in the appended task models a UNIFORM full-interface contact impairment and explicitly does not represent localized delamination. Build the smallest defensible model that does: a two-dimensional (through-thickness x one in-plane direction, with an optional axisymmetric variant) steady and transient conduction model of the H1/H2/H3 stacks in which the inner silicone-film contact resistance is raised from 2e-4 to 2e-2 m2 K/W only over a patch of half-width w in [1, 20] mm, with the sensor sheet source and the H node as in the contract.
+
+Deliver: (a) the finite-volume discretisation with interface resistance applied only on the faulted faces, a standard-library sparse iterative solver (preconditioned conjugate gradient or SOR with a convergence proof for the SPD system) and an implicit time integrator; (b) unittests: w -> 0 recovers the unfaulted 1-D steady reference, w covering the whole panel recovers the uniform F2 1-D result, mesh refinement with observed order, energy balance; (c) the lateral spreading length scale derived analytically (fin-type analysis) and checked numerically; (d) a predeclared study on how peak local temperature over the patch compares with the uniform-impairment bound, and whether a single midplane sensor at the panel centre or edge can detect the patch. State limits honestly: this is still a model, not evidence about any real assembly.
+
+SOURCE BUNDLE (labels and sha256 of the verbatim sources appended to the request; contents not repeated here)
+- T0-HYP-1 contract excerpt (verbatim from Coda's prepared packet thermal-transient-faults.txt) | excerpt of packets/thermal-transient-faults.txt | sha256=2bec6924ef87945bec5f156bf15fb1f6c14d9102df62676e2145fe68b4df0f64
+- THERMAL-TRANSIENT-FAULTS task section (verbatim from Coda's prepared packet) | excerpt of packets/thermal-transient-faults.txt | sha256=88fd32e5f6d1f8e1a9296c546791361695aed28b9e481e93501d173b97d54625
+- steady reference report | validation/thermal/REPORT.md | sha256=3434476c4187acffcd731cfa20783de54d205dd281fbcfdbae8cc0ddc9df65c2
+- thermal_reference.py (exact rational steady network) | validation/thermal/thermal_reference.py | sha256=7032a2cdb7677c3f29401865d3f5f1f185c826d5f8395e5ec263ea15d642c56d
+- reference_results.json | validation/thermal/reference_results.json | sha256=e97cf35c8accb051096fdca20ec89a0a157015b863e94cb01020a8fdb5af3a56

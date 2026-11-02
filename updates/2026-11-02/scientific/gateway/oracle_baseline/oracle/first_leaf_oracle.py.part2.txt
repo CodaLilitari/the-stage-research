@@ -1,0 +1,345 @@
+        for event in packet.get("recent_events", []) or []:
+            if not isinstance(event, dict):
+                self.ignored_events += 1
+                continue
+            kind = event.get("event")
+            if kind == "action_receipt":
+                receipt = event.get("receipt")
+                # Only a verified simulator transition with its source tick commits an action.
+                # Rejected, duplicate (no source tick) and non-dispatched receipts commit nothing.
+                if (isinstance(receipt, dict)
+                        and receipt.get("execution_status") == EXECUTED
+                        and receipt.get("executed_action") in ACTION_INDEX
+                        and "executed_transition_source_tick" in event
+                        and "episode" in event):
+                    self.add_action(int(event["episode"]), int(event["executed_transition_source_tick"]),
+                                    ACTION_INDEX[receipt["executed_action"]])
+                    observed = event.get("observed_sensor")
+                    if isinstance(observed, dict):
+                        self.add_sample(observed)
+                else:
+                    self.ignored_events += 1
+            elif kind == "operator_episode_reset":
+                for item in event.get("final_sensor_samples", []) or []:
+                    if isinstance(item, dict):
+                        self.add_sample(item)
+            else:
+                self.ignored_events += 1
+
+    def new_equations(self, alpha: float) -> list[tuple[int, int, int, list[float]]]:
+        """Transitions with a committed action and both end samples, not yet converted; chronological.
+
+        y_{e,u} = v~_{u+1} - alpha * v~_u is attributed to the action committed at source tick u
+        of episode e (never to the most recent receipt, never across an episode reset).
+        """
+        out: list[tuple[int, int, int, list[float]]] = []
+        for (episode, tick), action in self.actions.items():
+            if (episode, tick) in self.learned:
+                continue
+            first = self.samples.get((episode, tick))
+            second = self.samples.get((episode, tick + 1))
+            if first is None or second is None:
+                continue
+            y = [second[1][j] - alpha * first[1][j] for j in range(2)]
+            out.append((episode, tick, action, y))
+        out.sort(key=lambda item: (item[0], item[1]))
+        for episode, tick, _, _ in out:
+            self.learned.add((episode, tick))
+        return out
+
+    def committed_unlearned(self, episode: int) -> list[int]:
+        """Per-action counts of committed transitions of `episode` whose evidence has not arrived yet."""
+        counts = [0] * len(PLANNABLE)
+        for (ep, tick), action in self.actions.items():
+            if ep == episode and (ep, tick) not in self.learned:
+                counts[action] += 1
+        return counts
+
+    def episode_tick(self, episode: int) -> int:
+        """Number of committed transitions seen for `episode` (largest source tick + 1)."""
+        ticks = [tick for (ep, tick) in self.actions if ep == episode]
+        return max(ticks) + 1 if ticks else 0
+
+    def latest_sample_tick(self, episode: int, limit: int) -> int | None:
+        ticks = [tick for (ep, tick) in self.samples if ep == episode and tick <= limit]
+        return max(ticks) if ticks else None
+
+    def summary(self) -> dict[str, Any]:
+        return {"samples": len(self.samples), "receipts": len(self.actions), "equations": len(self.learned),
+                "duplicate_samples": self.duplicate_samples, "duplicate_receipts": self.duplicate_receipts,
+                "conflicting_receipts": self.conflicting_receipts, "ignored_events": self.ignored_events}
+
+
+def kp_action(p: list[float], v: list[float], goal: list[float], vectors: list[list[float]],
+              allowed: list[int], alpha: float, kp: float, max_speed: float) -> int:
+    """first_leaf.py's proportional-velocity base policy restricted to `allowed` actions (ties: lowest index)."""
+    desired = [kp * (goal[0] - p[0]), kp * (goal[1] - p[1])]
+    norm = math.hypot(desired[0], desired[1])
+    if norm > max_speed:
+        desired = [desired[0] * max_speed / norm, desired[1] * max_speed / norm]
+    best_key, best_action = None, allowed[0]
+    for a in allowed:
+        cost = ((alpha * v[0] + vectors[a][0] - desired[0]) ** 2
+                + (alpha * v[1] + vectors[a][1] - desired[1]) ** 2)
+        key = (cost, a)
+        if best_key is None or key < best_key:
+            best_key, best_action = key, a
+    return best_action
+
+
+def rollout_costs(p: list[float], v: list[float], goal: list[float], vectors: list[list[float]],
+                  allowed: list[int], alpha: float, dt: float, horizon: int, tail: int,
+                  kp: float, max_speed: float) -> dict[int, float]:
+    """Best summed distance over `horizon` exhaustive steps plus a `tail` under kp_action, per first action."""
+    best: dict[int, float] = {}
+    stack: list[tuple[int, list[float], list[float], float, int | None]] = [(0, p, v, 0.0, None)]
+    while stack:
+        depth, pp, vv, acc, first = stack.pop()
+        if depth == horizon:
+            total = acc
+            for _ in range(tail):
+                a = kp_action(pp, vv, goal, vectors, allowed, alpha, kp, max_speed)
+                pp, vv = step_state(pp, vv, vectors[a], alpha, dt)
+                total += math.dist(pp, goal)
+            key = first if first is not None else allowed[0]
+            if key not in best or total < best[key]:
+                best[key] = total
+            continue
+        for a in allowed:
+            p2, v2 = step_state(pp, vv, vectors[a], alpha, dt)
+            stack.append((depth + 1, p2, v2, acc + math.dist(p2, goal), a if first is None else first))
+    return best
+
+
+def validate_request(request: Any, packet: dict[str, Any]) -> None:
+    """Protocol check used by tests/harness: exactly the template keys, fresh id, permitted action."""
+    template = packet["request_template"]
+    if not isinstance(request, dict) or set(request) != set(template):
+        raise ValueError("Request keys must equal the packet's request_template keys")
+    for key, value in template.items():
+        if key not in ("request_id", "action") and request[key] != value:
+            raise ValueError(f"Request field {key} must be copied from the template")
+    rid = request["request_id"]
+    if not isinstance(rid, str) or not 1 <= len(rid) <= 128 or rid == template["request_id"]:
+        raise ValueError("request_id must be a fresh short identifier")
+    if request["action"] not in packet.get("actions", PLANNABLE):
+        raise ValueError("Action not permitted by the packet")
+
+
+class OracleAgent:
+    """Public-packet oracle baseline: evidence log -> regime bank -> IG probing / rollout control.
+
+    act(packet) returns exactly one stage.action.v1 object (template fields copied, fresh
+    request_id, chosen action) or None when the packet reports a stopped session or a
+    complete episode (the operator must then stop or advance).
+    """
+
+    def __init__(self, params: dict[str, Any] | None = None, name: str = "public_oracle",
+                 id_prefix: str = "orc"):
+        self.params = dict(DEFAULT_PARAMS)
+        if params:
+            unknown = set(params) - set(DEFAULT_PARAMS)
+            if unknown:
+                raise ValueError(f"Unknown parameters: {sorted(unknown)}")
+            self.params.update(params)
+        self.name = name
+        self.id_prefix = id_prefix
+        self.log = EvidenceLog()
+        self.bank: RegimeBank | None = None
+        self.alpha = 0.75
+        self.dt = 0.1
+        self.delay = 0
+        self.noise_var = 0.0
+        self.half_width = 0.0
+        self.counter = 0
+        self.decisions = 0
+        self.probes = 0
+        self.missing_receipts = 0
+        self.last_prediction: list[float] | None = None
+        self.last_estimate: list[float] | None = None
+        self.last_decision: dict[str, Any] | None = None
+
+    # -- configuration from the packet's public constants -------------------------------
+    def _configure(self, packet: dict[str, Any]) -> None:
+        dynamics = packet["known_dynamics"]
+        contract = packet["sensor_contract"]
+        self.alpha = float(dynamics["velocity_retention"])
+        self.dt = float(dynamics["dt"])
+        beta_v = float(contract["velocity_noise_bound"])
+        self.delay = int(contract.get("delay_ticks", 0))
+        # A1: transition noise w = eps_{u+1} - alpha * eps_u of two independent bounded-uniform draws.
+        self.noise_var = (1.0 + self.alpha ** 2) * beta_v ** 2 / 3.0
+        # Exact contract bound on |w| per coordinate (times an optional slack factor).
+        self.half_width = (1.0 + self.alpha) * beta_v * float(self.params["hard_test_slack"])
+        self.bank = self._new_bank()
+
+    def _new_bank(self) -> RegimeBank:
+        return RegimeBank(self.params, self.noise_var, self.half_width)
+
+    # -- evidence ------------------------------------------------------------------------
+    def ingest(self, packet: dict[str, Any]) -> None:
+        if not isinstance(packet, dict) or packet.get("schema") != "stage.observation.v1":
+            raise ValueError("Expected a stage.observation.v1 packet")
+        for key in ("sensor", "episode", "goal", "request_template", "known_dynamics", "sensor_contract"):
+            if key not in packet:
+                raise ValueError(f"Packet lacks {key}")
+        if self.bank is None:
+            self._configure(packet)
+        if self.params["memory"] == "packet_only":
+            # Context-limited condition: rebuild everything from this packet's twelve events.
+            self.log = EvidenceLog()
+            self.bank = self._new_bank()
+        self.log.ingest_packet(packet)
+        for episode, tick, action, y in self.log.new_equations(self.alpha):
+            self.bank.observe(action, y, (episode, tick))
+
+    def vectors(self) -> list[list[float]]:
+        if self.bank is None:
+            return [[0.0, 0.0] for _ in PLANNABLE]
+        return self.bank.regimes[self.bank.active].vectors()
+
+    def counts(self) -> list[int]:
+        if self.bank is None:
+            return [0, 0, 0, 0]
+        return self.bank.regimes[self.bank.active].counts()
+
+    # -- state ---------------------------------------------------------------------------
+    def current_tick(self, packet: dict[str, Any]) -> int:
+        """Within-episode dispatch tick: exact from the sample tick once t > delay, else from receipts."""
+        episode = int(packet["episode"])
+        sample_tick = int(packet["sensor"]["sample_tick"])
+        from_sensor = sample_tick + self.delay if sample_tick > 0 else 0
+        return max(from_sensor, self.log.episode_tick(episode))
+
+    def estimate_state(self, packet: dict[str, Any], episode: int, tick: int) -> tuple[list[float], list[float]]:
+        """Latest sample of this episode propagated through committed actions with posterior means.
+
+        Assumption: actuators without evidence in the active regime contribute their prior mean (0);
+        a transition with no receipt (should not happen if every packet was seen) is treated as coast
+        and counted in missing_receipts.
+        """
+        anchor = self.log.latest_sample_tick(episode, tick)
+        if anchor is None:
+            raise ValueError("No sample for the current episode")
+        p0, v0 = self.log.samples[(episode, anchor)]
+        p, v = list(p0), list(v0)
+        vecs = self.vectors()
+        for u in range(anchor, tick):
+            a = self.log.actions.get((episode, u))
+            if a is None:
+                self.missing_receipts += 1
+                a = COAST_INDEX
+            p, v = step_state(p, v, vecs[a], self.alpha, self.dt)
+        return p, v
+
+    # -- decision ------------------------------------------------------------------------
+    def act(self, packet: dict[str, Any]) -> dict[str, Any] | None:
+        self.ingest(packet)
+        if packet.get("stopped") or packet.get("episode_complete"):
+            self.last_decision = {"action": None, "reason": "no_open_turn"}
+            return None
+        episode = int(packet["episode"])
+        tick = self.current_tick(packet)
+        goal = [float(packet["goal"][0]), float(packet["goal"][1])]
+        p, v = self.estimate_state(packet, episode, tick)
+        assert self.bank is not None
+        regime = self.bank.regimes[self.bank.active]
+        n = regime.counts()
+        unlearned = self.log.committed_unlearned(episode)
+        tried = [n[a] + unlearned[a] for a in range(4)]          # dispatched-but-unobserved counts as tried
+        min_evidence = int(self.params["min_evidence"])
+        vecs = regime.vectors()
+        untried = [a for a in range(4) if tried[a] < min_evidence]
+        costs: dict[int, float] | None = None
+        if untried:
+            # Information-gain greedy: highest expected gain, lowest index on ties (round-robin).
+            action = max(untried, key=lambda a: (regime.actions[a].info_gain(), -a))
+            reason = "probe"
+            self.probes += 1
+        else:
+            allowed = [a for a in range(4) if n[a] >= min_evidence] + [COAST_INDEX]
+            kp = float(self.params["kp"])
+            speed = float(self.params["max_desired_speed"])
+            if self.params["controller"] == "kp":
+                action = kp_action(p, v, goal, vecs, allowed, self.alpha, kp, speed)
+            else:
+                costs = rollout_costs(p, v, goal, vecs, allowed, self.alpha, self.dt,
+                                      max(1, int(self.params["horizon"])), max(0, int(self.params["tail"])),
+                                      kp, speed)
+                best = min(costs.values())
+                band = [a for a in allowed if costs[a] <= best + float(self.params["explore_margin"])]
+                action = min(band, key=lambda a: (tried[a] if a < 4 else 10 ** 9, a))
+            reason = "control"
+        predicted_v = [self.alpha * v[0] + vecs[action][0], self.alpha * v[1] + vecs[action][1]]
+        self.last_prediction = predicted_v
+        self.last_estimate = p
+        self.counter += 1
+        self.decisions += 1
+        request = dict(packet["request_template"])
+        request["request_id"] = f"{self.id_prefix}-{self.counter:06d}"
+        request["action"] = PLANNABLE[action]
+        self.last_decision = {"episode": episode, "tick": tick, "action": PLANNABLE[action], "reason": reason,
+                              "estimated_p": p, "estimated_v": v, "tried": tried, "counts": n,
+                              "regime": self.bank.active, "costs": costs}
+        return request
+
+    def summary(self) -> dict[str, Any]:
+        bank = self.bank
+        return {"name": self.name, "decisions": self.decisions, "probes": self.probes,
+                "missing_receipts": self.missing_receipts, "evidence": self.log.summary(),
+                "regimes": len(bank.regimes) if bank else 0, "active_regime": bank.active if bank else None,
+                "switches": [dict(s) for s in bank.switches] if bank else [],
+                "contract_violations": bank.contract_violations if bank else 0,
+                "counts": self.counts(), "params": dict(self.params)}
+
+
+class RandomAgent:
+    """Random baseline: uniform over the five non-stop actions, no learning (seeded, deterministic)."""
+
+    def __init__(self, seed: int = 0, name: str = "random"):
+        self.rng = random.Random(seed)
+        self.name = name
+        self.counter = 0
+        self.last_prediction: list[float] | None = None
+
+    def act(self, packet: dict[str, Any]) -> dict[str, Any] | None:
+        if packet.get("stopped") or packet.get("episode_complete"):
+            return None
+        self.counter += 1
+        request = dict(packet["request_template"])
+        request["request_id"] = f"rnd-{self.counter:06d}"
+        request["action"] = self.rng.choice(PLANNABLE)
+        return request
+
+    def vectors(self) -> list[list[float]]:
+        return [[0.0, 0.0] for _ in PLANNABLE]
+
+    def summary(self) -> dict[str, Any]:
+        return {"name": self.name, "decisions": self.counter}
+
+
+class ConstantAgent:
+    """Always the same action (default coast): a do-nothing reference whose distance stays at the start value."""
+
+    def __init__(self, action: str = COAST, name: str | None = None):
+        if action not in PLANNABLE:
+            raise ValueError("ConstantAgent action must be a non-stop action")
+        self.action = action
+        self.name = name or f"{action}_only"
+        self.counter = 0
+        self.last_prediction: list[float] | None = None
+
+    def act(self, packet: dict[str, Any]) -> dict[str, Any] | None:
+        if packet.get("stopped") or packet.get("episode_complete"):
+            return None
+        self.counter += 1
+        request = dict(packet["request_template"])
+        request["request_id"] = f"cst-{self.counter:06d}"
+        request["action"] = self.action
+        return request
+
+    def vectors(self) -> list[list[float]]:
+        return [[0.0, 0.0] for _ in PLANNABLE]
+
+    def summary(self) -> dict[str, Any]:
+        return {"name": self.name, "decisions": self.counter}

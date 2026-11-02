@@ -1,0 +1,685 @@
+[
+ {
+  "config": {
+   "allow_tamper": true,
+   "api_interleaving": true,
+   "bug_blind_resolve": false,
+   "bug_duplicate_redispatch": false,
+   "bug_export_replays": false,
+   "bug_failure_advances": false,
+   "bug_resolution_unlatches": false,
+   "bug_second_admission": false,
+   "bug_stop_cancels_dispatched": false,
+   "durable_dispatch_mark": true,
+   "reread_merges_latches": true,
+   "restore_check": "full",
+   "unknown_persist": "blind"
+  },
+  "counterexamples": {
+   "INV_NO_FALSE_OUTCOME": {
+    "detail": "dur: a verified_simulator_transition -> unknown_outcome during persist_unknown_blind",
+    "final_digest": "1984c0d999285f16",
+    "final_summary": {
+     "dispatched_ids": [
+      "a"
+     ],
+     "double_dispatch": false,
+     "dur": {
+      "active": "a",
+      "receipts": [
+       [
+        "a",
+        "move",
+        0,
+        "unknown_outcome"
+       ]
+      ],
+      "view": [
+       0,
+       0,
+       0,
+       false
+      ]
+     },
+     "dur_sim": [],
+     "export": [
+      0,
+      0,
+      0,
+      false
+     ],
+     "lock": true,
+     "mem": {
+      "active": "a",
+      "receipts": [
+       [
+        "a",
+        "move",
+        0,
+        "unknown_outcome"
+       ]
+      ],
+      "view": [
+       0,
+       0,
+       0,
+       false
+      ]
+     },
+     "mem_sim": [],
+     "pending": null,
+     "phase": "committed",
+     "tampered": null
+    },
+    "invariant": "INV_NO_FALSE_OUTCOME",
+    "length": 6,
+    "trace": [
+     "begin",
+     "admit(a)",
+     "mark_dispatched",
+     "compute_ok",
+     "commit_ambiguous(replaced=True)",
+     "persist_unknown_blind"
+    ]
+   },
+   "INV_ONLY_VERIFIED_ADVANCES": {
+    "detail": "dur: counters moved (-1, -1, -1) during persist_unknown_blind",
+    "final_digest": "1984c0d999285f16",
+    "final_summary": {
+     "dispatched_ids": [
+      "a"
+     ],
+     "double_dispatch": false,
+     "dur": {
+      "active": "a",
+      "receipts": [
+       [
+        "a",
+        "move",
+        0,
+        "unknown_outcome"
+       ]
+      ],
+      "view": [
+       0,
+       0,
+       0,
+       false
+      ]
+     },
+     "dur_sim": [],
+     "export": [
+      0,
+      0,
+      0,
+      false
+     ],
+     "lock": true,
+     "mem": {
+      "active": "a",
+      "receipts": [
+       [
+        "a",
+        "move",
+        0,
+        "unknown_outcome"
+       ]
+      ],
+      "view": [
+       0,
+       0,
+       0,
+       false
+      ]
+     },
+     "mem_sim": [],
+     "pending": null,
+     "phase": "committed",
+     "tampered": null
+    },
+    "invariant": "INV_ONLY_VERIFIED_ADVANCES",
+    "length": 6,
+    "trace": [
+     "begin",
+     "admit(a)",
+     "mark_dispatched",
+     "compute_ok",
+     "commit_ambiguous(replaced=True)",
+     "persist_unknown_blind"
+    ]
+   }
+  },
+  "depth_bound": 12,
+  "frontier_exhausted": false,
+  "max_states": 200000,
+  "states_explored": 1643,
+  "transitions_checked": 3262,
+  "truncated": false,
+  "variant": "as_written_blind_unknown_persist",
+  "violated_invariants": [
+   "INV_NO_FALSE_OUTCOME",
+   "INV_ONLY_VERIFIED_ADVANCES"
+  ]
+ },
+ {
+  "config": {
+   "allow_tamper": true,
+   "api_interleaving": true,
+   "bug_blind_resolve": false,
+   "bug_duplicate_redispatch": false,
+   "bug_export_replays": false,
+   "bug_failure_advances": false,
+   "bug_resolution_unlatches": false,
+   "bug_second_admission": false,
+   "bug_stop_cancels_dispatched": false,
+   "durable_dispatch_mark": false,
+   "reread_merges_latches": true,
+   "restore_check": "full",
+   "unknown_persist": "reread"
+  },
+  "counterexamples": {
+   "INV_NO_DOUBLE_DISPATCH": {
+    "detail": "a request id was marked dispatched twice",
+    "final_digest": "359bbc1d4a0ce0e5",
+    "final_summary": {
+     "dispatched_ids": [
+      "a"
+     ],
+     "double_dispatch": true,
+     "dur": {
+      "active": null,
+      "receipts": [],
+      "view": [
+       0,
+       0,
+       0,
+       false
+      ]
+     },
+     "dur_sim": [],
+     "export": [
+      0,
+      0,
+      0,
+      false
+     ],
+     "lock": true,
+     "mem": {
+      "active": "a",
+      "receipts": [
+       [
+        "a",
+        "move",
+        0,
+        "dispatched"
+       ]
+      ],
+      "view": [
+       0,
+       0,
+       0,
+       false
+      ]
+     },
+     "mem_sim": [],
+     "pending": "a",
+     "phase": "dispatched",
+     "tampered": null
+    },
+    "invariant": "INV_NO_DOUBLE_DISPATCH",
+    "length": 8,
+    "trace": [
+     "begin",
+     "admit(a)",
+     "mark_dispatched",
+     "crash",
+     "... 3 items omitted by Red for size ...",
+     "mark_dispatched"
+    ]
+   }
+  },
+  "depth_bound": 12,
+  "frontier_exhausted": false,
+  "max_states": 200000,
+  "states_explored": 2234,
+  "transitions_checked": 4083,
+  "truncated": false,
+  "variant": "as_written_nondurable_dispatch_mark",
+  "violated_invariants": [
+   "INV_NO_DOUBLE_DISPATCH"
+  ]
+ },
+ {
+  "config": {
+   "allow_tamper": true,
+   "api_interleaving": true,
+   "bug_blind_resolve": false,
+   "bug_duplicate_redispatch": false,
+   "bug_export_replays": false,
+   "bug_failure_advances": false,
+   "bug_resolution_unlatches": false,
+   "bug_second_admission": false,
+   "bug_stop_cancels_dispatched": false,
+   "durable_dispatch_mark": true,
+   "reread_merges_latches": false,
+   "restore_check": "full",
+   "unknown_persist": "reread"
+  },
+  "counterexamples": {
+   "INV_NO_REDISPATCH": {
+    "detail": "mem: cached receipt b lost during resolve_unknown_trusted",
+    "final_digest": "5da8aac8e23b1e7d",
+    "final_summary": {
+     "dispatched_ids": [
+      "a"
+     ],
+     "double_dispatch": false,
+     "dur": {
+      "active": "a",
+      "receipts": [
+       [
+        "a",
+        "move",
+        0,
+        "dispatched"
+       ]
+      ],
+      "view": [
+       0,
+       0,
+       0,
+       false
+      ]
+     },
+     "dur_sim": [],
+     "export": [
+      0,
+      0,
+      0,
+      false
+     ],
+     "lock": true,
+     "mem": {
+      "active": null,
+      "receipts": [
+       [
+        "a",
+        "move",
+        0,
+        "verified_failure"
+       ]
+      ],
+      "view": [
+       0,
+       0,
+       0,
+       false
+      ]
+     },
+     "mem_sim": [],
+     "pending": null,
+     "phase": "persist_pending",
+     "tampered": null
+    },
+    "invariant": "INV_NO_REDISPATCH",
+    "length": 7,
+    "trace": [
+     "begin",
+     "admit(a)",
+     "mark_dispatched",
+     "admit(b)",
+     "... 2 items omitted by Red for size ...",
+     "resolve_unknown_trusted"
+    ]
+   },
+   "INV_STOP_LATCH": {
+    "detail": "mem: stop unlatched during resolve_unknown_trusted",
+    "final_digest": "5da8aac8e23b1e7d",
+    "final_summary": {
+     "dispatched_ids": [
+      "a"
+     ],
+     "double_dispatch": false,
+     "dur": {
+      "active": "a",
+      "receipts": [
+       [
+        "a",
+        "move",
+        0,
+        "dispatched"
+       ]
+      ],
+      "view": [
+       0,
+       0,
+       0,
+       false
+      ]
+     },
+     "dur_sim": [],
+     "export": [
+      0,
+      0,
+      0,
+      false
+     ],
+     "lock": true,
+     "mem": {
+      "active": null,
+      "receipts": [
+       [
+        "a",
+        "move",
+        0,
+        "verified_failure"
+       ]
+      ],
+      "view": [
+       0,
+       0,
+       0,
+       false
+      ]
+     },
+     "mem_sim": [],
+     "pending": null,
+     "phase": "persist_pending",
+     "tampered": null
+    },
+    "invariant": "INV_STOP_LATCH",
+    "length": 7,
+    "trace": [
+     "begin",
+     "admit(a)",
+     "mark_dispatched",
+     "stop",
+     "... 2 items omitted by Red for size ...",
+     "resolve_unknown_trusted"
+    ]
+   }
+  },
+  "depth_bound": 12,
+  "frontier_exhausted": false,
+  "max_states": 200000,
+  "states_explored": 1623,
+  "transitions_checked": 3262,
+  "truncated": false,
+  "variant": "as_written_reread_without_latch_merge",
+  "violated_invariants": [
+   "INV_NO_REDISPATCH",
+   "INV_STOP_LATCH"
+  ]
+ },
+ {
+  "config": {
+   "allow_tamper": true,
+   "api_interleaving": true,
+   "bug_blind_resolve": false,
+   "bug_duplicate_redispatch": false,
+   "bug_export_replays": false,
+   "bug_failure_advances": false,
+   "bug_resolution_unlatches": false,
+   "bug_second_admission": false,
+   "bug_stop_cancels_dispatched": false,
+   "durable_dispatch_mark": true,
+   "reread_merges_latches": true,
+   "restore_check": "weak",
+   "unknown_persist": "reread"
+  },
+  "counterexamples": {
+   "INV_NO_FALSE_OUTCOME": {
+    "detail": "mem: y verified but absent from simulator log",
+    "final_digest": "2b7364132ac80d25",
+    "final_summary": {
+     "dispatched_ids": [],
+     "double_dispatch": false,
+     "dur": {
+      "active": null,
+      "receipts": [
+       [
+        "y",
+        "move",
+        0,
+        "verified_simulator_transition"
+       ]
+      ],
+      "view": [
+       0,
+       0,
+       0,
+       false
+      ]
+     },
+     "dur_sim": [],
+     "export": [
+      0,
+      0,
+      0,
+      false
+     ],
+     "lock": true,
+     "mem": {
+      "active": null,
+      "receipts": [
+       [
+        "y",
+        "move",
+        0,
+        "verified_simulator_transition"
+       ]
+      ],
+      "view": [
+       0,
+       0,
+       0,
+       false
+      ]
+     },
+     "mem_sim": [],
+     "pending": null,
+     "phase": "loaded",
+     "tampered": "false_verified"
+    },
+    "invariant": "INV_NO_FALSE_OUTCOME",
+    "length": 2,
+    "trace": [
+     "tamper(false_verified)",
+     "begin"
+    ]
+   },
+   "INV_ONE_UNRESOLVED": {
+    "detail": "mem: dangling active='zz'",
+    "final_digest": "dffa65aeec4dfef2",
+    "final_summary": {
+     "dispatched_ids": [],
+     "double_dispatch": false,
+     "dur": {
+      "active": "zz",
+      "receipts": [],
+      "view": [
+       0,
+       0,
+       0,
+       false
+      ]
+     },
+     "dur_sim": [],
+     "export": [
+      0,
+      0,
+      0,
+      false
+     ],
+     "lock": true,
+     "mem": {
+      "active": "zz",
+      "receipts": [],
+      "view": [
+       0,
+       0,
+       0,
+       false
+      ]
+     },
+     "mem_sim": [],
+     "pending": null,
+     "phase": "loaded",
+     "tampered": "active_dangling"
+    },
+    "invariant": "INV_ONE_UNRESOLVED",
+    "length": 2,
+    "trace": [
+     "tamper(active_dangling)",
+     "begin"
+    ]
+   },
+   "INV_RESTORE_REJECTS_INCONSISTENT": {
+    "detail": "inconsistent durable state (active_dangling) was loaded",
+    "final_digest": "dffa65aeec4dfef2",
+    "final_summary": {
+     "dispatched_ids": [],
+     "double_dispatch": false,
+     "dur": {
+      "active": "zz",
+      "receipts": [],
+      "view": [
+       0,
+       0,
+       0,
+       false
+      ]
+     },
+     "dur_sim": [],
+     "export": [
+      0,
+      0,
+      0,
+      false
+     ],
+     "lock": true,
+     "mem": {
+      "active": "zz",
+      "receipts": [],
+      "view": [
+       0,
+       0,
+       0,
+       false
+      ]
+     },
+     "mem_sim": [],
+     "pending": null,
+     "phase": "loaded",
+     "tampered": "active_dangling"
+    },
+    "invariant": "INV_RESTORE_REJECTS_INCONSISTENT",
+    "length": 2,
+    "trace": [
+     "tamper(active_dangling)",
+     "begin"
+    ]
+   },
+   "INV_STOP_LATCH": {
+    "detail": "mem: stopped with an admitted_pending receipt",
+    "final_digest": "ee1b6b3bacdbdb0b",
+    "final_summary": {
+     "dispatched_ids": [],
+     "double_dispatch": false,
+     "dur": {
+      "active": "y",
+      "receipts": [
+       [
+        "y",
+        "move",
+        0,
+        "admitted_pending"
+       ]
+      ],
+      "view": [
+       0,
+       0,
+       0,
+       true
+      ]
+     },
+     "dur_sim": [],
+     "export": [
+      0,
+      0,
+      0,
+      false
+     ],
+     "lock": true,
+     "mem": {
+      "active": "y",
+      "receipts": [
+       [
+        "y",
+        "move",
+        0,
+        "admitted_pending"
+       ]
+      ],
+      "view": [
+       0,
+       0,
+       0,
+       true
+      ]
+     },
+     "mem_sim": [],
+     "pending": null,
+     "phase": "loaded",
+     "tampered": "stopped_with_pending"
+    },
+    "invariant": "INV_STOP_LATCH",
+    "length": 2,
+    "trace": [
+     "tamper(stopped_with_pending)",
+     "begin"
+    ]
+   }
+  },
+  "depth_bound": 12,
+  "frontier_exhausted": false,
+  "max_states": 200000,
+  "states_explored": 1661,
+  "transitions_checked": 3338,
+  "truncated": false,
+  "variant": "as_written_weak_restore_validation",
+  "violated_invariants": [
+   "INV_NO_FALSE_OUTCOME",
+   "INV_ONE_UNRESOLVED",
+   "INV_RESTORE_REJECTS_INCONSISTENT",
+   "INV_STOP_LATCH"
+  ]
+ },
+ "... 9 items omitted by Red for size ...",
+ {
+  "config": {
+   "allow_tamper": true,
+   "api_interleaving": false,
+   "bug_blind_resolve": false,
+   "bug_duplicate_redispatch": false,
+   "bug_export_replays": false,
+   "bug_failure_advances": false,
+   "bug_resolution_unlatches": false,
+   "bug_second_admission": false,
+   "bug_stop_cancels_dispatched": false,
+   "durable_dispatch_mark": true,
+   "reread_merges_latches": true,
+   "restore_check": "full",
+   "unknown_persist": "reread"
+  },
+  "counterexamples": {},
+  "depth_bound": 12,
+  "frontier_exhausted": false,
+  "max_states": 200000,
+  "states_explored": 511,
+  "transitions_checked": 700,
+  "truncated": false,
+  "variant": "clarified_relay_only",
+  "violated_invariants": []
+ }
+]

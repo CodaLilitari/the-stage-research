@@ -1,0 +1,10 @@
+Request site0-repair-audit-003 (wave12b-followups-c; model Claude Fable 5.1; header HEADER_a12f72162d0b.txt)
+
+TASK site0-repair-audit-003
+Your colleague's numerical audit of SITE0 revised_v1 (answer appended) was executed by Red. Red executed this in an isolated sandbox (Linux, Python 3.13, stdlib only); receipts are appended verbatim or as size-limited JSON copies (lists shortened, marked). Against the REVISED kernel (run next to it, as instructed): 13 tests, 3 failures - test_equilibrium_tiny_components_are_relatively_accurate at params (1,1,1,1,1e-200): free component 1e-100 vs reference 9.99999999e-10 (relative 1e91), and two test_extreme_scales_conserve_and_stay_in_interval cases at 1e+-300 scales (1e-300 != 0.0 for free and bound). Mutant-blindness script: the frozen original suites under the mutant give (2 run, 0 failures, 2 errors) while the audit module gives (13, 16, 0, 0). Against the ORIGINAL kernel the audit module fails 33 subtests as designed. Diagnose the three revised-kernel failures (defect vs test reference vs out-of-domain input), give minimal fixes, and state precisely which inputs the revised kernel can be trusted on. Pure numerical analysis; no physiology.
+
+SOURCE BUNDLE (labels and sha256 of the verbatim sources appended to the request; contents not repeated here)
+- audit answer (wave 10) | e/StageRed/stage-red-20261102/batches/wave10-resends/site0-repair-audit-002.answer.md | sha256=e77ae1b8d41598aaf745f145c01670976bc0d31180ebb70737fc681b9cc2d42b
+- receipt vs revised kernel | red-sandbox/work/w10/site0-repair-audit-002/_rerun_revised.txt | sha256=37f98d56a57565395bfe9c9e692648bbdadd19f76d6c89fd288811e1008e85fe
+- mutant-blindness output | red-sandbox/work/w10/site0-repair-audit-002/_study_mutants.out | sha256=ed45d7844255ce41ad1861d28a60d33a2435c5678b5b5a4413297b40fec2e728
+- revised site0.py (Coda) | validation/site0/revised_v1/site0.py | sha256=6daa39ac3c98b93f6e8d7c8a2222e4c23ba175874c402d14c8415f1bb6126076

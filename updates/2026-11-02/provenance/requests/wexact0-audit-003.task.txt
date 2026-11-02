@@ -1,0 +1,11 @@
+Request wexact0-audit-003 (wave12b-followups-c; model Claude Fable 5.1; header HEADER_a12f72162d0b.txt)
+
+TASK wexact0-audit-003
+Your colleague's audit of WEXACT0 (answer appended) was executed by Red next to the frozen files. Red executed this in an isolated sandbox (Linux, Python 3.13, stdlib only); receipts are appended verbatim or as size-limited JSON copies (lists shortened, marked). 25 tests: 1 failure (test_rate_information_rests_on_a_single_parameter_triple - set difference, receipt appended) and 9 skipped. Diagnose the failure (defect in WEXACT0 vs wrong expectation), find out from the test code why 9 tests skip in this layout and what file or environment variable would enable them, and give minimal fixes plus a short final verdict on WEXACT0 as a reduced oracle.
+
+SOURCE BUNDLE (labels and sha256 of the verbatim sources appended to the request; contents not repeated here)
+- audit answer (wave 10) | e/StageRed/stage-red-20261102/batches/wave10-resends/wexact0-audit-002.answer.md | sha256=b8a5440e81555fad02cdbe31577a46be1e7adeea894b81fb7e689d25642f6ef6
+- test receipt (summary) | red-sandbox/work/w10/wexact0-audit-002/_receipt_test_wexact0_audit.txt | sha256=d03ad71a2a06cdc99ed0319ccebf92c90a29bde2c7edd97173e8944935f307bf
+- test receipt (verbose) | red-sandbox/work/w10/wexact0-audit-002/_receipt_verbose.txt | sha256=fcbca97788837add672844402026fa357311672be082571baf42a440fa51e7cc
+- wall_exchange_exact.py | validation/wall_exchange_exact/wall_exchange_exact.py | sha256=824340b4e29758e3592c024b912f2f5986a0a3a27fe8857622d6d57bb876afce
+- finite_l0_adapter.py | validation/wall_exchange_exact/finite_l0_adapter.py | sha256=ef753dafa4213acacdfccfd392b42415eb32b504e71df9bf13c40c696871d755

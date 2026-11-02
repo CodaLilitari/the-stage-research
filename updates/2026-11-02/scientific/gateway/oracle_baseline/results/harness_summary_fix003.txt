@@ -1,0 +1,22 @@
+{
+  "public_oracle": {
+    "all": 0.13885562111071895,
+    "first_episode": 0.15933950373631586,
+    "stable": 0.10351676205796193,
+    "remap_early32": 0.4830647968743684,
+    "remap_full": 0.15644971644930813,
+    "return_early32": 0.358240284986289,
+    "final_within_0_15": 1.0,
+    "body_model_error": 0.015526954828104735
+  },
+  "random": {
+    "all": 1.037712650135899,
+    "first_episode": 1.0430987101074327,
+    "stable": 1.0397176603466969,
+    "remap_early32": 0.9629422265130372,
+    "remap_full": 1.1110144083853855,
+    "return_early32": 0.90736715258491,
+    "final_within_0_15": 0.0,
+    "body_model_error": 0.3
+  }
+}

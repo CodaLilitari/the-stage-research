@@ -1,0 +1,14 @@
+PASS v01_zero_sources_equal_connected_reservoirs    expect all temperatures 25 C and zero fluxes; got T_H=25.0 T_S=25.0
+PASS v02_rear_disabled_single_series_branch         series expectations T_S=89.860194 T_H=90.948620 T_outer=88.750000; got 89.860194 90.948620 88.750000
+PASS v03_no_sensor_parallel_split                   Q_front/Q_rear expect 0.154614823 got 0.154614823
+PASS v04_symmetric_network                          T_H=22.000000000 T_S=22.000000000 Q_front=1.000000000 Q_rear=1.000000000
+PASS v05_both_exits_blocked_detection               positive power -> no_finite_steady_state_both_exits_absent_net_source_nonzero; zero power -> nonunique_constant_temperature_family_both_exits_absent
+PASS v06_boundary_shift_invariance                  shift 12.5 K: dT_H=12.500000000 dQ_front=5.551e-16
+PASS v07_sensor_power_counted_once                  Q_front+Q_rear=5.100000000 (expect 5.100, not 5.200); Q_front-Q_HS=0.100000000
+PASS v08_hand_derived_example_H1_5W                 code minus hand: Q_front_W +6.94e-08, Q_rear_W -6.94e-08, T_H_C -1.39e-07, T_S_C -1.54e-05, T_outer_C +8.68e-07
+PASS v09_zero_internal_resistance_merged_node       status=solved_merged_node_R_HS_zero T=33.828144458 expect 33.828144458
+PASS v10_front_path_absent                          T_H=35.200000 (exp 35.200000) T_S=35.221769 (exp 35.221769) Q_HS=-0.100000 (exp -0.100, sign kept)
+PASS v11_three_formulations_agree                   inverse vs gauss dT_H=-1.421e-14; divider vs inverse dQ_front=2.220e-16
+PASS v12_thickness_monotonicity_and_exception       P_body=5: predicate True, Q_front decreasing True, T_H increasing True | P_body=0 (sensor only): predicate False, Q_front decreasing False, T_H increasing False (all three expected False)
+PASS v13_rejects_unphysical_inputs                  rejections and blocked token: [True, True, True, True, True]
+validation: 13 test(s), 0 failed; analytic self-consistency only, no empirical content

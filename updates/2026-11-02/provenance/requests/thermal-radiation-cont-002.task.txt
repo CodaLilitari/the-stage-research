@@ -1,0 +1,20 @@
+Request thermal-radiation-cont-002 (wave10-resends; model Claude Fable 5.1; header HEADER_01f9d8d38a52.txt)
+
+TASK thermal-radiation-cont-002 (continuation)
+An earlier instance working on the original task below produced the partial answer appended at the end, then reached the 128,000-token output limit. Continue it: deliver ONLY what is missing to complete the original deliverable. Do not repeat material already delivered; treat delivered code as fixed unless you find a blocking defect, in which case give a minimal unified diff. Start writing immediately and keep private reasoning short. Use the FILE: convention for any new files.
+
+----- ORIGINAL TASK PACKET (verbatim, with its sources) -----
+
+TASK thermal-radiation-001
+The T0-HYP-1 baseline omits radiation and says any radiation extension is a separate case in absolute Kelvin. Build that extension for the outer face: grey-body exchange eps*sigma*A*(T_s^4 - T_sur^4) with T_sur = 25 C, emissivity as an assumed study parameter in [0.05, 0.95] (no material emissivity is supplied), in parallel with convection h in [3, 15].
+
+Deliver: (a) proof that the nonlinear steady network has a unique solution for nonnegative sources and a convergent, safeguarded Newton (or bracketed) solver; (b) the error of the common linearized radiative coefficient h_r = 4 eps sigma T_m^3 as a function of temperature rise, with a rigorous bound; (c) a standard-library steady solver and an extension of the two-node transient (wrap rc_transient.py's documented structure or reimplement the two-node equations explicitly - say which) with the nonlinear boundary handled implicitly; (d) unittests: eps = 0 reproduces the existing steady reference exactly, energy balance, monotonicity in eps, linearization error vs exact; (e) a predeclared small study (H1/H2/H3, P_body 1/5/10 W, eps 0.1/0.5/0.9, h 3/8/15) with output schema. Do not report numbers you have not executed.
+
+SOURCE BUNDLE (labels and sha256 of the verbatim sources appended to the request; contents not repeated here)
+- T0-HYP-1 contract excerpt (verbatim from Coda's prepared packet thermal-transient-faults.txt) | excerpt of packets/thermal-transient-faults.txt | sha256=2bec6924ef87945bec5f156bf15fb1f6c14d9102df62676e2145fe68b4df0f64
+- steady reference report | validation/thermal/REPORT.md | sha256=3434476c4187acffcd731cfa20783de54d205dd281fbcfdbae8cc0ddc9df65c2
+- thermal_reference.py (exact rational steady network) | validation/thermal/thermal_reference.py | sha256=7032a2cdb7677c3f29401865d3f5f1f185c826d5f8395e5ec263ea15d642c56d
+- reference_results.json | validation/thermal/reference_results.json | sha256=e97cf35c8accb051096fdca20ec89a0a157015b863e94cb01020a8fdb5af3a56
+- two-node transient report (Coda, executed) | validation/thermal_transient/REPORT.md | sha256=86f9b6107dc2e62b9e497454924c3463230bc96ba9495ab0bdc2baa24d6b25a6
+- two-node transient predeclaration | validation/thermal_transient/PREDECLARED.md | sha256=29404fc56e956a0053c992c0a9b96db9dae58ff7c057f1354a19cde40e9310be
+- rc_transient.py (Coda two-node model) | validation/thermal_transient/rc_transient.py | sha256=94ff435da55d2bccef769197d534e735e5813612a3275a829f703f05b5db6e0b

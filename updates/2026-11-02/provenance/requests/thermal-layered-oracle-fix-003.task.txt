@@ -1,0 +1,9 @@
+Request thermal-layered-oracle-fix-003 (wave12b-followups-c; model Claude Fable 5.1; header HEADER_a12f72162d0b.txt)
+
+TASK thermal-layered-oracle-fix-003
+Your colleague's semi-analytic layered eigen-oracle (answer appended) was executed by Red. Red executed this in an isolated sandbox (Linux, Python 3.13, stdlib only); receipts are appended verbatim or as size-limited JSON copies (lists shortened, marked). 18 tests, 2 failures, both for stack H1: test_structure_all_stacks (2.85e-08 vs tolerance 1e-08) and test_weyl_count (2.746 vs <= 2.0). The Weyl-count failure may mean the root finder misses or duplicates eigenvalues for the thin-layer H1 stack, which would bias every H1 result. Diagnose both from the code and the executed numbers; if eigenvalues are missed, fix the bracketing (e.g. interface-aware sign-change scanning, argument-principle count, or deflation) and add a test that cross-counts roots independently; if the test thresholds are wrong, justify new ones from an error bound. Deliver minimal diffs and say whether the 9 executed case results (compact copy appended) can be trusted.
+
+SOURCE BUNDLE (labels and sha256 of the verbatim sources appended to the request; contents not repeated here)
+- oracle answer (wave 10) | e/StageRed/stage-red-20261102/batches/wave10-resends/thermal-layered-oracle-002.answer.md | sha256=a3036939091a1b4b8356de6ced0b9fc01d9fb10bd323cd3de6c7e4aa536cd764
+- test receipt | red-sandbox/work/w10/thermal-layered-oracle-002/_receipt_test_layered_oracle.txt | sha256=c4e64fbd0a329e1cce3ce4446a5f410c5ce5c85a2a9dda6599425fd9c2333992
+- results (compact) | red-sandbox/work/w10/_oracle_results.compact.json | sha256=d412bad129f30532a6bbe72c33e9e04467faccd056effbeda4c02129bcff368c

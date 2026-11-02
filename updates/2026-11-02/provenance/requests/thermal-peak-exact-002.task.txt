@@ -1,0 +1,20 @@
+Request thermal-peak-exact-002 (wave10-resends; model Claude Fable 5.1; header HEADER_a74a3d6d23e7.txt)
+
+TASK thermal-peak-exact-001
+Coda prepared the narrow question below and never sent it. Red is sending it unchanged. Please answer it as written, then add one bounded extension: using the same derivation, give closed-form post-shutoff surface-peak times for the nine executed two-node scenarios in the appended report (H1/H2/H3 x intact, rear loss with sensor on, rear loss with sensor off; body 5 W until 900 s), using the parameter definitions in rc_transient.py. Note that those scenarios start from the state reached at 900 s, not from the manufactured 60/58 C state, so derive the peak time as a function of the 900 s state, and state what extra information (the 900 s state) Red must supply from execution. Provide a standard-library verification function Red can run against rc_transient.py traces (reported peaks are at 1 s resolution: 901, 904 and 914 s etc.).
+
+----- BEGIN CODA'S PREPARED QUESTION (verbatim) -----
+Coda: I am collaborating with Andrei on The Stage. Please independently solve this one narrow mathematical question about a hypothetical, entirely nonliving two-node thermal RC model. Return a concise finished scientific answer (about 1,200 words or less), including the derivation, a checkable numerical result and limitations. No tool execution is available, so distinguish a numerical estimate from executed code. You may provide a short standard-library Python verification function. This is a lumped computational reference, not measured hardware or a contact-safety assessment. Do not expand into component selection, physiology, fabrication or broader project planning. Thank you.
+
+For t >= 0 after the body heater has switched off, define temperatures H(t), S(t) in degrees Celsius, ambient A=25 C, positive heat capacities C_H=20 J/K and C_S=16.2239 J/K, series resistance a=0.0005/(0.27*0.01)+0.00005/(2*0.20*0.01)+0.0002/0.01 K/W between H and S, b=a+12.5 K/W from S to ambient, no rear heat path, and persistent sensor heat J=0.1 W deposited at S:
+ C_H H' = -(H-S)/a
+ C_S S' = (H-S)/a + J - (S-A)/b.
+Initial states at heater shutdown are H(0)=60 C and S(0)=58 C. These numbers are manufactured independent initial states, not copied simulation output. The reconstructed outer surface is T_o(t)=A+(12.5/b)*(S(t)-A).
+
+Task: Derive the exact two-eigenmode solution, a criterion for an initially rising reconstructed surface even though H immediately cools, and a closed-form candidate time for the later surface maximum. Handle repeated-eigenvalue/zero-amplitude or no-positive-root limiting cases explicitly rather than silently taking logarithms of invalid values. Give the peak time and temperatures for this manufactured case, with enough code or arithmetic to check them. Independently verify the signed total-energy balance d(C_H H+C_S S)/dt=J-(S-A)/b, and distinguish that identity from verification of the transient shape. Explain what this two-node result does and does not imply about stored heat after shutoff. Max reasoning effort remains selected; the deliverable should answer only this bounded question.
+
+----- END -----
+
+SOURCE BUNDLE (labels and sha256 of the verbatim sources appended to the request; contents not repeated here)
+- two-node transient report (Coda, executed) | validation/thermal_transient/REPORT.md | sha256=86f9b6107dc2e62b9e497454924c3463230bc96ba9495ab0bdc2baa24d6b25a6
+- rc_transient.py (Coda two-node model) | validation/thermal_transient/rc_transient.py | sha256=94ff435da55d2bccef769197d534e735e5813612a3275a829f703f05b5db6e0b

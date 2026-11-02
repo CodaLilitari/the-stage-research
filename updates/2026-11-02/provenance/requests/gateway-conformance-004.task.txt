@@ -1,0 +1,16 @@
+Request gateway-conformance-004 (wave12b-followups-c; model Claude Fable 5.1; header HEADER_a12f72162d0b.txt)
+
+TASK gateway-conformance-004
+Two results now meet. (1) Your colleague's explicit-state model checker (answer appended) ran: all 8 seeded-bug variants are caught; the design AS WRITTEN violates invariants in 4 variants (blind unknown persist, non-durable dispatch mark, re-read without latch merge, weak restore validation), each with a short counterexample trace; the checker's clarified variants show no violation to depth 12 (stdout and compact report appended). (2) The integrated gateway (interface.py + relay.py + integration note appended) passes 108 tests in Red's sandbox: lifecycle 26, relay lifecycle 9, test_stage 36, original test_relay 7, adapted audit 16, translated regressions 14.
+Red executed this in an isolated sandbox (Linux, Python 3.13, stdlib only); receipts are appended verbatim or as size-limited JSON copies (lists shortened, marked).
+
+Task: conformance. For each of the checker's invariants and each of the four as-written counterexample traces, decide whether the integrated implementation follows the clarified semantics; write a standard-library unittest module that replays each trace (including crash/restart points, simulated by failing writes or re-loading saved state) against the REAL interface.py/relay.py and asserts the clarified invariant. Mark any trace the implementation cannot express and any genuine non-conformance, with a minimal diff. Red will run it alongside the 108 existing tests.
+
+SOURCE BUNDLE (labels and sha256 of the verbatim sources appended to the request; contents not repeated here)
+- model checker answer (wave 10) | e/StageRed/stage-red-20261102/batches/wave10-resends/gateway-modelcheck-002.answer.md | sha256=39a6ae109162bece45ad87fdaf911a200c0fad2add3a8ea72419fa292ec56971
+- checker stdout | red-sandbox/work/w10/gateway-modelcheck-002/_study_modelcheck.out | sha256=c71cc825c551f699c4e751ca2799dc654da291e7c084b5258ddfee5ebb718c32
+- checker report (compact) | red-sandbox/work/w10/gateway-modelcheck-002/report.compact.json | sha256=46c1f38a5b40f73ae50a81f708288d8a9e95bdf1cdcc5f952497e93262b131e7
+- integrated src/interface.py | red-sandbox/work/gw3/src/interface.py | sha256=559d4a22d58e443b0236d7de27517510bc6314fb768bfe5bf57a2f8e479be421
+- integrated src/relay.py | red-sandbox/work/gw3/src/relay.py | sha256=51b7a663509a72cca2ce845c0ff329ae64185c328255635a48816d2c4211c001
+- integration note | red-sandbox/work/gw3/docs/gateway_lifecycle_v1/INTEGRATION_NOTE.md | sha256=6f249ff813b19b2ddb18cc2f17ce626cb8e753c3d22cd8b71f098f54703b649f
+- lifecycle design | design/gateway_lifecycle_v1/DESIGN.md | sha256=4ca50710b8b9127127416f6d96ce2fbf8deee38a76d131b5744433b24b9680f5

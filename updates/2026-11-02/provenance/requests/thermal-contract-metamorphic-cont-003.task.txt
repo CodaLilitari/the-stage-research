@@ -1,0 +1,26 @@
+Request thermal-contract-metamorphic-cont-003 (wave12a-fallbacks; model Claude Fable 5.1; header HEADER_87b6906e0701.txt)
+
+TASK thermal-contract-metamorphic-cont-003 (continuation)
+An earlier instance working on the original task below produced the partial answer appended at the end, then reached the 128,000-token output limit. Deliver ONLY what is missing to complete the test suite and notes. Do not repeat delivered material; treat delivered code as fixed unless you find a blocking defect (then a minimal unified diff). Start writing immediately.
+
+----- ORIGINAL TASK PACKET (verbatim) -----
+
+Output budget: your total output limit is 128,000 tokens including private reasoning. In this run several earlier MAX-effort requests spent the entire budget on reasoning and returned no deliverable. Keep private reasoning to roughly half of the budget, begin writing the deliverable early, and if the work is larger than fits, deliver a complete subset and list what remains.
+
+RESEND NOTE: this exact task was sent once already. That attempt spent all 128,000 output tokens on private reasoning and returned no text at all. Please cap private reasoning at roughly 50,000 tokens and then write. A complete smaller deliverable is far more valuable than an unfinished larger one.
+
+TASK thermal-contract-metamorphic-001
+Write an INDEPENDENT metamorphic and property-based test suite for the repaired thermal_contract.py (original implementation by Claude Fable 5.1, three repairs by Coda; the repair report and diff are included). A separate reviewer is auditing the repair itself; your job is different: find defects that example-based tests cannot see.
+
+Deliver a unittest module (standard library only; seeded random sampling; bounded case counts so the full suite runs in under 60 s) that imports the module under test from a path supplied by environment variable THERMAL_CONTRACT_PATH, and checks relations such as: linearity/superposition of the steady network in the sources; monotonicity in each conductance and in h; invariance under relabelling or reordering that should not matter; energy balance and sign conventions; limits (r_c -> 0, blocked rear path, very large/small h); agreement with the independent exact rational reference (thermal_reference.py) on randomly drawn in-domain parameters; rejection of invalid inputs at the configuration boundary. For each test, state the mathematical justification in a comment. Also list, separately, any relation you expected to hold that the code's documented contract deliberately does not promise. Do not claim results; Red will run the suite against both the original and repaired versions and report back.
+
+SOURCE BUNDLE (labels and sha256 of the verbatim sources appended to the request; contents not repeated here)
+- repair report (Coda) | validation/fable_thermal_review2/REPORT.md | sha256=c97317dff1c2d3a6319fc5ca6ce69de43b9782fb98756930895020204ff246e0
+- repair diff | validation/fable_thermal_review2/REPAIR.diff | sha256=7a83d346b50cd41ba612a201ea6e1ab48cb067ed9782da3ffd522ce89c4a3622
+- repaired thermal_contract.py | validation/fable_thermal_review2/fable_thermal/fixed/thermal_contract.py | sha256=160410e5cecb4e2408f3b13e42ae5213f12d43216d725859afbfa1e6e4b3a06a
+- sample plan | validation/fable_thermal_review2/fable_thermal/original/sample_plan.json | sha256=25c31407b611f2bc4401e9b74ad586b5b2b5589966512a4c2b9011e055f1e9a4
+- expected plan | validation/fable_thermal_review2/fable_thermal/expected_plan.json | sha256=0e6910c3e4c872d0a3e82b8a5b9a9576a363c2cd5a38f2fded65c8803f5a0dbf
+- independent review.py | validation/fable_thermal_review2/fable_thermal/review.py | sha256=c57d20f8ae572183b0cdffbfd6b50495c3c4dde89f302fc104c2609bda6340b0
+- regression tests test_audit.py | validation/fable_thermal_review2/fable_thermal/test_audit.py | sha256=22528f69ecc198b0e88c2c5da5505d85aa09e3c8e61553c01254d9ae6cc8d3ae
+- first thermal report (Coda) | validation/fable_thermal/REPORT.md | sha256=a832b93efafbf3d2423b5b580306315d06878af0e1c39195a5a75d5e7eaf52d0
+- thermal_reference.py (exact rational steady network) | validation/thermal/thermal_reference.py | sha256=7032a2cdb7677c3f29401865d3f5f1f185c826d5f8395e5ec263ea15d642c56d

@@ -1,0 +1,10 @@
+Request thermal-supervisor-fix-003 (wave12b-followups-c; model Claude Fable 5.1; header HEADER_a12f72162d0b.txt)
+
+TASK thermal-supervisor-fix-003
+Your colleague's supervisory thermal-protection design (answer appended) was executed by Red. Red executed this in an isolated sandbox (Linux, Python 3.13, stdlib only); receipts are appended verbatim or as size-limited JSON copies (lists shortened, marked). 23 tests: 9 failures, 1 skip - concentrated in stack H3 (false TRIP_SENSOR in all three noisy intact-design runs, detection latency 481 vs 602, rear-loss mislabelled TRIP_SENSOR vs TRIP_MODEL, a probe-cost count 5 vs 6, a stuck-on case peaking at 26.46 C rather than above 60 C, and a tiny-temperature tuple mismatch). The full scenario matrix ran (stdout and compact results appended). Diagnose each failure as design defect vs test expectation, re-derive thresholds per stack from the plant's time constants (H3 stores much more heat), and deliver minimal diffs plus updated tests. Keep 40/60 C as arbitrary study comparators only.
+
+SOURCE BUNDLE (labels and sha256 of the verbatim sources appended to the request; contents not repeated here)
+- supervisor answer (wave 10) | e/StageRed/stage-red-20261102/batches/wave10-resends/thermal-supervisor-002.answer.md | sha256=6108383310903299906edd13293684339cf62be881e94538ea6d9637555b0cd6
+- test receipt | red-sandbox/work/w10/thermal-supervisor-002/_receipt_test_supervisor.txt | sha256=f63b1d2b40d954e9961e9cdac9cfc60aaa2a92accd348a510983e8582c1be670
+- matrix stdout | red-sandbox/work/w10/_study_supervisor.out | sha256=a7c2341c925f149a976848bae52967d5452beeb1046d307995b7101c3620b8b7
+- matrix results (compact) | red-sandbox/work/w10/_supervisor_results.compact.json | sha256=bc0f7616117f13a76423a9de2ccfd98549030276a96ee908b1251b1a45fc76dc

@@ -1,0 +1,17 @@
+test_impostor_reproduces_slow_modes_exactly (test_release_study.TestModel.test_impostor_reproduces_slow_modes_exactly) ... ok
+test_initial_condition_and_amplitude_identities (test_release_study.TestModel.test_initial_condition_and_amplitude_identities) ... ok
+test_leading_order_endpoint_large_k (test_release_study.TestModel.test_leading_order_endpoint_large_k) ... ok
+test_ode_residual (test_release_study.TestModel.test_ode_residual) ... ok
+test_params_validation (test_release_study.TestModel.test_params_validation) ... ok
+test_report_crosschecks (test_release_study.TestModel.test_report_crosschecks) ... ok
+test_stable_differences_match_direct_subtraction (test_release_study.TestModel.test_stable_differences_match_direct_subtraction) ... ok
+test_mc_deterministic_and_calibrated (test_release_study.TestStudy.test_mc_deterministic_and_calibrated) ... ok
+test_phi (test_release_study.TestStudy.test_phi) ... ok
+test_projection_theorem_for_computed_flux (test_release_study.TestStudy.test_projection_theorem_for_computed_flux) ... ok
+test_run_study_quick_pipeline (test_release_study.TestStudy.test_run_study_quick_pipeline) ... ok
+test_time_grid (test_release_study.TestStudy.test_time_grid) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.037s
+
+OK

@@ -1,0 +1,19 @@
+Request pump-matched-audit-001 (wave7-red-broad; model Claude Fable 5.1; header HEADER_04f46f5820f2.txt)
+
+TASK pump-matched-audit-001
+AB-MPB1B is a matched-pumping comparison: a pump/flow contract and study that compare circulation configurations under matched pressure or hydraulic-power caps, built on the prescribed-flow model AB-MPB1A. Audit it as engineering numerics: check the pump contract's equations and units (hydraulic power vs electrical input, matched-cap definitions), the study's Pareto/contrast logic, whether equal caps imply equal actual power, and whether the implementation and tests support the report's statements. Deliver: findings ranked by severity with exact inputs, a standard-library unittest module of discriminating tests, minimal patches if needed, and a short list of report sentences that are and are not supported by the code. Keep to the mathematics and engineering; no physiological claims.
+
+SOURCE BUNDLE (labels and sha256 of the verbatim sources appended to the request; contents not repeated here)
+- AB-MPB1B report (Coda) | validation/ab_mpb1b/REPORT.md | sha256=9b8d957e545f6d5e82c314d1af4bb637f13a26cf87c58b6c8e7d6ddb3df0a1b7
+- acceptance | validation/ab_mpb1b/ACCEPTANCE.md | sha256=aa3ebe5876a5fc2f748aaddccd3d6310780b4e0bbfa7d4550793d43d5a07c99d
+- pump contract | validation/ab_mpb1b/PUMP_CONTRACT.md | sha256=a5dfe6810306cabe9d4fc69be03b6f431e4e8b1ae2a5bf67d074071bc6915475
+- pump.py | validation/ab_mpb1b/pump.py | sha256=fac5e0e7bef316379e97aa4f46e6bac8c7c53c23c01dff997bbf947ab2be9a47
+- study.py | validation/ab_mpb1b/study.py | sha256=7a2456aad19a711c603f82d3ae9c4cc3fb6f0fbd13bc17848e2814ed1763679f
+- test_pump.py | validation/ab_mpb1b/test_pump.py | sha256=afc0395be74f2a1d8db72880a5c154b9217c9ceec83bad9ec3259b8eb73631a4
+- STUDY_DESIGN.json | validation/ab_mpb1b/STUDY_DESIGN.json | sha256=0a81942a27c40d20af63414ffbd1b58872f33da3783986819a3fc55057f55c75
+- admitted.py | validation/ab_mpb1b/admitted.py | sha256=ec9db5aef83cbf12f2ec152e3c32f7d715687a42cf6eba779c7f8dd48be8245b
+- pareto receipt | validation/ab_mpb1b/run_001/pareto_receipt.json | sha256=350f22334893acdeb09b5e3226ebe2d11e30f1bbd2d36b5240678157fa677695
+- coordinator review B | reviews/AB_MPB1B_COORDINATOR_REVIEW.md | sha256=16015f6f7a65807893e9e451fc55beb38a4d1d6825fe7bc4e393bc3d0634e640
+- AB-MPB1A report | validation/ab_mpb1a/REPORT.md | sha256=2a9775201fa862993d4a23faeb0b7f561235b3034bd77726a41108887ce7218c
+- AB-MPB1A model.py | validation/ab_mpb1a/model.py | sha256=d05cdd81f64464091148570d2f8c78f668e4960ffb10ae137f1ee6ad2f63c172
+- coordinator review A | reviews/AB_MPB1A_COORDINATOR_REVIEW.md | sha256=37955555051642b106f156b111984cc2589ac93cc3737ffaf8eb993616216aa3

@@ -1,0 +1,1097 @@
+{
+ "a_source": "shim loader (A pins NOT verified): red-sandbox/work/pump/validation/ab_mpb1a/model.py",
+ "max_oxygen_error_umol": 1.1546319456101628e-14,
+ "max_site_error_umol": 1.1102230246251565e-14,
+ "minimum_seen": 0.0,
+ "operating_points": {
+  "20": {
+   "active_constraint": "power",
+   "actual_hydraulic_power_mw": 3.1999999999999993,
+   "actual_pressure_kpa": 7.999999999999999,
+   "flow_ml_s": 0.39999999999999997,
+   "hydraulic_power_cap_mw": 3.2,
+   "pressure_cap_kpa": 12.0,
+   "resistance_kpa_s_per_ml": 20.0
+  },
+  "40": {
+   "active_constraint": "power",
+   "actual_hydraulic_power_mw": 3.1999999999999997,
+   "actual_pressure_kpa": 11.31370849898476,
+   "flow_ml_s": 0.282842712474619,
+   "hydraulic_power_cap_mw": 3.2,
+   "pressure_cap_kpa": 12.0,
+   "resistance_kpa_s_per_ml": 40.0
+  },
+  "45": {
+   "active_constraint": "both",
+   "actual_hydraulic_power_mw": 3.2,
+   "actual_pressure_kpa": 12.0,
+   "flow_ml_s": 0.26666666666666666,
+   "hydraulic_power_cap_mw": 3.2,
+   "pressure_cap_kpa": 12.0,
+   "resistance_kpa_s_per_ml": 45.0
+  },
+  "80": {
+   "active_constraint": "pressure",
+   "actual_hydraulic_power_mw": 1.7999999999999998,
+   "actual_pressure_kpa": 12.0,
+   "flow_ml_s": 0.15,
+   "hydraulic_power_cap_mw": 3.2,
+   "pressure_cap_kpa": 12.0,
+   "resistance_kpa_s_per_ml": 80.0
+  }
+ },
+ "pareto_groups": [
+  {
+   "condition": "no_sites",
+   "dominated_R_over_R0": [
+    2
+   ],
+   "nondominated_R_over_R0": [
+    1,
+    4
+   ],
+   "objectives_by_ratio": {
+    "1": [
+     0.3991489857967068,
+     0.040683672361840534,
+     7.999999999999999,
+     6.399999999999999
+    ],
+    "2": [
+     0.3945435912520602,
+     0.04034946246266767,
+     11.31370849898476,
+     6.3999999999999995
+    ],
+    "4": [
+     0.39103139739096465,
+     0.03992954836419592,
+     12.0,
+     3.5999999999999996
+    ]
+   },
+   "time_s": 2
+  },
+  {
+   "condition": "no_sites",
+   "dominated_R_over_R0": [
+    2
+   ],
+   "nondominated_R_over_R0": [
+    1,
+    4
+   ],
+   "objectives_by_ratio": {
+    "1": [
+     0.4624588033324927,
+     0.33279777909719976,
+     7.999999999999999,
+     31.999999999999993
+    ],
+    "2": [
+     0.44768678885977903,
+     0.3258883422899249,
+     11.31370849898476,
+     31.999999999999996
+    ],
+    "4": [
+     0.3999926857764909,
+     0.3093256204844086,
+     12.0,
+     18.0
+    ]
+   },
+   "time_s": 10
+  },
+  {
+   "condition": "no_sites",
+   "dominated_R_over_R0": [
+    2
+   ],
+   "nondominated_R_over_R0": [
+    1,
+    4
+   ],
+   "objectives_by_ratio": {
+    "1": [
+     0.3282131167021509,
+     0.9397709276118691,
+     7.999999999999999,
+     95.99999999999997
+    ],
+    "2": [
+     0.3217922394362947,
+     0.926990612742905,
+     11.31370849898476,
+     95.99999999999999
+    ],
+    "4": [
+     0.3020326112368252,
+     0.8902055614373628,
+     12.0,
+     53.99999999999999
+    ]
+   },
+   "time_s": 30
+  },
+  {
+   "condition": "sites_same_initial_free",
+   "dominated_R_over_R0": [
+    2
+   ],
+   "nondominated_R_over_R0": [
+    1,
+    4
+   ],
+   "objectives_by_ratio": {
+    "1": [
+     0.407282414861152,
+     0.041013854126449305,
+     7.999999999999999,
+     6.399999999999999
+    ],
+    "2": [
+     0.4032826184259554,
+     0.040710302107140044,
+     11.31370849898476,
+     6.3999999999999995
+    ],
+    "4": [
+     0.4002483360473021,
+     0.0403301273898333,
+     12.0,
+     3.5999999999999996
+    ]
+   },
+   "time_s": 2
+  },
+  {
+   "condition": "sites_same_initial_free",
+   "dominated_R_over_R0": [
+    2
+   ],
+   "nondominated_R_over_R0": [
+    1,
+    4
+   ],
+   "objectives_by_ratio": {
+    "1": [
+     0.49074714730823077,
+     0.3439687826933199,
+     7.999999999999999,
+     31.999999999999993
+    ],
+    "2": [
+     0.4782788101900958,
+     0.33793422912621507,
+     11.31370849898476,
+     31.999999999999996
+    ],
+    "4": [
+     0.43934180046953525,
+     0.3239667180221282,
+     12.0,
+     18.0
+    ]
+   },
+   "time_s": 10
+  },
+  {
+   "condition": "sites_same_initial_free",
+   "dominated_R_over_R0": [
+    2
+   ],
+   "nondominated_R_over_R0": [
+    1,
+    4
+   ],
+   "objectives_by_ratio": {
+    "1": [
+     0.3830841349455639,
+     1.0131472944714308,
+     7.999999999999999,
+     95.99999999999997
+    ],
+    "2": [
+     0.3768823389707987,
+     1.0009536604408735,
+     11.31370849898476,
+     95.99999999999999
+    ],
+    "4": [
+     0.35907553004517945,
+     0.9679296274553046,
+     12.0,
+     53.99999999999999
+    ]
+   },
+   "time_s": 30
+  },
+  {
+   "condition": "sites_equal_initial_oxygen",
+   "dominated_R_over_R0": [
+    2
+   ],
+   "nondominated_R_over_R0": [
+    1,
+    4
+   ],
+   "objectives_by_ratio": {
+    "1": [
+     0.1756498412300224,
+     0.017542113940094237,
+     7.999999999999999,
+     6.399999999999999
+    ],
+    "2": [
+     0.17412683034708393,
+     0.017421871597348683,
+     11.31370849898476,
+     6.3999999999999995
+    ],
+    "4": [
+     0.17297654051148223,
+     0.017271667880007932,
+     12.0,
+     3.5999999999999996
+    ]
+   },
+   "time_s": 2
+  },
+  {
+   "condition": "sites_equal_initial_oxygen",
+   "dominated_R_over_R0": [
+    2
+   ],
+   "nondominated_R_over_R0": [
+    1,
+    4
+   ],
+   "objectives_by_ratio": {
+    "1": [
+     0.21878154567289157,
+     0.15013109942771935,
+     7.999999999999999,
+     31.999999999999993
+    ],
+    "2": [
+     0.21417368330828507,
+     0.1478292694823375,
+     11.31370849898476,
+     31.999999999999996
+    ],
+    "4": [
+     0.20042398770640993,
+     0.14270612720509507,
+     12.0,
+     18.0
+    ]
+   },
+   "time_s": 10
+  },
+  {
+   "condition": "sites_equal_initial_oxygen",
+   "dominated_R_over_R0": [
+    2
+   ],
+   "nondominated_R_over_R0": [
+    1,
+    4
+   ],
+   "objectives_by_ratio": {
+    "1": [
+     0.18170191909331324,
+     0.45684780733961206,
+     7.999999999999999,
+     95.99999999999997
+    ],
+    "2": [
+     0.17908669791532872,
+     0.45183216226422396,
+     11.31370849898476,
+     95.99999999999999
+    ],
+    "4": [
+     0.1719874644937855,
+     0.4389673086708728,
+     12.0,
+     53.99999999999999
+    ]
+   },
+   "time_s": 30
+  }
+ ],
+ "penalty_distal_differences_vs_no_sites_R0": {
+  "sites_equal_initial_oxygen|R2|T10": -0.2482851200242076,
+  "sites_equal_initial_oxygen|R2|T2": -0.2250221554496229,
+  "sites_equal_initial_oxygen|R2|T30": -0.1491264187868222,
+  "sites_equal_initial_oxygen|R4|T10": -0.2620348156260828,
+  "sites_equal_initial_oxygen|R4|T2": -0.2261724452852246,
+  "sites_equal_initial_oxygen|R4|T30": -0.15622565220836543,
+  "sites_same_initial_free|R2|T10": 0.015820006857603153,
+  "sites_same_initial_free|R2|T2": 0.004133632629248596,
+  "sites_same_initial_free|R2|T30": 0.04866922226864778,
+  "sites_same_initial_free|R4|T10": -0.023117002862957425,
+  "sites_same_initial_free|R4|T2": 0.0010993502505952657,
+  "sites_same_initial_free|R4|T30": 0.030862413343028527
+ },
+ "pump_dir": "red-sandbox/work/pump/validation/ab_mpb1b",
+ "python": "3.13.18 (main, Oct 26 2026, 14:08:19) [Clang 23.1.3 ]",
+ "q_at_r20": {
+  "equals_float_0.4": false,
+  "ulps_from_0.4": -1.0,
+  "value": 0.39999999999999997
+ },
+ "rows": [
+  {
+   "active_constraint": "power",
+   "actual_dt": 0.01,
+   "actual_hydraulic_power_mw": 3.1999999999999993,
+   "actual_pressure_kpa": 7.999999999999999,
+   "condition": "no_sites",
+   "consumed_umol": 0.040683672361840534,
+   "distal_is_minimum": true,
+   "distal_wall_concentration": 0.3991489857967068,
+   "exit_bound": 4.8,
+   "flow_ml_s": 0.39999999999999997,
+   "max_oxygen_error": 1.7763568394002505e-15,
+   "max_site_error": 0.0,
+   "minimum_seen": 0.0,
+   "minimum_wall_concentration": 0.3991489857967068,
+   "net_wall_transfer_umol": 0.24930533724705706,
+   "resistance_ratio": 1,
+   "steps": 200,
+   "time_s": 2
+  },
+  {
+   "active_constraint": "power",
+   "actual_dt": 0.01,
+   "actual_hydraulic_power_mw": 3.1999999999999993,
+   "actual_pressure_kpa": 7.999999999999999,
+   "condition": "no_sites",
+   "consumed_umol": 0.33279777909719976,
+   "distal_is_minimum": true,
+   "distal_wall_concentration": 0.4624588033324927,
+   "exit_bound": 4.8,
+   "flow_ml_s": 0.39999999999999997,
+   "max_oxygen_error": 4.440892098500626e-15,
+   "max_site_error": 0.0,
+   "minimum_seen": 0.0,
+   "minimum_wall_concentration": 0.4624588033324927,
+   "net_wall_transfer_umol": 0.5719901979521341,
+   "resistance_ratio": 1,
+   "steps": 1000,
+   "time_s": 10
+  },
+  {
+   "active_constraint": "power",
+   "actual_dt": 0.01,
+   "actual_hydraulic_power_mw": 3.1999999999999993,
+   "actual_pressure_kpa": 7.999999999999999,
+   "condition": "no_sites",
+   "consumed_umol": 0.9397709276118691,
+   "distal_is_minimum": true,
+   "distal_wall_concentration": 0.3282131167021509,
+   "exit_bound": 4.8,
+   "flow_ml_s": 0.39999999999999997,
+   "max_oxygen_error": 4.440892098500626e-15,
+   "max_site_error": 0.0,
+   "minimum_seen": 0.0,
+   "minimum_wall_concentration": 0.3282131167021509,
+   "net_wall_transfer_umol": 1.1089788699828187,
+   "resistance_ratio": 1,
+   "steps": 3000,
+   "time_s": 30
+  },
+  {
+   "active_constraint": "power",
+   "actual_dt": 0.01,
+   "actual_hydraulic_power_mw": 3.1999999999999997,
+   "actual_pressure_kpa": 11.31370849898476,
+   "condition": "no_sites",
+   "consumed_umol": 0.04034946246266767,
+   "distal_is_minimum": true,
+   "distal_wall_concentration": 0.3945435912520602,
+   "exit_bound": 4.448528137423857,
+   "flow_ml_s": 0.282842712474619,
+   "max_oxygen_error": 1.3322676295501878e-15,
+   "max_site_error": 0.0,
+   "minimum_seen": 0.0,
+   "minimum_wall_concentration": 0.3945435912520602,
+   "net_wall_transfer_umol": 0.24558169910577982,
+   "resistance_ratio": 2,
+   "steps": 200,
+   "time_s": 2
+  },
+  {
+   "active_constraint": "power",
+   "actual_dt": 0.01,
+   "actual_hydraulic_power_mw": 3.1999999999999997,
+   "actual_pressure_kpa": 11.31370849898476,
+   "condition": "no_sites",
+   "consumed_umol": 0.3258883422899249,
+   "distal_is_minimum": true,
+   "distal_wall_concentration": 0.44768678885977903,
+   "exit_bound": 4.448528137423857,
+   "flow_ml_s": 0.282842712474619,
+   "max_oxygen_error": 3.1086244689504383e-15,
+   "max_site_error": 0.0,
+   "minimum_seen": 0.0,
+   "minimum_wall_concentration": 0.44768678885977903,
+   "net_wall_transfer_umol": 0.5617067938329284,
+   "resistance_ratio": 2,
+   "steps": 1000,
+   "time_s": 10
+  },
+  {
+   "active_constraint": "power",
+   "actual_dt": 0.01,
+   "actual_hydraulic_power_mw": 3.1999999999999997,
+   "actual_pressure_kpa": 11.31370849898476,
+   "condition": "no_sites",
+   "consumed_umol": 0.926990612742905,
+   "distal_is_minimum": true,
+   "distal_wall_concentration": 0.3217922394362947,
+   "exit_bound": 4.448528137423857,
+   "flow_ml_s": 0.282842712474619,
+   "max_oxygen_error": 3.552713678800501e-15,
+   "max_site_error": 0.0,
+   "minimum_seen": 0.0,
+   "minimum_wall_concentration": 0.3217922394362947,
+   "net_wall_transfer_umol": 1.0950592417035694,
+   "resistance_ratio": 2,
+   "steps": 3000,
+   "time_s": 30
+  },
+  {
+   "active_constraint": "pressure",
+   "actual_dt": 0.01,
+   "actual_hydraulic_power_mw": 1.7999999999999998,
+   "actual_pressure_kpa": 12.0,
+   "condition": "no_sites",
+   "consumed_umol": 0.03992954836419592,
+   "distal_is_minimum": true,
+   "distal_wall_concentration": 0.39103139739096465,
+   "exit_bound": 4.05,
+   "flow_ml_s": 0.15,
+   "max_oxygen_error": 1.7763568394002505e-15,
+   "max_site_error": 0.0,
+   "minimum_seen": 0.0,
+   "minimum_wall_concentration": 0.39103139739096465,
+   "net_wall_transfer_umol": 0.24067652549280955,
+   "resistance_ratio": 4,
+   "steps": 200,
+   "time_s": 2
+  },
+  {
+   "active_constraint": "pressure",
+   "actual_dt": 0.01,
+   "actual_hydraulic_power_mw": 1.7999999999999998,
+   "actual_pressure_kpa": 12.0,
+   "condition": "no_sites",
+   "consumed_umol": 0.3093256204844086,
+   "distal_is_minimum": true,
+   "distal_wall_concentration": 0.3999926857764909,
+   "exit_bound": 4.05,
+   "flow_ml_s": 0.15,
+   "max_oxygen_error": 4.440892098500626e-15,
+   "max_site_error": 0.0,
+   "minimum_seen": 0.0,
+   "minimum_wall_concentration": 0.3999926857764909,
+   "net_wall_transfer_umol": 0.5323773112426571,
+   "resistance_ratio": 4,
+   "steps": 1000,
+   "time_s": 10
+  },
+  {
+   "active_constraint": "pressure",
+   "actual_dt": 0.01,
+   "actual_hydraulic_power_mw": 1.7999999999999998,
+   "actual_pressure_kpa": 12.0,
+   "condition": "no_sites",
+   "consumed_umol": 0.8902055614373628,
+   "distal_is_minimum": true,
+   "distal_wall_concentration": 0.3020326112368252,
+   "exit_bound": 4.05,
+   "flow_ml_s": 0.15,
+   "max_oxygen_error": 5.329070518200751e-15,
+   "max_site_error": 0.0,
+   "minimum_seen": 0.0,
+   "minimum_wall_concentration": 0.3020326112368252,
+   "net_wall_transfer_umol": 1.0544462968888906,
+   "resistance_ratio": 4,
+   "steps": 3000,
+   "time_s": 30
+  },
+  {
+   "active_constraint": "power",
+   "actual_dt": 0.01,
+   "actual_hydraulic_power_mw": 3.1999999999999993,
+   "actual_pressure_kpa": 7.999999999999999,
+   "condition": "sites_equal_initial_oxygen",
+   "consumed_umol": 0.017542113940094237,
+   "distal_is_minimum": true,
+   "distal_wall_concentration": 0.1756498412300224,
+   "exit_bound": 6.0,
+   "flow_ml_s": 0.39999999999999997,
+   "max_oxygen_error": 8.881784197001252e-16,
+   "max_site_error": 8.881784197001252e-16,
+   "minimum_seen": 0.0,
+   "minimum_wall_concentration": 0.1756498412300224,
+   "net_wall_transfer_umol": 0.10853372606472808,
+   "resistance_ratio": 1,
+   "steps": 200,
+   "time_s": 2
+  },
+  {
+   "active_constraint": "power",
+   "actual_dt": 0.01,
+   "actual_hydraulic_power_mw": 3.1999999999999993,
+   "actual_pressure_kpa": 7.999999999999999,
+   "condition": "sites_equal_initial_oxygen",
+   "consumed_umol": 0.15013109942771935,
+   "distal_is_minimum": true,
+   "distal_wall_concentration": 0.21878154567289157,
+   "exit_bound": 6.0,
+   "flow_ml_s": 0.39999999999999997,
+   "max_oxygen_error": 2.220446049250313e-15,
+   "max_site_error": 5.329070518200751e-15,
+   "minimum_seen": 0.0,
+   "minimum_wall_concentration": 0.21878154567289157,
+   "net_wall_transfer_umol": 0.2623020254289553,
+   "resistance_ratio": 1,
+   "steps": 1000,
+   "time_s": 10
+  },
+  {
+   "active_constraint": "power",
+   "actual_dt": 0.01,
+   "actual_hydraulic_power_mw": 3.1999999999999993,
+   "actual_pressure_kpa": 7.999999999999999,
+   "condition": "sites_equal_initial_oxygen",
+   "consumed_umol": 0.45684780733961206,
+   "distal_is_minimum": true,
+   "distal_wall_concentration": 0.18170191909331324,
+   "exit_bound": 6.0,
+   "flow_ml_s": 0.39999999999999997,
+   "max_oxygen_error": 3.552713678800501e-15,
+   "max_site_error": 1.1102230246251565e-14,
+   "minimum_seen": 0.0,
+   "minimum_wall_concentration": 0.18170191909331324,
+   "net_wall_transfer_umol": 0.5497469266049595,
+   "resistance_ratio": 1,
+   "steps": 3000,
+   "time_s": 30
+  },
+  {
+   "active_constraint": "power",
+   "actual_dt": 0.01,
+   "actual_hydraulic_power_mw": 3.1999999999999997,
+   "actual_pressure_kpa": 11.31370849898476,
+   "condition": "sites_equal_initial_oxygen",
+   "consumed_umol": 0.017421871597348683,
+   "distal_is_minimum": true,
+   "distal_wall_concentration": 0.17412683034708393,
+   "exit_bound": 5.648528137423857,
+   "flow_ml_s": 0.282842712474619,
+   "max_oxygen_error": 1.3322676295501878e-15,
+   "max_site_error": 1.3322676295501878e-15,
+   "minimum_seen": 0.0,
+   "minimum_wall_concentration": 0.17412683034708393,
+   "net_wall_transfer_umol": 0.10724101220727908,
+   "resistance_ratio": 2,
+   "steps": 200,
+   "time_s": 2
+  },
+  {
+   "active_constraint": "power",
+   "actual_dt": 0.01,
+   "actual_hydraulic_power_mw": 3.1999999999999997,
+   "actual_pressure_kpa": 11.31370849898476,
+   "condition": "sites_equal_initial_oxygen",
+   "consumed_umol": 0.1478292694823375,
+   "distal_is_minimum": true,
+   "distal_wall_concentration": 0.21417368330828507,
+   "exit_bound": 5.648528137423857,
+   "flow_ml_s": 0.282842712474619,
+   "max_oxygen_error": 1.3322676295501878e-15,
+   "max_site_error": 2.220446049250313e-15,
+   "minimum_seen": 0.0,
+   "minimum_wall_concentration": 0.21417368330828507,
+   "net_wall_transfer_umol": 0.2587449841601749,
+   "resistance_ratio": 2,
+   "steps": 1000,
+   "time_s": 10
+  },
+  {
+   "active_constraint": "power",
+   "actual_dt": 0.01,
+   "actual_hydraulic_power_mw": 3.1999999999999997,
+   "actual_pressure_kpa": 11.31370849898476,
+   "condition": "sites_equal_initial_oxygen",
+   "consumed_umol": 0.45183216226422396,
+   "distal_is_minimum": true,
+   "distal_wall_concentration": 0.17908669791532872,
+   "exit_bound": 5.648528137423857,
+   "flow_ml_s": 0.282842712474619,
+   "max_oxygen_error": 1.7763568394002505e-15,
+   "max_site_error": 4.440892098500626e-15,
+   "minimum_seen": 0.0,
+   "minimum_wall_concentration": 0.17908669791532872,
+   "net_wall_transfer_umol": 0.5440264746945571,
+   "resistance_ratio": 2,
+   "steps": 3000,
+   "time_s": 30
+  },
+  {
+   "active_constraint": "pressure",
+   "actual_dt": 0.01,
+   "actual_hydraulic_power_mw": 1.7999999999999998,
+   "actual_pressure_kpa": 12.0,
+   "condition": "sites_equal_initial_oxygen",
+   "consumed_umol": 0.017271667880007932,
+   "distal_is_minimum": true,
+   "distal_wall_concentration": 0.17297654051148223,
+   "exit_bound": 5.25,
+   "flow_ml_s": 0.15,
+   "max_oxygen_error": 8.881784197001252e-16,
+   "max_site_error": 3.1086244689504383e-15,
+   "minimum_seen": 0.0,
+   "minimum_wall_concentration": 0.17297654051148223,
+   "net_wall_transfer_umol": 0.10555180070555122,
+   "resistance_ratio": 4,
+   "steps": 200,
+   "time_s": 2
+  },
+  {
+   "active_constraint": "pressure",
+   "actual_dt": 0.01,
+   "actual_hydraulic_power_mw": 1.7999999999999998,
+   "actual_pressure_kpa": 12.0,
+   "condition": "sites_equal_initial_oxygen",
+   "consumed_umol": 0.14270612720509507,
+   "distal_is_minimum": true,
+   "distal_wall_concentration": 0.20042398770640993,
+   "exit_bound": 5.25,
+   "flow_ml_s": 0.15,
+   "max_oxygen_error": 1.3322676295501878e-15,
+   "max_site_error": 4.440892098500626e-15,
+   "minimum_seen": 0.0,
+   "minimum_wall_concentration": 0.20042398770640993,
+   "net_wall_transfer_umol": 0.24961727465748626,
+   "resistance_ratio": 4,
+   "steps": 1000,
+   "time_s": 10
+  },
+  {
+   "active_constraint": "pressure",
+   "actual_dt": 0.01,
+   "actual_hydraulic_power_mw": 1.7999999999999998,
+   "actual_pressure_kpa": 12.0,
+   "condition": "sites_equal_initial_oxygen",
+   "consumed_umol": 0.4389673086708728,
+   "distal_is_minimum": true,
+   "distal_wall_concentration": 0.1719874644937855,
+   "exit_bound": 5.25,
+   "flow_ml_s": 0.15,
+   "max_oxygen_error": 4.884981308350689e-15,
+   "max_site_error": 6.217248937900877e-15,
+   "minimum_seen": 0.0,
+   "minimum_wall_concentration": 0.1719874644937855,
+   "net_wall_transfer_umol": 0.5292283399496593,
+   "resistance_ratio": 4,
+   "steps": 3000,
+   "time_s": 30
+  },
+  {
+   "active_constraint": "power",
+   "actual_dt": 0.01,
+   "actual_hydraulic_power_mw": 3.1999999999999993,
+   "actual_pressure_kpa": 7.999999999999999,
+   "condition": "sites_same_initial_free",
+   "consumed_umol": 0.041013854126449305,
+   "distal_is_minimum": true,
+   "distal_wall_concentration": 0.407282414861152,
+   "exit_bound": 7.800000000000001,
+   "flow_ml_s": 0.39999999999999997,
+   "max_oxygen_error": 1.7763568394002505e-15,
+   "max_site_error": 8.881784197001252e-16,
+   "minimum_seen": 0.0,
+   "minimum_wall_concentration": 0.407282414861152,
+   "net_wall_transfer_umol": 0.2527527955098968,
+   "resistance_ratio": 1,
+   "steps": 200,
+   "time_s": 2
+  },
+  {
+   "active_constraint": "power",
+   "actual_dt": 0.01,
+   "actual_hydraulic_power_mw": 3.1999999999999993,
+   "actual_pressure_kpa": 7.999999999999999,
+   "condition": "sites_same_initial_free",
+   "consumed_umol": 0.3439687826933199,
+   "distal_is_minimum": true,
+   "distal_wall_concentration": 0.49074714730823077,
+   "exit_bound": 7.800000000000001,
+   "flow_ml_s": 0.39999999999999997,
+   "max_oxygen_error": 5.329070518200751e-15,
+   "max_site_error": 2.6645352591003757e-15,
+   "minimum_seen": 0.0,
+   "minimum_wall_concentration": 0.49074714730823077,
+   "net_wall_transfer_umol": 0.5964279850143905,
+   "resistance_ratio": 1,
+   "steps": 1000,
+   "time_s": 10
+  },
+  {
+   "active_constraint": "power",
+   "actual_dt": 0.01,
+   "actual_hydraulic_power_mw": 3.1999999999999993,
+   "actual_pressure_kpa": 7.999999999999999,
+   "condition": "sites_same_initial_free",
+   "consumed_umol": 1.0131472944714308,
+   "distal_is_minimum": true,
+   "distal_wall_concentration": 0.3830841349455639,
+   "exit_bound": 7.800000000000001,
+   "flow_ml_s": 0.39999999999999997,
+   "max_oxygen_error": 7.993605777301127e-15,
+   "max_site_error": 3.1086244689504383e-15,
+   "minimum_seen": 0.0,
+   "minimum_wall_concentration": 0.3830841349455639,
+   "net_wall_transfer_umol": 1.2095324625055617,
+   "resistance_ratio": 1,
+   "steps": 3000,
+   "time_s": 30
+  },
+  {
+   "active_constraint": "power",
+   "actual_dt": 0.01,
+   "actual_hydraulic_power_mw": 3.1999999999999997,
+   "actual_pressure_kpa": 11.31370849898476,
+   "condition": "sites_same_initial_free",
+   "consumed_umol": 0.040710302107140044,
+   "distal_is_minimum": true,
+   "distal_wall_concentration": 0.4032826184259554,
+   "exit_bound": 7.448528137423858,
+   "flow_ml_s": 0.282842712474619,
+   "max_oxygen_error": 1.7763568394002505e-15,
+   "max_site_error": 1.7763568394002505e-15,
+   "minimum_seen": 0.0,
+   "minimum_wall_concentration": 0.4032826184259554,
+   "net_wall_transfer_umol": 0.24943410823935575,
+   "resistance_ratio": 2,
+   "steps": 200,
+   "time_s": 2
+  },
+  {
+   "active_constraint": "power",
+   "actual_dt": 0.01,
+   "actual_hydraulic_power_mw": 3.1999999999999997,
+   "actual_pressure_kpa": 11.31370849898476,
+   "condition": "sites_same_initial_free",
+   "consumed_umol": 0.33793422912621507,
+   "distal_is_minimum": true,
+   "distal_wall_concentration": 0.4782788101900958,
+   "exit_bound": 7.448528137423858,
+   "flow_ml_s": 0.282842712474619,
+   "max_oxygen_error": 1.0658141036401503e-14,
+   "max_site_error": 1.7763568394002505e-15,
+   "minimum_seen": 0.0,
+   "minimum_wall_concentration": 0.4782788101900958,
+   "net_wall_transfer_umol": 0.5872754028083371,
+   "resistance_ratio": 2,
+   "steps": 1000,
+   "time_s": 10
+  },
+  {
+   "active_constraint": "power",
+   "actual_dt": 0.01,
+   "actual_hydraulic_power_mw": 3.1999999999999997,
+   "actual_pressure_kpa": 11.31370849898476,
+   "condition": "sites_same_initial_free",
+   "consumed_umol": 1.0009536604408735,
+   "distal_is_minimum": true,
+   "distal_wall_concentration": 0.3768823389707987,
+   "exit_bound": 7.448528137423858,
+   "flow_ml_s": 0.282842712474619,
+   "max_oxygen_error": 1.1546319456101628e-14,
+   "max_site_error": 6.217248937900877e-15,
+   "minimum_seen": 0.0,
+   "minimum_wall_concentration": 0.3768823389707987,
+   "net_wall_transfer_umol": 1.1958897438402727,
+   "resistance_ratio": 2,
+   "steps": 3000,
+   "time_s": 30
+  },
+  {
+   "active_constraint": "pressure",
+   "actual_dt": 0.01,
+   "actual_hydraulic_power_mw": 1.7999999999999998,
+   "actual_pressure_kpa": 12.0,
+   "condition": "sites_same_initial_free",
+   "consumed_umol": 0.0403301273898333,
+   "distal_is_minimum": true,
+   "distal_wall_concentration": 0.4002483360473021,
+   "exit_bound": 7.050000000000001,
+   "flow_ml_s": 0.15,
+   "max_oxygen_error": 4.440892098500626e-15,
+   "max_site_error": 3.552713678800501e-15,
+   "minimum_seen": 0.0,
+   "minimum_wall_concentration": 0.4002483360473021,
+   "net_wall_transfer_umol": 0.2450814050999152,
+   "resistance_ratio": 4,
+   "steps": 200,
+   "time_s": 2
+  },
+  {
+   "active_constraint": "pressure",
+   "actual_dt": 0.01,
+   "actual_hydraulic_power_mw": 1.7999999999999998,
+   "actual_pressure_kpa": 12.0,
+   "condition": "sites_same_initial_free",
+   "consumed_umol": 0.3239667180221282,
+   "distal_is_minimum": true,
+   "distal_wall_concentration": 0.43934180046953525,
+   "exit_bound": 7.050000000000001,
+   "flow_ml_s": 0.15,
+   "max_oxygen_error": 6.217248937900877e-15,
+   "max_site_error": 5.329070518200751e-15,
+   "minimum_seen": 0.0,
+   "minimum_wall_concentration": 0.43934180046953525,
+   "net_wall_transfer_umol": 0.5624788074796723,
+   "resistance_ratio": 4,
+   "steps": 1000,
+   "time_s": 10
+  },
+  {
+   "active_constraint": "pressure",
+   "actual_dt": 0.01,
+   "actual_hydraulic_power_mw": 1.7999999999999998,
+   "actual_pressure_kpa": 12.0,
+   "condition": "sites_same_initial_free",
+   "consumed_umol": 0.9679296274553046,
+   "distal_is_minimum": true,
+   "distal_wall_concentration": 0.35907553004517945,
+   "exit_bound": 7.050000000000001,
+   "flow_ml_s": 0.15,
+   "max_oxygen_error": 6.217248937900877e-15,
+   "max_site_error": 5.329070518200751e-15,
+   "minimum_seen": 0.0,
+   "minimum_wall_concentration": 0.35907553004517945,
+   "net_wall_transfer_umol": 1.1585911533480975,
+   "resistance_ratio": 4,
+   "steps": 3000,
+   "time_s": 30
+  }
+ ],
+ "saved_A_comparison": null,
+ "subnormal_probe_R1e308_D1e-10_P1e-300": {
+  "outcome": "returned",
+  "point": {
+   "active_constraint": "pressure",
+   "actual_hydraulic_power_mw": 0.0,
+   "actual_pressure_kpa": 9.999987484955998e-11,
+   "flow_ml_s": 1e-318,
+   "hydraulic_power_cap_mw": 1e-300,
+   "pressure_cap_kpa": 1e-10,
+   "resistance_kpa_s_per_ml": 1e+308
+  },
+  "pressure_relative_gap_to_cap": -1.251504400223702e-06,
+  "realized_power_is_zero": true
+ },
+ "task": "pump-matched-audit-001",
+ "throttled_witness": [
+  {
+   "condition": "no_sites",
+   "flows_bitwise_equal": true,
+   "grid_R4_objectives": [
+    0.39103139739096465,
+    0.03992954836419592,
+    12.0,
+    3.5999999999999996
+   ],
+   "states_bitwise_identical": true,
+   "throttled_R0_caps_3kPa_3.2mW_objectives": [
+    0.39103139739096465,
+    0.03992954836419592,
+    3.0,
+    0.8999999999999999
+   ],
+   "throttled_dominates_R4": true,
+   "time_s": 2
+  },
+  {
+   "condition": "no_sites",
+   "flows_bitwise_equal": true,
+   "grid_R4_objectives": [
+    0.3999926857764909,
+    0.3093256204844086,
+    12.0,
+    18.0
+   ],
+   "states_bitwise_identical": true,
+   "throttled_R0_caps_3kPa_3.2mW_objectives": [
+    0.3999926857764909,
+    0.3093256204844086,
+    3.0,
+    4.5
+   ],
+   "throttled_dominates_R4": true,
+   "time_s": 10
+  },
+  {
+   "condition": "no_sites",
+   "flows_bitwise_equal": true,
+   "grid_R4_objectives": [
+    0.3020326112368252,
+    0.8902055614373628,
+    12.0,
+    53.99999999999999
+   ],
+   "states_bitwise_identical": true,
+   "throttled_R0_caps_3kPa_3.2mW_objectives": [
+    0.3020326112368252,
+    0.8902055614373628,
+    3.0,
+    13.499999999999998
+   ],
+   "throttled_dominates_R4": true,
+   "time_s": 30
+  },
+  {
+   "condition": "sites_same_initial_free",
+   "flows_bitwise_equal": true,
+   "grid_R4_objectives": [
+    0.4002483360473021,
+    0.0403301273898333,
+    12.0,
+    3.5999999999999996
+   ],
+   "states_bitwise_identical": true,
+   "throttled_R0_caps_3kPa_3.2mW_objectives": [
+    0.4002483360473021,
+    0.0403301273898333,
+    3.0,
+    0.8999999999999999
+   ],
+   "throttled_dominates_R4": true,
+   "time_s": 2
+  },
+  {
+   "condition": "sites_same_initial_free",
+   "flows_bitwise_equal": true,
+   "grid_R4_objectives": [
+    0.43934180046953525,
+    0.3239667180221282,
+    12.0,
+    18.0
+   ],
+   "states_bitwise_identical": true,
+   "throttled_R0_caps_3kPa_3.2mW_objectives": [
+    0.43934180046953525,
+    0.3239667180221282,
+    3.0,
+    4.5
+   ],
+   "throttled_dominates_R4": true,
+   "time_s": 10
+  },
+  {
+   "condition": "sites_same_initial_free",
+   "flows_bitwise_equal": true,
+   "grid_R4_objectives": [
+    0.35907553004517945,
+    0.9679296274553046,
+    12.0,
+    53.99999999999999
+   ],
+   "states_bitwise_identical": true,
+   "throttled_R0_caps_3kPa_3.2mW_objectives": [
+    0.35907553004517945,
+    0.9679296274553046,
+    3.0,
+    13.499999999999998
+   ],
+   "throttled_dominates_R4": true,
+   "time_s": 30
+  },
+  {
+   "condition": "sites_equal_initial_oxygen",
+   "flows_bitwise_equal": true,
+   "grid_R4_objectives": [
+    0.17297654051148223,
+    0.017271667880007932,
+    12.0,
+    3.5999999999999996
+   ],
+   "states_bitwise_identical": true,
+   "throttled_R0_caps_3kPa_3.2mW_objectives": [
+    0.17297654051148223,
+    0.017271667880007932,
+    3.0,
+    0.8999999999999999
+   ],
+   "throttled_dominates_R4": true,
+   "time_s": 2
+  },
+  {
+   "condition": "sites_equal_initial_oxygen",
+   "flows_bitwise_equal": true,
+   "grid_R4_objectives": [
+    0.20042398770640993,
+    0.14270612720509507,
+    12.0,
+    18.0
+   ],
+   "states_bitwise_identical": true,
+   "throttled_R0_caps_3kPa_3.2mW_objectives": [
+    0.20042398770640993,
+    0.14270612720509507,
+    3.0,
+    4.5
+   ],
+   "throttled_dominates_R4": true,
+   "time_s": 10
+  },
+  {
+   "condition": "sites_equal_initial_oxygen",
+   "flows_bitwise_equal": true,
+   "grid_R4_objectives": [
+    0.1719874644937855,
+    0.4389673086708728,
+    12.0,
+    53.99999999999999
+   ],
+   "states_bitwise_identical": true,
+   "throttled_R0_caps_3kPa_3.2mW_objectives": [
+    0.1719874644937855,
+    0.4389673086708728,
+    3.0,
+    13.499999999999998
+   ],
+   "throttled_dominates_R4": true,
+   "time_s": 30
+  }
+ ],
+ "within_resistance_distal_differences": {
+  "sites_equal_initial_oxygen|R1|T10": -0.2436772576596011,
+  "sites_equal_initial_oxygen|R1|T2": -0.22349914456668443,
+  "sites_equal_initial_oxygen|R1|T30": -0.14651119760883768,
+  "sites_equal_initial_oxygen|R2|T10": -0.23351310555149396,
+  "sites_equal_initial_oxygen|R2|T2": -0.22041676090497625,
+  "sites_equal_initial_oxygen|R2|T30": -0.14270554152096598,
+  "sites_equal_initial_oxygen|R4|T10": -0.19956869807008096,
+  "sites_equal_initial_oxygen|R4|T2": -0.21805485687948242,
+  "sites_equal_initial_oxygen|R4|T30": -0.13004514674303969,
+  "sites_same_initial_free|R1|T10": 0.028288343975738095,
+  "sites_same_initial_free|R1|T2": 0.008133429064445197,
+  "sites_same_initial_free|R1|T30": 0.054871018243413006,
+  "sites_same_initial_free|R2|T10": 0.0305920213303168,
+  "sites_same_initial_free|R2|T2": 0.008739027173895242,
+  "sites_same_initial_free|R2|T30": 0.055090099534504,
+  "sites_same_initial_free|R4|T10": 0.03934911469304436,
+  "sites_same_initial_free|R4|T2": 0.009216938656337437,
+  "sites_same_initial_free|R4|T30": 0.05704291880835427
+ }
+}

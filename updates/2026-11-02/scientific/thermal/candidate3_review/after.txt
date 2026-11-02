@@ -1,0 +1,33 @@
+
+receipt: code=red-sandbox/work/c3/fable_thermal/candidate3/thermal_contract.py code_sha256=1de0ba9f648a678e03e2df91e67d0391e4bf7fd7cdfa1acb3ee8b1ef9535ba46
+receipt: test_sha256=72e10638a5ab902cb2f1f337e586f9722f961f0d4f15e801c59ee32f822be56b sample_plan_sha256=25c31407b611f2bc4401e9b74ad586b5b2b5589966512a4c2b9011e055f1e9a4 python=3.13.18
+test_CE1_cross_check_unavailable_not_false (candidate3.test_candidate3.Candidate3MustFailBefore.test_CE1_cross_check_unavailable_not_false)
+before: checks['gauss_vs_closed_form_inverse'] is False on a correct closed form. ... ok
+test_CE3_subnormal_hA_rejected_not_reclassified (candidate3.test_candidate3.Candidate3MustFailBefore.test_CE3_subnormal_hA_rejected_not_reclassified)
+before (Red receipt): rc 0, output written, case silently solved as front path absent. ... ok
+test_guard_threshold_tracks_agreement_tolerance (candidate3.test_candidate3.Candidate3MustFailBefore.test_guard_threshold_tracks_agreement_tolerance)
+before: the tol = 1e-9 and tol = 1.0 legs report False / True instead of None. ... ok
+test_hA_overflow_rejected (candidate3.test_candidate3.Candidate3MustFailBefore.test_hA_overflow_rejected)
+before: admitted; R_conv would be exactly 0.0 (h*A = inf). ... ok
+test_hA_underflow_to_zero_is_ConfigError_everywhere (candidate3.test_candidate3.Candidate3MustFailBefore.test_hA_underflow_to_zero_is_ConfigError_everywhere)
+before: validate_config admits h = 5e-324; resolve_parameters admits it; assembly raises ... ok
+test_h_range_bounds_checked_at_validation (candidate3.test_candidate3.Candidate3MustFailBefore.test_h_range_bounds_checked_at_validation)
+before: a subnormal lower h range bound is admitted and runs the C_h_lo / D_h_lo conditions ... ok
+test_h_zero_remains_absent_front_path_limit (candidate3.test_candidate3.Candidate3MustFailBefore.test_h_zero_remains_absent_front_path_limit)
+before: AttributeError (helper absent).  Also asserts the in-domain arithmetic is unchanged. ... ok
+test_header_names_patch_base_hash (candidate3.test_candidate3.Candidate3MustFailBefore.test_header_names_patch_base_hash)
+before: the candidate 2 file does not name its own hash. ... ok
+test_sample_plan_never_triggers_guard (candidate3.test_candidate3.Candidate3MustFailBefore.test_sample_plan_never_triggers_guard)
+before: AttributeError / KeyError.  Static expectation: max amplification ~55 in the sample. ... ok
+test_solution_reports_pivot_amplification (candidate3.test_candidate3.Candidate3MustFailBefore.test_solution_reports_pivot_amplification)
+before: KeyError 'gauss_amplification'. ... ok
+test_validator_notes_and_messages (candidate3.test_candidate3.Candidate3MustFailBefore.test_validator_notes_and_messages)
+before: AttributeError VALIDATOR_NOTES; film message has no note name. ... ok
+test_candidate2_regressions_still_hold (candidate3.test_candidate3.RegressionControls.test_candidate2_regressions_still_hold) ... ok
+test_sample_validates_runs_and_all_checks_hold (candidate3.test_candidate3.RegressionControls.test_sample_validates_runs_and_all_checks_hold) ... ok
+test_well_conditioned_cross_check_is_computed_and_true (candidate3.test_candidate3.RegressionControls.test_well_conditioned_cross_check_is_computed_and_true) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.027s
+
+OK

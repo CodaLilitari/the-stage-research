@@ -1,0 +1,18 @@
+Request firstleaf-oracle-001 (wave7-red-broad; model Claude Fable 5.1; header HEADER_04f46f5820f2.txt)
+
+TASK firstleaf-oracle-001
+First Leaf is a turn-based behavioural trial in which a model must move a 2-D point body to a target while learning what four opaque action labels do, from delayed, noisy, possibly repeated samples, with a mapping that may change. To interpret any model's performance, The Stage needs a principled ORACLE BASELINE that uses only the public packet (never private_state.json, fixtures or simulator internals at run time).
+
+Deliver: (a) the identification problem stated formally from the public packet contents (velocity retention 0.75, step 0.1, sample source episode/tick vs delivery, repeated samples not counted as new evidence, receipts as ground truth of what was committed); (b) a Bayesian or least-squares action-effect estimator with change detection for mapping changes, and a decision rule (e.g. information-gain-then-exploit or a certainty-equivalent controller with explicit exploration) - justify optimality claims or state them as heuristics; (c) a standard-library agent that consumes public packets and emits exactly one request object per turn in the protocol's request_template, plus an operator harness that drives first_leaf.py/relay.py end-to-end in a temp directory; (d) metrics and a scoring protocol for comparing candidate models against the oracle and a random baseline (episodes, seeds, confidence intervals over seeds, what counts as a fair comparison); (e) unittests. Respect the MIT licence and credit lines in the sources.
+
+SOURCE BUNDLE (labels and sha256 of the verbatim sources appended to the request; contents not repeated here)
+- original src/first_leaf.py (MIT) | validation/gateway_repair/original/src/first_leaf.py | sha256=2306148b46490fae74dc49fc31e1161f76e64bf902d836276c2dfd9565645515
+- protocol.json | validation/gateway_repair/original/inputs/protocol.json | sha256=d3224dbb752eba3368c0a1569eb733d7a59fb9a3bf1929fdbb1810f9ae9cf382
+- README.md | validation/gateway_repair/original/README.md | sha256=91b40cde51426aec499e8c703c08297928501dded8255ce7862da833526cd22f
+- MODEL_BRIEF.md | validation/gateway_repair/original/docs/MODEL_BRIEF.md | sha256=9a93b21224ea6f134bbe429947906abfdfd9f1bf92792ac2bd79458edbad04b0
+- COVERAGE_AND_ATTRIBUTION.md | validation/gateway_repair/original/docs/COVERAGE_AND_ATTRIBUTION.md | sha256=cd03ce62d44c62c2bb33a274d9b8ec9a9e1cc978c683c0332f5fbf7dec90c8b3
+- tests/test_stage.py | validation/gateway_repair/original/tests/test_stage.py | sha256=fdf06906ce3b1058ecc23f2f00eb321988c9f487553ade59aa8c6df82c961c59
+- tests/test_relay.py | validation/gateway_repair/original/tests/test_relay.py | sha256=b4ea09e1d72925b92a5d9251e7259b2b8338ecc43683b09ad76ffa81e7b27b71
+- MIT LICENSE | validation/gateway_repair/LICENSE | sha256=bec5a38ecd3eb15627abb7e6888ec1cea25c4993b3de8fc80cab8f69828eb778
+- original src/interface.py (MIT) | validation/gateway_repair/original/src/interface.py | sha256=4ca89c83f1996a3ba67f231f081ff55b93e583338ded48a99eca162e7d06caa9
+- original src/relay.py (MIT) | validation/gateway_repair/original/src/relay.py | sha256=c0910ef2c16376b57bf098e374f7e7e95d521493b0d4685f8def00834742c145

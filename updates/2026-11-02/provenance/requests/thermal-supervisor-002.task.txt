@@ -1,0 +1,15 @@
+Request thermal-supervisor-002 (wave10-resends; model Claude Fable 5.1; header HEADER_a74a3d6d23e7.txt)
+
+TASK thermal-supervisor-001
+Design and implement a failure-aware SUPERVISORY thermal-protection layer for the nonliving reference panel, using Coda's executed two-node model (rc_transient.py) as the plant. Scope is the observability/control coupling raised by fault cases F3/F4 in the appended task section: a frozen sensor need not announce its own failure, and a 45 C trip on a failed sensor protects nothing. Treat 40 C surface / 60 C internal as arbitrary study comparators only.
+
+Deliver: (a) a formal state machine (states, guards, latched faults, no automatic restart) using only signals a real panel could plausibly observe in this model: reported sensor temperature at 1 s samples, commanded body power, elapsed time, and optionally an assumed independent second sensor whose cost you must state; (b) residual-based fault detection using the plant model (predicted vs reported sensor temperature) with explicit detection-delay and false-alarm analysis under assumed measurement noise and parameter uncertainty (state the assumed ranges); prove or disprove detectability of rear-path loss and sensor freeze from these signals; (c) a standard-library simulator harness with deterministic fault injection (rear loss at arbitrary time, sensor freeze/bias/dropout, delayed actuator response) and a predeclared scenario matrix of at most 60 runs across H1/H2/H3; (d) unittests including counterexamples where any controller using only the reported sensor must fail; (e) a short statement of what the scheme can and cannot guarantee. No hardware recommendations, no biological claims.
+
+SOURCE BUNDLE (labels and sha256 of the verbatim sources appended to the request; contents not repeated here)
+- two-node transient report (Coda, executed) | validation/thermal_transient/REPORT.md | sha256=86f9b6107dc2e62b9e497454924c3463230bc96ba9495ab0bdc2baa24d6b25a6
+- two-node transient predeclaration | validation/thermal_transient/PREDECLARED.md | sha256=29404fc56e956a0053c992c0a9b96db9dae58ff7c057f1354a19cde40e9310be
+- rc_transient.py (Coda two-node model) | validation/thermal_transient/rc_transient.py | sha256=94ff435da55d2bccef769197d534e735e5813612a3275a829f703f05b5db6e0b
+- test_rc_transient.py | validation/thermal_transient/test_rc_transient.py | sha256=6a6c1bd14729a5d412505d43b7affcb505928a929dea20ba639112d8bbf9d626
+- steady reference report | validation/thermal/REPORT.md | sha256=3434476c4187acffcd731cfa20783de54d205dd281fbcfdbae8cc0ddc9df65c2
+- T0-HYP-1 contract excerpt (verbatim from Coda's prepared packet thermal-transient-faults.txt) | excerpt of packets/thermal-transient-faults.txt | sha256=2bec6924ef87945bec5f156bf15fb1f6c14d9102df62676e2145fe68b4df0f64
+- THERMAL-TRANSIENT-FAULTS task section (verbatim from Coda's prepared packet) | excerpt of packets/thermal-transient-faults.txt | sha256=88fd32e5f6d1f8e1a9296c546791361695aed28b9e481e93501d173b97d54625

@@ -1,0 +1,12 @@
+Request release-observability-review-003 (wave11-followups-b; model Claude Fable 5.1; header HEADER_a12f72162d0b.txt)
+
+TASK release-observability-review-003
+A Claude instance wrote a predeclared synthetic measurement study for the AB-LFR1 linear release model (answer, code and tests appended); Red executed it in an isolated sandbox: 12/12 unittests pass and the study ran in 1.16 s with 9/9 predeclared predictions PASS (full stdout appended). Act as an adversarial reviewer of the study, not its author: (1) are any predictions tautological given how the code computes them, or too loose to fail; (2) do the Monte-Carlo checks (P6) depend on the seed or replicate count, and what would a stronger test be; (3) check the noise model, grids and decision criteria for hidden choices that favour the predicted outcomes; (4) propose up to three additional predeclared predictions that could actually fail, with code changes as minimal diffs plus tests. This is a synthetic model-on-model study; no empirical or biological claims.
+
+SOURCE BUNDLE (labels and sha256 of the verbatim sources appended to the request; contents not repeated here)
+- study author answer (wave 9) | Documents--CodexScratch/stage-red-20261102/batches/wave9-followups-a/release-observability-002b.answer.md | sha256=cb0b4eb991fa22ee4a64ca76c20087cae95b02cf9452c5a17c6fcef8c12617a2
+- release_model.py | red-sandbox/work/relobs/release_model.py | sha256=2ea455389682b309d7822446a97c8db07c1b8dce6ee29b29794fabaacb33cdc3
+- release_study.py | red-sandbox/work/relobs/release_study.py | sha256=9c70462aeba833cc708d7495ac04c7a8bff6bbfd0bcc4b5ca196d8634a0da396
+- test_release_study.py | red-sandbox/work/relobs/test_release_study.py | sha256=13856cb832094ffcd9b605eb2af7eaf48e8642632cf9fb066dec12d18f1727cc
+- Red receipt: study stdout | red-sandbox/work/relobs/study.txt | sha256=889b8e53c1769bba343531c172e934a4f2cd6a76e593e7129f131fb45579d0bd
+- Red receipt: unittest output | red-sandbox/work/relobs/tests.txt | sha256=2cf78e74fb9908b78eefc024b4cb328f01cd5d5b6784a5d6b6f356ebcd271a2f

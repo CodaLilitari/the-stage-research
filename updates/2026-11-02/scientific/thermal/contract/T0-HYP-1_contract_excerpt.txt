@@ -1,0 +1,29 @@
+SHARED SYNTHETIC REFERENCE CONTRACT, VERSION T0-HYP-1
+Use this same reference in the three packets. Identify any mathematical defect before proposing a labelled amendment; do not silently change the common baseline.
+
+Geometry: square panel 0.100 m by 0.100 m; area A=0.0100 m2. One-dimensional through-thickness conduction, full-area layers and adiabatic side edges. No in-plane spreading, curvature, seam bridges, radiation or contacting human are represented in the baseline. These omissions delimit the question; they are not evidence those effects are negligible in hardware.
+
+Order from outside ambient toward internal heat node H: outer reference silicone; film containing an idealized uniformly distributed sensor power sheet at its middle; inner reference silicone; internal node H. The film is bare nominal polyimide, not an entire populated flexible circuit. Its metal traces, components and wiring are unmodeled. The sensor sheet is an explicit heat source with zero added thickness/mass beyond the film, a simplifying assumption.
+
+Three hypothetical stacks use identical materials and differ only in declared silicone thickness:
+H1: outer 0.5 mm; film 0.050 mm; inner 0.5 mm.
+H2: outer 1.0 mm; film 0.050 mm; inner 1.0 mm.
+H3: outer 2.0 mm; film 0.050 mm; inner 2.0 mm.
+These are computational references, not products, medical devices, recommended fabrication recipes or engineering-selected assemblies. They do not demonstrate equivalent tactile, barrier or mechanical performance.
+
+Nominal silicone k=0.27 W/(m K). Nominal film k=0.20 W/(m K). For sensitivity use shared silicone k in [0.18,0.35] and shared film k in [0.12,0.25] W/(m K), explicitly assumed domains. Choose one common k for all layers of the same material in each case; do not manufacture independent samples from repeated use of the same reference value. Thickness perturbations, if requested, are assumed +/-10 percent; distinguish common manufacturing bias from independent layer deviations.
+
+Each silicone-to-film interface has nominal areal thermal contact resistance r_c=2.0e-4 m2 K/W. Convert to total R_c=r_c/A K/W. Use assumed r_c in [0,2.0e-3] m2 K/W for sensitivity, with the same value at both interfaces unless a localized fault explicitly changes one. Internal-node-to-inner-silicone attachment is ideal in this reference and must be listed as an omitted uncertainty, not silently incorporated into r_c.
+
+Nominal room and named rear reservoir temperatures: T_amb=T_res=25 C. Outer boundary: heat exchange to ambient by assumed h=8 W/(m2 K), giving total conductance h*A. Sensitivity h in [3,15]. No radiation in baseline; any radiation extension is a separate case and uses absolute Kelvin. Never call an assumed convection coefficient measured or derived from a specified airflow.
+
+The named rear heat-rejection path connects internal node H to an external isothermal reservoir through finite R_rej=2 K/W, independently of the front panel. Study R_rej in [1,10] K/W and the explicitly blocked case R_rej=infinity, implemented as zero rear conductance. The reservoir is an ideal boundary, not a validated onboard radiator: calculate and report its heat demand and declare its unmodeled energy, mass and environmental coupling. Do not pretend that finite R_rej by itself guarantees achievable rejection capacity. An optional capacity cap requires a separately specified piecewise law.
+
+Body dissipation P_body is deposited at H. Use comparison values [1,5,10] W, held identical across stacks. Sensor dissipation P_sensor=0.10 W is deposited at the film midplane; include it exactly once in all balances. Steady baseline sources are constant, independent of temperature. Neither internal temperature nor heat split is imposed. Solve them. Do not assign all body power to the front while simultaneously assigning the same power to the rear.
+
+The 40 C outer-surface and 60 C internal-node temperatures are arbitrary study comparators, not asserted safe human-contact or component limits. Report both numerical margins, with labels study_comparator_only. The baseline does not represent a human touching the surface, exposure duration, thermal effusivity of a contacting body, pain, burn injury or medical safety. No standard has been applied to establish these comparator values.
+
+For a steady two-node reduction let S be the sensor midplane temperature. R_HS contains inner silicone, half the film and the inner silicone-film contact. R_SA contains the other half of the film, outer silicone, outer contact and ambient convection. The outer surface temperature is not generally S; recover it from front heat flux and convection. The internal node has its rear branch to T_res. Preserve signs if a reservoir warms the assembly rather than cooling it.
+
+Allowed study acceptance: units and energy balances close; analytic and numerical formulations agree; all stacks use identical exogenous conditions; boundaries and property provenance are explicit; failure cases and unknowns are retained. A stack meeting these numerical comparators is a conditional model result. A stack failing, or missing evidence preventing a physical decision, is an equally legitimate outcome.
+

@@ -1,0 +1,348 @@
+revised kernel under test: red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/site0.py
+test_site0 loaded from red-sandbox/work/w13/site0_frozen/test_site0.py; binds site0 -> no module-level site0 attribute
+test_later_regression loaded from red-sandbox/work/w13/site0_frozen/test_later_regression.py; binds site0 -> no module-level site0 attribute
+test_site0_repair_audit loaded from red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py; binds site0 -> red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/site0.py
+----------------------------------------------------------------------
+Ran 24 tests in 0.034s
+
+OK
+======================================================================
+ERROR: test_rational_root_witnesses_match_exact_equilibria (test_site0_repair_audit.RepairAudit.test_rational_root_witnesses_match_exact_equilibria) (m=1e-300, y=0.2, koff=5e-302)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 434, in test_rational_root_witnesses_match_exact_equilibria
+    late = Vessel(1, m, m, 1, koff).at(0, 1000 * relaxation_time(1, m, m, 1, koff))
+                                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 213, in relaxation_time
+    return 1 / (a * delta)
+           ~~^~~~~~~~~~~~~
+ZeroDivisionError: float division by zero
+
+======================================================================
+FAIL: test_cancelling_complement_mutant_is_detected_by_unequal_witness (test_site0_repair_audit.RepairAudit.test_cancelling_complement_mutant_is_detected_by_unequal_witness)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 518, in test_cancelling_complement_mutant_is_detected_by_unequal_witness
+    self.assert_rel(Vessel(1, 1, 2, 1, 1e-200).at(1, 1).free_umol, expected)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 316, in assert_rel
+    self.assertTrue(math.isclose(actual, expected, rel_tol=rel, abs_tol=0),
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    (note, actual, expected,
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+                     actual / expected if expected else None))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : (None, 0.0, 6.321205588285577e-201, 0.0)
+
+======================================================================
+FAIL: test_equilibrium_tiny_components_are_relatively_accurate (test_site0_repair_audit.RepairAudit.test_equilibrium_tiny_components_are_relatively_accurate) (params=(1, 1, 2, 1, 1e-200))
+Wave 11: the wave-10 version compared with a transient at t = 1e9,
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 456, in test_equilibrium_tiny_components_are_relatively_accurate
+    self.assert_state_close(eq, reference_equilibrium(*params), REL)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 327, in assert_state_close
+    self.assert_rel(actual, want, rel, (note, field))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 316, in assert_rel
+    self.assertTrue(math.isclose(actual, expected, rel_tol=rel, abs_tol=0),
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    (note, actual, expected,
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+                     actual / expected if expected else None))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : ((None, 'free'), 0.0, 1e-200, 0.0)
+
+======================================================================
+FAIL: test_equilibrium_tiny_components_are_relatively_accurate (test_site0_repair_audit.RepairAudit.test_equilibrium_tiny_components_are_relatively_accurate) (params=(1, 2, 1, 1, 1e-200))
+Wave 11: the wave-10 version compared with a transient at t = 1e9,
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 456, in test_equilibrium_tiny_components_are_relatively_accurate
+    self.assert_state_close(eq, reference_equilibrium(*params), REL)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 327, in assert_state_close
+    self.assert_rel(actual, want, rel, (note, field))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 316, in assert_rel
+    self.assertTrue(math.isclose(actual, expected, rel_tol=rel, abs_tol=0),
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    (note, actual, expected,
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+                     actual / expected if expected else None))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : ((None, 'empty'), 0.0, 1e-200, 0.0)
+
+======================================================================
+FAIL: test_equilibrium_tiny_components_are_relatively_accurate (test_site0_repair_audit.RepairAudit.test_equilibrium_tiny_components_are_relatively_accurate)
+Wave 11: the wave-10 version compared with a transient at t = 1e9,
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 461, in test_equilibrium_tiny_components_are_relatively_accurate
+    self.assert_rel(Vessel(1, 1, 2, 1, 1e-200).equilibrium().free_umol, 1e-200)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 316, in assert_rel
+    self.assertTrue(math.isclose(actual, expected, rel_tol=rel, abs_tol=0),
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    (note, actual, expected,
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+                     actual / expected if expected else None))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : (None, 0.0, 1e-200, 0.0)
+
+======================================================================
+FAIL: test_extreme_scales_conserve_and_stay_in_interval (test_site0_repair_audit.RepairAudit.test_extreme_scales_conserve_and_stay_in_interval) (params=(1e+300, 1e-300, 1e-300, 1e-300, 1e+300), b0=1e-300, t=1e+300)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 491, in test_extreme_scales_conserve_and_stay_in_interval
+    self.assert_physical(params, r)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 334, in assert_physical
+    self.assertTrue(within_ulps(result.free_umol + result.bound_umol, m),
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    (params, result))
+                    ^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : ((1e+300, 1e-300, 1e-300, 1e-300, 1e+300), Amounts(free_umol=0.0, bound_umol=0.0, empty_umol=0.0))
+
+======================================================================
+FAIL: test_extreme_scales_conserve_and_stay_in_interval (test_site0_repair_audit.RepairAudit.test_extreme_scales_conserve_and_stay_in_interval) (params=(1, 1, 1, 1e-300, 1), b0=0, t=1e+300)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 491, in test_extreme_scales_conserve_and_stay_in_interval
+    self.assert_physical(params, r)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 334, in assert_physical
+    self.assertTrue(within_ulps(result.free_umol + result.bound_umol, m),
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    (params, result))
+                    ^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : ((1, 1, 1, 1e-300, 1), Amounts(free_umol=0.0, bound_umol=1e-300, empty_umol=0.0))
+
+======================================================================
+FAIL: test_huge_release_ratio_limits_match_asymptotics (test_site0_repair_audit.RepairAudit.test_huge_release_ratio_limits_match_asymptotics)
+Wave 11: the two EXTREMES witnesses the wave-10 naive reference got
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 500, in test_huge_release_ratio_limits_match_asymptotics
+    self.assert_state_close(r, (1e-300, 0.0, 1e-300), 1e-15)   # B_eq ~ 1e-1500
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 327, in assert_state_close
+    self.assert_rel(actual, want, rel, (note, field))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 316, in assert_rel
+    self.assertTrue(math.isclose(actual, expected, rel_tol=rel, abs_tol=0),
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    (note, actual, expected,
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+                     actual / expected if expected else None))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : ((None, 'free'), 0.0, 1e-300, 0.0)
+
+======================================================================
+FAIL: test_rational_root_witnesses_match_exact_equilibria (test_site0_repair_audit.RepairAudit.test_rational_root_witnesses_match_exact_equilibria) (m=1e+300, y=0.8, koff=3.2e+300)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 435, in test_rational_root_witnesses_match_exact_equilibria
+    self.assert_rel(late.free_umol, complement, 1e-13)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 316, in assert_rel
+    self.assertTrue(math.isclose(actual, expected, rel_tol=rel, abs_tol=0),
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    (note, actual, expected,
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+                     actual / expected if expected else None))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : (None, 1e+300, 8e+299, 1.25)
+
+======================================================================
+FAIL: test_rational_root_witnesses_match_exact_equilibria (test_site0_repair_audit.RepairAudit.test_rational_root_witnesses_match_exact_equilibria) (m=1e+300, y=0.998, koff=4.98002e+302)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 435, in test_rational_root_witnesses_match_exact_equilibria
+    self.assert_rel(late.free_umol, complement, 1e-13)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 316, in assert_rel
+    self.assertTrue(math.isclose(actual, expected, rel_tol=rel, abs_tol=0),
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    (note, actual, expected,
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+                     actual / expected if expected else None))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : (None, 1e+300, 9.98e+299, 1.0020040080160322)
+
+======================================================================
+FAIL: test_saturated_tiny_time_matches_second_order_series (test_site0_repair_audit.RepairAudit.test_saturated_tiny_time_matches_second_order_series) (params=(1, 1, 2, 1, 1e-200))
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 414, in test_saturated_tiny_time_matches_second_order_series
+    self.assert_rel(r.free_umol, saturated_free_series(*params, t), 1e-13)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 316, in assert_rel
+    self.assertTrue(math.isclose(actual, expected, rel_tol=rel, abs_tol=0),
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    (note, actual, expected,
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+                     actual / expected if expected else None))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : (None, 0.0, 9.999999950000002e-209, 0.0)
+
+======================================================================
+FAIL: test_unequal_inventory_saturated_tiny_release (test_site0_repair_audit.RepairAudit.test_unequal_inventory_saturated_tiny_release) (params=(1, 1, 2, 1, 1e-200), t=1e-08)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 404, in test_unequal_inventory_saturated_tiny_release
+    self.assert_state_close(r, reference_state(*params, b0, t), REL)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 327, in assert_state_close
+    self.assert_rel(actual, want, rel, (note, field))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 316, in assert_rel
+    self.assertTrue(math.isclose(actual, expected, rel_tol=rel, abs_tol=0),
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    (note, actual, expected,
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+                     actual / expected if expected else None))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : ((None, 'free'), 0.0, 9.99999995e-209, 0.0)
+
+======================================================================
+FAIL: test_unequal_inventory_saturated_tiny_release (test_site0_repair_audit.RepairAudit.test_unequal_inventory_saturated_tiny_release) (params=(1, 1, 2, 1, 1e-200), t=1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 404, in test_unequal_inventory_saturated_tiny_release
+    self.assert_state_close(r, reference_state(*params, b0, t), REL)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 327, in assert_state_close
+    self.assert_rel(actual, want, rel, (note, field))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 316, in assert_rel
+    self.assertTrue(math.isclose(actual, expected, rel_tol=rel, abs_tol=0),
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    (note, actual, expected,
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+                     actual / expected if expected else None))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : ((None, 'free'), 0.0, 6.321205588285577e-201, 0.0)
+
+======================================================================
+FAIL: test_unequal_inventory_saturated_tiny_release (test_site0_repair_audit.RepairAudit.test_unequal_inventory_saturated_tiny_release) (params=(1, 1, 2, 1, 1e-200), t=1000.0)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 404, in test_unequal_inventory_saturated_tiny_release
+    self.assert_state_close(r, reference_state(*params, b0, t), REL)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 327, in assert_state_close
+    self.assert_rel(actual, want, rel, (note, field))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 316, in assert_rel
+    self.assertTrue(math.isclose(actual, expected, rel_tol=rel, abs_tol=0),
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    (note, actual, expected,
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+                     actual / expected if expected else None))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : ((None, 'free'), 0.0, 1e-200, 0.0)
+
+======================================================================
+FAIL: test_unequal_inventory_saturated_tiny_release (test_site0_repair_audit.RepairAudit.test_unequal_inventory_saturated_tiny_release) (params=(1, 2, 1, 1, 1e-200), t=1e-08)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 404, in test_unequal_inventory_saturated_tiny_release
+    self.assert_state_close(r, reference_state(*params, b0, t), REL)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 327, in assert_state_close
+    self.assert_rel(actual, want, rel, (note, field))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 316, in assert_rel
+    self.assertTrue(math.isclose(actual, expected, rel_tol=rel, abs_tol=0),
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    (note, actual, expected,
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+                     actual / expected if expected else None))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : ((None, 'empty'), 0.0, 9.99999995e-209, 0.0)
+
+======================================================================
+FAIL: test_unequal_inventory_saturated_tiny_release (test_site0_repair_audit.RepairAudit.test_unequal_inventory_saturated_tiny_release) (params=(1, 2, 1, 1, 1e-200), t=1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 404, in test_unequal_inventory_saturated_tiny_release
+    self.assert_state_close(r, reference_state(*params, b0, t), REL)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 327, in assert_state_close
+    self.assert_rel(actual, want, rel, (note, field))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 316, in assert_rel
+    self.assertTrue(math.isclose(actual, expected, rel_tol=rel, abs_tol=0),
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    (note, actual, expected,
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+                     actual / expected if expected else None))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : ((None, 'empty'), 0.0, 6.321205588285577e-201, 0.0)
+
+======================================================================
+FAIL: test_unequal_inventory_saturated_tiny_release (test_site0_repair_audit.RepairAudit.test_unequal_inventory_saturated_tiny_release) (params=(1, 2, 1, 1, 1e-200), t=1000.0)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 404, in test_unequal_inventory_saturated_tiny_release
+    self.assert_state_close(r, reference_state(*params, b0, t), REL)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 327, in assert_state_close
+    self.assert_rel(actual, want, rel, (note, field))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 316, in assert_rel
+    self.assertTrue(math.isclose(actual, expected, rel_tol=rel, abs_tol=0),
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    (note, actual, expected,
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+                     actual / expected if expected else None))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : ((None, 'empty'), 0.0, 1e-200, 0.0)
+
+======================================================================
+FAIL: test_unequal_inventory_saturated_tiny_release (test_site0_repair_audit.RepairAudit.test_unequal_inventory_saturated_tiny_release) (params=(4, 2, 3, 1, 1e-150), t=0.5)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 404, in test_unequal_inventory_saturated_tiny_release
+    self.assert_state_close(r, reference_state(*params, b0, t), REL)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 327, in assert_state_close
+    self.assert_rel(actual, want, rel, (note, field))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 316, in assert_rel
+    self.assertTrue(math.isclose(actual, expected, rel_tol=rel, abs_tol=0),
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    (note, actual, expected,
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+                     actual / expected if expected else None))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : ((None, 'free'), 0.0, 9.400247793232368e-151, 0.0)
+
+======================================================================
+FAIL: test_unequal_inventory_saturated_tiny_release (test_site0_repair_audit.RepairAudit.test_unequal_inventory_saturated_tiny_release) (params=(4, 2, 3, 1, 1e-150), t=3)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 404, in test_unequal_inventory_saturated_tiny_release
+    self.assert_state_close(r, reference_state(*params, b0, t), REL)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 327, in assert_state_close
+    self.assert_rel(actual, want, rel, (note, field))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "red-sandbox/work/w10/site0-repair-audit-002/validation/site0/revised_v1/test_site0_repair_audit.py", line 316, in assert_rel
+    self.assertTrue(math.isclose(actual, expected, rel_tol=rel, abs_tol=0),
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    (note, actual, expected,
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+                     actual / expected if expected else None))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : ((None, 'free'), 0.0, 4.221067578071882e-150, 0.0)
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.079s
+
+FAILED (failures=18, errors=1)
+audit module under mutant (run, failures, errors, skipped): (17, 18, 1, 0)
+frozen suites under mutant (run, failures, errors, skipped): (24, 0, 0, 0)
+frozen-suite blindness: BLIND (no failure or error under mutant)

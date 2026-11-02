@@ -1,0 +1,12 @@
+--- revised_v1/site0.py
++++ revised_v2/site0.py
+@@ -120,7 +120,8 @@
+             q = (f0+e0+rho+d)/(2*d)
+             equilibrium_weight = q*h
+             denominator = w+equilibrium_weight
+-            if q < 0 or denominator <= 0:
++            # q = (Bplus-B0)/d >= 1/2 exactly; 0.49 leaves rounding margin.
++            if q < Decimal('0.49') or denominator <= 0:
+                 raise ArithmeticError('Invalid analytical interpolation weights')
+             return _amounts((f0*w+feq*equilibrium_weight)/denominator,
+                             (b0*w+beq*equilibrium_weight)/denominator,

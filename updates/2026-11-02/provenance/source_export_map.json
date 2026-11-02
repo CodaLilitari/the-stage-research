@@ -1,0 +1,4027 @@
+{
+ "status": "Public copies of Red run 2026-11-02 executed trees; sanitized paths/identifiers only; no result recomputed for publication",
+ "files": [
+  {
+   "path": "ATTRIBUTION.md",
+   "group": "red_document",
+   "author": "Red (Claude Cowork); Richard Pemberton, project direction",
+   "source": null,
+   "original_sha256": "d46eeab10976627111037f669bf8f60d18395ad2191b62c63a39eef08d08943d",
+   "export_sha256": "d46eeab10976627111037f669bf8f60d18395ad2191b62c63a39eef08d08943d",
+   "export_bytes": 2544,
+   "changes": []
+  },
+  {
+   "path": "INCLUDE_EXCLUDE.md",
+   "group": "red_document",
+   "author": "Red (Claude Cowork); Richard Pemberton, project direction",
+   "source": null,
+   "original_sha256": "9232cba4a6c3eef8d20b4d2cfe443d67e0a0e672d253bdd22ab47952f55d7d54",
+   "export_sha256": "9232cba4a6c3eef8d20b4d2cfe443d67e0a0e672d253bdd22ab47952f55d7d54",
+   "export_bytes": 2787,
+   "changes": []
+  },
+  {
+   "path": "KNOWN_ISSUES.md",
+   "group": "red_document",
+   "author": "Red (Claude Cowork); Richard Pemberton, project direction",
+   "source": null,
+   "original_sha256": "92ec7fb731bce52b4efd50d5c0b3b76a17aff15aa4cad702fc03dd3955df0c3d",
+   "export_sha256": "92ec7fb731bce52b4efd50d5c0b3b76a17aff15aa4cad702fc03dd3955df0c3d",
+   "export_bytes": 3584,
+   "changes": []
+  },
+  {
+   "path": "PROCESS_NOTES.md",
+   "group": "red_document",
+   "author": "Red (Claude Cowork); Richard Pemberton, project direction",
+   "source": null,
+   "original_sha256": "4ec8e0ba1a15ec5c155c2a110aeea5382c02bf35b808116d7b1d55a4f4ee530d",
+   "export_sha256": "4ec8e0ba1a15ec5c155c2a110aeea5382c02bf35b808116d7b1d55a4f4ee530d",
+   "export_bytes": 4138,
+   "changes": []
+  },
+  {
+   "path": "README.md",
+   "group": "red_document",
+   "author": "Red (Claude Cowork); Richard Pemberton, project direction",
+   "source": null,
+   "original_sha256": "ceea8cbee3542b935b4d7a114f17b51e49013ace7a349b7854c1c489a7bd7927",
+   "export_sha256": "ceea8cbee3542b935b4d7a114f17b51e49013ace7a349b7854c1c489a7bd7927",
+   "export_bytes": 6033,
+   "changes": []
+  },
+  {
+   "path": "REPRODUCING.md",
+   "group": "red_document",
+   "author": "Red (Claude Cowork); Richard Pemberton, project direction",
+   "source": null,
+   "original_sha256": "ba5995300193e885ecdc190fbd129d37209edd2f2d21255f9ff094015449ad23",
+   "export_sha256": "ba5995300193e885ecdc190fbd129d37209edd2f2d21255f9ff094015449ad23",
+   "export_bytes": 2398,
+   "changes": []
+  },
+  {
+   "path": "REPRODUCTION_RECEIPT.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): output of tools/reproduce_check.py --long on the published layout",
+   "source": null,
+   "original_sha256": "f643c8bb0bbc28a7516e71306c5c1c7f4156c84a74f9f00b554fa36ad66484d5",
+   "export_sha256": "f643c8bb0bbc28a7516e71306c5c1c7f4156c84a74f9f00b554fa36ad66484d5",
+   "export_bytes": 2629,
+   "changes": []
+  },
+  {
+   "path": "RESULTS.md",
+   "group": "red_document",
+   "author": "Red (Claude Cowork); Richard Pemberton, project direction",
+   "source": null,
+   "original_sha256": "a2ffb5739e71ac301d539790cda6abd7c05309433125abc2a5418b78e28e5603",
+   "export_sha256": "a2ffb5739e71ac301d539790cda6abd7c05309433125abc2a5418b78e28e5603",
+   "export_bytes": 4299,
+   "changes": []
+  },
+  {
+   "path": "licenses/CC-BY-4.0.txt",
+   "group": "license_text",
+   "author": "Standard license text",
+   "source": null,
+   "original_sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
+   "export_sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
+   "export_bytes": 18657,
+   "changes": []
+  },
+  {
+   "path": "licenses/MIT.txt",
+   "group": "license_text",
+   "author": "Standard license text",
+   "source": "firstleaf-oracle-001:oracle/LICENSE",
+   "original_sha256": "0b68002633312be42d69c33f131525efd283461c1b1b2005e0d90fcaa20a41a0",
+   "export_sha256": "0b68002633312be42d69c33f131525efd283461c1b1b2005e0d90fcaa20a41a0",
+   "export_bytes": 1121,
+   "changes": []
+  },
+  {
+   "path": "provenance/requests/HEADER_01f9d8d38a52.txt",
+   "group": "red_request",
+   "author": "Red (Claude Cowork): common request header",
+   "source": null,
+   "original_sha256": "01f9d8d38a52058e8dae7c0aecae60c802b223b1ef686c623f24a41ebac58b62",
+   "export_sha256": "01f9d8d38a52058e8dae7c0aecae60c802b223b1ef686c623f24a41ebac58b62",
+   "export_bytes": 1777,
+   "changes": []
+  },
+  {
+   "path": "provenance/requests/HEADER_04f46f5820f2.txt",
+   "group": "red_request",
+   "author": "Red (Claude Cowork): common request header",
+   "source": null,
+   "original_sha256": "04f46f5820f2de72a88342d3fe3e1821300c68860e096e47f494eeb5821b2803",
+   "export_sha256": "04f46f5820f2de72a88342d3fe3e1821300c68860e096e47f494eeb5821b2803",
+   "export_bytes": 1399,
+   "changes": []
+  },
+  {
+   "path": "provenance/requests/HEADER_87b6906e0701.txt",
+   "group": "red_request",
+   "author": "Red (Claude Cowork): common request header",
+   "source": null,
+   "original_sha256": "87b6906e07017cd0371a30b140da003579f81ddd5ac3dabcd214a44660ac9d7a",
+   "export_sha256": "87b6906e07017cd0371a30b140da003579f81ddd5ac3dabcd214a44660ac9d7a",
+   "export_bytes": 1761,
+   "changes": []
+  },
+  {
+   "path": "provenance/requests/HEADER_a12f72162d0b.txt",
+   "group": "red_request",
+   "author": "Red (Claude Cowork): common request header",
+   "source": null,
+   "original_sha256": "a12f72162d0b7f2133bb43aa260c0f7eeb8e24efccc47609fcf6f7b7e8161482",
+   "export_sha256": "a12f72162d0b7f2133bb43aa260c0f7eeb8e24efccc47609fcf6f7b7e8161482",
+   "export_bytes": 1773,
+   "changes": []
+  },
+  {
+   "path": "provenance/requests/HEADER_a74a3d6d23e7.txt",
+   "group": "red_request",
+   "author": "Red (Claude Cowork): common request header",
+   "source": null,
+   "original_sha256": "a74a3d6d23e752d278d177ef7ba2cdb44368545cb40ead7a4785e78a0dd73e36",
+   "export_sha256": "a74a3d6d23e752d278d177ef7ba2cdb44368545cb40ead7a4785e78a0dd73e36",
+   "export_bytes": 2078,
+   "changes": []
+  },
+  {
+   "path": "provenance/requests/firstleaf-oracle-001.task.txt",
+   "group": "red_request",
+   "author": "Red (Claude Cowork): request statement extracted from the submitted packet",
+   "source": null,
+   "original_sha256": "4f5ebe6045068763004ddaa9a0518a4724d8a398c5892654d5c88d20f2b6b1cf",
+   "export_sha256": "4f5ebe6045068763004ddaa9a0518a4724d8a398c5892654d5c88d20f2b6b1cf",
+   "export_bytes": 3207,
+   "changes": []
+  },
+  {
+   "path": "provenance/requests/firstleaf-oracle-cont-002.task.txt",
+   "group": "red_request",
+   "author": "Red (Claude Cowork): request statement extracted from the submitted packet",
+   "source": null,
+   "original_sha256": "d44d75291ffbc90c1871cf700690d50659af670fcf97764956613035e5efa5b9",
+   "export_sha256": "d44d75291ffbc90c1871cf700690d50659af670fcf97764956613035e5efa5b9",
+   "export_bytes": 3804,
+   "changes": []
+  },
+  {
+   "path": "provenance/requests/firstleaf-oracle-fix-003.task.txt",
+   "group": "red_request",
+   "author": "Red (Claude Cowork): request statement extracted from the submitted packet",
+   "source": null,
+   "original_sha256": "37667e6f99a04448b46a027b51bb1ec430492682b8a14b024af41aa41188d8ec",
+   "export_sha256": "37667e6f99a04448b46a027b51bb1ec430492682b8a14b024af41aa41188d8ec",
+   "export_bytes": 3029,
+   "changes": []
+  },
+  {
+   "path": "provenance/requests/firstleaf-sim-audit-001.task.txt",
+   "group": "red_request",
+   "author": "Red (Claude Cowork): request statement extracted from the submitted packet",
+   "source": null,
+   "original_sha256": "852f66ea031f30d1cbb904a935f1bc216eb8b19617cfd0dc27a5feccc84eeb40",
+   "export_sha256": "852f66ea031f30d1cbb904a935f1bc216eb8b19617cfd0dc27a5feccc84eeb40",
+   "export_bytes": 3152,
+   "changes": []
+  },
+  {
+   "path": "provenance/requests/gateway-conformance-004.task.txt",
+   "group": "red_request",
+   "author": "Red (Claude Cowork): request statement extracted from the submitted packet",
+   "source": null,
+   "original_sha256": "52b36fb2ca1d009261e2fdd301412c77b25675cdf725a06a867165fd63f20a5b",
+   "export_sha256": "52b36fb2ca1d009261e2fdd301412c77b25675cdf725a06a867165fd63f20a5b",
+   "export_bytes": 2752,
+   "changes": []
+  },
+  {
+   "path": "provenance/requests/gateway-integration-003.task.txt",
+   "group": "red_request",
+   "author": "Red (Claude Cowork): request statement extracted from the submitted packet",
+   "source": null,
+   "original_sha256": "436c38928006de6e17be5b91f6472628f8fc90585a8c02e3df912d8b8aa24039",
+   "export_sha256": "436c38928006de6e17be5b91f6472628f8fc90585a8c02e3df912d8b8aa24039",
+   "export_bytes": 5638,
+   "changes": []
+  },
+  {
+   "path": "provenance/requests/gateway-lifecycle-builder-002.task.txt",
+   "group": "red_request",
+   "author": "Red (Claude Cowork): request statement extracted from the submitted packet",
+   "source": null,
+   "original_sha256": "be29a750ad43d094f5b5e37703e4065abf2850bec6ca0f2d6407598be08e5cf6",
+   "export_sha256": "be29a750ad43d094f5b5e37703e4065abf2850bec6ca0f2d6407598be08e5cf6",
+   "export_bytes": 3189,
+   "changes": []
+  },
+  {
+   "path": "provenance/requests/gateway-modelcheck-002.task.txt",
+   "group": "red_request",
+   "author": "Red (Claude Cowork): request statement extracted from the submitted packet",
+   "source": null,
+   "original_sha256": "f3284801c22532211ff9a95d399e480186751f2fe424ee0bcf623f84e741983b",
+   "export_sha256": "f3284801c22532211ff9a95d399e480186751f2fe424ee0bcf623f84e741983b",
+   "export_bytes": 3181,
+   "changes": []
+  },
+  {
+   "path": "provenance/requests/pump-matched-audit-001.task.txt",
+   "group": "red_request",
+   "author": "Red (Claude Cowork): request statement extracted from the submitted packet",
+   "source": null,
+   "original_sha256": "f8064ec9b547974f4100b8a6dd5c4ffd52c46330498f06db2bea400e294e531b",
+   "export_sha256": "f8064ec9b547974f4100b8a6dd5c4ffd52c46330498f06db2bea400e294e531b",
+   "export_bytes": 2698,
+   "changes": []
+  },
+  {
+   "path": "provenance/requests/release-observability-002b.task.txt",
+   "group": "red_request",
+   "author": "Red (Claude Cowork): request statement extracted from the submitted packet",
+   "source": null,
+   "original_sha256": "09bf391ee5960affe908b77e65249315c5c3953727e31503ef5750bb8581165b",
+   "export_sha256": "09bf391ee5960affe908b77e65249315c5c3953727e31503ef5750bb8581165b",
+   "export_bytes": 2737,
+   "changes": []
+  },
+  {
+   "path": "provenance/requests/release-observability-review-003.task.txt",
+   "group": "red_request",
+   "author": "Red (Claude Cowork): request statement extracted from the submitted packet",
+   "source": null,
+   "original_sha256": "1b7cdf6bb01f6b07c97310c0994f87abc8606cb49409e14032f81dba1d4f6013",
+   "export_sha256": "1b7cdf6bb01f6b07c97310c0994f87abc8606cb49409e14032f81dba1d4f6013",
+   "export_bytes": 2049,
+   "changes": []
+  },
+  {
+   "path": "provenance/requests/site0-repair-audit-002.task.txt",
+   "group": "red_request",
+   "author": "Red (Claude Cowork): request statement extracted from the submitted packet",
+   "source": null,
+   "original_sha256": "0bcd8134d79c78c662109bdd9a0b098a774e2c86f4d91517618c280ddcc99966",
+   "export_sha256": "0bcd8134d79c78c662109bdd9a0b098a774e2c86f4d91517618c280ddcc99966",
+   "export_bytes": 2733,
+   "changes": []
+  },
+  {
+   "path": "provenance/requests/site0-repair-audit-003.task.txt",
+   "group": "red_request",
+   "author": "Red (Claude Cowork): request statement extracted from the submitted packet",
+   "source": null,
+   "original_sha256": "c97fb69173a3af7ad612611003525a656dab497306abaa5846c762683a7df857",
+   "export_sha256": "c97fb69173a3af7ad612611003525a656dab497306abaa5846c762683a7df857",
+   "export_bytes": 1967,
+   "changes": []
+  },
+  {
+   "path": "provenance/requests/thermal-candidate3-review-001.task.txt",
+   "group": "red_request",
+   "author": "Red (Claude Cowork): request statement extracted from the submitted packet",
+   "source": null,
+   "original_sha256": "bcb40f33dd189a23d30e9564fe5865a3427e9385e9b8ff95a3db2b43acb5c2c6",
+   "export_sha256": "bcb40f33dd189a23d30e9564fe5865a3427e9385e9b8ff95a3db2b43acb5c2c6",
+   "export_bytes": 2889,
+   "changes": []
+  },
+  {
+   "path": "provenance/requests/thermal-contract-metamorphic-002.task.txt",
+   "group": "red_request",
+   "author": "Red (Claude Cowork): request statement extracted from the submitted packet",
+   "source": null,
+   "original_sha256": "d38500ae29df9311ccf0f10d551884a0b285b242dd7d2ef6566fc5c9c88544bf",
+   "export_sha256": "d38500ae29df9311ccf0f10d551884a0b285b242dd7d2ef6566fc5c9c88544bf",
+   "export_bytes": 3027,
+   "changes": []
+  },
+  {
+   "path": "provenance/requests/thermal-contract-metamorphic-cont-003.task.txt",
+   "group": "red_request",
+   "author": "Red (Claude Cowork): request statement extracted from the submitted packet",
+   "source": null,
+   "original_sha256": "603704710d1888dbf0ba71b747b2d68633407846fb794c3c592a9908297ee14f",
+   "export_sha256": "603704710d1888dbf0ba71b747b2d68633407846fb794c3c592a9908297ee14f",
+   "export_bytes": 4190,
+   "changes": []
+  },
+  {
+   "path": "provenance/requests/thermal-faults-fv-001.task.txt",
+   "group": "red_request",
+   "author": "Red (Claude Cowork): request statement extracted from the submitted packet",
+   "source": null,
+   "original_sha256": "9a6af106a7fb27149a3d40360d93450542b0a750643187323598d7eb5c7e4e0c",
+   "export_sha256": "9a6af106a7fb27149a3d40360d93450542b0a750643187323598d7eb5c7e4e0c",
+   "export_bytes": 25450,
+   "changes": []
+  },
+  {
+   "path": "provenance/requests/thermal-faults-fv-cont-002.task.txt",
+   "group": "red_request",
+   "author": "Red (Claude Cowork): request statement extracted from the submitted packet",
+   "source": null,
+   "original_sha256": "e8b6b81878f5ec7f9e2c5a91fb4df0649044304628745e2483f4ed0555387219",
+   "export_sha256": "e8b6b81878f5ec7f9e2c5a91fb4df0649044304628745e2483f4ed0555387219",
+   "export_bytes": 26048,
+   "changes": []
+  },
+  {
+   "path": "provenance/requests/thermal-hotspot-2d-002.task.txt",
+   "group": "red_request",
+   "author": "Red (Claude Cowork): request statement extracted from the submitted packet",
+   "source": null,
+   "original_sha256": "b98888d654e9d50959567c4c98f14784d7328a9b1734e4d33111179ba6e71cfc",
+   "export_sha256": "b98888d654e9d50959567c4c98f14784d7328a9b1734e4d33111179ba6e71cfc",
+   "export_bytes": 2509,
+   "changes": []
+  },
+  {
+   "path": "provenance/requests/thermal-hotspot-2d-fix-003.task.txt",
+   "group": "red_request",
+   "author": "Red (Claude Cowork): request statement extracted from the submitted packet",
+   "source": null,
+   "original_sha256": "fc0904ffc11e1ff38acba5393e08d1c4b609e05eca1a5b5b03bab3125992ceb1",
+   "export_sha256": "fc0904ffc11e1ff38acba5393e08d1c4b609e05eca1a5b5b03bab3125992ceb1",
+   "export_bytes": 1872,
+   "changes": []
+  },
+  {
+   "path": "provenance/requests/thermal-layered-oracle-002.task.txt",
+   "group": "red_request",
+   "author": "Red (Claude Cowork): request statement extracted from the submitted packet",
+   "source": null,
+   "original_sha256": "e187c7a39ca7754d380120fbc430721809289637ef9caf6710fb285fc491827f",
+   "export_sha256": "e187c7a39ca7754d380120fbc430721809289637ef9caf6710fb285fc491827f",
+   "export_bytes": 3073,
+   "changes": []
+  },
+  {
+   "path": "provenance/requests/thermal-layered-oracle-fix-003.task.txt",
+   "group": "red_request",
+   "author": "Red (Claude Cowork): request statement extracted from the submitted packet",
+   "source": null,
+   "original_sha256": "5842c418f24dd71b5e8a1c13fda3fae1e85e743714f32de4faf2df12221f7432",
+   "export_sha256": "5842c418f24dd71b5e8a1c13fda3fae1e85e743714f32de4faf2df12221f7432",
+   "export_bytes": 1727,
+   "changes": []
+  },
+  {
+   "path": "provenance/requests/thermal-nversion-crosscheck-004.task.txt",
+   "group": "red_request",
+   "author": "Red (Claude Cowork): request statement extracted from the submitted packet",
+   "source": null,
+   "original_sha256": "ae0762a9f6a8687c4178afb084dac933eb92807c246511c87ccc19871efb9594",
+   "export_sha256": "ae0762a9f6a8687c4178afb084dac933eb92807c246511c87ccc19871efb9594",
+   "export_bytes": 3341,
+   "changes": []
+  },
+  {
+   "path": "provenance/requests/thermal-peak-exact-002.task.txt",
+   "group": "red_request",
+   "author": "Red (Claude Cowork): request statement extracted from the submitted packet",
+   "source": null,
+   "original_sha256": "9d740f1f6c3ba551c775b66131899eef73ebcb646e3aad553457d2369a10c219",
+   "export_sha256": "9d740f1f6c3ba551c775b66131899eef73ebcb646e3aad553457d2369a10c219",
+   "export_bytes": 3606,
+   "changes": []
+  },
+  {
+   "path": "provenance/requests/thermal-radiation-001.task.txt",
+   "group": "red_request",
+   "author": "Red (Claude Cowork): request statement extracted from the submitted packet",
+   "source": null,
+   "original_sha256": "6efba094788648ef33bbb9d22064b54c0d837b967457d8743a1810e284ce8b8a",
+   "export_sha256": "6efba094788648ef33bbb9d22064b54c0d837b967457d8743a1810e284ce8b8a",
+   "export_bytes": 2569,
+   "changes": []
+  },
+  {
+   "path": "provenance/requests/thermal-radiation-cont-002.task.txt",
+   "group": "red_request",
+   "author": "Red (Claude Cowork): request statement extracted from the submitted packet",
+   "source": null,
+   "original_sha256": "c50da43a5b6ef02078e684b3db5a043a07b5d127c5c3e70f064f5a1d251dd7bd",
+   "export_sha256": "c50da43a5b6ef02078e684b3db5a043a07b5d127c5c3e70f064f5a1d251dd7bd",
+   "export_bytes": 3167,
+   "changes": []
+  },
+  {
+   "path": "provenance/requests/thermal-repair-candidate3-001.task.txt",
+   "group": "red_request",
+   "author": "Red (Claude Cowork): request statement extracted from the submitted packet",
+   "source": null,
+   "original_sha256": "b16969607b6aeea922810d6e4d965422ad6e95e1cbe0c93b0f8affcc8dfdf078",
+   "export_sha256": "b16969607b6aeea922810d6e4d965422ad6e95e1cbe0c93b0f8affcc8dfdf078",
+   "export_bytes": 3382,
+   "changes": []
+  },
+  {
+   "path": "provenance/requests/thermal-sensitivity-001.task.txt",
+   "group": "red_request",
+   "author": "Red (Claude Cowork): request statement extracted from the submitted packet",
+   "source": null,
+   "original_sha256": "5424174dce68a1a5cd766f5ece030631e2d84a4a75aa13d96632ef23b9b5efb0",
+   "export_sha256": "5424174dce68a1a5cd766f5ece030631e2d84a4a75aa13d96632ef23b9b5efb0",
+   "export_bytes": 2962,
+   "changes": []
+  },
+  {
+   "path": "provenance/requests/thermal-sensitivity-cont-002.task.txt",
+   "group": "red_request",
+   "author": "Red (Claude Cowork): request statement extracted from the submitted packet",
+   "source": null,
+   "original_sha256": "67f8f6b06ad59751191bfc1ecc0114277e04649c3ee191ef4b6c64ad4e430744",
+   "export_sha256": "67f8f6b06ad59751191bfc1ecc0114277e04649c3ee191ef4b6c64ad4e430744",
+   "export_bytes": 3562,
+   "changes": []
+  },
+  {
+   "path": "provenance/requests/thermal-supervisor-002.task.txt",
+   "group": "red_request",
+   "author": "Red (Claude Cowork): request statement extracted from the submitted packet",
+   "source": null,
+   "original_sha256": "5df5a0111d6905fb9d38ccbaceb43affb29735b0e1224869eba3c2febb1d91a7",
+   "export_sha256": "5df5a0111d6905fb9d38ccbaceb43affb29735b0e1224869eba3c2febb1d91a7",
+   "export_bytes": 2983,
+   "changes": []
+  },
+  {
+   "path": "provenance/requests/thermal-supervisor-fix-003.task.txt",
+   "group": "red_request",
+   "author": "Red (Claude Cowork): request statement extracted from the submitted packet",
+   "source": null,
+   "original_sha256": "db05113704bdcbfcf5e8d2f23d9d7d48ca2218eb9839263fe608e7ca009ea048",
+   "export_sha256": "db05113704bdcbfcf5e8d2f23d9d7d48ca2218eb9839263fe608e7ca009ea048",
+   "export_bytes": 1798,
+   "changes": []
+  },
+  {
+   "path": "provenance/requests/wexact0-audit-002.task.txt",
+   "group": "red_request",
+   "author": "Red (Claude Cowork): request statement extracted from the submitted packet",
+   "source": null,
+   "original_sha256": "60723fe4a777a1e5f5b1bfe6dffa6fcc1ef289aeb133c93339611e36ba5e9d04",
+   "export_sha256": "60723fe4a777a1e5f5b1bfe6dffa6fcc1ef289aeb133c93339611e36ba5e9d04",
+   "export_bytes": 1914,
+   "changes": []
+  },
+  {
+   "path": "provenance/requests/wexact0-audit-003.task.txt",
+   "group": "red_request",
+   "author": "Red (Claude Cowork): request statement extracted from the submitted packet",
+   "source": null,
+   "original_sha256": "0620bd94a64a13346f13f452e450dd43483579447ca2acacb8c601f998ea3b71",
+   "export_sha256": "0620bd94a64a13346f13f452e450dd43483579447ca2acacb8c601f998ea3b71",
+   "export_bytes": 1714,
+   "changes": []
+  },
+  {
+   "path": "received/wave10-resends/firstleaf-oracle-cont-002.answer.md",
+   "group": "claude_answer_received",
+   "author": "Claude Fable 5.1 (Anthropic), answer firstleaf-oracle-cont-002 (wave10-resends) as returned; request by Red (Claude Cowork)",
+   "source": null,
+   "original_sha256": "a622c3701650e75a6f6d9801c9a932e38eb50a1222fea3d46bebc29901caa144",
+   "export_sha256": "a622c3701650e75a6f6d9801c9a932e38eb50a1222fea3d46bebc29901caa144",
+   "export_bytes": 79204,
+   "changes": []
+  },
+  {
+   "path": "received/wave10-resends/gateway-modelcheck-002.answer.md",
+   "group": "claude_answer_received",
+   "author": "Claude Fable 5.1 (Anthropic), answer gateway-modelcheck-002 (wave10-resends) as returned; request by Red (Claude Cowork)",
+   "source": null,
+   "original_sha256": "39a6ae109162bece45ad87fdaf911a200c0fad2add3a8ea72419fa292ec56971",
+   "export_sha256": "39a6ae109162bece45ad87fdaf911a200c0fad2add3a8ea72419fa292ec56971",
+   "export_bytes": 57298,
+   "changes": []
+  },
+  {
+   "path": "received/wave10-resends/site0-repair-audit-002.answer.md",
+   "group": "claude_answer_received",
+   "author": "Claude Fable 5.1 (Anthropic), answer site0-repair-audit-002 (wave10-resends) as returned; request by Red (Claude Cowork)",
+   "source": null,
+   "original_sha256": "e77ae1b8d41598aaf745f145c01670976bc0d31180ebb70737fc681b9cc2d42b",
+   "export_sha256": "e77ae1b8d41598aaf745f145c01670976bc0d31180ebb70737fc681b9cc2d42b",
+   "export_bytes": 33605,
+   "changes": []
+  },
+  {
+   "path": "received/wave10-resends/thermal-contract-metamorphic-002.answer.md",
+   "group": "claude_answer_received",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-contract-metamorphic-002 (wave10-resends) as returned; request by Red (Claude Cowork)",
+   "source": null,
+   "original_sha256": "6efa2547c560f64f73ff222989d9e5aca5b4d86677d637f9271d82ca94a56542",
+   "export_sha256": "6efa2547c560f64f73ff222989d9e5aca5b4d86677d637f9271d82ca94a56542",
+   "export_bytes": 41489,
+   "changes": []
+  },
+  {
+   "path": "received/wave10-resends/thermal-faults-fv-cont-002.answer.md",
+   "group": "claude_answer_received",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-faults-fv-cont-002 (wave10-resends) as returned; request by Red (Claude Cowork)",
+   "source": null,
+   "original_sha256": "584fc717b1450eabe8991eb5d637d7212d78cc956dc822a11f1e6e1f520f964b",
+   "export_sha256": "584fc717b1450eabe8991eb5d637d7212d78cc956dc822a11f1e6e1f520f964b",
+   "export_bytes": 74374,
+   "changes": []
+  },
+  {
+   "path": "received/wave10-resends/thermal-hotspot-2d-002.answer.md",
+   "group": "claude_answer_received",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-hotspot-2d-002 (wave10-resends) as returned; request by Red (Claude Cowork)",
+   "source": null,
+   "original_sha256": "fbf38c9ab8c0c43d296c05755b1ab8bd5d8e1cb0ac0163c6952e4864ee7dd6e0",
+   "export_sha256": "fbf38c9ab8c0c43d296c05755b1ab8bd5d8e1cb0ac0163c6952e4864ee7dd6e0",
+   "export_bytes": 76308,
+   "changes": []
+  },
+  {
+   "path": "received/wave10-resends/thermal-layered-oracle-002.answer.md",
+   "group": "claude_answer_received",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-layered-oracle-002 (wave10-resends) as returned; request by Red (Claude Cowork)",
+   "source": null,
+   "original_sha256": "a3036939091a1b4b8356de6ced0b9fc01d9fb10bd323cd3de6c7e4aa536cd764",
+   "export_sha256": "a3036939091a1b4b8356de6ced0b9fc01d9fb10bd323cd3de6c7e4aa536cd764",
+   "export_bytes": 58729,
+   "changes": []
+  },
+  {
+   "path": "received/wave10-resends/thermal-peak-exact-002.answer.md",
+   "group": "claude_answer_received",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-peak-exact-002 (wave10-resends) as returned; request by Red (Claude Cowork)",
+   "source": null,
+   "original_sha256": "0da8ad057c93d4fd4024ec091ace413682ce5383cb8be0d754ca95a039224458",
+   "export_sha256": "0da8ad057c93d4fd4024ec091ace413682ce5383cb8be0d754ca95a039224458",
+   "export_bytes": 41500,
+   "changes": []
+  },
+  {
+   "path": "received/wave10-resends/thermal-radiation-cont-002.answer.md",
+   "group": "claude_answer_received",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-radiation-cont-002 (wave10-resends) as returned; request by Red (Claude Cowork)",
+   "source": null,
+   "original_sha256": "d091640b0870cb394fcd5d2e6ee83d0fe7e9779a3cc80fe5202b0b7eab57c67f",
+   "export_sha256": "d091640b0870cb394fcd5d2e6ee83d0fe7e9779a3cc80fe5202b0b7eab57c67f",
+   "export_bytes": 77889,
+   "changes": []
+  },
+  {
+   "path": "received/wave10-resends/thermal-sensitivity-cont-002.answer.md",
+   "group": "claude_answer_received",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-sensitivity-cont-002 (wave10-resends) as returned; request by Red (Claude Cowork)",
+   "source": null,
+   "original_sha256": "026a62aa8315430d1fb661c756e44cdd61af23a7367f40bd3fb9ca008ce1c33c",
+   "export_sha256": "026a62aa8315430d1fb661c756e44cdd61af23a7367f40bd3fb9ca008ce1c33c",
+   "export_bytes": 76804,
+   "changes": []
+  },
+  {
+   "path": "received/wave10-resends/thermal-supervisor-002.answer.md",
+   "group": "claude_answer_received",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-supervisor-002 (wave10-resends) as returned; request by Red (Claude Cowork)",
+   "source": null,
+   "original_sha256": "6108383310903299906edd13293684339cf62be881e94538ea6d9637555b0cd6",
+   "export_sha256": "6108383310903299906edd13293684339cf62be881e94538ea6d9637555b0cd6",
+   "export_bytes": 67585,
+   "changes": []
+  },
+  {
+   "path": "received/wave10-resends/wexact0-audit-002.answer.md",
+   "group": "claude_answer_received",
+   "author": "Claude Fable 5.1 (Anthropic), answer wexact0-audit-002 (wave10-resends) as returned; request by Red (Claude Cowork)",
+   "source": null,
+   "original_sha256": "b8a5440e81555fad02cdbe31577a46be1e7adeea894b81fb7e689d25642f6ef6",
+   "export_sha256": "b8a5440e81555fad02cdbe31577a46be1e7adeea894b81fb7e689d25642f6ef6",
+   "export_bytes": 47135,
+   "changes": []
+  },
+  {
+   "path": "received/wave11-followups-b/gateway-integration-003.answer.md",
+   "group": "claude_answer_received",
+   "author": "Claude Fable 5.1 (Anthropic), answer gateway-integration-003 (wave11-followups-b) as returned; request by Red (Claude Cowork)",
+   "source": null,
+   "original_sha256": "3863eda4079c320d2477091b963c03ba3d40110203619b1030094c2751e4f090",
+   "export_sha256": "3863eda4079c320d2477091b963c03ba3d40110203619b1030094c2751e4f090",
+   "export_bytes": 89124,
+   "changes": []
+  },
+  {
+   "path": "received/wave11-followups-b/release-observability-review-003.answer.md",
+   "group": "claude_answer_received",
+   "author": "Claude Fable 5.1 (Anthropic), answer release-observability-review-003 (wave11-followups-b) as returned; request by Red (Claude Cowork)",
+   "source": null,
+   "original_sha256": "2381287667a9a7e78de3afead657a626b3c5c350e420810d0c21d60bcc2f4db2",
+   "export_sha256": "2381287667a9a7e78de3afead657a626b3c5c350e420810d0c21d60bcc2f4db2",
+   "export_bytes": 38472,
+   "changes": []
+  },
+  {
+   "path": "received/wave11-followups-b/thermal-candidate3-review-001.answer.md",
+   "group": "claude_answer_received",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-candidate3-review-001 (wave11-followups-b) as returned; request by Red (Claude Cowork)",
+   "source": null,
+   "original_sha256": "0c9f39584c403b5f2d353eedc3f2982a5e027e10104b12c904b28b411ce8172a",
+   "export_sha256": "0c9f39584c403b5f2d353eedc3f2982a5e027e10104b12c904b28b411ce8172a",
+   "export_bytes": 30569,
+   "changes": []
+  },
+  {
+   "path": "received/wave12a-fallbacks/thermal-contract-metamorphic-cont-003.answer.md",
+   "group": "claude_answer_received",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-contract-metamorphic-cont-003 (wave12a-fallbacks) as returned; request by Red (Claude Cowork)",
+   "source": null,
+   "original_sha256": "6d275a033ad1e30974eacc1213220550a28911eae6284cd7575c27f35ec86fa9",
+   "export_sha256": "6d275a033ad1e30974eacc1213220550a28911eae6284cd7575c27f35ec86fa9",
+   "export_bytes": 82166,
+   "changes": []
+  },
+  {
+   "path": "received/wave12b-followups-c/firstleaf-oracle-fix-003.answer.md",
+   "group": "claude_answer_received",
+   "author": "Claude Fable 5.1 (Anthropic), answer firstleaf-oracle-fix-003 (wave12b-followups-c) as returned; request by Red (Claude Cowork)",
+   "source": null,
+   "original_sha256": "cc3d853fcfab7cf767a9ab36228a71631c969fa0abb2498e8c352d26142539c3",
+   "export_sha256": "cc3d853fcfab7cf767a9ab36228a71631c969fa0abb2498e8c352d26142539c3",
+   "export_bytes": 68196,
+   "changes": []
+  },
+  {
+   "path": "received/wave12b-followups-c/gateway-conformance-004.answer.md",
+   "group": "claude_answer_received",
+   "author": "Claude Fable 5.1 (Anthropic), answer gateway-conformance-004 (wave12b-followups-c) as returned; request by Red (Claude Cowork)",
+   "source": null,
+   "original_sha256": "abb2ed334dcbbfcb51871d1878202044972a4d2f13194cc392e1ded8f63fbc6e",
+   "export_sha256": "abb2ed334dcbbfcb51871d1878202044972a4d2f13194cc392e1ded8f63fbc6e",
+   "export_bytes": 52930,
+   "changes": []
+  },
+  {
+   "path": "received/wave12b-followups-c/site0-repair-audit-003.answer.md",
+   "group": "claude_answer_received",
+   "author": "Claude Fable 5.1 (Anthropic), answer site0-repair-audit-003 (wave12b-followups-c) as returned; request by Red (Claude Cowork)",
+   "source": null,
+   "original_sha256": "f79523a6ffef45742111fff00939f17b622c6da62f8318514995da24428a8bcb",
+   "export_sha256": "f79523a6ffef45742111fff00939f17b622c6da62f8318514995da24428a8bcb",
+   "export_bytes": 49476,
+   "changes": []
+  },
+  {
+   "path": "received/wave12b-followups-c/thermal-hotspot-2d-fix-003.answer.md",
+   "group": "claude_answer_received",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-hotspot-2d-fix-003 (wave12b-followups-c) as returned; request by Red (Claude Cowork)",
+   "source": null,
+   "original_sha256": "7e7401c317be1c27a59d74ca1e661cc2a72e4bb377c05d64e9da6647e10b30d5",
+   "export_sha256": "7e7401c317be1c27a59d74ca1e661cc2a72e4bb377c05d64e9da6647e10b30d5",
+   "export_bytes": 43352,
+   "changes": []
+  },
+  {
+   "path": "received/wave12b-followups-c/thermal-layered-oracle-fix-003.answer.md",
+   "group": "claude_answer_received",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-layered-oracle-fix-003 (wave12b-followups-c) as returned; request by Red (Claude Cowork)",
+   "source": null,
+   "original_sha256": "08cd4536acaa3503891745602c744f0d3107be2824a76936b33258de429aff48",
+   "export_sha256": "08cd4536acaa3503891745602c744f0d3107be2824a76936b33258de429aff48",
+   "export_bytes": 68455,
+   "changes": []
+  },
+  {
+   "path": "received/wave12b-followups-c/thermal-nversion-crosscheck-004.answer.md",
+   "group": "claude_answer_received",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-nversion-crosscheck-004 (wave12b-followups-c) as returned; request by Red (Claude Cowork)",
+   "source": null,
+   "original_sha256": "256bfa9febcb356ada0a58418d02e2bb7e65e62f8291c40e429ee5d2bd41490f",
+   "export_sha256": "256bfa9febcb356ada0a58418d02e2bb7e65e62f8291c40e429ee5d2bd41490f",
+   "export_bytes": 60181,
+   "changes": []
+  },
+  {
+   "path": "received/wave12b-followups-c/thermal-supervisor-fix-003.answer.md",
+   "group": "claude_answer_received",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-supervisor-fix-003 (wave12b-followups-c) as returned; request by Red (Claude Cowork)",
+   "source": null,
+   "original_sha256": "fcc168e0989143956a34398ef45f3d261ec4053e1c1cd391af277d816aca488a",
+   "export_sha256": "fcc168e0989143956a34398ef45f3d261ec4053e1c1cd391af277d816aca488a",
+   "export_bytes": 82501,
+   "changes": []
+  },
+  {
+   "path": "received/wave12b-followups-c/wexact0-audit-003.answer.md",
+   "group": "claude_answer_received",
+   "author": "Claude Fable 5.1 (Anthropic), answer wexact0-audit-003 (wave12b-followups-c) as returned; request by Red (Claude Cowork)",
+   "source": null,
+   "original_sha256": "9df8719e05c1b88dc1e0e2f3ad3c753f1cd7b4e59a90a75cb3540562d2d1f978",
+   "export_sha256": "9df8719e05c1b88dc1e0e2f3ad3c753f1cd7b4e59a90a75cb3540562d2d1f978",
+   "export_bytes": 51326,
+   "changes": []
+  },
+  {
+   "path": "received/wave6-engineering/gateway-lifecycle-builder-001.answer.md",
+   "group": "claude_answer_received",
+   "author": "Claude Fable 5.1 (Anthropic), answer gateway-lifecycle-builder-001 (wave6-engineering) as returned; request by Red (Claude Cowork)",
+   "source": null,
+   "original_sha256": "9822bf1c3eca8e79553b4b008d5f9ccc589d8337c06bc48889db973e1a3ae93b",
+   "export_sha256": "9822bf1c3eca8e79553b4b008d5f9ccc589d8337c06bc48889db973e1a3ae93b",
+   "export_bytes": 31120,
+   "changes": []
+  },
+  {
+   "path": "received/wave6-engineering/thermal-correction-audit-002.answer.md",
+   "group": "claude_answer_received",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-correction-audit-002 (wave6-engineering) as returned; request by Red (Claude Cowork)",
+   "source": null,
+   "original_sha256": "73c06a64db83ca88828b0e41f348b646f8c99e4fb423340bea39e5e8c16f77cb",
+   "export_sha256": "73c06a64db83ca88828b0e41f348b646f8c99e4fb423340bea39e5e8c16f77cb",
+   "export_bytes": 17143,
+   "changes": []
+  },
+  {
+   "path": "received/wave7-red-broad/firstleaf-oracle-001.answer.md",
+   "group": "claude_answer_received",
+   "author": "Claude Fable 5.1 (Anthropic), answer firstleaf-oracle-001 (wave7-red-broad) as returned; request by Red (Claude Cowork)",
+   "source": null,
+   "original_sha256": "8ea3fb33d396f8e2307765b77bf2da244814fd1ee3f6bd9e2523b2e100425f8e",
+   "export_sha256": "8ea3fb33d396f8e2307765b77bf2da244814fd1ee3f6bd9e2523b2e100425f8e",
+   "export_bytes": 21663,
+   "changes": []
+  },
+  {
+   "path": "received/wave7-red-broad/firstleaf-sim-audit-001.answer.md",
+   "group": "claude_answer_received",
+   "author": "Claude Fable 5.1 (Anthropic), answer firstleaf-sim-audit-001 (wave7-red-broad) as returned; request by Red (Claude Cowork)",
+   "source": null,
+   "original_sha256": "3193e0fbc7c1350448618ed8ff2faf17855eaef26eb053e6f9fe53b762417332",
+   "export_sha256": "3193e0fbc7c1350448618ed8ff2faf17855eaef26eb053e6f9fe53b762417332",
+   "export_bytes": 49830,
+   "changes": []
+  },
+  {
+   "path": "received/wave7-red-broad/pump-matched-audit-001.answer.md",
+   "group": "claude_answer_received",
+   "author": "Claude Fable 5.1 (Anthropic), answer pump-matched-audit-001 (wave7-red-broad) as returned; request by Red (Claude Cowork)",
+   "source": null,
+   "original_sha256": "56c0099d4e8ca2076b03f37ec936f94c61031fb37cd0e6460b9c881992882c7b",
+   "export_sha256": "56c0099d4e8ca2076b03f37ec936f94c61031fb37cd0e6460b9c881992882c7b",
+   "export_bytes": 51539,
+   "changes": []
+  },
+  {
+   "path": "received/wave7-red-broad/thermal-faults-fv-001.answer.md",
+   "group": "claude_answer_received",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-faults-fv-001 (wave7-red-broad) as returned; request by Red (Claude Cowork)",
+   "source": null,
+   "original_sha256": "6d60b2f01a4efff024e2eb313e48334eee168d45fcd3dbf80940d19c049e10d7",
+   "export_sha256": "6d60b2f01a4efff024e2eb313e48334eee168d45fcd3dbf80940d19c049e10d7",
+   "export_bytes": 41845,
+   "changes": []
+  },
+  {
+   "path": "received/wave7-red-broad/thermal-radiation-001.answer.md",
+   "group": "claude_answer_received",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-radiation-001 (wave7-red-broad) as returned; request by Red (Claude Cowork)",
+   "source": null,
+   "original_sha256": "6372f843f91ca2d64c21c25ef7cfd93b17a98fd81d3efd40206e2a11f5fff170",
+   "export_sha256": "6372f843f91ca2d64c21c25ef7cfd93b17a98fd81d3efd40206e2a11f5fff170",
+   "export_bytes": 21180,
+   "changes": []
+  },
+  {
+   "path": "received/wave7-red-broad/thermal-sensitivity-001.answer.md",
+   "group": "claude_answer_received",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-sensitivity-001 (wave7-red-broad) as returned; request by Red (Claude Cowork)",
+   "source": null,
+   "original_sha256": "060be691f17a9388e386f5e115533b02d8f6f3409fd6ea4fc2ce68eac47b478d",
+   "export_sha256": "060be691f17a9388e386f5e115533b02d8f6f3409fd6ea4fc2ce68eac47b478d",
+   "export_bytes": 15856,
+   "changes": []
+  },
+  {
+   "path": "received/wave9-followups-a/gateway-lifecycle-builder-002.answer.md",
+   "group": "claude_answer_received",
+   "author": "Claude Fable 5.1 (Anthropic), answer gateway-lifecycle-builder-002 (wave9-followups-a) as returned; request by Red (Claude Cowork)",
+   "source": null,
+   "original_sha256": "0724cc365550a90ab45af93dd4b2613a1f98b617f9a23f8bd53f970a46a85de9",
+   "export_sha256": "0724cc365550a90ab45af93dd4b2613a1f98b617f9a23f8bd53f970a46a85de9",
+   "export_bytes": 69790,
+   "changes": []
+  },
+  {
+   "path": "received/wave9-followups-a/release-observability-002b.answer.md",
+   "group": "claude_answer_received",
+   "author": "Claude Fable 5.1 (Anthropic), answer release-observability-002b (wave9-followups-a) as returned; request by Red (Claude Cowork)",
+   "source": null,
+   "original_sha256": "cb0b4eb991fa22ee4a64ca76c20087cae95b02cf9452c5a17c6fcef8c12617a2",
+   "export_sha256": "cb0b4eb991fa22ee4a64ca76c20087cae95b02cf9452c5a17c6fcef8c12617a2",
+   "export_bytes": 49997,
+   "changes": []
+  },
+  {
+   "path": "received/wave9-followups-a/thermal-repair-candidate3-001.answer.md",
+   "group": "claude_answer_received",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-repair-candidate3-001 (wave9-followups-a) as returned; request by Red (Claude Cowork)",
+   "source": null,
+   "original_sha256": "0b73fe07ad06035ca324bc71d00edf364158e99a07bdebf602797dc23a869c65",
+   "export_sha256": "0b73fe07ad06035ca324bc71d00edf364158e99a07bdebf602797dc23a869c65",
+   "export_bytes": 47174,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/first_leaf_sim_audit/README.md",
+   "group": "lily_original",
+   "author": "Lilitari (Lily), original; copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/gateway_repair/original/README.md",
+   "original_sha256": "91b40cde51426aec499e8c703c08297928501dded8255ce7862da833526cd22f",
+   "export_sha256": "91b40cde51426aec499e8c703c08297928501dded8255ce7862da833526cd22f",
+   "export_bytes": 7105,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/first_leaf_sim_audit/docs/COVERAGE_AND_ATTRIBUTION.md",
+   "group": "lily_original",
+   "author": "Lilitari (Lily), original; copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/gateway_repair/original/docs/COVERAGE_AND_ATTRIBUTION.md",
+   "original_sha256": "cd03ce62d44c62c2bb33a274d9b8ec9a9e1cc978c683c0332f5fbf7dec90c8b3",
+   "export_sha256": "cd03ce62d44c62c2bb33a274d9b8ec9a9e1cc978c683c0332f5fbf7dec90c8b3",
+   "export_bytes": 4483,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/first_leaf_sim_audit/docs/MODEL_BRIEF.md",
+   "group": "lily_original",
+   "author": "Lilitari (Lily), original; copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/gateway_repair/original/docs/MODEL_BRIEF.md",
+   "original_sha256": "9a93b21224ea6f134bbe429947906abfdfd9f1bf92792ac2bd79458edbad04b0",
+   "export_sha256": "9a93b21224ea6f134bbe429947906abfdfd9f1bf92792ac2bd79458edbad04b0",
+   "export_bytes": 2879,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/first_leaf_sim_audit/inputs/protocol.json",
+   "group": "lily_original",
+   "author": "Lilitari (Lily), original; copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/gateway_repair/original/inputs/protocol.json",
+   "original_sha256": "d3224dbb752eba3368c0a1569eb733d7a59fb9a3bf1929fdbb1810f9ae9cf382",
+   "export_sha256": "d3224dbb752eba3368c0a1569eb733d7a59fb9a3bf1929fdbb1810f9ae9cf382",
+   "export_bytes": 4180,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/first_leaf_sim_audit/orig.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "a5225934741cd0a1eeb71130d2c1e0066b047a8783c1414b7796351e34b8d699",
+   "export_sha256": "6840bb8187c07d5da68f54de6d19075ec04b5ca7e54210d25dd5223aca0f7202",
+   "export_bytes": 9977,
+   "changes": [
+    "sandbox path"
+   ]
+  },
+  {
+   "path": "scientific/gateway/first_leaf_sim_audit/patched.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "0fbb032c85df216bd8e932c91a9b519d0965d9df126abc4b82f6e5e2fa9d2ddb",
+   "export_sha256": "7b091c732bec7b9f1ea69a11a6f1b8e2dc8891d9f96ae52aedc3722b0e11c4c5",
+   "export_bytes": 4323,
+   "changes": [
+    "sandbox path"
+   ]
+  },
+  {
+   "path": "scientific/gateway/first_leaf_sim_audit/patches/interface.py.diff",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer firstleaf-sim-audit-001 (wave7-red-broad); task design and execution Red (Claude Cowork)",
+   "source": "firstleaf-sim-audit-001:patches/interface.py.diff",
+   "original_sha256": "6ac7f8b3c1b75ca277fcf127b7650134a02e2ad04d215893d4598208b08a582e",
+   "export_sha256": "6ac7f8b3c1b75ca277fcf127b7650134a02e2ad04d215893d4598208b08a582e",
+   "export_bytes": 1337,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/first_leaf_sim_audit/patches/relay.py.diff",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer firstleaf-sim-audit-001 (wave7-red-broad); task design and execution Red (Claude Cowork)",
+   "source": "firstleaf-sim-audit-001:patches/relay.py.diff",
+   "original_sha256": "f665472a362daefe042b64aa720088fee77c408c7df2f8edf180e1979e64c54d",
+   "export_sha256": "f665472a362daefe042b64aa720088fee77c408c7df2f8edf180e1979e64c54d",
+   "export_bytes": 9978,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/first_leaf_sim_audit/src/first_leaf.py",
+   "group": "lily_original",
+   "author": "Lilitari (Lily), original; copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/gateway_repair/original/src/first_leaf.py",
+   "original_sha256": "2306148b46490fae74dc49fc31e1161f76e64bf902d836276c2dfd9565645515",
+   "export_sha256": "2306148b46490fae74dc49fc31e1161f76e64bf902d836276c2dfd9565645515",
+   "export_bytes": 23198,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/first_leaf_sim_audit/src/interface.py",
+   "group": "red_derivative",
+   "author": "Red (Claude Cowork): Lilitari's original interface.py with the audit's patches/interface.py.diff (answer firstleaf-sim-audit-001) applied; derived from answers gateway-integration-003, gateway-lifecycle-builder-001",
+   "source": null,
+   "original_sha256": "b02b31e56136bdc44c765ab23b6fa74644f1d1f053f3dabe1f0efe4797ea8539",
+   "export_sha256": "b02b31e56136bdc44c765ab23b6fa74644f1d1f053f3dabe1f0efe4797ea8539",
+   "export_bytes": 5019,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/first_leaf_sim_audit/src/relay.py",
+   "group": "red_derivative",
+   "author": "Red (Claude Cowork): Lilitari's original relay.py with the audit's patches/relay.py.diff (answer firstleaf-sim-audit-001) applied; derived from answers gateway-integration-003, gateway-lifecycle-builder-002",
+   "source": null,
+   "original_sha256": "54b0204f675953b830b5343e4b7e9caa563d1a623c90ea19458c48da3686b412",
+   "export_sha256": "54b0204f675953b830b5343e4b7e9caa563d1a623c90ea19458c48da3686b412",
+   "export_bytes": 11001,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/first_leaf_sim_audit/tests/test_audit_first_leaf.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer firstleaf-sim-audit-001 (wave7-red-broad); task design and execution Red (Claude Cowork)",
+   "source": "firstleaf-sim-audit-001:tests/test_audit_first_leaf.py",
+   "original_sha256": "489ac876ebf0f342187e82aa0b54726f370a8ca7f28409a774b1db2904563847",
+   "export_sha256": "489ac876ebf0f342187e82aa0b54726f370a8ca7f28409a774b1db2904563847",
+   "export_bytes": 19267,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/first_leaf_sim_audit/tests/test_relay.py",
+   "group": "lily_original",
+   "author": "Lilitari (Lily), original; copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/gateway_repair/original/tests/test_relay.py",
+   "original_sha256": "b4ea09e1d72925b92a5d9251e7259b2b8338ecc43683b09ad76ffa81e7b27b71",
+   "export_sha256": "b4ea09e1d72925b92a5d9251e7259b2b8338ecc43683b09ad76ffa81e7b27b71",
+   "export_bytes": 2586,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/first_leaf_sim_audit/tests/test_stage.py",
+   "group": "lily_original",
+   "author": "Lilitari (Lily), original; copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/gateway_repair/original/tests/test_stage.py",
+   "original_sha256": "fdf06906ce3b1058ecc23f2f00eb321988c9f487553ade59aa8c6df82c961c59",
+   "export_sha256": "fdf06906ce3b1058ecc23f2f00eb321988c9f487553ade59aa8c6df82c961c59",
+   "export_bytes": 8866,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/integrated/README.md",
+   "group": "lily_original",
+   "author": "Lilitari (Lily), original; copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/gateway_repair/original/README.md",
+   "original_sha256": "91b40cde51426aec499e8c703c08297928501dded8255ce7862da833526cd22f",
+   "export_sha256": "91b40cde51426aec499e8c703c08297928501dded8255ce7862da833526cd22f",
+   "export_bytes": 7105,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/integrated/audit_on_lifecycle.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "00a435b687d527ccc477387727c48415906f00b7357b3a83c360a202282e1bdd",
+   "export_sha256": "921a6b80f7cc8c998c14ca8f180365dc6b22194892626eea7752d28a1ebbe374",
+   "export_bytes": 11101,
+   "changes": [
+    "sandbox path"
+   ]
+  },
+  {
+   "path": "scientific/gateway/integrated/docs/COVERAGE_AND_ATTRIBUTION.md",
+   "group": "lily_original",
+   "author": "Lilitari (Lily), original; copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/gateway_repair/original/docs/COVERAGE_AND_ATTRIBUTION.md",
+   "original_sha256": "cd03ce62d44c62c2bb33a274d9b8ec9a9e1cc978c683c0332f5fbf7dec90c8b3",
+   "export_sha256": "cd03ce62d44c62c2bb33a274d9b8ec9a9e1cc978c683c0332f5fbf7dec90c8b3",
+   "export_bytes": 4483,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/integrated/docs/MODEL_BRIEF.md",
+   "group": "lily_original",
+   "author": "Lilitari (Lily), original; copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/gateway_repair/original/docs/MODEL_BRIEF.md",
+   "original_sha256": "9a93b21224ea6f134bbe429947906abfdfd9f1bf92792ac2bd79458edbad04b0",
+   "export_sha256": "9a93b21224ea6f134bbe429947906abfdfd9f1bf92792ac2bd79458edbad04b0",
+   "export_bytes": 2879,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/integrated/docs/gateway_lifecycle_v1/CONFORMANCE_NOTE.md",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer gateway-conformance-004 (wave12b-followups-c); task design and execution Red (Claude Cowork)",
+   "source": "gateway-conformance-004:docs/gateway_lifecycle_v1/CONFORMANCE_NOTE.md",
+   "original_sha256": "80b6987a5e295e9d857642da04b31293c5cf91e0d60d6d18f46699a21af5afdf",
+   "export_sha256": "80b6987a5e295e9d857642da04b31293c5cf91e0d60d6d18f46699a21af5afdf",
+   "export_bytes": 2518,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/integrated/docs/gateway_lifecycle_v1/INTEGRATION_NOTE.md",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer gateway-integration-003 (wave11-followups-b); task design and execution Red (Claude Cowork)",
+   "source": "gateway-integration-003:docs/gateway_lifecycle_v1/INTEGRATION_NOTE.md",
+   "original_sha256": "6f249ff813b19b2ddb18cc2f17ce626cb8e753c3d22cd8b71f098f54703b649f",
+   "export_sha256": "6f249ff813b19b2ddb18cc2f17ce626cb8e753c3d22cd8b71f098f54703b649f",
+   "export_bytes": 8820,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/integrated/docs/gateway_lifecycle_v1/MIGRATION_NOTE.md",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer gateway-lifecycle-builder-002 (wave9-followups-a); task design and execution Red (Claude Cowork)",
+   "source": "gateway-lifecycle-builder-002:docs/gateway_lifecycle_v1/MIGRATION_NOTE.md",
+   "original_sha256": "262bfd3ac4a7a347c9b235b3f0c2dccf4bd33a79cf8410c9205a321927fe4b79",
+   "export_sha256": "262bfd3ac4a7a347c9b235b3f0c2dccf4bd33a79cf8410c9205a321927fe4b79",
+   "export_bytes": 4174,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/integrated/inputs/protocol.json",
+   "group": "lily_original",
+   "author": "Lilitari (Lily), original; copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/gateway_repair/original/inputs/protocol.json",
+   "original_sha256": "d3224dbb752eba3368c0a1569eb733d7a59fb9a3bf1929fdbb1810f9ae9cf382",
+   "export_sha256": "d3224dbb752eba3368c0a1569eb733d7a59fb9a3bf1929fdbb1810f9ae9cf382",
+   "export_bytes": 4180,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/integrated/results/receipt_gw_conformance.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "0e118f108fea62f06a38609780534abb69fd5fe95c75edcf315570c7aa9ed7e9",
+   "export_sha256": "0e118f108fea62f06a38609780534abb69fd5fe95c75edcf315570c7aa9ed7e9",
+   "export_bytes": 141,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/integrated/results/receipt_gw_test_audit_first_leaf_v2.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "5aa5a0a0ca24e688752f7633c0ebf9c85d01ffe14bd478f1f442b6edd30a05c6",
+   "export_sha256": "5aa5a0a0ca24e688752f7633c0ebf9c85d01ffe14bd478f1f442b6edd30a05c6",
+   "export_bytes": 115,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/integrated/results/receipt_gw_test_gateway_lifecycle.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "abb262ac1f1a32534d6105937c9aaa04ef150137bb5618a3dc9fc5a4e144f2b4",
+   "export_sha256": "abb262ac1f1a32534d6105937c9aaa04ef150137bb5618a3dc9fc5a4e144f2b4",
+   "export_bytes": 125,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/integrated/results/receipt_gw_test_gateway_regressions_v3.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "e68df21350c2e606673c38dcf5dfe4b1a31fc6d26c59ea10313ff44bd46d0cfc",
+   "export_sha256": "e68df21350c2e606673c38dcf5dfe4b1a31fc6d26c59ea10313ff44bd46d0cfc",
+   "export_bytes": 113,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/integrated/results/receipt_gw_test_relay.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "4a171100c6831cf5796fae5fa735631cf3953182242fa492d4ba7d7a54453f36",
+   "export_sha256": "4a171100c6831cf5796fae5fa735631cf3953182242fa492d4ba7d7a54453f36",
+   "export_bytes": 105,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/integrated/results/receipt_gw_test_relay_lifecycle.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "1ae6cb88ef00e717aaf17d9de306271966b8976563b0fa294b4864f2f0e0623c",
+   "export_sha256": "1ae6cb88ef00e717aaf17d9de306271966b8976563b0fa294b4864f2f0e0623c",
+   "export_bytes": 107,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/integrated/results/receipt_gw_test_stage.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "a851d8fed90dc2188ccd73ce3222c11403519828bd536625c79e8ba844d9cb5d",
+   "export_sha256": "a851d8fed90dc2188ccd73ce3222c11403519828bd536625c79e8ba844d9cb5d",
+   "export_bytes": 135,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/integrated/src/first_leaf.py",
+   "group": "lily_original",
+   "author": "Lilitari (Lily), original; copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/gateway_repair/original/src/first_leaf.py",
+   "original_sha256": "2306148b46490fae74dc49fc31e1161f76e64bf902d836276c2dfd9565645515",
+   "export_sha256": "2306148b46490fae74dc49fc31e1161f76e64bf902d836276c2dfd9565645515",
+   "export_bytes": 23198,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/integrated/src/interface.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer gateway-lifecycle-builder-001 (wave6-engineering); task design and execution Red (Claude Cowork)",
+   "source": "gateway-lifecycle-builder-001:src/interface.py",
+   "original_sha256": "559d4a22d58e443b0236d7de27517510bc6314fb768bfe5bf57a2f8e479be421",
+   "export_sha256": "559d4a22d58e443b0236d7de27517510bc6314fb768bfe5bf57a2f8e479be421",
+   "export_bytes": 21952,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/integrated/src/relay.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer gateway-integration-003 (wave11-followups-b); task design and execution Red (Claude Cowork)",
+   "source": "gateway-integration-003:src/relay.py",
+   "original_sha256": "51b7a663509a72cca2ce845c0ff329ae64185c328255635a48816d2c4211c001",
+   "export_sha256": "51b7a663509a72cca2ce845c0ff329ae64185c328255635a48816d2c4211c001",
+   "export_bytes": 21032,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/integrated/tests/test_audit_first_leaf.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer firstleaf-sim-audit-001 (wave7-red-broad); task design and execution Red (Claude Cowork)",
+   "source": "firstleaf-sim-audit-001:tests/test_audit_first_leaf.py",
+   "original_sha256": "489ac876ebf0f342187e82aa0b54726f370a8ca7f28409a774b1db2904563847",
+   "export_sha256": "489ac876ebf0f342187e82aa0b54726f370a8ca7f28409a774b1db2904563847",
+   "export_bytes": 19267,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/integrated/tests/test_audit_first_leaf_v2.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer gateway-integration-003 (wave11-followups-b); task design and execution Red (Claude Cowork)",
+   "source": "gateway-integration-003:tests/test_audit_first_leaf_v2.py",
+   "original_sha256": "42be8aa6b9dc447e9c6b9bcc650861a22be5d4bb77e529b14ad7867f63822dda",
+   "export_sha256": "42be8aa6b9dc447e9c6b9bcc650861a22be5d4bb77e529b14ad7867f63822dda",
+   "export_bytes": 22472,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/integrated/tests/test_gateway_conformance.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer gateway-conformance-004 (wave12b-followups-c); task design and execution Red (Claude Cowork)",
+   "source": "gateway-conformance-004:tests/test_gateway_conformance.py",
+   "original_sha256": "3bb0e49b1bc9e0e0528a2f6ef36022bb042031a5526fa6737297ad3fbaacf18e",
+   "export_sha256": "3bb0e49b1bc9e0e0528a2f6ef36022bb042031a5526fa6737297ad3fbaacf18e",
+   "export_bytes": 40966,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/integrated/tests/test_gateway_lifecycle.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer gateway-lifecycle-builder-002 (wave9-followups-a); task design and execution Red (Claude Cowork)",
+   "source": "gateway-lifecycle-builder-002:tests/test_gateway_lifecycle.py",
+   "original_sha256": "c86e36381c58df5f194fd3fb89a0b931f13815acb4946540bab443c027e1974f",
+   "export_sha256": "c86e36381c58df5f194fd3fb89a0b931f13815acb4946540bab443c027e1974f",
+   "export_bytes": 26443,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/integrated/tests/test_gateway_regressions_v2.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/gateway_repair/candidate/tests/test_gateway_regressions_v2.py",
+   "original_sha256": "5fa9249f986a34059675f120f6436b6e295ba0831ff46d63120df9fb98a4d7fa",
+   "export_sha256": "5fa9249f986a34059675f120f6436b6e295ba0831ff46d63120df9fb98a4d7fa",
+   "export_bytes": 8355,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/integrated/tests/test_gateway_regressions_v3.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer gateway-integration-003 (wave11-followups-b); task design and execution Red (Claude Cowork)",
+   "source": "gateway-integration-003:tests/test_gateway_regressions_v3.py",
+   "original_sha256": "bee0446433827db2698e4cc5292192bd8d6650f224d19cd83ae7dfff03d2df7f",
+   "export_sha256": "bee0446433827db2698e4cc5292192bd8d6650f224d19cd83ae7dfff03d2df7f",
+   "export_bytes": 11554,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/integrated/tests/test_relay.py",
+   "group": "lily_original",
+   "author": "Lilitari (Lily), original; copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/gateway_repair/original/tests/test_relay.py",
+   "original_sha256": "b4ea09e1d72925b92a5d9251e7259b2b8338ecc43683b09ad76ffa81e7b27b71",
+   "export_sha256": "b4ea09e1d72925b92a5d9251e7259b2b8338ecc43683b09ad76ffa81e7b27b71",
+   "export_bytes": 2586,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/integrated/tests/test_relay_lifecycle.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer gateway-lifecycle-builder-002 (wave9-followups-a); task design and execution Red (Claude Cowork)",
+   "source": "gateway-lifecycle-builder-002:tests/test_relay_lifecycle.py",
+   "original_sha256": "10c4ace5352f48250cf6228db87dfa3a3d21053ba3432c9cbad81374c7df515c",
+   "export_sha256": "10c4ace5352f48250cf6228db87dfa3a3d21053ba3432c9cbad81374c7df515c",
+   "export_bytes": 13433,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/integrated/tests/test_stage.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer gateway-lifecycle-builder-002 (wave9-followups-a); task design and execution Red (Claude Cowork)",
+   "source": "gateway-lifecycle-builder-002:tests/test_stage.py",
+   "original_sha256": "ef462fdc4b9092e14cec3c17b6c4a8b8734a0d1c26cde4ea499da086324b97ed",
+   "export_sha256": "ef462fdc4b9092e14cec3c17b6c4a8b8734a0d1c26cde4ea499da086324b97ed",
+   "export_bytes": 9234,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/model_checker/MODEL.md",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer gateway-modelcheck-002 (wave10-resends); task design and execution Red (Claude Cowork)",
+   "source": "gateway-modelcheck-002:MODEL.md",
+   "original_sha256": "b254d6f0f8d5bd380d6aaf1cd1caa990b44ad1e4f59aa75d12d090db91078138",
+   "export_sha256": "b254d6f0f8d5bd380d6aaf1cd1caa990b44ad1e4f59aa75d12d090db91078138",
+   "export_bytes": 13111,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/model_checker/README.md",
+   "group": "lily_original",
+   "author": "Lilitari (Lily), original; copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/gateway_repair/original/README.md",
+   "original_sha256": "91b40cde51426aec499e8c703c08297928501dded8255ce7862da833526cd22f",
+   "export_sha256": "91b40cde51426aec499e8c703c08297928501dded8255ce7862da833526cd22f",
+   "export_bytes": 7105,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/model_checker/_receipt_test_checker.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "dba256586ea8911ab34052cb81ec0d7a8b063997c034297b1351da59f9b7f76d",
+   "export_sha256": "dba256586ea8911ab34052cb81ec0d7a8b063997c034297b1351da59f9b7f76d",
+   "export_bytes": 116,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/model_checker/_receipt_test_relay.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "4285ab7f2c4bc6f6e9d66876cd040d832ecb59c77dfa7ee11da844d5d5499066",
+   "export_sha256": "4285ab7f2c4bc6f6e9d66876cd040d832ecb59c77dfa7ee11da844d5d5499066",
+   "export_bytes": 105,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/model_checker/_receipt_test_stage.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "7385122712f912054ba796900b81db26ed218633076407a2a70c50f01abb71a6",
+   "export_sha256": "7385122712f912054ba796900b81db26ed218633076407a2a70c50f01abb71a6",
+   "export_bytes": 135,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/model_checker/_study_modelcheck.out",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "c71cc825c551f699c4e751ca2799dc654da291e7c084b5258ddfee5ebb718c32",
+   "export_sha256": "c71cc825c551f699c4e751ca2799dc654da291e7c084b5258ddfee5ebb718c32",
+   "export_bytes": 5536,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/model_checker/docs/COVERAGE_AND_ATTRIBUTION.md",
+   "group": "lily_original",
+   "author": "Lilitari (Lily), original; copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/gateway_repair/original/docs/COVERAGE_AND_ATTRIBUTION.md",
+   "original_sha256": "cd03ce62d44c62c2bb33a274d9b8ec9a9e1cc978c683c0332f5fbf7dec90c8b3",
+   "export_sha256": "cd03ce62d44c62c2bb33a274d9b8ec9a9e1cc978c683c0332f5fbf7dec90c8b3",
+   "export_bytes": 4483,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/model_checker/docs/MODEL_BRIEF.md",
+   "group": "lily_original",
+   "author": "Lilitari (Lily), original; copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/gateway_repair/original/docs/MODEL_BRIEF.md",
+   "original_sha256": "9a93b21224ea6f134bbe429947906abfdfd9f1bf92792ac2bd79458edbad04b0",
+   "export_sha256": "9a93b21224ea6f134bbe429947906abfdfd9f1bf92792ac2bd79458edbad04b0",
+   "export_bytes": 2879,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/model_checker/gateway_modelcheck/__init__.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer gateway-modelcheck-002 (wave10-resends); task design and execution Red (Claude Cowork)",
+   "source": "gateway-modelcheck-002:gateway_modelcheck/__init__.py",
+   "original_sha256": "dc8bbec57742502bf2fdaf900132f4b47cea18575a2bd76cd2aa0806cf35c87e",
+   "export_sha256": "dc8bbec57742502bf2fdaf900132f4b47cea18575a2bd76cd2aa0806cf35c87e",
+   "export_bytes": 122,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/model_checker/gateway_modelcheck/checker.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer gateway-modelcheck-002 (wave10-resends); task design and execution Red (Claude Cowork)",
+   "source": "gateway-modelcheck-002:gateway_modelcheck/checker.py",
+   "original_sha256": "ba50a98866c91ea75966f6258f7fd0560a2fe653784cf557c8e8c746b620f720",
+   "export_sha256": "ba50a98866c91ea75966f6258f7fd0560a2fe653784cf557c8e8c746b620f720",
+   "export_bytes": 12224,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/model_checker/gateway_modelcheck/model.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer gateway-modelcheck-002 (wave10-resends); task design and execution Red (Claude Cowork)",
+   "source": "gateway-modelcheck-002:gateway_modelcheck/model.py",
+   "original_sha256": "96208870a2d03eb9c40e52af4d58bd636f345f37f88434885d35df272612baf0",
+   "export_sha256": "96208870a2d03eb9c40e52af4d58bd636f345f37f88434885d35df272612baf0",
+   "export_bytes": 18483,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/model_checker/gateway_modelcheck/run_check.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer gateway-modelcheck-002 (wave10-resends); task design and execution Red (Claude Cowork)",
+   "source": "gateway-modelcheck-002:gateway_modelcheck/run_check.py",
+   "original_sha256": "a66ecfb3b87c2043726ea8e0e9757747492c512838cf695b3853ddd8bb7afb75",
+   "export_sha256": "a66ecfb3b87c2043726ea8e0e9757747492c512838cf695b3853ddd8bb7afb75",
+   "export_bytes": 2000,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/model_checker/gateway_modelcheck/tests/__init__.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer gateway-modelcheck-002 (wave10-resends); task design and execution Red (Claude Cowork)",
+   "source": "gateway-modelcheck-002:gateway_modelcheck/tests/__init__.py",
+   "original_sha256": "5be230fa13a76b43315ce684e1e849c7104db7aa30af69f7d91144b4b665e2d3",
+   "export_sha256": "5be230fa13a76b43315ce684e1e849c7104db7aa30af69f7d91144b4b665e2d3",
+   "export_bytes": 31,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/model_checker/gateway_modelcheck/tests/test_checker.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer gateway-modelcheck-002 (wave10-resends); task design and execution Red (Claude Cowork)",
+   "source": "gateway-modelcheck-002:gateway_modelcheck/tests/test_checker.py",
+   "original_sha256": "42d83ab8facdc077447a81d11b1e2340ce748430ed218f0a908b69122c75b3d3",
+   "export_sha256": "42d83ab8facdc077447a81d11b1e2340ce748430ed218f0a908b69122c75b3d3",
+   "export_bytes": 7042,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/model_checker/inputs/protocol.json",
+   "group": "lily_original",
+   "author": "Lilitari (Lily), original; copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/gateway_repair/original/inputs/protocol.json",
+   "original_sha256": "d3224dbb752eba3368c0a1569eb733d7a59fb9a3bf1929fdbb1810f9ae9cf382",
+   "export_sha256": "d3224dbb752eba3368c0a1569eb733d7a59fb9a3bf1929fdbb1810f9ae9cf382",
+   "export_bytes": 4180,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/model_checker/report.compact.json",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "46c1f38a5b40f73ae50a81f708288d8a9e95bdf1cdcc5f952497e93262b131e7",
+   "export_sha256": "46c1f38a5b40f73ae50a81f708288d8a9e95bdf1cdcc5f952497e93262b131e7",
+   "export_bytes": 13051,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/model_checker/report.json",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "153047ee509bfc59a3e4c16b3bfeef6a79f9af8e8864a9522a626f3f5d07fd27",
+   "export_sha256": "153047ee509bfc59a3e4c16b3bfeef6a79f9af8e8864a9522a626f3f5d07fd27",
+   "export_bytes": 42526,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/model_checker/src/first_leaf.py",
+   "group": "lily_original",
+   "author": "Lilitari (Lily), original; copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/gateway_repair/original/src/first_leaf.py",
+   "original_sha256": "2306148b46490fae74dc49fc31e1161f76e64bf902d836276c2dfd9565645515",
+   "export_sha256": "2306148b46490fae74dc49fc31e1161f76e64bf902d836276c2dfd9565645515",
+   "export_bytes": 23198,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/model_checker/src/interface.py",
+   "group": "lily_original",
+   "author": "Lilitari (Lily), original; copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/gateway_repair/original/src/interface.py",
+   "original_sha256": "4ca89c83f1996a3ba67f231f081ff55b93e583338ded48a99eca162e7d06caa9",
+   "export_sha256": "4ca89c83f1996a3ba67f231f081ff55b93e583338ded48a99eca162e7d06caa9",
+   "export_bytes": 4155,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/model_checker/src/relay.py",
+   "group": "lily_original",
+   "author": "Lilitari (Lily), original; copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/gateway_repair/original/src/relay.py",
+   "original_sha256": "c0910ef2c16376b57bf098e374f7e7e95d521493b0d4685f8def00834742c145",
+   "export_sha256": "c0910ef2c16376b57bf098e374f7e7e95d521493b0d4685f8def00834742c145",
+   "export_bytes": 8315,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/model_checker/tests/test_relay.py",
+   "group": "lily_original",
+   "author": "Lilitari (Lily), original; copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/gateway_repair/original/tests/test_relay.py",
+   "original_sha256": "b4ea09e1d72925b92a5d9251e7259b2b8338ecc43683b09ad76ffa81e7b27b71",
+   "export_sha256": "b4ea09e1d72925b92a5d9251e7259b2b8338ecc43683b09ad76ffa81e7b27b71",
+   "export_bytes": 2586,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/model_checker/tests/test_stage.py",
+   "group": "lily_original",
+   "author": "Lilitari (Lily), original; copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/gateway_repair/original/tests/test_stage.py",
+   "original_sha256": "fdf06906ce3b1058ecc23f2f00eb321988c9f487553ade59aa8c6df82c961c59",
+   "export_sha256": "fdf06906ce3b1058ecc23f2f00eb321988c9f487553ade59aa8c6df82c961c59",
+   "export_bytes": 8866,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/oracle_baseline/README.md",
+   "group": "lily_original",
+   "author": "Lilitari (Lily), original; copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/gateway_repair/original/README.md",
+   "original_sha256": "91b40cde51426aec499e8c703c08297928501dded8255ce7862da833526cd22f",
+   "export_sha256": "91b40cde51426aec499e8c703c08297928501dded8255ce7862da833526cd22f",
+   "export_bytes": 7105,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/oracle_baseline/_receipt_test_oracle.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "7ae2483d78d1550f38e6b3c556ddd9a98cf10891da523b5b8022c6d3639c01b7",
+   "export_sha256": "39c96433de4af5dcebde54ed69d35f1c4d3a3817f6b5b63d2809113f27f07e8c",
+   "export_bytes": 727,
+   "changes": [
+    "sandbox path"
+   ]
+  },
+  {
+   "path": "scientific/gateway/oracle_baseline/_receipt_test_relay.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "2750d1c0f39e1bfbfee3b6b6f7164f99d134cfdbcf9fb9c9529a0c8c53f0c17c",
+   "export_sha256": "2750d1c0f39e1bfbfee3b6b6f7164f99d134cfdbcf9fb9c9529a0c8c53f0c17c",
+   "export_bytes": 105,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/oracle_baseline/_receipt_test_stage.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "f51abfd24fc62857fd56cf73e6c3dccd2fe6abb5c32e88cf6c5cb73d0ccb68e3",
+   "export_sha256": "f51abfd24fc62857fd56cf73e6c3dccd2fe6abb5c32e88cf6c5cb73d0ccb68e3",
+   "export_bytes": 135,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/oracle_baseline/_study_oracle_inproc.out",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "8db481257f5ba62e7ac50723e0b236a8d586d9d867962f10b7a1b6e8ca769355",
+   "export_sha256": "8db481257f5ba62e7ac50723e0b236a8d586d9d867962f10b7a1b6e8ca769355",
+   "export_bytes": 635,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/oracle_baseline/_study_oracle_local.out",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "8db481257f5ba62e7ac50723e0b236a8d586d9d867962f10b7a1b6e8ca769355",
+   "export_sha256": "8db481257f5ba62e7ac50723e0b236a8d586d9d867962f10b7a1b6e8ca769355",
+   "export_bytes": 635,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/oracle_baseline/docs/COVERAGE_AND_ATTRIBUTION.md",
+   "group": "lily_original",
+   "author": "Lilitari (Lily), original; copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/gateway_repair/original/docs/COVERAGE_AND_ATTRIBUTION.md",
+   "original_sha256": "cd03ce62d44c62c2bb33a274d9b8ec9a9e1cc978c683c0332f5fbf7dec90c8b3",
+   "export_sha256": "cd03ce62d44c62c2bb33a274d9b8ec9a9e1cc978c683c0332f5fbf7dec90c8b3",
+   "export_bytes": 4483,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/oracle_baseline/docs/MODEL_BRIEF.md",
+   "group": "lily_original",
+   "author": "Lilitari (Lily), original; copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/gateway_repair/original/docs/MODEL_BRIEF.md",
+   "original_sha256": "9a93b21224ea6f134bbe429947906abfdfd9f1bf92792ac2bd79458edbad04b0",
+   "export_sha256": "9a93b21224ea6f134bbe429947906abfdfd9f1bf92792ac2bd79458edbad04b0",
+   "export_bytes": 2879,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/oracle_baseline/docs/ORACLE_BASELINE.md",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer firstleaf-oracle-cont-002 (wave10-resends); task design and execution Red (Claude Cowork)",
+   "source": "firstleaf-oracle-cont-002:docs/ORACLE_BASELINE.md",
+   "original_sha256": "1e50aef6230bddec3ae47bde9bdc993781b285ec1099059ebb44f2c6f3098861",
+   "export_sha256": "1e50aef6230bddec3ae47bde9bdc993781b285ec1099059ebb44f2c6f3098861",
+   "export_bytes": 1474,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/oracle_baseline/inproc_runs.json",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "05a822749629918f1b1127df2fbed094b65478419a8b4346799b13827e18a8b7",
+   "export_sha256": "05a822749629918f1b1127df2fbed094b65478419a8b4346799b13827e18a8b7",
+   "export_bytes": 71211,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/oracle_baseline/inputs/protocol.json",
+   "group": "lily_original",
+   "author": "Lilitari (Lily), original; copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/gateway_repair/original/inputs/protocol.json",
+   "original_sha256": "d3224dbb752eba3368c0a1569eb733d7a59fb9a3bf1929fdbb1810f9ae9cf382",
+   "export_sha256": "d3224dbb752eba3368c0a1569eb733d7a59fb9a3bf1929fdbb1810f9ae9cf382",
+   "export_bytes": 4180,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/oracle_baseline/local_runs.compact.json",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "04d2241ecb8ad0f5045c77b2d43fdd34650c1692b54158a73d765b867eaf2984",
+   "export_sha256": "04d2241ecb8ad0f5045c77b2d43fdd34650c1692b54158a73d765b867eaf2984",
+   "export_bytes": 14668,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/oracle_baseline/local_runs.json",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "5690cfedbc3ec2efa5c41f826f520b13b224120dd028b49acd8de823e2556c6a",
+   "export_sha256": "5690cfedbc3ec2efa5c41f826f520b13b224120dd028b49acd8de823e2556c6a",
+   "export_bytes": 71114,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/oracle_baseline/oracle/LICENSE",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer firstleaf-oracle-001 (wave7-red-broad); task design and execution Red (Claude Cowork)",
+   "source": "firstleaf-oracle-001:oracle/LICENSE",
+   "original_sha256": "0b68002633312be42d69c33f131525efd283461c1b1b2005e0d90fcaa20a41a0",
+   "export_sha256": "0b68002633312be42d69c33f131525efd283461c1b1b2005e0d90fcaa20a41a0",
+   "export_bytes": 1121,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/oracle_baseline/oracle/first_leaf_oracle.py",
+   "group": "red_derivative",
+   "author": "Red (Claude Cowork): spliced partial answer with continuation, then fix-003 changes; derived from answers firstleaf-oracle-001",
+   "source": null,
+   "original_sha256": "02977d4574cd78006eaf91319140073ec87f5172e354fc4d9e6934a9f99be1c6",
+   "export_sha256": "02977d4574cd78006eaf91319140073ec87f5172e354fc4d9e6934a9f99be1c6",
+   "export_bytes": 29720,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/oracle_baseline/oracle/first_leaf_oracle.py.part2.txt",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer firstleaf-oracle-cont-002 (wave10-resends); task design and execution Red (Claude Cowork)",
+   "source": "firstleaf-oracle-cont-002:oracle/first_leaf_oracle.py.part2.txt",
+   "original_sha256": "c119f8806db58849281f8a153c1764aa70074d16a8bc7feb8c7b9c259658d04a",
+   "export_sha256": "c119f8806db58849281f8a153c1764aa70074d16a8bc7feb8c7b9c259658d04a",
+   "export_bytes": 17187,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/oracle_baseline/oracle/fl_harness.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer firstleaf-oracle-fix-003 (wave12b-followups-c); task design and execution Red (Claude Cowork)",
+   "source": "firstleaf-oracle-fix-003:oracle/fl_harness.py",
+   "original_sha256": "ae05d48fe5997d59f2749a1da033679d89aa65ed9bdfc740aacec5abbf62b2a4",
+   "export_sha256": "ae05d48fe5997d59f2749a1da033679d89aa65ed9bdfc740aacec5abbf62b2a4",
+   "export_bytes": 23136,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/oracle_baseline/oracle/fl_local_sim.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer firstleaf-oracle-cont-002 (wave10-resends); task design and execution Red (Claude Cowork)",
+   "source": "firstleaf-oracle-cont-002:oracle/fl_local_sim.py",
+   "original_sha256": "dc7512e0038224699263352ced7e79ea7ee3521afe6a7d253aec90a64136ad7e",
+   "export_sha256": "dc7512e0038224699263352ced7e79ea7ee3521afe6a7d253aec90a64136ad7e",
+   "export_bytes": 12300,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/oracle_baseline/oracle/fl_scoring.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer firstleaf-oracle-fix-003 (wave12b-followups-c); task design and execution Red (Claude Cowork)",
+   "source": "firstleaf-oracle-fix-003:oracle/fl_scoring.py",
+   "original_sha256": "49aed829f1e1580acc7c8e604bc51991acb10b97bbee510d652bc982fe03bfe7",
+   "export_sha256": "49aed829f1e1580acc7c8e604bc51991acb10b97bbee510d652bc982fe03bfe7",
+   "export_bytes": 11281,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/oracle_baseline/oracle/splice_continuation.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer firstleaf-oracle-cont-002 (wave10-resends); task design and execution Red (Claude Cowork)",
+   "source": "firstleaf-oracle-cont-002:oracle/splice_continuation.py",
+   "original_sha256": "0e515ce97b4f952782365daaa0dc1b1a61ce6fc34832cd144fdb039d13d8a1ac",
+   "export_sha256": "0e515ce97b4f952782365daaa0dc1b1a61ce6fc34832cd144fdb039d13d8a1ac",
+   "export_bytes": 969,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/oracle_baseline/results/harness_summary_fix003.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "8db481257f5ba62e7ac50723e0b236a8d586d9d867962f10b7a1b6e8ca769355",
+   "export_sha256": "8db481257f5ba62e7ac50723e0b236a8d586d9d867962f10b7a1b6e8ca769355",
+   "export_bytes": 635,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/oracle_baseline/results/oracle_local_runs_fix003.json",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "7ae64c3a5337ed075e3100a82219d92f7a74f11502212de6d31e771b0dd04a8b",
+   "export_sha256": "7ae64c3a5337ed075e3100a82219d92f7a74f11502212de6d31e771b0dd04a8b",
+   "export_bytes": 73007,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/oracle_baseline/results/receipt_tests_fix003.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "9fb14cbdcae26e8172ba18ac04fefc0dacdfabe3d380b321dd8cd8d9b9814ec4",
+   "export_sha256": "9fb14cbdcae26e8172ba18ac04fefc0dacdfabe3d380b321dd8cd8d9b9814ec4",
+   "export_bytes": 143,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/oracle_baseline/src/first_leaf.py",
+   "group": "lily_original",
+   "author": "Lilitari (Lily), original; copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/gateway_repair/original/src/first_leaf.py",
+   "original_sha256": "2306148b46490fae74dc49fc31e1161f76e64bf902d836276c2dfd9565645515",
+   "export_sha256": "2306148b46490fae74dc49fc31e1161f76e64bf902d836276c2dfd9565645515",
+   "export_bytes": 23198,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/oracle_baseline/src/interface.py",
+   "group": "lily_original",
+   "author": "Lilitari (Lily), original; copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/gateway_repair/original/src/interface.py",
+   "original_sha256": "4ca89c83f1996a3ba67f231f081ff55b93e583338ded48a99eca162e7d06caa9",
+   "export_sha256": "4ca89c83f1996a3ba67f231f081ff55b93e583338ded48a99eca162e7d06caa9",
+   "export_bytes": 4155,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/oracle_baseline/src/relay.py",
+   "group": "lily_original",
+   "author": "Lilitari (Lily), original; copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/gateway_repair/original/src/relay.py",
+   "original_sha256": "c0910ef2c16376b57bf098e374f7e7e95d521493b0d4685f8def00834742c145",
+   "export_sha256": "c0910ef2c16376b57bf098e374f7e7e95d521493b0d4685f8def00834742c145",
+   "export_bytes": 8315,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/oracle_baseline/tests/test_oracle.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer firstleaf-oracle-fix-003 (wave12b-followups-c); task design and execution Red (Claude Cowork)",
+   "source": "firstleaf-oracle-fix-003:tests/test_oracle.py",
+   "original_sha256": "d9b63f8ddb797bdd694a74185c38abce4a18ab9a73c50095ecf0fd0ffe1d1d26",
+   "export_sha256": "d9b63f8ddb797bdd694a74185c38abce4a18ab9a73c50095ecf0fd0ffe1d1d26",
+   "export_bytes": 21566,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/oracle_baseline/tests/test_relay.py",
+   "group": "lily_original",
+   "author": "Lilitari (Lily), original; copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/gateway_repair/original/tests/test_relay.py",
+   "original_sha256": "b4ea09e1d72925b92a5d9251e7259b2b8338ecc43683b09ad76ffa81e7b27b71",
+   "export_sha256": "b4ea09e1d72925b92a5d9251e7259b2b8338ecc43683b09ad76ffa81e7b27b71",
+   "export_bytes": 2586,
+   "changes": []
+  },
+  {
+   "path": "scientific/gateway/oracle_baseline/tests/test_stage.py",
+   "group": "lily_original",
+   "author": "Lilitari (Lily), original; copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/gateway_repair/original/tests/test_stage.py",
+   "original_sha256": "fdf06906ce3b1058ecc23f2f00eb321988c9f487553ade59aa8c6df82c961c59",
+   "export_sha256": "fdf06906ce3b1058ecc23f2f00eb321988c9f487553ade59aa8c6df82c961c59",
+   "export_bytes": 8866,
+   "changes": []
+  },
+  {
+   "path": "scientific/numerics/pump_audit/audit.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "d58317f940ab9f6f70716671bb7292be43834e8950d814c6affde2420968fdbb",
+   "export_sha256": "62b7c42cadfc916cca50246a5dfd5cd027427dffde2f919afca1ca415cf8c69b",
+   "export_bytes": 5208,
+   "changes": [
+    "sandbox path"
+   ]
+  },
+  {
+   "path": "scientific/numerics/pump_audit/audit_patched.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "871a4b1a9421867761b5b2cfbc8b596a6f2bbf1b55320c498eb5abb28da99732",
+   "export_sha256": "871a4b1a9421867761b5b2cfbc8b596a6f2bbf1b55320c498eb5abb28da99732",
+   "export_bytes": 133,
+   "changes": []
+  },
+  {
+   "path": "scientific/numerics/pump_audit/diag.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "c6f4ee7fb10a729909cd3066f2ff36022141552c487fad8276353f93f3c3fc4a",
+   "export_sha256": "4e8455fb2688fce83356fd079b78f830d88f432389d2f70031c1fabb2bcdb93d",
+   "export_bytes": 29905,
+   "changes": [
+    "sandbox path"
+   ]
+  },
+  {
+   "path": "scientific/numerics/pump_audit/reviews/audit_ab_mpb1b/audit_diagnostics.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer pump-matched-audit-001 (wave7-red-broad); task design and execution Red (Claude Cowork)",
+   "source": "pump-matched-audit-001:reviews/audit_ab_mpb1b/audit_diagnostics.py",
+   "original_sha256": "34bc8e19b3414341e607651cacd7399254152caf7b3aa8f80509dbd9b766d30a",
+   "export_sha256": "34bc8e19b3414341e607651cacd7399254152caf7b3aa8f80509dbd9b766d30a",
+   "export_bytes": 5690,
+   "changes": []
+  },
+  {
+   "path": "scientific/numerics/pump_audit/reviews/audit_ab_mpb1b/audit_test_pump_matched.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer pump-matched-audit-001 (wave7-red-broad); task design and execution Red (Claude Cowork)",
+   "source": "pump-matched-audit-001:reviews/audit_ab_mpb1b/audit_test_pump_matched.py",
+   "original_sha256": "afd66d39f3ed7b776cc74a487fc7dee2d4da74723bcc2d90009abe8e5b6e95a3",
+   "export_sha256": "afd66d39f3ed7b776cc74a487fc7dee2d4da74723bcc2d90009abe8e5b6e95a3",
+   "export_bytes": 25737,
+   "changes": []
+  },
+  {
+   "path": "scientific/numerics/pump_audit/reviews/audit_ab_mpb1b/pump_subnormal_guard.patch",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer pump-matched-audit-001 (wave7-red-broad); task design and execution Red (Claude Cowork)",
+   "source": "pump-matched-audit-001:reviews/audit_ab_mpb1b/pump_subnormal_guard.patch",
+   "original_sha256": "12066c0a679c390c5c68eaea2c6a8096c856598ca83ebb5e0f621c37adfdd596",
+   "export_sha256": "12066c0a679c390c5c68eaea2c6a8096c856598ca83ebb5e0f621c37adfdd596",
+   "export_bytes": 1022,
+   "changes": []
+  },
+  {
+   "path": "scientific/numerics/pump_audit/validation/ab_mpb1a/REPORT.md",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/ab_mpb1a/REPORT.md",
+   "original_sha256": "2a9775201fa862993d4a23faeb0b7f561235b3034bd77726a41108887ce7218c",
+   "export_sha256": "2a9775201fa862993d4a23faeb0b7f561235b3034bd77726a41108887ce7218c",
+   "export_bytes": 12202,
+   "changes": []
+  },
+  {
+   "path": "scientific/numerics/pump_audit/validation/ab_mpb1a/model.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/ab_mpb1a/model.py",
+   "original_sha256": "d05cdd81f64464091148570d2f8c78f668e4960ffb10ae137f1ee6ad2f63c172",
+   "export_sha256": "d05cdd81f64464091148570d2f8c78f668e4960ffb10ae137f1ee6ad2f63c172",
+   "export_bytes": 6128,
+   "changes": []
+  },
+  {
+   "path": "scientific/numerics/pump_audit/validation/ab_mpb1b/ACCEPTANCE.md",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/ab_mpb1b/ACCEPTANCE.md",
+   "original_sha256": "aa3ebe5876a5fc2f748aaddccd3d6310780b4e0bbfa7d4550793d43d5a07c99d",
+   "export_sha256": "aa3ebe5876a5fc2f748aaddccd3d6310780b4e0bbfa7d4550793d43d5a07c99d",
+   "export_bytes": 3247,
+   "changes": []
+  },
+  {
+   "path": "scientific/numerics/pump_audit/validation/ab_mpb1b/PUMP_CONTRACT.md",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/ab_mpb1b/PUMP_CONTRACT.md",
+   "original_sha256": "a5dfe6810306cabe9d4fc69be03b6f431e4e8b1ae2a5bf67d074071bc6915475",
+   "export_sha256": "a5dfe6810306cabe9d4fc69be03b6f431e4e8b1ae2a5bf67d074071bc6915475",
+   "export_bytes": 5573,
+   "changes": []
+  },
+  {
+   "path": "scientific/numerics/pump_audit/validation/ab_mpb1b/REPORT.md",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/ab_mpb1b/REPORT.md",
+   "original_sha256": "9b8d957e545f6d5e82c314d1af4bb637f13a26cf87c58b6c8e7d6ddb3df0a1b7",
+   "export_sha256": "9b8d957e545f6d5e82c314d1af4bb637f13a26cf87c58b6c8e7d6ddb3df0a1b7",
+   "export_bytes": 4023,
+   "changes": []
+  },
+  {
+   "path": "scientific/numerics/pump_audit/validation/ab_mpb1b/STUDY_DESIGN.json",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/ab_mpb1b/STUDY_DESIGN.json",
+   "original_sha256": "0a81942a27c40d20af63414ffbd1b58872f33da3783986819a3fc55057f55c75",
+   "export_sha256": "0a81942a27c40d20af63414ffbd1b58872f33da3783986819a3fc55057f55c75",
+   "export_bytes": 1443,
+   "changes": []
+  },
+  {
+   "path": "scientific/numerics/pump_audit/validation/ab_mpb1b/admitted.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/ab_mpb1b/admitted.py",
+   "original_sha256": "ec9db5aef83cbf12f2ec152e3c32f7d715687a42cf6eba779c7f8dd48be8245b",
+   "export_sha256": "ec9db5aef83cbf12f2ec152e3c32f7d715687a42cf6eba779c7f8dd48be8245b",
+   "export_bytes": 1694,
+   "changes": []
+  },
+  {
+   "path": "scientific/numerics/pump_audit/validation/ab_mpb1b/pump.py",
+   "group": "red_derivative",
+   "author": "Red (Claude Cowork): Coda's pump.py (kept as pump.py.orig) with the audit's pump_subnormal_guard.patch (answer pump-matched-audit-001) applied",
+   "source": null,
+   "original_sha256": "ac02ff84a55c4ef3cfcfaaf0151cda91a41fd7d5d5a7a918d0735c922f7acace",
+   "export_sha256": "ac02ff84a55c4ef3cfcfaaf0151cda91a41fd7d5d5a7a918d0735c922f7acace",
+   "export_bytes": 2562,
+   "changes": []
+  },
+  {
+   "path": "scientific/numerics/pump_audit/validation/ab_mpb1b/pump.py.orig",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/ab_mpb1b/pump.py",
+   "original_sha256": "fac5e0e7bef316379e97aa4f46e6bac8c7c53c23c01dff997bbf947ab2be9a47",
+   "export_sha256": "fac5e0e7bef316379e97aa4f46e6bac8c7c53c23c01dff997bbf947ab2be9a47",
+   "export_bytes": 2306,
+   "changes": []
+  },
+  {
+   "path": "scientific/numerics/pump_audit/validation/ab_mpb1b/run_001/pareto_receipt.json",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/ab_mpb1b/run_001/pareto_receipt.json",
+   "original_sha256": "350f22334893acdeb09b5e3226ebe2d11e30f1bbd2d36b5240678157fa677695",
+   "export_sha256": "350f22334893acdeb09b5e3226ebe2d11e30f1bbd2d36b5240678157fa677695",
+   "export_bytes": 2214,
+   "changes": []
+  },
+  {
+   "path": "scientific/numerics/pump_audit/validation/ab_mpb1b/study.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/ab_mpb1b/study.py",
+   "original_sha256": "7a2456aad19a711c603f82d3ae9c4cc3fb6f0fbd13bc17848e2814ed1763679f",
+   "export_sha256": "7a2456aad19a711c603f82d3ae9c4cc3fb6f0fbd13bc17848e2814ed1763679f",
+   "export_bytes": 8053,
+   "changes": []
+  },
+  {
+   "path": "scientific/numerics/pump_audit/validation/ab_mpb1b/test_pump.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/ab_mpb1b/test_pump.py",
+   "original_sha256": "afc0395be74f2a1d8db72880a5c154b9217c9ceec83bad9ec3259b8eb73631a4",
+   "export_sha256": "afc0395be74f2a1d8db72880a5c154b9217c9ceec83bad9ec3259b8eb73631a4",
+   "export_bytes": 7424,
+   "changes": []
+  },
+  {
+   "path": "scientific/numerics/release_observability/additions.json",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "a2aa49ec49e10e3ca3eb107573058fbae78ffee5f33bf8f9e8d64bd407dd042b",
+   "export_sha256": "a2aa49ec49e10e3ca3eb107573058fbae78ffee5f33bf8f9e8d64bd407dd042b",
+   "export_bytes": 21407,
+   "changes": []
+  },
+  {
+   "path": "scientific/numerics/release_observability/additions.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "93dca08e57d9bbc0d17ef7be1d6e5ced92db715e4dc3d9d5b0aada5f6b7ae25a",
+   "export_sha256": "93dca08e57d9bbc0d17ef7be1d6e5ced92db715e4dc3d9d5b0aada5f6b7ae25a",
+   "export_bytes": 15579,
+   "changes": []
+  },
+  {
+   "path": "scientific/numerics/release_observability/release_model.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer release-observability-002b (wave9-followups-a); task design and execution Red (Claude Cowork)",
+   "source": "release-observability-002b:release_model.py",
+   "original_sha256": "2ea455389682b309d7822446a97c8db07c1b8dce6ee29b29794fabaacb33cdc3",
+   "export_sha256": "2ea455389682b309d7822446a97c8db07c1b8dce6ee29b29794fabaacb33cdc3",
+   "export_bytes": 7592,
+   "changes": []
+  },
+  {
+   "path": "scientific/numerics/release_observability/release_review_additions.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer release-observability-review-003 (wave11-followups-b); task design and execution Red (Claude Cowork)",
+   "source": "release-observability-review-003:release_review_additions.py",
+   "original_sha256": "19ed647155551eaa0435fc210471ec131554aedb0abf44d6a158bd0420c9bb74",
+   "export_sha256": "19ed647155551eaa0435fc210471ec131554aedb0abf44d6a158bd0420c9bb74",
+   "export_bytes": 19430,
+   "changes": []
+  },
+  {
+   "path": "scientific/numerics/release_observability/release_study.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer release-observability-002b (wave9-followups-a); task design and execution Red (Claude Cowork)",
+   "source": "release-observability-002b:release_study.py",
+   "original_sha256": "9c70462aeba833cc708d7495ac04c7a8bff6bbfd0bcc4b5ca196d8634a0da396",
+   "export_sha256": "9c70462aeba833cc708d7495ac04c7a8bff6bbfd0bcc4b5ca196d8634a0da396",
+   "export_bytes": 21602,
+   "changes": []
+  },
+  {
+   "path": "scientific/numerics/release_observability/study.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "889b8e53c1769bba343531c172e934a4f2cd6a76e593e7129f131fb45579d0bd",
+   "export_sha256": "889b8e53c1769bba343531c172e934a4f2cd6a76e593e7129f131fb45579d0bd",
+   "export_bytes": 13685,
+   "changes": []
+  },
+  {
+   "path": "scientific/numerics/release_observability/study_results.json",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "1c082750360dd0969915b928e631325a14e53be86dc6301c591a91a9e8e90f53",
+   "export_sha256": "1c082750360dd0969915b928e631325a14e53be86dc6301c591a91a9e8e90f53",
+   "export_bytes": 164476,
+   "changes": []
+  },
+  {
+   "path": "scientific/numerics/release_observability/test_release_review_additions.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer release-observability-review-003 (wave11-followups-b); task design and execution Red (Claude Cowork)",
+   "source": "release-observability-review-003:test_release_review_additions.py",
+   "original_sha256": "fa6916e21b99b2116a9256ef40ef86ddb31975690e452d7a67826b89d66c02ad",
+   "export_sha256": "fa6916e21b99b2116a9256ef40ef86ddb31975690e452d7a67826b89d66c02ad",
+   "export_bytes": 4049,
+   "changes": []
+  },
+  {
+   "path": "scientific/numerics/release_observability/test_release_study.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer release-observability-002b (wave9-followups-a); task design and execution Red (Claude Cowork)",
+   "source": "release-observability-002b:test_release_study.py",
+   "original_sha256": "13856cb832094ffcd9b605eb2af7eaf48e8642632cf9fb066dec12d18f1727cc",
+   "export_sha256": "13856cb832094ffcd9b605eb2af7eaf48e8642632cf9fb066dec12d18f1727cc",
+   "export_bytes": 9536,
+   "changes": []
+  },
+  {
+   "path": "scientific/numerics/release_observability/tests.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "2cf78e74fb9908b78eefc024b4cb328f01cd5d5b6784a5d6b6f356ebcd271a2f",
+   "export_sha256": "2cf78e74fb9908b78eefc024b4cb328f01cd5d5b6784a5d6b6f356ebcd271a2f",
+   "export_bytes": 1305,
+   "changes": []
+  },
+  {
+   "path": "scientific/numerics/site0_audit/_receipt_test_site0.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "bd349f853be304eb6e7cc0911b7e69cc9db2268cd2c2a08bae46a32333a429b2",
+   "export_sha256": "e4eeecc61e6e396ac795d71d2c2fb25e84402c43bdf1e1b9b613969a426d34f0",
+   "export_bytes": 682,
+   "changes": [
+    "sandbox path"
+   ]
+  },
+  {
+   "path": "scientific/numerics/site0_audit/_receipt_test_site0_repair_audit.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "b743c2882aa9ddc4f2b57675027be91eea05aef8861ab5c1fb616b24176012dc",
+   "export_sha256": "9a551e9912a4abd8273e942de017b15cd4fc6b01a71e5c2d41d18c1192c07006",
+   "export_bytes": 24246,
+   "changes": [
+    "sandbox path"
+   ]
+  },
+  {
+   "path": "scientific/numerics/site0_audit/_rerun_revised.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "37f98d56a57565395bfe9c9e692648bbdadd19f76d6c89fd288811e1008e85fe",
+   "export_sha256": "3b58b2ee993e5a9335582604480aafe99a644888e74094849ac6b813feb99ebf",
+   "export_bytes": 6328,
+   "changes": [
+    "sandbox path"
+   ]
+  },
+  {
+   "path": "scientific/numerics/site0_audit/_study_mutants.out",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "ed45d7844255ce41ad1861d28a60d33a2435c5678b5b5a4413297b40fec2e728",
+   "export_sha256": "8a003d5be8f1df6c55bf16107974891bb941d8fb4af5f5b4cc4b8f8f9fbf61d7",
+   "export_bytes": 23814,
+   "changes": [
+    "sandbox path"
+   ]
+  },
+  {
+   "path": "scientific/numerics/site0_audit/_study_site0_mutants.out",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "68a7a55c39aa0cac3448fa246c034b240bbf90c6cf4bf6bd64404e38f1a26734",
+   "export_sha256": "abefd4813204e6f49cd6271d935fdbfda8549339d83be9485d9b7d9f54c46819",
+   "export_bytes": 134,
+   "changes": [
+    "sandbox path"
+   ]
+  },
+  {
+   "path": "scientific/numerics/site0_audit/frozen_suites/coordinate.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/site0/coordinate.py",
+   "original_sha256": "3b5160e260851c6c310b3a51c12823de1f567e22e9948d1d2c448411c4b5960d",
+   "export_sha256": "3b5160e260851c6c310b3a51c12823de1f567e22e9948d1d2c448411c4b5960d",
+   "export_bytes": 1821,
+   "changes": []
+  },
+  {
+   "path": "scientific/numerics/site0_audit/frozen_suites/mutants.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/site0/mutants.py",
+   "original_sha256": "b0477f3900d3f24df79a0b4a9e08d91af15433b560aab4a39e40267732f382ff",
+   "export_sha256": "b0477f3900d3f24df79a0b4a9e08d91af15433b560aab4a39e40267732f382ff",
+   "export_bytes": 1124,
+   "changes": []
+  },
+  {
+   "path": "scientific/numerics/site0_audit/frozen_suites/test_later_regression.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/site0/revised_v1/test_later_regression.py",
+   "original_sha256": "5098c848698cd049d0871ced9a44584009715ca54dbc84f55a71cc2f8b810efd",
+   "export_sha256": "5098c848698cd049d0871ced9a44584009715ca54dbc84f55a71cc2f8b810efd",
+   "export_bytes": 1526,
+   "changes": []
+  },
+  {
+   "path": "scientific/numerics/site0_audit/frozen_suites/test_site0.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/site0/test_site0.py",
+   "original_sha256": "2cc82f51fbdcbd1ceba86ce746e48fa9a607711349711672c4d8d46a461dfc15",
+   "export_sha256": "2cc82f51fbdcbd1ceba86ce746e48fa9a607711349711672c4d8d46a461dfc15",
+   "export_bytes": 7297,
+   "changes": []
+  },
+  {
+   "path": "scientific/numerics/site0_audit/frozen_suites/validation_helpers.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/site0/validation_helpers.py",
+   "original_sha256": "72ccbe9c6b0a8f06e09146971d063b33d6e08f6c332c570cc1807465679194b7",
+   "export_sha256": "72ccbe9c6b0a8f06e09146971d063b33d6e08f6c332c570cc1807465679194b7",
+   "export_bytes": 1075,
+   "changes": []
+  },
+  {
+   "path": "scientific/numerics/site0_audit/results/receipt_audit_vs_revised_v1.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "bbace0a5249d8183c7e9044f317705c354403f903e3035b135eb60b70c1d2af9",
+   "export_sha256": "2ded6107e7f58937e0f8645e8af93cdffc030a50528b0d9f795031dd49f83b74",
+   "export_bytes": 3519,
+   "changes": [
+    "sandbox path"
+   ]
+  },
+  {
+   "path": "scientific/numerics/site0_audit/results/receipt_mutant_blindness_with_frozen_suites.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "44135ec46b56d9eae42bb2d13b126ceb8ccf3a693e49da2864d3c85a331391a5",
+   "export_sha256": "5dfef09c927d7ef36e6ea6deb586b09349a40ad4158399ac05ef2008b7e2ec36",
+   "export_bytes": 27052,
+   "changes": [
+    "sandbox path"
+   ]
+  },
+  {
+   "path": "scientific/numerics/site0_audit/revised_v1/site0.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/site0/revised_v1/site0.py",
+   "original_sha256": "6daa39ac3c98b93f6e8d7c8a2222e4c23ba175874c402d14c8415f1bb6126076",
+   "export_sha256": "6daa39ac3c98b93f6e8d7c8a2222e4c23ba175874c402d14c8415f1bb6126076",
+   "export_bytes": 5176,
+   "changes": []
+  },
+  {
+   "path": "scientific/numerics/site0_audit/site0.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/site0/site0.py",
+   "original_sha256": "f04aa8e241aec3b0d3592a3285080d62d790ff3aedf05179d4d5020bea06bc28",
+   "export_sha256": "f04aa8e241aec3b0d3592a3285080d62d790ff3aedf05179d4d5020bea06bc28",
+   "export_bytes": 4999,
+   "changes": []
+  },
+  {
+   "path": "scientific/numerics/site0_audit/test_site0.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/site0/test_site0.py",
+   "original_sha256": "2cc82f51fbdcbd1ceba86ce746e48fa9a607711349711672c4d8d46a461dfc15",
+   "export_sha256": "2cc82f51fbdcbd1ceba86ce746e48fa9a607711349711672c4d8d46a461dfc15",
+   "export_bytes": 7297,
+   "changes": []
+  },
+  {
+   "path": "scientific/numerics/site0_audit/validation/site0/revised_v1/audit_mutant_blindness.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer site0-repair-audit-003 (wave12b-followups-c); task design and execution Red (Claude Cowork)",
+   "source": "site0-repair-audit-003:validation/site0/revised_v1/audit_mutant_blindness.py",
+   "original_sha256": "2880b9a7009316de7eba07e9116f78b87f9794071eb7d92bdaea798225285c2c",
+   "export_sha256": "2880b9a7009316de7eba07e9116f78b87f9794071eb7d92bdaea798225285c2c",
+   "export_bytes": 3847,
+   "changes": []
+  },
+  {
+   "path": "scientific/numerics/site0_audit/validation/site0/revised_v1/optional-hardening-guard.patch",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer site0-repair-audit-002 (wave10-resends); task design and execution Red (Claude Cowork)",
+   "source": "site0-repair-audit-002:validation/site0/revised_v1/optional-hardening-guard.patch",
+   "original_sha256": "bcd0cc4907969c0811e4ff598d20a83efad49cafca8ad3359965cf11059cd255",
+   "export_sha256": "bcd0cc4907969c0811e4ff598d20a83efad49cafca8ad3359965cf11059cd255",
+   "export_bytes": 595,
+   "changes": []
+  },
+  {
+   "path": "scientific/numerics/site0_audit/validation/site0/revised_v1/site0.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/site0/revised_v1/site0.py",
+   "original_sha256": "6daa39ac3c98b93f6e8d7c8a2222e4c23ba175874c402d14c8415f1bb6126076",
+   "export_sha256": "6daa39ac3c98b93f6e8d7c8a2222e4c23ba175874c402d14c8415f1bb6126076",
+   "export_bytes": 5176,
+   "changes": []
+  },
+  {
+   "path": "scientific/numerics/site0_audit/validation/site0/revised_v1/test_site0_repair_audit.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer site0-repair-audit-003 (wave12b-followups-c); task design and execution Red (Claude Cowork)",
+   "source": "site0-repair-audit-003:validation/site0/revised_v1/test_site0_repair_audit.py",
+   "original_sha256": "d1b04a8d3f3dafba751c566f355b4e597d4968dac79c89673417b369606ca30c",
+   "export_sha256": "d1b04a8d3f3dafba751c566f355b4e597d4968dac79c89673417b369606ca30c",
+   "export_bytes": 27599,
+   "changes": []
+  },
+  {
+   "path": "scientific/numerics/site0_audit/validation/site0/revised_v1/validation_helpers.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/site0/validation_helpers.py",
+   "original_sha256": "72ccbe9c6b0a8f06e09146971d063b33d6e08f6c332c570cc1807465679194b7",
+   "export_sha256": "72ccbe9c6b0a8f06e09146971d063b33d6e08f6c332c570cc1807465679194b7",
+   "export_bytes": 1075,
+   "changes": []
+  },
+  {
+   "path": "scientific/numerics/site0_audit/validation_helpers.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/site0/validation_helpers.py",
+   "original_sha256": "72ccbe9c6b0a8f06e09146971d063b33d6e08f6c332c570cc1807465679194b7",
+   "export_sha256": "72ccbe9c6b0a8f06e09146971d063b33d6e08f6c332c570cc1807465679194b7",
+   "export_bytes": 1075,
+   "changes": []
+  },
+  {
+   "path": "scientific/numerics/wexact0_audit/results/receipt_wexact0_audit.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "1614f59304c56ece98c4a6a0418eacb1c9468b58b9d9ebcfbb6dc6e595f671af",
+   "export_sha256": "1614f59304c56ece98c4a6a0418eacb1c9468b58b9d9ebcfbb6dc6e595f671af",
+   "export_bytes": 124,
+   "changes": []
+  },
+  {
+   "path": "scientific/numerics/wexact0_audit/validation/finite_inventory/revised_v1/reference.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/finite_inventory/revised_v1/reference.py",
+   "original_sha256": "5b5ba1dca3f182eb5f9e181c1bf514f9029ebfb88b4f14c726d40db6a3eebcc1",
+   "export_sha256": "5b5ba1dca3f182eb5f9e181c1bf514f9029ebfb88b4f14c726d40db6a3eebcc1",
+   "export_bytes": 5966,
+   "changes": []
+  },
+  {
+   "path": "scientific/numerics/wexact0_audit/validation/wall_exchange_exact/finite_l0_adapter.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/wall_exchange_exact/finite_l0_adapter.py",
+   "original_sha256": "ef753dafa4213acacdfccfd392b42415eb32b504e71df9bf13c40c696871d755",
+   "export_sha256": "ef753dafa4213acacdfccfd392b42415eb32b504e71df9bf13c40c696871d755",
+   "export_bytes": 3368,
+   "changes": []
+  },
+  {
+   "path": "scientific/numerics/wexact0_audit/validation/wall_exchange_exact/wall_exchange_cases.json",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/wall_exchange_exact/wall_exchange_cases.json",
+   "original_sha256": "34d4f0d41eb34b9af3a93c21cfcb4a0f39047e9dd05f6752481e962b6cfb8070",
+   "export_sha256": "34d4f0d41eb34b9af3a93c21cfcb4a0f39047e9dd05f6752481e962b6cfb8070",
+   "export_bytes": 1596,
+   "changes": []
+  },
+  {
+   "path": "scientific/numerics/wexact0_audit/validation/wall_exchange_exact/wall_exchange_exact.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/wall_exchange_exact/wall_exchange_exact.py",
+   "original_sha256": "824340b4e29758e3592c024b912f2f5986a0a3a27fe8857622d6d57bb876afce",
+   "export_sha256": "824340b4e29758e3592c024b912f2f5986a0a3a27fe8857622d6d57bb876afce",
+   "export_bytes": 1985,
+   "changes": []
+  },
+  {
+   "path": "scientific/numerics/wexact0_audit/validation/wall_exchange_exact_audit/WEXACT0_AUDIT_003_ADDENDUM.md",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer wexact0-audit-003 (wave12b-followups-c); task design and execution Red (Claude Cowork)",
+   "source": "wexact0-audit-003:validation/wall_exchange_exact_audit/WEXACT0_AUDIT_003_ADDENDUM.md",
+   "original_sha256": "228b7c9673106404284812d1e5e8115b3154081a23e7d06dd49ef4119fe6cf89",
+   "export_sha256": "228b7c9673106404284812d1e5e8115b3154081a23e7d06dd49ef4119fe6cf89",
+   "export_bytes": 10697,
+   "changes": []
+  },
+  {
+   "path": "scientific/numerics/wexact0_audit/validation/wall_exchange_exact_audit/test_wexact0_audit.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer wexact0-audit-003 (wave12b-followups-c); task design and execution Red (Claude Cowork)",
+   "source": "wexact0-audit-003:validation/wall_exchange_exact_audit/test_wexact0_audit.py",
+   "original_sha256": "a2a5231b6b0bb9d1c9ae401c2632878b44a7ce8b0bed02be0aa54650d8de35f2",
+   "export_sha256": "a2a5231b6b0bb9d1c9ae401c2632878b44a7ce8b0bed02be0aa54650d8de35f2",
+   "export_bytes": 34592,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/candidate3_review/after.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "355f68fc3ebb1bdebc8f71620f85e137c85158345a9159053ef80239eeb78fd2",
+   "export_sha256": "1ce1d90e61aa5919fbd89cd7f8ab6cdc59081c0027da604cbeec82a0943ab265",
+   "export_bytes": 3303,
+   "changes": [
+    "sandbox path"
+   ]
+  },
+  {
+   "path": "scientific/thermal/candidate3_review/ap.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "27ee7511489875df3f990ec23da2b9c97c276dadbdda524adcadbd5ac94e1516",
+   "export_sha256": "27ee7511489875df3f990ec23da2b9c97c276dadbdda524adcadbd5ac94e1516",
+   "export_bytes": 170,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/candidate3_review/before.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "e39828d15aa70eff639f6b6e8040205d74a210220dca69226958ad1c5d465f21",
+   "export_sha256": "3103f9d8ebfa1210b2ffa69cf7d52f4178911e2f74681fd8a8acc29f53299267",
+   "export_bytes": 61269,
+   "changes": [
+    "sandbox path"
+   ]
+  },
+  {
+   "path": "scientific/thermal/candidate3_review/candidate3/REPORT_candidate3.md",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-repair-candidate3-001 (wave9-followups-a); task design and execution Red (Claude Cowork)",
+   "source": "thermal-repair-candidate3-001:candidate3/REPORT_candidate3.md",
+   "original_sha256": "7f3722fa047e677ef3fc993155010e9da9347d0f6d30090c599759fc87812f98",
+   "export_sha256": "7f3722fa047e677ef3fc993155010e9da9347d0f6d30090c599759fc87812f98",
+   "export_bytes": 6652,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/candidate3_review/candidate3/__init__.py",
+   "group": "empty",
+   "author": "empty package marker (no content)",
+   "source": null,
+   "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "export_bytes": 0,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/candidate3_review/candidate3/apply_patch.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-repair-candidate3-001 (wave9-followups-a); task design and execution Red (Claude Cowork)",
+   "source": "thermal-repair-candidate3-001:candidate3/apply_patch.py",
+   "original_sha256": "b889d27d652b69183c2fd51622491e1ee5a44954afafbdda2d79a1a8dd8b82eb",
+   "export_sha256": "b889d27d652b69183c2fd51622491e1ee5a44954afafbdda2d79a1a8dd8b82eb",
+   "export_bytes": 3745,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/candidate3_review/candidate3/candidate3.diff",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-repair-candidate3-001 (wave9-followups-a); task design and execution Red (Claude Cowork)",
+   "source": "thermal-repair-candidate3-001:candidate3/candidate3.diff",
+   "original_sha256": "b2f8cdb9133ed72dc7bb324761a803241e4b4b9bf015962b1a7ce8d06ccf0f5c",
+   "export_sha256": "b2f8cdb9133ed72dc7bb324761a803241e4b4b9bf015962b1a7ce8d06ccf0f5c",
+   "export_bytes": 11308,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/candidate3_review/candidate3/provenance_receipt.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-repair-candidate3-001 (wave9-followups-a); task design and execution Red (Claude Cowork)",
+   "source": "thermal-repair-candidate3-001:candidate3/provenance_receipt.py",
+   "original_sha256": "9f4b3937347172c4948211d4707c4387ed08a86dcbb7b932c128d6e8be7afa38",
+   "export_sha256": "9f4b3937347172c4948211d4707c4387ed08a86dcbb7b932c128d6e8be7afa38",
+   "export_bytes": 4376,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/candidate3_review/candidate3/review/ERRATA_candidate3.md",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-candidate3-review-001 (wave11-followups-b); task design and execution Red (Claude Cowork)",
+   "source": "thermal-candidate3-review-001:candidate3/review/ERRATA_candidate3.md",
+   "original_sha256": "7a6fe03b22b319548ba15675875bc38e867a658f4a332089f8375e76c191ba5e",
+   "export_sha256": "7a6fe03b22b319548ba15675875bc38e867a658f4a332089f8375e76c191ba5e",
+   "export_bytes": 1273,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/candidate3_review/candidate3/review/__init__.py",
+   "group": "empty",
+   "author": "empty package marker (no content)",
+   "source": null,
+   "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "export_bytes": 0,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/candidate3_review/candidate3/review/amp_scan.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-candidate3-review-001 (wave11-followups-b); task design and execution Red (Claude Cowork)",
+   "source": "thermal-candidate3-review-001:candidate3/review/amp_scan.py",
+   "original_sha256": "d85492c48199614fce7f51f095f4dde63c006244e39ba4c9c796f28dcd425ee9",
+   "export_sha256": "d85492c48199614fce7f51f095f4dde63c006244e39ba4c9c796f28dcd425ee9",
+   "export_bytes": 3957,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/candidate3_review/candidate3/review/results_identity.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-candidate3-review-001 (wave11-followups-b); task design and execution Red (Claude Cowork)",
+   "source": "thermal-candidate3-review-001:candidate3/review/results_identity.py",
+   "original_sha256": "4b3084ef806b6b0aa0d3ae5b6c97a2be887b6e15432563239335678559cf3aa0",
+   "export_sha256": "4b3084ef806b6b0aa0d3ae5b6c97a2be887b6e15432563239335678559cf3aa0",
+   "export_bytes": 4962,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/candidate3_review/candidate3/review/test_results_identity.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-candidate3-review-001 (wave11-followups-b); task design and execution Red (Claude Cowork)",
+   "source": "thermal-candidate3-review-001:candidate3/review/test_results_identity.py",
+   "original_sha256": "4e618a76ebff14952c834b8982436c773c9900a54df28aa723bbd0e3a123bc21",
+   "export_sha256": "4e618a76ebff14952c834b8982436c773c9900a54df28aa723bbd0e3a123bc21",
+   "export_bytes": 3610,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/candidate3_review/candidate3/test_candidate3.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-repair-candidate3-001 (wave9-followups-a); task design and execution Red (Claude Cowork)",
+   "source": "thermal-repair-candidate3-001:candidate3/test_candidate3.py",
+   "original_sha256": "72e10638a5ab902cb2f1f337e586f9722f961f0d4f15e801c59ee32f822be56b",
+   "export_sha256": "72e10638a5ab902cb2f1f337e586f9722f961f0d4f15e801c59ee32f822be56b",
+   "export_bytes": 12095,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/candidate3_review/candidate3/test_tools.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-repair-candidate3-001 (wave9-followups-a); task design and execution Red (Claude Cowork)",
+   "source": "thermal-repair-candidate3-001:candidate3/test_tools.py",
+   "original_sha256": "c20fd18fb6ba5edc48d616bb4268559bb1d1e1ff2b24072c58b726a133c8eaba",
+   "export_sha256": "c20fd18fb6ba5edc48d616bb4268559bb1d1e1ff2b24072c58b726a133c8eaba",
+   "export_bytes": 3054,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/candidate3_review/candidate3/thermal_contract.py",
+   "group": "red_derivative",
+   "author": "Red (Claude Cowork): candidate 3 = Coda's fixed thermal_contract.py with candidate3.diff (answer thermal-repair-candidate3-001) applied by apply_patch.py",
+   "source": null,
+   "original_sha256": "1de0ba9f648a678e03e2df91e67d0391e4bf7fd7cdfa1acb3ee8b1ef9535ba46",
+   "export_sha256": "1de0ba9f648a678e03e2df91e67d0391e4bf7fd7cdfa1acb3ee8b1ef9535ba46",
+   "export_bytes": 54937,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/candidate3_review/execution/c2_results.json",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "a81199c6d8608863aacca65658a6f5190e1b718a597dfe875b650f20713de3f0",
+   "export_sha256": "a81199c6d8608863aacca65658a6f5190e1b718a597dfe875b650f20713de3f0",
+   "export_bytes": 248539,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/candidate3_review/execution/c2_stdout.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "ff6605b9c584b1473c230c7d18506208d01919ed53144377c7803b5896ecd857",
+   "export_sha256": "ff6605b9c584b1473c230c7d18506208d01919ed53144377c7803b5896ecd857",
+   "export_bytes": 2510,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/candidate3_review/execution/c2_validate.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "f7c2d3b0e3322370a016f77eafaf9572f0e35e73d876355d4dac4b7898ac3cd4",
+   "export_sha256": "f7c2d3b0e3322370a016f77eafaf9572f0e35e73d876355d4dac4b7898ac3cd4",
+   "export_bytes": 1937,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/candidate3_review/execution/c3_results.json",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "a81199c6d8608863aacca65658a6f5190e1b718a597dfe875b650f20713de3f0",
+   "export_sha256": "a81199c6d8608863aacca65658a6f5190e1b718a597dfe875b650f20713de3f0",
+   "export_bytes": 248539,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/candidate3_review/execution/c3_stdout.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "4f71bd225d779a5b421469b35594434057b90e9ad00c4c1b6012832f51631764",
+   "export_sha256": "4f71bd225d779a5b421469b35594434057b90e9ad00c4c1b6012832f51631764",
+   "export_bytes": 2510,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/candidate3_review/execution/c3_validate.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "f7c2d3b0e3322370a016f77eafaf9572f0e35e73d876355d4dac4b7898ac3cd4",
+   "export_sha256": "f7c2d3b0e3322370a016f77eafaf9572f0e35e73d876355d4dac4b7898ac3cd4",
+   "export_bytes": 1937,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/candidate3_review/fixed/thermal_contract.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/fable_thermal_review2/fable_thermal/fixed/thermal_contract.py",
+   "original_sha256": "160410e5cecb4e2408f3b13e42ae5213f12d43216d725859afbfa1e6e4b3a06a",
+   "export_sha256": "160410e5cecb4e2408f3b13e42ae5213f12d43216d725859afbfa1e6e4b3a06a",
+   "export_bytes": 49206,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/candidate3_review/original/sample_plan.json",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/fable_thermal_review2/fable_thermal/original/sample_plan.json",
+   "original_sha256": "25c31407b611f2bc4401e9b74ad586b5b2b5589966512a4c2b9011e055f1e9a4",
+   "export_sha256": "25c31407b611f2bc4401e9b74ad586b5b2b5589966512a4c2b9011e055f1e9a4",
+   "export_bytes": 5182,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/candidate3_review/review.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/fable_thermal_review2/fable_thermal/review.py",
+   "original_sha256": "c57d20f8ae572183b0cdffbfd6b50495c3c4dde89f302fc104c2609bda6340b0",
+   "export_sha256": "c57d20f8ae572183b0cdffbfd6b50495c3c4dde89f302fc104c2609bda6340b0",
+   "export_bytes": 10587,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/candidate3_review/ta.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "60bb849356ffbc091f601e17fc6ae0b2eb5e26d734d433da020c6e775efbf97f",
+   "export_sha256": "60bb849356ffbc091f601e17fc6ae0b2eb5e26d734d433da020c6e775efbf97f",
+   "export_bytes": 106,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/candidate3_review/test_audit.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/fable_thermal_review2/fable_thermal/test_audit.py",
+   "original_sha256": "22528f69ecc198b0e88c2c5da5505d85aa09e3c8e61553c01254d9ae6cc8d3ae",
+   "export_sha256": "22528f69ecc198b0e88c2c5da5505d85aa09e3c8e61553c01254d9ae6cc8d3ae",
+   "export_bytes": 3315,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/candidate3_review/test_audit_c3.py",
+   "group": "red_derivative",
+   "author": "Red (Claude Cowork): Coda's test_audit.py pointed at candidate 3 for the wave-9 execution",
+   "source": null,
+   "original_sha256": "cc7d1b5a5dc800e86e8d349b3f8e36f1c9c0e55a5cc5679a940e3538f84d7385",
+   "export_sha256": "cc7d1b5a5dc800e86e8d349b3f8e36f1c9c0e55a5cc5679a940e3538f84d7385",
+   "export_bytes": 3320,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/candidate3_review/tt.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "1dc6a8a4c8011f231aaf70a751893fe03506b1ace25f361e8856946976f33334",
+   "export_sha256": "1dc6a8a4c8011f231aaf70a751893fe03506b1ace25f361e8856946976f33334",
+   "export_bytes": 294,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/coda_dependencies/validation/thermal/REPORT.md",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/thermal/REPORT.md",
+   "original_sha256": "3434476c4187acffcd731cfa20783de54d205dd281fbcfdbae8cc0ddc9df65c2",
+   "export_sha256": "3434476c4187acffcd731cfa20783de54d205dd281fbcfdbae8cc0ddc9df65c2",
+   "export_bytes": 4717,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/coda_dependencies/validation/thermal/reference_results.json",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/thermal/reference_results.json",
+   "original_sha256": "e97cf35c8accb051096fdca20ec89a0a157015b863e94cb01020a8fdb5af3a56",
+   "export_sha256": "e97cf35c8accb051096fdca20ec89a0a157015b863e94cb01020a8fdb5af3a56",
+   "export_bytes": 6603,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/coda_dependencies/validation/thermal/thermal_reference.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/thermal/thermal_reference.py",
+   "original_sha256": "7032a2cdb7677c3f29401865d3f5f1f185c826d5f8395e5ec263ea15d642c56d",
+   "export_sha256": "7032a2cdb7677c3f29401865d3f5f1f185c826d5f8395e5ec263ea15d642c56d",
+   "export_bytes": 5318,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/coda_dependencies/validation/thermal_transient/REPORT.md",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/thermal_transient/REPORT.md",
+   "original_sha256": "86f9b6107dc2e62b9e497454924c3463230bc96ba9495ab0bdc2baa24d6b25a6",
+   "export_sha256": "86f9b6107dc2e62b9e497454924c3463230bc96ba9495ab0bdc2baa24d6b25a6",
+   "export_bytes": 7495,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/coda_dependencies/validation/thermal_transient/rc_transient.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/thermal_transient/rc_transient.py",
+   "original_sha256": "94ff435da55d2bccef769197d534e735e5813612a3275a829f703f05b5db6e0b",
+   "export_sha256": "94ff435da55d2bccef769197d534e735e5813612a3275a829f703f05b5db6e0b",
+   "export_bytes": 5989,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/coda_dependencies/validation/thermal_transient/study_report.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/thermal_transient/study_report.py",
+   "original_sha256": "342ddf69e6cfe26bfab69bdf688a2a1ac90d7df51640c62178e475c99045edea",
+   "export_sha256": "342ddf69e6cfe26bfab69bdf688a2a1ac90d7df51640c62178e475c99045edea",
+   "export_bytes": 4993,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/coda_dependencies/validation/thermal_transient/study_results.json",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/thermal_transient/study_results.json",
+   "original_sha256": "185c14515e8bad4c476cb4e004e59b09b16fa4cb4e9336f16e88bd5f135edfcf",
+   "export_sha256": "185c14515e8bad4c476cb4e004e59b09b16fa4cb4e9336f16e88bd5f135edfcf",
+   "export_bytes": 244694,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/contract/T0-HYP-1_contract_excerpt.txt",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), contract text excerpted verbatim from Coda run packet thermal-transient-faults.txt",
+   "source": null,
+   "original_sha256": "2bec6924ef87945bec5f156bf15fb1f6c14d9102df62676e2145fe68b4df0f64",
+   "export_sha256": "2bec6924ef87945bec5f156bf15fb1f6c14d9102df62676e2145fe68b4df0f64",
+   "export_bytes": 5162,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/fv1d/_receipt_test_rc_transient.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "d90b9412249913bbd3f97f6bba7c823af2853e20e226820bb1356edc0be46ca5",
+   "export_sha256": "a5f301e7f9e60559d05f1457613948095dbdc7d61aad47353e8a6a9fd20b8f96",
+   "export_bytes": 1854,
+   "changes": [
+    "sandbox path"
+   ]
+  },
+  {
+   "path": "scientific/thermal/fv1d/_receipt_test_thermal_fv_transient.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "c103770b4212e64681ced0004f4f002fdfc8a3d71e051a53aa8afed862a1aac0",
+   "export_sha256": "c103770b4212e64681ced0004f4f002fdfc8a3d71e051a53aa8afed862a1aac0",
+   "export_bytes": 127,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/fv1d/rc_transient.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/thermal_transient/rc_transient.py",
+   "original_sha256": "94ff435da55d2bccef769197d534e735e5813612a3275a829f703f05b5db6e0b",
+   "export_sha256": "94ff435da55d2bccef769197d534e735e5813612a3275a829f703f05b5db6e0b",
+   "export_bytes": 5989,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/fv1d/reference_results.json",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/thermal/reference_results.json",
+   "original_sha256": "e97cf35c8accb051096fdca20ec89a0a157015b863e94cb01020a8fdb5af3a56",
+   "export_sha256": "e97cf35c8accb051096fdca20ec89a0a157015b863e94cb01020a8fdb5af3a56",
+   "export_bytes": 6603,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/fv1d/results/fv_suite.json",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "742f7a951da0fc6d5fb438e83dc44980e81441b2b4bb15be7428de58851b4a4b",
+   "export_sha256": "742f7a951da0fc6d5fb438e83dc44980e81441b2b4bb15be7428de58851b4a4b",
+   "export_bytes": 1763914,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/fv1d/results/study_fv.out",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "2189d165873dcda2b0e1e09255e1f6bdbfdc783e5ccd6d020092bf552dee7bb7",
+   "export_sha256": "5ab46ab36361f1764be5652229f24789dab1f76d7d8dd478dd22e4425281d3b8",
+   "export_bytes": 3105,
+   "changes": [
+    "sandbox path"
+   ]
+  },
+  {
+   "path": "scientific/thermal/fv1d/study_report.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/thermal_transient/study_report.py",
+   "original_sha256": "342ddf69e6cfe26bfab69bdf688a2a1ac90d7df51640c62178e475c99045edea",
+   "export_sha256": "342ddf69e6cfe26bfab69bdf688a2a1ac90d7df51640c62178e475c99045edea",
+   "export_bytes": 4993,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/fv1d/test_thermal_fv_transient.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-faults-fv-cont-002 (wave10-resends); task design and execution Red (Claude Cowork)",
+   "source": "thermal-faults-fv-cont-002:test_thermal_fv_transient.py",
+   "original_sha256": "e53d9d8aa86521490a64908a401a4d0387a24ec4b0550159edadc1516a13b983",
+   "export_sha256": "e53d9d8aa86521490a64908a401a4d0387a24ec4b0550159edadc1516a13b983",
+   "export_bytes": 16714,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/fv1d/thermal_fv_transient.py",
+   "group": "red_derivative",
+   "author": "Red (Claude Cowork): spliced wave-7 partial answer with wave-10 continuation (dangling line dropped); derived from answers thermal-faults-fv-001",
+   "source": null,
+   "original_sha256": "48360f57a80f463863fd506a24ada0b3983d4fef9f19d4c85380ec0bb3cdaa86",
+   "export_sha256": "48360f57a80f463863fd506a24ada0b3983d4fef9f19d4c85380ec0bb3cdaa86",
+   "export_bytes": 84846,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/fv1d/thermal_fv_transient_part2.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-faults-fv-cont-002 (wave10-resends); task design and execution Red (Claude Cowork)",
+   "source": "thermal-faults-fv-cont-002:thermal_fv_transient_part2.py",
+   "original_sha256": "ca94c6b1b4afbed5dbb7c158fbc9b1f3156c479606e5d0efcfe1f77399a39b77",
+   "export_sha256": "ca94c6b1b4afbed5dbb7c158fbc9b1f3156c479606e5d0efcfe1f77399a39b77",
+   "export_bytes": 52811,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/fv1d/thermal_reference.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/thermal/thermal_reference.py",
+   "original_sha256": "7032a2cdb7677c3f29401865d3f5f1f185c826d5f8395e5ec263ea15d642c56d",
+   "export_sha256": "7032a2cdb7677c3f29401865d3f5f1f185c826d5f8395e5ec263ea15d642c56d",
+   "export_bytes": 5318,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/hotspot2d/_receipt_test_hotspot2d.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "ab66db0b36853abb7dd38ef6a9172d853895c5df4f046127eca7338290c2cfa7",
+   "export_sha256": "d34fab8daf2a0c9e64d80905a40250b8832cf35f0dfde690c540e21c6334ee1b",
+   "export_bytes": 882,
+   "changes": [
+    "sandbox path"
+   ]
+  },
+  {
+   "path": "scientific/thermal/hotspot2d/_receipt_test_rc_transient.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "f1a15c2ae58a6626f47793acddc335d9310e05cc4f127750fb98af45c7ae995d",
+   "export_sha256": "2fe8cef3d7e54af6646789057ec05837fe404e268a15d0be2e2e846f9452f97b",
+   "export_bytes": 1846,
+   "changes": [
+    "sandbox path"
+   ]
+  },
+  {
+   "path": "scientific/thermal/hotspot2d/hotspot2d/NOTES.md",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-hotspot-2d-002 (wave10-resends); task design and execution Red (Claude Cowork)",
+   "source": "thermal-hotspot-2d-002:hotspot2d/NOTES.md",
+   "original_sha256": "0d177bf87e8e50aef83af681c828fb721ce24a396d55bc96f972d46451b8b031",
+   "export_sha256": "0d177bf87e8e50aef83af681c828fb721ce24a396d55bc96f972d46451b8b031",
+   "export_bytes": 9943,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/hotspot2d/hotspot2d/NOTES_fix003.md",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-hotspot-2d-fix-003 (wave12b-followups-c); task design and execution Red (Claude Cowork)",
+   "source": "thermal-hotspot-2d-fix-003:hotspot2d/NOTES_fix003.md",
+   "original_sha256": "1a728021ec2fac2ad1ba08edefec19f7625d4a880306339e1baf5c45d8bddec7",
+   "export_sha256": "1a728021ec2fac2ad1ba08edefec19f7625d4a880306339e1baf5c45d8bddec7",
+   "export_bytes": 2704,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/hotspot2d/hotspot2d/__init__.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-hotspot-2d-002 (wave10-resends); task design and execution Red (Claude Cowork)",
+   "source": "thermal-hotspot-2d-002:hotspot2d/__init__.py",
+   "original_sha256": "ff8f7285d3ca9021b0a52102bda309f96291e87144b00ed255d42d80047e863e",
+   "export_sha256": "ff8f7285d3ca9021b0a52102bda309f96291e87144b00ed255d42d80047e863e",
+   "export_bytes": 152,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/hotspot2d/hotspot2d/convergence.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-hotspot-2d-fix-003 (wave12b-followups-c); task design and execution Red (Claude Cowork)",
+   "source": "thermal-hotspot-2d-fix-003:hotspot2d/convergence.py",
+   "original_sha256": "2f1a31a40b682b5b1862e06aa68798bcc13bf050aac7b092330df7b34e9d608e",
+   "export_sha256": "2f1a31a40b682b5b1862e06aa68798bcc13bf050aac7b092330df7b34e9d608e",
+   "export_bytes": 15552,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/hotspot2d/hotspot2d/model.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-hotspot-2d-002 (wave10-resends); task design and execution Red (Claude Cowork)",
+   "source": "thermal-hotspot-2d-002:hotspot2d/model.py",
+   "original_sha256": "e8dfe197603af3ca21843ca58dd371bd9a487d56327c854553b22e915ed41b93",
+   "export_sha256": "e8dfe197603af3ca21843ca58dd371bd9a487d56327c854553b22e915ed41b93",
+   "export_bytes": 32906,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/hotspot2d/hotspot2d/study.py",
+   "group": "red_derivative",
+   "author": "Red (Claude Cowork): wave-10 answer with patches/fix003-refinement.diff (answer thermal-hotspot-2d-fix-003) applied; derived from answers thermal-hotspot-2d-002",
+   "source": null,
+   "original_sha256": "a45e8e1b2f1cc8cd5e2ddff30898cd804e4db6a4f50b7a3a545208256e703548",
+   "export_sha256": "a45e8e1b2f1cc8cd5e2ddff30898cd804e4db6a4f50b7a3a545208256e703548",
+   "export_bytes": 14940,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/hotspot2d/patches/fix003-refinement.diff",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-hotspot-2d-fix-003 (wave12b-followups-c); task design and execution Red (Claude Cowork)",
+   "source": "thermal-hotspot-2d-fix-003:patches/fix003-refinement.diff",
+   "original_sha256": "12d5676b4b90add846356ac98f3c9d5d2162098efa96f26afc955c9f957c5759",
+   "export_sha256": "12d5676b4b90add846356ac98f3c9d5d2162098efa96f26afc955c9f957c5759",
+   "export_bytes": 4349,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/hotspot2d/rc_transient.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/thermal_transient/rc_transient.py",
+   "original_sha256": "94ff435da55d2bccef769197d534e735e5813612a3275a829f703f05b5db6e0b",
+   "export_sha256": "94ff435da55d2bccef769197d534e735e5813612a3275a829f703f05b5db6e0b",
+   "export_bytes": 5989,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/hotspot2d/reference_results.json",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/thermal/reference_results.json",
+   "original_sha256": "e97cf35c8accb051096fdca20ec89a0a157015b863e94cb01020a8fdb5af3a56",
+   "export_sha256": "e97cf35c8accb051096fdca20ec89a0a157015b863e94cb01020a8fdb5af3a56",
+   "export_bytes": 6603,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/hotspot2d/results/hotspot2d_results_wave10.json",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "b3e94b78fbcff378335267267950b09712367aa6b1ad8ad9b5501c2bcfd21f46",
+   "export_sha256": "b3e94b78fbcff378335267267950b09712367aa6b1ad8ad9b5501c2bcfd21f46",
+   "export_bytes": 1401067,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/hotspot2d/results/receipt_test_convergence_fix003.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "12df84e59d5971a420288ad9bf8439c8f01985bb1bd3c50de5fc96a81c1cb663",
+   "export_sha256": "44b3cdccef73ce7b24e16a92975caa1bb2993d091bdf70d1551adb9e5a9e0cab",
+   "export_bytes": 2089,
+   "changes": [
+    "sandbox path"
+   ]
+  },
+  {
+   "path": "scientific/thermal/hotspot2d/results/receipt_test_hotspot2d_after_fix003.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "9f5945b32b2e723d1af0e85e95c1152edb9f1fee03b914de57eae4581ae0e3db",
+   "export_sha256": "9f5945b32b2e723d1af0e85e95c1152edb9f1fee03b914de57eae4581ae0e3db",
+   "export_bytes": 118,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/hotspot2d/results/study_hotspot_wave10.out",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "afe808b6c87af5a2241c01c0e55c2ee895b98b86b912d2a76f5f8be19083b160",
+   "export_sha256": "005d6767d2dfb194b597d145561a510a72eff4d749a5f645f38bfba55c8ef590",
+   "export_bytes": 804,
+   "changes": [
+    "sandbox path"
+   ]
+  },
+  {
+   "path": "scientific/thermal/hotspot2d/study_report.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/thermal_transient/study_report.py",
+   "original_sha256": "342ddf69e6cfe26bfab69bdf688a2a1ac90d7df51640c62178e475c99045edea",
+   "export_sha256": "342ddf69e6cfe26bfab69bdf688a2a1ac90d7df51640c62178e475c99045edea",
+   "export_bytes": 4993,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/hotspot2d/test_rc_transient.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/thermal_transient/test_rc_transient.py",
+   "original_sha256": "6a6c1bd14729a5d412505d43b7affcb505928a929dea20ba639112d8bbf9d626",
+   "export_sha256": "6a6c1bd14729a5d412505d43b7affcb505928a929dea20ba639112d8bbf9d626",
+   "export_bytes": 8616,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/hotspot2d/tests/test_convergence_fix003.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-hotspot-2d-fix-003 (wave12b-followups-c); task design and execution Red (Claude Cowork)",
+   "source": "thermal-hotspot-2d-fix-003:tests/test_convergence_fix003.py",
+   "original_sha256": "29ef37869e50882a08d29c8ac48e458fb309c7d186d921efb850e9106190e759",
+   "export_sha256": "29ef37869e50882a08d29c8ac48e458fb309c7d186d921efb850e9106190e759",
+   "export_bytes": 7047,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/hotspot2d/tests/test_hotspot2d.py",
+   "group": "red_derivative",
+   "author": "Red (Claude Cowork): wave-10 answer with patches/fix003-refinement.diff (answer thermal-hotspot-2d-fix-003) applied; derived from answers thermal-hotspot-2d-002",
+   "source": null,
+   "original_sha256": "4ce63bfb46b6e824649f7674520dca96120b09e700ab18b2d60b22958f4f90bb",
+   "export_sha256": "4ce63bfb46b6e824649f7674520dca96120b09e700ab18b2d60b22958f4f90bb",
+   "export_bytes": 12408,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/hotspot2d/thermal_reference.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/thermal/thermal_reference.py",
+   "original_sha256": "7032a2cdb7677c3f29401865d3f5f1f185c826d5f8395e5ec263ea15d642c56d",
+   "export_sha256": "7032a2cdb7677c3f29401865d3f5f1f185c826d5f8395e5ec263ea15d642c56d",
+   "export_bytes": 5318,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/layered_oracle/_receipt_test_layered_oracle.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "c4e64fbd0a329e1cce3ce4446a5f410c5ce5c85a2a9dda6599425fd9c2333992",
+   "export_sha256": "792074bd97b27668f7d3f8fde88803ece824ee4f0d0337dddbe5656d663f7d3c",
+   "export_bytes": 1378,
+   "changes": [
+    "sandbox path"
+   ]
+  },
+  {
+   "path": "scientific/thermal/layered_oracle/_receipt_test_rc_transient.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "1354cb2307aa671323549b495fbea945b8f07dc587b360cd73c523dd9d80f5c5",
+   "export_sha256": "164ed4b7d01762533f42f40d595d7eaf15cd510d347eac06f952e3599bf81018",
+   "export_bytes": 1854,
+   "changes": [
+    "sandbox path"
+   ]
+  },
+  {
+   "path": "scientific/thermal/layered_oracle/oracle/README.md",
+   "group": "red_derivative",
+   "author": "Red (Claude Cowork): wave-10 README; Red corrected the F2 default statement to 2e-2; derived from answers thermal-layered-oracle-002, thermal-layered-oracle-fix-003, thermal-supervisor-002",
+   "source": null,
+   "original_sha256": "7df15cc19f8b7e0dce81dd90458208b36fb90ba4b9c978b7a3f9e9bb60dcf692",
+   "export_sha256": "7df15cc19f8b7e0dce81dd90458208b36fb90ba4b9c978b7a3f9e9bb60dcf692",
+   "export_bytes": 2096,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/layered_oracle/oracle/layered_oracle.py",
+   "group": "red_derivative",
+   "author": "Red (Claude Cowork): wave-10 oracle + fix-003; Red changed the F2 default r_inner_after 2e-3 -> 2e-2 (contract value); derived from answers thermal-layered-oracle-002, thermal-layered-oracle-fix-003",
+   "source": null,
+   "original_sha256": "0e95024b267fc5afb6d86b25d1b32d7886d18a75f771441d189aa6531d54a26c",
+   "export_sha256": "0e95024b267fc5afb6d86b25d1b32d7886d18a75f771441d189aa6531d54a26c",
+   "export_bytes": 38039,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/layered_oracle/oracle/test_layered_oracle.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-layered-oracle-fix-003 (wave12b-followups-c); task design and execution Red (Claude Cowork)",
+   "source": "thermal-layered-oracle-fix-003:oracle/test_layered_oracle.py",
+   "original_sha256": "92bddd8d3aaf61db664b76dca67b4ec2374e498c603b9642e75519d95612cc7c",
+   "export_sha256": "92bddd8d3aaf61db664b76dca67b4ec2374e498c603b9642e75519d95612cc7c",
+   "export_bytes": 16850,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/layered_oracle/rc_transient.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/thermal_transient/rc_transient.py",
+   "original_sha256": "94ff435da55d2bccef769197d534e735e5813612a3275a829f703f05b5db6e0b",
+   "export_sha256": "94ff435da55d2bccef769197d534e735e5813612a3275a829f703f05b5db6e0b",
+   "export_bytes": 5989,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/layered_oracle/reference_results.json",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/thermal/reference_results.json",
+   "original_sha256": "e97cf35c8accb051096fdca20ec89a0a157015b863e94cb01020a8fdb5af3a56",
+   "export_sha256": "e97cf35c8accb051096fdca20ec89a0a157015b863e94cb01020a8fdb5af3a56",
+   "export_bytes": 6603,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/layered_oracle/results/oracle_results_F2fixed.json",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "91c3a1c804d45f811320b96a19969b395875ca6193d5ad4b5665aa2dfcff1c9a",
+   "export_sha256": "91c3a1c804d45f811320b96a19969b395875ca6193d5ad4b5665aa2dfcff1c9a",
+   "export_bytes": 59694,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/layered_oracle/results/oracle_results_fix003_before_F2_fix.json",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "cec79b35c67e78c7d12833c6a8ac5d837f6d99ba817e34268d4a482f264d0cf5",
+   "export_sha256": "cec79b35c67e78c7d12833c6a8ac5d837f6d99ba817e34268d4a482f264d0cf5",
+   "export_bytes": 59707,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/layered_oracle/results/receipt_tests_fix003.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "0ef009c4ba039e35435f1eaa1691694db5aecf079af91ff1715ec5981256502a",
+   "export_sha256": "0ef009c4ba039e35435f1eaa1691694db5aecf079af91ff1715ec5981256502a",
+   "export_bytes": 120,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/layered_oracle/study_report.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/thermal_transient/study_report.py",
+   "original_sha256": "342ddf69e6cfe26bfab69bdf688a2a1ac90d7df51640c62178e475c99045edea",
+   "export_sha256": "342ddf69e6cfe26bfab69bdf688a2a1ac90d7df51640c62178e475c99045edea",
+   "export_bytes": 4993,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/layered_oracle/test_rc_transient.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/thermal_transient/test_rc_transient.py",
+   "original_sha256": "6a6c1bd14729a5d412505d43b7affcb505928a929dea20ba639112d8bbf9d626",
+   "export_sha256": "6a6c1bd14729a5d412505d43b7affcb505928a929dea20ba639112d8bbf9d626",
+   "export_bytes": 8616,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/layered_oracle/thermal_reference.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/thermal/thermal_reference.py",
+   "original_sha256": "7032a2cdb7677c3f29401865d3f5f1f185c826d5f8395e5ec263ea15d642c56d",
+   "export_sha256": "7032a2cdb7677c3f29401865d3f5f1f185c826d5f8395e5ec263ea15d642c56d",
+   "export_bytes": 5318,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/metamorphic/reference_results.json",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/thermal/reference_results.json",
+   "original_sha256": "e97cf35c8accb051096fdca20ec89a0a157015b863e94cb01020a8fdb5af3a56",
+   "export_sha256": "e97cf35c8accb051096fdca20ec89a0a157015b863e94cb01020a8fdb5af3a56",
+   "export_bytes": 6603,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/metamorphic/results/receipt_metamorphic_c3_informational.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "108beb419d294c7e5a511db834f266b3879440493790020e4c1bd3712da2b376",
+   "export_sha256": "4cce535f6ed2d3c69849f5b856e598c74766f6377acbfadf1b26c7ee42820739",
+   "export_bytes": 13690,
+   "changes": [
+    "sandbox path"
+   ]
+  },
+  {
+   "path": "scientific/thermal/metamorphic/results/receipt_metamorphic_candidate2.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "c87e28182f8b314220624a3305110eab35b62f7ed99562eb0dc12f857e0b4309",
+   "export_sha256": "343891ed37fe58632de4ec661eea5c10a4660fe16feb8983944b9cecc6140b48",
+   "export_bytes": 804,
+   "changes": [
+    "sandbox path"
+   ]
+  },
+  {
+   "path": "scientific/thermal/metamorphic/results/receipt_metamorphic_candidate3.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "fd118fac6e729002dadca497448f888c35011e0282b15a435201416bf1b4992d",
+   "export_sha256": "d8e8757ed366c05afc0b19348b32a78c438ac320c87ffed24234b60aa262de7e",
+   "export_bytes": 804,
+   "changes": [
+    "sandbox path"
+   ]
+  },
+  {
+   "path": "scientific/thermal/metamorphic/tests/_part2.txt",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-contract-metamorphic-cont-003 (wave12a-fallbacks); task design and execution Red (Claude Cowork)",
+   "source": "thermal-contract-metamorphic-cont-003:tests/test_thermal_contract_metamorphic.part2.py",
+   "original_sha256": "7409c85e4d0869c265d4872ca3cd6e09511860ac7defb82fed8d88add4dc2d5a",
+   "export_sha256": "7409c85e4d0869c265d4872ca3cd6e09511860ac7defb82fed8d88add4dc2d5a",
+   "export_bytes": 75046,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/metamorphic/tests/test_thermal_contract_metamorphic.py",
+   "group": "red_derivative",
+   "author": "Red (Claude Cowork): spliced wave-10 partial with wave-12a continuation and applied its diff; derived from answers thermal-contract-metamorphic-002",
+   "source": null,
+   "original_sha256": "678391a9b225d921ded8bca1b921971aa0e65b2acc13628dd9e3500d6a0f7242",
+   "export_sha256": "678391a9b225d921ded8bca1b921971aa0e65b2acc13628dd9e3500d6a0f7242",
+   "export_bytes": 113720,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/metamorphic/thermal_contract.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/fable_thermal_review2/fable_thermal/fixed/thermal_contract.py",
+   "original_sha256": "160410e5cecb4e2408f3b13e42ae5213f12d43216d725859afbfa1e6e4b3a06a",
+   "export_sha256": "160410e5cecb4e2408f3b13e42ae5213f12d43216d725859afbfa1e6e4b3a06a",
+   "export_bytes": 49206,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/metamorphic/thermal_contract_c3.py",
+   "group": "red_derivative",
+   "author": "Red (Claude Cowork): copy of candidate 3 (Coda's fixed thermal_contract.py with candidate3.diff from answer thermal-repair-candidate3-001 applied)",
+   "source": null,
+   "original_sha256": "1de0ba9f648a678e03e2df91e67d0391e4bf7fd7cdfa1acb3ee8b1ef9535ba46",
+   "export_sha256": "1de0ba9f648a678e03e2df91e67d0391e4bf7fd7cdfa1acb3ee8b1ef9535ba46",
+   "export_bytes": 54937,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/metamorphic/thermal_reference.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/thermal/thermal_reference.py",
+   "original_sha256": "7032a2cdb7677c3f29401865d3f5f1f185c826d5f8395e5ec263ea15d642c56d",
+   "export_sha256": "7032a2cdb7677c3f29401865d3f5f1f185c826d5f8395e5ec263ea15d642c56d",
+   "export_bytes": 5318,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/nversion/NVERSION_F2_RESOLUTION.md",
+   "group": "red_derivative",
+   "author": "Red (Claude Cowork): diagnosis and rerun note for the F2 specification-transfer error",
+   "source": null,
+   "original_sha256": "db63dd710e1362bfa1facddec555ec803206af9aca7f912fec9604e4dd60acb8",
+   "export_sha256": "db63dd710e1362bfa1facddec555ec803206af9aca7f912fec9604e4dd60acb8",
+   "export_bytes": 2366,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/nversion/crosscheck/nversion_crosscheck.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-nversion-crosscheck-004 (wave12b-followups-c); task design and execution Red (Claude Cowork)",
+   "source": "thermal-nversion-crosscheck-004:crosscheck/nversion_crosscheck.py",
+   "original_sha256": "c3fc641e79a9d39a4af70b092e2f0770c70618fd128a07b3c61e7154e4cb93ad",
+   "export_sha256": "c3fc641e79a9d39a4af70b092e2f0770c70618fd128a07b3c61e7154e4cb93ad",
+   "export_bytes": 34835,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/nversion/crosscheck/test_nversion_crosscheck.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-nversion-crosscheck-004 (wave12b-followups-c); task design and execution Red (Claude Cowork)",
+   "source": "thermal-nversion-crosscheck-004:crosscheck/test_nversion_crosscheck.py",
+   "original_sha256": "e2e83e880753e9d2b476da8b3ac505f5420336ae0c0391b7e4e2014b20fe7467",
+   "export_sha256": "e2e83e880753e9d2b476da8b3ac505f5420336ae0c0391b7e4e2014b20fe7467",
+   "export_bytes": 11768,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/nversion/results/nversion_crosscheck_F2fixed.json",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "7669ca775bc3edbeb631026b30936af15420b44bb93827ea6f1e3dadc0ec012f",
+   "export_sha256": "7669ca775bc3edbeb631026b30936af15420b44bb93827ea6f1e3dadc0ec012f",
+   "export_bytes": 1609668,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/nversion/results/nversion_stdout_F2fixed.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "203b381d918729fc89877a666c741716ceaaf9a70f1b9ba19380ad62d47f55f2",
+   "export_sha256": "203b381d918729fc89877a666c741716ceaaf9a70f1b9ba19380ad62d47f55f2",
+   "export_bytes": 96061,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/nversion/results/nversion_stdout_before_F2_fix.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "b46f887ce780a1acad66d1861c5480c57663ac787b4f3f992c28fdbfb4040272",
+   "export_sha256": "28d2eab27b5e6d9068a37837a5e9d44656fc40ff9f23dd8fccb82866db8b020d",
+   "export_bytes": 107945,
+   "changes": [
+    "sandbox path"
+   ]
+  },
+  {
+   "path": "scientific/thermal/peak_exact/_receipt_test_peak_exact.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "1a5addc67b51c2a66072fe8444affdcf96cfa0860156902b7c56a7a4b9c208bb",
+   "export_sha256": "1a5addc67b51c2a66072fe8444affdcf96cfa0860156902b7c56a7a4b9c208bb",
+   "export_bytes": 116,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/peak_exact/_receipt_test_rc_transient.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "ae1b6f7c371f914c665eb0286a5d95925c2f2de6085da7019c782387c05e06b3",
+   "export_sha256": "68d1d35706a17a520eaad3387dab819cfbe6607e7d056fd03e019d0240a3dc3b",
+   "export_bytes": 1846,
+   "changes": [
+    "sandbox path"
+   ]
+  },
+  {
+   "path": "scientific/thermal/peak_exact/_study_peak_exact.out",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "f65f13a1ad55e15ddb5f703ea97d05c57c94c2007d143ed92bb608cbf7244f43",
+   "export_sha256": "7d9e96a581d1ac503165f16bf126de22c80513b4f8464a56930b77852f2c676d",
+   "export_bytes": 122,
+   "changes": [
+    "sandbox path"
+   ]
+  },
+  {
+   "path": "scientific/thermal/peak_exact/rc_transient.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/thermal_transient/rc_transient.py",
+   "original_sha256": "94ff435da55d2bccef769197d534e735e5813612a3275a829f703f05b5db6e0b",
+   "export_sha256": "94ff435da55d2bccef769197d534e735e5813612a3275a829f703f05b5db6e0b",
+   "export_bytes": 5989,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/peak_exact/reference_results.json",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/thermal/reference_results.json",
+   "original_sha256": "e97cf35c8accb051096fdca20ec89a0a157015b863e94cb01020a8fdb5af3a56",
+   "export_sha256": "e97cf35c8accb051096fdca20ec89a0a157015b863e94cb01020a8fdb5af3a56",
+   "export_bytes": 6603,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/peak_exact/results/peak_results.json",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "567fcdb04eadc5324ad6fb7bda3e61fe2cdf1991975caa345c82c0436d9590eb",
+   "export_sha256": "567fcdb04eadc5324ad6fb7bda3e61fe2cdf1991975caa345c82c0436d9590eb",
+   "export_bytes": 22051,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/peak_exact/results/study_peak.out",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "490d32b9a74f06d2b5c6e4dc74d61e5ca57a42556eba05012f3471b73a2a78f3",
+   "export_sha256": "490d32b9a74f06d2b5c6e4dc74d61e5ca57a42556eba05012f3471b73a2a78f3",
+   "export_bytes": 1744,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/peak_exact/study_report.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/thermal_transient/study_report.py",
+   "original_sha256": "342ddf69e6cfe26bfab69bdf688a2a1ac90d7df51640c62178e475c99045edea",
+   "export_sha256": "342ddf69e6cfe26bfab69bdf688a2a1ac90d7df51640c62178e475c99045edea",
+   "export_bytes": 4993,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/peak_exact/test_rc_transient.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/thermal_transient/test_rc_transient.py",
+   "original_sha256": "6a6c1bd14729a5d412505d43b7affcb505928a929dea20ba639112d8bbf9d626",
+   "export_sha256": "6a6c1bd14729a5d412505d43b7affcb505928a929dea20ba639112d8bbf9d626",
+   "export_bytes": 8616,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/peak_exact/thermal_reference.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/thermal/thermal_reference.py",
+   "original_sha256": "7032a2cdb7677c3f29401865d3f5f1f185c826d5f8395e5ec263ea15d642c56d",
+   "export_sha256": "7032a2cdb7677c3f29401865d3f5f1f185c826d5f8395e5ec263ea15d642c56d",
+   "export_bytes": 5318,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/peak_exact/validation/thermal_transient/peak_exact.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-peak-exact-002 (wave10-resends); task design and execution Red (Claude Cowork)",
+   "source": "thermal-peak-exact-002:validation/thermal_transient/peak_exact.py",
+   "original_sha256": "1a35e33f2ca3c81f49f626086e178750f050ada143c3f0dbc78952e9c0e5ec35",
+   "export_sha256": "1a35e33f2ca3c81f49f626086e178750f050ada143c3f0dbc78952e9c0e5ec35",
+   "export_bytes": 18671,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/peak_exact/validation/thermal_transient/test_peak_exact.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-peak-exact-002 (wave10-resends); task design and execution Red (Claude Cowork)",
+   "source": "thermal-peak-exact-002:validation/thermal_transient/test_peak_exact.py",
+   "original_sha256": "d5ed6f88473bf29de476537bbb1a865b9bf45b35896bc75a27c7393d72000221",
+   "export_sha256": "d5ed6f88473bf29de476537bbb1a865b9bf45b35896bc75a27c7393d72000221",
+   "export_bytes": 10873,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/radiation/_receipt_test_rc_transient.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "74b2906aaaab3ced0c536b037a976cc770a7c4cc5210633cee75a5d3e443bc84",
+   "export_sha256": "b912832eb8b6019b96bf8b8956e0a6369b0e68e2281499528c71b9c9e92152c5",
+   "export_bytes": 1854,
+   "changes": [
+    "sandbox path"
+   ]
+  },
+  {
+   "path": "scientific/thermal/radiation/_receipt_test_thermal_radiation.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "ecd1fb34128e00fba7d357dd201dd297eac689f2c01bf1c4685a17cc83cc8ee9",
+   "export_sha256": "ecd1fb34128e00fba7d357dd201dd297eac689f2c01bf1c4685a17cc83cc8ee9",
+   "export_bytes": 125,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/radiation/rc_transient.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/thermal_transient/rc_transient.py",
+   "original_sha256": "94ff435da55d2bccef769197d534e735e5813612a3275a829f703f05b5db6e0b",
+   "export_sha256": "94ff435da55d2bccef769197d534e735e5813612a3275a829f703f05b5db6e0b",
+   "export_bytes": 5989,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/radiation/reference_results.json",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/thermal/reference_results.json",
+   "original_sha256": "e97cf35c8accb051096fdca20ec89a0a157015b863e94cb01020a8fdb5af3a56",
+   "export_sha256": "e97cf35c8accb051096fdca20ec89a0a157015b863e94cb01020a8fdb5af3a56",
+   "export_bytes": 6603,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/radiation/results/rad_results.json",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "cb1f8fa2ce005005d649a89c076beb1615a9a0f6b5617ed2f274ed8fbd3ad93e",
+   "export_sha256": "cb1f8fa2ce005005d649a89c076beb1615a9a0f6b5617ed2f274ed8fbd3ad93e",
+   "export_bytes": 677821,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/radiation/results/study_radiation.out",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "9b8fc1d5ad832c7009f6dae4f77143154c9168d2cafa31d313921d9c6e4c9b9b",
+   "export_sha256": "a999175f70d1b61a4054d109c1a1e67889e05cff3fbd3e92345bf5c35b3139aa",
+   "export_bytes": 942,
+   "changes": [
+    "sandbox path"
+   ]
+  },
+  {
+   "path": "scientific/thermal/radiation/study_report.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/thermal_transient/study_report.py",
+   "original_sha256": "342ddf69e6cfe26bfab69bdf688a2a1ac90d7df51640c62178e475c99045edea",
+   "export_sha256": "342ddf69e6cfe26bfab69bdf688a2a1ac90d7df51640c62178e475c99045edea",
+   "export_bytes": 4993,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/radiation/thermal_reference.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/thermal/thermal_reference.py",
+   "original_sha256": "7032a2cdb7677c3f29401865d3f5f1f185c826d5f8395e5ec263ea15d642c56d",
+   "export_sha256": "7032a2cdb7677c3f29401865d3f5f1f185c826d5f8395e5ec263ea15d642c56d",
+   "export_bytes": 5318,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/radiation/validation/thermal_radiation/ANALYSIS.md",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-radiation-cont-002 (wave10-resends); task design and execution Red (Claude Cowork)",
+   "source": "thermal-radiation-cont-002:validation/thermal_radiation/ANALYSIS.md",
+   "original_sha256": "b108393e1cabdcd2448001442eb7d160b106a57dac21cfe0310d8bff89b13dc4",
+   "export_sha256": "b108393e1cabdcd2448001442eb7d160b106a57dac21cfe0310d8bff89b13dc4",
+   "export_bytes": 7493,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/radiation/validation/thermal_radiation/_continuation_block.txt",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-radiation-cont-002 (wave10-resends); task design and execution Red (Claude Cowork)",
+   "source": "thermal-radiation-cont-002:validation/thermal_radiation/thermal_radiation.py \u2014 CONTINUATION (append after deleting the truncated last line)",
+   "original_sha256": "8142bfc0ebff66573469f1b102b4ac77da696a98a56e4284c50424de2db320e0",
+   "export_sha256": "8142bfc0ebff66573469f1b102b4ac77da696a98a56e4284c50424de2db320e0",
+   "export_bytes": 21538,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/radiation/validation/thermal_radiation/rad_study.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-radiation-cont-002 (wave10-resends); task design and execution Red (Claude Cowork)",
+   "source": "thermal-radiation-cont-002:validation/thermal_radiation/rad_study.py",
+   "original_sha256": "07d324a84a34b4bc4520a70c57fd6022a16f0ed7c75e6ced3f300be3fe153ac9",
+   "export_sha256": "07d324a84a34b4bc4520a70c57fd6022a16f0ed7c75e6ced3f300be3fe153ac9",
+   "export_bytes": 18699,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/radiation/validation/thermal_radiation/reference_fixture.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-radiation-cont-002 (wave10-resends); task design and execution Red (Claude Cowork)",
+   "source": "thermal-radiation-cont-002:validation/thermal_radiation/reference_fixture.py",
+   "original_sha256": "dee290c1ea4e5463ca235c04523c828a484bdb3e95901d30187e4b41f9d4cbbd",
+   "export_sha256": "dee290c1ea4e5463ca235c04523c828a484bdb3e95901d30187e4b41f9d4cbbd",
+   "export_bytes": 5125,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/radiation/validation/thermal_radiation/test_thermal_radiation.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-radiation-cont-002 (wave10-resends); task design and execution Red (Claude Cowork)",
+   "source": "thermal-radiation-cont-002:validation/thermal_radiation/test_thermal_radiation.py",
+   "original_sha256": "be74a91d8ba2f13be03557da5b77b6dfb987bb577d7e5f7bdcad0702731e1bdc",
+   "export_sha256": "be74a91d8ba2f13be03557da5b77b6dfb987bb577d7e5f7bdcad0702731e1bdc",
+   "export_bytes": 22378,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/radiation/validation/thermal_radiation/thermal_radiation.py",
+   "group": "red_derivative",
+   "author": "Red (Claude Cowork): spliced wave-7 partial answer with wave-10 continuation; derived from answers thermal-radiation-001",
+   "source": null,
+   "original_sha256": "4ce49b1b92c0e00490f8bca301dc244e4441e4364ae85d9cd67cbd903d9a2ca8",
+   "export_sha256": "4ce49b1b92c0e00490f8bca301dc244e4441e4364ae85d9cd67cbd903d9a2ca8",
+   "export_bytes": 30180,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/sensitivity/_receipt_test_rc_transient.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "9053bb1b63a9c1235d836e72c44dfd764d86771b70545775f8bd5125a368836f",
+   "export_sha256": "12676dc9822279ceebab7005ccd0297abec65de4e0a4a8126366a2370620cdfb",
+   "export_bytes": 1858,
+   "changes": [
+    "sandbox path"
+   ]
+  },
+  {
+   "path": "scientific/thermal/sensitivity/_receipt_test_sampling.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "44ebe0c88f0572fdce3eb921745a9bad6146c3a7b335442415ab667d39b91ae7",
+   "export_sha256": "44ebe0c88f0572fdce3eb921745a9bad6146c3a7b335442415ab667d39b91ae7",
+   "export_bytes": 105,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/sensitivity/_receipt_test_steady_closed_form.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "117613c403819506b9f66cbab2c05838df960799598b251a723348c7a92ddc24",
+   "export_sha256": "117613c403819506b9f66cbab2c05838df960799598b251a723348c7a92ddc24",
+   "export_bytes": 113,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/sensitivity/_receipt_test_thermal_sensitivity.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "0937df43f22dc42fff260054580862a66f60384d023f9ea8ab5a414f90561665",
+   "export_sha256": "0937df43f22dc42fff260054580862a66f60384d023f9ea8ab5a414f90561665",
+   "export_bytes": 113,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/sensitivity/rc_transient.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/thermal_transient/rc_transient.py",
+   "original_sha256": "94ff435da55d2bccef769197d534e735e5813612a3275a829f703f05b5db6e0b",
+   "export_sha256": "94ff435da55d2bccef769197d534e735e5813612a3275a829f703f05b5db6e0b",
+   "export_bytes": 5989,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/sensitivity/reference_results.json",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/thermal/reference_results.json",
+   "original_sha256": "e97cf35c8accb051096fdca20ec89a0a157015b863e94cb01020a8fdb5af3a56",
+   "export_sha256": "e97cf35c8accb051096fdca20ec89a0a157015b863e94cb01020a8fdb5af3a56",
+   "export_bytes": 6603,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/sensitivity/results/sensitivity_results.json",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "b26ad0fbd8bc95b1879506f4265e32be193f2f7a885194472fe1a7b0cb9f5ded",
+   "export_sha256": "9a496869392ae0a2ef1b17783534e79adfea7c5d07ea718aae0e637bd03ea60c",
+   "export_bytes": 331352,
+   "changes": [
+    "sandbox path"
+   ]
+  },
+  {
+   "path": "scientific/thermal/sensitivity/results/study_sensitivity.out",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "0095596d4224321221214b919b55649301fd09576349128474c5c575b13a4629",
+   "export_sha256": "0095596d4224321221214b919b55649301fd09576349128474c5c575b13a4629",
+   "export_bytes": 1368,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/sensitivity/study_report.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/thermal_transient/study_report.py",
+   "original_sha256": "342ddf69e6cfe26bfab69bdf688a2a1ac90d7df51640c62178e475c99045edea",
+   "export_sha256": "342ddf69e6cfe26bfab69bdf688a2a1ac90d7df51640c62178e475c99045edea",
+   "export_bytes": 4993,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/sensitivity/test_rc_transient.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/thermal_transient/test_rc_transient.py",
+   "original_sha256": "6a6c1bd14729a5d412505d43b7affcb505928a929dea20ba639112d8bbf9d626",
+   "export_sha256": "6a6c1bd14729a5d412505d43b7affcb505928a929dea20ba639112d8bbf9d626",
+   "export_bytes": 8616,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/sensitivity/thermal_reference.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/thermal/thermal_reference.py",
+   "original_sha256": "7032a2cdb7677c3f29401865d3f5f1f185c826d5f8395e5ec263ea15d642c56d",
+   "export_sha256": "7032a2cdb7677c3f29401865d3f5f1f185c826d5f8395e5ec263ea15d642c56d",
+   "export_bytes": 5318,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/sensitivity/validation/thermal/reference_results.json",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/thermal/reference_results.json",
+   "original_sha256": "e97cf35c8accb051096fdca20ec89a0a157015b863e94cb01020a8fdb5af3a56",
+   "export_sha256": "e97cf35c8accb051096fdca20ec89a0a157015b863e94cb01020a8fdb5af3a56",
+   "export_bytes": 6603,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/sensitivity/validation/thermal/thermal_reference.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/thermal/thermal_reference.py",
+   "original_sha256": "7032a2cdb7677c3f29401865d3f5f1f185c826d5f8395e5ec263ea15d642c56d",
+   "export_sha256": "7032a2cdb7677c3f29401865d3f5f1f185c826d5f8395e5ec263ea15d642c56d",
+   "export_bytes": 5318,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/sensitivity/validation/thermal_sensitivity/PREDECLARED_SENSITIVITY.md",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-sensitivity-001 (wave7-red-broad); task design and execution Red (Claude Cowork)",
+   "source": "thermal-sensitivity-001:validation/thermal_sensitivity/PREDECLARED_SENSITIVITY.md",
+   "original_sha256": "569f67049080b1b88eb58c54b08405e381d0971311f4c203ff2fd6e021eca060",
+   "export_sha256": "569f67049080b1b88eb58c54b08405e381d0971311f4c203ff2fd6e021eca060",
+   "export_bytes": 10347,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/sensitivity/validation/thermal_sensitivity/sampling.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-sensitivity-cont-002 (wave10-resends); task design and execution Red (Claude Cowork)",
+   "source": "thermal-sensitivity-cont-002:validation/thermal_sensitivity/sampling.py",
+   "original_sha256": "f533b5a1504f9848b6cb2f0bd7105ebe0d82cfdfcb0fd3384d075f813d7ed210",
+   "export_sha256": "f533b5a1504f9848b6cb2f0bd7105ebe0d82cfdfcb0fd3384d075f813d7ed210",
+   "export_bytes": 7368,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/sensitivity/validation/thermal_sensitivity/steady_closed_form.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-sensitivity-cont-002 (wave10-resends); task design and execution Red (Claude Cowork)",
+   "source": "thermal-sensitivity-cont-002:validation/thermal_sensitivity/steady_closed_form.py",
+   "original_sha256": "f2bf1bb9063f5bcc5eed6590b98a903986f9eeaeba262014e07fb88ae548946e",
+   "export_sha256": "f2bf1bb9063f5bcc5eed6590b98a903986f9eeaeba262014e07fb88ae548946e",
+   "export_bytes": 17651,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/sensitivity/validation/thermal_sensitivity/test_sampling.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-sensitivity-cont-002 (wave10-resends); task design and execution Red (Claude Cowork)",
+   "source": "thermal-sensitivity-cont-002:validation/thermal_sensitivity/test_sampling.py",
+   "original_sha256": "e6f71a5e1284fa686024761009dda6ffed7423588a208ff4ca73cd48c5937e28",
+   "export_sha256": "e6f71a5e1284fa686024761009dda6ffed7423588a208ff4ca73cd48c5937e28",
+   "export_bytes": 4159,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/sensitivity/validation/thermal_sensitivity/test_steady_closed_form.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-sensitivity-cont-002 (wave10-resends); task design and execution Red (Claude Cowork)",
+   "source": "thermal-sensitivity-cont-002:validation/thermal_sensitivity/test_steady_closed_form.py",
+   "original_sha256": "c9dfc7d352adea4a96f8d23f8087f160cc8107b241e1bb1dbb2c784940284126",
+   "export_sha256": "c9dfc7d352adea4a96f8d23f8087f160cc8107b241e1bb1dbb2c784940284126",
+   "export_bytes": 8922,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/sensitivity/validation/thermal_sensitivity/test_thermal_sensitivity.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-sensitivity-cont-002 (wave10-resends); task design and execution Red (Claude Cowork)",
+   "source": "thermal-sensitivity-cont-002:validation/thermal_sensitivity/test_thermal_sensitivity.py",
+   "original_sha256": "03a954d1fdaafe13e8e0383c30e44169e6f024c1944680b2339b6cbd57e3665d",
+   "export_sha256": "03a954d1fdaafe13e8e0383c30e44169e6f024c1944680b2339b6cbd57e3665d",
+   "export_bytes": 4690,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/sensitivity/validation/thermal_sensitivity/thermal_sensitivity.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-sensitivity-cont-002 (wave10-resends); task design and execution Red (Claude Cowork)",
+   "source": "thermal-sensitivity-cont-002:validation/thermal_sensitivity/thermal_sensitivity.py",
+   "original_sha256": "31f6e1a9e145a77240d56747de10c97d816b8a33c0f765a9ffa863cde28c8f18",
+   "export_sha256": "31f6e1a9e145a77240d56747de10c97d816b8a33c0f765a9ffa863cde28c8f18",
+   "export_bytes": 24787,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/sensitivity/validation/thermal_sensitivity/transient_wrapper.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-sensitivity-cont-002 (wave10-resends); task design and execution Red (Claude Cowork)",
+   "source": "thermal-sensitivity-cont-002:validation/thermal_sensitivity/transient_wrapper.py",
+   "original_sha256": "c10d7780a742b55fde3c150ffa484aa5a952bd4e9ef0baba6752efe897397992",
+   "export_sha256": "c10d7780a742b55fde3c150ffa484aa5a952bd4e9ef0baba6752efe897397992",
+   "export_bytes": 4633,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/sensitivity/validation/thermal_transient/rc_transient.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/thermal_transient/rc_transient.py",
+   "original_sha256": "94ff435da55d2bccef769197d534e735e5813612a3275a829f703f05b5db6e0b",
+   "export_sha256": "94ff435da55d2bccef769197d534e735e5813612a3275a829f703f05b5db6e0b",
+   "export_bytes": 5989,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/sensitivity/validation/thermal_transient/study_report.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/thermal_transient/study_report.py",
+   "original_sha256": "342ddf69e6cfe26bfab69bdf688a2a1ac90d7df51640c62178e475c99045edea",
+   "export_sha256": "342ddf69e6cfe26bfab69bdf688a2a1ac90d7df51640c62178e475c99045edea",
+   "export_bytes": 4993,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/supervisor/_receipt_test_rc_transient.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "1b9da8954cf4b2ebf94db89b7f4e3433186c27857bda71e30fa5cdcb9272d892",
+   "export_sha256": "da6c310b22624f7d38ce594d02854b2376f23efe6f0a5c74090590024a8619ce",
+   "export_bytes": 1846,
+   "changes": [
+    "sandbox path"
+   ]
+  },
+  {
+   "path": "scientific/thermal/supervisor/_receipt_test_supervisor.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "f63b1d2b40d954e9961e9cdac9cfc60aaa2a92accd348a510983e8582c1be670",
+   "export_sha256": "fe1ea6aab3d3f158d58502fc8a71f95a5f3c3366aed99f147c5b3ae5194a1ad1",
+   "export_bytes": 6155,
+   "changes": [
+    "sandbox path"
+   ]
+  },
+  {
+   "path": "scientific/thermal/supervisor/rc_transient.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/thermal_transient/rc_transient.py",
+   "original_sha256": "94ff435da55d2bccef769197d534e735e5813612a3275a829f703f05b5db6e0b",
+   "export_sha256": "94ff435da55d2bccef769197d534e735e5813612a3275a829f703f05b5db6e0b",
+   "export_bytes": 5989,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/supervisor/reference_results.json",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/thermal/reference_results.json",
+   "original_sha256": "e97cf35c8accb051096fdca20ec89a0a157015b863e94cb01020a8fdb5af3a56",
+   "export_sha256": "e97cf35c8accb051096fdca20ec89a0a157015b863e94cb01020a8fdb5af3a56",
+   "export_bytes": 6603,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/supervisor/results/receipt_tests_fix003.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "657b3c79ab93229293f16852851aecd358980b611489372462154676b85cf51d",
+   "export_sha256": "657b3c79ab93229293f16852851aecd358980b611489372462154676b85cf51d",
+   "export_bytes": 141,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/supervisor/results/supervisor_matrix_fix003.txt",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "5d1370b98725db80bf914bc393702f9a35507795533a5b5ded8d8a046606e93f",
+   "export_sha256": "ba2187a096fbc8dbf4efc0842eb7f016f17ad290d94088d2ac89a50976c1e099",
+   "export_bytes": 14573,
+   "changes": [
+    "sandbox path"
+   ]
+  },
+  {
+   "path": "scientific/thermal/supervisor/results/supervisor_results_fix003.json",
+   "group": "red_execution",
+   "author": "Red (Claude Cowork): executed receipt, result or assembly",
+   "source": null,
+   "original_sha256": "2a5587b6b4c30cef131e91b8d467ef0fe399f69a32ff96c33721ab0193de222b",
+   "export_sha256": "2a5587b6b4c30cef131e91b8d467ef0fe399f69a32ff96c33721ab0193de222b",
+   "export_bytes": 745661,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/supervisor/study_report.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/thermal_transient/study_report.py",
+   "original_sha256": "342ddf69e6cfe26bfab69bdf688a2a1ac90d7df51640c62178e475c99045edea",
+   "export_sha256": "342ddf69e6cfe26bfab69bdf688a2a1ac90d7df51640c62178e475c99045edea",
+   "export_bytes": 4993,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/supervisor/test_rc_transient.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/thermal_transient/test_rc_transient.py",
+   "original_sha256": "6a6c1bd14729a5d412505d43b7affcb505928a929dea20ba639112d8bbf9d626",
+   "export_sha256": "6a6c1bd14729a5d412505d43b7affcb505928a929dea20ba639112d8bbf9d626",
+   "export_bytes": 8616,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/supervisor/thermal_reference.py",
+   "group": "coda_dependency",
+   "author": "Coda (Codex Lily), unmodified copy from Coda run 2026-11-01",
+   "source": "coda-run-2026-11-01/validation/thermal/thermal_reference.py",
+   "original_sha256": "7032a2cdb7677c3f29401865d3f5f1f185c826d5f8395e5ec263ea15d642c56d",
+   "export_sha256": "7032a2cdb7677c3f29401865d3f5f1f185c826d5f8395e5ec263ea15d642c56d",
+   "export_bytes": 5318,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/supervisor/thermal_supervisor/README.md",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-supervisor-002 (wave10-resends); task design and execution Red (Claude Cowork)",
+   "source": "thermal-supervisor-002:thermal_supervisor/README.md",
+   "original_sha256": "841f0ff970de72c8f394729da9b0149cdcc871ccbc1bf6b9ac0c777636f610b5",
+   "export_sha256": "841f0ff970de72c8f394729da9b0149cdcc871ccbc1bf6b9ac0c777636f610b5",
+   "export_bytes": 12917,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/supervisor/thermal_supervisor/detectability.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-supervisor-fix-003 (wave12b-followups-c); task design and execution Red (Claude Cowork)",
+   "source": "thermal-supervisor-fix-003:thermal_supervisor/detectability.py",
+   "original_sha256": "cf6cc9b29161e8bb49e886f13fd7784cfda69dddea74e163e2e6cf00d75c375b",
+   "export_sha256": "cf6cc9b29161e8bb49e886f13fd7784cfda69dddea74e163e2e6cf00d75c375b",
+   "export_bytes": 6391,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/supervisor/thermal_supervisor/harness.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-supervisor-fix-003 (wave12b-followups-c); task design and execution Red (Claude Cowork)",
+   "source": "thermal-supervisor-fix-003:thermal_supervisor/harness.py",
+   "original_sha256": "52b1fa9ba932ea4de80d41efd92631c4a0cf337a5589f262a43a5ccf63c4cc98",
+   "export_sha256": "52b1fa9ba932ea4de80d41efd92631c4a0cf337a5589f262a43a5ccf63c4cc98",
+   "export_bytes": 19012,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/supervisor/thermal_supervisor/plant.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-supervisor-002 (wave10-resends); task design and execution Red (Claude Cowork)",
+   "source": "thermal-supervisor-002:thermal_supervisor/plant.py",
+   "original_sha256": "ae1454787a03b19e1de688334c594ed2cef37da9a7368cd6f7871a3f20602a90",
+   "export_sha256": "ae1454787a03b19e1de688334c594ed2cef37da9a7368cd6f7871a3f20602a90",
+   "export_bytes": 3592,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/supervisor/thermal_supervisor/run_matrix.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-supervisor-fix-003 (wave12b-followups-c); task design and execution Red (Claude Cowork)",
+   "source": "thermal-supervisor-fix-003:thermal_supervisor/run_matrix.py",
+   "original_sha256": "b92be0dfb14585e73ff79b6a222498db84809a7073bdbcf9a77a0554edce478a",
+   "export_sha256": "b92be0dfb14585e73ff79b6a222498db84809a7073bdbcf9a77a0554edce478a",
+   "export_bytes": 1237,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/supervisor/thermal_supervisor/supervisor.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-supervisor-fix-003 (wave12b-followups-c); task design and execution Red (Claude Cowork)",
+   "source": "thermal-supervisor-fix-003:thermal_supervisor/supervisor.py",
+   "original_sha256": "1e6a3a88f7e695531c9b3973c1c6850e52b7f4779ec50ca4915a848c97d5a129",
+   "export_sha256": "1e6a3a88f7e695531c9b3973c1c6850e52b7f4779ec50ca4915a848c97d5a129",
+   "export_bytes": 16288,
+   "changes": []
+  },
+  {
+   "path": "scientific/thermal/supervisor/thermal_supervisor/test_supervisor.py",
+   "group": "claude_answer",
+   "author": "Claude Fable 5.1 (Anthropic), answer thermal-supervisor-fix-003 (wave12b-followups-c); task design and execution Red (Claude Cowork)",
+   "source": "thermal-supervisor-fix-003:thermal_supervisor/test_supervisor.py",
+   "original_sha256": "0e813f71e1ae2de2013c7579c6444028e57b1a7e72bc994b76a55c4de0a8df66",
+   "export_sha256": "0e813f71e1ae2de2013c7579c6444028e57b1a7e72bc994b76a55c4de0a8df66",
+   "export_bytes": 25265,
+   "changes": []
+  },
+  {
+   "path": "tools/reproduce_check.py",
+   "group": "red_tool",
+   "author": "Red (Claude Cowork)",
+   "source": null,
+   "original_sha256": "c2c67cc89ba9e3cfe147761ac57ae354f9cacbe72c918343c85d9d5fd20c5c69",
+   "export_sha256": "c2c67cc89ba9e3cfe147761ac57ae354f9cacbe72c918343c85d9d5fd20c5c69",
+   "export_bytes": 7405,
+   "changes": []
+  },
+  {
+   "path": "verify_release.py",
+   "group": "coda_tool",
+   "author": "Coda (Codex Lily), unmodified copy of the 2026-10-18 verifier",
+   "source": null,
+   "original_sha256": "579110da1b64b0e06ef1ba6ce998101a6b74193ef6d773640ff8b9b929cc81a0",
+   "export_sha256": "579110da1b64b0e06ef1ba6ce998101a6b74193ef6d773640ff8b9b929cc81a0",
+   "export_bytes": 3313,
+   "changes": []
+  }
+ ]
+}

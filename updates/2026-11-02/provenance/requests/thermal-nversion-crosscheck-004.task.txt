@@ -1,0 +1,18 @@
+Request thermal-nversion-crosscheck-004 (wave12b-followups-c; model Claude Fable 5.1; header HEADER_a12f72162d0b.txt)
+
+TASK thermal-nversion-crosscheck-004
+Four independent models of the nonliving T0-HYP-1 panel now exist and all have been executed by Red: (1) Coda's two-node lumped transient (report appended); (2) a distributed 1-D finite-volume fault model (T0-FV1D-1, Claude, waves 7+10; 28/28 tests; full F0-F5 suite ran in 10.5 s, energy_ok everywhere; compact results appended); (3) an independent semi-analytic layered eigen-oracle (Claude, wave 10; 16/18 tests - two mode-count/structure checks fail and are being diagnosed separately; results for 9 cases appended); (4) a radiation extension whose eps = 0 rows must reproduce the steady reference. Examples from execution: H3 rear-loss (F1) surface peak 45.947 C at 926 s (finite volume) vs 45.881 C at 914 s (two-node); H2 F1 53.201 C at 906.5 s vs 53.154 C at 904 s.
+Red executed this in an isolated sandbox (Linux, Python 3.13, stdlib only); receipts are appended verbatim or as size-limited JSON copies (lists shortened, marked).
+
+Task: a predeclared N-version cross-check. (a) Identify every quantity at least two models compute for the same scenario (steady states, F0/F1/F2 trajectories at matched times, peak values and times); (b) declare acceptance tolerances BEFORE comparing, from each model's own discretisation/truncation error estimates; (c) write a standard-library script that loads the four JSON result files (paths as CLI arguments; use the key structure visible in the compact copies) and emits the comparison table with pass/fail; (d) explain the systematic finite-volume vs two-node differences (distributed storage delaying and raising the surface peak for thicker stacks) and say which model should be the reference for which question. Red will run your script on the full result files.
+
+SOURCE BUNDLE (labels and sha256 of the verbatim sources appended to the request; contents not repeated here)
+- T0-HYP-1 contract excerpt (Coda) | excerpt of packets/thermal-transient-faults.txt | sha256=2bec6924ef87945bec5f156bf15fb1f6c14d9102df62676e2145fe68b4df0f64
+- Coda two-node report | validation/thermal_transient/REPORT.md | sha256=86f9b6107dc2e62b9e497454924c3463230bc96ba9495ab0bdc2baa24d6b25a6
+- FV suite stdout | red-sandbox/work/w10/_study_fv.out | sha256=2189d165873dcda2b0e1e09255e1f6bdbfdc783e5ccd6d020092bf552dee7bb7
+- FV results (compact) | red-sandbox/work/w10/_fv_suite.compact.json | sha256=d8c889aed4dcf2276c9acb02ef159fa4d8f0a93b64c5dcb6801a7a95c79eb838
+- layered oracle results (compact) | red-sandbox/work/w10/_oracle_results.compact.json | sha256=d412bad129f30532a6bbe72c33e9e04467faccd056effbeda4c02129bcff368c
+- layered oracle test receipt | red-sandbox/work/w10/thermal-layered-oracle-002/_receipt_test_layered_oracle.txt | sha256=c4e64fbd0a329e1cce3ce4446a5f410c5ce5c85a2a9dda6599425fd9c2333992
+- radiation study stdout | red-sandbox/work/w10/_study_radiation.out | sha256=9b8fc1d5ad832c7009f6dae4f77143154c9168d2cafa31d313921d9c6e4c9b9b
+- radiation results (compact) | red-sandbox/work/w10/_rad_results.compact.json | sha256=ce57a9d3aecffeca55b34a3c9ce09b9a388bbf16c6e81b098dc42e234f676d14
+- steady reference results | validation/thermal/reference_results.json | sha256=e97cf35c8accb051096fdca20ec89a0a157015b863e94cb01020a8fdb5af3a56

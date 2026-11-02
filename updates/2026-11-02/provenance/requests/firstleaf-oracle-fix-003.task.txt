@@ -1,0 +1,16 @@
+Request firstleaf-oracle-fix-003 (wave12b-followups-c; model Claude Fable 5.1; header HEADER_a12f72162d0b.txt)
+
+TASK firstleaf-oracle-fix-003
+Your colleague's First Leaf oracle baseline (code appended, assembled by Red from a partial answer plus its continuation using the supplied splice script) was executed. Red executed this in an isolated sandbox (Linux, Python 3.13, stdlib only); receipts are appended verbatim or as size-limited JSON copies (lists shortened, marked). Tests: 24 ran, 1 failure - test_duplicate_samples_and_receipts_are_single_evidence (3 != 4). Harness, 8 seeds (20001-20008), local mode: oracle 'all' 0.139 vs random 1.038, final_within_0_15 1.0 vs 0.0, body_model_error 0.016 vs 0.3; after the remap the early-32 metric degrades to 0.483 then recovers (remap_full 0.156); in-process mode gives the same numbers (136.6 s). Task: (1) decide whether the failing test or the evidence-deduplication code is wrong, with a minimal fix; (2) interpret the metrics - what do they establish about the oracle as a yardstick, and what is the fair comparison protocol for candidate models (episodes, seeds, intervals); (3) list what must change to run the harness through the new integrated relay (lifecycle API: explicit dispatch marking) and give the diff.
+
+SOURCE BUNDLE (labels and sha256 of the verbatim sources appended to the request; contents not repeated here)
+- oracle module (spliced) | red-sandbox/work/w10/firstleaf-oracle-cont-002/oracle/first_leaf_oracle.py | sha256=02977d4574cd78006eaf91319140073ec87f5172e354fc4d9e6934a9f99be1c6
+- fl_local_sim.py | red-sandbox/work/w10/firstleaf-oracle-cont-002/oracle/fl_local_sim.py | sha256=dc7512e0038224699263352ced7e79ea7ee3521afe6a7d253aec90a64136ad7e
+- fl_scoring.py | red-sandbox/work/w10/firstleaf-oracle-cont-002/oracle/fl_scoring.py | sha256=f2b5b15290982d83866aa164f3b206b923f3f008558299c92f44177361970260
+- fl_harness.py | red-sandbox/work/w10/firstleaf-oracle-cont-002/oracle/fl_harness.py | sha256=0cd6aaa01303c9555369e42474cc3fa6473827721a8f3398fdf56535fc78a3e0
+- tests/test_oracle.py | red-sandbox/work/w10/firstleaf-oracle-cont-002/tests/test_oracle.py | sha256=3b9a6af96824953a6d8d2a93b1de7edb058918fbe7475667dd34d70a02594408
+- test receipt | red-sandbox/work/w10/firstleaf-oracle-cont-002/_receipt_test_oracle.txt | sha256=7ae2483d78d1550f38e6b3c556ddd9a98cf10891da523b5b8022c6d3639c01b7
+- harness summary (local mode) | red-sandbox/work/w10/firstleaf-oracle-cont-002/_study_oracle_local.out | sha256=8db481257f5ba62e7ac50723e0b236a8d586d9d867962f10b7a1b6e8ca769355
+- harness rows (compact) | red-sandbox/work/w10/firstleaf-oracle-cont-002/local_runs.compact.json | sha256=04d2241ecb8ad0f5045c77b2d43fdd34650c1692b54158a73d765b867eaf2984
+- integrated relay.py (lifecycle) | red-sandbox/work/gw3/src/relay.py | sha256=51b7a663509a72cca2ce845c0ff329ae64185c328255635a48816d2c4211c001
+- integration note | red-sandbox/work/gw3/docs/gateway_lifecycle_v1/INTEGRATION_NOTE.md | sha256=6f249ff813b19b2ddb18cc2f17ce626cb8e753c3d22cd8b71f098f54703b649f

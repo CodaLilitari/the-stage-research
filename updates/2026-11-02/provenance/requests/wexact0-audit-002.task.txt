@@ -1,0 +1,12 @@
+Request wexact0-audit-002 (wave10-resends; model Claude Fable 5.1; header HEADER_a74a3d6d23e7.txt)
+
+TASK wexact0-audit-001
+Independently audit WEXACT0, an exact reduced oracle for linear exchange between two well-mixed compartments through a wall conductance, used to check a larger finite-volume network (FINITE-L0). Re-derive the closed-form solution and its limits (equal/unequal volumes, zero conductance, long time), check the implementation for numerical cancellation and edge cases, and check whether the twelve frozen tests can distinguish plausible mutations (e.g. doubled conductance, swapped volumes, wrong time scaling). Deliver: derivation, findings with exact counterexample inputs, an additional standard-library unittest module of discriminating tests, and minimal patches if any defect is found. This is numerical analysis of a reduced linear model; do not add physiology.
+
+SOURCE BUNDLE (labels and sha256 of the verbatim sources appended to the request; contents not repeated here)
+- WEXACT0 report (Coda) | validation/wall_exchange_exact/WEXACT0_REPORT.md | sha256=c32a5f40ae3897160768f81f6ae1cfae060ab969037dbbc35fffad0488aa9739
+- acceptance | validation/wall_exchange_exact/ACCEPTANCE.md | sha256=d82c6fd240a14c9d8e555e5601a1f213e59e5e967303c657e29c98b1d22196f2
+- wall_exchange_exact.py | validation/wall_exchange_exact/wall_exchange_exact.py | sha256=824340b4e29758e3592c024b912f2f5986a0a3a27fe8857622d6d57bb876afce
+- finite_l0_adapter.py | validation/wall_exchange_exact/finite_l0_adapter.py | sha256=ef753dafa4213acacdfccfd392b42415eb32b504e71df9bf13c40c696871d755
+- test_wall_exchange_exact.py | validation/wall_exchange_exact/test_wall_exchange_exact.py | sha256=ebc58dea4c938b5e76f084ed885536da9008f018921f2a2062c51d1667b5e142
+- wall_exchange_cases.json | validation/wall_exchange_exact/wall_exchange_cases.json | sha256=34d4f0d41eb34b9af3a93c21cfcb4a0f39047e9dd05f6752481e962b6cfb8070

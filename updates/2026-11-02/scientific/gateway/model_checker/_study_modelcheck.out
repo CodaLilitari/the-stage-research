@@ -1,0 +1,76 @@
+variant=as_written_blind_unknown_persist depth=12 states=1643 transitions=3262 exhausted=False truncated=False
+  INV_NO_FALSE_OUTCOME (length 6): dur: a verified_simulator_transition -> unknown_outcome during persist_unknown_blind
+    trace: begin ; admit(a) ; mark_dispatched ; compute_ok ; commit_ambiguous(replaced=True) ; persist_unknown_blind
+  INV_ONLY_VERIFIED_ADVANCES (length 6): dur: counters moved (-1, -1, -1) during persist_unknown_blind
+    trace: begin ; admit(a) ; mark_dispatched ; compute_ok ; commit_ambiguous(replaced=True) ; persist_unknown_blind
+
+variant=as_written_nondurable_dispatch_mark depth=12 states=2234 transitions=4083 exhausted=False truncated=False
+  INV_NO_DOUBLE_DISPATCH (length 8): a request id was marked dispatched twice
+    trace: begin ; admit(a) ; mark_dispatched ; crash ; recover ; begin ; admit(a) ; mark_dispatched
+
+variant=as_written_reread_without_latch_merge depth=12 states=1623 transitions=3262 exhausted=False truncated=False
+  INV_NO_REDISPATCH (length 7): mem: cached receipt b lost during resolve_unknown_trusted
+    trace: begin ; admit(a) ; mark_dispatched ; admit(b) ; compute_ok ; commit_ambiguous(replaced=False) ; resolve_unknown_trusted
+  INV_STOP_LATCH (length 7): mem: stop unlatched during resolve_unknown_trusted
+    trace: begin ; admit(a) ; mark_dispatched ; stop ; compute_ok ; commit_ambiguous(replaced=False) ; resolve_unknown_trusted
+
+variant=as_written_weak_restore_validation depth=12 states=1661 transitions=3338 exhausted=False truncated=False
+  INV_NO_FALSE_OUTCOME (length 2): mem: y verified but absent from simulator log
+    trace: tamper(false_verified) ; begin
+  INV_ONE_UNRESOLVED (length 2): mem: dangling active='zz'
+    trace: tamper(active_dangling) ; begin
+  INV_RESTORE_REJECTS_INCONSISTENT (length 2): inconsistent durable state (active_dangling) was loaded
+    trace: tamper(active_dangling) ; begin
+  INV_STOP_LATCH (length 2): mem: stopped with an admitted_pending receipt
+    trace: tamper(stopped_with_pending) ; begin
+
+variant=bug_duplicate_redispatch depth=12 states=1720 transitions=3320 exhausted=False truncated=False
+  INV_NO_REDISPATCH (length 6): mem: x rejected -> admitted_pending during admit
+    trace: begin ; admit(x) ; persist ; export_ok ; begin ; admit(x)
+  INV_STOP_LATCH (length 7): mem: stopped with an admitted_pending receipt
+    trace: begin ; admit(a) ; stop ; persist ; export_ok ; begin ; admit(a)
+
+variant=bug_export_replays depth=12 states=1681 transitions=3338 exhausted=False truncated=False
+  INV_EXPORT_NEVER_REPLAYS (length 7): recover changed durable state
+    trace: begin ; admit(a) ; mark_dispatched ; compute_ok ; commit_ok ; export_fail ; recover
+  INV_NO_FALSE_OUTCOME (length 7): dur: a transition appears twice in the simulator log
+    trace: begin ; admit(a) ; mark_dispatched ; compute_ok ; commit_ok ; export_fail ; recover
+  INV_ONLY_VERIFIED_ADVANCES (length 7): dur: counters advanced with 0 newly verified transitions during recover
+    trace: begin ; admit(a) ; mark_dispatched ; compute_ok ; commit_ok ; export_fail ; recover
+
+variant=bug_failure_advances depth=12 states=1605 transitions=3105 exhausted=False truncated=False
+  INV_FAILURE_RELEASES (length 4): known failure did not release the slot without advancing
+    trace: begin ; admit(a) ; mark_dispatched ; compute_fail
+  INV_ONLY_VERIFIED_ADVANCES (length 4): mem: counters advanced with 0 newly verified transitions during compute_fail
+    trace: begin ; admit(a) ; mark_dispatched ; compute_fail
+
+variant=bug_resolution_unlatches_stop depth=12 states=1687 transitions=3282 exhausted=False truncated=False
+  INV_STOP_LATCH (length 7): mem: stop unlatched during resolve_unknown_trusted
+    trace: begin ; admit(a) ; mark_dispatched ; stop ; compute_ok ; commit_ambiguous(replaced=True) ; resolve_unknown_trusted
+
+variant=bug_restore_silently_repairs depth=12 states=1661 transitions=3338 exhausted=False truncated=False
+  INV_RESTORE_REJECTS_INCONSISTENT (length 2): inconsistent durable state (active_dangling) was loaded
+    trace: tamper(active_dangling) ; begin
+
+variant=bug_second_admission depth=12 states=1357 transitions=2490 exhausted=False truncated=False
+  INV_ONE_UNRESOLVED (length 3): mem: 2 unresolved receipts (('a', 'move', 0, 'admitted_pending'), ('b', 'move', 0, 'admitted_pending'))
+    trace: begin ; admit(a) ; admit(b)
+
+variant=bug_stop_cancels_dispatched depth=12 states=1286 transitions=2204 exhausted=False truncated=False
+  INV_STOP_LATCH (length 4): mem: a dispatched -> cancelled_before_dispatch during stop
+    trace: begin ; admit(a) ; mark_dispatched ; stop
+
+variant=bug_untrusted_resolution depth=12 states=1721 transitions=3534 exhausted=False truncated=False
+  INV_NO_FALSE_OUTCOME (length 6): mem: a verified but absent from simulator log
+    trace: begin ; admit(a) ; mark_dispatched ; compute_ok ; commit_ambiguous(replaced=True) ; resolve_unknown_untrusted(verified_simulator_transition)
+  INV_ONLY_VERIFIED_ADVANCES (length 6): mem: simulator log and counters diverged during resolve_unknown_untrusted
+    trace: begin ; admit(a) ; mark_dispatched ; compute_ok ; commit_ambiguous(replaced=True) ; resolve_unknown_untrusted(verified_simulator_transition)
+
+variant=clarified_baseline depth=12 states=1661 transitions=3338 exhausted=False truncated=False
+  no invariant violated within the bound
+
+variant=clarified_relay_only depth=12 states=511 transitions=700 exhausted=False truncated=False
+  no invariant violated within the bound
+
+report written to report.json
+prediction mismatches: 0

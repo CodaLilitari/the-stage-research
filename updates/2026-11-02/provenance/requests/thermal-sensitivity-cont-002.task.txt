@@ -1,0 +1,21 @@
+Request thermal-sensitivity-cont-002 (wave10-resends; model Claude Fable 5.1; header HEADER_01f9d8d38a52.txt)
+
+TASK thermal-sensitivity-cont-002 (continuation)
+An earlier instance working on the original task below produced the partial answer appended at the end, then reached the 128,000-token output limit. Continue it: deliver ONLY what is missing to complete the original deliverable. Do not repeat material already delivered; treat delivered code as fixed unless you find a blocking defect, in which case give a minimal unified diff. Start writing immediately and keep private reasoning short. Use the FILE: convention for any new files.
+
+----- ORIGINAL TASK PACKET (verbatim, with its sources) -----
+
+TASK thermal-sensitivity-001
+Quantify which T0-HYP-1 assumptions control the conclusions. The executed steady reference found that a cooler outer surface does not imply a cooler interior (H1/H2/H3 surfaces 33.555/33.363/33.006 C vs internal 33.831/33.862/33.919 C). Determine over the contract's declared sensitivity domains (shared silicone k, shared film k, contact resistance r_c common to both interfaces, convection h, rear resistance R_rej including blocked, P_body in {1,5,10} W, thickness common bias vs independent +/-10 percent) where that ranking reversal holds, flips or ties.
+
+Deliver: (a) closed-form steady temperatures and their exact partial derivatives for the linear network (exact rational arithmetic via fractions), and an analytic condition for the surface/internal ranking reversal between two stacks; (b) a standard-library implementation of Morris elementary-effects screening and a variance-based (Sobol/Saltelli) estimate with a fixed seed and declared sample sizes, for steady surface and internal temperatures and for the two-node transient peak values from rc_transient.py (call its public functions; do not reimplement it); (c) predeclared sampling plan and acceptance checks before results; (d) unittests (derivatives vs finite differences, reversal condition vs brute force on a grid, reproducibility). Ranges are assumed study domains, not measured distributions - do not convert them into confidence intervals.
+
+SOURCE BUNDLE (labels and sha256 of the verbatim sources appended to the request; contents not repeated here)
+- steady reference report | validation/thermal/REPORT.md | sha256=3434476c4187acffcd731cfa20783de54d205dd281fbcfdbae8cc0ddc9df65c2
+- thermal_reference.py (exact rational steady network) | validation/thermal/thermal_reference.py | sha256=7032a2cdb7677c3f29401865d3f5f1f185c826d5f8395e5ec263ea15d642c56d
+- reference_results.json | validation/thermal/reference_results.json | sha256=e97cf35c8accb051096fdca20ec89a0a157015b863e94cb01020a8fdb5af3a56
+- steady acceptance predeclaration | validation/thermal/ACCEPTANCE_PREDECLARED.md | sha256=072e70be75fc994152f455e3abf75ced1f4600c16e6cabc8fe1ba81bef63156a
+- T0-HYP-1 contract excerpt (verbatim from Coda's prepared packet thermal-transient-faults.txt) | excerpt of packets/thermal-transient-faults.txt | sha256=2bec6924ef87945bec5f156bf15fb1f6c14d9102df62676e2145fe68b4df0f64
+- two-node transient report (Coda, executed) | validation/thermal_transient/REPORT.md | sha256=86f9b6107dc2e62b9e497454924c3463230bc96ba9495ab0bdc2baa24d6b25a6
+- two-node transient predeclaration | validation/thermal_transient/PREDECLARED.md | sha256=29404fc56e956a0053c992c0a9b96db9dae58ff7c057f1354a19cde40e9310be
+- rc_transient.py (Coda two-node model) | validation/thermal_transient/rc_transient.py | sha256=94ff435da55d2bccef769197d534e735e5813612a3275a829f703f05b5db6e0b

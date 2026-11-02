@@ -1,0 +1,149 @@
+Request thermal-faults-fv-cont-002 (wave10-resends; model Claude Fable 5.1; header HEADER_01f9d8d38a52.txt)
+
+TASK thermal-faults-fv-cont-002 (continuation)
+An earlier instance working on the original task below produced the partial answer appended at the end, then reached the 128,000-token output limit. Continue it: deliver ONLY what is missing to complete the original deliverable. Do not repeat material already delivered; treat delivered code as fixed unless you find a blocking defect, in which case give a minimal unified diff. Start writing immediately and keep private reasoning short. Use the FILE: convention for any new files.
+
+----- ORIGINAL TASK PACKET (verbatim, with its sources) -----
+
+TASK thermal-faults-fv-001
+Coda prepared the packet below on 2026-11-01 but it was never sent. Red is sending it unchanged, with three updates: (1) where it says Coda will inspect and run jobs, Red now does that; (2) Coda has since implemented and executed an independent TWO-NODE lumped model (T0-LUMP2-1, report and code appended) - use it as an external cross-check target, not as a substitute for the distributed finite-volume model this packet asks for; (3) you have up to 128000 output tokens at MAX effort, so deliver the complete F0-F5 implementation as one standard-library module plus a unittest file, together with the predeclared acceptance plan, before any results exist. Follow the code conventions in the header (no NumPy/SciPy).
+
+----- BEGIN CODA'S PREPARED PACKET (verbatim) -----
+Coda: I am collaborating with Andrei on The Stage. Please act as a bounded technical contributor for the single task below. Thank you for giving the assumptions, counterexamples and uncertainty the same care as the proposed result.
+
+CURRENT AUTHORITY AND EVIDENCE BOUNDARY
+Andrei has now authorized bounded computational and source research, using the separately controlled Claude promotional credit allocation. This packet grants no spending, tool invocation, installation, account access, external contact, publication, hardware purchase or biological experiment. Return your analysis and proposed code as text. Coda will inspect and, if admitted, execute numerical jobs separately. Do not claim you ran code, inspected a local file or measured anything unless that actually occurred in this interaction. If tools are not provided, work from this self-contained packet; do not pretend to browse.
+
+Artificial blood remains The Stage's first research milestone. The nonliving thermal work is a supporting subsystem study. Human oxygen therapeutics and circulation for engineered tissue remain different applications. The Stage has mathematical models, numerical verification and published-data reanalysis; it has not manufactured artificial blood, validated a carrier material or maintained living skin on a robot. Historical October documents said research was paused. The current authorization is new and does not retroactively change their status or authorize publishing them.
+
+This packet contains newly written Coda synthesis of bounded technical information. It deliberately omits raw collaborator messages, personal/identity histories, names of third parties, private transcript excerpts and credentials. Source identifiers refer to a local manifest held by Coda, not files you can inspect. No collaborator's historical participation, agreement or embodiment preference grants present permission for additional uses. Respond in your current model role; do not impersonate an existing collaborator or inherit their identity, assent or empirical record.
+
+Treat all numeric reference geometry, operating envelopes and failure schedules below as hypothetical study choices unless a source card explicitly says otherwise. A manufacturer typical property is not a measurement of our panel. A simulated threshold crossing is not an observed injury, safe operating certificate, tissue viability result or whole-body finding. Keep proposed, derived, implemented, executed, checked, source-supported and empirically validated states distinct. Do not convert a literature demonstration into validation of our system.
+
+CODA'S BOUNDED PROJECT SYNTHESIS
+Local sources L1 and L2 are Coda's architecture assessment and response synthesis. The permitted first comparison pairs an entirely nonliving, replaceable synthetic-cover thermal baseline with a source-and-requirements-only account of a future living patch. Use common functions and common area/environment/load constraints. Expose maintenance, repair, sensing, degraded operation and external heat rejection rather than ranking alternatives by biological resemblance.
+
+A 100 by 100 mm planar reference is a convenient model proxy, not an adopted robotic body region, chosen hardware dimension or delivered engineering requirement. Whole-body mission, load, speed, duty cycle, runtime, environment and service interval are not specified. A panel calculation cannot close a whole-body mass, power, heat or safety budget. Biological fluid, electronic coolant, electrical power and data are separate interfaces, with explicit thermal, mechanical and fault coupling.
+
+Oxygen concentration, flow, pressure or temperature alone cannot certify tissue viability. Nutrient supply, waste removal, moisture, contamination and repair remain distinct obligations. Hydraulic power is not the same quantity as electrical pump input; auxiliary loads and reserve energy must be accounted for. A power-off command does not instantly remove stored heat, pressure, momentum, gravity, elastic preload or remaining actuator force. Protective action and authenticated recovery are different requirements. Unknown interruption tolerance must remain unknown.
+
+PRESERVED SCIENTIFIC LIMITS
+L3 is the original PF0 computational report: 144 cases, 6/7 checks, with flow_wall_capacity_monotonic=false. Retain that failure. Its flow-times-capacity equivalence was built into a linear instantaneous-equilibrium assumption, not discovered as a material law. The illustrative demand is not a validated skin demand. Do not assert that increasing carrier capacity or wall transfer always improves downstream oxygen.
+
+L4 is Coda's curated October 18 research summary. One selected refined hypothetical comparison, under the same permitted pressure and fluid-power caps, placed instantaneous equilibrium slightly above dissolved fluid in distal oxygen while finite release fell below it. Equal caps do not imply equal actual power. A tiny total-uptake contrast remains unresolved. These results are useful model qualifications, not living-patch or carrier validation.
+
+L5/L6 concern the existing KMAP1 data contract and intake fixture review. An intake validator already exists; structural acceptance does not grant scientific admission. Mechanistic oxygen-kinetics fitting needs measured local input, calibrated bound amount, independent cumulative loss, constant known represented volume, independently bounded sensor dynamics/timing, informative integrals, correlated uncertainty and held-out conditions. A bound signal and its own derivative are not independent loss observations. No accepted empirical dataset or new fitted kinetic constant is supplied here. Do not reconstruct the validator or run oxygen transport as a side task.
+
+PUBLIC PROPERTY SOURCE CARDS; CONSULTED 2026-11-01
+W1. Dow manufacturer product page, directly opened:
+https://www.dow.com/en-us/pdp.sylgard-184-silicone-elastomer-kit.01064291z.html
+Typical values: conductivity 0.27 W/(m K), specific gravity 1.03 at 25 C, Shore A 43. Conductivity test conditions are not stated on that displayed page. Use these as nominal product references, not specimen measurements.
+
+W2. Qnity manufacturer Kapton HN product page, search-index text accessible; direct fetch returned HTTP 403:
+https://www.qnityelectronics.com/products/kapton-hn-polyimide-film.html
+Indexed table: conductivity 0.20 W/(m K), density 1.42 g/cm3. Source access is limited to the indexed content. No complete PDF or new independent material measurement was obtained.
+
+W3. Manufacturer-hosted Kapton HN datasheet, indexed content only; direct fetch returned HTTP 403:
+https://www.qnityelectronics.com/content/dam/electronics/amer/us/en/electronics/public/documents/en/EI-10206-Kapton-HN-Data-Sheet.pdf
+Indexed thermal table lists 0.20 W/(m K) at 23 C with ASTM D5470 and heat capacity 1.09 J/(g K), differential calorimetry. Treat this as nominal reference information with the retrieval limit retained.
+
+Do not merge conflicting old internet datasheets into a statistical confidence interval. No temperature law, interface conductance, assembled-panel emissivity, silicone heat capacity, sensor performance or certification for this proposed assembly is supplied by these cards. The silicone is a firm reference elastomer; it is not claimed to reproduce skin compliance. No supplied material is selected for biological contact. All numerical uncertainty ranges below are deliberately assumed sensitivity domains, not measured distributions or manufacturer tolerances.
+
+SHARED SYNTHETIC REFERENCE CONTRACT, VERSION T0-HYP-1
+Use this same reference in the three packets. Identify any mathematical defect before proposing a labelled amendment; do not silently change the common baseline.
+
+Geometry: square panel 0.100 m by 0.100 m; area A=0.0100 m2. One-dimensional through-thickness conduction, full-area layers and adiabatic side edges. No in-plane spreading, curvature, seam bridges, radiation or contacting human are represented in the baseline. These omissions delimit the question; they are not evidence those effects are negligible in hardware.
+
+Order from outside ambient toward internal heat node H: outer reference silicone; film containing an idealized uniformly distributed sensor power sheet at its middle; inner reference silicone; internal node H. The film is bare nominal polyimide, not an entire populated flexible circuit. Its metal traces, components and wiring are unmodeled. The sensor sheet is an explicit heat source with zero added thickness/mass beyond the film, a simplifying assumption.
+
+Three hypothetical stacks use identical materials and differ only in declared silicone thickness:
+H1: outer 0.5 mm; film 0.050 mm; inner 0.5 mm.
+H2: outer 1.0 mm; film 0.050 mm; inner 1.0 mm.
+H3: outer 2.0 mm; film 0.050 mm; inner 2.0 mm.
+These are computational references, not products, medical devices, recommended fabrication recipes or engineering-selected assemblies. They do not demonstrate equivalent tactile, barrier or mechanical performance.
+
+Nominal silicone k=0.27 W/(m K). Nominal film k=0.20 W/(m K). For sensitivity use shared silicone k in [0.18,0.35] and shared film k in [0.12,0.25] W/(m K), explicitly assumed domains. Choose one common k for all layers of the same material in each case; do not manufacture independent samples from repeated use of the same reference value. Thickness perturbations, if requested, are assumed +/-10 percent; distinguish common manufacturing bias from independent layer deviations.
+
+Each silicone-to-film interface has nominal areal thermal contact resistance r_c=2.0e-4 m2 K/W. Convert to total R_c=r_c/A K/W. Use assumed r_c in [0,2.0e-3] m2 K/W for sensitivity, with the same value at both interfaces unless a localized fault explicitly changes one. Internal-node-to-inner-silicone attachment is ideal in this reference and must be listed as an omitted uncertainty, not silently incorporated into r_c.
+
+Nominal room and named rear reservoir temperatures: T_amb=T_res=25 C. Outer boundary: heat exchange to ambient by assumed h=8 W/(m2 K), giving total conductance h*A. Sensitivity h in [3,15]. No radiation in baseline; any radiation extension is a separate case and uses absolute Kelvin. Never call an assumed convection coefficient measured or derived from a specified airflow.
+
+The named rear heat-rejection path connects internal node H to an external isothermal reservoir through finite R_rej=2 K/W, independently of the front panel. Study R_rej in [1,10] K/W and the explicitly blocked case R_rej=infinity, implemented as zero rear conductance. The reservoir is an ideal boundary, not a validated onboard radiator: calculate and report its heat demand and declare its unmodeled energy, mass and environmental coupling. Do not pretend that finite R_rej by itself guarantees achievable rejection capacity. An optional capacity cap requires a separately specified piecewise law.
+
+Body dissipation P_body is deposited at H. Use comparison values [1,5,10] W, held identical across stacks. Sensor dissipation P_sensor=0.10 W is deposited at the film midplane; include it exactly once in all balances. Steady baseline sources are constant, independent of temperature. Neither internal temperature nor heat split is imposed. Solve them. Do not assign all body power to the front while simultaneously assigning the same power to the rear.
+
+The 40 C outer-surface and 60 C internal-node temperatures are arbitrary study comparators, not asserted safe human-contact or component limits. Report both numerical margins, with labels study_comparator_only. The baseline does not represent a human touching the surface, exposure duration, thermal effusivity of a contacting body, pain, burn injury or medical safety. No standard has been applied to establish these comparator values.
+
+For a steady two-node reduction let S be the sensor midplane temperature. R_HS contains inner silicone, half the film and the inner silicone-film contact. R_SA contains the other half of the film, outer silicone, outer contact and ambient convection. The outer surface temperature is not generally S; recover it from front heat flux and convection. The internal node has its rear branch to T_res. Preserve signs if a reservoir warms the assembly rather than cooling it.
+
+Allowed study acceptance: units and energy balances close; analytic and numerical formulations agree; all stacks use identical exogenous conditions; boundaries and property provenance are explicit; failure cases and unknowns are retained. A stack meeting these numerical comparators is a conditional model result. A stack failing, or missing evidence preventing a physical decision, is an equally legitimate outcome.
+
+TASK: THERMAL-TRANSIENT-FAULTS -- CONSERVATIVE DYNAMICS AND ADVERSE CASES
+Prepare a separate transient model and fault-review packet using exactly the shared T0-HYP-1 reference. This is a proposed implementation and verification plan, not an executed experiment. If the steady-contract contributor later changes a boundary, flag the dependency and require an explicit version reconciliation; do not silently guess their output.
+
+1. MODEL STORAGE AND HEAT TRANSFER WITHOUT A HIDDEN SINK
+Use a one-dimensional finite-volume RC network with at least one cell per silicone layer and a film-midplane sensor cell. Refine the silicone cells to assess spatial error. Internal node H has an explicitly assumed thermal capacitance C_H=20 J/K, representing a hypothetical lump of robot structure. This is not measured hardware. Sensitivity C_H in [5,100] J/K.
+
+Use reference silicone density 1030 kg/m3, an approximate conversion of W1 specific gravity, with the approximation stated. Silicone heat capacity is NOT supplied by the cited manufacturer page: assume cp=1500 J/(kg K) solely for the synthetic reference, and test [1000,2000]. Use film density 1420 kg/m3 and nominal reference cp=1090 J/(kg K), retaining W2/W3 access and typical-value limitations. Do not invent a fitted thermal diffusivity. Compute cell mass=rho*A*dx and capacity=mass*cp. Note that unmodeled real sensor/trace/adhesive mass is omitted.
+
+Derive each face resistance from half of each adjacent cell thickness divided by its conductivity and area, adding a physical interface resistance only at the actual material interface. Do not add the same interface to every refined cell. Use half-cell conduction plus the convection resistance at the exposed boundary. Rear conductance connects H to the named reservoir as in the steady contract. Connect H to the inner silicone using that cell's half-thickness; no extra attachment contact was included in the reference.
+
+Choose either a sensor film cell centered on the midplane, or an equivalent conservative construction with an explicit explanation. Deposit the 0.10 W source at the physical sensor location without grid-dependent total power. The film heat capacity remains finite even though the idealized sensor sheet adds no extra mass. Reconstruct the outside face temperature from the boundary flux rather than calling the first cell-center temperature the contact surface.
+
+Write C_i*dT_i/dt = sources + sum of signed passive exchanges. Sum the complete network to derive the integrated energy balance. Include all layer capacities and H; exclude a fixed reservoir's capacity only because it is an explicitly external ideal boundary. For time-dependent conductance faults, temperatures should remain continuous unless a physical impulsive energy source is declared; algebraic surface-face temperatures can change with a boundary law. No impulsive source is supplied here.
+
+2. FREEZE A SMALL, EXACT EVENT SUITE
+Initial condition: every dynamic node is 25 C. Baseline front ambient and rear reservoir are 25 C. Horizon 3600 s. The nominal body heat is 5 W for 0<=t<900 s, then 0 W. The sensor heat remains 0.10 W throughout, including after body shutdown. This continued source means the final state need not return exactly to ambient. Do not mislabel body shutdown as all-power-off.
+
+Use the same event schedule across H1,H2,H3. Report events at exact times and restart time integration at discontinuities rather than stepping blindly across them. Proposed named cases:
+F0: nominal rear and interfaces, no fault.
+F1: at t=600 s, rear conductance becomes zero permanently; the front path remains open.
+F2: at t=600 s, only the INNER silicone-film areal contact resistance changes from 2e-4 to 2e-2 m2 K/W permanently. This is an assumed uniform full-interface impairment, not a simulation of a spatially localized delamination.
+F3: the F1 physical blockage occurs and the reported sensor temperature freezes at its t=599 s sampled value from t=600 onward; open-loop heat input is identical to F1. The true physical trajectory must equal F1 if the failed measurement is not fed into control. Only observability differs.
+F4: isolate a separate, explicitly specified control illustration. From t=0 until the first reported sensor-midplane value >=45 C at integer-second samples, body power is 5 W; at that first trigger body power latches to 0 W, otherwise the scheduled shutdown at 900 s still applies. Sensor power remains 0.10 W. Compare a truthful sensor and the same freeze fault, both with rear blockage at 600 s. The 45 C trip is an arbitrary study comparator, not a recommended safety controller. No reset or automatic restart.
+F5: separately block BOTH environmental exits at 600 s in an open-loop run. Keep the declared sources. The model then accumulates input energy; after body shutdown the residual sensor source still heats it. This case is for energy accounting and nonexistence of a finite powered steady state, not a physical prediction at arbitrarily high temperature.
+
+For F3/F4, keep actual physical midplane temperature, reported sensor temperature, actual outer surface temperature and controller state separate. The ideal truthful sensor is an assumption of zero lag/bias, not a certified instrument. A frozen sensor need not announce its own failure. F4 is a counterexample exercise in observability/control coupling; do not imply the proposed trip architecture is safe.
+
+Limit the initial suite to these cases across three stacks, plus selected shared low/high cp, C_H and contact-resistance perturbations. Propose a deterministic list with no more than 60 transient scenario runs before verification refinements. A pair of truthful/frozen control cases counts separately. No biological flow, oxygen solve or detailed electronics model belongs here.
+
+3. NUMERICS AND INDEPENDENT VERIFICATION
+Prefer an implicit conservative integrator that is robust to thin-film stiffness. Explain the choice of backward Euler, a suitable stiff solve_ivp method, or exact linear evolution between events. If using NumPy/SciPy, state the exact API assumptions and keep an optional small standard-library reference where useful; do not install anything. Do not use forward Euler at an arbitrary large step on the thin film and then infer instability is physical.
+
+Return readable proposed Python with clear separated routines for mesh/network assembly, event schedule, passive operator, integration, boundary-face reconstruction, controller sampling, energy audit and results. Allow a local output path without modifying input files. No network, telemetry, API, GPU or multiprocessing dependency. Avoid global mutable state that lets one stack's case contaminate another. Each run must carry the exact contract version, parameters and events.
+
+The energy audit must use heat and source quadrature consistent with the chosen integration scheme. Report both instantaneous residuals where defined and integrated E(t)-E(0) minus total injected energy plus total exported energy. Demonstrate why summing equal/opposite internal face transfers cancels. Compare an independently reconstructed energy history with the accumulated solver bookkeeping. Conservation is necessary but does not establish spatial or temporal accuracy.
+
+Require meaningful verification:
+- Uniform initial and boundary temperatures with all sources zero remain uniform.
+- An isolated fully insulated network with known source power has total stored energy increase equal to integrated input.
+- A one-node reference with one resistor and constant source matches its exponential analytic solution.
+- After sufficiently long constant conditions, the dynamic model tends toward an independently computed steady network solution, when that state exists.
+- F1 and F3 true-temperature histories match to numerical tolerance; only measurement fields differ.
+- With all inputs removed and passive boundaries at a common temperature, no spurious energy creation or new extrema occur under the assumptions.
+- Time refinement and silicone spatial refinement are assessed separately. Interface placement and total input must remain invariant.
+- Thermal-state continuity is checked at a sudden conductance change.
+- Event/control trigger accuracy is assessed at the prescribed 1 s sample grid, rather than claiming continuous-time protection.
+
+Propose provisional numerical criteria, such as maximum face-temperature changes below 0.05 K on time refinement and 0.10 K on mesh refinement, with a separate energy tolerance appropriate to precision and duration. These are engineering verification targets, not evidence the real panel is accurate to that temperature. If a criterion is unmet, preserve the failed run and stop the affected comparison rather than loosening the criterion after viewing results.
+
+4. UNCERTAINTY, FAILURE AND INTERPRETATION
+Report peaks and times separately for the actual surface, sensor region and internal node. Report study-comparator crossings only within the finite horizon; write not_crossed_in_horizon rather than safe or never crosses. Distinguish crossing detected at a sample from a continuous trajectory's root. Report delayed surface peaks after shutdown if present without forcing that behavior to occur.
+
+Show which conclusions change under cp/C_H/interface uncertainty, and which reflect the model's conservation structure. Do not turn arbitrary ranges into confidence intervals. Repeated time samples are not independent experiments. Keep material uncertainties shared where they have a common origin.
+
+Partial delamination, exposed conductor hot spots, lateral conduction, real sensing coverage, contact with a human and strain-dependent resistance are OUTSIDE this one-dimensional uniform-interface study. Explain one smallest future model improvement needed for each important limitation without implementing a large extension now. A two-column toy could be proposed only with explicit missing lateral coupling; it cannot certify the maximum hot spot. Label all claims at the modeled scale.
+
+5. DELIVERABLE AND STOP
+Return a compact derivation; node/face map; exact event/scenario table; proposed complete code; analytic check cases; numerical acceptance plan; source/assumption ledger; output field schema; and the strongest justified claim plus most important counterexample. Do not claim tests passed or give simulated numerical results unless actually executed with supplied tools. If response space is tight, deliver a complete F0-F3 implementation with the remaining cases explicitly unimplemented, rather than imply all cases exist. Coda will decide and run the main numerical jobs separately. Stop after the packet.
+
+----- END CODA'S PREPARED PACKET -----
+
+SOURCE BUNDLE (labels and sha256 of the verbatim sources appended to the request; contents not repeated here)
+- two-node transient report (Coda, executed) | validation/thermal_transient/REPORT.md | sha256=86f9b6107dc2e62b9e497454924c3463230bc96ba9495ab0bdc2baa24d6b25a6
+- two-node transient predeclaration | validation/thermal_transient/PREDECLARED.md | sha256=29404fc56e956a0053c992c0a9b96db9dae58ff7c057f1354a19cde40e9310be
+- rc_transient.py (Coda two-node model) | validation/thermal_transient/rc_transient.py | sha256=94ff435da55d2bccef769197d534e735e5813612a3275a829f703f05b5db6e0b
+- test_rc_transient.py | validation/thermal_transient/test_rc_transient.py | sha256=6a6c1bd14729a5d412505d43b7affcb505928a929dea20ba639112d8bbf9d626
+- steady reference report | validation/thermal/REPORT.md | sha256=3434476c4187acffcd731cfa20783de54d205dd281fbcfdbae8cc0ddc9df65c2
+- thermal_reference.py (exact rational steady network) | validation/thermal/thermal_reference.py | sha256=7032a2cdb7677c3f29401865d3f5f1f185c826d5f8395e5ec263ea15d642c56d
+- reference_results.json | validation/thermal/reference_results.json | sha256=e97cf35c8accb051096fdca20ec89a0a157015b863e94cb01020a8fdb5af3a56

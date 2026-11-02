@@ -1,0 +1,32 @@
+Request gateway-integration-003 (wave11-followups-b; model Claude Fable 5.1; header HEADER_a12f72162d0b.txt)
+
+TASK gateway-integration-003
+Two Claude contributions now exist for the First Leaf gateway and Red has executed both in an isolated sandbox (all receipts appended):
+(A) the GW-ASYNC0 lifecycle implementation (interface.py from wave 6, relay.py + tests + migration note from wave 9). Executed: new lifecycle tests 26/26, relay lifecycle tests 9/9, updated test_stage 36/36, ORIGINAL test_relay 7/7 all pass. Coda's 14 v2 regressions: 3 failures + 5 errors, all from intentional API changes (explicit mark_dispatched before record_execution; renamed states admitted_pending / cancelled_before_dispatch).
+(B) an independent simulator/relay audit with 16 tests and minimal patches. Executed against the ORIGINAL code: 9 failures = its 7 new findings D1-D6 (incl. D4a/D4b) + 2 prior Coda findings; with its patches applied: only the 2 prior findings still fail, and the original suites still pass (43/43). Against implementation (A): the 2 prior findings now PASS (fixed by the lifecycle), the 7 D findings still fail (not integrated), and 2 control tests fail: the idempotency control (`first['receipt']['dispatch']` is False under the new receipt schema) and the single-commit-point control (a post-commit export failure now propagates out of `transact`).
+
+Task: produce the INTEGRATED gateway: complete src/interface.py and src/relay.py that keep implementation (A)'s lifecycle and also fix D1-D6; adapt the audit's tests (and the two control tests) to the lifecycle API where the change is intentional, stating for each adapted assertion why the original intent is preserved or why the design deliberately changes it; translate Coda's 14 v2 regressions to the new API with an intent-mapping table (keep, adapt, or retire with reason). Decide explicitly whether a post-commit export failure should propagate or be absorbed, citing the design. Deliver complete files (FILE: convention) and a short integration note. Red will run every suite.
+
+SOURCE BUNDLE (labels and sha256 of the verbatim sources appended to the request; contents not repeated here)
+- lifecycle src/interface.py (A, wave 6) | red-sandbox/work/gw2/src/interface.py | sha256=559d4a22d58e443b0236d7de27517510bc6314fb768bfe5bf57a2f8e479be421
+- lifecycle src/relay.py (A, wave 9) | red-sandbox/work/gw2/src/relay.py | sha256=e37cf22236401812ca9dc14338a25ac961c8b9c35bd3db906cad83d7f779cc86
+- lifecycle tests/test_gateway_lifecycle.py | red-sandbox/work/gw2/tests/test_gateway_lifecycle.py | sha256=c86e36381c58df5f194fd3fb89a0b931f13815acb4946540bab443c027e1974f
+- lifecycle tests/test_relay_lifecycle.py | red-sandbox/work/gw2/tests/test_relay_lifecycle.py | sha256=10c4ace5352f48250cf6228db87dfa3a3d21053ba3432c9cbad81374c7df515c
+- updated tests/test_stage.py | red-sandbox/work/gw2/tests/test_stage.py | sha256=ef462fdc4b9092e14cec3c17b6c4a8b8734a0d1c26cde4ea499da086324b97ed
+- migration note | red-sandbox/work/gw2/docs/gateway_lifecycle_v1/MIGRATION_NOTE.md | sha256=262bfd3ac4a7a347c9b235b3f0c2dccf4bd33a79cf8410c9205a321927fe4b79
+- audit report (B, wave 7) | Documents--CodexScratch/stage-red-20261102/batches/wave7-red-broad/firstleaf-sim-audit-001.answer.md | sha256=3193e0fbc7c1350448618ed8ff2faf17855eaef26eb053e6f9fe53b762417332
+- audit tests (B) | red-sandbox/work/flaudit/tests/test_audit_first_leaf.py | sha256=489ac876ebf0f342187e82aa0b54726f370a8ca7f28409a774b1db2904563847
+- audit patch interface.py.diff | red-sandbox/work/flaudit/patches/interface.py.diff | sha256=6ac7f8b3c1b75ca277fcf127b7650134a02e2ad04d215893d4598208b08a582e
+- audit patch relay.py.diff | red-sandbox/work/flaudit/patches/relay.py.diff | sha256=f665472a362daefe042b64aa720088fee77c408c7df2f8edf180e1979e64c54d
+- receipt: audit tests vs ORIGINAL | red-sandbox/work/flaudit/orig.txt | sha256=a5225934741cd0a1eeb71130d2c1e0066b047a8783c1414b7796351e34b8d699
+- receipt: audit tests vs PATCHED original | red-sandbox/work/flaudit_p/patched.txt | sha256=0fbb032c85df216bd8e932c91a9b519d0965d9df126abc4b82f6e5e2fa9d2ddb
+- receipt: audit tests vs LIFECYCLE (A) | red-sandbox/work/gw2/audit_on_lifecycle.txt | sha256=00a435b687d527ccc477387727c48415906f00b7357b3a83c360a202282e1bdd
+- receipt: lifecycle suites | red-sandbox/work/receipts/gw_test_gateway_lifecycle.txt | sha256=b03146dce3866e98a0d25d48a96bb742835fdd51c121c18eec59f2a149c1c4bf
+- receipt: relay lifecycle suite | red-sandbox/work/receipts/gw_test_relay_lifecycle.txt | sha256=01ea0acbc4a5952d7aaaa270bb19cc1e80c6b109d1c0780494fc0e13278d33c7
+- receipt: v2 regressions vs lifecycle | red-sandbox/work/receipts/gw_test_gateway_regressions_v2.txt | sha256=17d6d93c65c6db7b0e8e2d248f15b05e7ce2b7334443735ec9ebe22e40ba4305
+- Coda v2 regressions | validation/gateway_repair/candidate/tests/test_gateway_regressions_v2.py | sha256=5fa9249f986a34059675f120f6436b6e295ba0831ff46d63120df9fb98a4d7fa
+- original tests/test_relay.py | validation/gateway_repair/original/tests/test_relay.py | sha256=b4ea09e1d72925b92a5d9251e7259b2b8338ecc43683b09ad76ffa81e7b27b71
+- original src/first_leaf.py | validation/gateway_repair/original/src/first_leaf.py | sha256=2306148b46490fae74dc49fc31e1161f76e64bf902d836276c2dfd9565645515
+- inputs/protocol.json | validation/gateway_repair/original/inputs/protocol.json | sha256=d3224dbb752eba3368c0a1569eb733d7a59fb9a3bf1929fdbb1810f9ae9cf382
+- lifecycle design | design/gateway_lifecycle_v1/DESIGN.md | sha256=4ca50710b8b9127127416f6d96ce2fbf8deee38a76d131b5744433b24b9680f5
+- MIT LICENSE | validation/gateway_repair/LICENSE | sha256=bec5a38ecd3eb15627abb7e6888ec1cea25c4993b3de8fc80cab8f69828eb778

@@ -1,0 +1,116 @@
+test_control_idempotency_same_id_same_content_and_changed_content (tests.test_audit_first_leaf.ControlTests.test_control_idempotency_same_id_same_content_and_changed_content) ... ok
+test_control_packet_and_events_use_only_public_fields (tests.test_audit_first_leaf.ControlTests.test_control_packet_and_events_use_only_public_fields) ... ok
+test_control_relay_episode0_matches_simulator_bitwise (tests.test_audit_first_leaf.ControlTests.test_control_relay_episode0_matches_simulator_bitwise) ... ok
+test_control_relay_honours_episode_dependent_body (tests.test_audit_first_leaf.ControlTests.test_control_relay_honours_episode_dependent_body) ... ok
+test_control_single_commit_point_and_post_commit_export_failure_is_idempotent (tests.test_audit_first_leaf.ControlTests.test_control_single_commit_point_and_post_commit_export_failure_is_idempotent) ... ok
+test_control_stop_latches_blocks_advance_and_persists (tests.test_audit_first_leaf.ControlTests.test_control_stop_latches_blocks_advance_and_persists) ... ok
+test_finding_D1_deep_nesting_probe_in_child_process (tests.test_audit_first_leaf.FindingTests.test_finding_D1_deep_nesting_probe_in_child_process)
+ENVIRONMENT-DEPENDENT. 8000-level nesting (16,000 bytes, under the 16 KiB cap) is fed to the ... ok
+test_finding_D1_non_valueerror_from_admit_is_still_logged (tests.test_audit_first_leaf.FindingTests.test_finding_D1_non_valueerror_from_admit_is_still_logged) ... FAIL
+test_finding_D2_rejection_events_identify_the_rejected_bytes (tests.test_audit_first_leaf.FindingTests.test_finding_D2_rejection_events_identify_the_rejected_bytes) ... FAIL
+test_finding_D3_failed_replace_leaves_no_private_tmp (tests.test_audit_first_leaf.FindingTests.test_finding_D3_failed_replace_leaves_no_private_tmp) ... FAIL
+test_finding_D4a_lock_file_carries_owner_identity (tests.test_audit_first_leaf.FindingTests.test_finding_D4a_lock_file_carries_owner_identity) ... FAIL
+test_finding_D4b_stale_holder_does_not_release_a_newer_writers_lock (tests.test_audit_first_leaf.FindingTests.test_finding_D4b_stale_holder_does_not_release_a_newer_writers_lock) ... FAIL
+test_finding_D5_relay_statements_and_dynamics_follow_the_embedded_protocol (tests.test_audit_first_leaf.FindingTests.test_finding_D5_relay_statements_and_dynamics_follow_the_embedded_protocol) ... FAIL
+test_finding_D6_init_refuses_frozen_fixture_seeds (tests.test_audit_first_leaf.FindingTests.test_finding_D6_init_refuses_frozen_fixture_seeds) ... FAIL
+test_prior_finding_gateway_pending_admission_is_not_exclusive (tests.test_audit_first_leaf.PriorFindingGatewayTests.test_prior_finding_gateway_pending_admission_is_not_exclusive) ... FAIL
+test_prior_finding_stop_does_not_cancel_pending_admission (tests.test_audit_first_leaf.PriorFindingGatewayTests.test_prior_finding_stop_does_not_cancel_pending_admission) ... FAIL
+
+======================================================================
+FAIL: test_finding_D1_non_valueerror_from_admit_is_still_logged (tests.test_audit_first_leaf.FindingTests.test_finding_D1_non_valueerror_from_admit_is_still_logged)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/flaudit/tests/test_audit_first_leaf.py", line 258, in test_finding_D1_non_valueerror_from_admit_is_still_logged
+    self.assertEqual(len(events), 1, 'the attempt left no durable receipt')
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 0 != 1 : the attempt left no durable receipt
+
+======================================================================
+FAIL: test_finding_D2_rejection_events_identify_the_rejected_bytes (tests.test_audit_first_leaf.FindingTests.test_finding_D2_rejection_events_identify_the_rejected_bytes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/flaudit/tests/test_audit_first_leaf.py", line 286, in test_finding_D2_rejection_events_identify_the_rejected_bytes
+    self.assertEqual(event.get('request_bytes_sha256'), hashlib.sha256(bad).hexdigest())
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: None != '17eed55d881c0dd5fe0935a98d89dd9e52d62aed941f3fb7d17bd490e5aa3e8f'
+
+======================================================================
+FAIL: test_finding_D3_failed_replace_leaves_no_private_tmp (tests.test_audit_first_leaf.FindingTests.test_finding_D3_failed_replace_leaves_no_private_tmp)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/flaudit/tests/test_audit_first_leaf.py", line 311, in test_finding_D3_failed_replace_leaves_no_private_tmp
+    self.assertEqual(leftovers, [], f'stray temporary files after a failed commit: {leftovers}')
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: ['private_state.json.3f72a212fa26414d963ca44664aa7ff8.tmp'] != []
+
+First list contains 1 additional elements.
+First extra element 0:
+'private_state.json.3f72a212fa26414d963ca44664aa7ff8.tmp'
+
+- ['private_state.json.3f72a212fa26414d963ca44664aa7ff8.tmp']
++ [] : stray temporary files after a failed commit: ['private_state.json.3f72a212fa26414d963ca44664aa7ff8.tmp']
+
+======================================================================
+FAIL: test_finding_D4a_lock_file_carries_owner_identity (tests.test_audit_first_leaf.FindingTests.test_finding_D4a_lock_file_carries_owner_identity)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/flaudit/tests/test_audit_first_leaf.py", line 317, in test_finding_D4a_lock_file_carries_owner_identity
+    self.assertTrue(lock.read_bytes().strip(), 'writer.lock is empty; a live writer cannot be checked')
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: b'' is not true : writer.lock is empty; a live writer cannot be checked
+
+======================================================================
+FAIL: test_finding_D4b_stale_holder_does_not_release_a_newer_writers_lock (tests.test_audit_first_leaf.FindingTests.test_finding_D4b_stale_holder_does_not_release_a_newer_writers_lock)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/flaudit/tests/test_audit_first_leaf.py", line 329, in test_finding_D4b_stale_holder_does_not_release_a_newer_writers_lock
+    self.assertTrue(lock.exists(), 'A released a lock that belonged to B')
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : A released a lock that belonged to B
+
+======================================================================
+FAIL: test_finding_D5_relay_statements_and_dynamics_follow_the_embedded_protocol (tests.test_audit_first_leaf.FindingTests.test_finding_D5_relay_statements_and_dynamics_follow_the_embedded_protocol)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/flaudit/tests/test_audit_first_leaf.py", line 344, in test_finding_D5_relay_statements_and_dynamics_follow_the_embedded_protocol
+    self.assertEqual(pkt['known_dynamics'], {'dt': 0.2, 'velocity_retention': 0.5})
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'dt': 0.1, 'velocity_retention': 0.75} != {'dt': 0.2, 'velocity_retention': 0.5}
+- {'dt': 0.1, 'velocity_retention': 0.75}
+?          ^                          -
+
++ {'dt': 0.2, 'velocity_retention': 0.5}
+?          ^
+
+
+======================================================================
+FAIL: test_finding_D6_init_refuses_frozen_fixture_seeds (tests.test_audit_first_leaf.FindingTests.test_finding_D6_init_refuses_frozen_fixture_seeds)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/flaudit/tests/test_audit_first_leaf.py", line 357, in test_finding_D6_init_refuses_frozen_fixture_seeds
+    with self.assertRaises(ValueError, msg=f'{split} seed {seed} is published material'):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised : development seed 100 is published material
+
+======================================================================
+FAIL: test_prior_finding_gateway_pending_admission_is_not_exclusive (tests.test_audit_first_leaf.PriorFindingGatewayTests.test_prior_finding_gateway_pending_admission_is_not_exclusive)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/flaudit/tests/test_audit_first_leaf.py", line 370, in test_prior_finding_gateway_pending_admission_is_not_exclusive
+    self.assertFalse(second['dispatch'], 'second distinct command admitted while r0 is pending')
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: True is not false : second distinct command admitted while r0 is pending
+
+======================================================================
+FAIL: test_prior_finding_stop_does_not_cancel_pending_admission (tests.test_audit_first_leaf.PriorFindingGatewayTests.test_prior_finding_stop_does_not_cancel_pending_admission)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "red-sandbox/work/flaudit/tests/test_audit_first_leaf.py", line 376, in test_prior_finding_stop_does_not_cancel_pending_admission
+    with self.assertRaises(ValueError):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 16 tests in 1.340s
+
+FAILED (failures=9)

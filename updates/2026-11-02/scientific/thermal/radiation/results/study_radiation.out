@@ -1,0 +1,25 @@
+{
+ "output": "red-sandbox/work/w10/_rad_results.json",
+ "steady_rows": 108,
+ "blocked_rows": 36,
+ "transient_runs": 18,
+ "criteria": {
+  "C1_balance_convergence": true,
+  "C2_reference_reproduction": true,
+  "C3_monotonicity": true,
+  "C4_linearization": true,
+  "C5_blocked_rear": true,
+  "C6_transient": true,
+  "all_pass": true
+ }
+}
+stack eps   T_O_C        T_H_C        q_front_W    q_rear_W   (P=5 W, h=8)
+H1   0.0    33.555001    33.831200     0.684400   4.415600
+H1   0.5    33.042020    33.409924     0.895038   4.204962
+H1   0.9    32.675352    33.108806     1.045597   4.054403
+H2   0.0    33.363110    33.861902     0.669049   4.430951
+H2   0.5    32.804140    33.463456     0.868272   4.231728
+H2   0.9    32.409703    33.182291     1.008854   4.091146
+H3   0.0    33.005902    33.919056     0.640472   4.459528
+H3   0.5    32.370778    33.560885     0.819558   4.280442
+H3   0.9    31.932944    33.313973     0.943013   4.156987

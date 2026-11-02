@@ -1,0 +1,754 @@
+{
+ "agent_summaries": [
+  {
+   "agent": "public_oracle",
+   "seed": 20001,
+   "summary": {
+    "active_regime": 0,
+    "contract_violations": 0,
+    "counts": [
+     76,
+     75,
+     70,
+     74
+    ],
+    "decisions": 480,
+    "evidence": {
+     "conflicting_receipts": 0,
+     "duplicate_receipts": 5143,
+     "duplicate_samples": 5799,
+     "equations": 477,
+     "ignored_events": 0,
+     "receipts": 479,
+     "samples": 483
+    },
+    "missing_receipts": 0,
+    "name": "public_oracle",
+    "params": {
+     "controller": "rollout",
+     "explore_margin": 0.02,
+     "hard_test": true,
+     "hard_test_slack": 1.0,
+     "horizon": 3,
+     "kp": 2.0,
+     "max_desired_speed": 0.8,
+     "max_regimes": 8,
+     "memory": "full",
+     "min_evidence": 1,
+     "prior_var": 1.0,
+     "soft_test": true,
+     "soft_threshold": 23.0,
+     "soft_window": 4,
+     "tail": 6
+    },
+    "probes": 7,
+    "regimes": 2,
+    "switches": [
+     {
+      "action": "k0",
+      "from": 0,
+      "kind": "new",
+      "soft_statistic": 127.8621215702447,
+      "to": 1,
+      "trigger": "hard",
+      "when": [
+       3,
+       0
+      ],
+      "y": [
+       -0.045108414704127006,
+       0.40637714838441097
+      ]
+     },
+     {
+      "action": "k3",
+      "from": 1,
+      "kind": "revisit",
+      "soft_statistic": 170.16329957390855,
+      "to": 0,
+      "trigger": "hard",
+      "when": [
+       5,
+       0
+      ],
+      "y": [
+       -0.33997160301185925,
+       0.04071482038652669
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "agent": "random",
+   "seed": 20001,
+   "summary": {
+    "decisions": 480,
+    "name": "random"
+   }
+  },
+  {
+   "agent": "public_oracle",
+   "seed": 20002,
+   "summary": {
+    "active_regime": 0,
+    "contract_violations": 0,
+    "counts": [
+     67,
+     75,
+     78,
+     79
+    ],
+    "decisions": 480,
+    "evidence": {
+     "conflicting_receipts": 0,
+     "duplicate_receipts": 5143,
+     "duplicate_samples": 5799,
+     "equations": 477,
+     "ignored_events": 0,
+     "receipts": 479,
+     "samples": 483
+    },
+    "missing_receipts": 0,
+    "name": "public_oracle",
+    "params": {
+     "controller": "rollout",
+     "explore_margin": 0.02,
+     "hard_test": true,
+     "hard_test_slack": 1.0,
+     "horizon": 3,
+     "kp": 2.0,
+     "max_desired_speed": 0.8,
+     "max_regimes": 8,
+     "memory": "full",
+     "min_evidence": 1,
+     "prior_var": 1.0,
+     "soft_test": true,
+     "soft_threshold": 23.0,
+     "soft_window": 4,
+     "tail": 6
+    },
+    "probes": 7,
+    "regimes": 2,
+    "switches": [
+     {
+      "action": "k0",
+      "from": 0,
+      "kind": "new",
+      "soft_statistic": 101.52139120778448,
+      "to": 1,
+      "trigger": "hard",
+      "when": [
+       3,
+       0
+      ],
+      "y": [
+       0.027523574481366928,
+       0.3524593829279017
+      ]
+     },
+     {
+      "action": "k0",
+      "from": 1,
+      "kind": "revisit",
+      "soft_statistic": 88.06082704598377,
+      "to": 0,
+      "trigger": "hard",
+      "when": [
+       5,
+       0
+      ],
+      "y": [
+       0.31120515787627184,
+       -0.012545429569838718
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "agent": "random",
+   "seed": 20002,
+   "summary": {
+    "decisions": 480,
+    "name": "random"
+   }
+  },
+  "... 11 items omitted by Red for size ...",
+  {
+   "agent": "random",
+   "seed": 20008,
+   "summary": {
+    "decisions": 480,
+    "name": "random"
+   }
+  }
+ ],
+ "episodes": 6,
+ "mode": "local",
+ "params": {},
+ "python": "3.13.18 (main, Oct 26 2026, 14:08:19) [Clang 23.1.3 ]",
+ "report": {
+  "agents": {
+   "public_oracle": {
+    "all": {
+     "hi": 0.14326338176018089,
+     "lo": 0.13481474908303834,
+     "mean": 0.13885562111071895,
+     "n": 8
+    },
+    "body_model_error": {
+     "hi": 0.01588562760129151,
+     "lo": 0.015111318530255826,
+     "mean": 0.015526954828104735,
+     "n": 8
+    },
+    "final_within_0_15": {
+     "hi": 1.0,
+     "lo": 1.0,
+     "mean": 1.0,
+     "n": 8
+    },
+    "first_episode": {
+     "hi": 0.16607895131516384,
+     "lo": 0.15284105498628808,
+     "mean": 0.15933950373631586,
+     "n": 8
+    },
+    "remap_early32": {
+     "hi": 0.5291480256995496,
+     "lo": 0.44247936793938997,
+     "mean": 0.4830647968743684,
+     "n": 8
+    },
+    "remap_full": {
+     "hi": 0.16409788527755387,
+     "lo": 0.14758796846584382,
+     "mean": 0.15644971644930813,
+     "n": 8
+    },
+    "return_early32": {
+     "hi": 0.39083946683706716,
+     "lo": 0.32328036820950284,
+     "mean": 0.358240284986289,
+     "n": 8
+    },
+    "stable": {
+     "hi": 0.10756237452284664,
+     "lo": 0.0995944248813544,
+     "mean": 0.10351676205796193,
+     "n": 8
+    }
+   },
+   "random": {
+    "all": {
+     "hi": 1.096073123615067,
+     "lo": 0.9709319444668905,
+     "mean": 1.037712650135899,
+     "n": 8
+    },
+    "body_model_error": {
+     "hi": 0.3,
+     "lo": 0.3,
+     "mean": 0.3,
+     "n": 8
+    },
+    "final_within_0_15": {
+     "hi": 0.0,
+     "lo": 0.0,
+     "mean": 0.0,
+     "n": 8
+    },
+    "first_episode": {
+     "hi": 1.3126434586336049,
+     "lo": 0.7598305642936257,
+     "mean": 1.0430987101074327,
+     "n": 8
+    },
+    "remap_early32": {
+     "hi": 1.1168485816967073,
+     "lo": 0.802485205772233,
+     "mean": 0.9629422265130372,
+     "n": 8
+    },
+    "remap_full": {
+     "hi": 1.2515648235323646,
+     "lo": 0.9702850834643262,
+     "mean": 1.1110144083853855,
+     "n": 8
+    },
+    "return_early32": {
+     "hi": 1.0418207429832498,
+     "lo": 0.7840494676186126,
+     "mean": 0.90736715258491,
+     "n": 8
+    },
+    "stable": {
+     "hi": 1.1324831128243469,
+     "lo": 0.9399842541936244,
+     "mean": 1.0397176603466969,
+     "n": 8
+    }
+   }
+  },
+  "contrasts": {
+   "public_oracle - random": {
+    "all": {
+     "a": "public_oracle",
+     "b": "random",
+     "episodes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "hi": -0.8322015516659368,
+     "lo": -0.9573276343687307,
+     "mean": -0.89885702902518,
+     "metric": "mean_distance",
+     "n": 8,
+     "seeds": [
+      20001,
+      20002,
+      20003,
+      20004,
+      "... 3 items omitted by Red for size ...",
+      20008
+     ]
+    },
+    "body_model_error": {
+     "a": "public_oracle",
+     "b": "random",
+     "episodes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "hi": -0.28411437239870846,
+     "lo": -0.2848886814697441,
+     "mean": -0.28447304517189526,
+     "metric": "body_model_error",
+     "n": 8,
+     "seeds": [
+      20001,
+      20002,
+      20003,
+      20004,
+      "... 3 items omitted by Red for size ...",
+      20008
+     ]
+    },
+    "final_within_0_15": {
+     "a": "public_oracle",
+     "b": "random",
+     "episodes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "hi": 1.0,
+     "lo": 1.0,
+     "mean": 1.0,
+     "metric": "final_within_0_15",
+     "n": 8,
+     "seeds": [
+      20001,
+      20002,
+      20003,
+      20004,
+      "... 3 items omitted by Red for size ...",
+      20008
+     ]
+    },
+    "first_episode": {
+     "a": "public_oracle",
+     "b": "random",
+     "episodes": [
+      0
+     ],
+     "hi": -0.599546390103083,
+     "lo": -1.1574279613125333,
+     "mean": -0.8837592063711169,
+     "metric": "mean_distance",
+     "n": 8,
+     "seeds": [
+      20001,
+      20002,
+      20003,
+      20004,
+      "... 3 items omitted by Red for size ...",
+      20008
+     ]
+    },
+    "remap_early32": {
+     "a": "public_oracle",
+     "b": "random",
+     "episodes": [
+      3
+     ],
+     "hi": -0.35473540336575055,
+     "lo": -0.6092232563210802,
+     "mean": -0.47987742963866875,
+     "metric": "early32_distance",
+     "n": 8,
+     "seeds": [
+      20001,
+      20002,
+      20003,
+      20004,
+      "... 3 items omitted by Red for size ...",
+      20008
+     ]
+    },
+    "remap_full": {
+     "a": "public_oracle",
+     "b": "random",
+     "episodes": [
+      3,
+      4
+     ],
+     "hi": -0.8183247923466209,
+     "lo": -1.0918407638569125,
+     "mean": -0.9545646919360773,
+     "metric": "mean_distance",
+     "n": 8,
+     "seeds": [
+      20001,
+      20002,
+      20003,
+      20004,
+      "... 3 items omitted by Red for size ...",
+      20008
+     ]
+    },
+    "return_early32": {
+     "a": "public_oracle",
+     "b": "random",
+     "episodes": [
+      5
+     ],
+     "hi": -0.4111871981035618,
+     "lo": -0.698263249740892,
+     "mean": -0.549126867598621,
+     "metric": "early32_distance",
+     "n": 8,
+     "seeds": [
+      20001,
+      20002,
+      20003,
+      20004,
+      "... 3 items omitted by Red for size ...",
+      20008
+     ]
+    },
+    "stable": {
+     "a": "public_oracle",
+     "b": "random",
+     "episodes": [
+      1,
+      2
+     ],
+     "hi": -0.8355475172259782,
+     "lo": -1.0305573127320558,
+     "mean": -0.936200898288735,
+     "metric": "mean_distance",
+     "n": 8,
+     "seeds": [
+      20001,
+      20002,
+      20003,
+      20004,
+      "... 3 items omitted by Red for size ...",
+      20008
+     ]
+    }
+   },
+   "random - public_oracle": {
+    "all": {
+     "a": "random",
+     "b": "public_oracle",
+     "episodes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "hi": 0.9573276343687306,
+     "lo": 0.8322015516659368,
+     "mean": 0.89885702902518,
+     "metric": "mean_distance",
+     "n": 8,
+     "seeds": [
+      20001,
+      20002,
+      20003,
+      20004,
+      "... 3 items omitted by Red for size ...",
+      20008
+     ]
+    },
+    "body_model_error": {
+     "a": "random",
+     "b": "public_oracle",
+     "episodes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "hi": 0.28488868146974416,
+     "lo": 0.2841143723987085,
+     "mean": 0.28447304517189526,
+     "metric": "body_model_error",
+     "n": 8,
+     "seeds": [
+      20001,
+      20002,
+      20003,
+      20004,
+      "... 3 items omitted by Red for size ...",
+      20008
+     ]
+    },
+    "final_within_0_15": {
+     "a": "random",
+     "b": "public_oracle",
+     "episodes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "hi": -1.0,
+     "lo": -1.0,
+     "mean": -1.0,
+     "metric": "final_within_0_15",
+     "n": 8,
+     "seeds": [
+      20001,
+      20002,
+      20003,
+      20004,
+      "... 3 items omitted by Red for size ...",
+      20008
+     ]
+    },
+    "first_episode": {
+     "a": "random",
+     "b": "public_oracle",
+     "episodes": [
+      0
+     ],
+     "hi": 1.157427961312533,
+     "lo": 0.5995463901030822,
+     "mean": 0.8837592063711169,
+     "metric": "mean_distance",
+     "n": 8,
+     "seeds": [
+      20001,
+      20002,
+      20003,
+      20004,
+      "... 3 items omitted by Red for size ...",
+      20008
+     ]
+    },
+    "remap_early32": {
+     "a": "random",
+     "b": "public_oracle",
+     "episodes": [
+      3
+     ],
+     "hi": 0.6092232563210801,
+     "lo": 0.35473540336575055,
+     "mean": 0.47987742963866875,
+     "metric": "early32_distance",
+     "n": 8,
+     "seeds": [
+      20001,
+      20002,
+      20003,
+      20004,
+      "... 3 items omitted by Red for size ...",
+      20008
+     ]
+    },
+    "remap_full": {
+     "a": "random",
+     "b": "public_oracle",
+     "episodes": [
+      3,
+      4
+     ],
+     "hi": 1.0918407638569125,
+     "lo": 0.8183247923466209,
+     "mean": 0.9545646919360773,
+     "metric": "mean_distance",
+     "n": 8,
+     "seeds": [
+      20001,
+      20002,
+      20003,
+      20004,
+      "... 3 items omitted by Red for size ...",
+      20008
+     ]
+    },
+    "return_early32": {
+     "a": "random",
+     "b": "public_oracle",
+     "episodes": [
+      5
+     ],
+     "hi": 0.698263249740892,
+     "lo": 0.41118719810356175,
+     "mean": 0.549126867598621,
+     "metric": "early32_distance",
+     "n": 8,
+     "seeds": [
+      20001,
+      20002,
+      20003,
+      20004,
+      "... 3 items omitted by Red for size ...",
+      20008
+     ]
+    },
+    "stable": {
+     "a": "random",
+     "b": "public_oracle",
+     "episodes": [
+      1,
+      2
+     ],
+     "hi": 1.0305573127320558,
+     "lo": 0.8355475172259782,
+     "mean": 0.936200898288735,
+     "metric": "mean_distance",
+     "n": 8,
+     "seeds": [
+      20001,
+      20002,
+      20003,
+      20004,
+      "... 3 items omitted by Red for size ...",
+      20008
+     ]
+    }
+   }
+  },
+  "inference": {
+   "bootstrap_seed": 20261015,
+   "interval": "paired nonparametric percentile bootstrap, 95%",
+   "resamples": 5000,
+   "unit": "independent seed, paired across agents"
+  },
+  "normalised": {}
+ },
+ "rows": [
+  {
+   "agent": "public_oracle",
+   "body_model_error": 0.028670869455073956,
+   "early32_distance": 0.3504659496187572,
+   "episode": 0,
+   "executed_steps": 80,
+   "final_distance": 0.019924751514217756,
+   "final_within_0_15": 1,
+   "mean_distance": 0.15329330546875436,
+   "mode": "local",
+   "recovery_tick": 14,
+   "regime_switches": 0,
+   "rejections": 0,
+   "seed": 20001,
+   "velocity_mse": 0.00291018653118498
+  },
+  {
+   "agent": "public_oracle",
+   "body_model_error": 0.0055038688445653745,
+   "early32_distance": 0.20668604090196735,
+   "episode": 1,
+   "executed_steps": 80,
+   "final_distance": 0.019563770060358414,
+   "final_within_0_15": 1,
+   "mean_distance": 0.09391932099661467,
+   "mode": "local",
+   "recovery_tick": 8,
+   "regime_switches": 0,
+   "rejections": 0,
+   "seed": 20001,
+   "velocity_mse": 9.197210125155025e-05
+  },
+  {
+   "agent": "public_oracle",
+   "body_model_error": 0.004025082312100912,
+   "early32_distance": 0.24354770926583397,
+   "episode": 2,
+   "executed_steps": 80,
+   "final_distance": 0.04393740332695613,
+   "final_within_0_15": 1,
+   "mean_distance": 0.11187332011742959,
+   "mode": "local",
+   "recovery_tick": 8,
+   "regime_switches": 0,
+   "rejections": 0,
+   "seed": 20001,
+   "velocity_mse": 7.809945089030873e-05
+  },
+  {
+   "agent": "public_oracle",
+   "body_model_error": 0.032925435446603084,
+   "early32_distance": 0.5469654847323018,
+   "episode": 3,
+   "executed_steps": 80,
+   "final_distance": 0.00892697297483971,
+   "final_within_0_15": 1,
+   "mean_distance": 0.23390167880230922,
+   "mode": "local",
+   "recovery_tick": 16,
+   "regime_switches": 1,
+   "rejections": 0,
+   "seed": 20001,
+   "velocity_mse": 0.017076502553878995
+  },
+  "... 91 items omitted by Red for size ...",
+  {
+   "agent": "random",
+   "body_model_error": 0.3,
+   "early32_distance": 1.0644583475160523,
+   "episode": 5,
+   "executed_steps": 80,
+   "final_distance": 0.7746658336935888,
+   "final_within_0_15": 0,
+   "mean_distance": 0.9433405159433885,
+   "mode": "local",
+   "recovery_tick": null,
+   "regime_switches": 0,
+   "rejections": 0,
+   "seed": 20008,
+   "velocity_mse": null
+  }
+ ],
+ "seeds": [
+  20001,
+  20002,
+  20003,
+  20004,
+  "... 3 items omitted by Red for size ...",
+  20008
+ ],
+ "task": "firstleaf-oracle-001"
+}
