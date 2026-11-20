@@ -2,7 +2,7 @@
 
 The Stage's first milestone is artificial blood. The calculations in this update address a supporting engineering question for the machine-circulation branch. If a simulator supplies a known signal and known model parameters, how well do the proposed alarms and estimators recover them? All results here concern mathematical models.
 
-For the same-day research on artificial blood, see the [held oxygen-content measurements and replays](oxygen-measurements/README.md) and the [corrected outcome and carrier comparisons](oxygen-content-addendum/README.md).
+For the same-day research on artificial blood, see the [held oxygen-content measurements and replays](oxygen-measurements/README.md), the [corrected outcome and carrier comparisons](oxygen-content-addendum/README.md), and the [two-carrier assay precision study](oxygen-mixture-precision/README.md).
 
 ## How often does noisy monitoring raise an alarm?
 
