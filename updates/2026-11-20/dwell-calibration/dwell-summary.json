@@ -1,0 +1,270 @@
+{
+  "scope": "Synthetic, per stack, unconditional on gate acceptance",
+  "source_sha256": "a648a6a8069a1e67447db935bb7a6e90fa179e2e0e085bb591587500254a93d1",
+  "design": {
+    "dt_s": 1,
+    "square_wave_transitions": 900,
+    "dwells_s": [
+      5,
+      15,
+      30,
+      60
+    ],
+    "starting_power_W": 2,
+    "alternating_power_W": 5,
+    "window_readings": 5,
+    "window_start_lag_steps": 61,
+    "paired_anchor": "Each model starts at the same two copies of the fitted 5 W steady output.",
+    "seed_method": "Python random.Random((root << 8) | stack_index), getrandbits(128); H1=0, H2=1",
+    "splits": [
+      {
+        "name": "calibration",
+        "root": 201121,
+        "n_per_stack": 86
+      },
+      {
+        "name": "holdout",
+        "root": 201122,
+        "n_per_stack": 300
+      }
+    ],
+    "failure": "strict exceedance",
+    "invalid_missions": 0,
+    "holdout_CI": "individual two-sided 95% Clopper-Pearson conditional on fixed thresholds"
+  },
+  "runtime": {
+    "python": "3.13.15",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1"
+  },
+  "stacks": {
+    "H1": {
+      "thickness_m": 0.0005,
+      "sigma_K": 0.01,
+      "gate_counts": {
+        "calibration": {
+          "missions": 86,
+          "published_fixed_gate_rejections": 0,
+          "square_wave_gate_rejections_by_dwell": {
+            "5": 0,
+            "15": 0,
+            "30": 0,
+            "60": 0
+          }
+        },
+        "holdout": {
+          "missions": 300,
+          "published_fixed_gate_rejections": 0,
+          "square_wave_gate_rejections_by_dwell": {
+            "5": 0,
+            "15": 0,
+            "30": 0,
+            "60": 0
+          }
+        }
+      },
+      "mission_maximum": {
+        "rank_ascending_one_based": 86,
+        "threshold_K": 0.2621725268656888,
+        "confidence_lower_bound": 0.9878596822189407,
+        "holdout_exceedance": {
+          "failures": 2,
+          "n": 300,
+          "rate": 0.006666666666666667,
+          "exact_95pct_CI": [
+            0.0008083864127997914,
+            0.02387349757217365
+          ]
+        }
+      },
+      "four_marginal_bounds": {
+        "rank_ascending_one_based": 86,
+        "simultaneous_confidence_lower_bound": 0.9514387288757628,
+        "by_dwell_s": {
+          "5": {
+            "threshold_K": 0.1720057853643837,
+            "holdout_exceedance": {
+              "failures": 0,
+              "n": 300,
+              "rate": 0.0,
+              "exact_95pct_CI": [
+                0.0,
+                0.012220974694293552
+              ]
+            }
+          },
+          "15": {
+            "threshold_K": 0.14442670873168809,
+            "holdout_exceedance": {
+              "failures": 1,
+              "n": 300,
+              "rate": 0.0033333333333333335,
+              "exact_95pct_CI": [
+                8.438913231780044e-05,
+                0.018431252048067885
+              ]
+            }
+          },
+          "30": {
+            "threshold_K": 0.12700966081711867,
+            "holdout_exceedance": {
+              "failures": 1,
+              "n": 300,
+              "rate": 0.0033333333333333335,
+              "exact_95pct_CI": [
+                8.438913231780044e-05,
+                0.018431252048067885
+              ]
+            }
+          },
+          "60": {
+            "threshold_K": 0.2621725268656888,
+            "holdout_exceedance": {
+              "failures": 2,
+              "n": 300,
+              "rate": 0.006666666666666667,
+              "exact_95pct_CI": [
+                0.0008083864127997914,
+                0.02387349757217365
+              ]
+            }
+          }
+        },
+        "holdout_exceedance_of_any_dwell_specific_bound": {
+          "failures": 3,
+          "n": 300,
+          "rate": 0.01,
+          "exact_95pct_CI": [
+            0.0020670072350923163,
+            0.028944511255692605
+          ]
+        }
+      },
+      "fixed_0p2_K_comparison": {
+        "holdout_missions_exceeding_0p2_K_at_any_dwell": {
+          "failures": 300,
+          "n": 300,
+          "rate": 1.0,
+          "exact_95pct_CI": [
+            0.9877790253057065,
+            1.0
+          ]
+        }
+      }
+    },
+    "H2": {
+      "thickness_m": 0.001,
+      "sigma_K": 0.001,
+      "gate_counts": {
+        "calibration": {
+          "missions": 86,
+          "published_fixed_gate_rejections": 0,
+          "square_wave_gate_rejections_by_dwell": {
+            "5": 0,
+            "15": 0,
+            "30": 0,
+            "60": 0
+          }
+        },
+        "holdout": {
+          "missions": 300,
+          "published_fixed_gate_rejections": 0,
+          "square_wave_gate_rejections_by_dwell": {
+            "5": 0,
+            "15": 0,
+            "30": 0,
+            "60": 0
+          }
+        }
+      },
+      "mission_maximum": {
+        "rank_ascending_one_based": 86,
+        "threshold_K": 0.0732583905310527,
+        "confidence_lower_bound": 0.9878596822189407,
+        "holdout_exceedance": {
+          "failures": 31,
+          "n": 300,
+          "rate": 0.10333333333333333,
+          "exact_95pct_CI": [
+            0.07129644602853309,
+            0.14346052148741445
+          ]
+        }
+      },
+      "four_marginal_bounds": {
+        "rank_ascending_one_based": 86,
+        "simultaneous_confidence_lower_bound": 0.9514387288757628,
+        "by_dwell_s": {
+          "5": {
+            "threshold_K": 0.04148505483366875,
+            "holdout_exceedance": {
+              "failures": 7,
+              "n": 300,
+              "rate": 0.023333333333333334,
+              "exact_95pct_CI": [
+                0.009431502061794628,
+                0.047482565029781855
+              ]
+            }
+          },
+          "15": {
+            "threshold_K": 0.040478352139115256,
+            "holdout_exceedance": {
+              "failures": 7,
+              "n": 300,
+              "rate": 0.023333333333333334,
+              "exact_95pct_CI": [
+                0.009431502061794628,
+                0.047482565029781855
+              ]
+            }
+          },
+          "30": {
+            "threshold_K": 0.03660819985985597,
+            "holdout_exceedance": {
+              "failures": 4,
+              "n": 300,
+              "rate": 0.013333333333333334,
+              "exact_95pct_CI": [
+                0.00364451405206652,
+                0.03378489626191785
+              ]
+            }
+          },
+          "60": {
+            "threshold_K": 0.0732583905310527,
+            "holdout_exceedance": {
+              "failures": 31,
+              "n": 300,
+              "rate": 0.10333333333333333,
+              "exact_95pct_CI": [
+                0.07129644602853309,
+                0.14346052148741445
+              ]
+            }
+          }
+        },
+        "holdout_exceedance_of_any_dwell_specific_bound": {
+          "failures": 32,
+          "n": 300,
+          "rate": 0.10666666666666667,
+          "exact_95pct_CI": [
+            0.07411235947328818,
+            0.1472370164205434
+          ]
+        }
+      },
+      "fixed_0p2_K_comparison": {
+        "holdout_missions_exceeding_0p2_K_at_any_dwell": {
+          "failures": 0,
+          "n": 300,
+          "rate": 0.0,
+          "exact_95pct_CI": [
+            0.0,
+            0.012220974694293552
+          ]
+        }
+      }
+    }
+  }
+}

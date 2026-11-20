@@ -1,0 +1,3 @@
+gate,missions,declared,declared_fraction,abstained,abstained_fraction,wrong_declarations,wrong_per_declaration,conditional_wilson95_lo,conditional_wilson95_hi,wrong_per_mission
+joint_gate,32768,14885,0.454254150390625,17883,0.545745849609375,21,0.0014108162579778301,0.000922984,0.00215593,0.000640869140625
+partition_gate_then_mean_signs,32768,24093,0.735260009765625,8675,0.264739990234375,1544,0.064085003943054,0.0610615,0.0672475,0.047119140625

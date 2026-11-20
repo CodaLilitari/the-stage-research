@@ -32,6 +32,10 @@ With a gain standard deviation of 0.3 and a measurement standard deviation of 0.
 
 Knowing the axis pairing can still leave uncertainty about the direction of motion. Among 12,058 confirmation trials drawn from the model prior in which the agent flagged identification **and** chose the correct partition, it got the horizontal gain sign wrong in 395 trials (3.28%) and the vertical gain sign wrong in 377 (3.13%). Each percentage uses the trials that satisfied both conditions. All four returned First Leaf programs ran unchanged.
 
+The [sensor and actuator follow-up](sensor-and-signs/README.md) measures alarm rates under heavier-tailed noise and the accuracy cost of declaring actuator signs from the axis partition alone.
+
+The [four-dwell calibration follow-up](dwell-calibration/README.md) tests the thermal gate on 300 fresh missions per stack and reports where a fitted coverage bound failed on holdout.
+
 ## Reproducing the calculations
 
 From this directory run `python probe_reference.py` in a Python environment with NumPy and SciPy. The [reference program](probe_reference.py) prints the estimated information for 48, 96, 192 and 384 quadrature nodes and checks convergence and the zero-gain case. The alarm CSVs report probabilities on the 0–1 scale. Empty paired-model cells indicate an inadmissible fit. The two confirmation studies use different seeds and mission counts.
