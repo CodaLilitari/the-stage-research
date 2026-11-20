@@ -1,0 +1,44 @@
+# Which hemoglobin reading sees the added carrier?
+
+Bronkhorst-van der Helm and colleagues compared four hematology analyzers on nine blood samples containing HBOC-201 (Hemopure). Figure 1 plots the change from the control for each sample at two reference conditions. The authors measured total hemoglobin on all four instruments and cellular hemoglobin on three. This experiment can test an assumption made when interpreting an oxygen-carrier assay in a mixed fluid. It gives a measured hemoglobin concentration. Converting that concentration to oxygen requires additional information about binding capacity and saturation. [Primary article](https://doi.org/10.1111/ijlh.14146) · [Institutional source PDF](https://pure.eur.nl/ws/files/98553324/Int_J_Lab_Hematology_-_2023_-_Bronkhorst_van_der_Helm.pdf)
+
+## Can a single low-condition measurement predict the higher-condition bias?
+
+Across four instruments, doubling the low-condition reading for each sample predicted total hemoglobin bias with **0.0864–0.0954 g/dL** mean absolute error. Doubling the mean low-condition bias of the three other instruments gave **0.0773 g/dL**. Both methods used only measurements from the lower condition. The individual forecast lost under every assignment compatible with the plotted control values. The advantage was small in the context of the figure’s precision.
+
+For cellular hemoglobin, the difference was larger. Across three instruments, doubling the individual reading gave **0.2163–0.2536 g/dL** mean absolute error. Predicting zero change gave **0.0566 g/dL**. Each instrument had equal weight in these comparisons. Within an instrument, each plotted measurement had equal weight.
+
+| Forecast for the 10% condition | Total Hb, 36 pairs on 4 analyzers | Cellular Hb, 26 pairs on 3 analyzers |
+| --- | ---: | ---: |
+| Twice the same sample’s 5% bias | 0.0864–0.0954 | 0.2163–0.2536 |
+| Twice the same instrument’s group mean at 5% | 0.0821 | 0.0811 |
+| Twice the other instruments’ mean at 5% | 0.0773 | 0.0717 |
+| Nominal 1.30 g/dL total, zero cellular | 0.0831 | 0.0566 |
+
+All entries are mean absolute errors in g/dL. The ranges are sharp over the allowed within-instrument sample assignments. They do not describe population sampling uncertainty. The nominal 1.30 g/dL comparator derives from the approximately 13 g/dL hemoglobin concentration reported for the studied product.
+
+The plotted total and cellular signals also separate without any assumed cross-assay sample identities. On the Siemens and Alinity platforms the complete group mean total-minus-cellular response at the 10% condition was **1.182 g/dL** on each. On Sysmex eight cellular results were available against nine total results. The possible eight-sample mean contrast was **1.229–1.269 g/dL**, allowing every possible missing total-sample identity. The bounds refer to an assay contrast. Neither functional oxygen capacity nor delivery was measured.
+
+## Transferring a rule between instruments
+
+Three separately commissioned programs received the lower-condition values and the unlabelled higher-condition control coordinates. All three passed their synthetic tests and ran on the masked inputs. Their forecasts were scored against the published higher-condition biases using the same pairing rule. One reproduced the doubling result exactly. A second partial-pooling rule gave **0.0895 g/dL** total-Hb error. A third used the spacing of the plotted measurements to choose how much of each sample’s lower-condition deviation to retain. It gave **0.0705–0.0730 g/dL** total-Hb error, below the **0.0773 g/dL** other-instrument comparator on this chart. None of the three beat a fixed zero change for cellular Hb. The chart-based rule’s interpretation of the variance is a modeling assumption. Its highest-condition predictions used only lower-condition bias values. These independent calculations use the same published experimental series.
+
+In a separate retrospective comparison, the three remaining instruments supplied both low- and high-condition results to train a model for the fourth. For cellular Hb the two remaining instruments supplied training. The model fitted a common center and a weight on how far the sample’s low-condition reading was above or below its own instrument’s average. We minimized worst-case mean absolute error across admissible assignments in training, then scored the held instrument across all its admissible assignments. The models and comparisons were developed after the published figure had been viewed.
+
+For total Hb, retaining **7.5–31.8%** of the individual doubled deviation reduced held-instrument error to **0.0685–0.0742 g/dL**. Training only a common center gave **0.0846 g/dL**. Full weight on the individual gave **0.0966–0.1056 g/dL**. For cellular Hb, every trained model gave the individual deviation zero weight, with **0.0566 g/dL** error. The study used a common panel of specimens across instruments. Withholding one instrument tests transfer within that panel. New specimens, carrier batches and other instrument families would require additional measurements.
+
+## What the figure permits
+
+The replay recovers **124** original colored vector markers. It preserves twelve that land on top of a same-series marker at the displayed precision. The chart legend identifies 5% total as blue diamonds, 10% total as red circles, 5% cellular as blue triangles and 10% cellular as red squares. The prose caption describes color differently; the legend, shapes and all fourteen means in Table 2 support the decoding. The cellular Siemens 5% table entry is **−0.018**; a plain-text PDF extraction can drop the minus sign.
+
+The primary assignment uses a control-Hb tolerance of 0.005 g/dL within the same instrument and assay. It admits 2 and 8 assignments for the Sysmex total and cellular series, and 8 and 16 for the Siemens series. Both Alinity series and the Sapphire total series have unique permitted assignments. The primary results are identical for tolerances of 0.002 and 0.010. At 0.050, the total individual-error range expands to **0.0864–0.1115**, still above the other-instrument comparator. The files are sorted without specimen identifiers. Reading the order in which the publisher drew the points could impose an unjustified pairing.
+
+All 14 reconstructed group means differ from their printed values by at most 0.0011 g/dL. The largest y-axis calibration residual is 0.00141 g/dL, and independently rendering the page found the appropriate hue within 3.2 preview pixels of every marker center. If each extracted bias is perturbed independently by up to e g/dL, a doubled-reading absolute error can change by up to 3e and a fixed-zero error by up to e. At e = 0.002, the cellular comparison remains separated under this bound by at least **0.1516 g/dL**. For the two total-Hb methods using doubled readings, the corresponding worst-case bound is 6e on their difference. An extra ±0.002 per reading therefore leaves the small total-Hb difference unresolved by that conservative sensitivity. Figure reading errors and assay measurement errors describe different uncertainties. Some plotted baseline control ranges, particularly in the Abbott panels, differ from the printed range by around 0.1 g/dL; the main matching uses coordinates within the same plotted panel and assay.
+
+## Could rounding alone explain the individual errors?
+
+The y-values cluster on grids approximately 0.1612 g/dL apart in the first two instruments and 0.01612 g/dL apart in the two Abbott instruments. All 124 displayed readings fall within 0.00023 g/dL of a multiple of their estimated grid step. The source gives no per-sample uncertainty. We tested a specific explanation for the spread by assuming that each original total or cellular hemoglobin measurement had been independently rounded to the nearest displayed grid step, with the same control used at each condition.
+
+Under that assumption, if the true high-condition change were exactly twice the low-condition change, the plotted difference between them could reach two grid steps. This follows from the coefficients +1, −2 and +1 on the high value, low value and common control, each rounded by at most half a step. We allowed an additional 0.002 g/dL in reading each plotted change. Even at the most favorable matching, **at least five of nine Alinity and three of nine Sapphire total-Hb comparisons** exceeded the combined rounding and reading allowance. The two coarsely plotted instruments admitted no such compulsory exceedances for total Hb. This sensitivity establishes a limit of a proposed rounding explanation. The instrument’s measurement precision and any contributions from sample handling or analyzer variability remain unresolved.
+
+The original measurements and figure are the work of Bronkhorst-van der Helm and colleagues. Coda produced the digitization, pairing bounds and reanalysis for Andrei’s Stage project.

@@ -2,6 +2,8 @@
 
 The Stage's first milestone is artificial blood. The calculations in this update address a supporting engineering question for the machine-circulation branch. If a simulator supplies a known signal and known model parameters, how well do the proposed alarms and estimators recover them? All results here concern mathematical models.
 
+For the same-day research on artificial blood, see the [held oxygen-content measurements and replays](oxygen-measurements/README.md) and the [corrected outcome and carrier comparisons](oxygen-content-addendum/README.md).
+
 ## How often does noisy monitoring raise an alarm?
 
 The baseline monitor compares two five-reading averages whose starting points are ten readings apart. Its input is a sequence of independent standard Gaussian readings. Adjacent comparisons reuse readings, so large values can arrive in groups. The analysis counts a *clump* once when at least three consecutive standardized comparisons cross the same positive or negative threshold.

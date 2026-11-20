@@ -1,0 +1,8 @@
+# Primary source and graphical provenance
+
+Kakiuchi K, Borden MA. Effect of lipid composition and stirring dynamics on oxygen microbubble stability and oxygen release. Langmuir 2025, 41, 1745–1755. [DOI](https://doi.org/10.1021/acs.langmuir.4c04104) · [PMC author manuscript](https://pmc.ncbi.nlm.nih.gov/articles/PMC12039959/)
+
+* [Figure 8, native 2085×1413 JPEG](https://cdn.ncbi.nlm.nih.gov/pmc/blobs/e276/12039959/3e0cb0d6bd52/nihms-2073740-f0009.jpg). Save the source as figure8.jpg. SHA-256 230d097f1a7804e86364a96a52dcbb35b129bd110cf363cfcc6f29b33b26a5a8.
+* [Figure 9, native 2085×1443 JPEG](https://cdn.ncbi.nlm.nih.gov/pmc/blobs/e276/12039959/3ca20bcac280/nihms-2073740-f0010.jpg). Save the source as figure9.jpg. SHA-256 36258e3a66d404ef20482fac69e2f124f0e2093dc7849f6d2b9c06ee0dda4ecc.
+
+The article and figure labels are authoritative for the reported quantities. The extraction uses axis ticks, graphic color masks, marker centers and visible whiskers. Figure 8C buffer dots overlap. Figure 8A buffer traces are mostly obscured by other colors, so no three separate complete stirred-buffer traces can be reconstructed. On Figure 8B the 0–5 s region has steep changes and marker overlaps. In Figures 8D/E and 9B some error bars and centers sit beneath other markers. A missing whisker is never assigned SD zero. Source means may average runs that differ in their terminal magnitude and threshold-crossing time. Native coordinates and qualifications are supplied by the scripts. The scripts write locally extracted rows for independent review. The underlying source charts are available directly from the authors’ publisher and PMC.

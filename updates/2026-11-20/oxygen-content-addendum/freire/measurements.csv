@@ -1,0 +1,7 @@
+pfc,interface_code,oxygen_umol_per_mL,spread_umol_per_mL,component_model_umol_per_mL
+C6F14,A,.99,.01,1.04
+C6F14,B,1.00,.02,1.04
+C6F14,C,1.00,.02,1.04
+C10F18,A,.94,.03,1.02
+C10F18,B,.95,.01,1.02
+C10F18,C,.93,.02,1.02

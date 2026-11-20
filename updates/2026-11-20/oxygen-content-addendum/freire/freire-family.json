@@ -1,0 +1,66 @@
+{
+  "directions": {
+    "C10F18 to C6F14": {
+      "train_mean_discrepancy": -0.08000000000000003,
+      "train_one_spread_range": [
+        -0.10000000000000005,
+        -0.06000000000000002
+      ],
+      "predictions": [
+        0.96,
+        0.96,
+        0.96
+      ],
+      "observations": [
+        0.99,
+        1.0,
+        1.0
+      ],
+      "errors": {
+        "component": {
+          "mae": 0.04333333333333337,
+          "largest": 0.050000000000000044
+        },
+        "cross_family": {
+          "mae": 0.0366666666666667,
+          "largest": 0.040000000000000036
+        }
+      },
+      "mae_improvement_minmax_when_each_measurement_moves_one_reported_spread": [
+        -0.04666666666666667,
+        0.06000000000000005
+      ]
+    },
+    "C6F14 to C10F18": {
+      "train_mean_discrepancy": -0.04333333333333337,
+      "train_one_spread_range": [
+        -0.06000000000000005,
+        -0.02666666666666669
+      ],
+      "predictions": [
+        0.9766666666666667,
+        0.9766666666666667,
+        0.9766666666666667
+      ],
+      "observations": [
+        0.94,
+        0.95,
+        0.93
+      ],
+      "errors": {
+        "component": {
+          "mae": 0.08000000000000003,
+          "largest": 0.08999999999999997
+        },
+        "cross_family": {
+          "mae": 0.0366666666666667,
+          "largest": 0.046666666666666634
+        }
+      },
+      "mae_improvement_minmax_when_each_measurement_moves_one_reported_spread": [
+        0.026666666666666686,
+        0.06000000000000005
+      ]
+    }
+  }
+}
