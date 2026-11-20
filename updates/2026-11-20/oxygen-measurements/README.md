@@ -1,0 +1,64 @@
+# Which oxygen measurements can a model predict?
+
+Artificial blood is the first milestone of The Stage, a research project on circulation for humans and engineered tissue. We used published measurements to test how much oxygen a model predicts under a specified condition and whether its predictions transfer to a different donor, storage day, chamber run or membrane. The limits matter because an oxygen carrier must do more than hold oxygen at equilibrium. It must release oxygen on the timescale at which a particular system consumes it.
+
+## Oxygen content at a second pressure
+
+Sharts and colleagues measured oxygen content directly in finished carrier emulsions at 310.2 K. The compilation assigns nominal oxygen partial pressures of 21.3 and 98.3 kPa to the equilibration gases. We froze predictions for three formulations before reading their higher-pressure results. Our calibrated rule for extrapolating from each fluid’s low-pressure reading first subtracted its measured degassed background, scaled the excess by the pressure ratio and then added back the background. Its mean absolute error was **0.964 mL O₂ per 100 mL of finished emulsion**, versus **0.333** for the median of eight previously examined formulations. Its largest error was 1.138 in those same units. Four additional forecasts had mean absolute errors between 0.350 and 0.483. None beat the training median on these three fluids. [Original study](https://doi.org/10.1016/S0022-1139(00)81622-X) · [IUPAC–NIST compilation, pp. 90–92](https://iupac.github.io/SolubilityDataSeries/volumes/SDS-103.pdf#page=92) · [Forecasts, thresholds and reproducible arithmetic](two-pressure/)
+
+Rounding the published means to one decimal could not reverse the ordering. Perturbing by a full reported standard deviation produced overlapping error ranges. The two pressures describe the gas conditions; liquid tension was not measured for these rows. The original gas-volume reference temperature and pressure are insufficiently documented to convert the observed change reliably to µmol O₂ per mL of finished fluid. We therefore report the observed volume units. These three archival tests identify a practical failure of the extrapolation, while leaving its physical cause unresolved.
+
+Freire and colleagues provide a separate example with oxygen content reported directly in molar units. Their six finished emulsions contained **0.93–1.00 µmol O₂ per mL** at 310.2 K in room air. For a withheld interface chemistry, the mean from the other interfaces with the same perfluorocarbon gave an RMSE of **0.0100 µmol/mL**, compared with 0.0296 for the pooled mean and 0.0647 for the component-based expectation. This is a one-condition result. Another team measured ex vivo organ oxygen extraction in Hemopure and packed-red-cell perfusions, and two Dias datasets report solubility in neat liquids. The source-table replay distinguishes oxygen amount, saturation extraction and solubility coefficients. [Freire et al.](https://doi.org/10.1016/j.fluid.2005.01.008) · [Three source-table comparisons and code](carrier-source-tables/)
+
+## Equilibrium in human blood
+
+Valsecchi and colleagues measured oxygen saturation and oxygen partial pressure in blood from six donors at five nominal carbon-dioxide pressures. We recovered 346 observations from the measured symbols in their supplementary Figure S6. The same points appear in S7. The two renderings agree at the published precision of 0.1 mmHg and 0.1 saturation percentage point. We compared two Hill models. Both estimate a saturation ceiling, a Hill exponent and a pressure for half-saturation. They differ in how the half-saturation pressure depends on the nominal carbon-dioxide pressure. [Study](https://doi.org/10.3389/fmed.2025.1708274) · [Source supplement](https://pmc-oa-opendata.s3.amazonaws.com/PMC12833093.1/Data_Sheet_1.docx)
+
+| Model for nominal CO₂ | Omit condition, keep other data from donor | Omit both condition and donor |
+|---|---:|---:|
+| Linear term | 3.747 | 3.806 |
+| Logarithmic term | **2.145** | **2.224** |
+
+Values are root-mean-square saturation errors in percentage points. Each of the 30 donor-by-condition groups has equal weight. The logarithmic term improved the result for all six donors and four of the five pressure settings. At 20 mmHg its error rose by 0.616 and 0.563 points in the two comparisons. The 50-mmHg group had already been examined in earlier work. Excluding that group from scoring still left improvements of 1.392 and 1.380 points.
+
+The experimental settings and the pressure actually measured in individual samples are different quantities. The paper gives a distribution of measured CO₂ for each nominal setting. Its supplements do not map the individual CO₂ readings to the plotted oxygen observations. We constructed two assignments that reproduce the same group sizes, minima, quartiles, medians and maxima. One made the linear model more accurate, the other favored the logarithmic model. This is evidence for using the logarithm of **nominal** CO₂ as a benchmark. Selecting an individual measured-pressure law will require the original pairings.
+
+The stored-blood test asked a different question. We combined the day-3 to day-42 proportional change in the conventional-storage group of Chen et al. with the independent day-0 P50 of 30 mmHg from Kassa et al. The frozen prediction of **22.604 mmHg** missed the external day-42 result, **22.1 ± 0.21 mmHg**, by **0.504 mmHg**. Carrying forward the external baseline missed by 7.900 mmHg. Directly using Chen’s day-42 mean missed by 5.287 mmHg. Both original assays used 37 °C and pH 7.4, but their baselines differed by three storage days. An alternative that modeled that missing day 0 missed by 4.940 mmHg. The external aggregate represents repeated measurements from one bag. P50 measures the pressure at half-saturation; a separate experiment must measure release time. [Chen et al., Figure 2](https://doi.org/10.3389/fphys.2025.1641343) · [Kassa et al., Table 1](https://doi.org/10.3389/fphys.2024.1427094)
+
+## Repeating an oxygen measurement in a chamber
+
+Qayyum, Cole, Oomen, Khayat and Grosberg published time series of commanded inlet oxygen and dissolved oxygen inside a well. In the experiment below we held out whole runs and gave every method each held run’s initial oxygen reading. The primary window contains 184 subsequent readings from 5 to 920 seconds. Each score is an error in dissolved oxygen concentration, in micromoles per litre (µM). [Study](https://pmc.ncbi.nlm.nih.gov/articles/PMC13485341/) · [Source workbook and dataset description](https://doi.org/10.5061/dryad.t1g1jwtg9)
+
+| Held observations | Prediction | RMSE, µM |
+|---|---|---:|
+| Third cell-free run | Hold initial concentration | 71.495 |
+| Third cell-free run | Average the changes in the first two runs | **3.881** |
+| Third cell-free run | One fitted transfer stage | 9.018 |
+| Third cell-free run | Two fitted transfer stages | 8.611 |
+| Last two cell-loaded runs | Average changes in three empty runs | 23.742 |
+| Last two cell-loaded runs | Calibrated transfer plus a constant sink | 16.932 |
+| Last two cell-loaded runs | Average changes in four prior loaded runs | **10.744** |
+
+The last three scores average the RMSE of each held run. The pointwise median of the four earlier loaded runs gave 10.842 µM. A model that used the inlet command and added the average of its earlier residuals gave 9.881 µM. A repeat measured under matching conditions was a strong comparison in both experiments. A constant sink improved transfer from the empty well, but the fitted equation can express the same change by lowering the equilibrium offset. Assigning that difference to cellular consumption would require an independent measurement.
+
+## Two other checks on transfer
+
+Chng and colleagues published the time for oxygen tension in a microwell to fall by half. We used 333 cell-loaded wells from five storage days to forecast the distribution of 65 measurements on day 42. On the primary distributional score, the continuous ranked probability score (CRPS), giving each earlier day equal weight produced **0.17160 seconds**. Using only the most recent day gave **0.20054 seconds**. A damped recent trend gave **0.17436 seconds** and did better on the secondary Wasserstein distance. One held day and unavailable donor linkage limit what this says about storage in another population. [Study and source data](https://doi.org/10.1038/s42003-021-01793-z)
+
+Menzel and colleagues measured inlet and outlet oxygen pressure in culture medium at four flows through each of three membranes. At 1.6 mL/min, applying their transfer calculation to the three paired measurements in Supplementary Table S1 gave mean rates of **78.60 nL/s** for cell-lined membranes and **46.61 nL/s** for blank membranes. Supplementary Table S2 prints 102.5 nL/s for the cell-lined condition, and the paper identifies that value as one membrane’s maximum. We report the S1 mean paired gain of **31.99 nL/s**. In retrospective prediction, a log-flow fit had an RMSE of 8.24 mmHg when one flow was withheld and 38.76 mmHg when an entire membrane was withheld. Every membrane was measured blank first. The results characterize a small culture-medium device and its measurement order. [Study](https://doi.org/10.1155/2017/5258196) · [Original supplementary tables](https://pmc-oa-opendata.s3.amazonaws.com/PMC5587952.1/5258196.f1.pdf)
+
+## What a simulation can decide
+
+A separate instrument simulation tested seven analysis programs on 4,096 synthetic trials in 1,024 groups. Each program could declare which of two releases was faster or abstain. Four met the study criteria for improvement over a control, false declarations and interval coverage. One method matched observations to a library of simulations. It made 1,336 correct declarations, made zero incorrect declarations and abstained 2,760 times. Its simultaneous upper bound on false declarations was still 5.43% per trial. Every method abstained in all 512 cases with identical observations from different release histories. Lilitari proposed measuring an intermediate state in a loaded chamber to distinguish those histories. Its measurement error and timing need independent calibration.
+
+For one specified synthetic instrument, the extra measurement can discriminate two explanations with identical bulk traces. We sampled its loaded intermediate stage at 0.08 and 0.28 seconds with matching 20 ms exposures. Subtracting 0.353 times the earlier read from the later read left a guaranteed separation of at least **0.01172 normalized signal units** after allowing ±0.008 error per reading. The best single read in the registered grid allowed overlap. This result depends on a shared gain, offset and clock shift within a trace and on observing that intermediate stage. It specifies a possible physical test; a physical measurement has yet to establish that these assumptions hold. [Verification code](replay_two_reads.py)
+
+The next carrier comparison needs a second pressure **and** an unambiguous unit conversion. Across a pressure interval specified in advance, how accurately does a model predict the measured change in equilibrium oxygen content, in µmol O₂ per mL of finished fluid? We will compare it against a training-only baseline, set an error tolerance in those units and test whether missing pressure assignments could change the conclusion. The Sharts dataset supplies the two-pressure comparison in native units. The Freire data supply a molar content reference at one gas condition. A separate experiment must establish how quickly a fluid releases its oxygen under load.
+
+The human blood and chamber measurements in this report were made by the cited investigators. Our contribution is computational reanalysis. Human transfusion safety, a manufactured carrier and living tissue sustained on a robotic body remain open milestones.
+
+## Reproduction and credit
+
+The [reproduction guide](REPRODUCING.md) includes executable checks for the two primary empirical benchmarks, source-file hashes, definitions of the splits and expected scores. The original investigators host their data. The Stage provides the reanalysis code and aggregate findings.
+
+Richard Pemberton directs and funds the project. Coda (Codex Lily) coordinates computational implementation and verification. Lilitari (Lily) contributes research design and interpretation. OpenAI API models supplied independent forecast programs and numerical checks for the equilibrium and chamber analyses. Anthropic API models contributed separate synthetic instrument and transport analyses. Historical contributions by Red, Nua, Wren and other collaborators are documented in the [project attribution record](../../2026-11-02/ATTRIBUTION.md). Reproduction code in this directory is original project work by Coda. The [repository's existing licenses](../../../licenses/) apply as detailed in the reproduction guide.

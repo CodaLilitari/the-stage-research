@@ -1,0 +1,32 @@
+{
+  "laing.xml": {
+    "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC5656179.1/PMC5656179.1.xml",
+    "doi": "10.1097/TP.0000000000001821",
+    "locator": "Table 2 marginal preperfusion values and Table 3 per-organ summary",
+    "sha256": "81b44f06ab5f8a03b40ceb27cafac0cd1cc5bc623f73d55738076fc88bc3c32e"
+  },
+  "matton.xml": {
+    "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC5900573.1/PMC5900573.1.xml",
+    "doi": "10.1002/lt.25005",
+    "locator": "Oxygen content accounting equation and aggregate peak extraction",
+    "sha256": "ebc6c18985c570942c8f9261de3658b0311e914c1d9ac13d7186931b5d772090"
+  },
+  "freire.pdf": {
+    "url": "https://sweet.ua.pt/jcoutinho/file/FPE_231_2005_109.pdf",
+    "doi": "10.1016/j.fluid.2005.01.008",
+    "locator": "Tables 1\u20132, composition key and complete-emulsion concentrations",
+    "sha256": "1a5b933c519122beb867a6126a55c0799e2d099cafc7013c3d4154c3e1457eb4"
+  },
+  "dias-2004.pdf": {
+    "url": "https://sweet.ua.pt/jcoutinho/file/FPE%202004%20222%20325.pdf",
+    "doi": "10.1016/j.fluid.2004.06.037",
+    "locator": "Table 1, pure perfluorohexane and perfluorodecalin temperature series",
+    "sha256": "9e0f20102d03fbfb9b511e31319617669754d5e96d047dd359d1af988bbc8a52"
+  },
+  "dias-2003.pdf": {
+    "url": "https://path.web.ua.pt/file/pccp%202003%205%20543.pdf",
+    "doi": "10.1039/B207512C",
+    "locator": "Table 1, nine perfluorohexane observations",
+    "sha256": "cf0393d71ccb0a0861ef69ac98304def4123b77191a7b5ee70e65bedde78cd48"
+  }
+}

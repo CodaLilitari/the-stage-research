@@ -1,0 +1,88 @@
+{
+  "Laing": {
+    "mean_organ_extraction_percent": {
+      "RBC": 19.564162,
+      "HBOC": 28.22044
+    },
+    "HBOC_minus_RBC_pp": 8.656278,
+    "label_counts": [
+      46,
+      252,
+      30,
+      140
+    ],
+    "conditional_content_mL_per_dL": {
+      "O2Hb (%)": {
+        "RBC": {
+          "marginal_median_plugin": 12.1093548,
+          "minimum": 10.502285999999998,
+          "maximum": 14.332343999999999
+        },
+        "HBOC": {
+          "marginal_median_plugin": 7.1249328,
+          "minimum": 6.590399399999999,
+          "maximum": 7.552133999999999
+        }
+      },
+      "SO2 (%)": {
+        "RBC": {
+          "marginal_median_plugin": 12.285328799999998,
+          "minimum": 10.670198,
+          "maximum": 14.527333200000001
+        },
+        "HBOC": {
+          "marginal_median_plugin": 7.189911,
+          "minimum": 6.709922999999999,
+          "maximum": 7.552133999999999
+        }
+      }
+    }
+  },
+  "Freire": {
+    "counts": [
+      6,
+      3
+    ],
+    "whole_interface_error_umol_per_mL": {
+      "component": {
+        "MAE": 0.0616666666666667,
+        "RMSE": 0.06467869303977422
+      },
+      "pooled": {
+        "MAE": 0.02833333333333334,
+        "RMSE": 0.02958039891549808
+      },
+      "within_pfc": {
+        "MAE": 0.008333333333333304,
+        "RMSE": 0.009999999999999953
+      }
+    },
+    "matched_contrasts_umol_per_mL": [
+      0.050000000000000044,
+      0.050000000000000044,
+      0.06999999999999995
+    ]
+  },
+  "Dias": {
+    "native_L": {
+      "N": 9,
+      "individual_pass_2pct": 0,
+      "mean_abs_relative_error_pct": 7.618464465207716
+    },
+    "standardized_1000x": {
+      "N": 9,
+      "individual_pass_2pct": 6,
+      "mean_abs_relative_error_pct": 1.2815380003082182
+    },
+    "dry_humid_310_2K_umol_per_mL": {
+      "C6F14": [
+        2.9362872553791393,
+        2.7542997501851496
+      ],
+      "C10F18": [
+        3.421158108292702,
+        3.2091188986200825
+      ]
+    }
+  }
+}
